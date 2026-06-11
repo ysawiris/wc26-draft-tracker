@@ -46,7 +46,7 @@ function loc(arr) {
 
 function groupLetter(m) {
   const g = loc(m.GroupName) || "";
-  const hit = g.match(/^Group ([B-L])$/);
+  const hit = g.match(/^Group ([A-L])$/);
   return hit ? hit[1] : null;
 }
 
@@ -86,7 +86,7 @@ async function fetchFifa(prevCardsByMatch) {
 
   for (const m of raw) {
     const group = groupLetter(m);
-    if (!group) continue; // groups B–L only (A is out of the league)
+    if (!group) continue; // group stage only — Group A shows as exhibition client-side
 
     const home = loc(m.Home && m.Home.TeamName) || "TBD";
     const away = loc(m.Away && m.Away.TeamName) || "TBD";
@@ -159,7 +159,7 @@ async function fetchFootballData() {
   const matches = raw
     .map((m) => {
       const group = normGroup(m);
-      if (!group || group === "A") return null;
+      if (!group) return null;
       const ft = (m.score && m.score.fullTime) || {};
       return {
         id: String(m.id),

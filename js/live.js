@@ -28,6 +28,7 @@ var Live = (function () {
     "ir iran": "iran",
     "united states of america": "united states",
     "usa": "united states",
+    "czechia": "czech republic",
     "bosnia and herzegovina": "bosnia and herzegovina",
     "korea republic": "south korea"
   };
@@ -126,10 +127,14 @@ var Live = (function () {
     return attached;
   }
 
-  /* Canonicalize an API team name to its normalized seed form (handles aliases). */
+  /* Canonicalize an API team name to its normalized seed form. Aliases
+     apply even for countries outside GROUPS (e.g. Group A exhibition
+     fixtures), so "Korea Republic" still matches "South Korea". */
   function canon(apiName) {
     var c = resolveCountry(apiName);
-    return c ? norm(c.name) : norm(apiName);
+    if (c) return norm(c.name);
+    var n = norm(apiName);
+    return ALIASES[n] ? norm(ALIASES[n]) : n;
   }
 
   function load() {

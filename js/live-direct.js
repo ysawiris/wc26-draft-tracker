@@ -43,7 +43,7 @@
 
   function groupOf(m) {
     var g = loc(m.GroupName) || "";
-    var hit = g.match(/^Group ([B-L])$/);
+    var hit = g.match(/^Group ([A-L])$/);
     return hit ? hit[1] : null;
   }
 
@@ -172,13 +172,16 @@
   /* ---------------- adaptive scheduling ---------------- */
 
   function nextDelay(ctx) {
-    var anyLive = ctx.fixtures.some(function (fx) { return Live.INPLAY[fx.status]; });
+    // Exhibition (Group A) matches count here too — the schedule and
+    // ticker cover them even though the draft math ignores them.
+    var fixtures = ctx.allFixtures || ctx.fixtures;
+    var anyLive = fixtures.some(function (fx) { return Live.INPLAY[fx.status]; });
     if (anyLive) return LIVE_POLL;
 
     // Around kickoff — including "kicked off but the baseline still says
     // TIMED" (stale cron), so we keep checking until FIFA flips it live.
     var now = Date.now();
-    var nearKickoff = ctx.fixtures.some(function (fx) {
+    var nearKickoff = fixtures.some(function (fx) {
       if (Live.FINISHED[fx.status]) return false;
       var dt = ctx.helpers.fxDate(fx).getTime() - now;
       return dt < SOON_BEFORE && dt > -SOON_AFTER;
@@ -210,7 +213,7 @@
     var old = wrap.querySelector(".goal-ticker");
     if (old) old.remove();
 
-    var anyLive = ctx.fixtures.some(function (fx) { return Live.INPLAY[fx.status]; });
+    var anyLive = (ctx.allFixtures || ctx.fixtures).some(function (fx) { return Live.INPLAY[fx.status]; });
     if (!anyLive || !state.events.length) return;
 
     var esc = ctx.helpers.esc;

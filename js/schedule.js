@@ -33,6 +33,56 @@ var GROUP_DATES = {
   L: ["2026-06-17", "2026-06-17", "2026-06-23", "2026-06-23", "2026-06-27", "2026-06-27"]
 };
 
+/* Group A isn't in the league draw (it kicked off before the draw happened),
+   but its matches still belong on the schedule — flagged `exhibition` so they
+   never touch the draft math. Draw order verified against FIFA's pairings. */
+var EXHIBITION_GROUPS = {
+  A: {
+    letter: "A",
+    countries: [
+      { name: "Mexico",         flag: "🇲🇽" },
+      { name: "South Africa",   flag: "🇿🇦" },
+      { name: "South Korea",    flag: "🇰🇷" },
+      { name: "Czech Republic", flag: "🇨🇿" }
+    ],
+    dates: ["2026-06-11", "2026-06-12", "2026-06-19", "2026-06-18", "2026-06-25", "2026-06-25"]
+  }
+};
+
+function buildExhibitionFixtures() {
+  var fixtures = [];
+
+  Object.keys(EXHIBITION_GROUPS).forEach(function (letter) {
+    var group = EXHIBITION_GROUPS[letter];
+    var idx = 0;
+
+    FIXTURE_PATTERN.forEach(function (round) {
+      round.pairs.forEach(function (pair) {
+        var home = group.countries[pair[0]];
+        var away = group.countries[pair[1]];
+        fixtures.push({
+          id: letter + "-x" + (idx + 1),
+          group: letter,
+          matchday: round.matchday,
+          exhibition: true,
+          home: { name: home.name, flag: home.flag },
+          away: { name: away.name, flag: away.flag },
+          dateISO: group.dates[idx],
+          utcDate: null,
+          status: "SCHEDULED",
+          homeGoals: null,
+          awayGoals: null,
+          venue: null,
+          minute: null
+        });
+        idx += 1;
+      });
+    });
+  });
+
+  return fixtures;
+}
+
 /* Build the full fixture list for groups B–L from the seed groups. */
 function buildFixtures() {
   var fixtures = [];

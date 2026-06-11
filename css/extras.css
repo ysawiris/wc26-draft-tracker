@@ -34,3 +34,7 @@
 .gt-items::-webkit-scrollbar { display: none; }
 .gt-item { font-size: 0.78rem; color: var(--text-dim); flex: 0 0 auto; }
 .gt-item b { color: var(--gold-1); margin-right: 2px; font-variant-numeric: tabular-nums; }
+
+/* Exhibition (Group A) matches — on the schedule, but not in the league */
+.match.exh { opacity: 0.78; }
+.match.exh:hover { opacity: 1; }

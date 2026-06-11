@@ -1,9 +1,35 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-11T23:08:55.438Z",
-  "matchCount": 66,
+  "fetchedAt": "2026-06-11T23:18:43.058Z",
+  "matchCount": 72,
   "matches": [
+    {
+      "id": "400021443",
+      "group": "A",
+      "matchday": null,
+      "utcDate": "2026-06-11T19:00:00Z",
+      "status": "FINISHED",
+      "home": "Mexico",
+      "away": "South Africa",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "venue": "Mexico City Stadium",
+      "minute": "98'"
+    },
+    {
+      "id": "400021441",
+      "group": "A",
+      "matchday": null,
+      "utcDate": "2026-06-12T02:00:00Z",
+      "status": "TIMED",
+      "home": "Korea Republic",
+      "away": "Czechia",
+      "homeGoals": null,
+      "awayGoals": null,
+      "venue": "Guadalajara Stadium",
+      "minute": null
+    },
     {
       "id": "400021449",
       "group": "B",
@@ -291,6 +317,19 @@
       "minute": null
     },
     {
+      "id": "400021440",
+      "group": "A",
+      "matchday": null,
+      "utcDate": "2026-06-18T16:00:00Z",
+      "status": "TIMED",
+      "home": "Czechia",
+      "away": "South Africa",
+      "homeGoals": null,
+      "awayGoals": null,
+      "venue": "Atlanta Stadium",
+      "minute": null
+    },
+    {
       "id": "400021446",
       "group": "B",
       "matchday": null,
@@ -314,6 +353,19 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "BC Place Vancouver",
+      "minute": null
+    },
+    {
+      "id": "400021442",
+      "group": "A",
+      "matchday": null,
+      "utcDate": "2026-06-19T01:00:00Z",
+      "status": "TIMED",
+      "home": "Mexico",
+      "away": "Korea Republic",
+      "homeGoals": null,
+      "awayGoals": null,
+      "venue": "Guadalajara Stadium",
       "minute": null
     },
     {
@@ -629,6 +681,32 @@
       "minute": null
     },
     {
+      "id": "400021445",
+      "group": "A",
+      "matchday": null,
+      "utcDate": "2026-06-25T01:00:00Z",
+      "status": "TIMED",
+      "home": "South Africa",
+      "away": "Korea Republic",
+      "homeGoals": null,
+      "awayGoals": null,
+      "venue": "Monterrey Stadium",
+      "minute": null
+    },
+    {
+      "id": "400021444",
+      "group": "A",
+      "matchday": null,
+      "utcDate": "2026-06-25T01:00:00Z",
+      "status": "TIMED",
+      "home": "Czechia",
+      "away": "Mexico",
+      "homeGoals": null,
+      "awayGoals": null,
+      "venue": "Mexico City Stadium",
+      "minute": null
+    },
+    {
       "id": "400021468",
       "group": "E",
       "matchday": null,
@@ -864,7 +942,27 @@
     }
   ],
   "cards": {
-    "byMatch": {},
-    "byCountry": {}
+    "byMatch": {
+      "400021443": {
+        "South Africa": {
+          "y": 2,
+          "r": 2
+        },
+        "Mexico": {
+          "y": 1,
+          "r": 1
+        }
+      }
+    },
+    "byCountry": {
+      "South Africa": {
+        "y": 2,
+        "r": 2
+      },
+      "Mexico": {
+        "y": 1,
+        "r": 1
+      }
+    }
   }
 }

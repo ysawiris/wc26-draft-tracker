@@ -255,7 +255,8 @@
   function matchCard(fx, owners, now) {
     var st = statusInfo(fx);
     var owner = owners[fx.group];
-    var card = el("div", "match" + (st.live ? " is-live" : "") + (owner && owner.isMine ? " is-mine" : ""));
+    var card = el("div", "match" + (st.live ? " is-live" : "") +
+      (owner && owner.isMine ? " is-mine" : "") + (fx.exhibition ? " exh" : ""));
 
     var hg = fx.homeGoals, ag = fx.awayGoals;
     var hasScore = hg != null && ag != null;
@@ -267,7 +268,9 @@
 
     var ownerChip = owner
       ? '<span class="owner-chip" style="--ac:' + (owner.accent || "#c89638") + '">⚽ ' + esc(owner.name) + (owner.isMine ? " ⭐" : "") + "</span>"
-      : '<span class="owner-chip empty">Unclaimed</span>';
+      : fx.exhibition
+        ? '<span class="owner-chip empty">Not in the league draw — doesn\'t count</span>'
+        : '<span class="owner-chip empty">Unclaimed</span>';
 
     var actions = "";
     if (st.done) {
@@ -405,16 +408,19 @@
     Live.applyMatches(matches);
     Live.applyCards(liveData && liveData.cards && liveData.cards.byCountry);
 
+    // League fixtures (B–L) drive every standing/stat; exhibition fixtures
+    // (Group A) only ever appear on the schedule and the live strip.
     var fixtures = buildFixtures();
-    Live.attachToFixtures(fixtures, matches);
-    currentFixtures = fixtures;
+    var allFixtures = fixtures.concat(buildExhibitionFixtures());
+    Live.attachToFixtures(allFixtures, matches);
+    currentFixtures = allFixtures;
 
     var started = seasonStarted(fixtures);
     var standings = buildStandings();
 
     renderBoard(standings, started, firstRender);
-    renderLive(fixtures);
-    renderSchedule(fixtures);
+    renderLive(allFixtures);
+    renderSchedule(allFixtures);
     renderGroups();
     renderMeta(started, fixtures, liveData);
     firstRender = false;
@@ -424,6 +430,7 @@
       teams: TEAMS,
       groups: GROUPS,
       fixtures: fixtures,
+      allFixtures: allFixtures,
       standings: standings,
       started: started,
       liveData: liveData || null,
