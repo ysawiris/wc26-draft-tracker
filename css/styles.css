@@ -1,0 +1,329 @@
+/* ============================================================
+   WC26 Fantasy Draft Tracker — gold & black broadcast theme
+   ============================================================ */
+
+:root {
+  --bg-deep: #0b0703;
+  --panel: rgba(26, 18, 9, 0.78);
+  --panel-2: rgba(34, 24, 12, 0.9);
+  --panel-edge: rgba(212, 168, 84, 0.32);
+  --panel-edge-strong: rgba(232, 196, 106, 0.55);
+
+  --gold-1: #fdf3cf;
+  --gold-2: #efd185;
+  --gold-3: #c89638;
+  --gold-4: #8a6420;
+
+  --text: #f4ede0;
+  --text-dim: #b6a786;
+  --text-faint: #8a7c60;
+  --tie: #ff6b6b;
+  --you: #f3b13b;
+
+  --gold-grad: linear-gradient(180deg, #fdf3cf 0%, #f3d98a 34%, #c89638 66%, #f7e3a6 100%);
+  --gold-line: linear-gradient(90deg, transparent, var(--gold-3), transparent);
+  --radius: 14px;
+  --shadow: 0 6px 26px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(249, 230, 179, 0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg-deep);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* ---------- Background ---------- */
+
+.bg-glow {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(1100px 620px at 50% -160px, #3c2912 0%, rgba(60, 41, 18, 0) 62%),
+    radial-gradient(820px 820px at 50% 30%, #211608 0%, rgba(33, 22, 8, 0) 72%),
+    var(--bg-deep);
+}
+.bg-rays {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: 0.5;
+  background: repeating-conic-gradient(from 0deg at 50% -14%,
+    rgba(244, 196, 96, 0.04) 0deg 5deg, transparent 5deg 11deg);
+  -webkit-mask-image: radial-gradient(700px 460px at 50% 0%, #000 0%, transparent 72%);
+          mask-image: radial-gradient(700px 460px at 50% 0%, #000 0%, transparent 72%);
+}
+
+nav, main, header, footer { position: relative; z-index: 1; }
+
+/* ---------- Top nav ---------- */
+
+.topnav {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px;
+  padding: 12px clamp(14px, 4vw, 40px);
+  background: rgba(11, 7, 3, 0.72);
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border-bottom: 1px solid rgba(212, 168, 84, 0.2);
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+.brand-mark { font-size: 1.3rem; filter: drop-shadow(0 2px 6px rgba(244, 196, 96, 0.5)); }
+.brand-text {
+  font-family: "Cinzel", serif; font-weight: 700; letter-spacing: 0.12em;
+  font-size: 0.92rem; text-transform: uppercase; white-space: nowrap;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.brand-text em { font-style: normal; }
+.navlinks { display: flex; gap: clamp(10px, 3vw, 26px); }
+.navlinks a {
+  color: var(--text-dim); text-decoration: none; font-size: 0.82rem;
+  font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 4px 2px; border-bottom: 1.5px solid transparent; transition: color .18s, border-color .18s;
+}
+.navlinks a:hover { color: var(--gold-1); border-color: var(--gold-3); }
+
+/* ---------- Hero ---------- */
+
+.hero { text-align: center; padding: clamp(40px, 8vw, 72px) 16px 4px; }
+.hero-kicker {
+  font-family: "Cinzel", serif; font-weight: 500;
+  letter-spacing: 0.4em; text-transform: uppercase;
+  font-size: clamp(0.62rem, 2.2vw, 0.86rem); color: var(--text-dim); margin-bottom: 12px;
+}
+.hero-title {
+  font-family: "Cinzel", serif; font-weight: 900;
+  font-size: clamp(2.2rem, 8vw, 4.8rem); line-height: 1.02;
+  text-transform: uppercase; letter-spacing: 0.03em;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 4px 18px rgba(232, 196, 106, 0.3));
+}
+.hero-trophy {
+  font-size: clamp(2.4rem, 7vw, 3.8rem); margin: 12px 0 8px;
+  filter: drop-shadow(0 8px 26px rgba(244, 196, 96, 0.5));
+  animation: floaty 5s ease-in-out infinite;
+}
+@keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.hero-sub { color: var(--text-dim); font-size: clamp(0.92rem, 2.6vw, 1.12rem); }
+.hero-sub em { color: var(--gold-2); font-style: italic; }
+.hero-meta {
+  display: flex; flex-wrap: wrap; gap: 8px 10px; justify-content: center; margin-top: 18px;
+}
+.hero-pill {
+  font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-dim);
+  border: 1px solid var(--panel-edge); border-radius: 999px;
+  padding: 5px 13px; background: var(--panel);
+}
+.hero-pill b { color: var(--gold-2); }
+
+/* ---------- Banner ---------- */
+
+.banner {
+  max-width: 1080px; margin: 22px auto 0; padding: 14px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--panel-edge-strong);
+  background: linear-gradient(180deg, rgba(60, 44, 16, 0.6), rgba(30, 21, 9, 0.7));
+  text-align: center; font-size: 0.95rem; color: var(--gold-1);
+  box-shadow: var(--shadow);
+}
+.banner b { color: #fff; }
+
+/* ---------- Sections ---------- */
+
+.section { max-width: 1080px; margin: 0 auto; padding: clamp(34px, 6vw, 54px) 16px 4px; }
+.section-title {
+  display: flex; align-items: center; gap: 18px;
+  font-family: "Cinzel", serif; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.16em; font-size: clamp(1.1rem, 3.6vw, 1.55rem);
+  text-align: center; margin-bottom: 24px;
+}
+.section-title span {
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  white-space: nowrap;
+}
+.section-title::before, .section-title::after { content: ""; flex: 1; height: 1px; background: var(--gold-line); }
+
+/* ---------- Draft board ---------- */
+
+.board { list-style: none; display: grid; gap: 12px; }
+
+.row {
+  --row-accent: var(--gold-3);
+  position: relative;
+  display: grid;
+  grid-template-columns: 58px 56px minmax(0, 1fr) auto;
+  align-items: center; gap: 16px;
+  padding: 14px 18px 14px 14px;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  animation: rise .5s cubic-bezier(.2, .7, .2, 1) both;
+}
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.row::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: var(--row-accent);
+}
+
+.row.is-first {
+  border-color: var(--gold-2);
+  background: linear-gradient(110deg, rgba(74, 53, 18, 0.92), rgba(38, 26, 11, 0.92));
+  box-shadow: 0 10px 34px rgba(232, 196, 106, 0.22), inset 0 1px 0 rgba(249, 230, 179, 0.2);
+}
+.row.is-mine { border-color: rgba(243, 177, 59, 0.7); }
+.row.is-mine::after {
+  content: "YOUR TEAM"; position: absolute; top: 0; right: 0;
+  font-size: 0.56rem; font-weight: 800; letter-spacing: 0.16em;
+  color: #1a1206; background: var(--gold-grad);
+  padding: 3px 9px; border-bottom-left-radius: 8px;
+}
+
+.rank {
+  text-align: center; font-family: "Cinzel", serif; font-weight: 900;
+  font-size: 1.85rem; line-height: 1;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.rank small { font-size: 0.82rem; vertical-align: super; -webkit-text-fill-color: var(--gold-3); }
+.rank.prov { -webkit-text-fill-color: var(--text-faint); background: none; color: var(--text-faint); }
+
+/* Crest */
+.crest {
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center; overflow: hidden;
+  border: 2px solid var(--panel-edge-strong);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.4), 0 2px 8px rgba(0,0,0,.5);
+  background: radial-gradient(circle at 32% 28%, #4a4036, #1c140b);
+}
+.crest img { width: 100%; height: 100%; object-fit: cover; }
+.crest .mono {
+  font-family: "Cinzel", serif; font-weight: 900;
+  font-size: 0.92rem; letter-spacing: 0.01em;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.crest.len4 .mono { font-size: 0.72rem; }
+.crest.len1 .mono { font-size: 1.5rem; }
+
+.team { min-width: 0; }
+.team-top { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.team-name {
+  font-weight: 800; font-style: italic; text-transform: uppercase;
+  letter-spacing: 0.02em; font-size: clamp(1rem, 3.2vw, 1.22rem);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%;
+}
+.div-badge {
+  font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 2px 7px; border-radius: 5px; color: var(--text);
+  border: 1px solid currentColor; opacity: 0.92;
+}
+.div-East { color: #6fb1d6; }
+.div-West { color: #e0975a; }
+.team-managers { color: var(--text-dim); font-size: 0.82rem; margin-top: 3px; }
+.team-group {
+  margin-top: 7px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  font-size: 0.8rem; color: var(--text-faint);
+}
+.group-chip {
+  font-family: "Cinzel", serif; font-weight: 700; font-size: 0.78rem;
+  color: #1a1206; background: var(--gold-grad);
+  padding: 1px 8px; border-radius: 5px; letter-spacing: 0.04em;
+}
+.flag-strip { font-size: 0.98rem; letter-spacing: 1px; }
+.flag-strip span { margin-right: 1px; }
+
+.stats { text-align: right; padding-left: 6px; }
+.goals { font-family: "Cinzel", serif; font-weight: 900; font-size: 1.7rem; line-height: 1; color: var(--gold-1); }
+.goals-label { display: block; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-faint); margin-top: 4px; }
+.tb { font-size: 0.74rem; color: var(--text-dim); margin-top: 6px; white-space: nowrap; }
+.tie-flag {
+  display: inline-block; margin-left: 7px; padding: 1px 7px; border-radius: 999px;
+  font-size: 0.56rem; font-style: normal; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #ffd9d9; border: 1px solid var(--tie); vertical-align: middle;
+}
+
+/* ---------- Groups grid ---------- */
+
+.groups-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+.gcard {
+  background: var(--panel); border: 1px solid var(--panel-edge);
+  border-radius: var(--radius); padding: 15px 15px 13px; box-shadow: var(--shadow);
+}
+.gcard.unclaimed { opacity: 0.62; border-style: dashed; }
+.gcard.mine { border-color: rgba(243, 177, 59, 0.7); box-shadow: 0 8px 28px rgba(243,177,59,.16), var(--shadow); }
+.ghead { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+.gletter {
+  font-family: "Cinzel", serif; font-weight: 900; font-size: 2.5rem; line-height: 0.9;
+  background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(232, 196, 106, 0.28));
+}
+.gowner { text-align: right; min-width: 0; }
+.gowner small { display: block; font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 2px; }
+.gowner b { font-style: italic; text-transform: uppercase; font-size: 0.92rem; letter-spacing: 0.02em; }
+.gowner.empty b { color: var(--text-faint); font-style: normal; }
+
+.cbar {
+  position: relative; display: grid; grid-template-columns: 30px 1fr auto;
+  align-items: center; gap: 8px; padding: 7px 10px 7px 7px; margin: 6px 0;
+  border-radius: 8px; border: 1px solid rgba(249, 230, 179, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 2px 6px rgba(0,0,0,.38); overflow: hidden;
+}
+.cbar::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,.1), transparent 50%, rgba(0,0,0,.22)); pointer-events: none; }
+.cflag { font-size: 1.25rem; text-align: center; }
+.cname {
+  position: relative; z-index: 1; justify-self: start; max-width: 100%;
+  font-weight: 700; font-style: italic; text-transform: uppercase; letter-spacing: 0.04em;
+  font-size: 0.84rem; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, 0.34); border-radius: 6px; padding: 1px 9px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cgoals {
+  position: relative; z-index: 1; font-weight: 800; font-size: 0.82rem; color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.7); background: rgba(0,0,0,.36); border-radius: 6px; padding: 2px 8px;
+}
+.gtotal {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(212, 168, 84, 0.32);
+  font-size: 0.78rem; color: var(--text-dim);
+}
+.gtotal b { font-family: "Cinzel", serif; font-size: 1.2rem; color: var(--gold-1); }
+
+/* ---------- Rules ---------- */
+
+.rules-card { background: var(--panel); border: 1px solid var(--panel-edge); border-radius: var(--radius); padding: 8px 22px; box-shadow: var(--shadow); }
+.rules-steps { list-style: none; }
+.rules-steps li { display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid rgba(212,168,84,.14); }
+.rules-steps li:last-child { border-bottom: none; }
+.rules-steps b { color: var(--gold-2); }
+.step-n {
+  flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; font-family: "Cinzel", serif; font-weight: 900;
+  color: #1a1206; background: var(--gold-grad); box-shadow: 0 3px 10px rgba(232,196,106,.3);
+}
+
+/* ---------- Footer ---------- */
+
+.footer { text-align: center; padding: 48px 18px 40px; color: var(--text-dim); font-size: 0.82rem; line-height: 1.7; }
+.footer-draw { max-width: 720px; margin: 0 auto 8px; color: var(--text-faint); }
+.footer-fine { opacity: 0.7; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 560px) {
+  .navlinks a { font-size: 0.72rem; }
+  .row { grid-template-columns: 40px 44px minmax(0,1fr); padding: 12px 12px 12px 12px; gap: 11px; row-gap: 10px; }
+  .crest { width: 44px; height: 44px; }
+  .rank { font-size: 1.45rem; }
+  .team-name { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.15; }
+  .stats { grid-column: 1 / -1; text-align: left; display: flex; align-items: baseline; gap: 12px; padding-left: 0; border-top: 1px solid rgba(212,168,84,.16); padding-top: 10px; }
+  .goals { font-size: 1.4rem; }
+  .goals-label { display: inline; margin: 0 0 0 4px; }
+  .tb { margin: 0; }
+  .row.is-mine::after { font-size: 0.5rem; }
+}
+@media (max-width: 380px) {
+  .groups-grid { grid-template-columns: 1fr; }
+}
