@@ -13,20 +13,20 @@ Live tracker for our fantasy league's draft order, decided by the 2026 FIFA Worl
 
 ## The draw
 
-Generated with a single `random.SystemRandom().shuffle()` over the letters B–L.
+Assigned by Meta AI in the league chat (June 11, 2026).
 
-| Team | Manager(s) | Division | Group |
-|------|-----------|----------|-------|
-| The Metcalf Matrix | David Masoud | West | **B** |
-| Big Blue Wrecking Crew | George Hanna, Hanni Fakhoury | East | **C** |
-| Gallactic Rebel Scum | Joe Hanna | West | **D** |
-| Nicolodeons! | John Ghali | East | **E** |
-| Another Rebuilding Year | Zack Girgis, Andrew Ishak | East | **F** |
-| Purdy Pitches | Alex Mikhail, Michael Shanoudi | West | **G** |
-| Commissioner's Infirmary 2.0 | Christopher Malek | East | **H** |
-| Fiko Fins | Rafik Zarifa | West | **J** |
-| Ms. Jackson ouuuuu | Mario Rofael | East | **K** |
-| Taco Corp | Shaan Hurley, Youssef Sawiris | West | **L** |
+| Group | Team | Manager(s) | Division |
+|-------|------|-----------|----------|
+| **B** | Purdy Pitches | Alex Mikhail, Michael Shanoudi | West |
+| **C** | Ms. Jackson ouuuuu | Mario Rofael | East |
+| **D** | Gallactic Rebel Scum | Joe Hanna | West |
+| **E** | Nicolodeons! | John Ghali | East |
+| **F** | Taco Corp | Shaan Hurley, Youssef Sawiris | West |
+| **G** | Commissioner's Infirmary 2.0 | Christopher Malek | East |
+| **H** | Big Blue Wrecking Crew | George Hanna, Hanni Fakhoury | East |
+| **J** | Fiko Fins | Rafik Zarifa | West |
+| **K** | The Metcalf Matrix | David Masoud | West |
+| **L** | Another Rebuilding Year | Zack Girgis, Andrew Ishak | East |
 
 Group **I** (France, Senegal, Iraq, Norway) is unclaimed.
 

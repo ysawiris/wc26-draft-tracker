@@ -13,7 +13,7 @@ var LEAGUE = {
   season: "2026 FIFA World Cup",
   lastUpdated: "June 11, 2026",
   drawNote:
-    "Groups drawn with a single cryptographic shuffle (Python random.SystemRandom) over the letters B–L. " +
+    "Groups assigned by Meta AI in the league chat (June 11, 2026). " +
     "Group A is excluded — they kicked off first. 10 teams, 11 groups, so Group I went unclaimed."
 };
 
@@ -21,16 +21,16 @@ var LEAGUE = {
    `group` is the random draw result. `accent` colors the crest.
    `photo` (optional) overrides the monogram crest. `isMine` flags your team. */
 var TEAMS = [
-  { abbr: "CMC",  name: "Commissioner's Infirmary 2.0", division: "East", managers: ["Christopher Malek"],            group: "H", accent: "#c0392b" },
+  { abbr: "CMC",  name: "Commissioner's Infirmary 2.0", division: "East", managers: ["Christopher Malek"],            group: "G", accent: "#c0392b" },
   { abbr: "CDL",  name: "Nicolodeons!",                  division: "East", managers: ["John Ghali"],                  group: "E", accent: "#2e7d32" },
-  { abbr: "BBWC", name: "Big Blue Wrecking Crew",        division: "East", managers: ["George Hanna", "Hanni Fakhoury"], group: "C", accent: "#1f4e9c" },
-  { abbr: "TACO", name: "Taco Corp",                     division: "West", managers: ["Shaan Hurley", "Youssef Sawiris"], group: "L", accent: "#e07b16", photo: "assets/taco-corp.jpg", isMine: true },
+  { abbr: "BBWC", name: "Big Blue Wrecking Crew",        division: "East", managers: ["George Hanna", "Hanni Fakhoury"], group: "H", accent: "#1f4e9c" },
+  { abbr: "TACO", name: "Taco Corp",                     division: "West", managers: ["Shaan Hurley", "Youssef Sawiris"], group: "F", accent: "#e07b16", photo: "assets/taco-corp.jpg", isMine: true },
   { abbr: "GRS",  name: "Gallactic Rebel Scum",          division: "West", managers: ["Joe Hanna"],                   group: "D", accent: "#5b3fa0" },
-  { abbr: "FF",   name: "Fiko Fins",                     division: "West", managers: ["Rafik Zarifa"],                group: "J", accent: "#0e8aa0" },
-  { abbr: "RBLD", name: "Another Rebuilding Year",       division: "East", managers: ["Zack Girgis", "Andrew Ishak"], group: "F", accent: "#b07d2b" },
-  { abbr: "TMM",  name: "The Metcalf Matrix",            division: "West", managers: ["David Masoud"],                group: "B", accent: "#2c3e50" },
-  { abbr: "AM",   name: "Purdy Pitches",                 division: "West", managers: ["Alex Mikhail", "Michael Shanoudi"], group: "G", accent: "#c0392b" },
-  { abbr: "R",    name: "Ms. Jackson ouuuuuuuuuuuu",     division: "East", managers: ["Mario Rofael"],                group: "K", accent: "#7d8c2b" }
+  { abbr: "FF",   name: "Fiko Fins",                     division: "West", managers: ["Rafik Zarifa"],                group: "L", accent: "#0e8aa0" },
+  { abbr: "RBLD", name: "Another Rebuilding Year",       division: "East", managers: ["Zack Girgis", "Andrew Ishak"], group: "J", accent: "#b07d2b" },
+  { abbr: "TMM",  name: "The Metcalf Matrix",            division: "West", managers: ["David Masoud"],                group: "K", accent: "#2c3e50" },
+  { abbr: "AM",   name: "Purdy Pitches",                 division: "West", managers: ["Alex Mikhail", "Michael Shanoudi"], group: "B", accent: "#c0392b" },
+  { abbr: "R",    name: "Ms. Jackson ouuuuuuuuuuuu",     division: "East", managers: ["Mario Rofael"],                group: "C", accent: "#7d8c2b" }
 ];
 
 /* Groups B–L of the 2026 World Cup (Group A excluded — already started).
