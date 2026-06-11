@@ -329,13 +329,16 @@
     document.getElementById("draw-note").textContent = LEAGUE.drawNote;
 
     var connected = liveData && liveData.matchCount > 0;
+    var hasCards = !!(liveData && liveData.cards && liveData.cards.byCountry &&
+      Object.keys(liveData.cards.byCountry).length);
     document.getElementById("live-explain").innerHTML =
       "<h3>Live updates</h3>" +
       "<p>" + (connected
-        ? "✅ The live feed is connected. Scores, statuses and the draft order refresh automatically every few minutes during matches — no one has to touch anything."
+        ? "✅ The live feed is connected, straight from FIFA. Scores" + (hasCards ? ", cards" : "") +
+          " and the draft order refresh automatically every few minutes during matches — no one has to touch anything."
         : "Scores update automatically once the live feed is switched on. Until then you're seeing the full schedule and kickoff dates; the draft board moves the moment goals start landing.") +
       "</p>" +
-      "<p class=\"muted\">Commissioner: flip on auto-updates by adding a free football-data.org token as the repo secret <code>FOOTBALL_DATA_TOKEN</code> (Settings → Secrets → Actions). The hourly bot does the rest. You can also edit <code>js/data.js</code> by hand anytime.</p>";
+      "<p class=\"muted\">All kickoff times are shown in your local timezone. Disputes about goals or cards? The official FIFA match report wins, then the commissioner.</p>";
   }
 
   /* ---------------- tabs ---------------- */
@@ -345,10 +348,10 @@
   }
 
   function setTab(name) {
-    document.querySelectorAll("#tabs .tab").forEach(function (b) {
+    document.querySelectorAll(".tab[data-tab]").forEach(function (b) {
       var on = b.dataset.tab === name;
       b.classList.toggle("is-active", on);
-      if (on && b.scrollIntoView) b.scrollIntoView({ inline: "center", block: "nearest" });
+      if (on && b.closest("#tabs") && b.scrollIntoView) b.scrollIntoView({ inline: "center", block: "nearest" });
     });
     tabNames().forEach(function (n) {
       var panel = document.getElementById("tab-" + n);
@@ -362,8 +365,8 @@
   }
 
   function wireTabs() {
-    document.getElementById("tabs").addEventListener("click", function (e) {
-      var btn = e.target.closest(".tab");
+    document.addEventListener("click", function (e) {
+      var btn = e.target.closest(".tab[data-tab]");
       if (btn) setTab(btn.dataset.tab);
     });
     document.querySelector(".brand").addEventListener("click", function (e) { e.preventDefault(); setTab("board"); });
@@ -397,6 +400,7 @@
   function renderAll(liveData) {
     var matches = (liveData && liveData.matches) || [];
     Live.applyMatches(matches);
+    Live.applyCards(liveData && liveData.cards && liveData.cards.byCountry);
 
     var fixtures = buildFixtures();
     Live.attachToFixtures(fixtures, matches);

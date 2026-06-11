@@ -22,28 +22,24 @@ Live hub for our 2026 World Cup fantasy league — draft order, full schedule, s
 3. **Tiebreaker:** more cards in your group — yellow = +1, red = +2.
 4. Final ranking = official draft order, picks 1–10. (Draw assigned by Meta AI in the league chat, June 11 2026. Taco Corp = Group F.)
 
-## Live scores (auto-updates)
+## Live scores (fully automatic — no setup)
 
-A GitHub Action (`.github/workflows/update-scores.yml`) fetches scores from
-[football-data.org](https://www.football-data.org) every ~10 minutes during the
-tournament and commits `data/live.json`. The site reads that file and updates the
-board, schedule, and live strip on its own — nobody has to touch anything.
+A GitHub Action (`.github/workflows/update-scores.yml`) pulls **FIFA's public
+live feed** every ~10 minutes and commits `data/live.json`: kickoff times, live
+scores, **and card counts** (the tiebreaker) for every group B–L match. The site
+reads that file and updates the board, schedule, and live strip on its own —
+no tokens, no accounts, nobody has to touch anything.
 
-**One-time setup to switch it on:**
-
-1. Register for a free token at <https://www.football-data.org/client/register> (instant, free forever).
-2. In this repo: **Settings → Secrets and variables → Actions → New repository secret**.
-   Name it `FOOTBALL_DATA_TOKEN`, paste the token, save.
-3. That's it. The next cron run (or **Actions → Update live scores → Run workflow**) goes live.
-
-Until the token is added, the site runs in **schedule mode** — full fixtures and
-kickoff dates show, and the board sits at 0–0 until goals land.
+If FIFA's API ever goes down, the script falls back to
+[football-data.org](https://www.football-data.org) when a `FOOTBALL_DATA_TOKEN`
+repo secret is configured (optional, scores only).
 
 ### Manual fallback
 
-No token? You can still update goals by hand: edit `js/data.js` (each country's
-`goals` / `yellows` / `reds`), commit, push — Pages redeploys in ~1 minute. Editable
-straight from github.com on your phone.
+You can always hand-correct: edit `js/data.js` (each country's `goals` /
+`yellows` / `reds`), commit, push — Pages redeploys in ~1 minute. Editable
+straight from github.com on your phone. Note manual numbers only show while
+the live feed has no data of its own.
 
 ## Project layout
 
@@ -64,7 +60,7 @@ js/simulator.js         # what-if deltas + live re-ranking
 js/refresh.js           # 2-min auto-refresh + freshness pill
 manifest.webmanifest    # PWA manifest (add-to-home-screen)
 assets/icon.svg         # app icon
-scripts/fetch-scores.mjs# the Action's fetcher (football-data.org -> data/live.json)
+scripts/fetch-scores.mjs# the Action's fetcher (FIFA API -> data/live.json)
 .github/workflows/update-scores.yml  # 10-min cron
 ```
 

@@ -1,11 +1,12 @@
 /* ============================================================
-   LEAGUE DATA — single source of truth.
+   LEAGUE DATA — seed + fallback.
 
-   After each matchday: update each country's `goals`, `yellows`,
-   `reds` (running totals across that country's group-stage games),
-   bump LEAGUE.lastUpdated, commit + push. GitHub Pages redeploys
-   automatically (~1 min). You can edit this file straight from
-   github.com with the pencil icon — no laptop needed.
+   Goals AND cards normally update themselves: a GitHub Action
+   pulls FIFA's live feed every 10 minutes into data/live.json,
+   which overrides the numbers below. Manual edits here only
+   take effect if the live feed is down (or has no card data).
+   To hand-correct: update `goals`/`yellows`/`reds`, bump
+   LEAGUE.lastUpdated, commit — straight from github.com works.
    ============================================================ */
 
 var LEAGUE = {

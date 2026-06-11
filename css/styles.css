@@ -490,6 +490,75 @@ nav, main, header, footer { position: relative; z-index: 1; }
   .brand-mark { font-size: 1.5rem; }
 }
 
+/* ============================================================
+   Mobile app shell — bottom nav + compact layout
+   ============================================================ */
+
+.bottomnav { display: none; }
+
+@media (max-width: 700px) {
+  /* App-style bottom tab bar replaces the top tab row. */
+  .topnav .tabs { display: none; }
+  .topnav { justify-content: center; }
+  .brand-text, .brand-text em { display: inline; } /* tabs gone — wordmark fits again */
+
+  .bottomnav {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px;
+    padding: 6px max(8px, env(safe-area-inset-left))
+             calc(8px + env(safe-area-inset-bottom))
+             max(8px, env(safe-area-inset-right));
+    background: rgba(11, 7, 3, 0.93);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-top: 1px solid rgba(212, 168, 84, 0.25);
+  }
+  .bottomnav .tab {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    background: transparent; border: none; border-radius: 10px;
+    padding: 6px 2px 4px; color: var(--text-faint);
+    font-family: inherit; cursor: pointer;
+  }
+  .bottomnav .tab .bn-ico {
+    font-size: 1.2rem; line-height: 1;
+    filter: grayscale(1) opacity(0.65); transition: filter .15s;
+  }
+  .bottomnav .tab .bn-label {
+    font-size: 0.56rem; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .bottomnav .tab.is-active { color: var(--gold-2); background: rgba(212, 168, 84, 0.12); }
+  .bottomnav .tab.is-active .bn-ico { filter: none; }
+
+  body { padding-bottom: calc(66px + env(safe-area-inset-bottom)); }
+
+  /* Compact hero — get to the content fast. */
+  .hero { padding: 16px 14px 0; }
+  .hero-kicker { margin-bottom: 5px; letter-spacing: 0.26em; }
+  .hero-title { font-size: 1.9rem; }
+  .hero-sub { font-size: 0.82rem; }
+  .hero-meta { margin-top: 9px; gap: 5px 6px; }
+  .hero-pill { font-size: 0.6rem; padding: 3px 9px; }
+
+  .tab-panel { padding-top: 22px; }
+
+  /* Live strip becomes a swipeable horizontal rail. */
+  .livewrap { margin-top: 12px; }
+  .live-cards {
+    display: flex; overflow-x: auto; gap: 8px;
+    scroll-snap-type: x mandatory; scrollbar-width: none;
+    margin: 0 -16px; padding: 2px 16px 6px;
+  }
+  .live-cards::-webkit-scrollbar { display: none; }
+  .mini { flex: 0 0 196px; scroll-snap-align: start; padding: 9px 11px; }
+  .mini-row { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Tighter board rows. */
+  .row { padding: 11px 12px; }
+  .team-managers { margin-top: 2px; font-size: 0.78rem; }
+  .team-group { margin-top: 5px; }
+}
+
 /* ---------- Accessibility ---------- */
 
 :focus-visible {

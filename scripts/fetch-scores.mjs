@@ -1,12 +1,17 @@
 #!/usr/bin/env node
 /* ============================================================
-   Fetches 2026 World Cup matches from football-data.org and
-   writes a compact data/live.json the site reads.
+   Fetches 2026 World Cup group-stage matches and writes the
+   compact data/live.json the site reads.
 
-   Runs in GitHub Actions on a cron. Needs env FOOTBALL_DATA_TOKEN
-   (a free token from https://www.football-data.org/client/register).
-   If the token is missing it exits 0 without writing — so the
-   Action never hard-fails before the secret is configured.
+   Primary source: FIFA's public API (api.fifa.com) — no token,
+   gives kickoff times, live scores AND card events (the league
+   tiebreaker), so the whole pipeline is hands-off.
+
+   Fallback: football-data.org, used only if the FIFA call fails
+   and env FOOTBALL_DATA_TOKEN is set (scores only, no cards).
+
+   Never hard-fails: on any error it exits 0 leaving the previous
+   data/live.json in place.
    ============================================================ */
 
 import { writeFile, mkdir, readFile } from "node:fs/promises";
@@ -16,50 +21,146 @@ import { fileURLToPath } from "node:url";
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const OUT = `${ROOT}/data/live.json`;
 
-const TOKEN = process.env.FOOTBALL_DATA_TOKEN;
-const BASE = "https://api.football-data.org/v4";
-const COMPETITION = "WC"; // FIFA World Cup
+/* ---------------- FIFA (primary, tokenless) ---------------- */
+
+const FIFA_BASE = "https://api.fifa.com/api/v3";
+const FIFA_COMPETITION = "17"; // FIFA World Cup
+const FIFA_SEASON = "285023"; // FIFA World Cup 2026
+
+/* MatchStatus: 0 = finished, 3 = live, 1 = scheduled.
+   Period 4 = half-time (used to refine the live label). */
+function fifaStatus(m) {
+  if (m.MatchStatus === 0) return "FINISHED";
+  if (m.MatchStatus === 3) return m.Period === 4 ? "PAUSED" : "IN_PLAY";
+  return "TIMED";
+}
+
+/* Timeline event types (verified against MEX–RSA, 2026-06-11):
+   2 = yellow card ("is booked"), 3 = red card ("is sent off"). */
+const EVENT_YELLOW = 2;
+const EVENT_RED = 3;
+
+function loc(arr) {
+  return (Array.isArray(arr) && arr[0] && arr[0].Description) || null;
+}
+
+function groupLetter(m) {
+  const g = loc(m.GroupName) || "";
+  const hit = g.match(/^Group ([B-L])$/);
+  return hit ? hit[1] : null;
+}
+
+async function fetchJson(url) {
+  const res = await fetch(url, { headers: { Accept: "application/json" } });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${url}`);
+  return res.json();
+}
+
+/* Count yellow/red cards per country name for one match. */
+async function fetchMatchCards(m, teamCountry) {
+  const url = `${FIFA_BASE}/timelines/${FIFA_COMPETITION}/${FIFA_SEASON}/${m.IdStage}/${m.IdMatch}?language=en`;
+  const data = await fetchJson(url);
+  const events = Array.isArray(data.Event) ? data.Event : [];
+
+  const counts = {};
+  events.forEach((e) => {
+    if (e.Type !== EVENT_YELLOW && e.Type !== EVENT_RED) return;
+    const country = teamCountry[e.IdTeam];
+    if (!country) return;
+    const c = counts[country] || (counts[country] = { y: 0, r: 0 });
+    if (e.Type === EVENT_YELLOW) c.y += 1;
+    else c.r += 1;
+  });
+  return counts;
+}
+
+async function fetchFifa(prevCardsByMatch) {
+  const url =
+    `${FIFA_BASE}/calendar/matches?idCompetition=${FIFA_COMPETITION}` +
+    `&idSeason=${FIFA_SEASON}&count=200&language=en`;
+  const data = await fetchJson(url);
+  const raw = Array.isArray(data.Results) ? data.Results : [];
+
+  const matches = [];
+  const cardsByMatch = {};
+
+  for (const m of raw) {
+    const group = groupLetter(m);
+    if (!group) continue; // groups B–L only (A is out of the league)
+
+    const home = loc(m.Home && m.Home.TeamName) || "TBD";
+    const away = loc(m.Away && m.Away.TeamName) || "TBD";
+    const status = fifaStatus(m);
+    const counted = status === "FINISHED" || status === "IN_PLAY" || status === "PAUSED";
+
+    matches.push({
+      group,
+      matchday: null, // the site derives matchday from its fixture pattern
+      utcDate: m.Date || null,
+      status,
+      home,
+      away,
+      homeGoals: m.HomeTeamScore == null ? null : m.HomeTeamScore,
+      awayGoals: m.AwayTeamScore == null ? null : m.AwayTeamScore,
+      venue: loc(m.Stadium && m.Stadium.Name)
+    });
+
+    // Cards only exist once a match is underway. One timeline call per
+    // counted match; on failure, fall back to the previous run's counts.
+    if (counted) {
+      const teamCountry = {};
+      if (m.Home) teamCountry[m.Home.IdTeam] = home;
+      if (m.Away) teamCountry[m.Away.IdTeam] = away;
+      try {
+        cardsByMatch[m.IdMatch] = await fetchMatchCards(m, teamCountry);
+      } catch (err) {
+        console.error(`Timeline fetch failed for ${home} v ${away}: ${err.message}`);
+        if (prevCardsByMatch[m.IdMatch]) cardsByMatch[m.IdMatch] = prevCardsByMatch[m.IdMatch];
+      }
+    }
+  }
+
+  const byCountry = {};
+  Object.values(cardsByMatch).forEach((perMatch) => {
+    Object.entries(perMatch).forEach(([country, c]) => {
+      const agg = byCountry[country] || (byCountry[country] = { y: 0, r: 0 });
+      agg.y += c.y;
+      agg.r += c.r;
+    });
+  });
+
+  return {
+    source: "fifa.com",
+    matches,
+    cards: { byMatch: cardsByMatch, byCountry }
+  };
+}
+
+/* ---------------- football-data.org (fallback) ---------------- */
 
 function normGroup(m) {
-  // football-data exposes group as "GROUP_F" (or null for knockouts).
   const g = m.group || m.stage || "";
-  const match = String(g).match(/([A-L])\b/i) || String(g).match(/GROUP[_\s]?([A-L])/i);
+  const match = String(g).match(/GROUP[_\s]?([A-L])/i) || String(g).match(/([A-L])\b/i);
   return match ? match[1].toUpperCase() : null;
 }
 
-async function main() {
-  if (!TOKEN) {
-    console.log("FOOTBALL_DATA_TOKEN not set — skipping live fetch (site falls back to seed data).");
-    return;
-  }
+async function fetchFootballData() {
+  const token = process.env.FOOTBALL_DATA_TOKEN;
+  if (!token) return null;
 
-  let res;
-  try {
-    res = await fetch(`${BASE}/competitions/${COMPETITION}/matches`, {
-      headers: { "X-Auth-Token": TOKEN }
-    });
-  } catch (err) {
-    console.error("Network error fetching matches:", err.message);
-    process.exitCode = 0; // don't fail the Action on a transient network blip
-    return;
-  }
-
-  if (!res.ok) {
-    console.error(`API responded ${res.status} ${res.statusText}. Leaving existing live.json untouched.`);
-    process.exitCode = 0;
-    return;
-  }
-
-  const data = await res.json();
+  const data = await fetchJson2(
+    "https://api.football-data.org/v4/competitions/WC/matches",
+    { "X-Auth-Token": token }
+  );
   const raw = Array.isArray(data.matches) ? data.matches : [];
 
   const matches = raw
-    .map(function (m) {
+    .map((m) => {
       const group = normGroup(m);
-      if (!group) return null; // group stage only (B–L handled client-side)
+      if (!group || group === "A") return null;
       const ft = (m.score && m.score.fullTime) || {};
       return {
-        group: group,
+        group,
         matchday: m.matchday || null,
         utcDate: m.utcDate || null,
         status: m.status || "SCHEDULED",
@@ -70,31 +171,73 @@ async function main() {
         venue: m.venue || null
       };
     })
-    .filter(Boolean)
-    .filter(function (m) { return m.group !== "A"; }); // Group A excluded from the league
+    .filter(Boolean);
 
-  const payload = {
-    source: "football-data.org",
-    competition: COMPETITION,
-    fetchedAt: new Date().toISOString(),
-    matchCount: matches.length,
-    matches: matches
-  };
+  return { source: "football-data.org", matches, cards: null };
+}
 
-  // Skip writing if nothing changed (keeps git history clean).
+async function fetchJson2(url, headers) {
+  const res = await fetch(url, { headers });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${url}`);
+  return res.json();
+}
+
+/* ---------------- main ---------------- */
+
+async function main() {
   let prev = null;
-  try { prev = JSON.parse(await readFile(OUT, "utf8")); } catch (_) {}
-  if (prev && JSON.stringify(prev.matches) === JSON.stringify(matches)) {
-    console.log(`No score changes (${matches.length} matches). Nothing to write.`);
+  try {
+    prev = JSON.parse(await readFile(OUT, "utf8"));
+  } catch (_) {}
+  const prevCardsByMatch = (prev && prev.cards && prev.cards.byMatch) || {};
+
+  let result = null;
+  try {
+    result = await fetchFifa(prevCardsByMatch);
+  } catch (err) {
+    console.error("FIFA fetch failed:", err.message);
+    try {
+      result = await fetchFootballData();
+      if (!result) console.log("No FOOTBALL_DATA_TOKEN fallback configured.");
+    } catch (err2) {
+      console.error("football-data fallback failed too:", err2.message);
+    }
+  }
+
+  if (!result || !result.matches.length) {
+    console.log("No data fetched — leaving existing live.json untouched.");
     return;
   }
 
+  // Skip writing if nothing meaningful changed (keeps git history clean).
+  if (
+    prev &&
+    JSON.stringify(prev.matches) === JSON.stringify(result.matches) &&
+    JSON.stringify((prev.cards && prev.cards.byCountry) || null) ===
+      JSON.stringify((result.cards && result.cards.byCountry) || null)
+  ) {
+    console.log(`No changes (${result.matches.length} matches). Nothing to write.`);
+    return;
+  }
+
+  const payload = {
+    source: result.source,
+    competition: "FWC2026",
+    fetchedAt: new Date().toISOString(),
+    matchCount: result.matches.length,
+    matches: result.matches,
+    cards: result.cards
+  };
+
   await mkdir(dirname(OUT), { recursive: true });
   await writeFile(OUT, JSON.stringify(payload, null, 2) + "\n");
-  console.log(`Wrote ${matches.length} matches to data/live.json`);
+  console.log(
+    `Wrote ${result.matches.length} matches from ${result.source}` +
+      (result.cards ? ` (cards for ${Object.keys(result.cards.byMatch).length} matches)` : "")
+  );
 }
 
-main().catch(function (err) {
+main().catch((err) => {
   console.error("Unexpected error:", err);
   process.exitCode = 0; // never break the cron on a bad run
 });

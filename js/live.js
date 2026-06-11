@@ -72,6 +72,26 @@ var Live = (function () {
     return true;
   }
 
+  /* Overlay card counts from the live feed onto the seed. Resets seed
+     yellows/reds ONLY when the feed provides card data — otherwise the
+     manual numbers in data.js stay authoritative. */
+  function applyCards(byCountry) {
+    if (!byCountry || !Object.keys(byCountry).length) return false;
+
+    Object.keys(GROUPS).forEach(function (letter) {
+      GROUPS[letter].countries.forEach(function (c) { c.yellows = 0; c.reds = 0; });
+    });
+
+    Object.keys(byCountry).forEach(function (name) {
+      var c = resolveCountry(name);
+      if (!c) return;
+      c.yellows += byCountry[name].y || 0;
+      c.reds += byCountry[name].r || 0;
+    });
+
+    return true;
+  }
+
   /* Match an API match to a generated fixture by group + the unordered pair
      of teams, then copy status/score/time onto the fixture in ITS orientation. */
   function attachToFixtures(fixtures, matches) {
@@ -141,6 +161,7 @@ var Live = (function () {
   return {
     load: load,
     applyMatches: applyMatches,
+    applyCards: applyCards,
     attachToFixtures: attachToFixtures,
     resolveCountry: resolveCountry,
     isCounted: isCounted,

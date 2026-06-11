@@ -9,6 +9,12 @@
   <meta property="og:title" content="WC26 Fantasy Draft Hub · The League" />
   <meta property="og:description" content="Live draft order, schedule, scores & highlights for our 2026 World Cup fantasy league." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ysawiris.github.io/wc26-draft-tracker/" />
+  <meta property="og:image" content="https://ysawiris.github.io/wc26-draft-tracker/assets/og-banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://ysawiris.github.io/wc26-draft-tracker/assets/og-banner.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -104,6 +110,16 @@
       <div class="rules-card live-explain" id="live-explain"></div>
     </section>
   </main>
+
+  <!-- Mobile app-style bottom nav (mirrors the top tabs; hidden on desktop) -->
+  <nav class="bottomnav" role="tablist" aria-label="Sections">
+    <button class="tab is-active" data-tab="board" role="tab"><span class="bn-ico">🏆</span><span class="bn-label">Board</span></button>
+    <button class="tab" data-tab="schedule" role="tab"><span class="bn-ico">📅</span><span class="bn-label">Matches</span></button>
+    <button class="tab" data-tab="groups" role="tab"><span class="bn-ico">🌍</span><span class="bn-label">Groups</span></button>
+    <button class="tab" data-tab="stats" role="tab"><span class="bn-ico">📊</span><span class="bn-label">Stats</span></button>
+    <button class="tab" data-tab="sim" role="tab"><span class="bn-ico">🔮</span><span class="bn-label">What-If</span></button>
+    <button class="tab" data-tab="rules" role="tab"><span class="bn-ico">📜</span><span class="bn-label">Rules</span></button>
+  </nav>
 
   <footer class="footer">
     <p class="footer-draw" id="draw-note"></p>
