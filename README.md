@@ -1,15 +1,19 @@
 # WC26 Fantasy Draft Hub · The League
 
-Live hub for our 2026 World Cup fantasy league — draft order, full schedule, scores, and highlights, all in one page the whole league can follow.
+Live hub for our 2026 World Cup fantasy league — draft order, full schedule, scores, stats, and a what-if sandbox, all in one page the whole league can follow.
 
 **Live site → https://ysawiris.github.io/wc26-draft-tracker/**
 
 ## What's in it
 
-- **Draft Board** — all 10 teams ranked by total goals scored in their World Cup group. Re-ranks itself automatically as goals go in. Tiebreaker is cards (yellow +1, red +2).
-- **Schedule & Scores** — every group-stage match for groups B–L, grouped by day, with live status, scores, kickoff times, and a "▶ Highlights" link on every finished match. Filter by *your group*, *today*, *upcoming*, or *results*.
+- **Draft Board** — all 10 teams ranked by total goals scored in their World Cup group. Re-ranks itself automatically as goals go in (tiebreaker: cards, yellow +1, red +2). Now with rank-movement arrows since the order last changed, games played + goal pace per team, 👑 on the leader, and a one-tap **📋 Copy draft order** button that formats the standings for the group chat (plus native share on phones).
+- **Schedule & Scores** — every group-stage match for groups B–L, grouped by day, with live status, scores, kickoff times, a "▶ Highlights" link on finished matches and "＋ Calendar" on upcoming ones. Filter by *your group*, *today*, *upcoming*, or *results*.
 - **Live strip** — a persistent "Live now / Next up" bar with a countdown to the next kickoff, and which fantasy team each match's goals count toward.
-- **Groups** — the full draw, B–L, with live per-country goal bars.
+- **Groups** — the full draw, B–L, with live per-country goal bars and card counts.
+- **Stats & Records** — an auto-written "Wire Report" (headlines generated from the live standings), the Record Book (top group, top-scoring country, dirtiest group, highest-scoring match, goals per match), each team's six-match "runway" progress, and goals by matchday.
+- **What-If Machine** — add hypothetical goals and cards to any team's group and watch the draft order re-rank live. Scenarios never touch the real board, survive tab switches, and can be copied straight to the chat. Reset anytime.
+- **Auto-refresh** — while the page is open it re-checks scores every 2 minutes (and immediately when you come back to the tab), with a freshness pill showing how current the scores are.
+- **Add to home screen** — the site ships a web-app manifest and icon, so it installs like an app on phones.
 
 ## How the draft order works
 
@@ -46,12 +50,29 @@ straight from github.com on your phone.
 ```
 index.html              # tabbed hub shell
 css/styles.css          # gold & black World Cup theme
+css/board-extras.css    # board toolbar, movement arrows, flourishes
+css/stats.css           # Stats & Records tab
+css/simulator.css       # What-If Machine tab
+css/extras.css          # freshness pill
 js/data.js              # teams, groups, draw (the seed — edit to update by hand)
 js/schedule.js          # group-stage fixtures (FIFA pattern + confirmed dates)
 js/live.js              # loads data/live.json, merges scores, highlights/calendar links
-js/app.js               # rendering + tabs + countdown
+js/app.js               # rendering + tabs + countdown + the Hub module API
+js/board-extras.js      # copy/share, rank movement, pace, crown/last-pick
+js/stats.js             # wire report, record book, runway, matchday bars
+js/simulator.js         # what-if deltas + live re-ranking
+js/refresh.js           # 2-min auto-refresh + freshness pill
+manifest.webmanifest    # PWA manifest (add-to-home-screen)
+assets/icon.svg         # app icon
 scripts/fetch-scores.mjs# the Action's fetcher (football-data.org -> data/live.json)
 .github/workflows/update-scores.yml  # 10-min cron
 ```
 
 Plain HTML/CSS/JS, no build step. Hosted on GitHub Pages.
+
+### Architecture note
+
+`js/app.js` exposes a tiny module API on `window.Hub`: feature modules register
+with `Hub.onRender(fn)` and get the full derived state (`ctx`) after every render,
+including the auto-refresh re-renders. New features = one JS file + one CSS file +
+two tags in `index.html`, no changes to the core.

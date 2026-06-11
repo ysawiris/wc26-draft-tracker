@@ -1,0 +1,171 @@
+/* ============================================================
+   Stats & Records tab (.st-*) — gold & black broadcast theme.
+   Rendered by js/stats.js into #stats-host.
+   ============================================================ */
+
+.st-wrap { display: grid; gap: 30px; }
+
+.st-head {
+  display: flex; align-items: center; gap: 9px;
+  font-family: "Cinzel", serif; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; font-size: 0.82rem; color: var(--gold-2);
+  margin-bottom: 10px;
+}
+
+.st-foot {
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px dashed rgba(212, 168, 84, 0.18);
+  font-size: 0.72rem; color: var(--text-faint);
+}
+
+/* ---------- Wire report ---------- */
+
+.st-headlines {
+  background: var(--panel); border: 1px solid var(--panel-edge);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 6px 20px;
+}
+.st-lines { list-style: none; margin: 0; padding: 0; }
+.st-line {
+  position: relative; padding: 11px 0 11px 22px;
+  border-bottom: 1px dashed rgba(212, 168, 84, 0.16);
+  font-size: 0.92rem; line-height: 1.55; color: var(--text);
+}
+.st-line:last-child { border-bottom: none; }
+.st-line::before {
+  content: "›"; position: absolute; left: 4px; top: 10px;
+  font-family: "Cinzel", serif; font-weight: 900; font-size: 1rem; line-height: 1.4;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.st-line b { color: var(--gold-1); font-style: italic; }
+
+/* ---------- Record book ---------- */
+
+.st-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.st-card {
+  background: var(--panel); border: 1px solid var(--panel-edge);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 14px 16px; min-width: 0;
+}
+.st-card-label {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--text-faint); margin-bottom: 9px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.st-card-value {
+  font-family: "Cinzel", serif; font-weight: 900; font-size: 2rem; line-height: 1;
+  background: var(--gold-grad);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.st-card-value.dim {
+  background: none;
+  -webkit-text-fill-color: var(--text-faint); color: var(--text-faint);
+}
+.st-card-detail {
+  margin-top: 9px; font-size: 0.76rem; color: var(--text-dim);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+/* ---------- Group runway ---------- */
+
+.st-runway {
+  background: var(--panel); border: 1px solid var(--panel-edge);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 8px 18px 14px;
+}
+.st-run {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto;
+  align-items: center; gap: 12px; padding: 9px 0;
+  border-bottom: 1px dashed rgba(212, 168, 84, 0.14);
+}
+.st-run:last-of-type { border-bottom: none; }
+.st-run-name {
+  font-weight: 700; font-style: italic; text-transform: uppercase; letter-spacing: 0.02em;
+  font-size: 0.84rem; min-width: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  border-left: 3px solid var(--st-ac, var(--gold-3)); padding-left: 9px;
+}
+.st-run.mine .st-run-name { color: var(--you); }
+.st-chip {
+  font-family: "Cinzel", serif; font-weight: 700; font-size: 0.66rem; letter-spacing: 0.04em;
+  color: #1a1206; background: var(--gold-grad);
+  padding: 1px 7px; border-radius: 5px; white-space: nowrap;
+}
+.st-segs { display: flex; gap: 3px; }
+.st-seg {
+  width: 14px; height: 8px; border-radius: 3px;
+  background: rgba(212, 168, 84, 0.14);
+  border: 1px solid rgba(212, 168, 84, 0.28);
+}
+.st-seg.done {
+  background: var(--gold-grad); border-color: transparent;
+  box-shadow: 0 0 6px rgba(232, 196, 106, 0.35);
+}
+.st-seg.live {
+  background: linear-gradient(90deg, var(--gold-3) 0 50%, rgba(212, 168, 84, 0.14) 50% 100%);
+  border-color: rgba(255, 99, 99, 0.6);
+  animation: st-pulse 1.5s ease-in-out infinite;
+}
+@keyframes st-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+.st-run-goals {
+  font-family: "Cinzel", serif; font-weight: 900; font-size: 0.92rem; color: var(--gold-1);
+  white-space: nowrap; text-align: right; min-width: 70px;
+}
+
+/* ---------- Goals by matchday ---------- */
+
+.st-md {
+  background: var(--panel); border: 1px solid var(--panel-edge);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 12px 18px 14px;
+}
+.st-md-row {
+  display: grid; grid-template-columns: 44px minmax(0, 1fr) 40px;
+  align-items: center; gap: 12px; padding: 8px 0;
+}
+.st-md-label {
+  font-family: "Cinzel", serif; font-weight: 700; font-size: 0.78rem;
+  letter-spacing: 0.06em; color: var(--gold-2);
+}
+.st-md-track {
+  height: 12px; border-radius: 999px; overflow: hidden;
+  background: rgba(212, 168, 84, 0.1);
+  border: 1px solid rgba(212, 168, 84, 0.22);
+}
+.st-md-fill {
+  height: 100%; min-width: 4px; border-radius: 999px;
+  background: var(--gold-grad);
+  box-shadow: 0 0 8px rgba(232, 196, 106, 0.35);
+  transition: width 0.4s ease;
+}
+.st-md-count {
+  font-family: "Cinzel", serif; font-weight: 900; font-size: 0.95rem;
+  color: var(--gold-1); text-align: right;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 760px) {
+  .st-cards { grid-template-columns: repeat(2, 1fr); }
+  .st-card-value { font-size: 1.7rem; }
+}
+
+@media (max-width: 560px) {
+  .st-headlines { padding: 4px 16px; }
+  .st-line { font-size: 0.88rem; }
+  .st-runway, .st-md { padding-left: 14px; padding-right: 14px; }
+  /* Runway rows wrap to two lines: name + chip, then segments + goals. */
+  .st-run { grid-template-columns: minmax(0, 1fr) auto; row-gap: 7px; }
+  .st-run-name { grid-column: 1; }
+  .st-chip { grid-column: 2; justify-self: end; }
+  .st-segs { grid-column: 1; padding-left: 12px; }
+  .st-run-goals { grid-column: 2; min-width: 0; }
+}
+
+@media (max-width: 420px) {
+  .st-cards { grid-template-columns: 1fr; }
+}

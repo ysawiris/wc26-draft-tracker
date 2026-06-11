@@ -1,5 +1,7 @@
 /* Orchestrates the WC26 league hub: loads live data, merges it over the
-   seed, and renders the board, live strip, schedule, groups and rules. */
+   seed, and renders the board, live strip, schedule, groups and rules.
+   Exposes window.Hub so feature modules (stats, simulator, board extras,
+   auto-refresh) can read derived state and re-render after every update. */
 
 (function () {
   "use strict";
@@ -96,7 +98,7 @@
 
   /* ---------------- draft board ---------------- */
 
-  function renderBoard(standings, started) {
+  function renderBoard(standings, started, animate) {
     var list = document.getElementById("board-list");
     list.textContent = "";
     document.getElementById("board-hint").textContent = started
@@ -106,7 +108,9 @@
     standings.forEach(function (row, i) {
       var t = row.team;
       var li = el("li", "row" + (started && row.rank === 1 ? " is-first" : "") + (t.isMine ? " is-mine" : ""));
-      li.style.animationDelay = (i * 40) + "ms";
+      li.dataset.abbr = t.abbr;
+      if (animate) li.style.animationDelay = (i * 40) + "ms";
+      else li.style.animation = "none";
       if (t.accent) li.style.setProperty("--row-accent", t.accent);
 
       var rankInner = started ? row.rank + "<small>" + ordinal(row.rank) + "</small>" : "&ndash;";
@@ -336,15 +340,19 @@
 
   /* ---------------- tabs ---------------- */
 
+  function tabNames() {
+    return Array.prototype.map.call(document.querySelectorAll("#tabs .tab"), function (b) { return b.dataset.tab; });
+  }
+
   function setTab(name) {
-    var tabs = document.querySelectorAll(".tab");
-    tabs.forEach(function (b) {
+    document.querySelectorAll("#tabs .tab").forEach(function (b) {
       var on = b.dataset.tab === name;
       b.classList.toggle("is-active", on);
       if (on && b.scrollIntoView) b.scrollIntoView({ inline: "center", block: "nearest" });
     });
-    ["board", "schedule", "groups", "rules"].forEach(function (n) {
+    tabNames().forEach(function (n) {
       var panel = document.getElementById("tab-" + n);
+      if (!panel) return;
       var on = n === name;
       panel.hidden = !on;
       panel.classList.toggle("is-active", on);
@@ -360,10 +368,10 @@
     });
     document.querySelector(".brand").addEventListener("click", function (e) { e.preventDefault(); setTab("board"); });
     var hash = (location.hash || "").replace("#", "");
-    if (["board", "schedule", "groups", "rules"].indexOf(hash) >= 0) setTab(hash);
+    if (tabNames().indexOf(hash) >= 0) setTab(hash);
   }
 
-  function wireFilters(fixtures) {
+  function wireFilters() {
     document.getElementById("schedule-filters").addEventListener("click", function (e) {
       var chip = e.target.closest(".chip");
       if (!chip) return;
@@ -371,31 +379,85 @@
       document.querySelectorAll("#schedule-filters .chip").forEach(function (c) {
         c.classList.toggle("is-active", c === chip);
       });
-      renderSchedule(fixtures);
+      renderSchedule(currentFixtures);
     });
+    // Label the "my group" chip from data instead of hardcoding the letter.
+    var mine = TEAMS.find(function (t) { return t.isMine; });
+    var mineChip = document.querySelector('#schedule-filters .chip[data-filter="mine"]');
+    if (mine && mineChip) mineChip.textContent = "⭐ My group (" + mine.group + ")";
   }
 
-  /* ---------------- boot ---------------- */
+  /* ---------------- Hub (feature-module API) ---------------- */
 
-  function render(liveData) {
+  var currentFixtures = [];
+  var lastCtx = null;
+  var firstRender = true;
+  var renderCallbacks = [];
+
+  function renderAll(liveData) {
     var matches = (liveData && liveData.matches) || [];
     Live.applyMatches(matches);
 
     var fixtures = buildFixtures();
     Live.attachToFixtures(fixtures, matches);
+    currentFixtures = fixtures;
 
     var started = seasonStarted(fixtures);
-    renderBoard(buildStandings(), started);
+    var standings = buildStandings();
+
+    renderBoard(standings, started, firstRender);
     renderLive(fixtures);
     renderSchedule(fixtures);
     renderGroups();
     renderMeta(started, fixtures, liveData);
-    wireTabs();
-    wireFilters(fixtures);
+    firstRender = false;
+
+    lastCtx = {
+      league: LEAGUE,
+      teams: TEAMS,
+      groups: GROUPS,
+      fixtures: fixtures,
+      standings: standings,
+      started: started,
+      liveData: liveData || null,
+      helpers: {
+        esc: esc, el: el, ordinal: ordinal, crestHtml: crestHtml,
+        fxDate: fxDate, dayKey: dayKey, fmtDay: fmtDay, fmtTime: fmtTime,
+        statusInfo: statusInfo, groupGoals: groupGoals, groupCardPoints: groupCardPoints,
+        groupCards: groupCards, ownerByGroup: ownerByGroup, buildStandings: buildStandings
+      }
+    };
+
+    renderCallbacks.forEach(function (fn) {
+      try { fn(lastCtx); } catch (err) { console.error("Hub module render failed:", err); }
+    });
+    return lastCtx;
   }
 
+  window.Hub = {
+    /* Latest derived state (null before first render). */
+    ctx: function () { return lastCtx; },
+    /* Register fn(ctx) to run after every full render. If a render already
+       happened, fn runs immediately with the latest ctx. */
+    onRender: function (fn) {
+      renderCallbacks.push(fn);
+      if (lastCtx) {
+        try { fn(lastCtx); } catch (err) { console.error("Hub module render failed:", err); }
+      }
+    },
+    /* Re-fetch data/live.json and re-render everything. Resolves with ctx. */
+    refresh: function () {
+      return Live.load().then(renderAll).catch(function () { return renderAll(null); });
+    },
+    setTab: setTab
+  };
+
+  /* ---------------- boot ---------------- */
+
   try {
-    Live.load().then(render).catch(function () { render(null); });
+    wireTabs();
+    wireFilters();
+    Live.load().then(renderAll).catch(function () { renderAll(null); });
   } catch (err) {
     document.getElementById("board-list").innerHTML =
       '<li class="row"><div></div><div></div><div class="team">' +

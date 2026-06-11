@@ -1,0 +1,9 @@
+/* ============================================================
+   Extras — freshness pill (js/refresh.js)
+   ============================================================ */
+
+.hero-pill.xr-fresh {
+  color: var(--gold-2);
+  border-color: var(--panel-edge-strong);
+  font-variant-numeric: tabular-nums;
+}

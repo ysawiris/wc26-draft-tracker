@@ -489,3 +489,20 @@ nav, main, header, footer { position: relative; z-index: 1; }
   .brand-text em, .brand-text { display: none; }
   .brand-mark { font-size: 1.5rem; }
 }
+
+/* ---------- Accessibility ---------- */
+
+:focus-visible {
+  outline: 2px solid var(--gold-2);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
