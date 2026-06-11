@@ -94,8 +94,9 @@ var Live = (function () {
   }
 
   /* Match an API match to a generated fixture by group + the unordered pair
-     of teams, then copy status/score/time onto the fixture in ITS orientation. */
-  function attachToFixtures(fixtures, matches) {
+     of teams, then copy status/score/time (and per-match card counts, when
+     cardsByMatch is given) onto the fixture in ITS orientation. */
+  function attachToFixtures(fixtures, matches, cardsByMatch) {
     if (!matches || !matches.length) return 0;
     var attached = 0;
 
@@ -121,6 +122,18 @@ var Live = (function () {
       if (hit.homeGoals != null && hit.awayGoals != null) {
         fx.homeGoals = sameOrientation ? hit.homeGoals : hit.awayGoals;
         fx.awayGoals = sameOrientation ? hit.awayGoals : hit.homeGoals;
+      }
+
+      var perMatch = cardsByMatch && hit.id != null && cardsByMatch[hit.id];
+      if (perMatch) {
+        var home = { y: 0, r: 0 };
+        var away = { y: 0, r: 0 };
+        Object.keys(perMatch).forEach(function (name) {
+          var n = canon(name);
+          if (n === fxHome) home = perMatch[name];
+          else if (n === fxAway) away = perMatch[name];
+        });
+        fx.cards = { home: home, away: away };
       }
     });
 

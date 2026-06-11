@@ -73,7 +73,8 @@ function buildExhibitionFixtures() {
           homeGoals: null,
           awayGoals: null,
           venue: null,
-          minute: null
+          minute: null,
+          cards: null
         });
         idx += 1;
       });
@@ -111,7 +112,8 @@ function buildFixtures() {
           homeGoals: null,
           awayGoals: null,
           venue: null,
-          minute: null
+          minute: null,
+          cards: null
         });
         idx += 1;
       });

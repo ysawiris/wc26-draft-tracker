@@ -252,6 +252,15 @@
     });
   }
 
+  /* "🟨2 🟥1" chip for one side of a fixture; empty when no cards. */
+  function cardChips(c) {
+    if (!c || (!c.y && !c.r)) return "";
+    var bits = [];
+    if (c.y) bits.push("🟨" + c.y);
+    if (c.r) bits.push("🟥" + c.r);
+    return '<span class="m-cards">' + bits.join(" ") + "</span>";
+  }
+
   function matchCard(fx, owners, now) {
     var st = statusInfo(fx);
     var owner = owners[fx.group];
@@ -283,9 +292,13 @@
     card.innerHTML =
       '<div class="m-meta"><span class="m-grp">Group ' + fx.group + " · MD" + fx.matchday + "</span>" + pill + "</div>" +
       '<div class="m-body">' +
-        '<div class="m-team home"><span class="m-flag">' + fx.home.flag + '</span><span class="m-name">' + esc(fx.home.name) + "</span></div>" +
+        '<div class="m-team home"><span class="m-flag">' + fx.home.flag + '</span>' +
+          '<span class="m-stack"><span class="m-name">' + esc(fx.home.name) + "</span>" +
+          (fx.cards ? cardChips(fx.cards.home) : "") + "</span></div>" +
         center +
-        '<div class="m-team away"><span class="m-flag">' + fx.away.flag + '</span><span class="m-name">' + esc(fx.away.name) + "</span></div>" +
+        '<div class="m-team away"><span class="m-flag">' + fx.away.flag + '</span>' +
+          '<span class="m-stack"><span class="m-name">' + esc(fx.away.name) + "</span>" +
+          (fx.cards ? cardChips(fx.cards.away) : "") + "</span></div>" +
       "</div>" +
       '<div class="m-foot">' + ownerChip + actions + "</div>";
     return card;
@@ -412,7 +425,8 @@
     // (Group A) only ever appear on the schedule and the live strip.
     var fixtures = buildFixtures();
     var allFixtures = fixtures.concat(buildExhibitionFixtures());
-    Live.attachToFixtures(allFixtures, matches);
+    Live.attachToFixtures(allFixtures, matches,
+      liveData && liveData.cards && liveData.cards.byMatch);
     currentFixtures = allFixtures;
 
     var started = seasonStarted(fixtures);

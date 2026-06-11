@@ -38,3 +38,20 @@
 /* Exhibition (Group A) matches — on the schedule, but not in the league */
 .match.exh { opacity: 0.78; }
 .match.exh:hover { opacity: 1; }
+
+/* Per-team card counts on schedule match cards — chips sit under the
+   name inside a flag + (name / cards) stack, at every screen width */
+.m-stack {
+  min-width: 0;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
+}
+.m-team.away .m-stack { align-items: flex-end; }
+.m-stack .m-name { max-width: 100%; }
+.m-cards {
+  font-size: 0.66rem; font-weight: 700; letter-spacing: 0.02em;
+  color: var(--text-dim);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--panel-edge);
+  border-radius: 6px; padding: 1px 6px;
+  white-space: nowrap;
+}
