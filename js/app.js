@@ -384,10 +384,7 @@
       });
       renderSchedule(currentFixtures);
     });
-    // Label the "my group" chip from data instead of hardcoding the letter.
-    var mine = TEAMS.find(function (t) { return t.isMine; });
-    var mineChip = document.querySelector('#schedule-filters .chip[data-filter="mine"]');
-    if (mine && mineChip) mineChip.textContent = "⭐ My group (" + mine.group + ")";
+    // The "my group" chip's label and visibility are owned by js/my-team.js.
   }
 
   /* ---------------- Hub (feature-module API) ---------------- */

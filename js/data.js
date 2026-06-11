@@ -20,12 +20,13 @@ var LEAGUE = {
 
 /* The 10 fantasy teams, in league order (ESPN).
    `group` is the random draw result. `accent` colors the crest.
-   `photo` (optional) overrides the monogram crest. `isMine` flags your team. */
+   `photo` (optional) overrides the monogram crest. `isMine` is set at
+   runtime by js/my-team.js — each viewer picks their own team. */
 var TEAMS = [
   { abbr: "CMC",  name: "Commissioner's Infirmary 2.0", division: "East", managers: ["Christopher Malek"],            group: "G", accent: "#c0392b" },
   { abbr: "CDL",  name: "Nicolodeons!",                  division: "East", managers: ["John Ghali"],                  group: "E", accent: "#2e7d32" },
   { abbr: "BBWC", name: "Big Blue Wrecking Crew",        division: "East", managers: ["George Hanna", "Hanni Fakhoury"], group: "H", accent: "#1f4e9c" },
-  { abbr: "TACO", name: "Taco Corp",                     division: "West", managers: ["Shaan Hurley", "Youssef Sawiris"], group: "F", accent: "#e07b16", photo: "assets/taco-corp.jpg", isMine: true },
+  { abbr: "TACO", name: "Taco Corp",                     division: "West", managers: ["Shaan Hurley", "Youssef Sawiris"], group: "F", accent: "#e07b16", photo: "assets/taco-corp.jpg" },
   { abbr: "GRS",  name: "Gallactic Rebel Scum",          division: "West", managers: ["Joe Hanna"],                   group: "D", accent: "#5b3fa0" },
   { abbr: "FF",   name: "Fiko Fins",                     division: "West", managers: ["Rafik Zarifa"],                group: "L", accent: "#0e8aa0" },
   { abbr: "RBLD", name: "Another Rebuilding Year",       division: "East", managers: ["Zack Girgis", "Andrew Ishak"], group: "J", accent: "#b07d2b" },

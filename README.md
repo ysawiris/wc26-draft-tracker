@@ -14,6 +14,7 @@ Live hub for our 2026 World Cup fantasy league — draft order, full schedule, s
 - **What-If Machine** — add hypothetical goals and cards to any team's group and watch the draft order re-rank live. Scenarios never touch the real board, survive tab switches, and can be copied straight to the chat. Reset anytime.
 - **Auto-refresh** — while the page is open it re-checks scores every 2 minutes (and immediately when you come back to the tab), with a freshness pill showing how current the scores are.
 - **Add to home screen** — the site ships a web-app manifest and icon, so it installs like an app on phones.
+- **Pick your team** — first visit asks "Whose board is this?" Each league member picks their own team (saved on their device) and the hub highlights *their* group, matches, and draft position. Change anytime via the 🏷 pill. Share links pre-assign a team: `https://ysawiris.github.io/wc26-draft-tracker/?team=GRS` (use the team's abbreviation from `js/data.js`).
 
 ## How the draft order works
 
@@ -51,6 +52,7 @@ css/stats.css           # Stats & Records tab
 css/simulator.css       # What-If Machine tab
 css/extras.css          # freshness pill
 js/data.js              # teams, groups, draw (the seed — edit to update by hand)
+js/my-team.js           # per-viewer team picker (?team= links, localStorage)
 js/schedule.js          # group-stage fixtures (FIFA pattern + confirmed dates)
 js/live.js              # loads data/live.json, merges scores, highlights/calendar links
 js/app.js               # rendering + tabs + countdown + the Hub module API
