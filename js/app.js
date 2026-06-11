@@ -73,7 +73,11 @@
 
   function statusInfo(fx) {
     var s = fx.status;
-    if (Live.INPLAY[s]) return { key: "live", label: s === "PAUSED" || s === "HALFTIME" ? "HALF-TIME" : "LIVE", live: true };
+    if (Live.INPLAY[s]) {
+      var label = s === "PAUSED" || s === "HALFTIME" ? "HALF-TIME"
+        : "LIVE" + (fx.minute ? " · " + fx.minute : "");
+      return { key: "live", label: label, live: true };
+    }
     if (Live.FINISHED[s]) return { key: "ft", label: "Full-time", done: true };
     if (s === "POSTPONED" || s === "SUSPENDED" || s === "CANCELLED") return { key: "off", label: s.charAt(0) + s.slice(1).toLowerCase() };
     return { key: "up", label: "Upcoming", upcoming: true };
@@ -201,7 +205,9 @@
     return '<div class="mini' + (isLive ? " live" : "") + '">' +
       '<div class="mini-grp">Grp ' + fx.group + " " + ownerTag + "</div>" +
       '<div class="mini-row"><span>' + fx.home.flag + " " + esc(fx.home.name) + "</span></div>" +
-      '<div class="mini-score">' + scoreOrTime(fx) + (isLive ? ' <span class="mini-live">●</span>' : "") + "</div>" +
+      '<div class="mini-score">' + scoreOrTime(fx) +
+        (isLive ? ' <span class="mini-live">●</span>' +
+          (fx.minute ? '<span class="mini-min">' + esc(fx.minute) + "</span>" : "") : "") + "</div>" +
       '<div class="mini-row"><span>' + fx.away.flag + " " + esc(fx.away.name) + "</span></div>" +
       "</div>";
   }

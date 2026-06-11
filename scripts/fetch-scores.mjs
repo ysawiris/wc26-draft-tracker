@@ -94,6 +94,7 @@ async function fetchFifa(prevCardsByMatch) {
     const counted = status === "FINISHED" || status === "IN_PLAY" || status === "PAUSED";
 
     matches.push({
+      id: m.IdMatch,
       group,
       matchday: null, // the site derives matchday from its fixture pattern
       utcDate: m.Date || null,
@@ -102,7 +103,8 @@ async function fetchFifa(prevCardsByMatch) {
       away,
       homeGoals: m.HomeTeamScore == null ? null : m.HomeTeamScore,
       awayGoals: m.AwayTeamScore == null ? null : m.AwayTeamScore,
-      venue: loc(m.Stadium && m.Stadium.Name)
+      venue: loc(m.Stadium && m.Stadium.Name),
+      minute: m.MatchTime || null
     });
 
     // Cards only exist once a match is underway. One timeline call per
@@ -160,6 +162,7 @@ async function fetchFootballData() {
       if (!group || group === "A") return null;
       const ft = (m.score && m.score.fullTime) || {};
       return {
+        id: String(m.id),
         group,
         matchday: m.matchday || null,
         utcDate: m.utcDate || null,
@@ -168,7 +171,8 @@ async function fetchFootballData() {
         away: m.awayTeam ? (m.awayTeam.name || m.awayTeam.shortName || "TBD") : "TBD",
         homeGoals: ft.home == null ? null : ft.home,
         awayGoals: ft.away == null ? null : ft.away,
-        venue: m.venue || null
+        venue: m.venue || null,
+        minute: null
       };
     })
     .filter(Boolean);

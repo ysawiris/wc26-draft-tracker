@@ -25,11 +25,20 @@ Live hub for our 2026 World Cup fantasy league — draft order, full schedule, s
 
 ## Live scores (fully automatic — no setup)
 
-A GitHub Action (`.github/workflows/update-scores.yml`) pulls **FIFA's public
-live feed** every ~10 minutes and commits `data/live.json`: kickoff times, live
-scores, **and card counts** (the tiebreaker) for every group B–L match. The site
-reads that file and updates the board, schedule, and live strip on its own —
-no tokens, no accounts, nobody has to touch anything.
+Two layers, both from **FIFA's public API**, no tokens:
+
+1. **Baseline (cron)** — a GitHub Action (`.github/workflows/update-scores.yml`)
+   pulls FIFA every ~10 minutes and commits `data/live.json`: kickoff times,
+   scores, **and card counts** (the tiebreaker) for every group B–L match.
+   Works even when nobody has the site open.
+2. **Direct (browser)** — during match windows each open browser also polls
+   FIFA directly (`js/live-direct.js`): every 60s while a match is in play,
+   every 2 min around kickoff, idle otherwise. Goals, the match minute
+   ("LIVE · 63'"), live card counts, and a ⚽ goal-ticker with scorers land
+   within about a minute — no waiting on cron → commit → CDN.
+
+`live.json` fetches are cache-busted (GitHub Pages serves it with
+`max-age=600`, which would otherwise feed clients a CDN copy up to 10 min stale).
 
 If FIFA's API ever goes down, the script falls back to
 [football-data.org](https://www.football-data.org) when a `FOOTBALL_DATA_TOKEN`

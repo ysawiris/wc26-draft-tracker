@@ -60,7 +60,8 @@ function buildFixtures() {
           status: "SCHEDULED",
           homeGoals: null,
           awayGoals: null,
-          venue: null
+          venue: null,
+          minute: null
         });
         idx += 1;
       });

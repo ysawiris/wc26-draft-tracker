@@ -114,6 +114,7 @@ var Live = (function () {
       fx.status = hit.status || fx.status;
       fx.utcDate = hit.utcDate || fx.utcDate;
       fx.venue = hit.venue || fx.venue;
+      fx.minute = hit.minute || fx.minute;
 
       var sameOrientation = canon(hit.home) === fxHome;
       if (hit.homeGoals != null && hit.awayGoals != null) {
@@ -132,9 +133,21 @@ var Live = (function () {
   }
 
   function load() {
-    return fetch("data/live.json", { cache: "no-store" })
+    // Cache-bust: GitHub Pages serves this with max-age=600, so a bare
+    // refetch can read a CDN copy up to 10 minutes stale.
+    return fetch("data/live.json?v=" + Date.now(), { cache: "no-store" })
       .then(function (r) { return r.ok ? r.json() : null; })
-      .catch(function () { return null; });
+      .catch(function () { return null; })
+      .then(function (data) {
+        // During match windows the browser also polls FIFA directly;
+        // that layer overlays fresher scores/cards when it has them.
+        try {
+          return window.LiveDirect ? LiveDirect.overlay(data) : data;
+        } catch (err) {
+          console.error("LiveDirect overlay failed:", err);
+          return data;
+        }
+      });
   }
 
   /* YouTube highlights search for a fixture — always works, no API key. */
