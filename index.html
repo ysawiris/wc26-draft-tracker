@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The League · WC26 Draft Order</title>
-  <meta name="description" content="2026 FIFA World Cup fantasy draft order tracker — most goals in your group wins the first pick." />
+  <title>The League · WC26 Draft Hub</title>
+  <meta name="description" content="2026 FIFA World Cup fantasy league hub — live draft order, full schedule, scores, and highlights. Most goals in your group wins the No.1 pick." />
   <meta name="theme-color" content="#0d0905" />
+  <meta property="og:title" content="WC26 Fantasy Draft Hub · The League" />
+  <meta property="og:description" content="Live draft order, schedule, scores & highlights for our 2026 World Cup fantasy league." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -17,57 +20,78 @@
   <div class="bg-rays" aria-hidden="true"></div>
 
   <nav class="topnav">
-    <a class="brand" href="#top">
+    <a class="brand" href="#" data-tab="board">
       <span class="brand-mark">🏆</span>
-      <span class="brand-text">WC26 · <em>Draft Order</em></span>
+      <span class="brand-text">WC26 · <em>The League</em></span>
     </a>
-    <div class="navlinks">
-      <a href="#board">Draft Board</a>
-      <a href="#groups">Groups</a>
-      <a href="#rules">Rules</a>
+    <div class="tabs" id="tabs" role="tablist">
+      <button class="tab is-active" data-tab="board" role="tab">Draft&nbsp;Board</button>
+      <button class="tab" data-tab="schedule" role="tab">Schedule</button>
+      <button class="tab" data-tab="groups" role="tab">Groups</button>
+      <button class="tab" data-tab="rules" role="tab">Rules</button>
     </div>
   </nav>
 
-  <header class="hero" id="top">
+  <header class="hero">
     <p class="hero-kicker">2026 FIFA World Cup · Fantasy League</p>
-    <h1 class="hero-title">Draft Order Tracker</h1>
-    <div class="hero-trophy" aria-hidden="true">🏆</div>
+    <h1 class="hero-title">Draft Hub</h1>
     <p class="hero-sub">Most goals scored in <em>your</em> World Cup group wins the No.&nbsp;1 pick.</p>
     <div class="hero-meta" id="hero-meta"></div>
   </header>
 
   <main>
-    <div class="banner" id="banner" hidden></div>
+    <!-- LIVE / NEXT UP strip (always visible above the tabs' content) -->
+    <section class="livewrap" id="livewrap" aria-live="polite"></section>
 
-    <section class="section" id="board">
+    <!-- DRAFT BOARD -->
+    <section class="tab-panel is-active" id="tab-board">
       <h2 class="section-title"><span>The Draft Board</span></h2>
+      <p class="panel-hint" id="board-hint"></p>
       <ol class="board" id="board-list"></ol>
     </section>
 
-    <section class="section" id="groups">
+    <!-- SCHEDULE -->
+    <section class="tab-panel" id="tab-schedule" hidden>
+      <h2 class="section-title"><span>Schedule &amp; Scores</span></h2>
+      <div class="filters" id="schedule-filters">
+        <button class="chip is-active" data-filter="all">All groups</button>
+        <button class="chip" data-filter="mine">⭐ My group (F)</button>
+        <button class="chip" data-filter="today">Today</button>
+        <button class="chip" data-filter="upcoming">Upcoming</button>
+        <button class="chip" data-filter="results">Results</button>
+      </div>
+      <div class="schedule" id="schedule-list"></div>
+    </section>
+
+    <!-- GROUPS -->
+    <section class="tab-panel" id="tab-groups" hidden>
       <h2 class="section-title"><span>The Draw · Groups B–L</span></h2>
       <div class="groups-grid" id="groups-grid"></div>
     </section>
 
-    <section class="section rules" id="rules">
+    <!-- RULES -->
+    <section class="tab-panel" id="tab-rules" hidden>
       <h2 class="section-title"><span>How It Works</span></h2>
       <div class="rules-card">
         <ol class="rules-steps">
-          <li><span class="step-n">1</span><div><b>The draw.</b> Each team was randomly assigned a World Cup group, B–L. Group A is out (they already started). One group goes unclaimed.</div></li>
+          <li><span class="step-n">1</span><div><b>The draw.</b> Each team was randomly assigned a World Cup group, B–L (Group A is out — they already started). One group goes unclaimed.</div></li>
           <li><span class="step-n">2</span><div><b>Goals decide it.</b> Add up every goal scored by the four nations in your group across the whole group stage. Most goals takes the No.&nbsp;1 pick.</div></li>
           <li><span class="step-n">3</span><div><b>Tiebreaker: cards.</b> Level on goals? More cards in your group wins the tie — yellow&nbsp;=&nbsp;+1, red&nbsp;=&nbsp;+2.</div></li>
           <li><span class="step-n">4</span><div><b>Final order.</b> The ranking sets the official draft order, picks 1 through 10.</div></li>
         </ol>
       </div>
+      <div class="rules-card live-explain" id="live-explain"></div>
     </section>
   </main>
 
   <footer class="footer">
     <p class="footer-draw" id="draw-note"></p>
-    <p class="footer-fine">Goals &amp; cards update after each matchday. Disputes go to the commissioner.</p>
+    <p class="footer-fine">Scores refresh automatically during matches. Disputes go to the commissioner.</p>
   </footer>
 
   <script src="js/data.js"></script>
+  <script src="js/schedule.js"></script>
+  <script src="js/live.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
