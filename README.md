@@ -1,51 +1,57 @@
-# WC26 Fantasy Draft Order Tracker
+# WC26 Fantasy Draft Hub · The League
 
-Live tracker for our fantasy league's draft order, decided by the 2026 FIFA World Cup group stage.
+Live hub for our 2026 World Cup fantasy league — draft order, full schedule, scores, and highlights, all in one page the whole league can follow.
 
 **Live site → https://ysawiris.github.io/wc26-draft-tracker/**
 
+## What's in it
+
+- **Draft Board** — all 10 teams ranked by total goals scored in their World Cup group. Re-ranks itself automatically as goals go in. Tiebreaker is cards (yellow +1, red +2).
+- **Schedule & Scores** — every group-stage match for groups B–L, grouped by day, with live status, scores, kickoff times, and a "▶ Highlights" link on every finished match. Filter by *your group*, *today*, *upcoming*, or *results*.
+- **Live strip** — a persistent "Live now / Next up" bar with a countdown to the next kickoff, and which fantasy team each match's goals count toward.
+- **Groups** — the full draw, B–L, with live per-country goal bars.
+
 ## How the draft order works
 
-1. Each team was randomly assigned a World Cup group, **B–L** (Group A is out — they already started). 10 teams, 11 groups, so one group goes unclaimed.
-2. **Most total goals scored in your group** across the whole group stage decides the order — most goals gets the No. 1 pick.
-3. **Tiebreaker:** more cards in your group wins the tie. Yellow = +1, red = +2.
-4. Final ranking = official draft order, picks 1–10.
+1. Each team was randomly assigned a World Cup group, B–L (Group A is out). One group goes unclaimed.
+2. **Most total goals scored in your group** across the group stage takes the No. 1 pick.
+3. **Tiebreaker:** more cards in your group — yellow = +1, red = +2.
+4. Final ranking = official draft order, picks 1–10. (Draw assigned by Meta AI in the league chat, June 11 2026. Taco Corp = Group F.)
 
-## The draw
+## Live scores (auto-updates)
 
-Assigned by Meta AI in the league chat (June 11, 2026).
+A GitHub Action (`.github/workflows/update-scores.yml`) fetches scores from
+[football-data.org](https://www.football-data.org) every ~10 minutes during the
+tournament and commits `data/live.json`. The site reads that file and updates the
+board, schedule, and live strip on its own — nobody has to touch anything.
 
-| Group | Team | Manager(s) | Division |
-|-------|------|-----------|----------|
-| **B** | Purdy Pitches | Alex Mikhail, Michael Shanoudi | West |
-| **C** | Ms. Jackson ouuuuu | Mario Rofael | East |
-| **D** | Gallactic Rebel Scum | Joe Hanna | West |
-| **E** | Nicolodeons! | John Ghali | East |
-| **F** | Taco Corp | Shaan Hurley, Youssef Sawiris | West |
-| **G** | Commissioner's Infirmary 2.0 | Christopher Malek | East |
-| **H** | Big Blue Wrecking Crew | George Hanna, Hanni Fakhoury | East |
-| **J** | Fiko Fins | Rafik Zarifa | West |
-| **K** | The Metcalf Matrix | David Masoud | West |
-| **L** | Another Rebuilding Year | Zack Girgis, Andrew Ishak | East |
+**One-time setup to switch it on:**
 
-Group **I** (France, Senegal, Iraq, Norway) is unclaimed.
+1. Register for a free token at <https://www.football-data.org/client/register> (instant, free forever).
+2. In this repo: **Settings → Secrets and variables → Actions → New repository secret**.
+   Name it `FOOTBALL_DATA_TOKEN`, paste the token, save.
+3. That's it. The next cron run (or **Actions → Update live scores → Run workflow**) goes live.
 
-## Updating scores after a matchday
+Until the token is added, the site runs in **schedule mode** — full fixtures and
+kickoff dates show, and the board sits at 0–0 until goals land.
 
-Everything lives in [`js/data.js`](js/data.js). For each country, bump:
+### Manual fallback
 
-- `goals` — total goals that country has scored in the group stage
-- `yellows` / `reds` — total cards that country has received
+No token? You can still update goals by hand: edit `js/data.js` (each country's
+`goals` / `yellows` / `reds`), commit, push — Pages redeploys in ~1 minute. Editable
+straight from github.com on your phone.
 
-Then update `LEAGUE.lastUpdated`, commit, and push. GitHub Pages redeploys automatically in ~1 minute. The board re-ranks itself and the "group stage hasn't started" banner disappears as soon as any goal is entered.
+## Project layout
 
-You can also edit `js/data.js` straight from github.com (pencil icon) — no laptop needed.
-
-## Team photos
-
-Drop a photo in `assets/` and point a team's `photo` field at it in `js/data.js`.
-Taco Corp already expects `assets/taco-corp.jpg` — add that file and it shows as the crest (falls back to a monogram until then).
-
-## Stack
+```
+index.html              # tabbed hub shell
+css/styles.css          # gold & black World Cup theme
+js/data.js              # teams, groups, draw (the seed — edit to update by hand)
+js/schedule.js          # group-stage fixtures (FIFA pattern + confirmed dates)
+js/live.js              # loads data/live.json, merges scores, highlights/calendar links
+js/app.js               # rendering + tabs + countdown
+scripts/fetch-scores.mjs# the Action's fetcher (football-data.org -> data/live.json)
+.github/workflows/update-scores.yml  # 10-min cron
+```
 
 Plain HTML/CSS/JS, no build step. Hosted on GitHub Pages.
