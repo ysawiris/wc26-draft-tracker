@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-12T08:40:53.942Z",
+  "fetchedAt": "2026-06-12T18:15:13.044Z",
   "matchCount": 72,
   "matches": [
     {
@@ -41,7 +41,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Toronto Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021458",
