@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-12T03:47:00.303Z",
+  "fetchedAt": "2026-06-12T03:49:14.893Z",
   "matchCount": 72,
   "matches": [
     {
@@ -28,7 +28,7 @@
       "homeGoals": 2,
       "awayGoals": 1,
       "venue": "Guadalajara Stadium",
-      "minute": "88'"
+      "minute": "90'"
     },
     {
       "id": "400021449",
@@ -943,19 +943,40 @@
   ],
   "cards": {
     "byMatch": {
-      "400021441": {},
+      "400021441": {
+        "Korea Republic": {
+          "y": 0,
+          "r": 0,
+          "f": 5
+        },
+        "Czechia": {
+          "y": 0,
+          "r": 0,
+          "f": 4
+        }
+      },
       "400021443": {
         "South Africa": {
           "y": 2,
-          "r": 2
+          "r": 2,
+          "f": 4
         },
         "Mexico": {
           "y": 1,
-          "r": 1
+          "r": 1,
+          "f": 5
         }
       }
     },
     "byCountry": {
+      "Korea Republic": {
+        "y": 0,
+        "r": 0
+      },
+      "Czechia": {
+        "y": 0,
+        "r": 0
+      },
       "South Africa": {
         "y": 2,
         "r": 2
