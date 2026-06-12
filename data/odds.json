@@ -1,21 +1,9 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-12T03:03:50.459Z",
-  "matchCount": 71,
+  "fetchedAt": "2026-06-12T04:31:35.817Z",
+  "matchCount": 70,
   "lines": [
-    {
-      "espnId": "760414",
-      "date": "2026-06-11",
-      "home": "South Korea",
-      "away": "Czech Republic",
-      "homeRaw": "South Korea",
-      "awayRaw": "Czechia",
-      "line": 2.5,
-      "overUS": "+110",
-      "underUS": "-140",
-      "impliedTotal": 2.47
-    },
     {
       "espnId": "760416",
       "date": "2026-06-12",
@@ -24,9 +12,9 @@
       "homeRaw": "Canada",
       "awayRaw": "Bosnia-Herzegovina",
       "line": 2.5,
-      "overUS": "+120",
-      "underUS": "-145",
-      "impliedTotal": 2.42
+      "overUS": "+125",
+      "underUS": "-155",
+      "impliedTotal": 2.37
     },
     {
       "espnId": "760417",
@@ -229,8 +217,8 @@
       "awayRaw": "Jordan",
       "line": 2.5,
       "overUS": "-150",
-      "underUS": "+125",
-      "impliedTotal": 2.99
+      "underUS": "+120",
+      "impliedTotal": 2.97
     },
     {
       "espnId": "760437",
@@ -300,9 +288,9 @@
       "homeRaw": "Czechia",
       "awayRaw": "South Africa",
       "line": 2.5,
-      "overUS": "+115",
-      "underUS": "-145",
-      "impliedTotal": 2.44
+      "overUS": "+110",
+      "underUS": "-140",
+      "impliedTotal": 2.47
     },
     {
       "espnId": "760441",
@@ -312,9 +300,9 @@
       "homeRaw": "Mexico",
       "awayRaw": "South Korea",
       "line": 2.5,
-      "overUS": "+135",
-      "underUS": "-170",
-      "impliedTotal": 2.3
+      "overUS": "+140",
+      "underUS": "-175",
+      "impliedTotal": 2.27
     },
     {
       "espnId": "760439",
@@ -492,9 +480,9 @@
       "homeRaw": "France",
       "awayRaw": "Iraq",
       "line": 3.5,
-      "overUS": "+125",
-      "underUS": "-155",
-      "impliedTotal": 3.31
+      "overUS": "+120",
+      "underUS": "-150",
+      "impliedTotal": 3.35
     },
     {
       "espnId": "760455",
@@ -588,9 +576,9 @@
       "homeRaw": "Czechia",
       "awayRaw": "Mexico",
       "line": 2.5,
-      "overUS": "+110",
-      "underUS": "-135",
-      "impliedTotal": 2.49
+      "overUS": "+115",
+      "underUS": "-140",
+      "impliedTotal": 2.45
     },
     {
       "espnId": "760464",

@@ -12,6 +12,10 @@
    Team names are mapped to the seed names used in js/data.js /
    js/schedule.js so the client can match fixtures by canon pair.
 
+   In-play events are never recomputed (ESPN swaps in a remaining-
+   goals line at kickoff) — their pre-game entry is carried forward
+   from the previous data/odds.json instead.
+
    Never hard-fails: on any error it exits 0 leaving the previous
    data/odds.json in place.
    ============================================================ */
@@ -166,6 +170,20 @@ function impliedTotal(line, overOdds, underOdds) {
 
 /* ---------------- ESPN scoreboard ---------------- */
 
+/* Once a match kicks off, ESPN swaps its pre-game total for an IN-GAME
+   remaining-goals line (verified on live days) — recomputing impliedTotal
+   from that would poison the forecast mid-match. status.type.state is
+   "pre" / "in" / "post" on both the event and its competition; prefer
+   the competition's (the odds live there too). */
+function isInPlay(event) {
+  const comp = Array.isArray(event.competitions) && event.competitions[0];
+  const type =
+    (comp && comp.status && comp.status.type) ||
+    (event.status && event.status.type) ||
+    null;
+  return !!type && type.state === "in";
+}
+
 async function fetchJson(url) {
   const res = await fetch(url, { headers: { Accept: "application/json" } });
   if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${url}`);
@@ -225,11 +243,12 @@ function extractLine(event, dayISO, unmapped) {
   };
 }
 
-async function fetchAllLines() {
+async function fetchAllLines(prevById) {
   const byId = new Map(); // dedupe by event id across days
   const unmapped = new Set();
   let failedDays = 0;
   let skippedNoLine = 0;
+  let carriedInPlay = 0;
 
   for (let t = FIRST_DAY; t <= LAST_DAY; t += 86400000) {
     const dayISO = new Date(t).toISOString().slice(0, 10);
@@ -239,6 +258,17 @@ async function fetchAllLines() {
       const events = Array.isArray(data.events) ? data.events : [];
       for (const event of events) {
         if (event.id == null || byId.has(String(event.id))) continue;
+        if (isInPlay(event)) {
+          /* Never recompute from an in-game line: carry forward this
+             event's pre-game entry from the previous odds.json, or skip
+             the event entirely when there isn't one. */
+          const prevEntry = prevById.get(String(event.id));
+          if (prevEntry) {
+            byId.set(String(event.id), prevEntry);
+            carriedInPlay += 1;
+          }
+          continue;
+        }
         const entry = extractLine(event, dayISO, unmapped);
         if (entry) byId.set(entry.espnId, entry);
         else skippedNoLine += 1;
@@ -250,6 +280,7 @@ async function fetchAllLines() {
     if (t < LAST_DAY) await sleep(DAY_DELAY_MS);
   }
 
+  console.log(`Carried forward ${carriedInPlay} in-play line(s) from the previous odds.json.`);
   if (unmapped.size) {
     console.log(`Unmapped team names (kept as canon form): ${[...unmapped].join(", ")}`);
   }
@@ -271,7 +302,15 @@ async function main() {
     prev = JSON.parse(await readFile(OUT, "utf8"));
   } catch (_) {}
 
-  const fetched = await fetchAllLines();
+  /* espnId -> previous line, so in-play events keep their pre-game total. */
+  const prevById = new Map();
+  if (prev && Array.isArray(prev.lines)) {
+    for (const ln of prev.lines) {
+      if (ln && ln.espnId != null) prevById.set(String(ln.espnId), ln);
+    }
+  }
+
+  const fetched = await fetchAllLines(prevById);
   if (!fetched.length) {
     console.log("No odds fetched — leaving existing odds.json untouched.");
     return;

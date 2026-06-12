@@ -253,8 +253,10 @@
 
   /* Classify one fixture: its prior goal rate and how much of it is
      still unplayed (1 = untouched, 0 = finished, fraction = in play).
-     A bookmaker total, when one exists, beats the Elo estimate. */
-  function classify(fx, ctx) {
+     A bookmaker total, when one exists, beats the Elo estimate —
+     unless noMarket is set, which forces the Elo path for every
+     fixture (the simulator's heal check replays the pre-market model). */
+  function classify(fx, ctx, noMarket) {
     var fin = !!FIN[fx.status];
     var live = !fin && !!LIVE_ST[fx.status];
     if (!fin && !live && kickedOffLongAgo(fx, ctx)) fin = true; /* manual mode */
@@ -263,7 +265,7 @@
     else if (live) {
       remFrac = Math.max(0, (FULL_MIN - parseMinute(fx.minute, fx.status)) / FULL_MIN);
     }
-    var mk = marketLine(fx.home.name, fx.away.name);
+    var mk = noMarket ? null : marketLine(fx.home.name, fx.away.name);
     return {
       letter: fx.group,
       lambda: mk ? mk.impliedTotal : matchLambda(fx.home.name, fx.away.name),
@@ -277,8 +279,8 @@
   }
 
   /* Per-group pace factor + remaining goal/card-point rates. */
-  function buildModel(ctx) {
-    var entries = ctx.fixtures.map(function (fx) { return classify(fx, ctx); });
+  function buildModel(ctx, noMarket) {
+    var entries = ctx.fixtures.map(function (fx) { return classify(fx, ctx, noMarket); });
 
     /* Expected goals already played per group (full lambda for finished,
        elapsed share for in-play) — the denominator of the pace factor. */
@@ -328,12 +330,12 @@
 
   /* ---------------- monte carlo ---------------- */
 
-  function runSims(ctx) {
+  function runSims(ctx, noMarket) {
     var standings = ctx.standings;
     var n = standings.length;
     if (!n) return null;
 
-    var model = buildModel(ctx);
+    var model = buildModel(ctx, noMarket);
 
     /* Per-group projection for the Projected Group Goals section: goals
        already banked vs the model's expected remaining goals, plus how
@@ -463,19 +465,37 @@
         (a.abbr < b.abbr ? -1 : a.abbr > b.abbr ? 1 : 0);
     });
 
+    /* marketCount = remaining fixtures priced from a real bookmaker line
+       (0 until data/odds.json lands). Consumers — the What-If auto-prefill
+       in js/simulator.js — gate on it to tell a market-backed forecast
+       from the Elo STRENGTH fallback. */
     return {
       sims: done, pre: !model.started, rows: rows, groupProj: groupProj,
       groupDetail: groupDetail,
-      market: !!market, mkUsed: model.mkUsed, mkRemain: model.remain
+      market: noMarket ? false : !!market,
+      mkUsed: model.mkUsed, mkRemain: model.remain,
+      marketCount: model.mkUsed
     };
   }
 
+  /* Cache invalidation when lines land: fingerprint() folds in
+     market.fetchedAt + count, and applyMarket() re-renders lastCtx on a
+     new snapshot — so the first market-backed getForecast call always
+     recomputes instead of serving the cached Elo-only result. */
   function getForecast(ctx) {
     var fp = fingerprint(ctx);
     if (cache && cache.fp === fp) return cache.res;
     var res = runSims(ctx);
     if (res) cache = { fp: fp, res: res };
     return res;
+  }
+
+  /* Market-blind forecast: the same model with every bookmaker line
+     ignored — exactly what getForecast computed before odds.json loaded.
+     Deliberately uncached (rare calls, must never pollute the market
+     cache); the simulator uses it to recognize stale Elo-based fills. */
+  function getNoMarketForecast(ctx) {
+    return runSims(ctx, true);
   }
 
   /* ---------------- odds history (localStorage) ---------------- */
@@ -1184,6 +1204,7 @@
     moneyline: moneyline,
     matchLambda: matchLambda,
     forecast: getForecast,
+    forecastNoMarket: getNoMarketForecast,
     canonPair: canonPair,
     marketLine: marketLine
   };

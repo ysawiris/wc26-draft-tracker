@@ -33,6 +33,8 @@
   var deltas = loadDeltas();
   var prefilled = readPrefilled();
   var prefillNote = false; // session-only banner after the one-time auto-fill
+  var healNote = false;    // session-only banner after a stale-fill upgrade
+  var healChecked = false; // heal runs once per page load, market in hand
 
   /* ---------------- deltas ---------------- */
 
@@ -100,15 +102,31 @@
 
   /* ---------------- books' forecast preset ---------------- */
 
-  /* Deltas mirroring the Odds tab's expected rest-of-group-stage goals:
-     each fantasy team gets round(remain) goals for its group. Cards stay
-     at zero by design. Returns null while PickOdds is unavailable or
-     throws — callers then behave exactly as before this feature. */
-  function forecastDeltas() {
-    if (!lastCtx || !window.PickOdds || typeof PickOdds.forecast !== "function") return null;
+  /* The Odds tab's forecast (or, with noMarket, the same model forced to
+     ignore betting lines — what it computed before odds.json loaded).
+     Returns null while PickOdds is unavailable or throws — callers then
+     behave exactly as before this feature. */
+  function forecastResult(noMarket) {
+    if (!lastCtx || !window.PickOdds) return null;
+    var fn = noMarket ? PickOdds.forecastNoMarket : PickOdds.forecast;
+    if (typeof fn !== "function") return null;
     var res = null;
-    try { res = PickOdds.forecast(lastCtx); } catch (err) { res = null; }
+    try { res = fn(lastCtx); } catch (err) { res = null; }
     if (!res || !res.groupProj) return null;
+    return res;
+  }
+
+  /* A market-backed forecast has at least one remaining fixture priced
+     from a real bookmaker line; anything else is the Elo strength
+     fallback (including old PickOdds builds without marketCount). */
+  function marketBacked(res) {
+    return !!res && res.marketCount > 0;
+  }
+
+  /* Deltas mirroring a forecast's expected rest-of-group-stage goals:
+     each fantasy team gets round(remain) goals for its group. Cards stay
+     at zero by design. */
+  function deltasFromForecast(res) {
     var map = {};
     lastCtx.standings.forEach(function (row) {
       var gp = res.groupProj[row.team.group];
@@ -116,6 +134,11 @@
       if (g > 0) map[row.team.abbr] = { goals: g, yellows: 0, reds: 0 };
     });
     return map;
+  }
+
+  function forecastDeltas() {
+    var res = forecastResult(false);
+    return res ? deltasFromForecast(res) : null;
   }
 
   function sameDelta(a, b) {
@@ -134,16 +157,41 @@
 
   /* One-time first-visit default: an untouched sandbox opens on the books'
      forecast instead of all zeros. Skips silently (and retries next render)
-     while PickOdds isn't ready — the flag is only written once a fill
-     succeeds, and never once any scenario exists. */
+     while PickOdds isn't ready OR the market hasn't loaded — on phones the
+     first Hub render usually beats the async data/odds.json fetch, and
+     filling from the Elo fallback froze wrong numbers in forever. The flag
+     is only written once a MARKET-BACKED fill succeeds, and never once any
+     scenario exists. */
   function maybePrefill() {
     if (prefilled || !lastCtx) return;
     if (Object.keys(deltas).length) return;
-    var map = forecastDeltas();
-    if (!map) return;
+    var res = forecastResult(false);
+    if (!marketBacked(res)) return; /* Elo-only — wait for betting lines */
+    var map = deltasFromForecast(res);
     commitDeltas(map);
     markPrefilled();
     prefillNote = Object.keys(map).length > 0;
+  }
+
+  /* Heal fills made by the old racy prefill (Elo numbers frozen before the
+     market loaded). Upgrade ONLY when the stored scenario differs from the
+     market forecast yet EXACTLY equals what the buggy Elo-only fill would
+     have produced — exact equality is the proof the user never touched it;
+     ANY difference means hands off. One check per page load, deferred
+     until a market-backed forecast exists. */
+  function maybeHeal() {
+    if (healChecked || !prefilled || !lastCtx) return;
+    var res = forecastResult(false);
+    if (!marketBacked(res)) return; /* retry next render, like the prefill */
+    healChecked = true;
+    var marketMap = deltasFromForecast(res);
+    if (!Object.keys(marketMap).length) return;
+    if (deltasEqual(deltas, marketMap)) return; /* already on market numbers */
+    var eloRes = forecastResult(true);
+    if (!eloRes) return;
+    if (!deltasEqual(deltas, deltasFromForecast(eloRes))) return; /* touched */
+    commitDeltas(marketMap);
+    healNote = true;
   }
 
   function deltaTb(d) { return d.yellows + d.reds * 2; }
@@ -236,9 +284,10 @@
       "</li>";
   }
 
-  function presetBtn(act, label, active, disabled) {
+  function presetBtn(act, label, active, disabled, title) {
     return '<button type="button" class="sim-btn sim-preset' + (active ? " is-active" : "") + '"' +
       ' data-act="' + act + '" aria-pressed="' + (active ? "true" : "false") + '"' +
+      (title ? ' title="' + title + '"' : "") +
       (disabled ? " disabled" : "") + ">" + label + "</button>";
   }
 
@@ -259,21 +308,33 @@
 
     /* Which preset (if either) the current scenario matches exactly.
        fcMap is null while PickOdds is unavailable → button disabled,
-       everything else behaves exactly as before the presets existed. */
-    var fcMap = forecastDeltas();
+       everything else behaves exactly as before the presets existed.
+       Clicking stays allowed before the market loads (an explicit click
+       accepts whatever model is up), but the title says what you get. */
+    var fcRes = forecastResult(false);
+    var fcMap = fcRes ? deltasFromForecast(fcRes) : null;
+    var fcTitle = fcMap && !marketBacked(fcRes)
+      ? "The books’ forecast (strength estimate — betting lines not loaded)"
+      : "";
     var blankActive = count === 0;
     var fcActive = !!fcMap && Object.keys(fcMap).length > 0 && deltasEqual(deltas, fcMap);
 
     host.innerHTML =
       '<div class="sim-presets">' +
         '<span class="sim-presets-label">Start from:</span>' +
-        presetBtn("preset-forecast", "📈 The books’ forecast", fcActive, !fcMap) +
+        presetBtn("preset-forecast", "📈 The books’ forecast", fcActive, !fcMap, fcTitle) +
         presetBtn("preset-blank", "⬜ Blank slate", blankActive, false) +
       "</div>" +
       '<p class="sim-presets-hint">Forecast fills goals only — the books’ expected rest-of-group-stage. Cards are all yours.</p>' +
       (prefillNote
         ? '<div class="sim-prefill-note" role="status">' +
             "<span>Pre-filled with the books’ expected goals — tweak away, or go blank.</span>" +
+            '<button type="button" class="sim-note-x" data-act="dismiss-note" aria-label="Dismiss note">×</button>' +
+          "</div>"
+        : "") +
+      (healNote
+        ? '<div class="sim-prefill-note" role="status">' +
+            "<span>Updated to the books’ forecast — betting lines hadn’t loaded when this was first filled.</span>" +
             '<button type="button" class="sim-note-x" data-act="dismiss-note" aria-label="Dismiss note">×</button>' +
           "</div>"
         : "") +
@@ -408,16 +469,19 @@
       if (act === "reset" || act === "preset-blank") {
         markPrefilled();
         prefillNote = false;
+        healNote = false;
         commitDeltas({});
         renderSim();
       } else if (act === "preset-forecast") {
         markPrefilled();
         prefillNote = false;
+        healNote = false;
         var map = forecastDeltas();
         if (map) commitDeltas(map); /* unavailable → no-op, same as today */
         renderSim();
       } else if (act === "dismiss-note") {
         prefillNote = false;
+        healNote = false;
         renderSim();
       } else if (act === "copy") {
         handleCopy(btn);
@@ -434,6 +498,7 @@
     Hub.onRender(function (ctx) {
       lastCtx = ctx;
       maybePrefill();
+      maybeHeal();
       renderSim();
     });
   }
