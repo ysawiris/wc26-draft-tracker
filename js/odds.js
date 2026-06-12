@@ -1159,7 +1159,6 @@
         (res.pre ? '<div class="od-banner">Strength-based forecast — sharpens with every final whistle.</div>' : "") +
         heroHtml(ctx, res, board, mine) +
         projHtml(ctx, res) +
-        boardHtml(ctx, board, hist, todayKey, mineAbbr) +
         marketHtml(ctx) +
         (mine ? pathHtml(ctx, res, board, mine) : "") +
         matrixHtml(ctx, res, mineAbbr) +
