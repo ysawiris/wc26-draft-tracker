@@ -158,7 +158,7 @@
   .sim-rank { font-size: 1.3rem; }
   .sim-name { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.15; }
   .sim-steppers {
-    grid-column: 1 / -1; justify-content: flex-start;
+    grid-column: 1 / -1; justify-content: center;
     border-top: 1px solid rgba(212, 168, 84, 0.16);
     padding-top: 9px; margin-top: 2px;
   }

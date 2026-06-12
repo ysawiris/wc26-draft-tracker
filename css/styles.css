@@ -333,7 +333,7 @@ nav, main, header, footer { position: relative; z-index: 1; }
   .crest { width: 44px; height: 44px; }
   .rank { font-size: 1.45rem; }
   .team-name { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.15; }
-  .stats { grid-column: 1 / -1; text-align: left; display: flex; align-items: baseline; gap: 12px; padding-left: 0; border-top: 1px solid rgba(212,168,84,.16); padding-top: 10px; }
+  .stats { grid-column: 1 / -1; text-align: center; display: flex; justify-content: center; align-items: baseline; gap: 12px; padding-left: 0; border-top: 1px solid rgba(212,168,84,.16); padding-top: 10px; }
   .goals { font-size: 1.4rem; }
   .goals-label { display: inline; margin: 0 0 0 4px; }
   .tb { margin: 0; }
