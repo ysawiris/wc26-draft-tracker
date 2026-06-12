@@ -1070,6 +1070,9 @@
         " remaining matches have a posted line."
       : "";
     var steps = [
+      "The stage: 48 teams, 12 groups A–L, 6 matches per group. Only the " +
+        "72 group-stage matches (June 11–27) count for the draft — this " +
+        "forecast covers exactly those and nothing else.",
       "Your draft slot = total goals scored by the four countries in your " +
         "World Cup group. Cards break ties (yellow +1, red +2).",
       "Every match has a Vegas over/under for total goals. We pull " +

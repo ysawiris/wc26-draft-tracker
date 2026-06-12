@@ -618,3 +618,30 @@ nav, main, header, footer { position: relative; z-index: 1; }
   }
   html { scroll-behavior: auto; }
 }
+
+/* ============================================================
+   APPENDED — Rules tab guide cards (card headings, format card
+   prose, "Around the hub" feature list). Everything else on the
+   Rules tab reuses .rules-card / .rules-steps / .step-n above.
+   ============================================================ */
+
+.rules-card + .rules-card { margin-top: 16px; }
+.rules-h {
+  font-family: "Cinzel", serif; color: var(--gold-2); font-size: 1rem;
+  text-transform: uppercase; letter-spacing: 0.1em; padding: 12px 0 2px;
+}
+.rules-prose p { margin: 10px 0 14px; line-height: 1.6; }
+.rules-prose b { color: var(--gold-2); }
+.rules-key { border-top: 1px dashed rgba(212, 168, 84, 0.32); padding-top: 14px; }
+.rules-list { list-style: none; padding: 6px 0 10px; }
+.rules-list li {
+  padding: 8px 0; line-height: 1.55;
+  border-bottom: 1px solid rgba(212, 168, 84, 0.1);
+}
+.rules-list li:last-child { border-bottom: none; }
+.rules-list b { color: var(--gold-2); }
+.rules-list code {
+  font-family: ui-monospace, Menlo, monospace; font-size: 0.82em;
+  background: rgba(212, 168, 84, 0.14); color: var(--gold-1);
+  padding: 1px 6px; border-radius: 5px;
+}
