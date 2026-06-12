@@ -49,6 +49,8 @@ var Live = (function () {
   var FINISHED = { FINISHED: 1, AWARDED: 1 };
   var INPLAY = { IN_PLAY: 1, PAUSED: 1, LIVE: 1, HALFTIME: 1 };
 
+
+
   function isCounted(status) { return FINISHED[status] || INPLAY[status]; }
 
   /* Overlay goals from live matches onto the seed GROUPS (mutates a fresh copy
@@ -88,6 +90,24 @@ var Live = (function () {
       if (!c) return;
       c.yellows += byCountry[name].y || 0;
       c.reds += byCountry[name].r || 0;
+    });
+
+    return true;
+  }
+
+  /* Overlay foul counts from the live feed onto the seed. Same pattern as
+     applyCards — resets only when feed data is present. */
+  function applyFouls(byCountry) {
+    if (!byCountry || !Object.keys(byCountry).length) return false;
+
+    Object.keys(GROUPS).forEach(function (letter) {
+      GROUPS[letter].countries.forEach(function (c) { c.fouls = 0; });
+    });
+
+    Object.keys(byCountry).forEach(function (name) {
+      var c = resolveCountry(name);
+      if (!c) return;
+      c.fouls += byCountry[name].f || 0;
     });
 
     return true;
@@ -193,6 +213,7 @@ var Live = (function () {
     load: load,
     applyMatches: applyMatches,
     applyCards: applyCards,
+    applyFouls: applyFouls,
     attachToFixtures: attachToFixtures,
     resolveCountry: resolveCountry,
     isCounted: isCounted,

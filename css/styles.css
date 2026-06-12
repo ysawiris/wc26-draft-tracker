@@ -254,6 +254,7 @@ nav, main, header, footer { position: relative; z-index: 1; }
 .goals { font-family: "Cinzel", serif; font-weight: 900; font-size: 1.7rem; line-height: 1; color: var(--gold-1); }
 .goals-label { display: block; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-faint); margin-top: 4px; }
 .tb { font-size: 0.74rem; color: var(--text-dim); margin-top: 6px; white-space: nowrap; }
+.fouls-row { font-size: 0.74rem; color: var(--text-faint); margin-top: 3px; white-space: nowrap; }
 .tie-flag {
   display: inline-block; margin-left: 7px; padding: 1px 7px; border-radius: 999px;
   font-size: 0.56rem; font-style: normal; font-weight: 800; letter-spacing: 0.12em;
@@ -337,6 +338,7 @@ nav, main, header, footer { position: relative; z-index: 1; }
   .goals { font-size: 1.4rem; }
   .goals-label { display: inline; margin: 0 0 0 4px; }
   .tb { margin: 0; }
+  .fouls-row { margin: 0; }
   .row.is-mine::after { font-size: 0.5rem; }
 }
 @media (max-width: 380px) {

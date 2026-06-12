@@ -11,6 +11,7 @@
   function groupGoals(g) { return g.countries.reduce(function (s, c) { return s + c.goals; }, 0); }
   function groupCardPoints(g) { return g.countries.reduce(function (s, c) { return s + c.yellows + c.reds * 2; }, 0); }
   function groupCards(g) { return g.countries.reduce(function (a, c) { return { y: a.y + c.yellows, r: a.r + c.reds }; }, { y: 0, r: 0 }); }
+  function groupFouls(g) { return g.countries.reduce(function (s, c) { return s + (c.fouls || 0); }, 0); }
 
   function ownerByGroup() {
     var o = {};
@@ -22,7 +23,7 @@
     var rows = TEAMS.map(function (t) {
       var g = GROUPS[t.group];
       if (!g) throw new Error("Team '" + t.name + "' has unknown group '" + t.group + "'");
-      return { team: t, group: g, goals: groupGoals(g), cardPoints: groupCardPoints(g), cards: groupCards(g) };
+      return { team: t, group: g, goals: groupGoals(g), cardPoints: groupCardPoints(g), cards: groupCards(g), fouls: groupFouls(g) };
     });
     var sorted = rows.slice().sort(function (a, b) {
       if (b.goals !== a.goals) return b.goals - a.goals;
@@ -138,6 +139,7 @@
           '<span class="goals">' + row.goals + "</span>" +
           '<span class="goals-label">Goals</span>' +
           '<div class="tb">🟨 ' + row.cards.y + " · 🟥 " + row.cards.r + " · TB " + row.cardPoints + "</div>" +
+          '<div class="fouls-row">⚠ ' + row.fouls + " fouls</div>" +
         "</div>";
       list.appendChild(li);
     });
@@ -370,15 +372,18 @@
 
   /* ---------------- meta / rules ---------------- */
 
-  function renderMeta(started, fixtures, liveData) {
-    var done = fixtures.filter(function (fx) { return Live.FINISHED[fx.status]; }).length;
-    var totalGoals = Object.keys(GROUPS).reduce(function (s, k) { return s + groupGoals(GROUPS[k]); }, 0);
+  function renderMeta(started, fixtures, allFx, liveData) {
+    var done = allFx.filter(function (fx) { return Live.FINISHED[fx.status]; }).length;
+    var totalGoals = (liveData && liveData.matches || []).reduce(function (s, m) {
+      if (!Live.FINISHED[m.status] && !Live.INPLAY[m.status]) return s;
+      return s + (m.homeGoals || 0) + (m.awayGoals || 0);
+    }, 0);
     var live = (liveData && liveData.matchCount) || 0;
 
     document.getElementById("hero-meta").innerHTML =
       '<span class="hero-pill"><b>10</b> teams</span>' +
-      '<span class="hero-pill"><b>' + totalGoals + '</b> goals tracked</span>' +
-      '<span class="hero-pill"><b>' + done + "/" + fixtures.length + "</b> matches played</span>" +
+      '<span class="hero-pill"><b>' + totalGoals + '</b> goals scored</span>' +
+      '<span class="hero-pill"><b>' + done + "/" + allFx.length + "</b> matches played</span>" +
       '<span class="hero-pill">' + (live ? "🟢 Live feed on" : "Schedule mode") + "</span>";
 
     document.getElementById("draw-note").textContent = LEAGUE.drawNote;
@@ -479,6 +484,7 @@
     var matches = (liveData && liveData.matches) || [];
     Live.applyMatches(matches);
     Live.applyCards(liveData && liveData.cards && liveData.cards.byCountry);
+    Live.applyFouls(liveData && liveData.fouls && liveData.fouls.byCountry);
 
     // League fixtures (B–L) drive every standing/stat; exhibition fixtures
     // (Group A) only ever appear on the schedule and the live strip.
@@ -495,7 +501,7 @@
     renderLive(allFixtures);
     renderSchedule(allFixtures);
     renderGroups();
-    renderMeta(started, fixtures, liveData);
+    renderMeta(started, fixtures, allFixtures, liveData);
     firstRender = false;
 
     lastCtx = {
@@ -511,7 +517,7 @@
         esc: esc, el: el, ordinal: ordinal, crestHtml: crestHtml,
         fxDate: fxDate, dayKey: dayKey, fmtDay: fmtDay, fmtTime: fmtTime,
         statusInfo: statusInfo, groupGoals: groupGoals, groupCardPoints: groupCardPoints,
-        groupCards: groupCards, ownerByGroup: ownerByGroup, buildStandings: buildStandings
+        groupCards: groupCards, groupFouls: groupFouls, ownerByGroup: ownerByGroup, buildStandings: buildStandings
       }
     };
 

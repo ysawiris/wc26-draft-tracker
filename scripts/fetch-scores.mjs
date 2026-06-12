@@ -36,9 +36,12 @@ function fifaStatus(m) {
 }
 
 /* Timeline event types (verified against MEX–RSA, 2026-06-11):
-   2 = yellow card ("is booked"), 3 = red card ("is sent off"). */
+   2 = yellow card ("is booked"), 3 = red card ("is sent off").
+   Foul event type is not officially documented — type 5 is the most
+   common FIFA v3 value; verify against first matches if counts stay 0. */
 const EVENT_YELLOW = 2;
 const EVENT_RED = 3;
+const EVENT_FOUL = 5;
 
 function loc(arr) {
   return (Array.isArray(arr) && arr[0] && arr[0].Description) || null;
@@ -64,12 +67,13 @@ async function fetchMatchCards(m, teamCountry) {
 
   const counts = {};
   events.forEach((e) => {
-    if (e.Type !== EVENT_YELLOW && e.Type !== EVENT_RED) return;
+    if (e.Type !== EVENT_YELLOW && e.Type !== EVENT_RED && e.Type !== EVENT_FOUL) return;
     const country = teamCountry[e.IdTeam];
     if (!country) return;
-    const c = counts[country] || (counts[country] = { y: 0, r: 0 });
+    const c = counts[country] || (counts[country] = { y: 0, r: 0, f: 0 });
     if (e.Type === EVENT_YELLOW) c.y += 1;
-    else c.r += 1;
+    else if (e.Type === EVENT_RED) c.r += 1;
+    else c.f += 1;
   });
   return counts;
 }
@@ -123,18 +127,24 @@ async function fetchFifa(prevCardsByMatch) {
   }
 
   const byCountry = {};
+  const foulsByCountry = {};
   Object.values(cardsByMatch).forEach((perMatch) => {
     Object.entries(perMatch).forEach(([country, c]) => {
       const agg = byCountry[country] || (byCountry[country] = { y: 0, r: 0 });
       agg.y += c.y;
       agg.r += c.r;
+      if (c.f) {
+        const fa = foulsByCountry[country] || (foulsByCountry[country] = { f: 0 });
+        fa.f += c.f;
+      }
     });
   });
 
   return {
     source: "fifa.com",
     matches,
-    cards: { byMatch: cardsByMatch, byCountry }
+    cards: { byMatch: cardsByMatch, byCountry },
+    fouls: { byCountry: foulsByCountry }
   };
 }
 
