@@ -196,6 +196,15 @@
 /* ---------- Responsive ---------- */
 
 @media (max-width: 560px) {
+  /* Tidy button rows: the label sits on its own line, then each row's
+     buttons split the width evenly so nothing wraps at odd sizes. */
+  .sim-presets { row-gap: 9px; }
+  .sim-presets-label { flex-basis: 100%; }
+  .sim-btn {
+    flex: 1 1 0; min-width: 0;
+    text-align: center; white-space: nowrap;
+    padding: 9px 6px;
+  }
   .sim-note { margin-left: 0; flex-basis: 100%; text-align: left; }
   .sim-row { grid-template-columns: 40px minmax(0, 1fr); gap: 11px; padding: 10px 12px; }
   .sim-rank { font-size: 1.3rem; }
