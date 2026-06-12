@@ -1,8 +1,11 @@
 /* What-If Machine — hypothetical goals & cards sandbox for the draft order.
    Layers pure client-side deltas over the real standings and re-ranks with
    the same comparator as the live board. Never mutates GROUPS/TEAMS or any
-   shared state. Deltas live in module scope so they survive tab switches
-   and auto-refresh re-renders. */
+   shared state. Deltas live in module scope + localStorage so they survive
+   tab switches, auto-refresh re-renders and reloads. "Start from" presets
+   seed that same delta state from the Odds tab's expected remaining goals
+   (PickOdds.forecast) — feature-detected at call time, never at module
+   init, because js/odds.js loads after this file. */
 
 (function () {
   "use strict";
@@ -18,10 +21,18 @@
     "dec-r": { field: "reds", dir: -1 }
   };
 
+  var STORE_KEY = "wc26.simScenario";    // saved deltas map (fail-soft)
+  var PREFILL_KEY = "wc26.simPrefilled"; // one-time forecast auto-fill done
+
   var host = document.getElementById("sim-host");
   var lastCtx = null;
-  var deltas = {}; // abbr -> { goals, yellows, reds } — survives re-renders
   var copyTimer = null;
+
+  /* abbr -> { goals, yellows, reds }. Module scope + localStorage: survives
+     tab switches and re-renders like before, and now reloads too. */
+  var deltas = loadDeltas();
+  var prefilled = readPrefilled();
+  var prefillNote = false; // session-only banner after the one-time auto-fill
 
   /* ---------------- deltas ---------------- */
 
@@ -29,12 +40,110 @@
     return deltas[abbr] || { goals: 0, yellows: 0, reds: 0 };
   }
 
+  /* Single commit path for every scenario change — presets, resets and
+     hand-entered bumps all land here, so they persist identically. */
+  function commitDeltas(next) {
+    deltas = next;
+    saveDeltas();
+  }
+
   /* Replace the deltas map (never mutate in place); drop all-zero entries. */
   function setDelta(abbr, d) {
     var next = {};
     Object.keys(deltas).forEach(function (k) { if (k !== abbr) next[k] = deltas[k]; });
     if (d.goals !== 0 || d.yellows !== 0 || d.reds !== 0) next[abbr] = d;
-    deltas = next;
+    commitDeltas(next);
+  }
+
+  /* ---------------- storage (fail-soft, like js/race.js) ---------------- */
+
+  function loadDeltas() {
+    try {
+      var raw = window.localStorage.getItem(STORE_KEY);
+      if (!raw) return {};
+      var obj = JSON.parse(raw);
+      if (!obj || typeof obj !== "object") return {};
+      var out = {};
+      Object.keys(obj).forEach(function (k) {
+        var d = obj[k] || {};
+        var g = d.goals | 0;
+        var y = d.yellows | 0;
+        var r = d.reds | 0;
+        if (g !== 0 || y !== 0 || r !== 0) out[k] = { goals: g, yellows: y, reds: r };
+      });
+      return out;
+    } catch (err) {
+      return {}; /* bad JSON or no storage — start clean */
+    }
+  }
+
+  function saveDeltas() {
+    try {
+      if (Object.keys(deltas).length) {
+        window.localStorage.setItem(STORE_KEY, JSON.stringify(deltas));
+      } else {
+        window.localStorage.removeItem(STORE_KEY);
+      }
+    } catch (err) { /* private mode — scenario just won't survive reloads */ }
+  }
+
+  function readPrefilled() {
+    try { return window.localStorage.getItem(PREFILL_KEY) === "1"; } catch (err) { return false; }
+  }
+
+  /* Set on the one-time auto-fill AND on any scenario-changing click, so a
+     forecast fill can never land on top of a sandbox the user has touched. */
+  function markPrefilled() {
+    prefilled = true;
+    try { window.localStorage.setItem(PREFILL_KEY, "1"); } catch (err) { /* fine */ }
+  }
+
+  /* ---------------- books' forecast preset ---------------- */
+
+  /* Deltas mirroring the Odds tab's expected rest-of-group-stage goals:
+     each fantasy team gets round(remain) goals for its group. Cards stay
+     at zero by design. Returns null while PickOdds is unavailable or
+     throws — callers then behave exactly as before this feature. */
+  function forecastDeltas() {
+    if (!lastCtx || !window.PickOdds || typeof PickOdds.forecast !== "function") return null;
+    var res = null;
+    try { res = PickOdds.forecast(lastCtx); } catch (err) { res = null; }
+    if (!res || !res.groupProj) return null;
+    var map = {};
+    lastCtx.standings.forEach(function (row) {
+      var gp = res.groupProj[row.team.group];
+      var g = gp ? Math.round(gp.remain) : 0;
+      if (g > 0) map[row.team.abbr] = { goals: g, yellows: 0, reds: 0 };
+    });
+    return map;
+  }
+
+  function sameDelta(a, b) {
+    return a.goals === b.goals && a.yellows === b.yellows && a.reds === b.reds;
+  }
+
+  function deltasEqual(a, b) {
+    var zero = { goals: 0, yellows: 0, reds: 0 };
+    var keys = {};
+    Object.keys(a).forEach(function (k) { keys[k] = 1; });
+    Object.keys(b).forEach(function (k) { keys[k] = 1; });
+    return Object.keys(keys).every(function (k) {
+      return sameDelta(a[k] || zero, b[k] || zero);
+    });
+  }
+
+  /* One-time first-visit default: an untouched sandbox opens on the books'
+     forecast instead of all zeros. Skips silently (and retries next render)
+     while PickOdds isn't ready — the flag is only written once a fill
+     succeeds, and never once any scenario exists. */
+  function maybePrefill() {
+    if (prefilled || !lastCtx) return;
+    if (Object.keys(deltas).length) return;
+    var map = forecastDeltas();
+    if (!map) return;
+    commitDeltas(map);
+    markPrefilled();
+    prefillNote = Object.keys(map).length > 0;
   }
 
   function deltaTb(d) { return d.yellows + d.reds * 2; }
@@ -127,6 +236,12 @@
       "</li>";
   }
 
+  function presetBtn(act, label, active, disabled) {
+    return '<button type="button" class="sim-btn sim-preset' + (active ? " is-active" : "") + '"' +
+      ' data-act="' + act + '" aria-pressed="' + (active ? "true" : "false") + '"' +
+      (disabled ? " disabled" : "") + ">" + label + "</button>";
+  }
+
   function renderSim() {
     if (!host || !lastCtx) return;
 
@@ -142,7 +257,26 @@
         " team" + (teamsTouched === 1 ? "" : "s") + " — order below is hypothetical."
       : "No tweaks yet — this mirrors the real board.";
 
+    /* Which preset (if either) the current scenario matches exactly.
+       fcMap is null while PickOdds is unavailable → button disabled,
+       everything else behaves exactly as before the presets existed. */
+    var fcMap = forecastDeltas();
+    var blankActive = count === 0;
+    var fcActive = !!fcMap && Object.keys(fcMap).length > 0 && deltasEqual(deltas, fcMap);
+
     host.innerHTML =
+      '<div class="sim-presets">' +
+        '<span class="sim-presets-label">Start from:</span>' +
+        presetBtn("preset-forecast", "📈 The books’ forecast", fcActive, !fcMap) +
+        presetBtn("preset-blank", "⬜ Blank slate", blankActive, false) +
+      "</div>" +
+      '<p class="sim-presets-hint">Forecast fills goals only — the books’ expected rest-of-group-stage. Cards are all yours.</p>' +
+      (prefillNote
+        ? '<div class="sim-prefill-note" role="status">' +
+            "<span>Pre-filled with the books’ expected goals — tweak away, or go blank.</span>" +
+            '<button type="button" class="sim-note-x" data-act="dismiss-note" aria-label="Dismiss note">×</button>' +
+          "</div>"
+        : "") +
       '<div class="sim-bar">' +
         '<button type="button" class="sim-btn sim-reset" data-act="reset"' + (count ? "" : " disabled") + ">↺ Reset</button>" +
         '<button type="button" class="sim-btn sim-copy" data-act="copy">' + COPY_LABEL + "</button>" +
@@ -271,12 +405,24 @@
       var btn = e.target.closest ? e.target.closest("[data-act]") : null;
       if (!btn || btn.disabled || !lastCtx) return;
       var act = btn.getAttribute("data-act");
-      if (act === "reset") {
-        deltas = {};
+      if (act === "reset" || act === "preset-blank") {
+        markPrefilled();
+        prefillNote = false;
+        commitDeltas({});
+        renderSim();
+      } else if (act === "preset-forecast") {
+        markPrefilled();
+        prefillNote = false;
+        var map = forecastDeltas();
+        if (map) commitDeltas(map); /* unavailable → no-op, same as today */
+        renderSim();
+      } else if (act === "dismiss-note") {
+        prefillNote = false;
         renderSim();
       } else if (act === "copy") {
         handleCopy(btn);
       } else {
+        markPrefilled();
         var abbr = btn.getAttribute("data-abbr");
         applyBump(abbr, act);
         refocus(act, abbr);
@@ -287,6 +433,7 @@
   if (window.Hub) {
     Hub.onRender(function (ctx) {
       lastCtx = ctx;
+      maybePrefill();
       renderSim();
     });
   }

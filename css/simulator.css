@@ -4,6 +4,49 @@
 
 #sim-host { max-width: 880px; margin: 0 auto; }
 
+/* ---------- Preset row ("Start from:") ---------- */
+
+.sim-presets {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 7px;
+}
+.sim-presets-label {
+  font-size: 0.62rem; font-weight: 800; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--text-faint);
+}
+.sim-preset {
+  color: var(--gold-2); background: var(--panel-2);
+  border: 1px solid var(--panel-edge);
+}
+.sim-preset:hover:not([disabled]) { color: var(--gold-1); border-color: var(--gold-3); }
+.sim-preset[disabled] { opacity: 0.35; cursor: default; }
+.sim-preset.is-active {
+  color: #1a1206; background: var(--gold-grad); border-color: transparent;
+}
+.sim-presets-hint {
+  font-size: 0.72rem; color: var(--text-faint);
+  margin: 0 0 14px; line-height: 1.4;
+}
+
+/* Dismissible first-visit note */
+.sim-prefill-note {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 0.76rem; color: var(--text-dim); line-height: 1.4;
+  background: rgba(212, 168, 84, 0.08);
+  border: 1px solid var(--gold-4); border-radius: var(--radius);
+  padding: 8px 12px; margin: 0 0 14px;
+}
+.sim-note-x {
+  margin-left: auto; flex: 0 0 auto;
+  width: 22px; height: 22px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: inherit; font-size: 0.9rem; line-height: 1;
+  color: var(--gold-2); background: transparent;
+  border: 1px solid var(--gold-4); cursor: pointer; padding: 0;
+  transition: color .14s, border-color .14s;
+}
+.sim-note-x:hover { color: var(--gold-1); border-color: var(--gold-3); }
+
 /* ---------- Control bar ---------- */
 
 .sim-bar {
@@ -170,4 +213,6 @@
   .sim-sbtn { width: 26px; height: 26px; }
   .sim-step-goals .sim-sbtn { width: 30px; height: 30px; }
   .sim-nums { gap: 12px; }
+  .sim-presets { gap: 6px; }
+  .sim-preset { padding: 6px 12px; }
 }
