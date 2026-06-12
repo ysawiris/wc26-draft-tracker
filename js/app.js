@@ -147,50 +147,76 @@
 
   var countdownTimer = null;
 
+  var RAIL_WINDOW_MS = 7 * 86400000; // a week of kickoffs in the next-up rail
+  var RAIL_MAX = 40;                  // safety cap so a busy week can't bloat the DOM
+
   function renderLive(fixtures) {
     var wrap = document.getElementById("livewrap");
     var now = new Date();
     if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
 
-    var live = fixtures.filter(function (fx) { return Live.INPLAY[fx.status]; });
     var owners = ownerByGroup();
+    var live = fixtures.filter(function (fx) { return Live.INPLAY[fx.status]; });
 
-    if (live.length) {
-      wrap.innerHTML = '<div class="live-head"><span class="live-dot"></span> Live now</div>' +
-        '<div class="live-cards">' + live.map(function (fx) { return matchMini(fx, owners, true); }).join("") + "</div>";
-      return;
-    }
-
-    // Otherwise: next upcoming kickoff + a countdown.
-    var upcoming = fixtures
-      .filter(function (fx) { return !Live.FINISHED[fx.status] && fxDate(fx) > now; })
+    // Everything still to come, soonest first.
+    var future = fixtures
+      .filter(function (fx) { return !Live.FINISHED[fx.status] && !Live.INPLAY[fx.status] && fxDate(fx) > now; })
       .sort(function (a, b) { return fxDate(a) - fxDate(b); });
 
-    if (!upcoming.length) {
+    if (!live.length && !future.length) {
       wrap.innerHTML = '<div class="live-head">Group stage complete — draft order is final. 🏆</div>';
       return;
     }
 
-    var next = upcoming[0];
-    var nextDay = dayKey(fxDate(next));
-    var sameDay = upcoming.filter(function (fx) { return dayKey(fxDate(fx)) === nextDay; }).slice(0, 4);
+    // The rail shows live games first, then the next week of kickoffs, then a
+    // final card that hands off to the full schedule. Live no longer hides
+    // what's next — you can always scroll ahead.
+    var weekOut = new Date(now.getTime() + RAIL_WINDOW_MS);
+    var upNext = future.filter(function (fx) { return fxDate(fx) <= weekOut; });
+    if (!upNext.length) upNext = future.slice(0, 8); // quiet stretch: still show the next few
+    upNext = upNext.slice(0, RAIL_MAX);
 
-    wrap.innerHTML =
-      '<div class="live-head">Next up · <span id="countdown"></span></div>' +
-      '<div class="live-cards">' + sameDay.map(function (fx) { return matchMini(fx, owners, false); }).join("") + "</div>";
+    var shown = live.concat(upNext);
+    var lastShown = shown.length ? shown[shown.length - 1] : null;
+    var hasMore = future.length > upNext.length;
 
-    var target = fxDate(next);
-    var tick = function () {
-      var diff = target - new Date();
-      var node = document.getElementById("countdown");
-      if (!node) return;
-      if (diff <= 0) { node.textContent = "kicking off"; return; }
-      var d = Math.floor(diff / 86400000), h = Math.floor(diff / 3600000) % 24,
-          m = Math.floor(diff / 60000) % 60, s = Math.floor(diff / 1000) % 60;
-      node.textContent = (d ? d + "d " : "") + (h || d ? h + "h " : "") + m + "m " + s + "s";
-    };
-    tick();
-    countdownTimer = setInterval(tick, 1000);
+    var head = live.length
+      ? '<div class="live-head"><span class="live-dot"></span> Live now <span class="live-head-sub">· and what’s next</span></div>'
+      : '<div class="live-head">Next up · <span id="countdown"></span></div>';
+
+    var cards =
+      live.map(function (fx) { return matchMini(fx, owners, true, now); }).join("") +
+      upNext.map(function (fx) { return matchMini(fx, owners, false, now); }).join("") +
+      moreCard(lastShown, hasMore);
+
+    wrap.innerHTML = head + '<div class="live-cards">' + cards + "</div>";
+
+    // Countdown only when nothing is live (the live head carries no countdown).
+    if (!live.length && upNext.length) {
+      var target = fxDate(upNext[0]);
+      var tick = function () {
+        var diff = target - new Date();
+        var node = document.getElementById("countdown");
+        if (!node) return;
+        if (diff <= 0) { node.textContent = "kicking off"; return; }
+        var d = Math.floor(diff / 86400000), h = Math.floor(diff / 3600000) % 24,
+            m = Math.floor(diff / 60000) % 60, s = Math.floor(diff / 1000) % 60;
+        node.textContent = (d ? d + "d " : "") + (h || d ? h + "h " : "") + m + "m " + s + "s";
+      };
+      tick();
+      countdownTimer = setInterval(tick, 1000);
+    }
+  }
+
+  /* Trailing rail card: jumps to the full Schedule tab, landing on the last
+     game the rail showed so the user continues right where they left off. */
+  function moreCard(lastFx, hasMore) {
+    var anchor = lastFx ? lastFx.id : "";
+    return '<button type="button" class="mini mini-more" data-goto-schedule="' + esc(anchor) + '">' +
+      '<span class="mini-more-ico">📅</span>' +
+      '<span class="mini-more-label">' + (hasMore ? "Full schedule" : "Open schedule") + "</span>" +
+      '<span class="mini-more-sub">' + (hasMore ? "See the rest →" : "All 72 matches →") + "</span>" +
+      "</button>";
   }
 
   function scoreOrTime(fx) {
@@ -199,11 +225,17 @@
     return t || "TBD";
   }
 
-  function matchMini(fx, owners, isLive) {
+  function matchMini(fx, owners, isLive, now) {
     var owner = owners[fx.group];
-    var ownerTag = owner ? '<span class="mini-owner" style="--ac:' + (owner.accent || "#c89638") + '">' + esc(owner.abbr) + "</span>" : "";
-    return '<div class="mini' + (isLive ? " live" : "") + '">' +
+    var ownerTag = owner
+      ? '<span class="mini-owner" style="--ac:' + (owner.accent || "#c89638") + '">' + esc(owner.abbr) + "</span>"
+      : (fx.exhibition ? '<span class="mini-exh">Exhibition</span>' : "");
+    // Today's games show just the kickoff time; only future days carry a date label.
+    var isToday = now && dayKey(fxDate(fx)) === dayKey(now);
+    var when = (isLive || isToday) ? "" : '<div class="mini-when">' + fmtDay(fxDate(fx)) + "</div>";
+    return '<div class="mini' + (isLive ? " live" : "") + (fx.exhibition ? " exh" : "") + '">' +
       '<div class="mini-grp">Grp ' + fx.group + " " + ownerTag + "</div>" +
+      when +
       '<div class="mini-row"><span>' + fx.home.flag + " " + esc(fx.home.name) + "</span></div>" +
       '<div class="mini-score">' + scoreOrTime(fx) +
         (isLive ? ' <span class="mini-live">●</span>' +
@@ -266,6 +298,7 @@
     var owner = owners[fx.group];
     var card = el("div", "match" + (st.live ? " is-live" : "") +
       (owner && owner.isMine ? " is-mine" : "") + (fx.exhibition ? " exh" : ""));
+    if (fx.id) card.id = "sched-" + fx.id; // anchor for the rail's "full schedule" jump
 
     var hg = fx.homeGoals, ag = fx.awayGoals;
     var hasScore = hg != null && ag != null;
@@ -369,7 +402,7 @@
     return Array.prototype.map.call(document.querySelectorAll("#tabs .tab"), function (b) { return b.dataset.tab; });
   }
 
-  function setTab(name) {
+  function setTab(name, opts) {
     document.querySelectorAll(".tab[data-tab]").forEach(function (b) {
       var on = b.dataset.tab === name;
       b.classList.toggle("is-active", on);
@@ -383,11 +416,37 @@
       panel.classList.toggle("is-active", on);
     });
     if (location.hash !== "#" + name) history.replaceState(null, "", "#" + name);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // Callers that scroll to a specific element themselves pass noScroll so the
+    // page-top scroll doesn't fight their scrollIntoView.
+    if (!(opts && opts.noScroll)) window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  /* Open the Schedule tab and scroll to one fixture, flashing it briefly.
+     Forces the "all" filter first so the target is guaranteed to be mounted. */
+  function gotoScheduleAt(anchorId) {
+    scheduleFilter = "all";
+    document.querySelectorAll("#schedule-filters .chip").forEach(function (c) {
+      c.classList.toggle("is-active", c.dataset.filter === "all");
+    });
+    renderSchedule(currentFixtures);
+    setTab("schedule", { noScroll: true });
+    // Let the panel unhide/layout, then center the anchor and flash it. Uses
+    // window.scrollTo (not scrollIntoView) — body's overflow-x:hidden makes the
+    // viewport the scroller, where scrollIntoView is unreliable.
+    setTimeout(function () {
+      var node = anchorId && document.getElementById("sched-" + anchorId);
+      if (!node) { window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+      var y = node.getBoundingClientRect().top + window.pageYOffset - (window.innerHeight / 2) + 40;
+      window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+      node.classList.add("flash");
+      setTimeout(function () { node.classList.remove("flash"); }, 1500);
+    }, 60);
   }
 
   function wireTabs() {
     document.addEventListener("click", function (e) {
+      var jump = e.target.closest("[data-goto-schedule]");
+      if (jump) { e.preventDefault(); gotoScheduleAt(jump.getAttribute("data-goto-schedule")); return; }
       var btn = e.target.closest(".tab[data-tab]");
       if (btn) setTab(btn.dataset.tab);
     });

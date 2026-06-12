@@ -365,12 +365,43 @@ nav, main, header, footer { position: relative; z-index: 1; }
   70% { box-shadow: 0 0 0 8px rgba(255, 77, 77, 0); }
   100% { box-shadow: 0 0 0 0 rgba(255, 77, 77, 0); }
 }
-.live-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+/* Horizontal scroll rail at every width — scroll a week ahead, then hit the
+   "full schedule" card at the end. */
+.live-cards {
+  display: flex; gap: 10px; overflow-x: auto; overflow-y: hidden;
+  padding-bottom: 6px; scroll-snap-type: x proximity; scroll-padding-left: 2px;
+  scrollbar-width: thin; scrollbar-color: var(--panel-edge) transparent;
+}
+.live-cards::-webkit-scrollbar { height: 8px; }
+.live-cards::-webkit-scrollbar-thumb { background: var(--panel-edge); border-radius: 8px; }
+.live-cards::-webkit-scrollbar-track { background: transparent; }
 .mini {
+  flex: 0 0 200px; scroll-snap-align: start;
   background: var(--panel-2); border: 1px solid var(--panel-edge); border-radius: 12px;
   padding: 11px 13px; box-shadow: var(--shadow);
 }
 .mini.live { border-color: rgba(255, 99, 99, 0.5); }
+.live-head-sub { color: var(--text-faint); font-weight: 600; letter-spacing: 0.04em; }
+
+/* Trailing "full schedule" hand-off card */
+.mini-more {
+  flex: 0 0 168px; display: flex; flex-direction: column; justify-content: center;
+  align-items: flex-start; gap: 2px; cursor: pointer; text-align: left;
+  font-family: inherit; color: var(--gold-1);
+  background: linear-gradient(150deg, rgba(200, 150, 56, 0.16), rgba(200, 150, 56, 0.05));
+  border: 1px solid rgba(200, 150, 56, 0.45); transition: transform 0.12s ease, border-color 0.12s ease;
+}
+.mini-more:hover { transform: translateY(-1px); border-color: var(--gold-1); }
+.mini-more-ico { font-size: 1.1rem; }
+.mini-more-label { font-family: "Cinzel", serif; font-weight: 700; font-size: 0.92rem; }
+.mini-more-sub { font-size: 0.66rem; letter-spacing: 0.04em; color: var(--gold-2); }
+
+/* Brief highlight when the rail jumps you to a fixture in the schedule */
+.match.flash { animation: matchFlash 1.5s ease-out; }
+@keyframes matchFlash {
+  0% { box-shadow: 0 0 0 2px var(--gold-1), 0 0 22px rgba(200, 150, 56, 0.55); }
+  100% { box-shadow: 0 0 0 0 rgba(200, 150, 56, 0); }
+}
 .mini-grp {
   display: flex; align-items: center; gap: 6px; justify-content: space-between;
   font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 6px;
@@ -378,6 +409,16 @@ nav, main, header, footer { position: relative; z-index: 1; }
 .mini-owner {
   font-family: "Cinzel", serif; font-weight: 900; font-size: 0.58rem; letter-spacing: 0.02em;
   color: #fff; background: var(--ac, #c89638); padding: 1px 6px; border-radius: 5px;
+}
+.mini-exh {
+  font-family: "Archivo", sans-serif; font-weight: 700; font-size: 0.54rem;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-faint);
+  border: 1px solid var(--panel-edge); padding: 1px 6px; border-radius: 5px;
+}
+.mini.exh { opacity: 0.72; }
+.mini-when {
+  font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold-2); margin-bottom: 6px;
 }
 .mini-row { font-weight: 700; font-size: 0.86rem; color: var(--text); }
 .mini-score {

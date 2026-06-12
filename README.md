@@ -13,7 +13,11 @@ Live hub for our 2026 World Cup fantasy league — draft order, full schedule, s
 - **Stats & Records** — an auto-written "Wire Report" (headlines generated from the live standings), the Record Book (top group, top-scoring country, dirtiest group, highest-scoring match, goals per match), each team's six-match "runway" progress, and goals by matchday.
 - **What-If Machine** — add hypothetical goals and cards to any team's group and watch the draft order re-rank live. Scenarios never touch the real board, survive tab switches, and can be copied straight to the chat. Reset anytime.
 - **Auto-refresh** — while the page is open it re-checks scores every 2 minutes (and immediately when you come back to the tab), with a freshness pill showing how current the scores are.
-- **Add to home screen** — the site ships a web-app manifest and icon, so it installs like an app on phones.
+- **Pick Odds** — a Monte Carlo forecast tab: thousands of simulations of the remaining group-stage matches (scoring pace blended with the tournament average, cards tiebreak included) produce each team's % chance at every draft slot — favorite for the No. 1 pick, your expected pick, the full probability matrix, and a "lock meter" per team.
+- **The Race** — a bump chart at the top of Stats showing the draft order day by day, rebuilt from every finished match. Your team's line glows; riser/faller chips call out the day's biggest moves.
+- **Goal alerts** — while the hub is open, goals, red cards, and draft-order changes pop as toasts (with a 👑 special when someone takes the No. 1 pick), and the scoring team's row flashes on the board. The 🔔 in the top bar cycles: toasts only → toasts + browser notifications (with a goal horn) → off.
+- **📸 Share card** — one tap renders the live draft order as a branded PNG and opens the share sheet (or downloads it) — made for the group chat.
+- **Add to home screen** — web-app manifest, icon, and a real service worker: installs like an app, loads instantly, and works offline with the last-known scores. Fresh data and new deploys still always win while online.
 - **Pick your team** — first visit asks "Whose board is this?" Each league member picks their own team (saved on their device) and the hub highlights *their* group, matches, and draft position. Change anytime via the 🏷 pill. Share links pre-assign a team: `https://ysawiris.github.io/wc26-draft-tracker/?team=GRS` (use the team's abbreviation from `js/data.js`).
 
 ## How the draft order works
@@ -49,7 +53,9 @@ repo secret is configured (optional, scores only).
 You can always hand-correct: edit `js/data.js` (each country's `goals` /
 `yellows` / `reds`), commit, push — Pages redeploys in ~1 minute. Editable
 straight from github.com on your phone. Note manual numbers only show while
-the live feed has no data of its own.
+the live feed has no data of its own. Members' installed copies pick the edit
+up on their next visit (stale-while-revalidate) — or immediately if you also
+bump `VERSION` in `sw.js`.
 
 ## Project layout
 
@@ -68,7 +74,13 @@ js/app.js               # rendering + tabs + countdown + the Hub module API
 js/board-extras.js      # copy/share, rank movement, pace, crown/last-pick
 js/stats.js             # wire report, record book, runway, matchday bars
 js/simulator.js         # what-if deltas + live re-ranking
+js/odds.js              # Pick Odds tab — Monte Carlo forecast of the final order
+js/race.js              # The Race — rank-history bump chart (Stats tab)
+js/alerts.js            # goal/card/rank toasts, browser notifications, goal horn
+js/share-card.js        # 📸 branded PNG of the draft order via canvas + share sheet
 js/refresh.js           # 2-min auto-refresh + freshness pill
+js/sw-register.js       # service-worker registration + "new version" pill
+sw.js                   # service worker — offline shell, network-first live.json
 manifest.webmanifest    # PWA manifest (add-to-home-screen)
 assets/icon.svg         # app icon
 scripts/fetch-scores.mjs# the Action's fetcher (FIFA API -> data/live.json)
@@ -76,6 +88,13 @@ scripts/fetch-scores.mjs# the Action's fetcher (FIFA API -> data/live.json)
 ```
 
 Plain HTML/CSS/JS, no build step. Hosted on GitHub Pages.
+
+**Deploy rule:** bump `VERSION` at the top of `sw.js` (e.g. `wc26-v1` →
+`wc26-v2`) on any deploy that changes js/, css/, index.html, or the manifest —
+returning visitors then get a "↻ tap to refresh" pill and the update lands
+immediately. Forgot the bump? Not fatal: assets are stale-while-revalidate,
+so each member self-heals on their next visit. `data/live.json` is always
+network-first, so scores stay fresh regardless.
 
 ### Architecture note
 
