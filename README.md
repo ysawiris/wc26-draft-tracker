@@ -13,7 +13,7 @@ Live hub for our 2026 World Cup fantasy league — draft order, full schedule, s
 - **Stats & Records** — an auto-written "Wire Report" (headlines generated from the live standings), the Record Book (top group, top-scoring country, dirtiest group, highest-scoring match, goals per match), each team's six-match "runway" progress, and goals by matchday.
 - **What-If Machine** — add hypothetical goals and cards to any team's group and watch the draft order re-rank live. Scenarios never touch the real board, survive tab switches, and can be copied straight to the chat. Reset anytime.
 - **Auto-refresh** — while the page is open it re-checks scores every 2 minutes (and immediately when you come back to the tab), with a freshness pill showing how current the scores are.
-- **Pick Odds** — a Monte Carlo forecast tab: thousands of simulations of the remaining group-stage matches (scoring pace blended with the tournament average, cards tiebreak included) produce each team's % chance at every draft slot — favorite for the No. 1 pick, your expected pick, the full probability matrix, and a "lock meter" per team.
+- **Pick Odds** — a Monte Carlo forecast tab driven by **real betting markets**: a cron pulls DraftKings over/under totals (via ESPN's public API) every 4 hours, strips the vig, and converts each match's line into market-implied expected goals — those rates drive thousands of simulations of the remaining group stage (Elo-informed strength model fills unpriced matches; cards tiebreak included). You get the favorite for the No. 1 pick with moneylines, your expected pick, a bookmaker-style board, the posted market lines for the next 48h, and the full pick-probability matrix.
 - **The Race** — a bump chart at the top of Stats showing the draft order day by day, rebuilt from every finished match. Your team's line glows; riser/faller chips call out the day's biggest moves.
 - **Goal alerts** — while the hub is open, goals, red cards, and draft-order changes pop as toasts (with a 👑 special when someone takes the No. 1 pick), and the scoring team's row flashes on the board. The 🔔 in the top bar cycles: toasts only → toasts + browser notifications (with a goal horn) → off.
 - **📸 Share card** — one tap renders the live draft order as a branded PNG and opens the share sheet (or downloads it) — made for the group chat.
@@ -84,7 +84,9 @@ sw.js                   # service worker — offline shell, network-first live.j
 manifest.webmanifest    # PWA manifest (add-to-home-screen)
 assets/icon.svg         # app icon
 scripts/fetch-scores.mjs# the Action's fetcher (FIFA API -> data/live.json)
+scripts/fetch-odds.mjs  # betting-totals fetcher (ESPN/DraftKings -> data/odds.json)
 .github/workflows/update-scores.yml  # 10-min cron
+.github/workflows/update-odds.yml    # 4-hour cron for market lines
 ```
 
 Plain HTML/CSS/JS, no build step. Hosted on GitHub Pages.

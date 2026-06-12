@@ -10,8 +10,9 @@
   - Precache the app shell (html, css, js, manifest, icon) on install, with
     cache:"no-cache" requests so GitHub Pages' 10-minute HTTP cache can never
     seed a fresh version's cache with pre-deploy bodies.
-  - Navigations and data/live.json: NETWORK-FIRST, cache fallback — deploys
-    and fresh scores always win while online, offline still renders.
+  - Navigations and everything under data/ (live.json, odds.json): NETWORK-
+    FIRST, cache fallback — deploys, fresh scores and fresh betting lines
+    always win while online, offline still renders.
   - Every other same-origin GET: STALE-WHILE-REVALIDATE — answered from cache
     instantly, refreshed from the network in the background, so even a deploy
     that forgets the VERSION bump self-heals on the member's next visit.
@@ -28,14 +29,15 @@
 (function () {
   "use strict";
 
-  var VERSION = "wc26-v3";
+  var VERSION = "wc26-v4";
   var CACHE_NAME = "wc26-cache-" + VERSION;
   var CACHE_PREFIX = "wc26-cache-";
-  var LIVE_JSON_SUFFIX = "data/live.json";
+  var DATA_DIR_RE = /\/data\/[^/]+\.json$/;
 
   /* Explicit precache list — every shell file in the repo, listed by hand
-     (no runtime globbing). data/live.json is deliberately ABSENT: it must
-     never be served cache-first. Missing files are skipped, not fatal. */
+     (no runtime globbing). data/*.json is deliberately ABSENT: live scores
+     and betting lines must never be served cache-first. Missing files are
+     skipped, not fatal. */
   var PRECACHE_PATHS = [
     "./",
     "index.html",
@@ -162,7 +164,7 @@
     });
   }
 
-  function handleLiveJson(request, url) {
+  function handleDataJson(request, url) {
     /* Network-first; cache under the query-less URL so the app's
        ?v=Date.now() cache-buster still hits the stored copy offline. */
     var key = canonicalUrl(url);
@@ -219,8 +221,8 @@
       event.respondWith(handleNavigate(request, url));
       return;
     }
-    if (url.pathname.endsWith(LIVE_JSON_SUFFIX)) {
-      event.respondWith(handleLiveJson(request, url));
+    if (DATA_DIR_RE.test(url.pathname)) {
+      event.respondWith(handleDataJson(request, url));
       return;
     }
     event.respondWith(handleAsset(request, event));

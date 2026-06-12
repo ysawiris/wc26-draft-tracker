@@ -1,14 +1,17 @@
-/* Pick Odds tab v2: a strength-driven Monte Carlo forecast of the
-   final draft order. Every remaining fixture gets an Elo-informed
-   goal rate (per-country att/def ratings) scaled by its group's
-   observed scoring pace; in-play matches simulate only the minutes
-   left on the clock. Per sim the 10 teams are ranked with the real
-   board comparator (goals desc, card points desc, coin-flip ties).
-   Results are cached on a fingerprint of the observed totals plus
-   the live minutes, so the forecast ticks over during matches while
-   idle 2-minute re-renders reuse the cache. Daily No. 1 snapshots
-   persist in localStorage for movement chips and sparklines. Pure
-   display, no listeners; renders into #odds-host. */
+/* Pick Odds tab v3: a market-aware Monte Carlo forecast of the
+   final draft order. Fixtures with a bookmaker total (data/odds.json,
+   DraftKings via the fetcher) use the market-implied expected goals
+   directly; every other remaining fixture gets an Elo-informed goal
+   rate (per-country att/def ratings) scaled by its group's observed
+   scoring pace. In-play matches simulate only the minutes left on
+   the clock. Per sim the 10 teams are ranked with the real board
+   comparator (goals desc, card points desc, coin-flip ties).
+   Results are cached on a fingerprint of the observed totals, the
+   live minutes and the market snapshot, so the forecast ticks over
+   during matches and on line refreshes while idle 2-minute
+   re-renders reuse the cache. Daily No. 1 snapshots persist in
+   localStorage for movement chips and sparklines. Pure display, no
+   listeners; renders into #odds-host. */
 
 (function () {
   "use strict";
@@ -89,7 +92,107 @@
 
   /* ---------------- module state ---------------- */
 
-  var cache = null;  // { fp: string, res: forecast } — survives re-renders
+  var cache = null;    // { fp: string, res: forecast } — survives re-renders
+  var lastCtx = null;  // latest rendered ctx, for market-driven re-renders
+
+  /* ---------------- market lines (data/odds.json) ---------------- */
+
+  /* The fetcher writes bookmaker over/under totals for upcoming matches;
+     when a fixture has one, its market-implied expected goals replace the
+     Elo lambda (the book already prices form, so no pace scaling either).
+     The file may not exist yet — every failure resolves to "no market". */
+
+  var MARKET_TTL_MS = 30 * 60000;        // refetch when older than this
+  var MARKET_WINDOW_MS = 48 * 3600000;   // chip-row horizon
+  var IMPLIED_MIN = 1.6;                 // sanity clamp, mirrors the fetcher
+  var IMPLIED_MAX = 4.6;
+
+  var market = null;        // { fetchedAt, count, byPair } or null
+  var marketLastTry = 0;    // wall clock of the last fetch attempt
+  var marketLoading = false;
+
+  /* Both sides of the fixture/odds match must normalize identically:
+     lowercase, strip diacritics, strip non-letters, then alias. Local on
+     purpose — the data contract pins this exact scheme, shared with the
+     fetcher, independent of Live's fuzzier matcher. */
+  var MK_ALIAS = {
+    bosniaandherzegovina: "bosniaherzegovina",
+    cotedivoire: "ivorycoast",
+    turkey: "turkiye",
+    usa: "unitedstates",
+    unitedstatesofamerica: "unitedstates",
+    korearepublic: "southkorea",
+    czechia: "czechrepublic",
+    capeverdeislands: "capeverde",
+    caboverde: "capeverde",
+    congodr: "drcongo",
+    democraticrepublicofthecongo: "drcongo"
+  };
+
+  function mkCanon(name) {
+    var s = String(name).toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // strip diacritics
+      .replace(/[^a-z]/g, "");                          // strip non-letters
+    return MK_ALIAS[s] || s;
+  }
+
+  /* Unordered pair key — "Canada" vs "Bosnia-Herzegovina" finds the same
+     line as "Bosnia & Herzegovina" vs "Canada". */
+  function canonPair(a, b) {
+    var ca = mkCanon(a);
+    var cb = mkCanon(b);
+    return ca < cb ? ca + "|" + cb : cb + "|" + ca;
+  }
+
+  /* Validate + index a fetched odds payload; never throws. Re-renders the
+     stored ctx when the snapshot actually changed (new fetchedAt). */
+  function applyMarket(data) {
+    try {
+      if (!data || !data.lines || !data.lines.length) return;
+      var byPair = {};
+      var count = 0;
+      data.lines.forEach(function (ln) {
+        if (!ln || !ln.home || !ln.away) return;
+        var t = Number(ln.impliedTotal);
+        if (!isFinite(t)) return;
+        byPair[canonPair(ln.home, ln.away)] = {
+          impliedTotal: Math.min(Math.max(t, IMPLIED_MIN), IMPLIED_MAX),
+          line: ln.line,
+          overUS: ln.overUS,
+          underUS: ln.underUS,
+          date: ln.date
+        };
+        count += 1;
+      });
+      if (!count) return;
+      var prevAt = market ? market.fetchedAt : null;
+      market = {
+        fetchedAt: String(data.fetchedAt || ""),
+        count: count,
+        byPair: byPair
+      };
+      if (market.fetchedAt !== prevAt && lastCtx) render(lastCtx);
+    } catch (_) { /* malformed payload — behave as if absent */ }
+  }
+
+  function loadMarket() {
+    if (marketLoading) return;
+    marketLoading = true;
+    marketLastTry = Date.now();
+    /* Same cache-buster pattern as js/live.js — GitHub Pages' CDN copy
+       can be up to 10 minutes stale without it. */
+    fetch("data/odds.json?v=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+      .then(function (data) {
+        marketLoading = false;
+        if (data) applyMarket(data);
+      });
+  }
+
+  function marketLine(homeName, awayName) {
+    return (market && market.byPair[canonPair(homeName, awayName)]) || null;
+  }
 
   /* ---------------- poisson sampler (Knuth) ---------------- */
 
@@ -126,7 +229,9 @@
         pastManual += 1; /* cache must roll over as manual-mode days pass */
       }
     });
-    return [goals, cardPts, fin, live, minutes, pastManual, ctx.standings.length].join("|");
+    /* Market snapshot folds in so a lines refresh re-runs the sim. */
+    return [goals, cardPts, fin, live, minutes, pastManual, ctx.standings.length,
+      market ? market.fetchedAt : 0, market ? market.count : 0].join("|");
   }
 
   /* ---------------- model ---------------- */
@@ -145,7 +250,8 @@
   }
 
   /* Classify one fixture: its prior goal rate and how much of it is
-     still unplayed (1 = untouched, 0 = finished, fraction = in play). */
+     still unplayed (1 = untouched, 0 = finished, fraction = in play).
+     A bookmaker total, when one exists, beats the Elo estimate. */
   function classify(fx, ctx) {
     var fin = !!FIN[fx.status];
     var live = !fin && !!LIVE_ST[fx.status];
@@ -155,9 +261,11 @@
     else if (live) {
       remFrac = Math.max(0, (FULL_MIN - parseMinute(fx.minute, fx.status)) / FULL_MIN);
     }
+    var mk = marketLine(fx.home.name, fx.away.name);
     return {
       letter: fx.group,
-      lambda: matchLambda(fx.home.name, fx.away.name),
+      lambda: mk ? mk.impliedTotal : matchLambda(fx.home.name, fx.away.name),
+      market: !!mk,
       fin: fin,
       live: live,
       remFrac: remFrac
@@ -185,19 +293,28 @@
       pace[letter] = Math.min(Math.max(f, PACE_MIN), PACE_MAX);
     });
 
-    /* Remaining Poisson rates per group. Goals get strength × pace; card
-       points use the flat prior. Live fixtures only count the time left. */
+    /* Remaining Poisson rates per group. Market totals pass through as-is
+       (the book already prices form); Elo lambdas get strength × pace.
+       Card points use the flat prior. Live fixtures only count the time
+       left. mkUsed/remain feed the methodology line. */
     var remGoals = {};
     var remCards = {};
+    var mkUsed = 0;
+    var remain = 0;
     entries.forEach(function (en) {
       if (en.fin) return;
-      var f = pace[en.letter] || 1;
+      remain += 1;
+      if (en.market) mkUsed += 1;
+      var f = en.market ? 1 : pace[en.letter] || 1;
       remGoals[en.letter] = (remGoals[en.letter] || 0) + en.lambda * f * en.remFrac;
       remCards[en.letter] = (remCards[en.letter] || 0) + CARD_PPM * en.remFrac;
     });
 
     var started = entries.some(function (en) { return en.fin || en.live; });
-    return { remGoals: remGoals, remCards: remCards, started: started };
+    return {
+      remGoals: remGoals, remCards: remCards, started: started,
+      mkUsed: mkUsed, remain: remain
+    };
   }
 
   /* ---------------- monte carlo ---------------- */
@@ -303,7 +420,10 @@
         (a.abbr < b.abbr ? -1 : a.abbr > b.abbr ? 1 : 0);
     });
 
-    return { sims: done, pre: !model.started, rows: rows };
+    return {
+      sims: done, pre: !model.started, rows: rows,
+      market: !!market, mkUsed: model.mkUsed, mkRemain: model.remain
+    };
   }
 
   function getForecast(ctx) {
@@ -526,6 +646,75 @@
       '<div class="od-board">' + rows + "</div></section>";
   }
 
+  /* ---------------- market lines chip row ---------------- */
+
+  /* FIFA-style country codes for the chips. Keys match the seed names
+     exactly (same convention as STRENGTH); unknowns fall back to the
+     first three canon letters. */
+  var MK_ABBR = {
+    /* B */ "Canada": "CAN", "Bosnia & Herzegovina": "BIH",
+            "Qatar": "QAT", "Switzerland": "SUI",
+    /* C */ "Brazil": "BRA", "Morocco": "MAR", "Haiti": "HAI", "Scotland": "SCO",
+    /* D */ "United States": "USA", "Paraguay": "PAR",
+            "Australia": "AUS", "Türkiye": "TUR",
+    /* E */ "Germany": "GER", "Curaçao": "CUW",
+            "Ivory Coast": "CIV", "Ecuador": "ECU",
+    /* F */ "Netherlands": "NED", "Japan": "JPN", "Sweden": "SWE", "Tunisia": "TUN",
+    /* G */ "Belgium": "BEL", "Egypt": "EGY", "Iran": "IRN", "New Zealand": "NZL",
+    /* H */ "Spain": "ESP", "Cape Verde": "CPV",
+            "Saudi Arabia": "KSA", "Uruguay": "URU",
+    /* I */ "France": "FRA", "Senegal": "SEN", "Iraq": "IRQ", "Norway": "NOR",
+    /* J */ "Argentina": "ARG", "Algeria": "ALG", "Austria": "AUT", "Jordan": "JOR",
+    /* K */ "Portugal": "POR", "DR Congo": "COD",
+            "Uzbekistan": "UZB", "Colombia": "COL",
+    /* L */ "England": "ENG", "Croatia": "CRO", "Ghana": "GHA", "Panama": "PAN"
+  };
+
+  function teamAbbr(name) {
+    return MK_ABBR[name] || mkCanon(name).slice(0, 3).toUpperCase();
+  }
+
+  /* Find the viewer's group letter (null when no team is picked). */
+  function findMineLetter(ctx) {
+    var letter = null;
+    ctx.standings.forEach(function (row) {
+      if (row.team.isMine) letter = row.group.letter;
+    });
+    return letter;
+  }
+
+  /* One scrollable row of "CAN-BIH · O/U 2.5 · o+120" chips for league
+     fixtures kicking off inside the next 48h that carry a bookmaker
+     total. Hidden entirely when nothing matches. */
+  function marketHtml(ctx) {
+    if (!market) return "";
+    var esc = ctx.helpers.esc;
+    var now = Date.now();
+    var mineLetter = findMineLetter(ctx);
+
+    var chips = [];
+    ctx.fixtures.slice()
+      .sort(function (a, b) { return ctx.helpers.fxDate(a) - ctx.helpers.fxDate(b); })
+      .forEach(function (fx) {
+        if (FIN[fx.status] || LIVE_ST[fx.status]) return;
+        var t = ctx.helpers.fxDate(fx).getTime();
+        if (t < now || t > now + MARKET_WINDOW_MS) return;
+        var mk = marketLine(fx.home.name, fx.away.name);
+        if (!mk || mk.line == null) return;
+        var price = mk.overUS ? " · o" + esc(String(mk.overUS)) : "";
+        chips.push('<div class="od-mk-chip' +
+          (fx.group === mineLetter ? " mine" : "") + '">' +
+          '<span class="od-mk-flags">' + esc(fx.home.flag) + " " + esc(fx.away.flag) + "</span>" +
+          '<span class="od-mk-txt">' + esc(teamAbbr(fx.home.name)) + "-" + esc(teamAbbr(fx.away.name)) +
+          " · O/U " + esc(String(mk.line)) + price + "</span></div>");
+      });
+    if (!chips.length) return "";
+
+    return '<section class="od-block">' +
+      '<div class="od-head">💰 Market Lines <span class="od-head-sub">· DraftKings totals, next 48h</span></div>' +
+      '<div class="od-mk-row">' + chips.join("") + "</div></section>";
+  }
+
   /* ---------------- path to No. 1 ---------------- */
 
   function pathHtml(ctx, res, board, mine) {
@@ -627,6 +816,8 @@
         host.innerHTML = '<p class="od-empty">Waiting for draft data…</p>';
         return;
       }
+      lastCtx = ctx; /* market loads re-render with the latest ctx */
+      if (Date.now() - marketLastTry > MARKET_TTL_MS) loadMarket();
       var res = getForecast(ctx);
       if (!res) {
         host.innerHTML = '<p class="od-empty">Waiting for draft data…</p>';
@@ -650,15 +841,22 @@
       var scroller = host.querySelector(".od-matrix");
       var scrollX = scroller ? scroller.scrollLeft : 0;
 
+      var method = res.market
+        ? fmtSims(res.sims) + " sims · DraftKings totals on " +
+          res.mkUsed + " of " + res.mkRemain + " remaining · " +
+          "Elo strength fills the gaps · in-play from the current minute · cards tiebreak"
+        : fmtSims(res.sims) +
+          " sims · Elo-informed team strength + live pace · " +
+          "in-play simulated from the current minute · cards tiebreak";
+
       host.innerHTML = '<div class="od-wrap">' +
         (res.pre ? '<div class="od-banner">Strength-based forecast — sharpens with every final whistle.</div>' : "") +
         heroHtml(ctx, res, board, mine) +
         boardHtml(ctx, board, hist, todayKey, mineAbbr) +
+        marketHtml(ctx) +
         (mine ? pathHtml(ctx, res, board, mine) : "") +
         matrixHtml(ctx, res, mineAbbr) +
-        '<p class="od-method">' + fmtSims(res.sims) +
-          " sims · Elo-informed team strength + live pace · " +
-          "in-play simulated from the current minute · cards tiebreak</p>" +
+        '<p class="od-method">' + method + "</p>" +
         "</div>";
 
       scroller = host.querySelector(".od-matrix");
@@ -670,11 +868,15 @@
 
   if (window.Hub && typeof window.Hub.onRender === "function") Hub.onRender(render);
 
-  /* Debug/console surface — pure helpers only, nothing stateful. */
+  loadMarket(); /* first market fetch at module init; render() keeps it fresh */
+
+  /* Debug/console surface — pure helpers plus a read-only market probe. */
   window.PickOdds = {
     parseMinute: parseMinute,
     moneyline: moneyline,
     matchLambda: matchLambda,
-    forecast: getForecast
+    forecast: getForecast,
+    canonPair: canonPair,
+    marketLine: marketLine
   };
 })();

@@ -142,6 +142,33 @@
   vector-effect: non-scaling-stroke; /* sane stroke despite preserveAspectRatio="none" */
 }
 
+/* ---------- Market Lines (bookmaker totals chip row) ---------- */
+
+.od-mk-row {
+  display: flex; gap: 8px;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  max-width: 100%; min-width: 0; /* scroll inside the grid item, never widen the page */
+  padding-bottom: 4px;
+}
+.od-mk-chip {
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--panel); border: 1px solid var(--panel-edge);
+  border-radius: 999px; padding: 6px 12px;
+  white-space: nowrap;
+}
+.od-mk-chip.mine {
+  border-color: var(--you);
+  box-shadow: 0 0 10px rgba(243, 177, 59, 0.22);
+}
+.od-mk-flags { font-size: 0.9rem; line-height: 1; }
+.od-mk-txt {
+  font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.68rem; font-weight: 700; color: var(--gold-1);
+}
+.od-mk-chip.mine .od-mk-txt { color: var(--you); }
+
 /* ---------- Path to No. 1 ---------- */
 
 .od-path {
@@ -266,4 +293,6 @@
   .od-bd-name { font-size: 0.74rem; }
   .od-bd-ml { font-size: 0.66rem; }
   .od-bd-graph { width: 40px; }
+  .od-mk-chip { padding: 5px 10px; gap: 5px; }
+  .od-mk-txt { font-size: 0.62rem; }
 }
