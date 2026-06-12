@@ -207,6 +207,11 @@
   border: 1px solid rgba(212, 168, 84, 0.14);
 }
 
+/* The team column shows the full name on desktop, the abbr on phones —
+   a full-name sticky column would leave a sliver for the pick cells. */
+.od-tn-abbr { display: none; }
+.od-swipe-hint { display: none; }
+
 /* ---------- Methodology ---------- */
 
 .od-method {
@@ -218,8 +223,10 @@
 
 @media (max-width: 760px) {
   .od-cards, .od-cards.two { grid-template-columns: 1fr; }
-  .od-card-value { font-size: 1.7rem; }
-  .od-card-detail { white-space: normal; }
+  .od-card { padding: 11px 14px; }
+  .od-card-value { font-size: 1.4rem; display: inline; margin-right: 8px; }
+  .od-card-detail { white-space: normal; display: inline; margin-top: 0; }
+  .od-card-label { margin-bottom: 5px; }
 }
 
 @media (max-width: 700px) {
@@ -230,9 +237,16 @@
 
 @media (max-width: 560px) {
   .od-matrix { padding: 8px; }
-  .od-cell { width: 40px; min-width: 40px; height: 30px; font-size: 0.64rem; }
-  .od-exp, .od-lockp { height: 30px; font-size: 0.64rem; }
-  .od-team { font-size: 0.7rem; }
+  .od-cell { width: 38px; min-width: 38px; height: 30px; font-size: 0.64rem; }
+  .od-exp, .od-lockp { height: 30px; font-size: 0.64rem; min-width: 34px; }
+  .od-team { font-size: 0.74rem; padding: 0 8px 0 7px; }
+  .od-table { min-width: 520px; }
+
+  /* Abbr replaces the full name so ~6 pick columns fit beside the
+     sticky column instead of ~1.5. */
+  .od-tn-full { display: none; }
+  .od-tn-abbr { display: inline; }
+  .od-swipe-hint { display: inline; }
 
   /* Board rows wrap to two lines: name + numbers, then bar + history. */
   .od-board { padding-left: 12px; padding-right: 12px; }

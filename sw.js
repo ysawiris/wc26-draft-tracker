@@ -28,7 +28,7 @@
 (function () {
   "use strict";
 
-  var VERSION = "wc26-v2";
+  var VERSION = "wc26-v3";
   var CACHE_NAME = "wc26-cache-" + VERSION;
   var CACHE_PREFIX = "wc26-cache-";
   var LIVE_JSON_SUFFIX = "data/live.json";

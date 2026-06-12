@@ -597,7 +597,9 @@
       var mine = r.abbr === mineAbbr;
       var cells = r.probs.map(matrixCell).join("");
       return '<tr class="od-row' + (mine ? " mine" : "") + '" style="--od-ac:' + esc(r.accent) + '">' +
-        '<th class="od-team" scope="row">' + esc(r.name) + (mine ? " ⭐" : "") +
+        '<th class="od-team" scope="row">' +
+        '<span class="od-tn-full">' + esc(r.name) + "</span>" +
+        '<span class="od-tn-abbr">' + esc(r.abbr) + "</span>" + (mine ? " ⭐" : "") +
         ' <span class="od-grp">' + esc(r.letter) + "</span></th>" +
         '<td class="od-exp">' + r.expPick.toFixed(1) + "</td>" +
         cells +
@@ -605,7 +607,8 @@
     }).join("");
 
     return '<section class="od-block">' +
-      '<div class="od-head">🎲 Pick Probability Matrix</div>' +
+      '<div class="od-head">🎲 Pick Probability Matrix ' +
+        '<span class="od-head-sub od-swipe-hint">· swipe for picks →</span></div>' +
       '<div class="od-matrix"><table class="od-table">' +
         "<thead>" + head + "</thead><tbody>" + body + "</tbody>" +
       "</table></div>" +
