@@ -29,6 +29,18 @@
   color: #1a1206; background: var(--gold-grad); border-color: transparent;
 }
 
+/* WhatsApp — the primary "spread the link" CTA. Brand green so it reads
+   instantly; overrides the gold ghost styling above. */
+.bx-btn.bx-whatsapp {
+  display: inline-flex; align-items: center; gap: 7px;
+  color: #fff; background: #25d366; border-color: transparent;
+}
+.bx-btn.bx-whatsapp:hover {
+  color: #fff; background: #1fbd5a; border-color: transparent;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+}
+.bx-btn.bx-whatsapp svg { flex: 0 0 auto; }
+
 /* ---------- Rank-movement badges (in .team-top) ---------- */
 
 .bx-move {
