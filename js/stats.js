@@ -100,12 +100,19 @@
   }
 
   function unclaimedLine(ctx) {
-    if (!ctx.groups.I) return null;
-    var gi = ctx.helpers.groupGoals(ctx.groups.I);
-    if (gi <= 0) return null;
-    var beaten = ctx.standings.filter(function (r) { return r.goals < gi; }).length;
+    // Spotlight whichever unclaimed group (A or I) is out-scoring the most
+    // drafted teams — both went undrafted, both still count.
+    var owners = ctx.helpers.ownerByGroup();
+    var best = null;
+    Object.keys(ctx.groups).forEach(function (L) {
+      if (owners[L]) return;
+      var goals = ctx.helpers.groupGoals(ctx.groups[L]);
+      if (!best || goals > best.goals) best = { letter: L, goals: goals };
+    });
+    if (!best || best.goals <= 0) return null;
+    var beaten = ctx.standings.filter(function (r) { return r.goals < best.goals; }).length;
     if (beaten <= 0) return null;
-    return "Unclaimed Group I has " + gi + " " + plural(gi, "goal", "goals") +
+    return "Unclaimed Group " + best.letter + " has " + best.goals + " " + plural(best.goals, "goal", "goals") +
       " — more than " + beaten + " drafted " + plural(beaten, "team", "teams") + " 💀";
   }
 
@@ -188,10 +195,12 @@
         " (" + flags + ") opens " + when + ".");
     }
 
-    if (ctx.groups.I) {
-      var iNames = ctx.groups.I.countries.slice(0, 2).map(function (c) { return esc(c.name); }).join(" and ");
-      lines.push("Group I went undrafted — " + iNames + " will be banging in goals for absolutely nobody.");
-    }
+    var gOwners = ctx.helpers.ownerByGroup();
+    Object.keys(ctx.groups).forEach(function (L) {
+      if (gOwners[L]) return; // drafted — has an owner
+      var names = ctx.groups[L].countries.slice(0, 2).map(function (c) { return esc(c.name); }).join(" and ");
+      lines.push("Group " + L + " went undrafted — " + names + " will be banging in goals for absolutely nobody.");
+    });
 
     return lines;
   }
@@ -353,7 +362,7 @@
     return '<section class="st-block">' +
       '<div class="st-head">⚽ Goals by Matchday</div>' +
       '<div class="st-md">' + rows +
-        '<p class="st-foot">League-wide goals across all 11 groups, by group-stage matchday.</p>' +
+        '<p class="st-foot">League-wide goals across all 12 groups, by group-stage matchday.</p>' +
       "</div></section>";
   }
 

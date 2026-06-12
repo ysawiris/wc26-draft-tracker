@@ -1,5 +1,5 @@
 /* ============================================================
-   Group-stage fixtures for groups B–L.
+   Group-stage fixtures for groups A–L.
 
    Pairings are generated from FIFA's fixed round-robin template
    (verified against the real 2026 schedule); dates are the
@@ -20,6 +20,7 @@ var FIXTURE_PATTERN = [
    [MD1a, MD1b, MD2a, MD2b, MD3a, MD3b]. Group D's MD1 is split
    across Jun 12–13, which is why dates are stored per match. */
 var GROUP_DATES = {
+  A: ["2026-06-11", "2026-06-12", "2026-06-19", "2026-06-18", "2026-06-25", "2026-06-25"],
   B: ["2026-06-12", "2026-06-12", "2026-06-18", "2026-06-18", "2026-06-24", "2026-06-24"],
   C: ["2026-06-13", "2026-06-13", "2026-06-19", "2026-06-19", "2026-06-24", "2026-06-24"],
   D: ["2026-06-12", "2026-06-13", "2026-06-19", "2026-06-19", "2026-06-25", "2026-06-25"],
@@ -33,21 +34,11 @@ var GROUP_DATES = {
   L: ["2026-06-17", "2026-06-17", "2026-06-23", "2026-06-23", "2026-06-27", "2026-06-27"]
 };
 
-/* Group A isn't in the league draw (it kicked off before the draw happened),
-   but its matches still belong on the schedule — flagged `exhibition` so they
-   never touch the draft math. Draw order verified against FIFA's pairings. */
-var EXHIBITION_GROUPS = {
-  A: {
-    letter: "A",
-    countries: [
-      { name: "Mexico",         flag: "🇲🇽" },
-      { name: "South Africa",   flag: "🇿🇦" },
-      { name: "South Korea",    flag: "🇰🇷" },
-      { name: "Czech Republic", flag: "🇨🇿" }
-    ],
-    dates: ["2026-06-11", "2026-06-12", "2026-06-19", "2026-06-18", "2026-06-25", "2026-06-25"]
-  }
-};
+/* No exhibition groups right now. Group A used to live here (it kicked off
+   before the league draw), but it's now a full league group in GROUP_DATES —
+   unclaimed like Group I, yet counted in the draft math. Kept as an extension
+   point in case a future group needs to ride the schedule without scoring. */
+var EXHIBITION_GROUPS = {};
 
 function buildExhibitionFixtures() {
   var fixtures = [];
@@ -84,7 +75,7 @@ function buildExhibitionFixtures() {
   return fixtures;
 }
 
-/* Build the full fixture list for groups B–L from the seed groups. */
+/* Build the full fixture list for groups A–L from the seed groups. */
 function buildFixtures() {
   var fixtures = [];
 

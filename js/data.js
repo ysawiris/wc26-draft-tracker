@@ -15,7 +15,7 @@ var LEAGUE = {
   lastUpdated: "June 11, 2026",
   drawNote:
     "Groups assigned by Meta AI in the league chat (June 11, 2026). " +
-    "Group A is excluded — they kicked off first. 10 teams, 11 groups, so Group I went unclaimed."
+    "10 teams across 12 groups — Groups A and I went unclaimed."
 };
 
 /* The 10 fantasy teams, in league order (ESPN).
@@ -35,9 +35,18 @@ var TEAMS = [
   { abbr: "R",    name: "Ms. Jackson ouuuuuuuuuuuu",     division: "East", managers: ["Mario Rofael"],                group: "C", accent: "#7d8c2b" }
 ];
 
-/* Groups B–L of the 2026 World Cup (Group A excluded — already started).
-   c1/c2 are the gradient colors of each country's bar. */
+/* All 12 groups (A–L) of the 2026 World Cup. Groups A and I went unclaimed in
+   the draw but still count. c1/c2 are the gradient colors of each country's bar. */
 var GROUPS = {
+  A: {
+    letter: "A",
+    countries: [
+      { name: "Mexico",         flag: "🇲🇽", c1: "#006847", c2: "#00472f", goals: 0, yellows: 0, reds: 0, fouls: 0 },
+      { name: "South Africa",   flag: "🇿🇦", c1: "#007749", c2: "#00432a", goals: 0, yellows: 0, reds: 0, fouls: 0 },
+      { name: "South Korea",    flag: "🇰🇷", c1: "#cd2e3a", c2: "#8e1f28", goals: 0, yellows: 0, reds: 0, fouls: 0 },
+      { name: "Czech Republic", flag: "🇨🇿", c1: "#11457e", c2: "#0b2f57", goals: 0, yellows: 0, reds: 0, fouls: 0 }
+    ]
+  },
   B: {
     letter: "B",
     countries: [

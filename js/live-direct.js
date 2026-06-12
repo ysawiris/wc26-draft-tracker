@@ -172,8 +172,8 @@
   /* ---------------- adaptive scheduling ---------------- */
 
   function nextDelay(ctx) {
-    // Exhibition (Group A) matches count here too — the schedule and
-    // ticker cover them even though the draft math ignores them.
+    // Poll cadence keys off every fixture (all groups A–L), so we tighten
+    // up around any live match or imminent kickoff.
     var fixtures = ctx.allFixtures || ctx.fixtures;
     var anyLive = fixtures.some(function (fx) { return Live.INPLAY[fx.status]; });
     if (anyLive) return LIVE_POLL;

@@ -283,7 +283,7 @@
   function buildSnapshot(ctx) {
     var snap = { fixtures: {}, ranks: {} };
     ctx.fixtures.forEach(function (fx) {
-      if (fx.exhibition) return; /* league math only — never Group A */
+      if (fx.exhibition) return; /* skip exhibition fixtures (none at present) */
       snap.fixtures[fxKey(fx)] = snapFixture(fx);
     });
     ctx.standings.forEach(function (row) {

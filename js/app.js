@@ -486,8 +486,8 @@
     Live.applyCards(liveData && liveData.cards && liveData.cards.byCountry);
     Live.applyFouls(liveData && liveData.fouls && liveData.fouls.byCountry);
 
-    // League fixtures (B–L) drive every standing/stat; exhibition fixtures
-    // (Group A) only ever appear on the schedule and the live strip.
+    // All groups (A–L) are league fixtures now and drive every standing/stat.
+    // The exhibition track is currently empty (concat kept as an extension point).
     var fixtures = buildFixtures();
     var allFixtures = fixtures.concat(buildExhibitionFixtures());
     Live.attachToFixtures(allFixtures, matches,

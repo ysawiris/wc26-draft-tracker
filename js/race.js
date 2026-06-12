@@ -1,6 +1,6 @@
 /* The Race — draft-order history bump chart at the top of the Stats tab.
-   Replays every FINISHED league fixture (ctx.fixtures, groups B–L only —
-   exhibitions never count) in kickoff order, snapshots the draft order
+   Replays every FINISHED league fixture (ctx.fixtures, groups A–L —
+   unclaimed groups still count) in kickoff order, snapshots the draft order
    after each completed day, and draws the rank paths as an inline SVG
    bump chart. Pure overlay: never mutates GROUPS/TEAMS. The day-by-day
    replay is cached by a fingerprint of the finished-match data so the

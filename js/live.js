@@ -161,8 +161,8 @@ var Live = (function () {
   }
 
   /* Canonicalize an API team name to its normalized seed form. Aliases
-     apply even for countries outside GROUPS (e.g. Group A exhibition
-     fixtures), so "Korea Republic" still matches "South Korea". */
+     apply to every API name (e.g. "Korea Republic" → "South Korea",
+     "Czechia" → "Czech Republic"), so live rows still match the seed. */
   function canon(apiName) {
     var c = resolveCountry(apiName);
     if (c) return norm(c.name);
