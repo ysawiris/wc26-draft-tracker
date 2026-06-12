@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-12T21:16:59.564Z",
+  "fetchedAt": "2026-06-12T23:54:50.727Z",
   "matchCount": 72,
   "matches": [
     {
@@ -54,7 +54,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Los Angeles Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021447",
