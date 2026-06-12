@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-12T01:26:25.575Z",
+  "fetchedAt": "2026-06-12T02:23:29.826Z",
   "matchCount": 72,
   "matches": [
     {
@@ -22,13 +22,13 @@
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-12T02:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Korea Republic",
       "away": "Czechia",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Guadalajara Stadium",
-      "minute": "0'"
+      "minute": "23'"
     },
     {
       "id": "400021449",
@@ -943,6 +943,7 @@
   ],
   "cards": {
     "byMatch": {
+      "400021441": {},
       "400021443": {
         "South Africa": {
           "y": 2,
