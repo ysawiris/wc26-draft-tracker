@@ -10,8 +10,10 @@
    live minutes and the market snapshot, so the forecast ticks over
    during matches and on line refreshes while idle 2-minute
    re-renders reuse the cache. Daily No. 1 snapshots persist in
-   localStorage for movement chips and sparklines. Pure display, no
-   listeners; renders into #odds-host. */
+   localStorage for movement chips and sparklines. Renders into
+   #odds-host; one delegated click/keydown listener on the host drives
+   the Projected Group Goals match-by-match drilldown. Also decorates
+   the Groups tab cards with a per-group projection badge. */
 
 (function () {
   "use strict";
@@ -266,9 +268,11 @@
       letter: fx.group,
       lambda: mk ? mk.impliedTotal : matchLambda(fx.home.name, fx.away.name),
       market: !!mk,
+      mkLine: mk ? mk.line : null, /* posted O/U, for the drilldown rows */
       fin: fin,
       live: live,
-      remFrac: remFrac
+      remFrac: remFrac,
+      fx: fx /* carried so groupDetail can show the receipts per fixture */
     };
   }
 
@@ -299,21 +303,26 @@
        left. mkUsed/remain feed the methodology line. */
     var remGoals = {};
     var remCards = {};
+    var remMatches = {};
     var mkUsed = 0;
     var remain = 0;
     entries.forEach(function (en) {
-      if (en.fin) return;
+      if (en.fin) { en.expRem = 0; return; }
       remain += 1;
       if (en.market) mkUsed += 1;
       var f = en.market ? 1 : pace[en.letter] || 1;
-      remGoals[en.letter] = (remGoals[en.letter] || 0) + en.lambda * f * en.remFrac;
+      /* The exact per-fixture remaining expectation the sim sums — the
+         drilldown shows these same numbers, never a recomputation. */
+      en.expRem = en.lambda * f * en.remFrac;
+      remGoals[en.letter] = (remGoals[en.letter] || 0) + en.expRem;
       remCards[en.letter] = (remCards[en.letter] || 0) + CARD_PPM * en.remFrac;
+      remMatches[en.letter] = (remMatches[en.letter] || 0) + 1;
     });
 
     var started = entries.some(function (en) { return en.fin || en.live; });
     return {
-      remGoals: remGoals, remCards: remCards, started: started,
-      mkUsed: mkUsed, remain: remain
+      remGoals: remGoals, remCards: remCards, remMatches: remMatches,
+      started: started, mkUsed: mkUsed, remain: remain, entries: entries
     };
   }
 
@@ -325,6 +334,40 @@
     if (!n) return null;
 
     var model = buildModel(ctx);
+
+    /* Per-group projection for the Projected Group Goals section: goals
+       already banked vs the model's expected remaining goals, plus how
+       many matches those arrive in. Same rates the sim draws from. */
+    var groupProj = {};
+    Object.keys(ctx.groups).forEach(function (letter) {
+      groupProj[letter] = {
+        banked: ctx.helpers.groupGoals(ctx.groups[letter]),
+        remain: model.remGoals[letter] || 0,
+        matches: model.remMatches[letter] || 0
+      };
+    });
+
+    /* Per-fixture receipts for the drilldown: a plain-value snapshot of
+       each classify entry plus its exact expRem (the same per-fixture
+       numbers remGoals sums), kickoff-ordered within each group. */
+    var groupDetail = {};
+    model.entries.forEach(function (en) {
+      var fx = en.fx;
+      var list = groupDetail[en.letter] || (groupDetail[en.letter] = []);
+      list.push({
+        time: ctx.helpers.fxDate(fx).getTime(),
+        home: fx.home.name, homeFlag: fx.home.flag,
+        away: fx.away.name, awayFlag: fx.away.flag,
+        homeGoals: fx.homeGoals, awayGoals: fx.awayGoals,
+        min: en.live ? parseMinute(fx.minute, fx.status) : null,
+        fin: en.fin, live: en.live,
+        market: en.market, line: en.mkLine,
+        expRem: en.expRem || 0
+      });
+    });
+    Object.keys(groupDetail).forEach(function (letter) {
+      groupDetail[letter].sort(function (a, b) { return a.time - b.time; });
+    });
 
     /* Per-team simulation inputs, indexed like standings. Summing the
        per-fixture Poisson rates per group is distribution-identical to
@@ -421,7 +464,8 @@
     });
 
     return {
-      sims: done, pre: !model.started, rows: rows,
+      sims: done, pre: !model.started, rows: rows, groupProj: groupProj,
+      groupDetail: groupDetail,
       market: !!market, mkUsed: model.mkUsed, mkRemain: model.remain
     };
   }
@@ -564,35 +608,225 @@
   function favoriteCard(ctx, board) {
     var fav = board[0];
     if (!fav) return cardHtml("No. 1 pick favorite", "&mdash;", "waiting for data", true);
-    return cardHtml("No. 1 pick favorite", fmtPct(fav.probs[0]),
-      ctx.helpers.esc(fav.name) + " · " + moneyline(fav.probs[0]));
+    var p = fav.probs[0];
+    /* Plain-English odds — "+480" lands better as "about a 1-in-6 shot". */
+    var oneIn = p > 0 ? " · about a 1-in-" + Math.round(1 / p) + " shot" : "";
+    return cardHtml("No. 1 pick favorite", fmtPct(p),
+      ctx.helpers.esc(fav.name) + " · " + moneyline(p) + oneIn);
+  }
+
+  /* Smallest pick whose cumulative probability reaches q (a percentile
+     of the pick distribution); the tiny epsilon absorbs float drift. */
+  function pickPercentile(probs, q) {
+    var cum = 0;
+    for (var i = 0; i < probs.length; i++) {
+      cum += probs[i];
+      if (cum >= q - 1e-9) return i + 1;
+    }
+    return probs.length;
   }
 
   function mineCard(ctx, mine) {
-    var last = mine.probs[mine.probs.length - 1] || 0;
-    return cardHtml("Your forecast", "Pick " + mine.expPick.toFixed(1),
-      "⭐ " + ctx.helpers.esc(mine.name) +
-      " · No. 1: " + fmtPct(mine.probs[0]) + " · last: " + fmtPct(last));
+    var ord = ctx.helpers.ordinal;
+    var best = 0;
+    mine.probs.forEach(function (p, i) { if (p > mine.probs[best]) best = i; });
+    var pick = best + 1;                          /* most likely final pick */
+    var lo = pickPercentile(mine.probs, 0.10);    /* central ~80% range */
+    var hi = pickPercentile(mine.probs, 0.90);
+    var range = lo === hi ? "usually lands " + lo + ord(lo)
+      : "usually lands " + lo + ord(lo) + "–" + hi + ord(hi);
+    return cardHtml("Your forecast", "Pick " + pick + ord(pick),
+      range + " · No.1 pick: " + fmtPct(mine.probs[0]));
   }
 
-  function volatileCard(ctx, res) {
-    var wild = null;
-    res.rows.forEach(function (r) {
-      if (!wild || r.entropy > wild.entropy) wild = r;
+  function hottestCard(ctx, res) {
+    var owners = ctx.helpers.ownerByGroup();
+    var best = null;
+    Object.keys(res.groupProj).forEach(function (letter) {
+      var gp = res.groupProj[letter];
+      if (gp.matches < 1) return; /* finished groups can't be hot */
+      var rate = gp.remain / gp.matches;
+      if (!best || rate > best.rate) best = { letter: letter, rate: rate };
     });
-    if (!wild) return cardHtml("Most volatile", "&mdash;", "waiting for data", true);
-    var inPlay = wild.probs.filter(function (p) { return p >= SPREAD_MIN; }).length;
-    var ord = ctx.helpers.ordinal;
-    return cardHtml("Most volatile", wild.lo + ord(wild.lo) + "–" + wild.hi + ord(wild.hi),
-      ctx.helpers.esc(wild.name) + " · " + inPlay + " picks in play (≥5%)");
+    if (!best) return cardHtml("🔥 Hottest group", "&mdash;", "no matches left to play", true);
+    var owner = owners[best.letter];
+    return cardHtml("🔥 Hottest group", best.rate.toFixed(1) + "/match",
+      "Group " + ctx.helpers.esc(best.letter) + " (" +
+      (owner ? ctx.helpers.esc(owner.name) : "unclaimed") +
+      ") — the books expect goals");
   }
 
   function heroHtml(ctx, res, board, mine) {
     var cards = favoriteCard(ctx, board) +
       (mine ? mineCard(ctx, mine) : "") +
-      volatileCard(ctx, res);
+      hottestCard(ctx, res);
     return '<section class="od-block">' +
       '<div class="od-cards' + (mine ? "" : " two") + '">' + cards + "</div></section>";
+  }
+
+  /* ---------------- projected group goals: drilldown ---------------- */
+
+  /* Open/closed state per group letter (object-as-set) — module level so
+     it survives the 2-minute re-renders. The viewer's own group opens on
+     the first render; everything after that is whatever the user did. */
+  var openGroups = {};
+  var openInit = false;
+  var wired = false; /* delegated listener on #odds-host bound once */
+
+  /* "Sun Jun 14" for upcoming detail rows (helpers.fmtDay adds a dot). */
+  var DET_DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  var DET_MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function detDay(ms) {
+    var d = new Date(ms);
+    return DET_DOW[d.getDay()] + " " + DET_MON[d.getMonth()] + " " + d.getDate();
+  }
+
+  /* Flip one group's drilldown in place — no re-render, no sim re-run. */
+  function togglePg(host, row) {
+    var letter = row.getAttribute("data-pg");
+    if (!letter) return;
+    var open = !openGroups[letter];
+    if (open) openGroups[letter] = true;
+    else delete openGroups[letter];
+    var det = host.querySelector('.od-pg-det[data-det="' + letter + '"]');
+    if (det) det.hidden = !open;
+    row.setAttribute("aria-expanded", open ? "true" : "false");
+    var caret = row.querySelector(".od-pg-caret");
+    if (caret) caret.textContent = open ? "▾" : "▸";
+  }
+
+  /* One delegated click + keydown listener on the host (which outlives
+     every innerHTML rebuild). Enter/Space mirror the click for the
+     role="button" rows. */
+  function wire(host) {
+    if (wired) return;
+    wired = true;
+    host.addEventListener("click", function (e) {
+      var row = e.target && e.target.closest ? e.target.closest(".od-pg-row[data-pg]") : null;
+      if (row) togglePg(host, row);
+    });
+    host.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " " && e.key !== "Spacebar") return;
+      var row = e.target && e.target.closest ? e.target.closest(".od-pg-row[data-pg]") : null;
+      if (!row) return;
+      e.preventDefault();
+      togglePg(host, row);
+    });
+  }
+
+  /* One compact receipt row per fixture. The numbers are res.groupDetail's
+     expRem — the exact per-fixture values the sim sums — at one decimal. */
+  function pgFxHtml(ctx, d) {
+    var esc = ctx.helpers.esc;
+    var left;
+    var right;
+    var cls;
+    if (d.fin || d.live) {
+      var hasScore = d.homeGoals != null && d.awayGoals != null;
+      var score = hasScore ? d.homeGoals + "–" + d.awayGoals : "–";
+      left = esc(d.homeFlag) + " " + esc(d.home) + " " + score + " " +
+        esc(d.away) + " " + esc(d.awayFlag);
+      if (d.live) left += " · " + d.min + "'";
+      var banked = hasScore ? d.homeGoals + d.awayGoals : null;
+      if (d.fin) {
+        cls = "fin";
+        right = (banked == null ? "banked" : banked + " banked") + " ✓";
+      } else {
+        cls = "live";
+        right = (banked == null ? 0 : banked) + " banked + ~" +
+          d.expRem.toFixed(1) + " to come";
+      }
+    } else {
+      cls = "up";
+      left = esc(d.homeFlag) + " " + esc(teamAbbr(d.home)) + "–" +
+        esc(teamAbbr(d.away)) + " " + esc(d.awayFlag) + " · " + detDay(d.time);
+      var ou = d.market && d.line != null ? "O/U " + esc(String(d.line)) + " → " : "";
+      var src = d.market ? "DraftKings" : "strength estimate";
+      right = ou + "~" + d.expRem.toFixed(1) + " expected" +
+        ' <span class="od-pg-src">(' + src + ")</span>";
+    }
+    return '<div class="od-pg-fx ' + cls + '">' +
+      '<span class="od-pg-fx-t">' + left + "</span>" +
+      '<span class="od-pg-fx-n">' + right + "</span></div>";
+  }
+
+  /* The six fixture rows + the reconciliation footer for one group. */
+  function pgDetailHtml(ctx, res, letter) {
+    var list = (res.groupDetail && res.groupDetail[letter]) || [];
+    var gp = res.groupProj[letter] || { banked: 0, remain: 0 };
+    var rows = list.map(function (d) { return pgFxHtml(ctx, d); }).join("");
+    return rows + '<div class="od-pg-det-foot">banked ' + gp.banked +
+      " + expected ~" + gp.remain.toFixed(1) + " ≈ " +
+      Math.round(gp.banked + gp.remain) +
+      " — the number on the bar above.</div>";
+  }
+
+  /* ---------------- projected group goals ---------------- */
+
+  /* The league's actual currency: most group goals wins the No. 1 pick.
+     One stacked bar per group — solid gold for goals already banked,
+     striped for what the model still expects — sorted by projected total.
+     Each row expands (click/Enter/Space) into its match-by-match receipts. */
+  function projHtml(ctx, res) {
+    var esc = ctx.helpers.esc;
+    var owners = ctx.helpers.ownerByGroup();
+
+    var rows = Object.keys(res.groupProj).map(function (letter) {
+      var gp = res.groupProj[letter];
+      return {
+        letter: letter, banked: gp.banked, remain: gp.remain,
+        total: gp.banked + gp.remain, owner: owners[letter] || null
+      };
+    });
+    rows.sort(function (a, b) {
+      return (b.total - a.total) ||
+        (a.letter < b.letter ? -1 : a.letter > b.letter ? 1 : 0);
+    });
+
+    var maxTotal = 0.001;
+    rows.forEach(function (r) { if (r.total > maxTotal) maxTotal = r.total; });
+
+    var html = rows.map(function (r) {
+      var mine = !!(r.owner && r.owner.isMine);
+      var name = r.owner
+        ? esc(r.owner.name) + (mine ? " ⭐" : "")
+        : "Group " + esc(r.letter) + " — unclaimed";
+      var flags = ctx.groups[r.letter].countries.map(function (c) {
+        return "<span>" + esc(c.flag) + "</span>";
+      }).join(" ");
+      var bankedW = (r.banked / maxTotal) * 100;
+      var remainW = (r.remain / maxTotal) * 100;
+      var open = !!openGroups[r.letter];
+      var detId = "od-pg-det-" + esc(r.letter);
+      return '<div class="od-pg-grp">' +
+        '<div class="od-pg-row' + (mine ? " mine" : "") +
+        (r.owner ? "" : " unclaimed") +
+        '" role="button" tabindex="0" data-pg="' + esc(r.letter) +
+        '" aria-expanded="' + (open ? "true" : "false") +
+        '" aria-controls="' + detId +
+        '" style="--od-ac:' + esc((r.owner && r.owner.accent) || FALLBACK_AC) + '">' +
+        '<span class="od-pg-caret" aria-hidden="true">' + (open ? "▾" : "▸") + "</span>" +
+        '<span class="od-pg-name">' + name + "</span>" +
+        '<span class="od-pg-letter">' + esc(r.letter) + "</span>" +
+        '<span class="od-pg-flags">' + flags + "</span>" +
+        '<span class="od-pg-bar">' +
+          '<span class="od-pg-banked" style="width:' + bankedW.toFixed(1) + '%"></span>' +
+          '<span class="od-pg-remain" style="width:' + remainW.toFixed(1) + '%"></span>' +
+        "</span>" +
+        '<span class="od-pg-num">' + r.banked + " + ~" + Math.round(r.remain) +
+          " ≈ " + Math.round(r.total) + "</span>" +
+        "</div>" +
+        '<div class="od-pg-det" id="' + detId + '" data-det="' + esc(r.letter) + '"' +
+          (open ? "" : " hidden") + ">" +
+          pgDetailHtml(ctx, res, r.letter) +
+        "</div></div>";
+    }).join("");
+
+    return '<section class="od-block">' +
+      '<div class="od-head">⚽ Projected Group Goals ' +
+        '<span class="od-head-sub">· the number that decides the draft</span></div>' +
+      '<div class="od-pg">' + html + "</div></section>";
   }
 
   /* ---------------- the board ---------------- */
@@ -776,11 +1010,11 @@
     var esc = ctx.helpers.esc;
     var n = res.rows.length;
     var head = '<tr><th class="od-team-h" scope="col">Team</th>' +
-      '<th class="od-pick" scope="col">exp.</th>';
+      '<th class="od-pick" scope="col">avg</th>';
     for (var k = 1; k <= n; k++) {
       head += '<th class="od-pick" scope="col">' + k + "</th>";
     }
-    head += '<th class="od-pick" scope="col">lock</th></tr>';
+    head += "</tr>";
 
     var body = res.rows.map(function (r) {
       var mine = r.abbr === mineAbbr;
@@ -791,8 +1025,7 @@
         '<span class="od-tn-abbr">' + esc(r.abbr) + "</span>" + (mine ? " ⭐" : "") +
         ' <span class="od-grp">' + esc(r.letter) + "</span></th>" +
         '<td class="od-exp">' + r.expPick.toFixed(1) + "</td>" +
-        cells +
-        '<td class="od-lockp">' + fmtPct(r.lock) + "</td></tr>";
+        cells + "</tr>";
     }).join("");
 
     return '<section class="od-block">' +
@@ -801,9 +1034,81 @@
       '<div class="od-matrix"><table class="od-table">' +
         "<thead>" + head + "</thead><tbody>" + body + "</tbody>" +
       "</table></div>" +
-      '<p class="od-foot">Each cell: chance of landing that final draft pick · ' +
-        "exp. = average pick · lock = chance of staying exactly where they sit now.</p>" +
+      '<p class="od-foot">Each cell: how often that team landed that pick ' +
+        "across the sims. avg = their average pick.</p>" +
       "</section>";
+  }
+
+  /* ---------------- how this works ---------------- */
+
+  /* Plain-English explainer for the group chat — static numbered steps,
+     with the live sim count and line coverage woven in. The one-line
+     methodology footer lives here too, as the panel's last line. */
+  function howHtml(res) {
+    var lineNote = res.market
+      ? " Right now " + res.mkUsed + " of " + res.mkRemain +
+        " remaining matches have a posted line."
+      : "";
+    var steps = [
+      "Your draft slot = total goals scored by the four countries in your " +
+        "World Cup group. Cards break ties (yellow +1, red +2).",
+      "Every match has a Vegas over/under for total goals. We pull " +
+        "DraftKings' lines every few hours and turn each one into expected " +
+        "goals — O/U 2.5 with the over at +120 works out to about 2.4." + lineNote,
+      "A computer then plays out the rest of the group stage " +
+        fmtSims(res.sims) + " times at those scoring rates. How often your " +
+        "team finishes with the most goals = your No.1-pick odds. Matches " +
+        "with no posted line yet use a team-strength estimate instead.",
+      "Betting-odds format: +480 means a $100 bet would profit $480 — " +
+        "roughly a 1-in-6 shot. Bigger plus number = longer shot.",
+      "▲/▼ chips show how a team's No.1-pick chance moved since yesterday " +
+        "(on this device)."
+    ];
+    var method = res.market
+      ? fmtSims(res.sims) + " sims · DraftKings totals on " +
+        res.mkUsed + " of " + res.mkRemain + " remaining · " +
+        "Elo strength fills the gaps · in-play from the current minute · cards tiebreak"
+      : fmtSims(res.sims) +
+        " sims · Elo-informed team strength + live pace · " +
+        "in-play simulated from the current minute · cards tiebreak";
+    return '<section class="od-block">' +
+      '<div class="od-head">📖 How this works</div>' +
+      '<div class="od-how"><ol>' +
+      steps.map(function (s) { return "<li>" + s + "</li>"; }).join("") +
+      '</ol><p class="od-method">' + method + "</p></div></section>";
+  }
+
+  /* ---------------- groups-tab projection badge ---------------- */
+
+  /* Append "⚽ 0 banked + ~17 expected ≈ 17 projected" to every .gcard on
+     the Groups tab, matched to its letter via the .gletter text. The grid
+     is rebuilt before onRender callbacks each full render, but odds.js
+     also re-renders off lastCtx after a market refresh — so remove any
+     stale badge first (idempotent). A Groups-tab quirk must never break
+     the Odds tab, hence the blanket try/catch. */
+  function decorateGroups(ctx, res) {
+    try {
+      var grid = document.getElementById("groups-grid");
+      if (!grid || !res || !res.groupProj) return;
+      var esc = ctx.helpers.esc;
+      var cards = grid.querySelectorAll(".gcard");
+      for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var letterNode = card.querySelector(".gletter");
+        if (!letterNode) continue;
+        var letter = String(letterNode.textContent || "").replace(/\s+/g, "");
+        var gp = res.groupProj[letter];
+        if (!gp) continue;
+        var stale = card.querySelector(".gxg");
+        if (stale && stale.parentNode) stale.parentNode.removeChild(stale);
+        var badge = document.createElement("div");
+        badge.className = "gxg";
+        badge.innerHTML = "⚽ " + esc(String(gp.banked)) + " banked + ~" +
+          esc(String(Math.round(gp.remain))) + " expected ≈ " +
+          esc(String(Math.round(gp.banked + gp.remain))) + " projected";
+        card.appendChild(badge);
+      }
+    } catch (_) { /* never let the Groups tab take down the Odds tab */ }
   }
 
   /* ---------------- render ---------------- */
@@ -812,6 +1117,7 @@
     var host = document.getElementById("odds-host");
     if (!host) return;
     try {
+      wire(host); /* delegated drilldown listener — bound once, host persists */
       if (!ctx || !ctx.standings || !ctx.standings.length) {
         host.innerHTML = '<p class="od-empty">Waiting for draft data…</p>';
         return;
@@ -822,6 +1128,14 @@
       if (!res) {
         host.innerHTML = '<p class="od-empty">Waiting for draft data…</p>';
         return;
+      }
+
+      /* The viewer's group starts expanded — first render only; after
+         that the open/closed set is whatever the user left behind. */
+      if (!openInit) {
+        openInit = true;
+        var mineLetter = findMineLetter(ctx);
+        if (mineLetter) openGroups[mineLetter] = true;
       }
 
       var todayKey = ctx.helpers.dayKey(new Date());
@@ -841,26 +1155,21 @@
       var scroller = host.querySelector(".od-matrix");
       var scrollX = scroller ? scroller.scrollLeft : 0;
 
-      var method = res.market
-        ? fmtSims(res.sims) + " sims · DraftKings totals on " +
-          res.mkUsed + " of " + res.mkRemain + " remaining · " +
-          "Elo strength fills the gaps · in-play from the current minute · cards tiebreak"
-        : fmtSims(res.sims) +
-          " sims · Elo-informed team strength + live pace · " +
-          "in-play simulated from the current minute · cards tiebreak";
-
       host.innerHTML = '<div class="od-wrap">' +
         (res.pre ? '<div class="od-banner">Strength-based forecast — sharpens with every final whistle.</div>' : "") +
         heroHtml(ctx, res, board, mine) +
+        projHtml(ctx, res) +
         boardHtml(ctx, board, hist, todayKey, mineAbbr) +
         marketHtml(ctx) +
         (mine ? pathHtml(ctx, res, board, mine) : "") +
         matrixHtml(ctx, res, mineAbbr) +
-        '<p class="od-method">' + method + "</p>" +
+        howHtml(res) +
         "</div>";
 
       scroller = host.querySelector(".od-matrix");
       if (scroller && scrollX) scroller.scrollLeft = scrollX;
+
+      decorateGroups(ctx, res); /* Groups-tab badge, self-contained try/catch */
     } catch (err) {
       console.error("Pick Odds render failed:", err);
     }
