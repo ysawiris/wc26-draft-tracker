@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-12T04:31:35.817Z",
+  "fetchedAt": "2026-06-12T04:38:36.907Z",
   "matchCount": 70,
   "lines": [
     {
@@ -612,9 +612,9 @@
       "homeRaw": "South Africa",
       "awayRaw": "South Korea",
       "line": 2.5,
-      "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 2.53
+      "overUS": "+100",
+      "underUS": "-125",
+      "impliedTotal": 2.57
     },
     {
       "espnId": "760463",
