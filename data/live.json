@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-12T20:36:42.158Z",
+  "fetchedAt": "2026-06-12T21:16:59.564Z",
   "matchCount": 72,
   "matches": [
     {
@@ -35,13 +35,13 @@
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-12T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Canada",
       "away": "Bosnia and Herzegovina",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 1,
       "venue": "Toronto Stadium",
-      "minute": "74'"
+      "minute": "97'"
     },
     {
       "id": "400021458",
@@ -971,12 +971,12 @@
         "Canada": {
           "y": 2,
           "r": 0,
-          "f": 3
+          "f": 5
         },
         "Bosnia and Herzegovina": {
-          "y": 2,
+          "y": 3,
           "r": 0,
-          "f": 4
+          "f": 5
         }
       }
     },
@@ -1002,7 +1002,7 @@
         "r": 0
       },
       "Bosnia and Herzegovina": {
-        "y": 2,
+        "y": 3,
         "r": 0
       }
     }
