@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-12T13:29:44.154Z",
+  "fetchedAt": "2026-06-12T17:18:24.067Z",
   "matchCount": 70,
   "lines": [
     {
@@ -12,9 +12,9 @@
       "homeRaw": "Canada",
       "awayRaw": "Bosnia-Herzegovina",
       "line": 2.5,
-      "overUS": "+130",
-      "underUS": "-160",
-      "impliedTotal": 2.34
+      "overUS": "+125",
+      "underUS": "-155",
+      "impliedTotal": 2.37
     },
     {
       "espnId": "760417",
@@ -48,9 +48,9 @@
       "homeRaw": "Haiti",
       "awayRaw": "Scotland",
       "line": 2.5,
-      "overUS": "-115",
-      "underUS": "-110",
-      "impliedTotal": 2.7
+      "overUS": "-110",
+      "underUS": "-115",
+      "impliedTotal": 2.65
     },
     {
       "espnId": "760420",
@@ -84,9 +84,9 @@
       "homeRaw": "Germany",
       "awayRaw": "Curaçao",
       "line": 4.5,
-      "overUS": "+110",
+      "overUS": "+105",
       "underUS": "-135",
-      "impliedTotal": 4.42
+      "impliedTotal": 4.45
     },
     {
       "espnId": "760423",
@@ -289,8 +289,8 @@
       "awayRaw": "South Africa",
       "line": 2.5,
       "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 2.53
+      "underUS": "-135",
+      "impliedTotal": 2.51
     },
     {
       "espnId": "760441",
@@ -588,9 +588,9 @@
       "homeRaw": "Morocco",
       "awayRaw": "Haiti",
       "line": 2.5,
-      "overUS": "-135",
-      "underUS": "+110",
-      "impliedTotal": 2.87
+      "overUS": "-130",
+      "underUS": "+105",
+      "impliedTotal": 2.83
     },
     {
       "espnId": "760465",
@@ -708,9 +708,9 @@
       "homeRaw": "Cape Verde",
       "awayRaw": "Saudi Arabia",
       "line": 2.5,
-      "overUS": "+115",
-      "underUS": "-140",
-      "impliedTotal": 2.45
+      "overUS": "+110",
+      "underUS": "-135",
+      "impliedTotal": 2.49
     },
     {
       "espnId": "760476",
@@ -721,8 +721,8 @@
       "awayRaw": "Iran",
       "line": 1.5,
       "overUS": "-190",
-      "underUS": "+150",
-      "impliedTotal": 2.1
+      "underUS": "+155",
+      "impliedTotal": 2.12
     },
     {
       "espnId": "760477",
@@ -804,9 +804,9 @@
       "homeRaw": "Croatia",
       "awayRaw": "Ghana",
       "line": 2.5,
-      "overUS": "+110",
-      "underUS": "-135",
-      "impliedTotal": 2.49
+      "overUS": "+105",
+      "underUS": "-130",
+      "impliedTotal": 2.53
     },
     {
       "espnId": "760482",
