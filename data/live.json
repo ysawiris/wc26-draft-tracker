@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-12T03:49:14.893Z",
+  "fetchedAt": "2026-06-12T05:22:23.160Z",
   "matchCount": 72,
   "matches": [
     {
@@ -22,13 +22,13 @@
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-12T02:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Korea Republic",
       "away": "Czechia",
       "homeGoals": 2,
       "awayGoals": 1,
       "venue": "Guadalajara Stadium",
-      "minute": "90'"
+      "minute": "97'"
     },
     {
       "id": "400021449",
@@ -945,7 +945,7 @@
     "byMatch": {
       "400021441": {
         "Korea Republic": {
-          "y": 0,
+          "y": 1,
           "r": 0,
           "f": 5
         },
@@ -970,7 +970,7 @@
     },
     "byCountry": {
       "Korea Republic": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Czechia": {
