@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-13T02:49:02.496Z",
+  "fetchedAt": "2026-06-13T04:21:33.939Z",
   "matchCount": 72,
   "matches": [
     {
@@ -48,13 +48,13 @@
       "group": "D",
       "matchday": null,
       "utcDate": "2026-06-13T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "USA",
       "away": "Paraguay",
-      "homeGoals": 3,
+      "homeGoals": 4,
       "awayGoals": 1,
       "venue": "Los Angeles Stadium",
-      "minute": "85'"
+      "minute": "99'"
     },
     {
       "id": "400021447",
@@ -983,12 +983,12 @@
         "USA": {
           "y": 1,
           "r": 0,
-          "f": 10
+          "f": 12
         },
         "Paraguay": {
-          "y": 3,
+          "y": 5,
           "r": 0,
-          "f": 9
+          "f": 12
         }
       }
     },
@@ -1022,7 +1022,7 @@
         "r": 0
       },
       "Paraguay": {
-        "y": 3,
+        "y": 5,
         "r": 0
       }
     }
@@ -1048,10 +1048,10 @@
         "f": 17
       },
       "USA": {
-        "f": 10
+        "f": 12
       },
       "Paraguay": {
-        "f": 9
+        "f": 12
       }
     }
   }
