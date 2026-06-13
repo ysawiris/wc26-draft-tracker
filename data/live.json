@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-13T17:37:58.157Z",
+  "fetchedAt": "2026-06-13T19:17:44.350Z",
   "matchCount": 72,
   "matches": [
     {
@@ -61,13 +61,13 @@
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-13T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Qatar",
       "away": "Switzerland",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": "0'"
+      "minute": "13'"
     },
     {
       "id": "400021456",
@@ -967,6 +967,18 @@
           "f": 10
         }
       },
+      "400021447": {
+        "Switzerland": {
+          "y": 0,
+          "r": 0,
+          "f": 2
+        },
+        "Qatar": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021449": {
         "Canada": {
           "y": 2,
@@ -1009,6 +1021,14 @@
         "y": 1,
         "r": 1
       },
+      "Switzerland": {
+        "y": 0,
+        "r": 0
+      },
+      "Qatar": {
+        "y": 0,
+        "r": 0
+      },
       "Canada": {
         "y": 2,
         "r": 0
@@ -1040,6 +1060,12 @@
       },
       "Mexico": {
         "f": 10
+      },
+      "Switzerland": {
+        "f": 2
+      },
+      "Qatar": {
+        "f": 1
       },
       "Canada": {
         "f": 8
