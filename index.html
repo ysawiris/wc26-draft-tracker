@@ -28,6 +28,8 @@
   <link rel="stylesheet" href="css/my-team.css" />
   <link rel="stylesheet" href="css/alerts.css" />
   <link rel="stylesheet" href="css/share-card.css" />
+  <link rel="stylesheet" href="css/road.css" />
+  <link rel="stylesheet" href="css/recaps.css" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/icon.svg" />
@@ -106,6 +108,8 @@
     <!-- PICK ODDS -->
     <section class="tab-panel" id="tab-odds" hidden>
       <h2 class="section-title"><span>Pick Odds</span></h2>
+      <!-- Road to No. 1 — the viewer's personal race, atop the full forecast (js/road.js) -->
+      <div id="road-host"></div>
       <div id="odds-host"></div>
     </section>
 
@@ -134,6 +138,7 @@
       <div class="rules-card">
         <h3 class="rules-h">Around the hub</h3>
         <ul class="rules-list">
+          <li>🛣 <b>Road to No. 1</b> — your team's live race, leading the Odds tab: gap to the lead, your cushion on the chaser, matches left, and the model's read on your finish. 📋 copy it for the chat.</li>
           <li>🏆 <b>Draft Board</b> — the live order, with movement arrows, goal pace, fouls, 📋 copy-for-the-chat and the 📸 share card.</li>
           <li>📅 <b>Matches</b> — the full schedule with filters, live scores and per-match cards, ▶ highlights on finished games, ＋ calendar on upcoming ones.</li>
           <li>🌍 <b>Groups</b> — the draw, A–L, with per-country goal bars and projected group totals.</li>
@@ -176,7 +181,9 @@
   <script src="js/race.js"></script>
   <script src="js/simulator.js"></script>
   <script src="js/odds.js"></script>
+  <script src="js/road.js"></script>
   <script src="js/share-card.js"></script>
+  <script src="js/recaps.js"></script>
   <script src="js/refresh.js"></script>
   <script src="js/live-direct.js"></script>
   <script src="js/alerts.js"></script>

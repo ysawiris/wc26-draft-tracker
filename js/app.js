@@ -160,35 +160,51 @@
     var owners = ownerByGroup();
     var live = fixtures.filter(function (fx) { return Live.INPLAY[fx.status]; });
 
+    // Today's finished games stay in the strip until the LOCAL date rolls over
+    // (dayKey is local), newest kickoff first — so a left swipe from the live
+    // card walks back through the games that already happened today.
+    var todayFinished = fixtures
+      .filter(function (fx) { return Live.FINISHED[fx.status] && dayKey(fxDate(fx)) === dayKey(now); })
+      .sort(function (a, b) { return fxDate(b) - fxDate(a); });
+
     // Everything still to come, soonest first.
     var future = fixtures
       .filter(function (fx) { return !Live.FINISHED[fx.status] && !Live.INPLAY[fx.status] && fxDate(fx) > now; })
       .sort(function (a, b) { return fxDate(a) - fxDate(b); });
 
-    if (!live.length && !future.length) {
+    if (!live.length && !future.length && !todayFinished.length) {
       wrap.innerHTML = '<div class="live-head">Group stage complete — draft order is final. 🏆</div>';
       return;
     }
 
-    // The rail shows live games first, then the next week of kickoffs, then a
-    // final card that hands off to the full schedule. Live no longer hides
-    // what's next — you can always scroll ahead.
+    // The next-up rail: this week's kickoffs, then a card that hands off to the
+    // full schedule.
     var weekOut = new Date(now.getTime() + RAIL_WINDOW_MS);
     var upNext = future.filter(function (fx) { return fxDate(fx) <= weekOut; });
     if (!upNext.length) upNext = future.slice(0, 8); // quiet stretch: still show the next few
     upNext = upNext.slice(0, RAIL_MAX);
 
-    var shown = live.concat(upNext);
-    var lastShown = shown.length ? shown[shown.length - 1] : null;
+    // Card order. With a game live: it leads, then today's previous games, then
+    // what's next. With nothing live: next-up leads (so the countdown stays
+    // useful) and today's results follow.
+    var ordered = live.length
+      ? live.concat(todayFinished, upNext)
+      : upNext.concat(todayFinished);
+
+    var lastShown = ordered.length ? ordered[ordered.length - 1] : null;
     var hasMore = future.length > upNext.length;
 
-    var head = live.length
-      ? '<div class="live-head"><span class="live-dot"></span> Live now <span class="live-head-sub">· and what’s next</span></div>'
-      : '<div class="live-head">Next up · <span id="countdown"></span></div>';
+    var head;
+    if (live.length) {
+      head = '<div class="live-head"><span class="live-dot"></span> Live now <span class="live-head-sub">· today’s games</span></div>';
+    } else if (upNext.length) {
+      head = '<div class="live-head">Next up · <span id="countdown"></span></div>';
+    } else {
+      head = '<div class="live-head">Today’s results</div>';
+    }
 
     var cards =
-      live.map(function (fx) { return matchMini(fx, owners, true, now); }).join("") +
-      upNext.map(function (fx) { return matchMini(fx, owners, false, now); }).join("") +
+      ordered.map(function (fx) { return matchMini(fx, owners, Live.INPLAY[fx.status], now); }).join("") +
       moreCard(lastShown, hasMore);
 
     wrap.innerHTML = head + '<div class="live-cards">' + cards + "</div>";
@@ -232,11 +248,13 @@
     var ownerTag = owner
       ? '<span class="mini-owner" style="--ac:' + (owner.accent || "#c89638") + '">' + esc(owner.abbr) + "</span>"
       : (fx.exhibition ? '<span class="mini-exh">Exhibition</span>' : "");
+    var done = Live.FINISHED[fx.status];
     // Today's games show just the kickoff time; only future days carry a date label.
     var isToday = now && dayKey(fxDate(fx)) === dayKey(now);
-    var when = (isLive || isToday) ? "" : '<div class="mini-when">' + fmtDay(fxDate(fx)) + "</div>";
-    return '<div class="mini' + (isLive ? " live" : "") + (fx.exhibition ? " exh" : "") + '">' +
-      '<div class="mini-grp">Grp ' + fx.group + " " + ownerTag + "</div>" +
+    var when = (isLive || done || isToday) ? "" : '<div class="mini-when">' + fmtDay(fxDate(fx)) + "</div>";
+    return '<div class="mini' + (isLive ? " live" : done ? " done" : "") + (fx.exhibition ? " exh" : "") + '">' +
+      '<div class="mini-grp">Grp ' + fx.group + " " + ownerTag +
+        (done ? '<span class="mini-ft">FT</span>' : "") + "</div>" +
       when +
       '<div class="mini-row"><span>' + fx.home.flag + " " + esc(fx.home.name) + "</span></div>" +
       '<div class="mini-score">' + scoreOrTime(fx) +

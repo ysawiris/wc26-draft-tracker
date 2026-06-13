@@ -1,0 +1,169 @@
+/* ============================================================
+   AI match recaps. Loads data/recaps.json (written by the
+   generate-recaps GitHub Action) and adds a "📝 Recap" button to
+   every FINISHED match card. Tapping it opens a panel with the
+   AI-written summary and the goal-by-goal scorer list.
+
+   Decoupled from the card renderer: it post-processes via
+   Hub.onRender(), keying each recap to its card by the FIFA match
+   id (fx.matchId, set in live.js). Flags reuse Live.resolveCountry,
+   so country naming stays consistent with the rest of the hub.
+   ============================================================ */
+
+var Recaps = (function () {
+  "use strict";
+
+  var byId = {};
+  var loaded = false;
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function flagFor(name) {
+    try {
+      var c = window.Live && Live.resolveCountry(name);
+      return c ? c.flag : "";
+    } catch (err) {
+      return "";
+    }
+  }
+
+  /* Prefer the hub's own country name (e.g. "South Korea") over the feed's
+     ("Korea Republic") so recaps read consistently with the rest of the site. */
+  function displayName(name) {
+    try {
+      var c = window.Live && Live.resolveCountry(name);
+      return c ? c.name : name;
+    } catch (err) {
+      return name;
+    }
+  }
+
+  function load() {
+    // Cache-bust like live.json — GitHub Pages serves these with max-age=600.
+    return fetch("data/recaps.json?v=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+      .then(function (data) {
+        byId = (data && data.byId) || {};
+        loaded = true;
+        // Inject into whatever the app has already rendered.
+        if (window.Hub && Hub.ctx()) enhance(Hub.ctx());
+        return byId;
+      });
+  }
+
+  /* Add a Recap button to each finished card that has a recap. Runs after
+     every render (the schedule DOM is rebuilt each time, so re-inject). */
+  function enhance(ctx) {
+    if (!loaded || !ctx || !ctx.allFixtures) return;
+    ctx.allFixtures.forEach(function (fx) {
+      if (!fx.matchId || !byId[fx.matchId]) return;
+      if (!(window.Live && Live.FINISHED[fx.status])) return;
+
+      var card = document.getElementById("sched-" + fx.id);
+      if (!card) return;
+      var foot = card.querySelector(".m-foot");
+      if (!foot || foot.querySelector(".recap-act")) return;
+
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "m-act recap-act";
+      btn.innerHTML = "📝 Recap";
+      btn.setAttribute("aria-haspopup", "dialog");
+      btn.addEventListener("click", function () { open(fx.matchId); });
+
+      // Sit just before the ▶ Highlights link when present.
+      var hl = foot.querySelector("a.m-act");
+      foot.insertBefore(btn, hl || null);
+    });
+  }
+
+  /* ---------------- modal ---------------- */
+
+  var overlay = null;
+
+  function close() {
+    if (!overlay) return;
+    document.removeEventListener("keydown", onKey);
+    overlay.parentNode && overlay.parentNode.removeChild(overlay);
+    overlay = null;
+  }
+
+  function onKey(e) {
+    if (e.key === "Escape") close();
+  }
+
+  function goalRow(g) {
+    var icon = g.ownGoal ? "🥅" : "⚽";
+    var tags = "";
+    if (g.ownGoal) tags += '<span class="rc-tag og">o.g.</span>';
+    if (g.penalty) tags += '<span class="rc-tag pen">pen</span>';
+    return (
+      '<li class="rc-goal ' + (g.side === "home" ? "home" : "away") + '">' +
+        '<span class="rc-min">' + esc(g.minute) + "</span>" +
+        '<span class="rc-ico">' + icon + "</span>" +
+        '<span class="rc-player">' + esc(g.player) + tags + "</span>" +
+        '<span class="rc-team">' + flagFor(g.team) + " " + esc(displayName(g.team)) + "</span>" +
+      "</li>"
+    );
+  }
+
+  function open(matchId) {
+    var r = byId[matchId];
+    if (!r) return;
+    close();
+
+    var goals = (r.goals || []).map(goalRow).join("");
+    var goalsBlock = goals
+      ? '<ul class="rc-goals">' + goals + "</ul>"
+      : '<p class="rc-nogoals">No goals — it finished ' + r.homeGoals + "–" + r.awayGoals + ".</p>";
+
+    var homeName = displayName(r.home);
+    var awayName = displayName(r.away);
+    var ytq = encodeURIComponent(homeName + " vs " + awayName + " World Cup 2026 highlights");
+    var badge = r.ai
+      ? '<span class="rc-badge ai">✨ AI recap</span>'
+      : '<span class="rc-badge">📝 Recap</span>';
+
+    overlay = document.createElement("div");
+    overlay.className = "rc-overlay";
+    overlay.innerHTML =
+      '<div class="rc-modal" role="dialog" aria-modal="true" aria-label="Match recap">' +
+        '<button class="rc-close" aria-label="Close">✕</button>' +
+        '<div class="rc-head">' +
+          '<div class="rc-meta">' + badge +
+            '<span class="rc-grp">Group ' + esc(r.group) + "</span></div>" +
+          '<div class="rc-score">' +
+            '<span class="rc-side">' + flagFor(r.home) + " " + esc(homeName) + "</span>" +
+            '<span class="rc-nums">' + r.homeGoals + '<span>–</span>' + r.awayGoals + "</span>" +
+            '<span class="rc-side away">' + esc(awayName) + " " + flagFor(r.away) + "</span>" +
+          "</div>" +
+          (r.venue ? '<p class="rc-venue">' + esc(r.venue) + "</p>" : "") +
+        "</div>" +
+        '<p class="rc-summary">' + esc(r.summary) + "</p>" +
+        goalsBlock +
+        '<div class="rc-foot">' +
+          '<a class="rc-yt" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=' +
+            ytq + '">▶ Watch highlights</a>' +
+          '<span class="rc-auto">Auto-generated from the live feed</span>' +
+        "</div>" +
+      "</div>";
+
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay || e.target.classList.contains("rc-close")) close();
+    });
+    document.addEventListener("keydown", onKey);
+    document.body.appendChild(overlay);
+  }
+
+  /* ---------------- boot ---------------- */
+
+  if (window.Hub) Hub.onRender(enhance);
+  load();
+
+  return { load: load, open: open };
+})();

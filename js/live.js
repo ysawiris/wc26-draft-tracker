@@ -133,6 +133,7 @@ var Live = (function () {
       if (!hit) return;
 
       attached += 1;
+      fx.matchId = hit.id != null ? String(hit.id) : fx.matchId; // FIFA id — keys data/recaps.json
       fx.status = hit.status || fx.status;
       fx.utcDate = hit.utcDate || fx.utcDate;
       fx.venue = hit.venue || fx.venue;

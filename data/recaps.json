@@ -1,0 +1,191 @@
+{
+  "competition": "FWC2026",
+  "generatedAt": "2026-06-13T05:09:45.445Z",
+  "count": 4,
+  "byId": {
+    "400021441": {
+      "id": "400021441",
+      "group": "A",
+      "home": "South Korea",
+      "away": "Czech Republic",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "venue": "Guadalajara Stadium",
+      "utcDate": "2026-06-12T02:00:00Z",
+      "goals": [
+        {
+          "minute": "59'",
+          "order": 59,
+          "player": "Ladislav Krejci",
+          "team": "Czech Republic",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "67'",
+          "order": 67,
+          "player": "Hwang Inbeom",
+          "team": "South Korea",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "80'",
+          "order": 80,
+          "player": "H G Oh",
+          "team": "South Korea",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "South Korea see off Czech Republic",
+      "summary": "In a thrilling clash at Guadalajara Stadium, South Korea rallies to defeat the Czech Republic 2-1. Ladislav Krejci puts the Czechs ahead in the 59th minute, but Hwang Inbeom equalizes just eight minutes later. H G Oh secures the victory with a decisive goal in the 80th minute, keeping South Korea's hopes alive in Group A.",
+      "ai": true,
+      "aiVia": null,
+      "fingerprint": "[\"South Korea\",\"Czech Republic\",2,1,[[\"59'\",\"Ladislav Krejci\",\"Czech Republic\",\"away\",false,false],[\"67'\",\"Hwang Inbeom\",\"South Korea\",\"home\",false,false],[\"80'\",\"H G Oh\",\"South Korea\",\"home\",false,false]]]"
+    },
+    "400021443": {
+      "id": "400021443",
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Africa",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "venue": "Mexico City Stadium",
+      "utcDate": "2026-06-11T19:00:00Z",
+      "goals": [
+        {
+          "minute": "9'",
+          "order": 9,
+          "player": "Julian Quinones",
+          "team": "Mexico",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "67'",
+          "order": 67,
+          "player": "Raúl",
+          "team": "Mexico",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [
+        "SITHOLE (South Africa) is sent off!",
+        "ZWANE (South Africa) is sent off!",
+        "Cesar MONTES (Mexico) is sent off!"
+      ],
+      "headline": "Mexico see off South Africa",
+      "summary": "Mexico secures a 2-0 victory over South Africa in Group A action at the Mexico City Stadium. Julian Quinones opens the scoring in the 9th minute, followed by Raúl's strike in the 67th. The match sees three red cards, with South Africa's Sithole and Zwane, along with Mexico's Cesar Montes, all sent off.",
+      "ai": true,
+      "aiVia": null,
+      "fingerprint": "[\"Mexico\",\"South Africa\",2,0,[[\"9'\",\"Julian Quinones\",\"Mexico\",\"home\",false,false],[\"67'\",\"Raúl\",\"Mexico\",\"home\",false,false]]]"
+    },
+    "400021449": {
+      "id": "400021449",
+      "group": "B",
+      "home": "Canada",
+      "away": "Bosnia & Herzegovina",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "Toronto Stadium",
+      "utcDate": "2026-06-12T19:00:00Z",
+      "goals": [
+        {
+          "minute": "21'",
+          "order": 21,
+          "player": "Jovo Lukic",
+          "team": "Bosnia & Herzegovina",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "78'",
+          "order": 78,
+          "player": "Cyle Larin",
+          "team": "Canada",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Canada and Bosnia & Herzegovina share the points",
+      "summary": "In a thrilling Group B clash at Toronto Stadium, Bosnia & Herzegovina and Canada battle to a 1-1 draw. Jovo Lukic puts Bosnia ahead with a goal in the 21st minute, but Cyle Larin equalizes for Canada in the 78th minute, ensuring both teams share the spoils.",
+      "ai": true,
+      "aiVia": null,
+      "fingerprint": "[\"Canada\",\"Bosnia & Herzegovina\",1,1,[[\"21'\",\"Jovo Lukic\",\"Bosnia & Herzegovina\",\"away\",false,false],[\"78'\",\"Cyle Larin\",\"Canada\",\"home\",false,false]]]"
+    },
+    "400021458": {
+      "id": "400021458",
+      "group": "D",
+      "home": "United States",
+      "away": "Paraguay",
+      "homeGoals": 4,
+      "awayGoals": 1,
+      "venue": "Los Angeles Stadium",
+      "utcDate": "2026-06-13T01:00:00Z",
+      "goals": [
+        {
+          "minute": "7'",
+          "order": 7,
+          "player": "Damian Bobadilla",
+          "team": "United States",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "minute": "31'",
+          "order": 31,
+          "player": "Folarin Balogun",
+          "team": "United States",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+5'",
+          "order": 45.05,
+          "player": "Folarin Balogun",
+          "team": "United States",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "73'",
+          "order": 73,
+          "player": "Mauricio",
+          "team": "Paraguay",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+8'",
+          "order": 90.08,
+          "player": "Reyna",
+          "team": "United States",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "United States see off Paraguay",
+      "summary": "The United States dominates Paraguay 4-1 in their Group D clash at Los Angeles Stadium. An own goal from Damian Bobadilla puts the U.S. ahead, followed by a brace from Folarin Balogun before Mauricio pulls one back for Paraguay. Gio Reyna seals the victory with a stoppage-time strike.",
+      "ai": true,
+      "aiVia": null,
+      "fingerprint": "[\"United States\",\"Paraguay\",4,1,[[\"7'\",\"Damian Bobadilla\",\"United States\",\"home\",true,false],[\"31'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"45'+5'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"73'\",\"Mauricio\",\"Paraguay\",\"away\",false,false],[\"90'+8'\",\"Reyna\",\"United States\",\"home\",false,false]]]"
+    }
+  }
+}

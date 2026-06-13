@@ -383,6 +383,13 @@ nav, main, header, footer { position: relative; z-index: 1; }
   padding: 11px 13px; box-shadow: var(--shadow);
 }
 .mini.live { border-color: rgba(255, 99, 99, 0.5); }
+/* Today's finished games: kept in the strip, slightly receded, with an FT chip. */
+.mini.done { border-color: var(--panel-edge); opacity: 0.9; }
+.mini-ft {
+  font-family: "Archivo", sans-serif; font-weight: 800; font-size: 0.54rem;
+  letter-spacing: 0.06em; color: var(--gold-2);
+  border: 1px solid var(--panel-edge); padding: 1px 5px; border-radius: 5px;
+}
 .live-head-sub { color: var(--text-faint); font-weight: 600; letter-spacing: 0.04em; }
 
 /* Trailing "full schedule" hand-off card */
