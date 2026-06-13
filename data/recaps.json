@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-13T21:32:27.664Z",
+  "generatedAt": "2026-06-13T22:28:25.132Z",
   "count": 5,
   "byId": {
     "400021441": {
@@ -101,19 +101,19 @@
         {
           "minute": "90'+4'",
           "order": 90.04,
-          "player": "Boualem Khoukhi",
+          "player": "Miro Muheim",
           "team": "Qatar",
           "side": "home",
-          "ownGoal": false,
+          "ownGoal": true,
           "penalty": false
         }
       ],
       "reds": [],
       "headline": "Qatar and Switzerland share the points",
-      "summary": "Qatar and Switzerland are tied 1-1 as Boualem Khoukhi scores in the 90'+4' minute, equalizing for Qatar, after the Swiss initially took the lead, the match ends in a draw.",
+      "summary": "Qatar and Switzerland are tied 1-1 as Miro Muheim scores an own goal in the 90'+4' minute, equalizing the match, Breel Embolo scored the first goal, the match ends in a draw.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Qatar\",\"Switzerland\",1,1,[[\"90'+4'\",\"Boualem Khoukhi\",\"Qatar\",\"home\",false,false]]]"
+      "fingerprint": "[\"Qatar\",\"Switzerland\",1,1,[[\"90'+4'\",\"Miro Muheim\",\"Qatar\",\"home\",true,false]]]"
     },
     "400021449": {
       "id": "400021449",
