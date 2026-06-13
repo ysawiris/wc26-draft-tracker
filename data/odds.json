@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-13T09:27:02.291Z",
+  "fetchedAt": "2026-06-13T12:55:36.198Z",
   "matchCount": 68,
   "lines": [
     {
@@ -13,8 +13,8 @@
       "awayRaw": "Morocco",
       "line": 2.5,
       "overUS": "+120",
-      "underUS": "-150",
-      "impliedTotal": 2.4
+      "underUS": "-145",
+      "impliedTotal": 2.42
     },
     {
       "espnId": "760418",
@@ -24,9 +24,9 @@
       "homeRaw": "Haiti",
       "awayRaw": "Scotland",
       "line": 2.5,
-      "overUS": "-145",
-      "underUS": "+120",
-      "impliedTotal": 2.95
+      "overUS": "-155",
+      "underUS": "+125",
+      "impliedTotal": 3
     },
     {
       "espnId": "760420",
@@ -48,9 +48,9 @@
       "homeRaw": "Australia",
       "awayRaw": "Türkiye",
       "line": 2.5,
-      "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 2.53
+      "overUS": "+100",
+      "underUS": "-125",
+      "impliedTotal": 2.57
     },
     {
       "espnId": "760422",
@@ -60,9 +60,9 @@
       "homeRaw": "Germany",
       "awayRaw": "Curaçao",
       "line": 4.5,
-      "overUS": "+100",
-      "underUS": "-125",
-      "impliedTotal": 4.53
+      "overUS": "+105",
+      "underUS": "-130",
+      "impliedTotal": 4.48
     },
     {
       "espnId": "760423",
@@ -252,9 +252,9 @@
       "homeRaw": "Canada",
       "awayRaw": "Qatar",
       "line": 2.5,
-      "overUS": "-120",
-      "underUS": "-105",
-      "impliedTotal": 2.74
+      "overUS": "-125",
+      "underUS": "+100",
+      "impliedTotal": 2.78
     },
     {
       "espnId": "760438",
@@ -648,9 +648,9 @@
       "homeRaw": "Paraguay",
       "awayRaw": "Australia",
       "line": 2.5,
-      "overUS": "+130",
-      "underUS": "-160",
-      "impliedTotal": 2.34
+      "overUS": "+125",
+      "underUS": "-155",
+      "impliedTotal": 2.37
     },
     {
       "espnId": "760472",
@@ -685,8 +685,8 @@
       "awayRaw": "Saudi Arabia",
       "line": 2.5,
       "overUS": "+100",
-      "underUS": "-125",
-      "impliedTotal": 2.57
+      "underUS": "-120",
+      "impliedTotal": 2.59
     },
     {
       "espnId": "760476",
