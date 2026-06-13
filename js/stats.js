@@ -89,14 +89,22 @@
     Object.keys(ctx.groups).forEach(function (letter) {
       var pts = ctx.helpers.groupCardPoints(ctx.groups[letter]);
       if (pts > 0 && (!dirty || pts > dirty.pts)) {
-        dirty = { letter: letter, pts: pts, cards: ctx.helpers.groupCards(ctx.groups[letter]) };
+        dirty = {
+          letter: letter, pts: pts,
+          cards: ctx.helpers.groupCards(ctx.groups[letter]),
+          fouls: ctx.helpers.groupFouls(ctx.groups[letter])
+        };
       }
     });
     if (!dirty) return null;
     var owner = ctx.helpers.ownerByGroup()[dirty.letter];
+    var foulTail = dirty.fouls > 0
+      ? " off " + dirty.fouls + " " + plural(dirty.fouls, "foul", "fouls")
+      : "";
     return "Group " + dirty.letter + (owner ? " (<b>" + esc(owner.name) + "</b>)" : " (unclaimed)") +
       " has racked up " + dirty.pts + " card " + plural(dirty.pts, "point", "points") +
-      " — 🟨 " + dirty.cards.y + " · 🟥 " + dirty.cards.r + ". The tiebreaker nobody wants to need.";
+      " — 🟨 " + dirty.cards.y + " · 🟥 " + dirty.cards.r + foulTail +
+      ". The tiebreaker nobody wants to need.";
   }
 
   function unclaimedLine(ctx) {
@@ -263,6 +271,21 @@
       "Group " + best.letter + " · 🟨 " + best.cards.y + " · 🟥 " + best.cards.r);
   }
 
+  function mostFoulsCard(ctx) {
+    var esc = ctx.helpers.esc;
+    var best = null;
+    Object.keys(ctx.groups).forEach(function (L) {
+      var fouls = ctx.helpers.groupFouls(ctx.groups[L]);
+      if (!best || fouls > best.fouls) best = { letter: L, fouls: fouls };
+    });
+    if (!best || best.fouls === 0) {
+      return cardHtml("Most fouls", "&mdash;", ctx.started ? "clean game so far" : WAIT, true);
+    }
+    var owner = ctx.helpers.ownerByGroup()[best.letter];
+    return cardHtml("Most fouls", best.fouls,
+      "Group " + best.letter + " · " + (owner ? esc(owner.name) : "Unclaimed"));
+  }
+
   function biggestMatchCard(ctx) {
     var esc = ctx.helpers.esc;
     var best = null;
@@ -305,6 +328,7 @@
       topGroupCard(ctx),
       topCountryCard(ctx),
       dirtiestCard(ctx),
+      mostFoulsCard(ctx),
       biggestMatchCard(ctx),
       totalGoalsCard(ctx),
       goalsPerMatchCard(ctx)

@@ -318,7 +318,9 @@
     g.fillText(String(row.goals), RIGHT_X, yc + 2);
     g.font = "600 21px " + SANS;
     g.fillStyle = FAINT;
-    g.fillText("TB " + row.cardPoints, RIGHT_X, yc + 32);
+    var subline = "TB " + row.cardPoints;
+    if (row.fouls > 0) subline += "  ·  ⚠ " + row.fouls;
+    g.fillText(subline, RIGHT_X, yc + 32);
     g.textAlign = "left";
   }
 

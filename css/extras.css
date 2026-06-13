@@ -39,8 +39,9 @@
 .match.exh { opacity: 0.78; }
 .match.exh:hover { opacity: 1; }
 
-/* Per-team card counts on schedule match cards — chips sit under the
-   name inside a flag + (name / cards) stack, at every screen width */
+/* Per-team cards + fouls on schedule match cards — chips sit under the
+   name inside a flag + (name / cards) stack. Borderless (no box) so the
+   row doesn't feel cramped. */
 .m-stack {
   min-width: 0;
   display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
@@ -49,9 +50,5 @@
 .m-stack .m-name { max-width: 100%; }
 .m-cards {
   font-size: 0.66rem; font-weight: 700; letter-spacing: 0.02em;
-  color: var(--text-dim);
-  background: rgba(0, 0, 0, 0.28);
-  border: 1px solid var(--panel-edge);
-  border-radius: 6px; padding: 1px 6px;
-  white-space: nowrap;
+  color: var(--text-dim); white-space: nowrap;
 }

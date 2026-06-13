@@ -286,12 +286,13 @@
     });
   }
 
-  /* "🟨2 🟥1" chip for one side of a fixture; empty when no cards. */
+  /* "🟨2 🟥1 ⚠9" chip for one side of a fixture; empty when nothing to show. */
   function cardChips(c) {
-    if (!c || (!c.y && !c.r)) return "";
+    if (!c || (!c.y && !c.r && !c.f)) return "";
     var bits = [];
     if (c.y) bits.push("🟨" + c.y);
     if (c.r) bits.push("🟥" + c.r);
+    if (c.f) bits.push("⚠" + c.f);
     return '<span class="m-cards">' + bits.join(" ") + "</span>";
   }
 

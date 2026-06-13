@@ -35,13 +35,15 @@ function fifaStatus(m) {
   return "TIMED";
 }
 
-/* Timeline event types (verified against MEX–RSA, 2026-06-11):
-   2 = yellow card ("is booked"), 3 = red card ("is sent off").
-   Foul event type is not officially documented — type 5 is the most
-   common FIFA v3 value; verify against first matches if counts stay 0. */
+/* Timeline event types (verified against the MEX–RSA timeline, 2026-06-12):
+   2 = yellow card ("is booked"), 3 = red card ("is sent off"),
+   18 = foul ("commits a foul"). Each foul event carries IdTeam, so the
+   per-country split is reliable. NOTE: type 5 is a substitution, not a
+   foul — the earlier EVENT_FOUL = 5 was silently counting subs (≤5/team),
+   which is why foul totals looked implausibly low. */
 const EVENT_YELLOW = 2;
 const EVENT_RED = 3;
-const EVENT_FOUL = 5;
+const EVENT_FOUL = 18;
 
 function loc(arr) {
   return (Array.isArray(arr) && arr[0] && arr[0].Description) || null;
@@ -228,7 +230,9 @@ async function main() {
     prev &&
     JSON.stringify(prev.matches) === JSON.stringify(result.matches) &&
     JSON.stringify((prev.cards && prev.cards.byCountry) || null) ===
-      JSON.stringify((result.cards && result.cards.byCountry) || null)
+      JSON.stringify((result.cards && result.cards.byCountry) || null) &&
+    JSON.stringify((prev.fouls && prev.fouls.byCountry) || null) ===
+      JSON.stringify((result.fouls && result.fouls.byCountry) || null)
   ) {
     console.log(`No changes (${result.matches.length} matches). Nothing to write.`);
     return;
@@ -240,7 +244,8 @@ async function main() {
     fetchedAt: new Date().toISOString(),
     matchCount: result.matches.length,
     matches: result.matches,
-    cards: result.cards
+    cards: result.cards,
+    fouls: result.fouls || null
   };
 
   await mkdir(dirname(OUT), { recursive: true });

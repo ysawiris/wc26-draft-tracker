@@ -8,7 +8,9 @@
    baseline via LiveDirect.overlay(), called from Live.load().
 
    Also feeds the ⚽ goal ticker under the live strip from FIFA's
-   play-by-play timeline (event Type 0 = goal, 2 = yellow, 3 = red). */
+   play-by-play timeline (event Type 0 = goal, 2 = yellow, 3 = red,
+   18 = foul). Fouls flow through overlay() too, so the live count
+   doesn't drop to zero while a direct fetch is fresh. */
 
 (function () {
   "use strict";
@@ -82,11 +84,13 @@
       var counts = {};
       var goals = [];
       ((data && data.Event) || []).forEach(function (e) {
-        if (e.Type === 2 || e.Type === 3) {
+        if (e.Type === 2 || e.Type === 3 || e.Type === 18) {
           var country = teamName[e.IdTeam];
           if (!country) return;
-          var c = counts[country] || (counts[country] = { y: 0, r: 0 });
-          if (e.Type === 2) c.y += 1; else c.r += 1;
+          var c = counts[country] || (counts[country] = { y: 0, r: 0, f: 0 });
+          if (e.Type === 2) c.y += 1;
+          else if (e.Type === 3) c.r += 1;
+          else c.f += 1;
         } else if (e.Type === 0) {
           goals.push({ minute: e.MatchMinute || "", text: loc(e.EventDescription) || "Goal!" });
         }
@@ -150,12 +154,17 @@
     Object.keys(state.byMatch).forEach(function (k) { byMatch[k] = state.byMatch[k]; });
 
     var byCountry = {};
+    var foulsByCountry = {};
     Object.keys(byMatch).forEach(function (k) {
       var per = byMatch[k];
       Object.keys(per).forEach(function (name) {
         var agg = byCountry[name] || (byCountry[name] = { y: 0, r: 0 });
         agg.y += per[name].y || 0;
         agg.r += per[name].r || 0;
+        if (per[name].f) {
+          var fa = foulsByCountry[name] || (foulsByCountry[name] = { f: 0 });
+          fa.f += per[name].f;
+        }
       });
     });
 
@@ -165,7 +174,8 @@
       fetchedAt: new Date(state.fetchedAt).toISOString(),
       matchCount: state.matches.length,
       matches: state.matches,
-      cards: { byMatch: byMatch, byCountry: byCountry }
+      cards: { byMatch: byMatch, byCountry: byCountry },
+      fouls: { byCountry: foulsByCountry }
     };
   }
 
