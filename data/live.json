@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-13T08:39:37.509Z",
+  "fetchedAt": "2026-06-13T17:37:58.157Z",
   "matchCount": 72,
   "matches": [
     {
@@ -67,7 +67,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021456",
