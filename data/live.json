@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-13T23:02:07.376Z",
+  "fetchedAt": "2026-06-13T23:36:05.817Z",
   "matchCount": 72,
   "matches": [
     {
@@ -80,7 +80,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "venue": "New York/New Jersey Stadium",
-      "minute": null
+      "minute": "70'"
     },
     {
       "id": "400021453",
@@ -93,7 +93,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Boston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021463",
@@ -995,12 +995,12 @@
         "Brazil": {
           "y": 2,
           "r": 0,
-          "f": 6
+          "f": 11
         },
         "Morocco": {
           "y": 0,
           "r": 0,
-          "f": 8
+          "f": 12
         }
       },
       "400021458": {
@@ -1094,10 +1094,10 @@
         "f": 17
       },
       "Brazil": {
-        "f": 6
+        "f": 11
       },
       "Morocco": {
-        "f": 8
+        "f": 12
       },
       "USA": {
         "f": 12
