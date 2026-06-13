@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-12T23:54:50.727Z",
+  "fetchedAt": "2026-06-13T01:45:10.213Z",
   "matchCount": 72,
   "matches": [
     {
@@ -48,13 +48,13 @@
       "group": "D",
       "matchday": null,
       "utcDate": "2026-06-13T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "USA",
       "away": "Paraguay",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 2,
+      "awayGoals": 0,
       "venue": "Los Angeles Stadium",
-      "minute": "0'"
+      "minute": "42'"
     },
     {
       "id": "400021447",
@@ -944,49 +944,61 @@
   "cards": {
     "byMatch": {
       "400021441": {
-        "Korea Republic": {
-          "y": 1,
-          "r": 0,
-          "f": 5
-        },
         "Czechia": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 16
+        },
+        "Korea Republic": {
+          "y": 1,
+          "r": 0,
+          "f": 8
         }
       },
       "400021443": {
         "South Africa": {
           "y": 2,
           "r": 2,
-          "f": 4
+          "f": 8
         },
         "Mexico": {
           "y": 1,
           "r": 1,
-          "f": 5
+          "f": 10
         }
       },
       "400021449": {
         "Canada": {
           "y": 2,
           "r": 0,
-          "f": 5
+          "f": 8
         },
         "Bosnia and Herzegovina": {
           "y": 3,
+          "r": 0,
+          "f": 17
+        }
+      },
+      "400021458": {
+        "USA": {
+          "y": 0,
+          "r": 0,
+          "f": 3
+        },
+        "Paraguay": {
+          "y": 1,
           "r": 0,
           "f": 5
         }
       }
     },
     "byCountry": {
-      "Korea Republic": {
-        "y": 1,
-        "r": 0
-      },
       "Czechia": {
         "y": 0,
+        "r": 0
+      },
+      "Korea Republic": {
+        "y": 1,
         "r": 0
       },
       "South Africa": {
@@ -1004,6 +1016,42 @@
       "Bosnia and Herzegovina": {
         "y": 3,
         "r": 0
+      },
+      "USA": {
+        "y": 0,
+        "r": 0
+      },
+      "Paraguay": {
+        "y": 1,
+        "r": 0
+      }
+    }
+  },
+  "fouls": {
+    "byCountry": {
+      "Czechia": {
+        "f": 16
+      },
+      "Korea Republic": {
+        "f": 8
+      },
+      "South Africa": {
+        "f": 8
+      },
+      "Mexico": {
+        "f": 10
+      },
+      "Canada": {
+        "f": 8
+      },
+      "Bosnia and Herzegovina": {
+        "f": 17
+      },
+      "USA": {
+        "f": 3
+      },
+      "Paraguay": {
+        "f": 5
       }
     }
   }
