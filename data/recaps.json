@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-13T05:09:45.445Z",
-  "count": 4,
+  "generatedAt": "2026-06-13T21:32:27.664Z",
+  "count": 5,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -87,6 +87,33 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"Mexico\",\"South Africa\",2,0,[[\"9'\",\"Julian Quinones\",\"Mexico\",\"home\",false,false],[\"67'\",\"Raúl\",\"Mexico\",\"home\",false,false]]]"
+    },
+    "400021447": {
+      "id": "400021447",
+      "group": "B",
+      "home": "Qatar",
+      "away": "Switzerland",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "San Francisco Bay Area Stadium",
+      "utcDate": "2026-06-13T19:00:00Z",
+      "goals": [
+        {
+          "minute": "90'+4'",
+          "order": 90.04,
+          "player": "Boualem Khoukhi",
+          "team": "Qatar",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Qatar and Switzerland share the points",
+      "summary": "Qatar and Switzerland are tied 1-1 as Boualem Khoukhi scores in the 90'+4' minute, equalizing for Qatar, after the Swiss initially took the lead, the match ends in a draw.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Qatar\",\"Switzerland\",1,1,[[\"90'+4'\",\"Boualem Khoukhi\",\"Qatar\",\"home\",false,false]]]"
     },
     "400021449": {
       "id": "400021449",
