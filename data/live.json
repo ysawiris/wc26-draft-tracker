@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-13T21:38:43.178Z",
+  "fetchedAt": "2026-06-13T22:06:34.333Z",
   "matchCount": 72,
   "matches": [
     {
@@ -74,13 +74,13 @@
       "group": "C",
       "matchday": null,
       "utcDate": "2026-06-13T22:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Brazil",
       "away": "Morocco",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "New York/New Jersey Stadium",
-      "minute": "0'"
+      "minute": "2'"
     },
     {
       "id": "400021453",
@@ -991,6 +991,13 @@
           "f": 17
         }
       },
+      "400021456": {
+        "Brazil": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021458": {
         "USA": {
           "y": 1,
@@ -1037,6 +1044,10 @@
         "y": 3,
         "r": 0
       },
+      "Brazil": {
+        "y": 0,
+        "r": 0
+      },
       "USA": {
         "y": 1,
         "r": 0
@@ -1072,6 +1083,9 @@
       },
       "Bosnia and Herzegovina": {
         "f": 17
+      },
+      "Brazil": {
+        "f": 1
       },
       "USA": {
         "f": 12
