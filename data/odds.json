@@ -1,21 +1,9 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-13T01:26:33.519Z",
-  "matchCount": 69,
+  "fetchedAt": "2026-06-13T05:47:47.568Z",
+  "matchCount": 68,
   "lines": [
-    {
-      "espnId": "760417",
-      "date": "2026-06-12",
-      "home": "United States",
-      "away": "Paraguay",
-      "homeRaw": "United States",
-      "awayRaw": "Paraguay",
-      "line": 2.5,
-      "overUS": "+150",
-      "underUS": "-185",
-      "impliedTotal": 2.21
-    },
     {
       "espnId": "760419",
       "date": "2026-06-13",
@@ -24,9 +12,9 @@
       "homeRaw": "Brazil",
       "awayRaw": "Morocco",
       "line": 2.5,
-      "overUS": "+110",
-      "underUS": "-135",
-      "impliedTotal": 2.49
+      "overUS": "+105",
+      "underUS": "-130",
+      "impliedTotal": 2.53
     },
     {
       "espnId": "760418",
@@ -36,9 +24,9 @@
       "homeRaw": "Haiti",
       "awayRaw": "Scotland",
       "line": 2.5,
-      "overUS": "-120",
-      "underUS": "-105",
-      "impliedTotal": 2.74
+      "overUS": "-140",
+      "underUS": "+110",
+      "impliedTotal": 2.89
     },
     {
       "espnId": "760420",
@@ -48,9 +36,9 @@
       "homeRaw": "Qatar",
       "awayRaw": "Switzerland",
       "line": 2.5,
-      "overUS": "-145",
-      "underUS": "+115",
-      "impliedTotal": 2.93
+      "overUS": "-175",
+      "underUS": "+140",
+      "impliedTotal": 3.13
     },
     {
       "espnId": "760421",
@@ -336,9 +324,9 @@
       "homeRaw": "Türkiye",
       "awayRaw": "Paraguay",
       "line": 2.5,
-      "overUS": "+130",
+      "overUS": "+125",
       "underUS": "-160",
-      "impliedTotal": 2.34
+      "impliedTotal": 2.36
     },
     {
       "espnId": "760442",
@@ -348,9 +336,9 @@
       "homeRaw": "United States",
       "awayRaw": "Australia",
       "line": 2.5,
-      "overUS": "+100",
-      "underUS": "-125",
-      "impliedTotal": 2.57
+      "overUS": "-105",
+      "underUS": "-115",
+      "impliedTotal": 2.63
     },
     {
       "espnId": "760446",
@@ -552,9 +540,9 @@
       "homeRaw": "Bosnia-Herzegovina",
       "awayRaw": "Qatar",
       "line": 2.5,
-      "overUS": "+110",
+      "overUS": "+105",
       "underUS": "-135",
-      "impliedTotal": 2.49
+      "impliedTotal": 2.51
     },
     {
       "espnId": "760467",
@@ -684,9 +672,9 @@
       "homeRaw": "Türkiye",
       "awayRaw": "United States",
       "line": 2.5,
-      "overUS": "-115",
-      "underUS": "-110",
-      "impliedTotal": 2.7
+      "overUS": "-120",
+      "underUS": "-105",
+      "impliedTotal": 2.74
     },
     {
       "espnId": "760478",
