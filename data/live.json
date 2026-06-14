@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-14T16:17:46.441Z",
+  "fetchedAt": "2026-06-14T16:52:17.891Z",
   "matchCount": 72,
   "matches": [
     {
@@ -119,7 +119,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Houston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021470",
