@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-13T22:28:25.132Z",
-  "count": 5,
+  "generatedAt": "2026-06-14T01:24:20.965Z",
+  "count": 6,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -150,6 +150,42 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"Canada\",\"Bosnia & Herzegovina\",1,1,[[\"21'\",\"Jovo Lukic\",\"Bosnia & Herzegovina\",\"away\",false,false],[\"78'\",\"Cyle Larin\",\"Canada\",\"home\",false,false]]]"
+    },
+    "400021456": {
+      "id": "400021456",
+      "group": "C",
+      "home": "Brazil",
+      "away": "Morocco",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "New York/New Jersey Stadium",
+      "utcDate": "2026-06-13T22:00:00Z",
+      "goals": [
+        {
+          "minute": "21'",
+          "order": 21,
+          "player": "Saibari",
+          "team": "Morocco",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "32'",
+          "order": 32,
+          "player": "Vini Jr.",
+          "team": "Brazil",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Brazil and Morocco share the points",
+      "summary": "Brazil and Morocco are locked in a 1-1 tie, Saibari scoring for Morocco and Vini Jr. equalizing for Brazil, the match is intense, Vini Jr. and Saibari are the key scorers so far. Brazil is pushing for a win. The score remains 1-1.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Brazil\",\"Morocco\",1,1,[[\"21'\",\"Saibari\",\"Morocco\",\"away\",false,false],[\"32'\",\"Vini Jr.\",\"Brazil\",\"home\",false,false]]]"
     },
     "400021458": {
       "id": "400021458",
