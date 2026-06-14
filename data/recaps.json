@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T01:24:20.965Z",
-  "count": 6,
+  "generatedAt": "2026-06-14T03:49:06.539Z",
+  "count": 7,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -150,6 +150,33 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"Canada\",\"Bosnia & Herzegovina\",1,1,[[\"21'\",\"Jovo Lukic\",\"Bosnia & Herzegovina\",\"away\",false,false],[\"78'\",\"Cyle Larin\",\"Canada\",\"home\",false,false]]]"
+    },
+    "400021453": {
+      "id": "400021453",
+      "group": "C",
+      "home": "Haiti",
+      "away": "Scotland",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "venue": "Boston Stadium",
+      "utcDate": "2026-06-14T01:00:00Z",
+      "goals": [
+        {
+          "minute": "28'",
+          "order": 28,
+          "player": "John McGINN",
+          "team": "Scotland",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Scotland see off Haiti",
+      "summary": "Haiti trails Scotland 0-1 as John McGinn scores in the 28th minute, Scotland leads Group C match at Boston Stadium, McGinn's goal proving the difference so far, Scotland is up by one goal.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Haiti\",\"Scotland\",0,1,[[\"28'\",\"John McGINN\",\"Scotland\",\"away\",false,false]]]"
     },
     "400021456": {
       "id": "400021456",
