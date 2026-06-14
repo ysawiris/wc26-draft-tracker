@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T07:46:20.431Z",
-  "count": 8,
+  "generatedAt": "2026-06-14T19:36:22.532Z",
+  "count": 9,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -312,6 +312,87 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Australia\",\"Türkiye\",2,0,[[\"27'\",\"Nestory Irankunda\",\"Australia\",\"home\",false,false],[\"75'\",\"Connor Metcalfe\",\"Australia\",\"home\",false,false]]]"
+    },
+    "400021464": {
+      "id": "400021464",
+      "group": "E",
+      "home": "Germany",
+      "away": "Curaçao",
+      "homeGoals": 7,
+      "awayGoals": 1,
+      "venue": "Houston Stadium",
+      "utcDate": "2026-06-14T17:00:00Z",
+      "goals": [
+        {
+          "minute": "6'",
+          "order": 6,
+          "player": "Nmecha",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "21'",
+          "order": 21,
+          "player": "Livano Comenencia",
+          "team": "Curaçao",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "38'",
+          "order": 38,
+          "player": "Schlotterbeck",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "47'",
+          "order": 47,
+          "player": "Musiala",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "68'",
+          "order": 68,
+          "player": "Nathaniel Brown",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "78'",
+          "order": 78,
+          "player": "Deniz Undav",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "88'",
+          "order": 88,
+          "player": "Havertz",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Germany see off Curaçao",
+      "summary": "Germany is dominating Curaçao 7-1 with Nmecha, Schlotterbeck, Musiala, Nathaniel Brown, Deniz Undav, and Havertz scoring for Germany, while Livano Comenencia scores for Curaçao. Germany is cruising to a Group E win. Musiala and others are leading the charge.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Germany\",\"Curaçao\",7,1,[[\"6'\",\"Nmecha\",\"Germany\",\"home\",false,false],[\"21'\",\"Livano Comenencia\",\"Curaçao\",\"away\",false,false],[\"38'\",\"Schlotterbeck\",\"Germany\",\"home\",false,false],[\"47'\",\"Musiala\",\"Germany\",\"home\",false,false],[\"68'\",\"Nathaniel Brown\",\"Germany\",\"home\",false,false],[\"78'\",\"Deniz Undav\",\"Germany\",\"home\",false,false],[\"88'\",\"Havertz\",\"Germany\",\"home\",false,false]]]"
     }
   }
 }
