@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T02:09:24.961Z",
+  "generatedAt": "2026-06-14T02:15:02.607Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -80,7 +80,7 @@
               "ag": 1
             }
           ],
-          "blurb": "19 goals from the rest of Group G gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Group G squeaks in at 19 goals while Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew all stall at 18 or fewer."
         },
         {
           "key": "business",
@@ -127,7 +127,7 @@
               "ag": 1
             }
           ],
-          "blurb": "21 goals from the rest of Group G pushes Group G to 21, clear of the field even if a rival overperforms."
+          "blurb": "Group G takes care of business with 21 goals, putting them well ahead of the competition and securing the top spot."
         },
         {
           "key": "fest",
@@ -174,14 +174,14 @@
               "ag": 1
             }
           ],
-          "blurb": "23 goals from the rest of Group G pushes Group G to 23, clear of the field even if a rival overperforms."
+          "blurb": "Group G lights up the scoreboard, hitting 23 goals and leaving rivals in the dust for a commanding No.1 pick."
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 owns Group G — Belgium, Egypt, Iran and New Zealand — projected 15.1 goals — 10th of 12. The No. 1 pick goes to the highest-scoring group, so Group G needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "Commissioner's Infirmary 2.0 must unleash a scoring frenzy to seize the No.1 pick! With rivals lurking, they need every goal possible!",
+      "ai": true,
+      "aiVia": "GitHub Models",
       "fingerprint": "[0,6,18,[[19,[[\"Belgium\",\"Egypt\",2,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,1],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[21,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[23,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]]]]"
     },
     "CDL": {
@@ -261,7 +261,7 @@
               "ag": 2
             }
           ],
-          "blurb": "19 goals from the rest of Group E gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Group E is scoring 19 goals, edging out Gallactic Rebel Scum and Big Blue Wrecking Crew"
         },
         {
           "key": "business",
@@ -308,7 +308,7 @@
               "ag": 2
             }
           ],
-          "blurb": "21 goals from the rest of Group E pushes Group E to 21, clear of the field even if a rival overperforms."
+          "blurb": "Group E is taking care of business, reaching 21 goals and clearing the field of rivals"
         },
         {
           "key": "fest",
@@ -355,14 +355,14 @@
               "ag": 2
             }
           ],
-          "blurb": "23 goals from the rest of Group E pushes Group E to 23, clear of the field even if a rival overperforms."
+          "blurb": "Group E is exploding in a goal-fest, reaching 23 goals and leaving all rivals, including Big Blue Wrecking Crew, in the dust"
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! owns Group E — Germany, Curaçao, Ivory Coast and Ecuador — currently the top-projected group. The No. 1 pick goes to the highest-scoring group, so Group E needs to clear ~18 goals while Gallactic Rebel Scum (Grp D), Big Blue Wrecking Crew (Grp H) and Ms. Jackson ouuuuuuuuuuuu (Grp C) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "Nicolodeons! must navigate a tight race to grab the No.1 pick, with Gallactic Rebel Scum and Big Blue Wrecking Crew hot on their heels. To come out on top, Nicolodeons! needs their Group E teams to score big and their rivals to stumble, making every match count in the quest for the top spot.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
       "fingerprint": "[0,6,18,[[19,[[\"Germany\",\"Curaçao\",4,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[21,[[\"Germany\",\"Curaçao\",4,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[23,[[\"Germany\",\"Curaçao\",4,2],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]]]]"
     },
     "BBWC": {
@@ -442,7 +442,7 @@
               "ag": 1
             }
           ],
-          "blurb": "19 goals from the rest of Group H gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Group H is squeaking in at 19 goals, passing stalled Nicolodeons! and Gallactic Rebel Scum"
         },
         {
           "key": "business",
@@ -489,7 +489,7 @@
               "ag": 1
             }
           ],
-          "blurb": "21 goals from the rest of Group H pushes Group H to 21, clear of the field even if a rival overperforms."
+          "blurb": "Group H is taking care of business at 21 goals, outpacing the field and rival managers"
         },
         {
           "key": "fest",
@@ -536,14 +536,14 @@
               "ag": 1
             }
           ],
-          "blurb": "23 goals from the rest of Group H pushes Group H to 23, clear of the field even if a rival overperforms."
+          "blurb": "Group H is igniting a goal-fest at 23 goals, crushing the competition and securing the top pick"
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew owns Group H — Spain, Cape Verde, Saudi Arabia and Uruguay — projected 17.5 goals — 3rd of 12. The No. 1 pick goes to the highest-scoring group, so Group H needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Ms. Jackson ouuuuuuuuuuuu (Grp C) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "Big Blue Wrecking Crew must outscore Nicolodeons! and Gallactic Rebel Scum to grab the No.1 pick, needing a strong goal surge to take the top spot. To come out on top, the group must exceed its projected total and leave rival groups in the dust, with Manager Big Blue Wrecking Crew pushing for a high goal count.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
       "fingerprint": "[0,6,18,[[19,[[\"Spain\",\"Cape Verde\",3,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",2,1],[\"Uruguay\",\"Cape Verde\",2,1],[\"Uruguay\",\"Spain\",1,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[21,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",3,1],[\"Uruguay\",\"Cape Verde\",2,1],[\"Uruguay\",\"Spain\",1,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[23,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",3,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]]]]"
     },
     "TACO": {
@@ -623,7 +623,7 @@
               "ag": 1
             }
           ],
-          "blurb": "19 goals from the rest of Group F gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Group F squeaks in with 19 goals while rivals like Nicolodeons and Gallactic Rebel Scum stall at 18 or under."
         },
         {
           "key": "business",
@@ -670,7 +670,7 @@
               "ag": 1
             }
           ],
-          "blurb": "21 goals from the rest of Group F pushes Group F to 21, clear of the field even if a rival overperforms."
+          "blurb": "Group F takes care of business, reaching 21 goals, leaving the competition, including Big Blue Wrecking Crew, far behind."
         },
         {
           "key": "fest",
@@ -717,14 +717,14 @@
               "ag": 2
             }
           ],
-          "blurb": "23 goals from the rest of Group F pushes Group F to 23, clear of the field even if a rival overperforms."
+          "blurb": "In a thrilling goal-fest, Group F hits 23 goals, asserting dominance over all rivals and sealing the top spot."
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp owns Group F — Netherlands, Japan, Sweden and Tunisia — projected 15.4 goals — 9th of 12. The No. 1 pick goes to the highest-scoring group, so Group F needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "Taco Corp must unleash their scoring power to secure the No.1 pick! With rivals lurking close, they need every goal to dominate Group F.",
+      "ai": true,
+      "aiVia": "GitHub Models",
       "fingerprint": "[0,6,18,[[19,[[\"Netherlands\",\"Japan\",2,1],[\"Sweden\",\"Tunisia\",2,1],[\"Netherlands\",\"Sweden\",2,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]],[21,[[\"Netherlands\",\"Japan\",2,2],[\"Sweden\",\"Tunisia\",2,1],[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]],[23,[[\"Netherlands\",\"Japan\",2,2],[\"Sweden\",\"Tunisia\",2,2],[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]]]]"
     },
     "GRS": {
@@ -798,7 +798,7 @@
               "ag": 1
             }
           ],
-          "blurb": "14 goals from the rest of Group D gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Gallactic Rebel Scum is squeaking in with 19 goals as Nicolodeons! stalls at 18 or under"
         },
         {
           "key": "business",
@@ -839,7 +839,7 @@
               "ag": 2
             }
           ],
-          "blurb": "16 goals from the rest of Group D pushes Group D to 21, clear of the field even if a rival overperforms."
+          "blurb": "Gallactic Rebel Scum takes care of business reaching 21 goals clear of Big Blue Wrecking Crew"
         },
         {
           "key": "fest",
@@ -880,14 +880,14 @@
               "ag": 2
             }
           ],
-          "blurb": "18 goals from the rest of Group D pushes Group D to 23, clear of the field even if a rival overperforms."
+          "blurb": "Gallactic Rebel Scum ignites a goal-fest reaching 23 goals leaving all rivals in the dust"
         }
       ],
       "abbr": "GRS",
       "team": "Gallactic Rebel Scum",
-      "intro": "Gallactic Rebel Scum owns Group D — Australia, Türkiye, United States and Paraguay — projected 17.7 goals — 2nd of 12. The No. 1 pick goes to the highest-scoring group, so Group D needs to clear ~18 goals while Nicolodeons! (Grp E), Big Blue Wrecking Crew (Grp H) and Group I (unclaimed) (Grp I) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "Gallactic Rebel Scum needs a goal-scoring explosion to grab the No.1 pick, with Nicolodeons! and Big Blue Wrecking Crew lurking, and to be safe, the group needs about 18+ goals to secure the top spot. With 5 matches left, Gallactic Rebel Scum must rally their Group D teams to outscore their rivals and take the top pick.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
       "fingerprint": "[5,5,18,[[19,[[\"Australia\",\"Türkiye\",1,2],[\"United States\",\"Australia\",2,1],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",1,1],[\"Türkiye\",\"United States\",2,1]]],[21,[[\"Australia\",\"Türkiye\",1,2],[\"United States\",\"Australia\",2,1],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]],[23,[[\"Australia\",\"Türkiye\",2,2],[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]]]]"
     },
     "FF": {
@@ -967,7 +967,7 @@
               "ag": 1
             }
           ],
-          "blurb": "19 goals from the rest of Group L gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Fiko Fins' Group L is squeaking in with 19 goals as rivals stall at 18 or under"
         },
         {
           "key": "business",
@@ -1014,7 +1014,7 @@
               "ag": 1
             }
           ],
-          "blurb": "21 goals from the rest of Group L pushes Group L to 21, clear of the field even if a rival overperforms."
+          "blurb": "Fiko Fins takes care of business as Group L reaches 21 goals, clearing the field of Nicolodeons and Gallactic Rebel Scum"
         },
         {
           "key": "fest",
@@ -1061,14 +1061,14 @@
               "ag": 2
             }
           ],
-          "blurb": "23 goals from the rest of Group L pushes Group L to 23, clear of the field even if a rival overperforms."
+          "blurb": "Fiko Fins' Group L is igniting a goal-fest, reaching 23 goals and leaving Big Blue Wrecking Crew in the dust"
         }
       ],
       "abbr": "FF",
       "team": "Fiko Fins",
-      "intro": "Fiko Fins owns Group L — England, Croatia, Ghana and Panama — projected 15.8 goals — 8th of 12. The No. 1 pick goes to the highest-scoring group, so Group L needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "Fiko Fins must rally his Group L teams to outscore rival groups led by Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew to grab the No.1 pick, and it will take a monumental effort to overcome the current deficit. With 6 matches left, Fiko Fins needs his teams to find their scoring touch and capitalize on every opportunity to reach the top spot, all while hoping rival managers stumble and fail to keep pace",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
       "fingerprint": "[0,6,18,[[19,[[\"England\",\"Croatia\",2,1],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",2,1],[\"Panama\",\"Croatia\",1,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,1]]],[21,[[\"England\",\"Croatia\",2,1],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,1]]],[23,[[\"England\",\"Croatia\",2,2],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,2]]]]]"
     },
     "RBLD": {
@@ -1148,7 +1148,7 @@
               "ag": 3
             }
           ],
-          "blurb": "19 goals from the rest of Group J gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Group J is squeaking in with 19 goals as rivals like Nicolodeons stall at 18 or under"
         },
         {
           "key": "business",
@@ -1195,7 +1195,7 @@
               "ag": 3
             }
           ],
-          "blurb": "21 goals from the rest of Group J pushes Group J to 21, clear of the field even if a rival overperforms."
+          "blurb": "Group J is taking care of business with 21 goals, outscoring Gallactic Rebel Scum and Big Blue Wrecking Crew"
         },
         {
           "key": "fest",
@@ -1242,14 +1242,14 @@
               "ag": 3
             }
           ],
-          "blurb": "23 goals from the rest of Group J pushes Group J to 23, clear of the field even if a rival overperforms."
+          "blurb": "Group J is igniting a goal-fest with 23 goals, leaving all rival managers in the dust"
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year owns Group J — Argentina, Algeria, Austria and Jordan — projected 16.4 goals — 5th of 12. The No. 1 pick goes to the highest-scoring group, so Group J needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "Another Rebuilding Year must will their group to a frenzy of goal-scoring to grab the No.1 pick, outpacing Nicolodeons and other rival managers like Gallactic Rebel Scum and Big Blue Wrecking Crew. To safely secure the top spot, the group needs to exceed the projected totals of these rival groups, led by their tough managers, with a significant surge in goal production.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
       "fingerprint": "[0,6,18,[[19,[[\"Argentina\",\"Algeria\",2,1],[\"Austria\",\"Jordan\",2,1],[\"Argentina\",\"Austria\",2,1],[\"Jordan\",\"Algeria\",1,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[21,[[\"Argentina\",\"Algeria\",2,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,1],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[23,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]]]]"
     },
     "TMM": {
@@ -1329,7 +1329,7 @@
               "ag": 2
             }
           ],
-          "blurb": "19 goals from the rest of Group K gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "The Metcalf Matrix squeezes past Nicolodeons and Gallactic Rebel Scum as Group K reaches 19 goals."
         },
         {
           "key": "business",
@@ -1376,7 +1376,7 @@
               "ag": 2
             }
           ],
-          "blurb": "21 goals from the rest of Group K pushes Group K to 21, clear of the field even if a rival overperforms."
+          "blurb": "The Metcalf Matrix dominates the draft as Group K takes care of business with 21 goals, outpacing Big Blue Wrecking Crew."
         },
         {
           "key": "fest",
@@ -1423,14 +1423,14 @@
               "ag": 2
             }
           ],
-          "blurb": "23 goals from the rest of Group K pushes Group K to 23, clear of the field even if a rival overperforms."
+          "blurb": "The Metcalf Matrix runs away with the No.1 pick as Group K erupts for 23 goals, leaving Gallactic Rebel Scum in the dust."
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix owns Group K — Portugal, DR Congo, Uzbekistan and Colombia — projected 15.9 goals — 7th of 12. The No. 1 pick goes to the highest-scoring group, so Group K needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "The Metcalf Matrix needs a goal-scoring explosion to snag the No.1 pick, with a massive haul required to outdo rival managers like Nicolodeons and Gallactic Rebel Scum. To come out on top, The Metcalf Matrix must surpass the projected totals of top groups like Big Blue Wrecking Crew and Nicolodeons,",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
       "fingerprint": "[0,6,18,[[19,[[\"Portugal\",\"DR Congo\",2,1],[\"Uzbekistan\",\"Colombia\",1,2],[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,1],[\"Colombia\",\"Portugal\",1,2]]],[21,[[\"Portugal\",\"DR Congo\",3,1],[\"Uzbekistan\",\"Colombia\",2,2],[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,1],[\"Colombia\",\"Portugal\",1,2]]],[23,[[\"Portugal\",\"DR Congo\",3,1],[\"Uzbekistan\",\"Colombia\",2,2],[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,1],[\"Colombia\",\"Portugal\",2,2]]]]]"
     },
     "AM": {
@@ -1498,7 +1498,7 @@
               "ag": 1
             }
           ],
-          "blurb": "15 goals from the rest of Group B gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Group B squeaks in with 19 goals, hoping rivals, like Nicolodeons, remain stuck at 18 or fewer total goals."
         },
         {
           "key": "business",
@@ -1533,7 +1533,7 @@
               "ag": 2
             }
           ],
-          "blurb": "17 goals from the rest of Group B pushes Group B to 21, clear of the field even if a rival overperforms."
+          "blurb": "Group B takes care of business by reaching 21 goals, leaving the competition in the dust and securing the top spot."
         },
         {
           "key": "fest",
@@ -1568,14 +1568,14 @@
               "ag": 2
             }
           ],
-          "blurb": "19 goals from the rest of Group B pushes Group B to 23, clear of the field even if a rival overperforms."
+          "blurb": "Group B experiences a goal-fest, hitting 23 goals and solidifying their dominance while rivals scramble to keep up."
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches owns Group B — Switzerland, Bosnia & Herzegovina, Canada and Qatar — projected 14.3 goals — 11th of 12. The No. 1 pick goes to the highest-scoring group, so Group B needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "For Purdy Pitches to seize the No.1 pick, they must score big while their rivals falter. It's a thrilling race against Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew!",
+      "ai": true,
+      "aiVia": "GitHub Models",
       "fingerprint": "[4,4,18,[[19,[[\"Switzerland\",\"Bosnia & Herzegovina\",2,2],[\"Canada\",\"Qatar\",3,1],[\"Bosnia & Herzegovina\",\"Qatar\",2,2],[\"Switzerland\",\"Canada\",2,1]]],[21,[[\"Switzerland\",\"Bosnia & Herzegovina\",2,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",2,2],[\"Switzerland\",\"Canada\",2,2]]],[23,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",2,2]]]]]"
     },
     "R": {
@@ -1643,7 +1643,7 @@
               "ag": 2
             }
           ],
-          "blurb": "17 goals from the rest of Group C gets you to 19 — enough only if the chasers stall at 18 or below."
+          "blurb": "Group C squeaks in at 19 goals, relying on Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew to stall at 18 or fewer."
         },
         {
           "key": "business",
@@ -1678,7 +1678,7 @@
               "ag": 2
             }
           ],
-          "blurb": "19 goals from the rest of Group C pushes Group C to 21, clear of the field even if a rival overperforms."
+          "blurb": "Group C takes care of business, reaching 21 goals, establishing a clear lead over the competition and securing the top pick."
         },
         {
           "key": "fest",
@@ -1713,14 +1713,14 @@
               "ag": 3
             }
           ],
-          "blurb": "20 goals from the rest of Group C pushes Group C to 22, clear of the field even if a rival overperforms."
+          "blurb": "In a thrilling goal-fest, Group C smashes through to 22 goals, ensuring dominance over rivals and locking in the No.1 selection."
         }
       ],
       "abbr": "R",
       "team": "Ms. Jackson ouuuuuuuuuuuu",
-      "intro": "Ms. Jackson ouuuuuuuuuuuu owns Group C — Scotland, Morocco, Brazil and Haiti — projected 13.9 goals — 12th of 12. The No. 1 pick goes to the highest-scoring group, so Group C needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
-      "ai": false,
-      "aiVia": null,
+      "intro": "For Ms. Jackson ouuuuuuuuuuuu to secure the No.1 pick, Group C must unleash a scoring frenzy and hope rivals falter! Success hinges on reaching those crucial goal milestones while keeping an eye on Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew!",
+      "ai": true,
+      "aiVia": "GitHub Models",
       "fingerprint": "[2,4,18,[[19,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]],[21,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,2]]],[22,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
     }
   }
