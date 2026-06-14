@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T02:15:02.607Z",
+  "generatedAt": "2026-06-14T03:41:29.537Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -1438,7 +1438,7 @@
       "banked": 4,
       "remaining": 4,
       "projTotal": 14.3,
-      "rank": 11,
+      "rank": 12,
       "leads": false,
       "winningBar": 18,
       "countries": [
@@ -1580,10 +1580,10 @@
     },
     "R": {
       "group": "C",
-      "banked": 2,
+      "banked": 3,
       "remaining": 4,
-      "projTotal": 13.9,
-      "rank": 12,
+      "projTotal": 14.9,
+      "rank": 10,
       "leads": false,
       "winningBar": 18,
       "countries": [
@@ -1614,14 +1614,14 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 19,
-          "yourRemainingGoals": 17,
+          "yourRemainingGoals": 16,
           "rivalCap": 18,
           "needsHelp": true,
           "lines": [
             {
               "home": "Scotland",
               "away": "Morocco",
-              "hg": 2,
+              "hg": 1,
               "ag": 2
             },
             {
@@ -1643,13 +1643,13 @@
               "ag": 2
             }
           ],
-          "blurb": "Group C squeaks in at 19 goals, relying on Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew to stall at 18 or fewer."
+          "blurb": "Group C scores 19 goals as Nicolodeons! and Gallactic Rebel Scum stall at 18 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 21,
-          "yourRemainingGoals": 19,
+          "yourRemainingGoals": 18,
           "rivalCap": 20,
           "needsHelp": false,
           "lines": [
@@ -1668,7 +1668,7 @@
             {
               "home": "Morocco",
               "away": "Haiti",
-              "hg": 4,
+              "hg": 3,
               "ag": 1
             },
             {
@@ -1678,14 +1678,14 @@
               "ag": 2
             }
           ],
-          "blurb": "Group C takes care of business, reaching 21 goals, establishing a clear lead over the competition and securing the top pick."
+          "blurb": "Ms. Jackson ouuuuuuuuuuuu's Group C reaches 21 goals, clearing the field of Nicolodeons! and Gallactic Rebel Scum"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
-          "targetTotal": 22,
+          "targetTotal": 23,
           "yourRemainingGoals": 20,
-          "rivalCap": 21,
+          "rivalCap": 22,
           "needsHelp": false,
           "lines": [
             {
@@ -1713,15 +1713,15 @@
               "ag": 3
             }
           ],
-          "blurb": "In a thrilling goal-fest, Group C smashes through to 22 goals, ensuring dominance over rivals and locking in the No.1 selection."
+          "blurb": "Group C explodes to 23 goals, leaving Big Blue Wrecking Crew and other rivals in the dust"
         }
       ],
       "abbr": "R",
       "team": "Ms. Jackson ouuuuuuuuuuuu",
-      "intro": "For Ms. Jackson ouuuuuuuuuuuu to secure the No.1 pick, Group C must unleash a scoring frenzy and hope rivals falter! Success hinges on reaching those crucial goal milestones while keeping an eye on Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew!",
+      "intro": "Ms. Jackson ouuuuuuuuuuuu needs a massive goal surge to snatch the No.1 pick, requiring her Group C teams to outscore the likes of Nicolodeons! and Gallactic Rebel Scum. With 4 matches left, Ms. Jackson ouuuuuuuuuuuu must will her teams to a blistering pace, outgunning Big Blue Wrecking Crew and co. to top the charts",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[2,4,18,[[19,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]],[21,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,2]]],[22,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[3,4,18,[[19,[[\"Scotland\",\"Morocco\",1,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]],[21,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]],[23,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
     }
   }
 }
