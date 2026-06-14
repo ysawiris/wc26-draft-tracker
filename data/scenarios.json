@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T13:03:44.210Z",
+  "generatedAt": "2026-06-14T16:56:35.463Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -1564,7 +1564,7 @@
       "group": "C",
       "banked": 3,
       "remaining": 4,
-      "projTotal": 14.8,
+      "projTotal": 14.9,
       "rank": 10,
       "leads": false,
       "winningBar": 18,
@@ -1625,7 +1625,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Ms. Jackson ouuuuuuuuuuuu is squeaking in with 19 goals as rivals stall at 18 or under Nicolodeons and Big Blue Wrecking Crew"
+          "blurb": "Ms. Jackson ouuuuuuuuuuuu is squeaking in with 19 goals as rivals stall at 18 or under Nicolodeons and Big Blue Wrecking Crew."
         },
         {
           "key": "business",
@@ -1644,13 +1644,13 @@
             {
               "home": "Brazil",
               "away": "Haiti",
-              "hg": 4,
+              "hg": 5,
               "ag": 1
             },
             {
               "home": "Morocco",
               "away": "Haiti",
-              "hg": 4,
+              "hg": 3,
               "ag": 1
             },
             {
@@ -1660,7 +1660,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Ms. Jackson ouuuuuuuuuuuu is taking care of business with 21 goals clearing the field of Nicolodeons and Big Blue Wrecking Crew"
+          "blurb": "Group C is taking care of business with 21 goals under Ms. Jackson ouuuuuuuuuuuu, clearing the field of Gallactic Rebel Scum."
         },
         {
           "key": "fest",
@@ -1695,15 +1695,15 @@
               "ag": 3
             }
           ],
-          "blurb": "Ms. Jackson ouuuuuuuuuuuu is sparking a goal-fest with 23 goals leaving Nicolodeons and Big Blue Wrecking Crew in the dust"
+          "blurb": "Ms. Jackson ouuuuuuuuuuuu is igniting a goal-fest with 23 goals in Group C, leaving Nicolodeons and Big Blue Wrecking Crew in the dust."
         }
       ],
       "abbr": "R",
       "team": "Ms. Jackson ouuuuuuuuuuuu",
-      "intro": "Ms. Jackson ouuuuuuuuuuuu needs a massive goal surge to snatch the No.1 pick, requiring her Group C teams to outscore rival managers like the Nicolodeons and Big Blue Wrecking Crew. With 4 matches left, a dramatic turnaround is necessary for Ms. Jackson ouuuuuuuuuuuu to leapfrog the competition and claim the top spot.",
+      "intro": "Ms. Jackson ouuuuuuuuuuuu must rally her World Cup Group C to a blistering goal-scoring pace to grab the No.1 pick, outgunning rival managers like Nicolodeons and Big Blue Wrecking Crew. To take the top spot, Group C needs a massive surge in scoring, with 18+ goals required to feel safe from the competition.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[3,4,18,[[19,[[\"Scotland\",\"Morocco\",1,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]],[21,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,2]]],[23,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
+      "fingerprint": "[3,4,18,[[19,[[\"Scotland\",\"Morocco\",1,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]],[21,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]],[23,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
     }
   }
 }
