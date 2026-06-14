@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T06:07:57.436Z",
+  "generatedAt": "2026-06-14T08:00:05.570Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -29,9 +29,9 @@
           "proj": 17.4
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -205,14 +205,14 @@
           "proj": 17.4
         },
         {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
+        },
+        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 17
-        },
-        {
-          "group": "J",
-          "owner": "Another Rebuilding Year",
-          "proj": 16.4
         }
       ],
       "scenarios": [
@@ -386,14 +386,14 @@
           "proj": 17.9
         },
         {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
+        },
+        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 17
-        },
-        {
-          "group": "J",
-          "owner": "Another Rebuilding Year",
-          "proj": 16.4
         }
       ],
       "scenarios": [
@@ -572,9 +572,9 @@
           "proj": 17.4
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -729,10 +729,10 @@
     },
     "GRS": {
       "group": "D",
-      "banked": 6,
+      "banked": 7,
       "remaining": 4,
-      "projTotal": 16.2,
-      "rank": 5,
+      "projTotal": 17.2,
+      "rank": 3,
       "leads": false,
       "winningBar": 18,
       "countries": [
@@ -763,7 +763,7 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 19,
-          "yourRemainingGoals": 13,
+          "yourRemainingGoals": 12,
           "rivalCap": 18,
           "needsHelp": true,
           "lines": [
@@ -789,7 +789,7 @@
               "home": "Türkiye",
               "away": "United States",
               "hg": 2,
-              "ag": 2
+              "ag": 1
             }
           ],
           "blurb": "Gallactic Rebel Scum squeaks in with 19 goals as rivals stall at 18 or under"
@@ -798,7 +798,7 @@
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 21,
-          "yourRemainingGoals": 15,
+          "yourRemainingGoals": 14,
           "rivalCap": 20,
           "needsHelp": false,
           "lines": [
@@ -812,7 +812,7 @@
               "home": "Türkiye",
               "away": "Paraguay",
               "hg": 2,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Paraguay",
@@ -827,13 +827,13 @@
               "ag": 2
             }
           ],
-          "blurb": "Gallactic Rebel Scum takes care of business reaching 21 goals clear of the field"
+          "blurb": "Gallactic Rebel Scum takes care of business reaching 21 goals clear of Nicolodeons! and Big Blue Wrecking Crew"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
           "targetTotal": 23,
-          "yourRemainingGoals": 17,
+          "yourRemainingGoals": 16,
           "rivalCap": 22,
           "needsHelp": false,
           "lines": [
@@ -858,19 +858,19 @@
             {
               "home": "Türkiye",
               "away": "United States",
-              "hg": 3,
+              "hg": 2,
               "ag": 2
             }
           ],
-          "blurb": "Gallactic Rebel Scum ignites a goal-fest reaching 23 goals leaving Nicolodeons and Big Blue Wrecking Crew behind"
+          "blurb": "Gallactic Rebel Scum unleashes a goal-fest reaching 23 goals clear of the entire field"
         }
       ],
       "abbr": "GRS",
       "team": "Gallactic Rebel Scum",
-      "intro": "Gallactic Rebel Scum needs a goal-scoring surge to grab the No.1 pick, with rival managers like Nicolodeons and Big Blue Wrecking Crew looming. To come out on top, Group D must outpace the competition and score a significant number of goals in their remaining matches.",
+      "intro": "Gallactic Rebel Scum needs a surge of goals to grab the No.1 pick, outscoring Nicolodeons! and Big Blue Wrecking Crew to take the top spot. To come out on top, Gallactic Rebel Scum must push their group's goal tally to new heights, leaving rival managers in the dust",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,18,[[19,[[\"United States\",\"Australia\",2,1],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]],[21,[[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,2],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]],[23,[[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,2],[\"Paraguay\",\"Australia\",2,2],[\"Türkiye\",\"United States\",3,2]]]]]"
+      "fingerprint": "[7,4,18,[[19,[[\"United States\",\"Australia\",2,1],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,1]]],[21,[[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]],[23,[[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,2],[\"Paraguay\",\"Australia\",2,2],[\"Türkiye\",\"United States\",2,2]]]]]"
     },
     "FF": {
       "group": "L",
@@ -898,9 +898,9 @@
           "proj": 17.4
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1058,7 +1058,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 16.4,
-      "rank": 4,
+      "rank": 5,
       "leads": false,
       "winningBar": 18,
       "countries": [
@@ -1079,9 +1079,9 @@
           "proj": 17.4
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1260,9 +1260,9 @@
           "proj": 17.4
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1441,9 +1441,9 @@
           "proj": 17.4
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1586,9 +1586,9 @@
           "proj": 17.4
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
