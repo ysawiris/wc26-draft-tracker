@@ -195,6 +195,19 @@ var Live = (function () {
     return "https://www.youtube.com/results?search_query=" + encodeURIComponent(q);
   }
 
+  /* Google match page for a fixture — the plain "A vs B" search. During the
+     tournament Google puts that match's card at the top of the results, with a
+     "More about this game" button that expands to the full-screen match view.
+
+     We deliberately do NOT bake in Google's /g/ match-card deep-link: those
+     Knowledge-Graph ids ROTATE (the same fixture can show different /g/ ids
+     over time), so a hardcoded url goes stale or lands on the wrong match. The
+     plain query always resolves to the current fixture. fxId is accepted but
+     ignored, so existing callers don't break. */
+  function googleMatchUrl(home, away) {
+    return "https://www.google.com/search?q=" + encodeURIComponent(home + " vs " + away);
+  }
+
   /* Google Calendar "add event" link for a fixture kickoff (90-min block). */
   function calendarUrl(home, away, group, utcDate) {
     if (!utcDate) return null;
@@ -221,6 +234,7 @@ var Live = (function () {
     FINISHED: FINISHED,
     INPLAY: INPLAY,
     highlightsUrl: highlightsUrl,
+    googleMatchUrl: googleMatchUrl,
     calendarUrl: calendarUrl
   };
 })();

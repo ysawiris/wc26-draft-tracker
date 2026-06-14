@@ -57,8 +57,15 @@ var Recaps = (function () {
   }
 
   /* Add a Recap button to each finished card that has a recap. Runs after
-     every render (the schedule DOM is rebuilt each time, so re-inject). */
+     every render (the schedule DOM is rebuilt each time, so re-inject).
+
+     DISABLED: the per-card recap now opens inside the unified Match Center
+     (js/matchcenter.js), which loads data/recaps.json itself and surfaces this
+     same summary + goal list. This injector is a no-op so the card foot shows
+     a single "📊 Match Center" button instead of a separate 📝 Recap. */
   function enhance(ctx) {
+    return;
+    /* eslint-disable no-unreachable */
     if (!loaded || !ctx || !ctx.allFixtures) return;
     ctx.allFixtures.forEach(function (fx) {
       if (!fx.matchId || !byId[fx.matchId]) return;
@@ -66,8 +73,10 @@ var Recaps = (function () {
 
       var card = document.getElementById("sched-" + fx.id);
       if (!card) return;
-      var foot = card.querySelector(".m-foot");
-      if (!foot || foot.querySelector(".recap-act")) return;
+      // The card foot now wraps its buttons in .m-actions; fall back to the
+      // foot itself for older markup.
+      var actions = card.querySelector(".m-actions") || card.querySelector(".m-foot");
+      if (!actions || actions.querySelector(".recap-act")) return;
 
       var btn = document.createElement("button");
       btn.type = "button";
@@ -77,8 +86,8 @@ var Recaps = (function () {
       btn.addEventListener("click", function () { open(fx.matchId); });
 
       // Sit just before the ▶ Highlights link when present.
-      var hl = foot.querySelector("a.m-act");
-      foot.insertBefore(btn, hl || null);
+      var hl = actions.querySelector("a.m-act");
+      actions.insertBefore(btn, hl || null);
     });
   }
 
@@ -165,5 +174,7 @@ var Recaps = (function () {
   if (window.Hub) Hub.onRender(enhance);
   load();
 
-  return { load: load, open: open };
+  // enhance is exposed so the app can re-inject after a filter re-render
+  // rebuilds the schedule DOM (Hub.onRender only fires on full data renders).
+  return { load: load, open: open, enhance: enhance };
 })();

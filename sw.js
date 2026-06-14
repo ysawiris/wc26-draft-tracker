@@ -29,7 +29,7 @@
 (function () {
   "use strict";
 
-  var VERSION = "wc26-v13";
+  var VERSION = "wc26-v21";
   var CACHE_NAME = "wc26-cache-" + VERSION;
   var CACHE_PREFIX = "wc26-cache-";
   var DATA_DIR_RE = /\/data\/[^/]+\.json$/;
@@ -55,6 +55,7 @@
     "css/share-card.css",
     "css/road.css",
     "css/recaps.css",
+    "css/matchcenter.css",
     "js/data.js",
     "js/my-team.js",
     "js/schedule.js",
@@ -71,6 +72,7 @@
     "js/alerts.js",
     "js/share-card.js",
     "js/recaps.js",
+    "js/matchcenter.js",
     "js/sw-register.js"
   ];
 

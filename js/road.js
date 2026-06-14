@@ -25,6 +25,28 @@
   /* Group goals are monotonic and every group plays 6 matches. */
   var GROUP_MATCHES = 6;
 
+  /* "What needs to happen" example scenarios, written by the
+     generate-scenarios GitHub Action into data/scenarios.json (computed
+     scorelines + a free-LLM narrative, with a built-in writer fallback).
+     Loaded once, async; a successful load re-renders the panel in place.
+     Absent file → the block simply doesn't show, everything else is intact. */
+  var scenByTeam = null;
+  var scenLoaded = false;
+  var lastCtxRoad = null;
+
+  function loadScenarios() {
+    /* Cache-bust like the other data/*.json reads — GitHub Pages serves
+       these with a 10-minute max-age. */
+    fetch("data/scenarios.json?v=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+      .then(function (data) {
+        scenByTeam = (data && data.byTeam) || {};
+        scenLoaded = true;
+        if (lastCtxRoad) render(lastCtxRoad); /* inject into the live panel */
+      });
+  }
+
   function finished(st) { return !!(window.Live && Live.FINISHED && Live.FINISHED[st]); }
   function inplay(st) { return !!(window.Live && Live.INPLAY && Live.INPLAY[st]); }
 
@@ -74,10 +96,21 @@
 
     var proj = projectionFor(ctx, mine.abbr);
 
+    /* The whole panel hinges on whether YOUR group is underway — not the
+       league. Other groups kicking off first must not read as "you're behind"
+       when every team in your group is still on zero. */
+    var myStarted = played > 0 || liveFx.length > 0;
+    var upcoming = groupFx
+      .filter(function (fx) { return !finished(fx.status) && !inplay(fx.status); })
+      .sort(function (a, b) { return ctx.helpers.fxDate(a) - ctx.helpers.fxDate(b); });
+    var nextFx = upcoming[0] || null;
+
     return {
       ctx: ctx, team: mine, row: row, n: n,
       rank: row.rank,
       goals: row.goals,
+      myStarted: myStarted,
+      nextFx: nextFx,
       amLeader: row.rank === 1,
       isLast: row.rank === n,
       goalsBack: leader.goals - row.goals,
@@ -99,15 +132,34 @@
   /* ---------------- status line ---------------- */
 
   function plural(n, word) { return n + " " + word + (n === 1 ? "" : "s"); }
+  function matches(n) { return n + (n === 1 ? " match" : " matches"); }
+  function goalAdj(n) { return n + "-goal"; }   // adjectival: "2-goal swing"
+  function first(name) { return String(name).split(" ")[0]; }
+
+  /* "Sat, Jun 14 · 9:00 AM" for prose (time only when the feed carries it). */
+  function kickoffProse(d) {
+    var fx = d.nextFx; if (!fx) return null;
+    var h = d.ctx.helpers, dt = h.fxDate(fx);
+    var day = dt.toLocaleDateString([], { weekday: "short", month: "short", day: "numeric" });
+    var t = h.fmtTime(fx);
+    return day + (t ? " · " + t : "");
+  }
+  /* "Jun 14" for the compact metric tile. */
+  function shortKickoff(d) {
+    var fx = d.nextFx; if (!fx) return null;
+    return d.ctx.helpers.fxDate(fx).toLocaleDateString([], { month: "short", day: "numeric" });
+  }
 
   function statusLine(d) {
     var T = d.team.name;
     var G = "Group " + d.group.letter;
-    if (!d.ctx.started) {
+    if (!d.myStarted) {
       var names = d.group.countries.map(function (c) { return c.name; });
       var list = names.slice(0, 3).join(", ") + " & " + names[3];
-      return T + "'s race hasn't kicked off yet — " + list + " carry all " +
-        d.total + " of " + G + "'s matches, every goal still to play for.";
+      var ko = kickoffProse(d);
+      return T + "'s race is still on the start line — " + G + " (" + list +
+        ") is level at 0, all " + d.total + " matches and every goal up for grabs" +
+        (ko ? ". First whistle " + ko + "." : ".");
     }
     var lead;
     if (d.amLeader) {
@@ -125,7 +177,9 @@
         plural(d.goalsBack, "goal") + " back of " + d.leaderName +
         (d.goalsBack <= 2 ? " — one big afternoon flips it." : ".");
     }
-    var tail = " " + d.left + " of " + G + "'s " + d.total + " matches still to play.";
+    var tail = d.left === d.total
+      ? " All " + d.total + " of " + G + "'s matches still to play."
+      : " " + d.left + " of " + G + "'s " + d.total + " matches still to play.";
     return lead + tail;
   }
 
@@ -138,16 +192,48 @@
       ep + ord(ep) + (d.proj.pre ? " (preseason, strength-based)." : ".");
   }
 
+  /* ---------------- "what you need" — the actionable read ---------------- */
+
+  function needLine(d) {
+    if (!d.myStarted) {
+      return "Outscore Group " + d.group.letter +
+        " and the No. 1 pick is yours — most group goals wins, and you start level with the field.";
+    }
+    var ord = d.ctx.helpers.ordinal;
+    if (d.amLeader) {
+      if (d.tiedTop) return "Dead level on top — the next goal decides the pick. Pull clear.";
+      if (d.cushion == null) return "Out front with the pick in hand — keep the gap and it's yours.";
+      return "Hold your " + goalAdj(d.cushion) + " cushion over " + matches(d.left) +
+        " and the No. 1 pick is yours.";
+    }
+    var target;
+    if (d.climb == null || !d.aboveName) {
+      target = "every goal tightens the race";
+    } else if (d.climb === 0) {
+      target = "you're level with " + first(d.aboveName) + " for " + (d.rank - 1) + ord(d.rank - 1) +
+        " — one goal breaks the tie";
+    } else {
+      target = "a " + goalAdj(d.climb) + " swing grabs " + (d.rank - 1) + ord(d.rank - 1) +
+        " off " + first(d.aboveName);
+    }
+    var chase = d.goalsBack === 0
+      ? "you're level with " + first(d.leaderName) + " on goals for the top pick"
+      : plural(d.goalsBack, "goal") + " behind " + first(d.leaderName) + " for No. 1";
+    return target + "; " + chase + " — " + matches(d.left) + " left.";
+  }
+
   /* ---------------- copy-for-the-chat text ---------------- */
 
   function copyText(d) {
-    var line2 = d.amLeader
-      ? "👑 Holds the No. 1 pick" + (d.cushion != null ? " (+" + d.cushion + " on " + d.belowName + ")" : "")
-      : d.rank + d.ctx.helpers.ordinal(d.rank) + " · " + plural(d.goalsBack, "goal") + " back of " + d.leaderName;
+    var line2 = !d.myStarted
+      ? "🟢 Level at 0 — all " + d.total + " of Group " + d.group.letter + "'s matches to play"
+      : d.amLeader
+        ? "👑 Holds the No. 1 pick" + (d.cushion != null ? " (+" + d.cushion + " on " + first(d.belowName) + ")" : "")
+        : d.rank + d.ctx.helpers.ordinal(d.rank) + " · " + plural(d.goalsBack, "goal") + " back of " + d.leaderName;
     var lines = [
       "🏆 " + d.team.name + " — Road to the No. 1 pick",
       line2,
-      d.left + "/" + d.total + " group matches left"
+      d.myStarted ? matches(d.left) + " left in the group" : "Group kicks off " + (kickoffProse(d) || "soon")
     ];
     if (d.proj) {
       var ep = Math.round(d.proj.row.expPick);
@@ -186,6 +272,33 @@
       '<span class="rm-key">' + key + "</span></div>";
   }
 
+  /* Four glanceable tiles. Pre-kickoff they describe the open race instead of
+     a cross-group "X back of No. 1" gap that doesn't mean anything yet. */
+  function metricsFor(d, esc) {
+    if (!d.myStarted) {
+      var ko = shortKickoff(d);
+      var m4p = d.proj
+        ? metric(pct(d.proj.row.probs[0]), "model: shot at No. 1")
+        : metric("open", "race wide open");
+      return metric(d.total, "matches to play") +
+        (ko ? metric(ko, "group kicks off") : metric("—", "kickoff TBD")) +
+        metric("0", "goals — all level") +
+        m4p;
+    }
+    var m1 = d.amLeader
+      ? metric("👑", "you hold No. 1", "is-crown")
+      : metric(d.goalsBack, "back of No. 1");
+    var m2;
+    if (d.isLast && d.climb != null) m2 = metric(d.climb, "to climb a spot");
+    else if (d.cushion != null) m2 = metric("+" + d.cushion, "cushion on " + esc(first(d.belowName)));
+    else m2 = metric("—", "no chaser");
+    var m3 = metric(d.left, d.left === 1 ? "group match left" : "group matches left");
+    var m4 = d.proj
+      ? metric(pct(d.proj.row.probs[0]), "model: shot at No. 1")
+      : metric(d.left * 4, "goals on the table");
+    return m1 + m2 + m3 + m4;
+  }
+
   function liveStrip(d, esc) {
     if (!d.liveFx.length) return "";
     var items = d.liveFx.map(function (fx) {
@@ -203,16 +316,84 @@
     var pos = function (pick) { return ((pick - 1) / (n - 1)) * 100; };
     var ep = Math.round(r.expPick);
     var bandL = pos(r.lo), bandW = pos(r.hi) - pos(r.lo);
+    var head = d.myStarted ? "Projected finish" : "Preseason projection";
     return '<div class="road-proj">' +
-      '<div class="rp-head">Projected finish <b>~' + ep + ord(ep) + "</b>" +
+      '<div class="rp-head">' + head + ' <b>~' + ep + ord(ep) + "</b>" +
         '<span class="rp-range">likely ' + r.lo + (r.lo !== r.hi ? "–" + r.hi : "") + "</span></div>" +
       '<div class="rp-track">' +
         '<div class="rp-band" style="left:' + bandL + "%;width:" + Math.max(bandW, 2) + '%"></div>' +
-        '<div class="rp-now" style="left:' + pos(d.rank) + '%" title="where you are now"></div>' +
+        (d.myStarted ? '<div class="rp-now" style="left:' + pos(d.rank) + '%" title="where you are now"></div>' : "") +
         '<div class="rp-exp" style="left:' + pos(ep) + '%" title="projected finish"></div>' +
       "</div>" +
       '<div class="rp-scale"><span>No. 1</span><span>No. ' + n + "</span></div>" +
+      '<div class="rp-legend">' +
+        (d.myStarted ? '<span class="rp-k rp-k-now">Now</span>' : "") +
+        '<span class="rp-k rp-k-exp">Projected</span>' +
+        '<span class="rp-k rp-k-band">Likely range</span>' +
+      "</div>" +
     "</div>";
+  }
+
+  /* ---------------- "what needs to happen" scenarios ---------------- */
+
+  /* Country name -> flag, drawn from YOUR group's four countries (every
+     scoreline in your scenarios is between two of them). */
+  function scenFlagMap(d) {
+    var map = {};
+    d.group.countries.forEach(function (c) { map[c.name] = c.flag; });
+    return map;
+  }
+
+  function scenLineHtml(line, flags, esc) {
+    var fh = flags[line.home] || "";
+    var fa = flags[line.away] || "";
+    return '<span class="rs-line">' +
+      '<span class="rs-fl">' + fh + "</span>" +
+      '<b class="rs-sc">' + line.hg + "&ndash;" + line.ag + "</b>" +
+      '<span class="rs-fl">' + fa + "</span></span>";
+  }
+
+  function scenCardHtml(s, flags, esc) {
+    var lines = (s.lines || []).map(function (l) { return scenLineHtml(l, flags, esc); }).join("");
+    var tag = s.needsHelp
+      ? '<span class="rs-need" title="Only wins if the chasers stall">needs help</span>'
+      : '<span class="rs-safe" title="Clear of the field regardless">bulletproof</span>';
+    return '<div class="rs-card rs-' + esc(s.key) + '">' +
+      '<div class="rs-card-head">' +
+        '<span class="rs-label">' + esc(s.label) + "</span>" +
+        '<span class="rs-target">&rarr; ' + s.targetTotal + ' goals</span>' + tag +
+      "</div>" +
+      '<div class="rs-lines">' + lines + "</div>" +
+      '<p class="rs-blurb">' + esc(s.blurb || "") + "</p>" +
+    "</div>";
+  }
+
+  /* The whole block, or "" when no scenarios are loaded for this team (file
+     not loaded yet, unclaimed group, or a fully-played group with nothing
+     left to decide). */
+  function scenarioBlock(d) {
+    if (!scenLoaded || !scenByTeam) return "";
+    var entry = scenByTeam[d.team.abbr];
+    if (!entry || !entry.scenarios || !entry.scenarios.length) return "";
+    var esc = d.ctx.helpers.esc;
+    var flags = scenFlagMap(d);
+
+    var aiBadge = entry.ai
+      ? '<span class="rs-ai" title="Narrated by AI from the model\'s numbers">&#10024; AI</span>'
+      : "";
+    var watch = (entry.rivals || []).map(function (r) {
+      return '<span class="rs-rival">' + esc(r.owner) + ' <small>Grp ' + esc(r.group) +
+        " &middot; ~" + r.proj + "</small></span>";
+    }).join("");
+    var cards = entry.scenarios.map(function (s) { return scenCardHtml(s, flags, esc); }).join("");
+
+    return '<section class="road-scen">' +
+      '<div class="rs-head"><span class="rs-eyebrow">&#128302; What needs to happen</span>' + aiBadge + "</div>" +
+      (entry.intro ? '<p class="rs-intro">' + esc(entry.intro) + "</p>" : "") +
+      (watch ? '<div class="rs-watch"><span class="rs-watch-k">Groups to keep down</span>' + watch + "</div>" : "") +
+      '<div class="rs-cards">' + cards + "</div>" +
+      '<p class="rs-foot">Example scorelines that get you there &mdash; auto-generated, sharpens as goals go in.</p>' +
+    "</section>";
   }
 
   function renderTeam(host, d) {
@@ -221,24 +402,8 @@
     var accent = d.team.accent || "#c89638";
 
     var flags = d.group.countries.map(function (c) { return c.flag; }).join(" ");
-    var rankNum = d.ctx.started ? d.rank : "–";
-    var rankOrd = d.ctx.started ? ord(d.rank) : "";
-
-    // Metric 1: gap to #1 (or crown when leading)
-    var m1 = d.amLeader
-      ? metric("👑", "you hold No. 1", "is-crown")
-      : metric(d.goalsBack, "back of No. 1");
-    // Metric 2: cushion on chaser, or climb to the next spot if last
-    var m2;
-    if (d.isLast && d.climb != null) m2 = metric(d.climb, "to climb a spot");
-    else if (d.cushion != null) m2 = metric("+" + d.cushion, "cushion on " + esc(d.belowName.split(" ")[0]));
-    else m2 = metric("—", "no chaser");
-    // Metric 3: matches left in the group
-    var m3 = metric(d.left, "group matches left");
-    // Metric 4: model shot at #1
-    var m4 = d.proj
-      ? metric(pct(d.proj.row.probs[0]), "model: shot at No. 1")
-      : metric(d.left * 4, "goals on the table");
+    var rankNum = d.myStarted ? d.rank : "–";
+    var rankOrd = d.myStarted ? ord(d.rank) : "";
 
     var pl = projLine(d);
 
@@ -251,10 +416,10 @@
         "</div>" +
         liveStrip(d, esc) +
         '<div class="road-top">' +
-          '<div class="road-rank' + (d.ctx.started && d.rank === 1 ? " is-first" : "") + '">' +
+          '<div class="road-rank' + (d.myStarted && d.rank === 1 ? " is-first" : "") + (d.myStarted ? "" : " is-pre") + '">' +
             '<span class="rr-num">' + rankNum + "</span>" +
             (rankOrd ? '<span class="rr-ord">' + rankOrd + "</span>" : "") +
-            '<span class="rr-label">your pick</span>' +
+            '<span class="rr-label">' + (d.myStarted ? "your pick" : "all square") + "</span>" +
           "</div>" +
           '<div class="road-status">' +
             '<p class="road-line">' + esc(statusLine(d)) + "</p>" +
@@ -262,8 +427,10 @@
             '<div class="road-group">Group ' + d.group.letter + ' <span class="rg-flags">' + flags + "</span></div>" +
           "</div>" +
         "</div>" +
-        '<div class="road-metrics">' + m1 + m2 + m3 + m4 + "</div>" +
+        '<div class="road-metrics">' + metricsFor(d, esc) + "</div>" +
+        '<div class="road-need"><span class="rn-icon">🎯</span><span class="rn-text">' + esc(needLine(d)) + "</span></div>" +
         projTrack(d) +
+        scenarioBlock(d) +
         '<div class="road-actions">' +
           '<button type="button" class="road-btn primary" data-road="copy">📋 Copy my status</button>' +
           '<button type="button" class="road-btn" data-road="board">🏆 See the draft board →</button>' +
@@ -288,6 +455,7 @@
   function render(ctx) {
     var host = document.getElementById(HOST_ID);
     if (!host) return;
+    lastCtxRoad = ctx; /* so a late scenarios.json load can re-render in place */
     var mine = myTeam();
     if (!mine) { lastDerived = null; renderEmpty(host); return; }
     var d = derive(ctx, mine);
@@ -331,6 +499,7 @@
 
   document.addEventListener("click", onClick);
   if (window.Hub && Hub.onRender) Hub.onRender(render);
+  loadScenarios(); /* async; re-renders the panel once the file lands */
 
   window.RoadTo1 = { render: render };
 })();

@@ -3,13 +3,22 @@
    recap modal. Themed with the hub's gold-on-dark tokens.
    ============================================================ */
 
-/* The injected button is a <button>; reset the UA chrome so it
-   matches the gold .m-act pill exactly. */
+/* The injected button is a <button>. It reuses the .m-act pill shape but is
+   the secondary action (ghost outline) so ▶ Highlights stays the lone solid
+   gold CTA in the card foot. Loaded after styles.css, so this overrides the
+   gold .m-act fill. */
 .recap-act {
-  border: 0;
   cursor: pointer;
   font-family: inherit;
   line-height: 1;
+  color: var(--gold-2);
+  background: transparent;
+  border: 1px solid var(--gold-4);
+}
+.recap-act:hover {
+  color: var(--gold-1);
+  border-color: var(--gold-3);
+  box-shadow: none;
 }
 
 /* ---------------- overlay + modal ---------------- */
@@ -70,14 +79,23 @@
 
 /* ---------------- head ---------------- */
 
-.rc-head { text-align: center; margin-bottom: 14px; }
+/* Explicit centered column so the badge row, the matchup and the venue all
+   stack and centre regardless of width (a grid 1fr layout could drift the
+   team names out to the modal edges). */
+.rc-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  text-align: center;
+  margin-bottom: 16px;
+}
 
 .rc-meta {
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
 }
 .rc-badge {
   font-size: 0.66rem;
@@ -103,16 +121,21 @@
 }
 
 .rc-score {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
+  max-width: 100%;
 }
 .rc-side {
+  flex: 0 1 auto;
+  min-width: 0;
   font-weight: 700;
   font-size: 0.96rem;
   color: var(--gold-1);
   text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .rc-side.away { text-align: left; }
 .rc-nums {
@@ -124,7 +147,7 @@
 }
 .rc-nums span { opacity: 0.6; margin: 0 4px; }
 .rc-venue {
-  margin: 8px 0 0;
+  margin: 0;
   font-size: 0.74rem;
   color: var(--gold-3);
 }

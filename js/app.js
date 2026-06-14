@@ -158,60 +158,100 @@
     if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
 
     var owners = ownerByGroup();
-    var live = fixtures.filter(function (fx) { return Live.INPLAY[fx.status]; });
+    var todayK = dayKey(now);
+    var tomorrowK = dayKey(new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1));
 
-    // Today's finished games stay in the strip until the LOCAL date rolls over
-    // (dayKey is local), newest kickoff first — so a left swipe from the live
-    // card walks back through the games that already happened today.
-    var todayFinished = fixtures
-      .filter(function (fx) { return Live.FINISHED[fx.status] && dayKey(fxDate(fx)) === dayKey(now); })
-      .sort(function (a, b) { return fxDate(b) - fxDate(a); });
-
-    // Everything still to come, soonest first.
-    var future = fixtures
-      .filter(function (fx) { return !Live.FINISHED[fx.status] && !Live.INPLAY[fx.status] && fxDate(fx) > now; })
+    // Bucket every fixture by its LOCAL calendar day. "Today" holds finished,
+    // live AND still-to-come games alike — so a result stays in the strip until
+    // the date itself rolls over to tomorrow, never the instant the match ends.
+    // Bucketing on the day (not the status) means an unexpected terminal status
+    // can't make today's game vanish.
+    var todayGames = fixtures
+      .filter(function (fx) { return dayKey(fxDate(fx)) === todayK; })
+      .sort(function (a, b) { return fxDate(a) - fxDate(b); });
+    var tomorrowGames = fixtures
+      .filter(function (fx) { return dayKey(fxDate(fx)) === tomorrowK; })
       .sort(function (a, b) { return fxDate(a) - fxDate(b); });
 
-    if (!live.length && !future.length && !todayFinished.length) {
+    // "Next up": games beyond tomorrow that haven't kicked off, soonest first,
+    // capped to the coming week (a quiet stretch still shows the next few).
+    var weekOut = new Date(now.getTime() + RAIL_WINDOW_MS);
+    var laterAll = fixtures
+      .filter(function (fx) {
+        var k = dayKey(fxDate(fx));
+        if (k === todayK || k === tomorrowK) return false;
+        return !Live.FINISHED[fx.status] && !Live.INPLAY[fx.status] && fxDate(fx) > now;
+      })
+      .sort(function (a, b) { return fxDate(a) - fxDate(b); });
+    var later = laterAll.filter(function (fx) { return fxDate(fx) <= weekOut; });
+    if (!later.length) later = laterAll.slice(0, 8);
+    later = later.slice(0, RAIL_MAX);
+
+    if (!todayGames.length && !tomorrowGames.length && !later.length) {
       wrap.innerHTML = '<div class="live-head">Group stage complete — draft order is final. 🏆</div>';
       return;
     }
 
-    // The next-up rail: this week's kickoffs, then a card that hands off to the
-    // full schedule.
-    var weekOut = new Date(now.getTime() + RAIL_WINDOW_MS);
-    var upNext = future.filter(function (fx) { return fxDate(fx) <= weekOut; });
-    if (!upNext.length) upNext = future.slice(0, 8); // quiet stretch: still show the next few
-    upNext = upNext.slice(0, RAIL_MAX);
+    var anyLive = todayGames.some(function (fx) { return Live.INPLAY[fx.status]; });
 
-    // Card order. With a game live: it leads, then today's previous games, then
-    // what's next. With nothing live: next-up leads (so the countdown stays
-    // useful) and today's results follow.
-    var ordered = live.length
-      ? live.concat(todayFinished, upNext)
-      : upNext.concat(todayFinished);
-
-    var lastShown = ordered.length ? ordered[ordered.length - 1] : null;
-    var hasMore = future.length > upNext.length;
-
-    var head;
-    if (live.length) {
-      head = '<div class="live-head"><span class="live-dot"></span> Live now <span class="live-head-sub">· today’s games</span></div>';
-    } else if (upNext.length) {
-      head = '<div class="live-head">Next up · <span id="countdown"></span></div>';
-    } else {
-      head = '<div class="live-head">Today’s results</div>';
+    // The next kickoff still to come — the countdown target. Suppressed while a
+    // game is live (the live card itself carries the moment).
+    var nextKick = null, cdKey = null;
+    if (!anyLive) {
+      var pending = todayGames.concat(tomorrowGames, later).filter(function (fx) {
+        return !Live.FINISHED[fx.status] && !Live.INPLAY[fx.status] && fxDate(fx) > now;
+      });
+      if (pending.length) {
+        nextKick = pending[0]; // each bucket is already kickoff-sorted, today first
+        var nk = dayKey(fxDate(nextKick));
+        cdKey = nk === todayK ? "today" : nk === tomorrowK ? "tomorrow" : "later";
+      }
     }
 
-    var cards =
-      ordered.map(function (fx) { return matchMini(fx, owners, Live.INPLAY[fx.status], now); }).join("") +
-      moreCard(lastShown, hasMore);
+    // Section list. With no today AND no tomorrow games, the rail collapses to a
+    // single "Next up" group (the off-day default the user asked for).
+    var sections = [];
+    if (todayGames.length || tomorrowGames.length) {
+      if (todayGames.length) sections.push({ key: "today", label: "Today", games: todayGames });
+      if (tomorrowGames.length) sections.push({ key: "tomorrow", label: "Tomorrow", games: tomorrowGames });
+      if (later.length) sections.push({ key: "later", label: "Next up", games: later });
+    } else {
+      sections.push({ key: "later", label: "Next up", games: later });
+    }
 
-    wrap.innerHTML = head + '<div class="live-cards">' + cards + "</div>";
+    var hasMore = laterAll.length > later.length; // games left beyond the rail window/cap
+    var lastShown = null;
 
-    // Countdown only when nothing is live (the live head carries no countdown).
-    if (!live.length && upNext.length) {
-      var target = fxDate(upNext[0]);
+    // One continuous rail. Each section contributes a vertical "spine" label
+    // (Today / Tomorrow / Next up) followed by its cards, so the whole strip
+    // stays a single horizontal row the user scrolls straight through.
+    var rail = "";
+    sections.forEach(function (sec) {
+      var liveHere = anyLive && sec.key === "today";
+
+      // Keep each section in its natural kickoff order (sec.games is already
+      // sorted ascending) — no special-casing the live game to the front.
+      var games = sec.games;
+      if (games.length) lastShown = games[games.length - 1];
+
+      var meta = liveHere
+        ? ' · <span class="rail-sec-cd">live</span>'
+        : (cdKey === sec.key ? ' · <span id="countdown" class="rail-sec-cd"></span>' : "");
+      rail += '<div class="rail-sec"><span class="rail-sec-inner">' +
+        (liveHere ? '<span class="live-dot sm"></span> ' : "") +
+        sec.label + meta + "</span></div>";
+
+      rail += games.map(function (fx) {
+        return matchMini(fx, owners, Live.INPLAY[fx.status], now);
+      }).join("");
+    });
+    rail += moreCard(lastShown, hasMore);
+
+    wrap.innerHTML = '<div class="live-cards">' + rail + "</div>";
+
+    // Countdown only when nothing is live (nextKick is null in that case).
+    if (nextKick) {
+      var target = fxDate(nextKick);
       var tick = function () {
         var diff = target - new Date();
         var node = document.getElementById("countdown");
@@ -252,7 +292,8 @@
     // Today's games show just the kickoff time; only future days carry a date label.
     var isToday = now && dayKey(fxDate(fx)) === dayKey(now);
     var when = (isLive || done || isToday) ? "" : '<div class="mini-when">' + fmtDay(fxDate(fx)) + "</div>";
-    return '<div class="mini' + (isLive ? " live" : done ? " done" : "") + (fx.exhibition ? " exh" : "") + '">' +
+    return '<div class="mini mc-mini' + (isLive ? " live" : done ? " done" : "") + (fx.exhibition ? " exh" : "") + '"' +
+      ' data-mc="' + esc(fx.id) + '" role="button" tabindex="0" aria-label="Open match center for ' + esc(fx.home.name) + " vs " + esc(fx.away.name) + '">' +
       '<div class="mini-grp">Grp ' + fx.group + " " + ownerTag +
         (done ? '<span class="mini-ft">FT</span>' : "") + "</div>" +
       when +
@@ -290,7 +331,11 @@
       return;
     }
 
+    // Group by day: a full-width day header, then that day's matches in a grid
+    // (2-up on desktop, 1-up on mobile). Keeping each day in its own grid means
+    // an odd match count never leaves a hole that the next day bleeds into.
     var lastDay = null;
+    var dayGrid = null;
     shown.forEach(function (fx) {
       var d = fxDate(fx);
       var key = dayKey(d);
@@ -299,9 +344,15 @@
         var isToday = key === dayKey(now);
         host.appendChild(el("div", "day-head" + (isToday ? " today" : ""),
           fmtDay(d) + (isToday ? ' <span class="today-pill">Today</span>' : "")));
+        dayGrid = el("div", "sched-day");
+        host.appendChild(dayGrid);
       }
-      host.appendChild(matchCard(fx, owners, now));
+      dayGrid.appendChild(matchCard(fx, owners, now));
     });
+
+    // The Match Center opens via a single delegated [data-mc] click listener
+    // (js/matchcenter.js), so a filter-only re-render needs no per-card
+    // re-binding here.
   }
 
   /* "🟨2 🟥1 ⚠9" chip for one side of a fixture; empty when nothing to show. */
@@ -314,20 +365,40 @@
     return '<span class="m-cards">' + bits.join(" ") + "</span>";
   }
 
+  /* One team's line inside a card: flag · name · (cards) · score.
+     Scores only render once a match has them; winner/loser get emphasis
+     on finished games (live and upcoming stay neutral). */
+  function teamRow(team, goals, hasScore, win, lose, chips) {
+    return '<div class="m-row' + (win ? " win" : "") + (lose ? " lose" : "") + '">' +
+      '<span class="m-flag">' + team.flag + "</span>" +
+      '<span class="m-name">' + esc(team.name) + "</span>" +
+      (chips || "") +
+      (hasScore ? '<span class="m-pts">' + goals + "</span>" : "") +
+    "</div>";
+  }
+
   function matchCard(fx, owners, now) {
     var st = statusInfo(fx);
     var owner = owners[fx.group];
-    var card = el("div", "match" + (st.live ? " is-live" : "") +
+    var card = el("div", "match" + (st.live ? " is-live" : "") + (st.done ? " is-done" : "") +
       (owner && owner.isMine ? " is-mine" : "") + (fx.exhibition ? " exh" : ""));
     if (fx.id) card.id = "sched-" + fx.id; // anchor for the rail's "full schedule" jump
 
     var hg = fx.homeGoals, ag = fx.awayGoals;
     var hasScore = hg != null && ag != null;
-    var center = hasScore
-      ? '<div class="m-score">' + hg + '<span>–</span>' + ag + "</div>"
-      : '<div class="m-kick">' + (fmtTime(fx) || "TBD") + "</div>";
+    // Winner emphasis only on finished games — a live 0–0 shouldn't dim anyone.
+    var homeWin = !!(st.done && hasScore && hg > ag);
+    var awayWin = !!(st.done && hasScore && ag > hg);
 
-    var pill = '<span class="m-pill ' + st.key + '">' + (st.live ? '<span class="live-dot sm"></span>' : "") + st.label + "</span>";
+    // Upcoming games carry their kickoff time in the pill (the date sits in the
+    // day header), so the row no longer needs a centre "TBD/time" column.
+    var pillLabel = st.upcoming ? (fmtTime(fx) || "Upcoming") : st.label;
+    var pill = '<span class="m-pill ' + st.key + (st.upcoming ? " time" : "") + '">' +
+      (st.live ? '<span class="live-dot sm"></span>' : "") + pillLabel + "</span>";
+
+    var rows =
+      teamRow(fx.home, hg, hasScore, homeWin, awayWin, fx.cards ? cardChips(fx.cards.home) : "") +
+      teamRow(fx.away, ag, hasScore, awayWin, homeWin, fx.cards ? cardChips(fx.cards.away) : "");
 
     var ownerChip = owner
       ? '<span class="owner-chip" style="--ac:' + (owner.accent || "#c89638") + '">⚽ ' + esc(owner.name) + (owner.isMine ? " ⭐" : "") + "</span>"
@@ -335,26 +406,22 @@
         ? '<span class="owner-chip empty">Not in the league draw — doesn\'t count</span>'
         : '<span class="owner-chip empty">Unclaimed</span>';
 
+    // Calendar stays a useful utility on upcoming games. The in-app Match
+    // Center (score, scorers, win-probability, live group table) is the primary
+    // action on every game — it replaces the old ▶ Highlights link and
+    // 📝 Recap modal; highlights now live inside the panel.
     var actions = "";
-    if (st.done) {
-      actions = '<a class="m-act" target="_blank" rel="noopener" href="' + Live.highlightsUrl(fx.home.name, fx.away.name) + '">▶ Highlights</a>';
-    } else if (!st.live) {
+    if (!st.done && !st.live) {
       var cal = Live.calendarUrl(fx.home.name, fx.away.name, fx.group, fx.utcDate);
       if (cal) actions = '<a class="m-act ghost" target="_blank" rel="noopener" href="' + cal + '">＋ Calendar</a>';
     }
+    actions += '<button type="button" class="m-act mc-act" data-mc="' + esc(fx.id) +
+      '" aria-haspopup="dialog">📊 Match Center</button>';
 
     card.innerHTML =
       '<div class="m-meta"><span class="m-grp">Group ' + fx.group + " · MD" + fx.matchday + "</span>" + pill + "</div>" +
-      '<div class="m-body">' +
-        '<div class="m-team home"><span class="m-flag">' + fx.home.flag + '</span>' +
-          '<span class="m-stack"><span class="m-name">' + esc(fx.home.name) + "</span>" +
-          (fx.cards ? cardChips(fx.cards.home) : "") + "</span></div>" +
-        center +
-        '<div class="m-team away"><span class="m-flag">' + fx.away.flag + '</span>' +
-          '<span class="m-stack"><span class="m-name">' + esc(fx.away.name) + "</span>" +
-          (fx.cards ? cardChips(fx.cards.away) : "") + "</span></div>" +
-      "</div>" +
-      '<div class="m-foot">' + ownerChip + actions + "</div>";
+      '<div class="m-rows">' + rows + "</div>" +
+      '<div class="m-foot">' + ownerChip + '<span class="m-actions">' + actions + "</span></div>";
     return card;
   }
 

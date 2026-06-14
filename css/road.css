@@ -135,6 +135,22 @@
   text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint);
 }
 
+/* ---------- "what you need" callout ---------- */
+
+.road-need {
+  margin-top: 13px;
+  display: flex; align-items: flex-start; gap: 9px;
+  padding: 10px 13px;
+  background: linear-gradient(90deg,
+    color-mix(in srgb, var(--team-accent, #c89638) 16%, transparent),
+    rgba(0, 0, 0, 0.16));
+  border: 1px solid color-mix(in srgb, var(--team-accent, #c89638) 30%, var(--panel-edge));
+  border-left-width: 3px;
+  border-radius: 10px;
+}
+.rn-icon { font-size: 0.95rem; line-height: 1.45; flex: 0 0 auto; }
+.rn-text { font-size: 0.9rem; line-height: 1.45; color: var(--text); font-weight: 500; }
+
 /* ---------- projected-finish track ---------- */
 
 .road-proj { margin-top: 15px; }
@@ -173,6 +189,25 @@
   display: flex; justify-content: space-between;
   margin-top: 5px; font-size: 0.64rem; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 0.06em;
+}
+.rp-legend {
+  display: flex; flex-wrap: wrap; gap: 5px 14px;
+  margin-top: 7px; font-size: 0.62rem; color: var(--text-faint);
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.rp-k { display: inline-flex; align-items: center; gap: 5px; }
+.rp-k::before {
+  content: ""; width: 10px; height: 10px; border-radius: 50%;
+  box-sizing: border-box; flex: 0 0 auto;
+}
+.rp-k-now::before { background: rgba(244, 237, 224, 0.35); border: 2px solid var(--text-dim); }
+.rp-k-exp::before {
+  background: var(--gold-1); border: 2px solid var(--gold-3);
+  box-shadow: 0 0 6px rgba(243, 209, 138, 0.6);
+}
+.rp-k-band::before {
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--team-accent, #c89638) 50%, transparent);
 }
 
 /* ---------- actions ---------- */
@@ -215,4 +250,90 @@
   .rr-num { font-size: 2.1rem; }
   .rr-label { margin-top: 0; }
   .road-metrics { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ============================================================
+   "What needs to happen" — example winning scenarios.
+   Computed scorelines + AI narrative, injected by js/road.js
+   from data/scenarios.json (the generate-scenarios Action).
+   ============================================================ */
+
+.road-scen {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--panel-edge);
+}
+.rs-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.rs-eyebrow {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-dim);
+}
+.rs-ai {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 0.04em;
+  color: #1a1206; background: var(--gold-grad);
+  padding: 2px 7px; border-radius: 999px;
+}
+.rs-intro {
+  margin: 0 0 12px; font-size: 0.9rem; line-height: 1.5; color: var(--text);
+}
+
+/* groups to keep down */
+.rs-watch {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin-bottom: 14px;
+}
+.rs-watch-k {
+  font-size: 0.64rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--text-faint); margin-right: 2px;
+}
+.rs-rival {
+  font-size: 0.78rem; font-weight: 600; color: var(--text);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--panel-edge);
+  padding: 3px 9px; border-radius: 8px;
+}
+.rs-rival small { color: var(--text-faint); font-weight: 500; }
+
+/* scenario cards */
+.rs-cards { display: grid; gap: 10px; }
+.rs-card {
+  background: rgba(0, 0, 0, 0.26);
+  border: 1px solid var(--panel-edge);
+  border-left: 3px solid var(--team-accent, var(--gold-2));
+  border-radius: 10px;
+  padding: 11px 13px;
+}
+.rs-card-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 9px; }
+.rs-label { font-size: 0.9rem; font-weight: 700; color: var(--text); }
+.rs-target {
+  font-size: 0.8rem; font-weight: 700; color: var(--gold-1);
+  margin-left: auto;
+}
+.rs-need, .rs-safe {
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 2px 7px; border-radius: 999px;
+}
+.rs-need { color: #f4d9a8; background: rgba(176, 125, 43, 0.28); border: 1px solid rgba(176, 125, 43, 0.5); }
+.rs-safe { color: #bff0c8; background: rgba(40, 110, 60, 0.28); border: 1px solid rgba(60, 150, 90, 0.5); }
+
+/* the six mini-scorelines */
+.rs-lines { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 9px; }
+.rs-line {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.82rem;
+  background: rgba(0, 0, 0, 0.32);
+  border: 1px solid var(--panel-edge);
+  padding: 3px 8px; border-radius: 8px;
+}
+.rs-fl { font-size: 0.95rem; line-height: 1; }
+.rs-sc { font-variant-numeric: tabular-nums; color: var(--text); letter-spacing: 0.02em; }
+
+.rs-blurb { margin: 0; font-size: 0.82rem; line-height: 1.45; color: var(--text-dim); }
+
+.rs-foot {
+  margin: 11px 0 0; font-size: 0.68rem; color: var(--text-faint); font-style: italic;
+}
+
+@media (max-width: 560px) {
+  .rs-target { margin-left: 0; }
 }

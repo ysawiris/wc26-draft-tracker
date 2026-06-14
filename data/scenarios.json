@@ -1,0 +1,1763 @@
+{
+  "competition": "FWC2026",
+  "generatedAt": "2026-06-14T01:48:42.977Z",
+  "count": 10,
+  "byTeam": {
+    "CMC": {
+      "group": "G",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 15.1,
+      "rank": 10,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Belgium",
+        "Egypt",
+        "Iran",
+        "New Zealand"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Belgium",
+              "away": "Egypt",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Iran",
+              "away": "New Zealand",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Belgium",
+              "away": "Iran",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "New Zealand",
+              "away": "Egypt",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "New Zealand",
+              "away": "Belgium",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Egypt",
+              "away": "Iran",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "19 goals from the rest of Group G gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Belgium",
+              "away": "Egypt",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Iran",
+              "away": "New Zealand",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Belgium",
+              "away": "Iran",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "New Zealand",
+              "away": "Egypt",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "New Zealand",
+              "away": "Belgium",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Egypt",
+              "away": "Iran",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "21 goals from the rest of Group G pushes Group G to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Belgium",
+              "away": "Egypt",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Iran",
+              "away": "New Zealand",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Belgium",
+              "away": "Iran",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "New Zealand",
+              "away": "Egypt",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "New Zealand",
+              "away": "Belgium",
+              "hg": 2,
+              "ag": 3
+            },
+            {
+              "home": "Egypt",
+              "away": "Iran",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "23 goals from the rest of Group G pushes Group G to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "CMC",
+      "team": "Commissioner's Infirmary 2.0",
+      "intro": "Commissioner's Infirmary 2.0 owns Group G — Belgium, Egypt, Iran and New Zealand — projected 15.1 goals — 10th of 12. The No. 1 pick goes to the highest-scoring group, so Group G needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"Belgium\",\"Egypt\",2,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,1],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[21,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[23,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]]]]"
+    },
+    "CDL": {
+      "group": "E",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 17.9,
+      "rank": 1,
+      "leads": true,
+      "winningBar": 18,
+      "countries": [
+        "Germany",
+        "Curaçao",
+        "Ivory Coast",
+        "Ecuador"
+      ],
+      "rivals": [
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        },
+        {
+          "group": "C",
+          "owner": "Ms. Jackson ouuuuuuuuuuuu",
+          "proj": 17.3
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Germany",
+              "away": "Curaçao",
+              "hg": 4,
+              "ag": 1
+            },
+            {
+              "home": "Ivory Coast",
+              "away": "Ecuador",
+              "hg": 1,
+              "ag": 1
+            },
+            {
+              "home": "Germany",
+              "away": "Ivory Coast",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Ecuador",
+              "away": "Curaçao",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Curaçao",
+              "away": "Ivory Coast",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Ecuador",
+              "away": "Germany",
+              "hg": 1,
+              "ag": 2
+            }
+          ],
+          "blurb": "19 goals from the rest of Group E gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Germany",
+              "away": "Curaçao",
+              "hg": 4,
+              "ag": 1
+            },
+            {
+              "home": "Ivory Coast",
+              "away": "Ecuador",
+              "hg": 1,
+              "ag": 1
+            },
+            {
+              "home": "Germany",
+              "away": "Ivory Coast",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Ecuador",
+              "away": "Curaçao",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Curaçao",
+              "away": "Ivory Coast",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Ecuador",
+              "away": "Germany",
+              "hg": 1,
+              "ag": 2
+            }
+          ],
+          "blurb": "21 goals from the rest of Group E pushes Group E to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Germany",
+              "away": "Curaçao",
+              "hg": 4,
+              "ag": 2
+            },
+            {
+              "home": "Ivory Coast",
+              "away": "Ecuador",
+              "hg": 1,
+              "ag": 1
+            },
+            {
+              "home": "Germany",
+              "away": "Ivory Coast",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Ecuador",
+              "away": "Curaçao",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Curaçao",
+              "away": "Ivory Coast",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Ecuador",
+              "away": "Germany",
+              "hg": 1,
+              "ag": 2
+            }
+          ],
+          "blurb": "23 goals from the rest of Group E pushes Group E to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "CDL",
+      "team": "Nicolodeons!",
+      "intro": "Nicolodeons! owns Group E — Germany, Curaçao, Ivory Coast and Ecuador — currently the top-projected group. The No. 1 pick goes to the highest-scoring group, so Group E needs to clear ~18 goals while Gallactic Rebel Scum (Grp D), Big Blue Wrecking Crew (Grp H) and Ms. Jackson ouuuuuuuuuuuu (Grp C) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"Germany\",\"Curaçao\",4,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[21,[[\"Germany\",\"Curaçao\",4,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[23,[[\"Germany\",\"Curaçao\",4,2],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]]]]"
+    },
+    "BBWC": {
+      "group": "H",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 17.5,
+      "rank": 3,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Spain",
+        "Cape Verde",
+        "Saudi Arabia",
+        "Uruguay"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "C",
+          "owner": "Ms. Jackson ouuuuuuuuuuuu",
+          "proj": 17.3
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Spain",
+              "away": "Cape Verde",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Saudi Arabia",
+              "away": "Uruguay",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Spain",
+              "away": "Saudi Arabia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Uruguay",
+              "away": "Cape Verde",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Uruguay",
+              "away": "Spain",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Cape Verde",
+              "away": "Saudi Arabia",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "19 goals from the rest of Group H gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Spain",
+              "away": "Cape Verde",
+              "hg": 4,
+              "ag": 1
+            },
+            {
+              "home": "Saudi Arabia",
+              "away": "Uruguay",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Spain",
+              "away": "Saudi Arabia",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Uruguay",
+              "away": "Cape Verde",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Uruguay",
+              "away": "Spain",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Cape Verde",
+              "away": "Saudi Arabia",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "21 goals from the rest of Group H pushes Group H to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Spain",
+              "away": "Cape Verde",
+              "hg": 4,
+              "ag": 1
+            },
+            {
+              "home": "Saudi Arabia",
+              "away": "Uruguay",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Spain",
+              "away": "Saudi Arabia",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Uruguay",
+              "away": "Cape Verde",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Uruguay",
+              "away": "Spain",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Cape Verde",
+              "away": "Saudi Arabia",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "23 goals from the rest of Group H pushes Group H to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "BBWC",
+      "team": "Big Blue Wrecking Crew",
+      "intro": "Big Blue Wrecking Crew owns Group H — Spain, Cape Verde, Saudi Arabia and Uruguay — projected 17.5 goals — 3rd of 12. The No. 1 pick goes to the highest-scoring group, so Group H needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Ms. Jackson ouuuuuuuuuuuu (Grp C) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"Spain\",\"Cape Verde\",3,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",2,1],[\"Uruguay\",\"Cape Verde\",2,1],[\"Uruguay\",\"Spain\",1,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[21,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",3,1],[\"Uruguay\",\"Cape Verde\",2,1],[\"Uruguay\",\"Spain\",1,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[23,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",3,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]]]]"
+    },
+    "TACO": {
+      "group": "F",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 15.4,
+      "rank": 9,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Netherlands",
+        "Japan",
+        "Sweden",
+        "Tunisia"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Netherlands",
+              "away": "Japan",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Sweden",
+              "away": "Tunisia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Netherlands",
+              "away": "Sweden",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Tunisia",
+              "away": "Japan",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Tunisia",
+              "away": "Netherlands",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Japan",
+              "away": "Sweden",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "19 goals from the rest of Group F gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Netherlands",
+              "away": "Japan",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Sweden",
+              "away": "Tunisia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Netherlands",
+              "away": "Sweden",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Tunisia",
+              "away": "Japan",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Tunisia",
+              "away": "Netherlands",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Japan",
+              "away": "Sweden",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "21 goals from the rest of Group F pushes Group F to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Netherlands",
+              "away": "Japan",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Sweden",
+              "away": "Tunisia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Netherlands",
+              "away": "Sweden",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Tunisia",
+              "away": "Japan",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Tunisia",
+              "away": "Netherlands",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Japan",
+              "away": "Sweden",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "23 goals from the rest of Group F pushes Group F to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "TACO",
+      "team": "Taco Corp",
+      "intro": "Taco Corp owns Group F — Netherlands, Japan, Sweden and Tunisia — projected 15.4 goals — 9th of 12. The No. 1 pick goes to the highest-scoring group, so Group F needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"Netherlands\",\"Japan\",2,1],[\"Sweden\",\"Tunisia\",2,1],[\"Netherlands\",\"Sweden\",2,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]],[21,[[\"Netherlands\",\"Japan\",2,2],[\"Sweden\",\"Tunisia\",2,1],[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]],[23,[[\"Netherlands\",\"Japan\",2,2],[\"Sweden\",\"Tunisia\",2,2],[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]]]]"
+    },
+    "GRS": {
+      "group": "D",
+      "banked": 5,
+      "remaining": 5,
+      "projTotal": 17.7,
+      "rank": 2,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Australia",
+        "Türkiye",
+        "United States",
+        "Paraguay"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        },
+        {
+          "group": "C",
+          "owner": "Ms. Jackson ouuuuuuuuuuuu",
+          "proj": 17.3
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 14,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Australia",
+              "away": "Türkiye",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "United States",
+              "away": "Australia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Türkiye",
+              "away": "Paraguay",
+              "hg": 1,
+              "ag": 1
+            },
+            {
+              "home": "Paraguay",
+              "away": "Australia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Türkiye",
+              "away": "United States",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "14 goals from the rest of Group D gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 16,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Australia",
+              "away": "Türkiye",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "United States",
+              "away": "Australia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Türkiye",
+              "away": "Paraguay",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Paraguay",
+              "away": "Australia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Türkiye",
+              "away": "United States",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "16 goals from the rest of Group D pushes Group D to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 18,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Australia",
+              "away": "Türkiye",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "United States",
+              "away": "Australia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Türkiye",
+              "away": "Paraguay",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Paraguay",
+              "away": "Australia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Türkiye",
+              "away": "United States",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "18 goals from the rest of Group D pushes Group D to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "GRS",
+      "team": "Gallactic Rebel Scum",
+      "intro": "Gallactic Rebel Scum owns Group D — Australia, Türkiye, United States and Paraguay — projected 17.7 goals — 2nd of 12. The No. 1 pick goes to the highest-scoring group, so Group D needs to clear ~18 goals while Nicolodeons! (Grp E), Big Blue Wrecking Crew (Grp H) and Ms. Jackson ouuuuuuuuuuuu (Grp C) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[5,5,18,[[19,[[\"Australia\",\"Türkiye\",1,2],[\"United States\",\"Australia\",2,1],[\"Türkiye\",\"Paraguay\",1,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,1]]],[21,[[\"Australia\",\"Türkiye\",1,2],[\"United States\",\"Australia\",2,1],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]],[23,[[\"Australia\",\"Türkiye\",2,2],[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,1],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]]]]"
+    },
+    "FF": {
+      "group": "L",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 15.8,
+      "rank": 8,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "England",
+        "Croatia",
+        "Ghana",
+        "Panama"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "England",
+              "away": "Croatia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Ghana",
+              "away": "Panama",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "England",
+              "away": "Ghana",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Panama",
+              "away": "Croatia",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Panama",
+              "away": "England",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Croatia",
+              "away": "Ghana",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "19 goals from the rest of Group L gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "England",
+              "away": "Croatia",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Ghana",
+              "away": "Panama",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "England",
+              "away": "Ghana",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Panama",
+              "away": "Croatia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Panama",
+              "away": "England",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Croatia",
+              "away": "Ghana",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "21 goals from the rest of Group L pushes Group L to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "England",
+              "away": "Croatia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Ghana",
+              "away": "Panama",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "England",
+              "away": "Ghana",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Panama",
+              "away": "Croatia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Panama",
+              "away": "England",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Croatia",
+              "away": "Ghana",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "23 goals from the rest of Group L pushes Group L to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "FF",
+      "team": "Fiko Fins",
+      "intro": "Fiko Fins owns Group L — England, Croatia, Ghana and Panama — projected 15.8 goals — 8th of 12. The No. 1 pick goes to the highest-scoring group, so Group L needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"England\",\"Croatia\",2,1],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",2,1],[\"Panama\",\"Croatia\",1,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,1]]],[21,[[\"England\",\"Croatia\",2,1],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,1]]],[23,[[\"England\",\"Croatia\",2,2],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,2]]]]]"
+    },
+    "RBLD": {
+      "group": "J",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 16.5,
+      "rank": 6,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Argentina",
+        "Algeria",
+        "Austria",
+        "Jordan"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Argentina",
+              "away": "Algeria",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Austria",
+              "away": "Jordan",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Argentina",
+              "away": "Austria",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Jordan",
+              "away": "Algeria",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Algeria",
+              "away": "Austria",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Jordan",
+              "away": "Argentina",
+              "hg": 1,
+              "ag": 3
+            }
+          ],
+          "blurb": "19 goals from the rest of Group J gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Argentina",
+              "away": "Algeria",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Austria",
+              "away": "Jordan",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Argentina",
+              "away": "Austria",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Jordan",
+              "away": "Algeria",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Algeria",
+              "away": "Austria",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Jordan",
+              "away": "Argentina",
+              "hg": 1,
+              "ag": 3
+            }
+          ],
+          "blurb": "21 goals from the rest of Group J pushes Group J to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Argentina",
+              "away": "Algeria",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Austria",
+              "away": "Jordan",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Argentina",
+              "away": "Austria",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Jordan",
+              "away": "Algeria",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Algeria",
+              "away": "Austria",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Jordan",
+              "away": "Argentina",
+              "hg": 1,
+              "ag": 3
+            }
+          ],
+          "blurb": "23 goals from the rest of Group J pushes Group J to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "RBLD",
+      "team": "Another Rebuilding Year",
+      "intro": "Another Rebuilding Year owns Group J — Argentina, Algeria, Austria and Jordan — projected 16.5 goals — 6th of 12. The No. 1 pick goes to the highest-scoring group, so Group J needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"Argentina\",\"Algeria\",2,1],[\"Austria\",\"Jordan\",2,1],[\"Argentina\",\"Austria\",2,1],[\"Jordan\",\"Algeria\",1,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[21,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,1],[\"Jordan\",\"Algeria\",1,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[23,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]]]]"
+    },
+    "TMM": {
+      "group": "K",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 15.9,
+      "rank": 7,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Portugal",
+        "DR Congo",
+        "Uzbekistan",
+        "Colombia"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Portugal",
+              "away": "DR Congo",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Uzbekistan",
+              "away": "Colombia",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Portugal",
+              "away": "Uzbekistan",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Colombia",
+              "away": "DR Congo",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "DR Congo",
+              "away": "Uzbekistan",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Colombia",
+              "away": "Portugal",
+              "hg": 1,
+              "ag": 2
+            }
+          ],
+          "blurb": "19 goals from the rest of Group K gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Portugal",
+              "away": "DR Congo",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Uzbekistan",
+              "away": "Colombia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Portugal",
+              "away": "Uzbekistan",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Colombia",
+              "away": "DR Congo",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "DR Congo",
+              "away": "Uzbekistan",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Colombia",
+              "away": "Portugal",
+              "hg": 1,
+              "ag": 2
+            }
+          ],
+          "blurb": "21 goals from the rest of Group K pushes Group K to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Portugal",
+              "away": "DR Congo",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Uzbekistan",
+              "away": "Colombia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Portugal",
+              "away": "Uzbekistan",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Colombia",
+              "away": "DR Congo",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "DR Congo",
+              "away": "Uzbekistan",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Colombia",
+              "away": "Portugal",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "23 goals from the rest of Group K pushes Group K to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "TMM",
+      "team": "The Metcalf Matrix",
+      "intro": "The Metcalf Matrix owns Group K — Portugal, DR Congo, Uzbekistan and Colombia — projected 15.9 goals — 7th of 12. The No. 1 pick goes to the highest-scoring group, so Group K needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"Portugal\",\"DR Congo\",2,1],[\"Uzbekistan\",\"Colombia\",1,2],[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,1],[\"Colombia\",\"Portugal\",1,2]]],[21,[[\"Portugal\",\"DR Congo\",3,1],[\"Uzbekistan\",\"Colombia\",2,2],[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,1],[\"Colombia\",\"Portugal\",1,2]]],[23,[[\"Portugal\",\"DR Congo\",3,1],[\"Uzbekistan\",\"Colombia\",2,2],[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,1],[\"Colombia\",\"Portugal\",2,2]]]]]"
+    },
+    "AM": {
+      "group": "B",
+      "banked": 2,
+      "remaining": 4,
+      "projTotal": 12.3,
+      "rank": 12,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Switzerland",
+        "Bosnia & Herzegovina",
+        "Canada",
+        "Qatar"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 17,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Switzerland",
+              "away": "Bosnia & Herzegovina",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Canada",
+              "away": "Qatar",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Bosnia & Herzegovina",
+              "away": "Qatar",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Switzerland",
+              "away": "Canada",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "17 goals from the rest of Group B gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 19,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Switzerland",
+              "away": "Bosnia & Herzegovina",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Canada",
+              "away": "Qatar",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Bosnia & Herzegovina",
+              "away": "Qatar",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Switzerland",
+              "away": "Canada",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "19 goals from the rest of Group B pushes Group B to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 22,
+          "yourRemainingGoals": 20,
+          "rivalCap": 21,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Switzerland",
+              "away": "Bosnia & Herzegovina",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Canada",
+              "away": "Qatar",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Bosnia & Herzegovina",
+              "away": "Qatar",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Switzerland",
+              "away": "Canada",
+              "hg": 3,
+              "ag": 2
+            }
+          ],
+          "blurb": "20 goals from the rest of Group B pushes Group B to 22, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "AM",
+      "team": "Purdy Pitches",
+      "intro": "Purdy Pitches owns Group B — Switzerland, Bosnia & Herzegovina, Canada and Qatar — projected 12.3 goals — 12th of 12. The No. 1 pick goes to the highest-scoring group, so Group B needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[2,4,18,[[19,[[\"Switzerland\",\"Bosnia & Herzegovina\",2,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",2,2],[\"Switzerland\",\"Canada\",2,2]]],[21,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",2,2]]],[22,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
+    },
+    "R": {
+      "group": "C",
+      "banked": 0,
+      "remaining": 6,
+      "projTotal": 17.3,
+      "rank": 4,
+      "leads": false,
+      "winningBar": 18,
+      "countries": [
+        "Brazil",
+        "Morocco",
+        "Haiti",
+        "Scotland"
+      ],
+      "rivals": [
+        {
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 17.9
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.7
+        },
+        {
+          "group": "H",
+          "owner": "Big Blue Wrecking Crew",
+          "proj": 17.5
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "grind",
+          "label": "Squeak in",
+          "targetTotal": 19,
+          "yourRemainingGoals": 19,
+          "rivalCap": 18,
+          "needsHelp": true,
+          "lines": [
+            {
+              "home": "Brazil",
+              "away": "Morocco",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Haiti",
+              "away": "Scotland",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Scotland",
+              "away": "Morocco",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Brazil",
+              "away": "Haiti",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Morocco",
+              "away": "Haiti",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Scotland",
+              "away": "Brazil",
+              "hg": 1,
+              "ag": 2
+            }
+          ],
+          "blurb": "19 goals from the rest of Group C gets you to 19 — enough only if the chasers stall at 18 or below."
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 21,
+          "yourRemainingGoals": 21,
+          "rivalCap": 20,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Brazil",
+              "away": "Morocco",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Haiti",
+              "away": "Scotland",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Scotland",
+              "away": "Morocco",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Brazil",
+              "away": "Haiti",
+              "hg": 4,
+              "ag": 1
+            },
+            {
+              "home": "Morocco",
+              "away": "Haiti",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Scotland",
+              "away": "Brazil",
+              "hg": 1,
+              "ag": 2
+            }
+          ],
+          "blurb": "21 goals from the rest of Group C pushes Group C to 21, clear of the field even if a rival overperforms."
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 23,
+          "yourRemainingGoals": 23,
+          "rivalCap": 22,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Brazil",
+              "away": "Morocco",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Haiti",
+              "away": "Scotland",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Scotland",
+              "away": "Morocco",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Brazil",
+              "away": "Haiti",
+              "hg": 4,
+              "ag": 1
+            },
+            {
+              "home": "Morocco",
+              "away": "Haiti",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Scotland",
+              "away": "Brazil",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "23 goals from the rest of Group C pushes Group C to 23, clear of the field even if a rival overperforms."
+        }
+      ],
+      "abbr": "R",
+      "team": "Ms. Jackson ouuuuuuuuuuuu",
+      "intro": "Ms. Jackson ouuuuuuuuuuuu owns Group C — Brazil, Morocco, Haiti and Scotland — projected 17.3 goals — 4th of 12. The No. 1 pick goes to the highest-scoring group, so Group C needs to clear ~18 goals while Nicolodeons! (Grp E), Gallactic Rebel Scum (Grp D) and Big Blue Wrecking Crew (Grp H) stay in check.",
+      "ai": false,
+      "aiVia": null,
+      "fingerprint": "[0,6,18,[[19,[[\"Brazil\",\"Morocco\",2,1],[\"Haiti\",\"Scotland\",1,2],[\"Scotland\",\"Morocco\",1,2],[\"Brazil\",\"Haiti\",3,1],[\"Morocco\",\"Haiti\",2,1],[\"Scotland\",\"Brazil\",1,2]]],[21,[[\"Brazil\",\"Morocco\",2,1],[\"Haiti\",\"Scotland\",2,2],[\"Scotland\",\"Morocco\",1,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",2,1],[\"Scotland\",\"Brazil\",1,2]]],[23,[[\"Brazil\",\"Morocco\",2,1],[\"Haiti\",\"Scotland\",2,2],[\"Scotland\",\"Morocco\",1,2],[\"Brazil\",\"Haiti\",4,1],[\"Morocco\",\"Haiti\",3,1],[\"Scotland\",\"Brazil\",2,2]]]]]"
+    }
+  }
+}

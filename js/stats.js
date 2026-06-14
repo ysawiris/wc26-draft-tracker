@@ -323,6 +323,37 @@
       "across " + count + " " + plural(count, "match", "matches") + " with a result");
   }
 
+  /* Biggest margin and clean sheets read finished games only — an in-play
+     scoreline can still swing, so we don't want to crown a live blowout or
+     award a shutout to a match that isn't over. */
+  function biggestMarginCard(ctx) {
+    var esc = ctx.helpers.esc;
+    var best = null;
+    ctx.fixtures.forEach(function (fx) {
+      if (!isFinished(fx) || !hasScore(fx)) return;
+      var margin = Math.abs(fx.homeGoals - fx.awayGoals);
+      if (margin <= 0) return;
+      if (!best || margin > best.margin) best = { fx: fx, margin: margin };
+    });
+    if (!best) return cardHtml("Biggest margin", "&mdash;", ctx.started ? "no decisive results yet" : WAIT, true);
+    var fx = best.fx;
+    return cardHtml("Biggest margin", best.margin,
+      fx.home.flag + " " + esc(fx.home.name) + " " + fx.homeGoals + "–" + fx.awayGoals +
+      " " + esc(fx.away.name) + " " + fx.away.flag);
+  }
+
+  function cleanSheetsCard(ctx) {
+    var played = 0, shutouts = 0;
+    ctx.fixtures.forEach(function (fx) {
+      if (!isFinished(fx) || !hasScore(fx)) return;
+      played += 1;
+      if (fx.homeGoals === 0 || fx.awayGoals === 0) shutouts += 1;
+    });
+    if (played === 0) return cardHtml("Clean sheets", "&mdash;", WAIT, true);
+    return cardHtml("Clean sheets", shutouts,
+      "in " + played + " finished " + plural(played, "match", "matches"), shutouts === 0);
+  }
+
   function recordsHtml(ctx) {
     var cards = [
       topGroupCard(ctx),
@@ -330,6 +361,8 @@
       dirtiestCard(ctx),
       mostFoulsCard(ctx),
       biggestMatchCard(ctx),
+      biggestMarginCard(ctx),
+      cleanSheetsCard(ctx),
       totalGoalsCard(ctx),
       goalsPerMatchCard(ctx)
     ].join("");
@@ -365,6 +398,69 @@
       "</div></section>";
   }
 
+  /* ---------------- golden boot (top scoring nations) ---------------- */
+
+  /* Every country that's found the net, most goals first, name as a stable
+     tiebreaker so the board doesn't reshuffle between equal-goal nations. */
+  function scoringNations(ctx) {
+    var rows = [];
+    Object.keys(ctx.groups).forEach(function (L) {
+      ctx.groups[L].countries.forEach(function (c) {
+        if (c.goals > 0) rows.push({ country: c, letter: L });
+      });
+    });
+    return rows.sort(function (a, b) {
+      if (b.country.goals !== a.country.goals) return b.country.goals - a.country.goals;
+      return a.country.name.localeCompare(b.country.name);
+    });
+  }
+
+  var BOOT_MAX = 8; // keep the board glanceable; the long tail lives in Groups
+
+  function bootRow(ctx, entry, rank, max) {
+    var esc = ctx.helpers.esc;
+    var c = entry.country;
+    var owner = ctx.helpers.ownerByGroup()[entry.letter];
+    var pct = Math.max(Math.round((c.goals / max) * 100), 6);
+    var ownerTag = owner
+      ? '<span class="st-lead-owner' + (owner.isMine ? " mine" : "") +
+        '" style="--st-ac:' + (owner.accent || "#c89638") + '">' + esc(owner.abbr) + (owner.isMine ? " ⭐" : "") + "</span>"
+      : '<span class="st-lead-owner empty">unclaimed</span>';
+    return '<div class="st-lead' + (owner && owner.isMine ? " mine" : "") + (rank === 1 ? " lead" : "") + '">' +
+      '<div class="st-lead-main">' +
+        '<span class="st-lead-rank">' + rank + "</span>" +
+        '<span class="st-lead-flag">' + c.flag + "</span>" +
+        '<span class="st-lead-name">' + esc(c.name) + "</span>" +
+        '<span class="st-lead-chip">Grp ' + entry.letter + "</span>" +
+        ownerTag +
+      "</div>" +
+      '<div class="st-lead-track"><div class="st-lead-fill" style="width:' + pct + '%"></div></div>' +
+      '<span class="st-lead-goals">' + c.goals + "</span>" +
+      "</div>";
+  }
+
+  function goldenBootHtml(ctx) {
+    var nations = scoringNations(ctx);
+    var body, foot;
+    if (!nations.length) {
+      body = '<p class="st-empty">' +
+        (ctx.started ? "No goals on the board yet — the Golden Boot race is goalless."
+                     : "The race for the Golden Boot opens at first whistle.") + "</p>";
+      foot = "";
+    } else {
+      var max = nations[0].country.goals;
+      var top = nations.slice(0, BOOT_MAX);
+      body = top.map(function (entry, i) { return bootRow(ctx, entry, i + 1, max); }).join("");
+      foot = '<p class="st-foot">' + (nations.length > top.length
+        ? "Top " + top.length + " of " + nations.length + " nations on the scoresheet — and the manager each one is scoring for."
+        : "Every nation that's found the net — and the manager each one is scoring for.") + "</p>";
+    }
+    return '<section class="st-block">' +
+      '<div class="st-head">🥇 Golden Boot · Top Scoring Nations</div>' +
+      '<div class="st-lead-wrap">' + body + foot + "</div>" +
+      "</section>";
+  }
+
   /* ---------------- goals by matchday ---------------- */
 
   function matchdayHtml(ctx) {
@@ -398,6 +494,7 @@
     host.innerHTML = '<div class="st-wrap">' +
       headlinesHtml(ctx) +
       recordsHtml(ctx) +
+      goldenBootHtml(ctx) +
       runwayHtml(ctx) +
       matchdayHtml(ctx) +
       "</div>";

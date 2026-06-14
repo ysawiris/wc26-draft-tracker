@@ -76,11 +76,18 @@
     return STRENGTH[name] || [FALLBACK_ATT, FALLBACK_DEF];
   }
 
-  /* Expected TOTAL goals in one match between two named countries. */
-  function matchLambda(homeName, awayName) {
+  /* Expected goals for EACH side of a match (the two halves of matchLambda):
+     a side's attack scaled by the opponent's defence vs the league average. */
+  function teamLambdas(homeName, awayName) {
     var h = strengthOf(homeName);
     var a = strengthOf(awayName);
-    return h[0] * (a[1] / AVG_DEF) + a[0] * (h[1] / AVG_DEF);
+    return { home: h[0] * (a[1] / AVG_DEF), away: a[0] * (h[1] / AVG_DEF) };
+  }
+
+  /* Expected TOTAL goals in one match between two named countries. */
+  function matchLambda(homeName, awayName) {
+    var t = teamLambdas(homeName, awayName);
+    return t.home + t.away;
   }
 
   /* "63'" -> 63 · "45+2'" -> 47 · null at the break -> 45 · junk -> 47 */
@@ -1206,6 +1213,7 @@
     parseMinute: parseMinute,
     moneyline: moneyline,
     matchLambda: matchLambda,
+    teamLambdas: teamLambdas,
     forecast: getForecast,
     forecastNoMarket: getNoMarketForecast,
     canonPair: canonPair,

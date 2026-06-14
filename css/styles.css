@@ -62,7 +62,7 @@ nav, main, header, footer { position: relative; z-index: 1; }
 
 .topnav {
   position: sticky; top: 0; z-index: 20;
-  display: flex; align-items: center; justify-content: space-between;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
   gap: 14px;
   padding: 10px clamp(14px, 4vw, 40px);
   background: rgba(11, 7, 3, 0.82);
@@ -70,7 +70,7 @@ nav, main, header, footer { position: relative; z-index: 1; }
   -webkit-backdrop-filter: blur(12px) saturate(140%);
   border-bottom: 1px solid rgba(212, 168, 84, 0.2);
 }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; justify-self: start; }
 .brand-mark { font-size: 1.3rem; filter: drop-shadow(0 2px 6px rgba(244, 196, 96, 0.5)); }
 .brand-text {
   font-family: "Cinzel", serif; font-weight: 700; letter-spacing: 0.12em;
@@ -80,7 +80,7 @@ nav, main, header, footer { position: relative; z-index: 1; }
 .brand-text em { font-style: normal; }
 
 /* Tabs */
-.tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.tabs { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; justify-self: center; }
 .tabs::-webkit-scrollbar { display: none; }
 .tab {
   flex: 0 0 auto;
@@ -357,6 +357,22 @@ nav, main, header, footer { position: relative; z-index: 1; }
   text-transform: uppercase; font-size: 0.82rem; color: var(--gold-2); margin-bottom: 10px;
 }
 .live-head #countdown { color: var(--gold-1); font-family: "Archivo", sans-serif; letter-spacing: normal; }
+/* Today / Tomorrow / Next up ride INSIDE the single rail as vertical "spine"
+   dividers between card groups, so the whole strip stays one horizontal row. */
+.rail-sec {
+  flex: 0 0 auto; align-self: stretch; display: flex; align-items: center; justify-content: center;
+  padding: 4px 0; scroll-snap-align: start;
+}
+.rail-sec:not(:first-child) { border-left: 1px solid var(--panel-edge); padding-left: 12px; margin-left: 6px; }
+.rail-sec-inner {
+  writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap;
+  font-family: "Cinzel", serif; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; font-size: 0.72rem; color: var(--gold-2);
+}
+.rail-sec-cd {
+  font-family: "Archivo", sans-serif; letter-spacing: normal; text-transform: none;
+  color: var(--gold-1); font-size: 0.74rem;
+}
 .live-dot {
   width: 9px; height: 9px; border-radius: 50%; background: #ff4d4d;
   box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.6); animation: pulse 1.6s infinite;
@@ -449,7 +465,12 @@ nav, main, header, footer { position: relative; z-index: 1; }
 .chip:hover { color: var(--gold-1); border-color: var(--gold-3); }
 .chip.is-active { color: #1a1206; background: var(--gold-grad); border-color: transparent; font-weight: 700; }
 
-.schedule { display: grid; gap: 10px; }
+.schedule { display: flex; flex-direction: column; }
+/* A day's matches sit two-up on desktop, one-up on phones (set below). */
+.sched-day {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px; margin-bottom: 6px;
+}
 .day-head {
   display: flex; align-items: center; gap: 10px;
   font-family: "Cinzel", serif; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
@@ -465,48 +486,56 @@ nav, main, header, footer { position: relative; z-index: 1; }
 .empty-note { text-align: center; color: var(--text-faint); padding: 30px 0; }
 
 .match {
+  display: flex; flex-direction: column; gap: 9px;
   background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 12px;
-  padding: 12px 16px; box-shadow: var(--shadow);
+  padding: 12px 15px; box-shadow: var(--shadow);
 }
 .match.is-live { border-color: rgba(255, 99, 99, 0.5); }
 .match.is-mine { border-left: 3px solid var(--you); }
-.m-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 9px; }
+.m-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .m-grp { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); }
 .m-pill {
   font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
   padding: 3px 9px; border-radius: 999px; display: inline-flex; align-items: center; gap: 5px;
+  white-space: nowrap; flex: 0 0 auto;
 }
 .m-pill.up { color: var(--text-dim); border: 1px solid var(--panel-edge); }
+/* Upcoming pill carries the kickoff time — give it a gold tint so it reads as the headline. */
+.m-pill.up.time { color: var(--gold-2); border-color: var(--gold-4); letter-spacing: 0.04em; }
 .m-pill.live { color: #ffdada; background: rgba(255, 77, 77, 0.16); border: 1px solid var(--tie); }
 .m-pill.ft { color: var(--gold-1); border: 1px solid var(--gold-3); }
 .m-pill.off { color: #d9b38a; border: 1px dashed var(--gold-4); }
 
-.m-body { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
-.m-team { display: flex; align-items: center; gap: 9px; min-width: 0; }
-.m-team.away { flex-direction: row-reverse; text-align: right; }
-.m-flag { font-size: 1.5rem; flex: 0 0 auto; }
+/* Stacked scoreboard: one full-width row per team, score right-aligned. */
+.m-rows { display: flex; flex-direction: column; }
+.m-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.m-row + .m-row { border-top: 1px solid rgba(212, 168, 84, 0.10); }
+.m-flag { font-size: 1.55rem; flex: 0 0 auto; line-height: 1; }
 .m-name {
+  flex: 1 1 auto; min-width: 0;
   font-weight: 700; font-style: italic; text-transform: uppercase; letter-spacing: 0.02em;
-  font-size: 0.94rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-size: 0.96rem; color: var(--text);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.m-score {
-  font-family: "Cinzel", serif; font-weight: 900; font-size: 1.5rem; color: var(--gold-1);
-  display: flex; align-items: center; gap: 7px; white-space: nowrap;
+.m-pts {
+  flex: 0 0 auto; min-width: 1.1em; text-align: right;
+  font-family: "Cinzel", serif; font-weight: 900; font-size: 1.4rem; color: var(--text-dim);
+  font-variant-numeric: tabular-nums; line-height: 1;
 }
-.m-score span { color: var(--text-faint); font-size: 1rem; }
-.m-kick {
-  font-weight: 700; font-size: 0.92rem; color: var(--text); white-space: nowrap;
-  background: var(--panel-2); border: 1px solid var(--panel-edge); border-radius: 8px; padding: 5px 11px;
-}
-.m-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.m-row.win .m-name, .m-row.win .m-pts { color: var(--gold-1); }
+.m-row.lose .m-name, .m-row.lose .m-pts { color: var(--text-faint); }
+
+.m-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.m-actions { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+.m-actions:empty { display: none; }
 .owner-chip {
-  font-size: 0.72rem; font-weight: 600; color: var(--text); min-width: 0;
+  flex: 1 1 auto; font-size: 0.72rem; font-weight: 600; color: var(--text); min-width: 0;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   border-left: 3px solid var(--ac, #c89638); padding: 1px 0 1px 8px;
 }
 .owner-chip.empty { color: var(--text-faint); border-color: var(--text-faint); font-style: italic; }
 .m-act {
-  flex: 0 0 auto; text-decoration: none; font-size: 0.74rem; font-weight: 700;
+  flex: 0 0 auto; text-decoration: none; font-size: 0.74rem; font-weight: 700; white-space: nowrap;
   color: #1a1206; background: var(--gold-grad); padding: 5px 12px; border-radius: 999px;
   transition: transform .12s, box-shadow .12s;
 }
@@ -531,9 +560,9 @@ nav, main, header, footer { position: relative; z-index: 1; }
 }
 
 @media (max-width: 560px) {
-  .m-name { font-size: 0.84rem; }
-  .m-flag { font-size: 1.3rem; }
-  .m-score { font-size: 1.3rem; }
+  .m-name { font-size: 0.86rem; }
+  .m-flag { font-size: 1.35rem; }
+  .m-pts { font-size: 1.25rem; }
   .tab { padding: 7px 11px; font-size: 0.74rem; }
   .topnav { gap: 8px; padding: 9px 12px; }
   .brand-text em, .brand-text { display: none; }
@@ -549,7 +578,7 @@ nav, main, header, footer { position: relative; z-index: 1; }
 @media (max-width: 700px) {
   /* App-style bottom tab bar replaces the top tab row. */
   .topnav .tabs { display: none; }
-  .topnav { justify-content: center; }
+  .topnav { display: flex; justify-content: center; }
   .brand-text, .brand-text em { display: inline; } /* tabs gone — wordmark fits again */
 
   .bottomnav {
@@ -602,6 +631,9 @@ nav, main, header, footer { position: relative; z-index: 1; }
   .live-cards::-webkit-scrollbar { display: none; }
   .mini { flex: 0 0 196px; scroll-snap-align: start; padding: 9px 11px; }
   .mini-row { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* One match per row on phones — each card keeps its full width. */
+  .sched-day { grid-template-columns: 1fr; gap: 10px; }
 
   /* Tighter board rows. */
   .row { padding: 11px 12px; }

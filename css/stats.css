@@ -116,6 +116,72 @@
   white-space: nowrap; text-align: right; min-width: 70px;
 }
 
+/* ---------- Golden Boot leaderboard ---------- */
+
+.st-lead-wrap {
+  background: var(--panel); border: 1px solid var(--panel-edge);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 8px 18px 14px;
+}
+.st-empty {
+  margin: 0; padding: 16px 0; text-align: center;
+  font-size: 0.86rem; color: var(--text-dim);
+}
+.st-lead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(72px, 0.85fr) 34px;
+  align-items: center; gap: 12px; padding: 9px 0;
+  border-bottom: 1px dashed rgba(212, 168, 84, 0.14);
+}
+.st-lead:last-of-type { border-bottom: none; }
+.st-lead-main { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.st-lead-rank {
+  flex: none; width: 18px; text-align: center;
+  font-family: "Cinzel", serif; font-weight: 700; font-size: 0.82rem; color: var(--text-faint);
+}
+.st-lead.lead .st-lead-rank {
+  background: var(--gold-grad);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.st-lead-flag { flex: none; font-size: 1rem; line-height: 1; }
+.st-lead-name {
+  font-weight: 700; font-size: 0.86rem; min-width: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.st-lead.mine .st-lead-name { color: var(--you); }
+.st-lead-chip {
+  flex: none;
+  font-family: "Cinzel", serif; font-weight: 700; font-size: 0.6rem; letter-spacing: 0.04em;
+  color: var(--gold-2); border: 1px solid rgba(212, 168, 84, 0.3);
+  padding: 1px 6px; border-radius: 5px; white-space: nowrap;
+}
+.st-lead-owner {
+  flex: none;
+  font-family: "Cinzel", serif; font-weight: 700; font-size: 0.6rem; letter-spacing: 0.03em;
+  color: #1a1206; background: var(--st-ac, var(--gold-3));
+  padding: 1px 6px; border-radius: 5px; white-space: nowrap;
+}
+.st-lead-owner.mine { box-shadow: 0 0 0 1px var(--you); }
+.st-lead-owner.empty {
+  color: var(--text-faint); background: none;
+  border: 1px dashed rgba(212, 168, 84, 0.28); font-weight: 600;
+}
+.st-lead-track {
+  height: 10px; border-radius: 999px; overflow: hidden;
+  background: rgba(212, 168, 84, 0.1);
+  border: 1px solid rgba(212, 168, 84, 0.22);
+}
+.st-lead-fill {
+  height: 100%; min-width: 4px; border-radius: 999px;
+  background: var(--gold-grad);
+  box-shadow: 0 0 8px rgba(232, 196, 106, 0.35);
+  transition: width 0.4s ease;
+}
+.st-lead-goals {
+  font-family: "Cinzel", serif; font-weight: 900; font-size: 0.95rem;
+  color: var(--gold-1); text-align: right;
+}
+
 /* ---------- Goals by matchday ---------- */
 
 .st-md {
@@ -157,7 +223,12 @@
 @media (max-width: 560px) {
   .st-headlines { padding: 4px 16px; }
   .st-line { font-size: 0.88rem; }
-  .st-runway, .st-md { padding-left: 14px; padding-right: 14px; }
+  .st-runway, .st-md, .st-lead-wrap { padding-left: 14px; padding-right: 14px; }
+  /* Leaderboard rows wrap to two lines: nation + tags, then bar + goals. */
+  .st-lead { grid-template-columns: minmax(0, 1fr) 34px; row-gap: 8px; }
+  .st-lead-main { grid-column: 1 / -1; }
+  .st-lead-track { grid-column: 1; }
+  .st-lead-goals { grid-column: 2; }
   /* Runway rows wrap to two lines: name + chip, then segments + goals. */
   .st-run { grid-template-columns: minmax(0, 1fr) auto; row-gap: 7px; }
   .st-run-name { grid-column: 1; }
