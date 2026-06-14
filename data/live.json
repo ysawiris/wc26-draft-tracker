@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-14T02:22:47.529Z",
+  "fetchedAt": "2026-06-14T03:47:10.275Z",
   "matchCount": 72,
   "matches": [
     {
@@ -87,13 +87,13 @@
       "group": "C",
       "matchday": null,
       "utcDate": "2026-06-14T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Haiti",
       "away": "Scotland",
       "homeGoals": 0,
       "awayGoals": 1,
       "venue": "Boston Stadium",
-      "minute": "59'"
+      "minute": "99'"
     },
     {
       "id": "400021463",
@@ -106,7 +106,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "BC Place Vancouver",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021464",
@@ -995,12 +995,12 @@
         "Haiti": {
           "y": 1,
           "r": 0,
-          "f": 17
+          "f": 22
         },
         "Scotland": {
-          "y": 1,
+          "y": 3,
           "r": 0,
-          "f": 12
+          "f": 18
         }
       },
       "400021456": {
@@ -1066,7 +1066,7 @@
         "r": 0
       },
       "Scotland": {
-        "y": 1,
+        "y": 3,
         "r": 0
       },
       "Brazil": {
@@ -1114,10 +1114,10 @@
         "f": 17
       },
       "Haiti": {
-        "f": 17
+        "f": 22
       },
       "Scotland": {
-        "f": 12
+        "f": 18
       },
       "Brazil": {
         "f": 14
