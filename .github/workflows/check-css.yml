@@ -1,0 +1,37 @@
+name: Check CSS namespaces
+
+# Tripwire for the bug that hid The Race on mobile (2026-06-14): the Recaps
+# module reused The Race's `rc-` class prefix and a recaps `display:none` rule
+# blanked the chart on phones. GitHub Pages deploys from the branch root with
+# no build step, so nothing caught it. This runs scripts/check-css-prefixes.mjs
+# on every code push and fails (red X) the moment one module styles another
+# module's namespace. It does not gate the Pages deploy — it surfaces the
+# regression immediately so it's a one-line fix, not a user bug report.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "css/**"
+      - "scripts/check-css-prefixes.mjs"
+      - ".github/workflows/check-css.yml"
+  pull_request:
+    paths:
+      - "css/**"
+      - "scripts/check-css-prefixes.mjs"
+  workflow_dispatch: {}
+
+concurrency:
+  group: check-css-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Check CSS module namespaces
+        run: node scripts/check-css-prefixes.mjs
