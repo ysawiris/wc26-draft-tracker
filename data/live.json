@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-14T05:22:00.655Z",
+  "fetchedAt": "2026-06-14T07:03:47.638Z",
   "matchCount": 72,
   "matches": [
     {
@@ -100,13 +100,13 @@
       "group": "D",
       "matchday": null,
       "utcDate": "2026-06-14T04:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Australia",
       "away": "Türkiye",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 0,
       "venue": "BC Place Vancouver",
-      "minute": "61'"
+      "minute": "97'"
     },
     {
       "id": "400021464",
@@ -1031,10 +1031,10 @@
         "Australia": {
           "y": 0,
           "r": 0,
-          "f": 7
+          "f": 12
         },
         "Türkiye": {
-          "y": 0,
+          "y": 1,
           "r": 0,
           "f": 3
         }
@@ -1102,7 +1102,7 @@
         "r": 0
       },
       "Türkiye": {
-        "y": 0,
+        "y": 1,
         "r": 0
       }
     }
@@ -1152,7 +1152,7 @@
         "f": 12
       },
       "Australia": {
-        "f": 7
+        "f": 12
       },
       "Türkiye": {
         "f": 3
