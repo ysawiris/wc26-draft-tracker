@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-14T19:17:36.434Z",
+  "fetchedAt": "2026-06-14T20:37:49.185Z",
   "matchCount": 72,
   "matches": [
     {
@@ -126,13 +126,13 @@
       "group": "F",
       "matchday": null,
       "utcDate": "2026-06-14T20:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Netherlands",
       "away": "Japan",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Dallas Stadium",
-      "minute": "0'"
+      "minute": "37'"
     },
     {
       "id": "400021467",
@@ -1050,6 +1050,18 @@
           "r": 0,
           "f": 11
         }
+      },
+      "400021470": {
+        "Netherlands": {
+          "y": 0,
+          "r": 0,
+          "f": 2
+        },
+        "Japan": {
+          "y": 0,
+          "r": 0,
+          "f": 2
+        }
       }
     },
     "byCountry": {
@@ -1124,6 +1136,14 @@
       "Curaçao": {
         "y": 0,
         "r": 0
+      },
+      "Netherlands": {
+        "y": 0,
+        "r": 0
+      },
+      "Japan": {
+        "y": 0,
+        "r": 0
       }
     }
   },
@@ -1182,6 +1202,12 @@
       },
       "Curaçao": {
         "f": 11
+      },
+      "Netherlands": {
+        "f": 2
+      },
+      "Japan": {
+        "f": 2
       }
     }
   }
