@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T08:00:05.570Z",
+  "generatedAt": "2026-06-14T09:40:20.156Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 15.1,
+      "projTotal": 15,
       "rank": 9,
       "leads": false,
       "winningBar": 18,
@@ -21,7 +21,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
@@ -80,7 +80,7 @@
               "ag": 1
             }
           ],
-          "blurb": "Group G squeaks in at 19 goals while Nicolodeons, Gallactic Rebel Scum, and Big Blue Wrecking Crew all stall at 18 or fewer."
+          "blurb": "Group G squeaks in with 19 goals as rivals like Nicolodeons! stall at 18 or under"
         },
         {
           "key": "business",
@@ -127,7 +127,7 @@
               "ag": 1
             }
           ],
-          "blurb": "Group G takes care of business with 21 goals, putting them well ahead of the competition and securing the top spot."
+          "blurb": "Commissioner's Infirmary 2.0 takes care of business reaching 21 goals clearing the field"
         },
         {
           "key": "fest",
@@ -146,7 +146,7 @@
             {
               "home": "Iran",
               "away": "New Zealand",
-              "hg": 2,
+              "hg": 3,
               "ag": 1
             },
             {
@@ -164,7 +164,7 @@
             {
               "home": "New Zealand",
               "away": "Belgium",
-              "hg": 2,
+              "hg": 1,
               "ag": 3
             },
             {
@@ -174,21 +174,21 @@
               "ag": 1
             }
           ],
-          "blurb": "Group G lights up the scoreboard, hitting 23 goals and leaving rivals in the dust for a commanding No.1 pick."
+          "blurb": "Group G erupts in a goal-fest reaching 23 goals leaving Big Blue Wrecking Crew and Gallactic Rebel Scum behind"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 must unleash a scoring frenzy to seize the No.1 pick! With rivals lurking, they need every goal possible!",
+      "intro": "Commissioner's Infirmary 2.0 must dominate to grab the No.1 pick, outscoring Nicolodeons! and other rivals to claim the top spot. To safely secure the top pick, the group needs a surge in goal production, requiring a strong finish to surpass the competition and claim the No.1 pick",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[0,6,18,[[19,[[\"Belgium\",\"Egypt\",2,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,1],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[21,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[23,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[0,6,18,[[19,[[\"Belgium\",\"Egypt\",2,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,1],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[21,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",2,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",1,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]],[23,[[\"Belgium\",\"Egypt\",3,1],[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",1,3],[\"Egypt\",\"Iran\",2,1]]]]]"
     },
     "CDL": {
       "group": "E",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 17.9,
+      "projTotal": 17.8,
       "rank": 1,
       "leads": true,
       "winningBar": 17,
@@ -212,7 +212,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 17
+          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -261,7 +261,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! squeaks into the top spot as Group E reaches 18 goals, rival groups stall at 17 or under"
+          "blurb": "Nicolodeons! squeezes past Big Blue Wrecking Crew with 18 goals"
         },
         {
           "key": "business",
@@ -308,7 +308,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! takes care of business as Group E reaches 20 goals, clearing the field of Big Blue Wrecking Crew and Another Rebuilding Year"
+          "blurb": "Nicolodeons! dominates the field with 20 goals, leaving Gallactic Rebel Scum in the dust"
         },
         {
           "key": "fest",
@@ -322,7 +322,7 @@
               "home": "Germany",
               "away": "Curaçao",
               "hg": 4,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Ivory Coast",
@@ -334,7 +334,7 @@
               "home": "Germany",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Ecuador",
@@ -355,15 +355,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! ignites a goal-fest as Group E reaches 22 goals, leaving the unclaimed Group I and other rivals far behind"
+          "blurb": "Nicolodeons! explodes for 22 goals, crushing all rival groups, including the unclaimed Group I"
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! needs a goal-scoring explosion to secure the No.1 pick, with Group E requiring a strong finish to outpace rival managers like Big Blue Wrecking Crew, Another Rebuilding Year, and the unclaimed Group I, the group must outscore the competition to come out on top. With 6 matches left, Nicolodeons! is counting on a flurry of goals to propel Group E to the top spot, where a strong finish will leave the competition in the dust",
+      "intro": "Nicolodeons! must outscore rival groups to grab the No.1 pick, with Big Blue Wrecking Crew and Gallactic Rebel Scum looming large. To come out on top, Nicolodeons! needs a massive goal haul from Germany, Curaçao, Ivory Coast, and Ecuador in their remaining matches, outpacing the competition to secure the top spot.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[0,6,17,[[18,[[\"Germany\",\"Curaçao\",3,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[20,[[\"Germany\",\"Curaçao\",4,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[22,[[\"Germany\",\"Curaçao\",4,2],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]]]]"
+      "fingerprint": "[0,6,17,[[18,[[\"Germany\",\"Curaçao\",3,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[20,[[\"Germany\",\"Curaçao\",4,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[22,[[\"Germany\",\"Curaçao\",4,1],[\"Ivory Coast\",\"Ecuador\",1,1],[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]]]]"
     },
     "BBWC": {
       "group": "H",
@@ -383,7 +383,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "D",
@@ -393,7 +393,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 17
+          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -564,7 +564,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
@@ -745,7 +745,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
@@ -755,7 +755,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 17
+          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -890,7 +890,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
@@ -1071,7 +1071,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
@@ -1238,7 +1238,7 @@
       "group": "K",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 15.9,
+      "projTotal": 16,
       "rank": 6,
       "leads": false,
       "winningBar": 18,
@@ -1252,7 +1252,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
@@ -1433,7 +1433,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
@@ -1565,7 +1565,7 @@
       "banked": 3,
       "remaining": 4,
       "projTotal": 14.8,
-      "rank": 11,
+      "rank": 10,
       "leads": false,
       "winningBar": 18,
       "countries": [
@@ -1578,7 +1578,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 17.9
+          "proj": 17.8
         },
         {
           "group": "H",
