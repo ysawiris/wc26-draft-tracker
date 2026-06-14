@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T03:49:06.539Z",
-  "count": 7,
+  "generatedAt": "2026-06-14T07:46:20.431Z",
+  "count": 8,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -276,6 +276,42 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"United States\",\"Paraguay\",4,1,[[\"7'\",\"Damian Bobadilla\",\"United States\",\"home\",true,false],[\"31'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"45'+5'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"73'\",\"Mauricio\",\"Paraguay\",\"away\",false,false],[\"90'+8'\",\"Reyna\",\"United States\",\"home\",false,false]]]"
+    },
+    "400021463": {
+      "id": "400021463",
+      "group": "D",
+      "home": "Australia",
+      "away": "Türkiye",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "venue": "BC Place Vancouver",
+      "utcDate": "2026-06-14T04:00:00Z",
+      "goals": [
+        {
+          "minute": "27'",
+          "order": 27,
+          "player": "Nestory Irankunda",
+          "team": "Australia",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "75'",
+          "order": 75,
+          "player": "Connor Metcalfe",
+          "team": "Australia",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Australia see off Türkiye",
+      "summary": "Australia leads 2-0 against Türkiye with Nestory Irankunda and Connor Metcalfe scoring, Irankunda strikes first and Metcalfe seals the win, Australia is dominating Group D.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Australia\",\"Türkiye\",2,0,[[\"27'\",\"Nestory Irankunda\",\"Australia\",\"home\",false,false],[\"75'\",\"Connor Metcalfe\",\"Australia\",\"home\",false,false]]]"
     }
   }
 }
