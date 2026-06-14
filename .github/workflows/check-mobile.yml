@@ -1,0 +1,43 @@
+name: Check mobile layout
+
+# Renders every Hub tab in headless Chromium at 390px and fails if anything
+# overflows the viewport. Catches layout regressions the CSS namespace guard
+# can't see — e.g. the Schedule cards that went off-screen on 2026-06-14
+# (grid `1fr` should have been `minmax(0,1fr)`). Tripwire, not a deploy gate:
+# GitHub Pages still ships from branch root, this just turns the commit red.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "css/**"
+      - "js/**"
+      - "index.html"
+      - "data/**"
+      - "scripts/check-mobile-overflow.mjs"
+      - "package.json"
+      - ".github/workflows/check-mobile.yml"
+  pull_request:
+    paths:
+      - "css/**"
+      - "js/**"
+      - "index.html"
+      - "scripts/check-mobile-overflow.mjs"
+  workflow_dispatch: {}
+
+concurrency:
+  group: check-mobile-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Check for mobile overflow on every tab
+        run: node scripts/check-mobile-overflow.mjs
