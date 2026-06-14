@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-14T17:30:58.094Z",
+  "fetchedAt": "2026-06-14T18:05:18.231Z",
   "matchCount": 72,
   "matches": [
     {
@@ -116,10 +116,10 @@
       "status": "IN_PLAY",
       "home": "Germany",
       "away": "Curaçao",
-      "homeGoals": 1,
+      "homeGoals": 3,
       "awayGoals": 1,
       "venue": "Houston Stadium",
-      "minute": "29'"
+      "minute": null
     },
     {
       "id": "400021470",
@@ -1043,12 +1043,12 @@
         "Germany": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 7
         },
         "Curaçao": {
           "y": 0,
           "r": 0,
-          "f": 3
+          "f": 5
         }
       }
     },
@@ -1178,10 +1178,10 @@
         "f": 3
       },
       "Germany": {
-        "f": 5
+        "f": 7
       },
       "Curaçao": {
-        "f": 3
+        "f": 5
       }
     }
   }
