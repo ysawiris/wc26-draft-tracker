@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T19:36:22.532Z",
-  "count": 9,
+  "generatedAt": "2026-06-14T22:30:59.216Z",
+  "count": 10,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -393,6 +393,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Germany\",\"Curaçao\",7,1,[[\"6'\",\"Nmecha\",\"Germany\",\"home\",false,false],[\"21'\",\"Livano Comenencia\",\"Curaçao\",\"away\",false,false],[\"38'\",\"Schlotterbeck\",\"Germany\",\"home\",false,false],[\"47'\",\"Musiala\",\"Germany\",\"home\",false,false],[\"68'\",\"Nathaniel Brown\",\"Germany\",\"home\",false,false],[\"78'\",\"Deniz Undav\",\"Germany\",\"home\",false,false],[\"88'\",\"Havertz\",\"Germany\",\"home\",false,false]]]"
+    },
+    "400021470": {
+      "id": "400021470",
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Japan",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "venue": "Dallas Stadium",
+      "utcDate": "2026-06-14T20:00:00Z",
+      "goals": [
+        {
+          "minute": "50'",
+          "order": 50,
+          "player": "Virgil Van Dijk",
+          "team": "Netherlands",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "57'",
+          "order": 57,
+          "player": "Nakamura",
+          "team": "Japan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "64'",
+          "order": 64,
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "88'",
+          "order": 88,
+          "player": "Kamada",
+          "team": "Japan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Netherlands and Japan share the points",
+      "summary": "Netherlands and Japan are locked in a 2-2 battle with Virgil Van Dijk and Crysencio Summerville scoring for the Dutch, while Nakamura and Kamada find the net for Japan, the match is intensifying with both teams fighting for the top spot in Group F.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Netherlands\",\"Japan\",2,2,[[\"50'\",\"Virgil Van Dijk\",\"Netherlands\",\"home\",false,false],[\"57'\",\"Nakamura\",\"Japan\",\"away\",false,false],[\"64'\",\"Crysencio Summerville\",\"Netherlands\",\"home\",false,false],[\"88'\",\"Kamada\",\"Japan\",\"away\",false,false]]]"
     }
   }
 }
