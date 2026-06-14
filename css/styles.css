@@ -632,8 +632,11 @@ nav, main, header, footer { position: relative; z-index: 1; }
   .mini { flex: 0 0 196px; scroll-snap-align: start; padding: 9px 11px; }
   .mini-row { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-  /* One match per row on phones — each card keeps its full width. */
-  .sched-day { grid-template-columns: 1fr; gap: 10px; }
+  /* One match per row on phones. minmax(0,1fr) — NOT plain 1fr — so the
+     column can shrink to the viewport; bare 1fr is minmax(auto,1fr), which
+     lets a card's content width push the grid (and the whole page) wider
+     than the phone and shoves the schedule off-screen. */
+  .sched-day { grid-template-columns: minmax(0, 1fr); gap: 10px; }
 
   /* Tighter board rows. */
   .row { padding: 11px 12px; }
