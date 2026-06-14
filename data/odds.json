@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-14T12:59:07.063Z",
+  "fetchedAt": "2026-06-14T16:48:30.591Z",
   "matchCount": 64,
   "lines": [
     {
@@ -49,8 +49,8 @@
       "awayRaw": "Tunisia",
       "line": 2.5,
       "overUS": "+115",
-      "underUS": "-145",
-      "impliedTotal": 2.44
+      "underUS": "-140",
+      "impliedTotal": 2.45
     },
     {
       "espnId": "760426",
@@ -252,9 +252,9 @@
       "homeRaw": "Brazil",
       "awayRaw": "Haiti",
       "line": 3.5,
-      "overUS": "-105",
-      "underUS": "-115",
-      "impliedTotal": 3.62
+      "overUS": "-115",
+      "underUS": "-110",
+      "impliedTotal": 3.7
     },
     {
       "espnId": "760445",
@@ -276,9 +276,9 @@
       "homeRaw": "Türkiye",
       "awayRaw": "Paraguay",
       "line": 2.5,
-      "overUS": "+115",
-      "underUS": "-145",
-      "impliedTotal": 2.44
+      "overUS": "+110",
+      "underUS": "-140",
+      "impliedTotal": 2.47
     },
     {
       "espnId": "760442",
