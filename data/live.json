@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-14T23:15:54.613Z",
+  "fetchedAt": "2026-06-14T23:46:55.696Z",
   "matchCount": 72,
   "matches": [
     {
@@ -145,7 +145,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": "12'"
+      "minute": "43'"
     },
     {
       "id": "400021474",
@@ -1053,14 +1053,14 @@
       },
       "400021467": {
         "Côte d'Ivoire": {
-          "y": 0,
+          "y": 3,
           "r": 0,
-          "f": 2
+          "f": 4
         },
         "Ecuador": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 3
         }
       },
       "400021470": {
@@ -1150,7 +1150,7 @@
         "r": 0
       },
       "Côte d'Ivoire": {
-        "y": 0,
+        "y": 3,
         "r": 0
       },
       "Ecuador": {
@@ -1224,10 +1224,10 @@
         "f": 11
       },
       "Côte d'Ivoire": {
-        "f": 2
+        "f": 4
       },
       "Ecuador": {
-        "f": 1
+        "f": 3
       },
       "Netherlands": {
         "f": 4
