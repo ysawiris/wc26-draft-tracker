@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-15T20:51:09.024Z",
+  "fetchedAt": "2026-06-15T21:52:24.183Z",
   "matchCount": 72,
   "matches": [
     {
@@ -178,13 +178,13 @@
       "group": "G",
       "matchday": null,
       "utcDate": "2026-06-15T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Belgium",
       "away": "Egypt",
       "homeGoals": 1,
       "awayGoals": 1,
       "venue": "Seattle Stadium",
-      "minute": "88'"
+      "minute": "96'"
     },
     {
       "id": "400021486",
@@ -1096,7 +1096,7 @@
         "Egypt": {
           "y": 2,
           "r": 0,
-          "f": 12
+          "f": 13
         }
       },
       "400021482": {
@@ -1305,7 +1305,7 @@
         "f": 13
       },
       "Egypt": {
-        "f": 12
+        "f": 13
       },
       "Spain": {
         "f": 9
