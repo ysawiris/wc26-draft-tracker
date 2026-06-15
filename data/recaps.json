@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T05:57:06.224Z",
-  "count": 12,
+  "generatedAt": "2026-06-15T19:25:42.703Z",
+  "count": 13,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -546,6 +546,23 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Sweden\",\"Tunisia\",5,1,[[\"7'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false],[\"30'\",\"Alexander Isak\",\"Sweden\",\"home\",false,false],[\"43'\",\"Omar Rekik\",\"Tunisia\",\"away\",false,false],[\"59'\",\"Viktor Gyokeres\",\"Sweden\",\"home\",false,false],[\"84'\",\"Mattias Svanberg\",\"Sweden\",\"home\",false,false],[\"90'+6'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false]]]"
+    },
+    "400021482": {
+      "id": "400021482",
+      "group": "H",
+      "home": "Spain",
+      "away": "Cape Verde",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "venue": "Atlanta Stadium",
+      "utcDate": "2026-06-15T16:00:00Z",
+      "goals": [],
+      "reds": [],
+      "headline": "Spain and Cape Verde share the points",
+      "summary": "Spain and Cape Verde are battling to a scoreless draw at Atlanta Stadium, with neither side able to find the back of the net, the match remains 0-0, no key scorers are emerging in this tight Group H matchup.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Spain\",\"Cape Verde\",0,0,[]]"
     }
   }
 }
