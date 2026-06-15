@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T20:34:04.285Z",
+  "generatedAt": "2026-06-15T22:13:03.459Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
-      "banked": 1,
+      "banked": 2,
       "remaining": 5,
-      "projTotal": 13.5,
-      "rank": 12,
+      "projTotal": 14.6,
+      "rank": 10,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -39,7 +39,7 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 21,
+          "yourRemainingGoals": 20,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
@@ -52,7 +52,7 @@
             {
               "home": "Belgium",
               "away": "Iran",
-              "hg": 3,
+              "hg": 2,
               "ag": 2
             },
             {
@@ -74,13 +74,13 @@
               "ag": 1
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 squeaks past Nicolodeons and Taco Corp with 22 goals as rivals stall at 21 or under."
+          "blurb": "Commissioner's Infirmary 2.0 squeaks in as Group G reaches 22 goals, rivals stall at 21 or under, led by Nicolodeons!"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 23,
+          "yourRemainingGoals": 22,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
@@ -106,7 +106,7 @@
               "home": "New Zealand",
               "away": "Belgium",
               "hg": 2,
-              "ag": 4
+              "ag": 3
             },
             {
               "home": "Egypt",
@@ -115,13 +115,13 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 takes care of business with 24 goals, outscoring Gallactic Rebel Scum and other groups."
+          "blurb": "Commissioner's Infirmary 2.0 takes care of business as Group G reaches 24 goals, clearing the field ahead of Taco Corp"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
           "targetTotal": 26,
-          "yourRemainingGoals": 25,
+          "yourRemainingGoals": 24,
           "rivalCap": 25,
           "needsHelp": false,
           "lines": [
@@ -129,7 +129,7 @@
               "home": "Iran",
               "away": "New Zealand",
               "hg": 3,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Belgium",
@@ -156,15 +156,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 ignites a goal-fest with 26 goals, dominating Nicolodeons, Taco Corp, and the rest of the field."
+          "blurb": "Commissioner's Infirmary 2.0 sparks a goal-fest as Group G reaches 26 goals, outpacing Gallactic Rebel Scum and the rest"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a goal-scoring surge to grab the No.1 pick, with a huge challenge ahead to overtake rival groups like Nicolodeons and Taco Corp. To succeed, they must outscore and outmaneuver their opponents, with a target of 21+ goals to feel safe, as they are currently ranked last with a projected 13.5 total goals and only 1 goal banked so far, a far cry from the 21.4 goals projected for Nicolodeons, 20.7 for Taco Corp, and 17.2 for Gallactic Rebel Scum.",
+      "intro": "Commissioner's Infirmary 2.0 needs a massive goal surge to snatch the No.1 pick, with Nicolodeons! and Taco Corp lurking, Gallactic Rebel Scum also in the mix. To take the top spot, Group G must outscore and outmaneuver its toughest rivals, led by Nicolodeons! and Taco Corp, with a huge goal haul",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[1,5,21,[[22,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]],[24,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]],[26,[[\"Iran\",\"New Zealand\",3,2],[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[2,5,21,[[22,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]],[24,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,2]]],[26,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -231,7 +231,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! squeezes past Taco Corp with 22 goals as rivals stall"
+          "blurb": "Group E squeaks in by reaching 22 goals while rivals Taco Corp and Gallactic Rebel Scum falter at 21 or under."
         },
         {
           "key": "business",
@@ -266,7 +266,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! takes control with 24 goals, leaving Gallactic Rebel Scum in the dust"
+          "blurb": "Group E takes care of business by scoring 24 goals, ensuring a clear lead over all rival groups in the race."
         },
         {
           "key": "fest",
@@ -286,7 +286,7 @@
               "home": "Ecuador",
               "away": "Curaçao",
               "hg": 3,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Curaçao",
@@ -297,26 +297,26 @@
             {
               "home": "Ecuador",
               "away": "Germany",
-              "hg": 2,
+              "hg": 1,
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! runs away with 26 goals, crushing all rivals including Taco Corp"
+          "blurb": "Group E experiences a goal-fest, hitting 26 goals and leaving rivals like Taco Corp and Gallactic Rebel Scum in the dust."
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! must ignite Group E's goal-scoring machine to grab the No.1 pick, outpacing rival managers like Taco Corp's and Gallactic Rebel Scum's! With 4 matches left, a strong finish is crucial to secure the top spot, fending off unclaimed Group I's potential surge",
+      "intro": "Nicolodeons! must unleash their offensive firepower to secure the No.1 pick! With rivals lurking, they need to dominate the scoreboard!",
       "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[9,4,21,[[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,2]]]]]"
+      "aiVia": "GitHub Models",
+      "fingerprint": "[9,4,21,[[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,2],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",1,2]]]]]"
     },
     "BBWC": {
       "group": "H",
       "banked": 0,
       "remaining": 5,
       "projTotal": 13.7,
-      "rank": 11,
+      "rank": 12,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -949,7 +949,7 @@
       "group": "J",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 16.4,
+      "projTotal": 16.5,
       "rank": 5,
       "leads": false,
       "winningBar": 21,
@@ -1311,8 +1311,8 @@
       "group": "B",
       "banked": 4,
       "remaining": 4,
-      "projTotal": 14.4,
-      "rank": 10,
+      "projTotal": 14.3,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1421,7 +1421,7 @@
       "group": "C",
       "banked": 3,
       "remaining": 4,
-      "projTotal": 14.9,
+      "projTotal": 14.8,
       "rank": 8,
       "leads": false,
       "winningBar": 21,
