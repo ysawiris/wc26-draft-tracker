@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T03:41:30.192Z",
+  "generatedAt": "2026-06-15T06:14:50.961Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -21,17 +21,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
           "proj": 17.4
-        },
-        {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -188,10 +188,10 @@
       "group": "E",
       "banked": 9,
       "remaining": 4,
-      "projTotal": 21.3,
+      "projTotal": 21.2,
       "rank": 1,
       "leads": true,
-      "winningBar": 17,
+      "winningBar": 21,
       "countries": [
         "Germany",
         "Ivory Coast",
@@ -199,6 +199,11 @@
         "Curaçao"
       ],
       "rivals": [
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
+        },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
@@ -208,32 +213,27 @@
           "group": "D",
           "owner": "Gallactic Rebel Scum",
           "proj": 17.2
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17.1
         }
       ],
       "scenarios": [
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 18,
-          "yourRemainingGoals": 9,
-          "rivalCap": 17,
+          "targetTotal": 22,
+          "yourRemainingGoals": 13,
+          "rivalCap": 21,
           "needsHelp": true,
           "lines": [
             {
               "home": "Germany",
               "away": "Ivory Coast",
-              "hg": 1,
+              "hg": 2,
               "ag": 1
             },
             {
               "home": "Ecuador",
               "away": "Curaçao",
-              "hg": 1,
+              "hg": 3,
               "ag": 1
             },
             {
@@ -246,65 +246,65 @@
               "home": "Ecuador",
               "away": "Germany",
               "hg": 1,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! squeaks in with 18 goals as rivals stall at 17 or under"
+          "blurb": "Nicolodeons! squeezes past Taco Corp with 22 goals as rivals stall"
         },
         {
           "key": "business",
           "label": "Take care of business",
-          "targetTotal": 20,
-          "yourRemainingGoals": 11,
-          "rivalCap": 19,
+          "targetTotal": 24,
+          "yourRemainingGoals": 15,
+          "rivalCap": 23,
           "needsHelp": false,
           "lines": [
             {
               "home": "Germany",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Ecuador",
               "away": "Curaçao",
-              "hg": 2,
+              "hg": 3,
               "ag": 1
             },
             {
               "home": "Curaçao",
               "away": "Ivory Coast",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             },
             {
               "home": "Ecuador",
               "away": "Germany",
               "hg": 1,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! takes care of business with 20 goals, clearing the field of Big Blue Wrecking Crew and Gallactic Rebel Scum"
+          "blurb": "Nicolodeons! dominates with 24 goals, clearing the field of Big Blue Wrecking Crew"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
-          "targetTotal": 22,
-          "yourRemainingGoals": 13,
-          "rivalCap": 21,
+          "targetTotal": 26,
+          "yourRemainingGoals": 17,
+          "rivalCap": 25,
           "needsHelp": false,
           "lines": [
             {
               "home": "Germany",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Ecuador",
               "away": "Curaçao",
-              "hg": 2,
-              "ag": 1
+              "hg": 3,
+              "ag": 2
             },
             {
               "home": "Curaçao",
@@ -315,26 +315,26 @@
             {
               "home": "Ecuador",
               "away": "Germany",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! ignites a goal-fest with 22 goals, leaving all rival groups in the dust"
+          "blurb": "Nicolodeons! ignites a goal-fest with 26 goals, leaving Gallactic Rebel Scum far behind"
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! is on the cusp of securing the No.1 pick, but needs a strong finish to hold off rival managers, Big Blue Wrecking Crew and Gallactic Rebel Scum! To grab the top spot, Group E must outscore the competition and capitalize on the remaining matches, with a focus on reaching at least 17 goals to be safe",
+      "intro": "Nicolodeons! must rally their Group E teams to unleash a goal-scoring frenzy and outpace rival managers, particularly those of Taco Corp and Big Blue Wrecking Crew, to grab the No.1 pick. To secure the top spot, Nicolodeons! needs their teams to score enough goals to leave the competition, including Gallactic Rebel Scum, in the dust",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[9,4,17,[[18,[[\"Germany\",\"Ivory Coast\",1,1],[\"Ecuador\",\"Curaçao\",1,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,1]]],[20,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,1]]],[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]]]]"
+      "fingerprint": "[9,4,21,[[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,2],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",2,2]]]]]"
     },
     "BBWC": {
       "group": "H",
       "banked": 0,
       "remaining": 6,
       "projTotal": 17.4,
-      "rank": 2,
+      "rank": 3,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -347,17 +347,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "D",
           "owner": "Gallactic Rebel Scum",
           "proj": 17.2
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -512,10 +512,10 @@
     },
     "TACO": {
       "group": "F",
-      "banked": 6,
+      "banked": 10,
       "remaining": 4,
-      "projTotal": 16.4,
-      "rank": 6,
+      "projTotal": 20.7,
+      "rank": 2,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -528,7 +528,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
         },
         {
           "group": "H",
@@ -546,9 +546,79 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 16,
+          "yourRemainingGoals": 12,
           "rivalCap": 21,
           "needsHelp": true,
+          "lines": [
+            {
+              "home": "Netherlands",
+              "away": "Sweden",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Tunisia",
+              "away": "Japan",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Tunisia",
+              "away": "Netherlands",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Japan",
+              "away": "Sweden",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "Taco Corp is squeaking in with 22 goals as Nicolodeons stall at 21 or under"
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 24,
+          "yourRemainingGoals": 14,
+          "rivalCap": 23,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Netherlands",
+              "away": "Sweden",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Tunisia",
+              "away": "Japan",
+              "hg": 1,
+              "ag": 2
+            },
+            {
+              "home": "Tunisia",
+              "away": "Netherlands",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Japan",
+              "away": "Sweden",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "Taco Corp is taking care of business with 24 goals clear of the field"
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 26,
+          "yourRemainingGoals": 16,
+          "rivalCap": 25,
+          "needsHelp": false,
           "lines": [
             {
               "home": "Netherlands",
@@ -575,92 +645,22 @@
               "ag": 2
             }
           ],
-          "blurb": "Taco Corp squeezes past Nicolodeons as rivals stall at 21 or under"
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 24,
-          "yourRemainingGoals": 18,
-          "rivalCap": 23,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Netherlands",
-              "away": "Sweden",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Tunisia",
-              "away": "Japan",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Tunisia",
-              "away": "Netherlands",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Japan",
-              "away": "Sweden",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Taco Corp takes care of business reaching 24 goals clear of Big Blue Wrecking Crew"
-        },
-        {
-          "key": "fest",
-          "label": "Goal-fest",
-          "targetTotal": 26,
-          "yourRemainingGoals": 20,
-          "rivalCap": 25,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Netherlands",
-              "away": "Sweden",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Tunisia",
-              "away": "Japan",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Tunisia",
-              "away": "Netherlands",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Japan",
-              "away": "Sweden",
-              "hg": 3,
-              "ag": 2
-            }
-          ],
-          "blurb": "Taco Corp ignites a goal-fest reaching 26 goals leaving Gallactic Rebel Scum in the dust"
+          "blurb": "Taco Corp is igniting a goal-fest with 26 goals clear of Big Blue Wrecking Crew and Gallactic Rebel Scum"
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp needs a goal-scoring explosion to grab the No.1 pick, with Nicolodeons, Big Blue Wrecking Crew, and Gallactic Rebel Scum lurking as rivals. To take the top spot, Taco Corp must outscore the competition and capitalize on the remaining matches to secure the highest total goals.",
+      "intro": "Taco Corp needs a goal-scoring explosion to grab the No.1 pick, with rivals like Nicolodeons and Big Blue Wrecking Crew looming large, Group F must outscore them all. To secure the top spot, Taco Corp must navigate the remaining matches with precision and luck, outpacing their competitors in the process.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,21,[[22,[[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]],[24,[[\"Netherlands\",\"Sweden\",3,2],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",2,3],[\"Japan\",\"Sweden\",2,2]]],[26,[[\"Netherlands\",\"Sweden\",3,2],[\"Tunisia\",\"Japan\",2,3],[\"Tunisia\",\"Netherlands\",2,3],[\"Japan\",\"Sweden\",3,2]]]]]"
+      "fingerprint": "[10,4,21,[[22,[[\"Netherlands\",\"Sweden\",2,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[24,[[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]],[26,[[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]]]]"
     },
     "GRS": {
       "group": "D",
       "banked": 7,
       "remaining": 4,
       "projTotal": 17.2,
-      "rank": 3,
+      "rank": 4,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -673,17 +673,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
           "proj": 17.4
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -818,17 +818,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
           "proj": 17.4
-        },
-        {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -986,7 +986,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 16.4,
-      "rank": 5,
+      "rank": 6,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -999,17 +999,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
           "proj": 17.4
-        },
-        {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1180,17 +1180,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
           "proj": 17.4
-        },
-        {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1361,17 +1361,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
           "proj": 17.4
-        },
-        {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1471,17 +1471,17 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.2
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20.7
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
           "proj": 17.4
-        },
-        {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
         }
       ],
       "scenarios": [
