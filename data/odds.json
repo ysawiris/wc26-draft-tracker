@@ -1,21 +1,9 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-15T17:57:57.561Z",
-  "matchCount": 59,
+  "fetchedAt": "2026-06-15T21:24:43.957Z",
+  "matchCount": 58,
   "lines": [
-    {
-      "espnId": "760426",
-      "date": "2026-06-15",
-      "home": "Belgium",
-      "away": "Egypt",
-      "homeRaw": "Belgium",
-      "awayRaw": "Egypt",
-      "line": 2.5,
-      "overUS": "-105",
-      "underUS": "-120",
-      "impliedTotal": 2.61
-    },
     {
       "espnId": "760427",
       "date": "2026-06-15",
@@ -36,9 +24,9 @@
       "homeRaw": "Saudi Arabia",
       "awayRaw": "Uruguay",
       "line": 2.5,
-      "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 2.53
+      "overUS": "+110",
+      "underUS": "-140",
+      "impliedTotal": 2.47
     },
     {
       "espnId": "760433",
@@ -84,9 +72,9 @@
       "homeRaw": "Austria",
       "awayRaw": "Jordan",
       "line": 2.5,
-      "overUS": "-145",
+      "overUS": "-150",
       "underUS": "+120",
-      "impliedTotal": 2.95
+      "impliedTotal": 2.97
     },
     {
       "espnId": "760437",
@@ -180,9 +168,9 @@
       "homeRaw": "Switzerland",
       "awayRaw": "Bosnia-Herzegovina",
       "line": 2.5,
-      "overUS": "+105",
-      "underUS": "-135",
-      "impliedTotal": 2.51
+      "overUS": "+115",
+      "underUS": "-140",
+      "impliedTotal": 2.45
     },
     {
       "espnId": "760444",
@@ -192,9 +180,9 @@
       "homeRaw": "Brazil",
       "awayRaw": "Haiti",
       "line": 3.5,
-      "overUS": "-115",
+      "overUS": "-110",
       "underUS": "-110",
-      "impliedTotal": 3.7
+      "impliedTotal": 3.67
     },
     {
       "espnId": "760445",
@@ -240,9 +228,9 @@
       "homeRaw": "Ecuador",
       "awayRaw": "Curaçao",
       "line": 3.5,
-      "overUS": "+120",
+      "overUS": "+115",
       "underUS": "-145",
-      "impliedTotal": 3.37
+      "impliedTotal": 3.39
     },
     {
       "espnId": "760448",
@@ -288,9 +276,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Egypt",
       "line": 2.5,
-      "overUS": "+125",
-      "underUS": "-155",
-      "impliedTotal": 2.37
+      "overUS": "+120",
+      "underUS": "-150",
+      "impliedTotal": 2.4
     },
     {
       "espnId": "760453",
@@ -301,8 +289,8 @@
       "awayRaw": "Saudi Arabia",
       "line": 3.5,
       "overUS": "+110",
-      "underUS": "-140",
-      "impliedTotal": 3.44
+      "underUS": "-135",
+      "impliedTotal": 3.45
     },
     {
       "espnId": "760449",
@@ -313,8 +301,8 @@
       "awayRaw": "Japan",
       "line": 2.5,
       "overUS": "+110",
-      "underUS": "-140",
-      "impliedTotal": 2.47
+      "underUS": "-135",
+      "impliedTotal": 2.49
     },
     {
       "espnId": "760450",
@@ -576,9 +564,9 @@
       "homeRaw": "Cape Verde",
       "awayRaw": "Saudi Arabia",
       "line": 2.5,
-      "overUS": "+120",
-      "underUS": "-150",
-      "impliedTotal": 2.4
+      "overUS": "+115",
+      "underUS": "-145",
+      "impliedTotal": 2.44
     },
     {
       "espnId": "760476",
@@ -600,9 +588,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Belgium",
       "line": 2.5,
-      "overUS": "-150",
-      "underUS": "+120",
-      "impliedTotal": 2.97
+      "overUS": "-160",
+      "underUS": "+125",
+      "impliedTotal": 3.02
     },
     {
       "espnId": "760475",
