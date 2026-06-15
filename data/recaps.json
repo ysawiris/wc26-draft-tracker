@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-14T22:30:59.216Z",
-  "count": 10,
+  "generatedAt": "2026-06-15T01:12:26.892Z",
+  "count": 11,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -393,6 +393,33 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Germany\",\"Curaçao\",7,1,[[\"6'\",\"Nmecha\",\"Germany\",\"home\",false,false],[\"21'\",\"Livano Comenencia\",\"Curaçao\",\"away\",false,false],[\"38'\",\"Schlotterbeck\",\"Germany\",\"home\",false,false],[\"47'\",\"Musiala\",\"Germany\",\"home\",false,false],[\"68'\",\"Nathaniel Brown\",\"Germany\",\"home\",false,false],[\"78'\",\"Deniz Undav\",\"Germany\",\"home\",false,false],[\"88'\",\"Havertz\",\"Germany\",\"home\",false,false]]]"
+    },
+    "400021467": {
+      "id": "400021467",
+      "group": "E",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "venue": "Philadelphia Stadium",
+      "utcDate": "2026-06-14T23:00:00Z",
+      "goals": [
+        {
+          "minute": "90'",
+          "order": 90,
+          "player": "Amad Diallo",
+          "team": "Ivory Coast",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Ivory Coast see off Ecuador",
+      "summary": "Ivory Coast leads Ecuador 1-0 as Amad Diallo scores in the 90th minute, securing the win, Amad Diallo is the key scorer, Ivory Coast wins.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Ivory Coast\",\"Ecuador\",1,0,[[\"90'\",\"Amad Diallo\",\"Ivory Coast\",\"home\",false,false]]]"
     },
     "400021470": {
       "id": "400021470",
