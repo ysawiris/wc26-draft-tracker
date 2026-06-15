@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T17:11:53.191Z",
+  "generatedAt": "2026-06-15T18:51:45.677Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 15.2,
+      "projTotal": 15.1,
       "rank": 8,
       "leads": false,
       "winningBar": 21,
@@ -21,7 +21,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
@@ -188,7 +188,7 @@
       "group": "E",
       "banked": 9,
       "remaining": 4,
-      "projTotal": 21.3,
+      "projTotal": 21.4,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -233,13 +233,13 @@
             {
               "home": "Ecuador",
               "away": "Curaçao",
-              "hg": 3,
+              "hg": 2,
               "ag": 1
             },
             {
               "home": "Curaçao",
               "away": "Ivory Coast",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             },
             {
@@ -284,7 +284,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! dominates with 24 goals, clearing the field of Big Blue Wrecking Crew"
+          "blurb": "Nicolodeons! takes control with 24 goals, leaving Gallactic Rebel Scum in the dust"
         },
         {
           "key": "fest",
@@ -304,13 +304,13 @@
               "home": "Ecuador",
               "away": "Curaçao",
               "hg": 3,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Curaçao",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Ecuador",
@@ -319,21 +319,21 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! ignites a goal-fest with 26 goals, leaving Gallactic Rebel Scum far behind"
+          "blurb": "Nicolodeons! runs away with 26 goals, crushing all rivals including Taco Corp"
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! must rally their Group E teams to unleash a goal-scoring frenzy and outpace rival managers, particularly those of Taco Corp and Big Blue Wrecking Crew, to grab the No.1 pick. To secure the top spot, Nicolodeons! needs their teams to score enough goals to leave the competition, including Gallactic Rebel Scum, in the dust",
+      "intro": "Nicolodeons! must ignite Group E's goal-scoring machine to grab the No.1 pick, outpacing rival managers like Taco Corp's and Gallactic Rebel Scum's! With 4 matches left, a strong finish is crucial to secure the top spot, fending off unclaimed Group I's potential surge",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[9,4,21,[[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",1,2],[\"Ecuador\",\"Germany\",1,2]]],[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,2],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",2,2]]]]]"
+      "fingerprint": "[9,4,21,[[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,2]]]]]"
     },
     "BBWC": {
       "group": "H",
       "banked": 0,
       "remaining": 5,
-      "projTotal": 13.8,
+      "projTotal": 13.7,
       "rank": 12,
       "leads": false,
       "winningBar": 21,
@@ -347,7 +347,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
@@ -510,7 +510,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "D",
@@ -655,7 +655,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
@@ -800,7 +800,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
@@ -981,7 +981,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
@@ -1162,7 +1162,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
@@ -1343,7 +1343,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
@@ -1453,7 +1453,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.3
+          "proj": 21.4
         },
         {
           "group": "F",
