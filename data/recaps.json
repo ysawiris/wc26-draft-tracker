@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T19:25:42.703Z",
-  "count": 13,
+  "generatedAt": "2026-06-15T21:55:27.187Z",
+  "count": 14,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -546,6 +546,42 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Sweden\",\"Tunisia\",5,1,[[\"7'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false],[\"30'\",\"Alexander Isak\",\"Sweden\",\"home\",false,false],[\"43'\",\"Omar Rekik\",\"Tunisia\",\"away\",false,false],[\"59'\",\"Viktor Gyokeres\",\"Sweden\",\"home\",false,false],[\"84'\",\"Mattias Svanberg\",\"Sweden\",\"home\",false,false],[\"90'+6'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false]]]"
+    },
+    "400021478": {
+      "id": "400021478",
+      "group": "G",
+      "home": "Belgium",
+      "away": "Egypt",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "Seattle Stadium",
+      "utcDate": "2026-06-15T19:00:00Z",
+      "goals": [
+        {
+          "minute": "19'",
+          "order": 19,
+          "player": "E.ashour",
+          "team": "Egypt",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "66'",
+          "order": 66,
+          "player": "M.hany",
+          "team": "Belgium",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Belgium and Egypt share the points",
+      "summary": "Belgium and Egypt are locked at 1-1 as E. Ashour scores for Egypt and M. Hany nets an own goal for Belgium, with the match still intense, M. Hany's mistake leveling the score. E. Ashour and M. Hany are the key scorers. The match is tied.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Belgium\",\"Egypt\",1,1,[[\"19'\",\"E.ashour\",\"Egypt\",\"away\",false,false],[\"66'\",\"M.hany\",\"Belgium\",\"home\",true,false]]]"
     },
     "400021482": {
       "id": "400021482",
