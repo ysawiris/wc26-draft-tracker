@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T06:14:50.961Z",
+  "generatedAt": "2026-06-15T11:27:36.989Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -31,7 +31,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         }
       ],
       "scenarios": [
@@ -207,7 +207,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         },
         {
           "group": "D",
@@ -333,7 +333,7 @@
       "group": "H",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 17.4,
+      "projTotal": 17.5,
       "rank": 3,
       "leads": false,
       "winningBar": 21,
@@ -533,7 +533,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         },
         {
           "group": "D",
@@ -683,7 +683,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         }
       ],
       "scenarios": [
@@ -828,7 +828,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         }
       ],
       "scenarios": [
@@ -1009,7 +1009,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         }
       ],
       "scenarios": [
@@ -1190,7 +1190,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         }
       ],
       "scenarios": [
@@ -1371,7 +1371,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         }
       ],
       "scenarios": [
@@ -1481,7 +1481,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.4
+          "proj": 17.5
         }
       ],
       "scenarios": [
