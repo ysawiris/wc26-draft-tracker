@@ -196,16 +196,12 @@
 
     // The next kickoff still to come — the countdown target. Suppressed while a
     // game is live (the live card itself carries the moment).
-    var nextKick = null, cdKey = null;
+    var nextKick = null;
     if (!anyLive) {
       var pending = todayGames.concat(tomorrowGames, later).filter(function (fx) {
         return !Live.FINISHED[fx.status] && !Live.INPLAY[fx.status] && fxDate(fx) > now;
       });
-      if (pending.length) {
-        nextKick = pending[0]; // each bucket is already kickoff-sorted, today first
-        var nk = dayKey(fxDate(nextKick));
-        cdKey = nk === todayK ? "today" : nk === tomorrowK ? "tomorrow" : "later";
-      }
+      if (pending.length) nextKick = pending[0]; // each bucket is already kickoff-sorted, today first
     }
 
     // Section list. With no today AND no tomorrow games, the rail collapses to a
@@ -225,7 +221,10 @@
     // One continuous rail. Each section contributes a vertical "spine" label
     // (Today / Tomorrow / Next up) followed by its cards, so the whole strip
     // stays a single horizontal row the user scrolls straight through.
-    var rail = "";
+    // The countdown rides in its own fixed-width card at the head of the rail —
+    // never inside a vertical spine, where its ever-changing length stretched
+    // every card to match the rotated text's height.
+    var rail = nextKick ? nextKickCard(nextKick, owners, now) : "";
     sections.forEach(function (sec) {
       var liveHere = anyLive && sec.key === "today";
 
@@ -234,9 +233,7 @@
       var games = sec.games;
       if (games.length) lastShown = games[games.length - 1];
 
-      var meta = liveHere
-        ? ' · <span class="rail-sec-cd">live</span>'
-        : (cdKey === sec.key ? ' · <span id="countdown" class="rail-sec-cd"></span>' : "");
+      var meta = liveHere ? ' · <span class="rail-sec-cd">live</span>' : "";
       rail += '<div class="rail-sec"><span class="rail-sec-inner">' +
         (liveHere ? '<span class="live-dot sm"></span> ' : "") +
         sec.label + meta + "</span></div>";
@@ -302,6 +299,26 @@
         (isLive ? ' <span class="mini-live">●</span>' +
           (fx.minute ? '<span class="mini-min">' + esc(fx.minute) + "</span>" : "") : "") + "</div>" +
       '<div class="mini-row"><span>' + fx.away.flag + " " + esc(fx.away.name) + "</span></div>" +
+      "</div>";
+  }
+
+  /* Head-of-rail countdown to the next kickoff. Fixed width, so the ticking
+     digits never reflow; card height matches the others, so it never stretches
+     the strip the way the old vertical-spine countdown did. */
+  function nextKickCard(fx, owners, now) {
+    var owner = owners[fx.group];
+    var ownerTag = owner
+      ? '<span class="mini-owner" style="--ac:' + (owner.accent || "#c89638") + '">' + esc(owner.abbr) + "</span>"
+      : "";
+    var sameDay = dayKey(fxDate(fx)) === dayKey(now);
+    var when = (sameDay ? "Today" : fmtDay(fxDate(fx))) + (fmtTime(fx) ? " · " + fmtTime(fx) : "");
+    return '<div class="mini mini-next">' +
+      '<div class="mini-grp"><span class="next-kick-ico">⏱</span> Next kickoff' +
+        (ownerTag ? " " + ownerTag : "") + "</div>" +
+      '<div class="next-kick-cd"><span id="countdown"></span></div>' +
+      '<div class="next-kick-match">' +
+        fx.home.flag + " " + esc(fx.home.name) + " v " + fx.away.flag + " " + esc(fx.away.name) + "</div>" +
+      '<div class="next-kick-when">' + esc(when) + "</div>" +
       "</div>";
   }
 

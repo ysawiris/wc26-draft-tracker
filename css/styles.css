@@ -421,6 +421,25 @@ nav, main, header, footer { position: relative; z-index: 1; }
 .mini-more-label { font-family: "Cinzel", serif; font-weight: 700; font-size: 0.92rem; }
 .mini-more-sub { font-size: 0.66rem; letter-spacing: 0.04em; color: var(--gold-2); }
 
+/* Head-of-rail "next kickoff" countdown card. Fixed width keeps the ticking
+   digits from reflowing; it shares the .mini box so its height matches the
+   match cards and the strip never grows when the timer is running. */
+.mini-next {
+  flex: 0 0 188px; display: flex; flex-direction: column; justify-content: center; gap: 4px;
+  background: linear-gradient(150deg, rgba(200, 150, 56, 0.18), rgba(200, 150, 56, 0.05));
+  border-color: rgba(200, 150, 56, 0.5);
+}
+.next-kick-ico { font-size: 0.78rem; }
+.next-kick-cd {
+  font-family: "Archivo", sans-serif; font-weight: 800; font-size: 1.45rem; line-height: 1.05;
+  color: var(--gold-1); letter-spacing: 0.01em; font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.next-kick-match {
+  font-family: "Cinzel", serif; font-weight: 700; font-size: 0.8rem; color: var(--text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.next-kick-when { font-size: 0.66rem; letter-spacing: 0.04em; color: var(--gold-2); }
+
 /* Brief highlight when the rail jumps you to a fixture in the schedule */
 .match.flash { animation: matchFlash 1.5s ease-out; }
 @keyframes matchFlash {
