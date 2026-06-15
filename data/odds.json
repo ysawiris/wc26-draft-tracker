@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-15T10:28:02.246Z",
+  "fetchedAt": "2026-06-15T14:28:18.247Z",
   "matchCount": 60,
   "lines": [
     {
@@ -12,9 +12,9 @@
       "homeRaw": "Belgium",
       "awayRaw": "Egypt",
       "line": 2.5,
-      "overUS": "-105",
-      "underUS": "-120",
-      "impliedTotal": 2.61
+      "overUS": "-110",
+      "underUS": "-110",
+      "impliedTotal": 2.67
     },
     {
       "espnId": "760427",
@@ -24,9 +24,9 @@
       "homeRaw": "Iran",
       "awayRaw": "New Zealand",
       "line": 2.5,
-      "overUS": "+145",
-      "underUS": "-185",
-      "impliedTotal": 2.23
+      "overUS": "+140",
+      "underUS": "-170",
+      "impliedTotal": 2.28
     },
     {
       "espnId": "760429",
@@ -36,9 +36,9 @@
       "homeRaw": "Saudi Arabia",
       "awayRaw": "Uruguay",
       "line": 2.5,
-      "overUS": "+110",
-      "underUS": "-135",
-      "impliedTotal": 2.49
+      "overUS": "+105",
+      "underUS": "-130",
+      "impliedTotal": 2.53
     },
     {
       "espnId": "760428",
@@ -48,9 +48,9 @@
       "homeRaw": "Spain",
       "awayRaw": "Cape Verde",
       "line": 3.5,
-      "overUS": "-115",
-      "underUS": "-105",
-      "impliedTotal": 3.72
+      "overUS": "-135",
+      "underUS": "+110",
+      "impliedTotal": 3.9
     },
     {
       "espnId": "760433",
@@ -133,8 +133,8 @@
       "awayRaw": "Congo DR",
       "line": 2.5,
       "overUS": "-145",
-      "underUS": "+115",
-      "impliedTotal": 2.93
+      "underUS": "+120",
+      "impliedTotal": 2.95
     },
     {
       "espnId": "760436",
@@ -192,9 +192,9 @@
       "homeRaw": "Switzerland",
       "awayRaw": "Bosnia-Herzegovina",
       "line": 2.5,
-      "overUS": "+110",
+      "overUS": "+105",
       "underUS": "-135",
-      "impliedTotal": 2.49
+      "impliedTotal": 2.51
     },
     {
       "espnId": "760444",
@@ -264,9 +264,9 @@
       "homeRaw": "Germany",
       "awayRaw": "Ivory Coast",
       "line": 2.5,
-      "overUS": "-135",
-      "underUS": "+110",
-      "impliedTotal": 2.87
+      "overUS": "-145",
+      "underUS": "+115",
+      "impliedTotal": 2.93
     },
     {
       "espnId": "760447",
@@ -313,8 +313,8 @@
       "awayRaw": "Saudi Arabia",
       "line": 3.5,
       "overUS": "+120",
-      "underUS": "-145",
-      "impliedTotal": 3.37
+      "underUS": "-150",
+      "impliedTotal": 3.35
     },
     {
       "espnId": "760449",
@@ -325,8 +325,8 @@
       "awayRaw": "Japan",
       "line": 2.5,
       "overUS": "+110",
-      "underUS": "-140",
-      "impliedTotal": 2.47
+      "underUS": "-135",
+      "impliedTotal": 2.49
     },
     {
       "espnId": "760450",
