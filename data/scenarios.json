@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T22:13:03.459Z",
+  "generatedAt": "2026-06-15T23:07:46.401Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -314,15 +314,15 @@
     "BBWC": {
       "group": "H",
       "banked": 0,
-      "remaining": 5,
-      "projTotal": 13.7,
+      "remaining": 4,
+      "projTotal": 11.2,
       "rank": 12,
       "leads": false,
       "winningBar": 21,
       "countries": [
+        "Spain",
         "Saudi Arabia",
         "Uruguay",
-        "Spain",
         "Cape Verde"
       ],
       "rivals": [
@@ -346,59 +346,12 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 22,
-          "yourRemainingGoals": 22,
-          "rivalCap": 21,
+          "targetTotal": 20,
+          "yourRemainingGoals": 20,
+          "rivalCap": 19,
           "needsHelp": true,
           "lines": [
             {
-              "home": "Saudi Arabia",
-              "away": "Uruguay",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Spain",
-              "away": "Saudi Arabia",
-              "hg": 4,
-              "ag": 2
-            },
-            {
-              "home": "Uruguay",
-              "away": "Cape Verde",
-              "hg": 3,
-              "ag": 1
-            },
-            {
-              "home": "Uruguay",
-              "away": "Spain",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Cape Verde",
-              "away": "Saudi Arabia",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Big Blue Wrecking Crew squeezes past Nicolodeons and Taco Corp with 22 goals"
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 24,
-          "yourRemainingGoals": 24,
-          "rivalCap": 23,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Saudi Arabia",
-              "away": "Uruguay",
-              "hg": 2,
-              "ag": 2
-            },
-            {
               "home": "Spain",
               "away": "Saudi Arabia",
               "hg": 4,
@@ -423,56 +376,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Big Blue Wrecking Crew takes care of business with 24 goals, outscoring Gallactic Rebel Scum"
-        },
-        {
-          "key": "fest",
-          "label": "Goal-fest",
-          "targetTotal": 25,
-          "yourRemainingGoals": 25,
-          "rivalCap": 24,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Saudi Arabia",
-              "away": "Uruguay",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Spain",
-              "away": "Saudi Arabia",
-              "hg": 4,
-              "ag": 2
-            },
-            {
-              "home": "Uruguay",
-              "away": "Cape Verde",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Uruguay",
-              "away": "Spain",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Cape Verde",
-              "away": "Saudi Arabia",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Big Blue Wrecking Crew unleashes a goal-fest with 25 goals, dominating all rival groups"
+          "blurb": "Big Blue Wrecking Crew's Group H is squeaking in with 20 goals, hoping Nicolodeons! and Taco Corp stall at 19 or under."
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew needs a massive goal surge to grab the No.1 pick, leaving rival managers in the dust. With 5 matches left, the group must explode out of last place, surpassing Nicolodeons, Taco Corp, and Gallactic Rebel Scum.",
+      "intro": "Big Blue Wrecking Crew must make a massive push to grab the No.1 pick, needing a huge goal surge to overtake rival groups like Nicolodeons! and Taco Corp. The Wrecking Crew's World Cup Group H is currently projected to finish last, so a dramatic turnaround is required to claim the top spot.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[0,5,21,[[22,[[\"Saudi Arabia\",\"Uruguay\",2,2],[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,2]]],[24,[[\"Saudi Arabia\",\"Uruguay\",2,2],[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]],[25,[[\"Saudi Arabia\",\"Uruguay\",2,3],[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]]]]"
+      "fingerprint": "[0,4,21,[[20,[[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]]]]"
     },
     "TACO": {
       "group": "F",
