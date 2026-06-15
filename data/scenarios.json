@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T14:35:32.902Z",
+  "generatedAt": "2026-06-15T17:11:53.191Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -8,7 +8,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 15.2,
-      "rank": 9,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -29,9 +29,9 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -205,14 +205,14 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
-        },
-        {
           "group": "D",
           "owner": "Gallactic Rebel Scum",
           "proj": 17.2
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -332,16 +332,16 @@
     "BBWC": {
       "group": "H",
       "banked": 0,
-      "remaining": 6,
-      "projTotal": 17.7,
-      "rank": 3,
+      "remaining": 5,
+      "projTotal": 13.8,
+      "rank": 12,
       "leads": false,
       "winningBar": 21,
       "countries": [
-        "Spain",
-        "Cape Verde",
         "Saudi Arabia",
-        "Uruguay"
+        "Uruguay",
+        "Spain",
+        "Cape Verde"
       ],
       "rivals": [
         {
@@ -370,22 +370,16 @@
           "needsHelp": true,
           "lines": [
             {
-              "home": "Spain",
-              "away": "Cape Verde",
-              "hg": 4,
-              "ag": 1
-            },
-            {
               "home": "Saudi Arabia",
               "away": "Uruguay",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             },
             {
               "home": "Spain",
               "away": "Saudi Arabia",
-              "hg": 3,
-              "ag": 1
+              "hg": 4,
+              "ag": 2
             },
             {
               "home": "Uruguay",
@@ -396,14 +390,14 @@
             {
               "home": "Uruguay",
               "away": "Spain",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             },
             {
               "home": "Cape Verde",
               "away": "Saudi Arabia",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             }
           ],
           "blurb": "Big Blue Wrecking Crew squeezes past Nicolodeons and Taco Corp with 22 goals"
@@ -417,98 +411,86 @@
           "needsHelp": false,
           "lines": [
             {
-              "home": "Spain",
-              "away": "Cape Verde",
-              "hg": 4,
-              "ag": 1
-            },
-            {
               "home": "Saudi Arabia",
               "away": "Uruguay",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             },
             {
               "home": "Spain",
               "away": "Saudi Arabia",
               "hg": 4,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Uruguay",
               "away": "Cape Verde",
               "hg": 3,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Uruguay",
               "away": "Spain",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Cape Verde",
               "away": "Saudi Arabia",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Manager outmuscles Gallactic Rebel Scum with a 24-goal tally"
+          "blurb": "Big Blue Wrecking Crew takes care of business with 24 goals, outscoring Gallactic Rebel Scum"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
-          "targetTotal": 26,
-          "yourRemainingGoals": 26,
-          "rivalCap": 25,
+          "targetTotal": 25,
+          "yourRemainingGoals": 25,
+          "rivalCap": 24,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "Spain",
-              "away": "Cape Verde",
-              "hg": 4,
-              "ag": 2
-            },
             {
               "home": "Saudi Arabia",
               "away": "Uruguay",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Spain",
               "away": "Saudi Arabia",
               "hg": 4,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Uruguay",
               "away": "Cape Verde",
               "hg": 3,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Uruguay",
               "away": "Spain",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Cape Verde",
               "away": "Saudi Arabia",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Big Blue Wrecking Crew dominates with a 26-goal explosion"
+          "blurb": "Big Blue Wrecking Crew unleashes a goal-fest with 25 goals, dominating all rival groups"
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew must outscore rival groups to grab the No.1 pick, with Nicolodeons and Taco Corp in the way. The crew needs a massive goal haul from Spain, Cape Verde, Saudi Arabia, and Uruguay to take the top spot",
+      "intro": "Big Blue Wrecking Crew needs a massive goal surge to grab the No.1 pick, leaving rival managers in the dust. With 5 matches left, the group must explode out of last place, surpassing Nicolodeons, Taco Corp, and Gallactic Rebel Scum.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[0,6,21,[[22,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",3,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",1,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[24,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",4,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[26,[[\"Spain\",\"Cape Verde\",4,2],[\"Saudi Arabia\",\"Uruguay\",2,2],[\"Spain\",\"Saudi Arabia\",4,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]]]]"
+      "fingerprint": "[0,5,21,[[22,[[\"Saudi Arabia\",\"Uruguay\",2,2],[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,2]]],[24,[[\"Saudi Arabia\",\"Uruguay\",2,2],[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]],[25,[[\"Saudi Arabia\",\"Uruguay\",2,3],[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]]]]"
     },
     "TACO": {
       "group": "F",
@@ -531,14 +513,14 @@
           "proj": 21.3
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
-        },
-        {
           "group": "D",
           "owner": "Gallactic Rebel Scum",
           "proj": 17.2
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -660,7 +642,7 @@
       "banked": 7,
       "remaining": 4,
       "projTotal": 17.2,
-      "rank": 4,
+      "rank": 3,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -681,9 +663,9 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 17.1
         }
       ],
       "scenarios": [
@@ -805,7 +787,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 15.8,
-      "rank": 8,
+      "rank": 7,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -826,9 +808,9 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -986,7 +968,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 16.4,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1007,9 +989,9 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1167,7 +1149,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 16,
-      "rank": 7,
+      "rank": 6,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1188,9 +1170,9 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1348,7 +1330,7 @@
       "banked": 4,
       "remaining": 4,
       "projTotal": 14.4,
-      "rank": 12,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1369,9 +1351,9 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -1458,7 +1440,7 @@
       "banked": 3,
       "remaining": 4,
       "projTotal": 14.9,
-      "rank": 10,
+      "rank": 9,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1479,9 +1461,9 @@
           "proj": 20.7
         },
         {
-          "group": "H",
-          "owner": "Big Blue Wrecking Crew",
-          "proj": 17.7
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
+          "proj": 17.2
         }
       ],
       "scenarios": [
