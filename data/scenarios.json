@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T11:27:36.989Z",
+  "generatedAt": "2026-06-15T14:35:32.902Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 15,
+      "projTotal": 15.2,
       "rank": 9,
       "leads": false,
       "winningBar": 21,
@@ -21,7 +21,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -31,7 +31,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         }
       ],
       "scenarios": [
@@ -188,7 +188,7 @@
       "group": "E",
       "banked": 9,
       "remaining": 4,
-      "projTotal": 21.2,
+      "projTotal": 21.3,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -207,7 +207,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         },
         {
           "group": "D",
@@ -333,7 +333,7 @@
       "group": "H",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 17.5,
+      "projTotal": 17.7,
       "rank": 3,
       "leads": false,
       "winningBar": 21,
@@ -347,7 +347,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -406,7 +406,7 @@
               "ag": 1
             }
           ],
-          "blurb": "Group H sneaks in with 22 goals, hoping Nicolodeons and Gallactic Rebel Scum stall at 21 or fewer goals."
+          "blurb": "Big Blue Wrecking Crew squeezes past Nicolodeons and Taco Corp with 22 goals"
         },
         {
           "key": "business",
@@ -453,7 +453,7 @@
               "ag": 1
             }
           ],
-          "blurb": "Group H takes care of business by reaching 24 goals, establishing a clear lead over all rival groups."
+          "blurb": "Manager outmuscles Gallactic Rebel Scum with a 24-goal tally"
         },
         {
           "key": "fest",
@@ -467,7 +467,7 @@
               "home": "Spain",
               "away": "Cape Verde",
               "hg": 4,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Saudi Arabia",
@@ -497,18 +497,18 @@
               "home": "Cape Verde",
               "away": "Saudi Arabia",
               "hg": 2,
-              "ag": 2
+              "ag": 1
             }
           ],
-          "blurb": "Group H enjoys a goal-fest, hitting 26 goals and leaving no doubt about their superiority in the tournament."
+          "blurb": "Big Blue Wrecking Crew dominates with a 26-goal explosion"
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "For Big Blue Wrecking Crew to snag the No.1 pick, they must dominate their remaining matches and outscore the competition! Every goal counts as they battle against Nicolodeons and Gallactic Rebel Scum!",
+      "intro": "Big Blue Wrecking Crew must outscore rival groups to grab the No.1 pick, with Nicolodeons and Taco Corp in the way. The crew needs a massive goal haul from Spain, Cape Verde, Saudi Arabia, and Uruguay to take the top spot",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[0,6,21,[[22,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",3,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",1,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[24,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",4,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[26,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",2,2],[\"Spain\",\"Saudi Arabia\",4,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,2]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[0,6,21,[[22,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",3,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",1,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[24,[[\"Spain\",\"Cape Verde\",4,1],[\"Saudi Arabia\",\"Uruguay\",1,2],[\"Spain\",\"Saudi Arabia\",4,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]],[26,[[\"Spain\",\"Cape Verde\",4,2],[\"Saudi Arabia\",\"Uruguay\",2,2],[\"Spain\",\"Saudi Arabia\",4,1],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,2],[\"Cape Verde\",\"Saudi Arabia\",2,1]]]]]"
     },
     "TACO": {
       "group": "F",
@@ -528,12 +528,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         },
         {
           "group": "D",
@@ -673,7 +673,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -683,7 +683,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         }
       ],
       "scenarios": [
@@ -818,7 +818,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -828,7 +828,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         }
       ],
       "scenarios": [
@@ -999,7 +999,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -1009,7 +1009,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         }
       ],
       "scenarios": [
@@ -1180,7 +1180,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -1190,7 +1190,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         }
       ],
       "scenarios": [
@@ -1347,7 +1347,7 @@
       "group": "B",
       "banked": 4,
       "remaining": 4,
-      "projTotal": 14.3,
+      "projTotal": 14.4,
       "rank": 12,
       "leads": false,
       "winningBar": 21,
@@ -1361,7 +1361,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -1371,7 +1371,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         }
       ],
       "scenarios": [
@@ -1471,7 +1471,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.2
+          "proj": 21.3
         },
         {
           "group": "F",
@@ -1481,7 +1481,7 @@
         {
           "group": "H",
           "owner": "Big Blue Wrecking Crew",
-          "proj": 17.5
+          "proj": 17.7
         }
       ],
       "scenarios": [
