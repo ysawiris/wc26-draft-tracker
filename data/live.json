@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-15T15:04:51.330Z",
+  "fetchedAt": "2026-06-15T16:49:33.454Z",
   "matchCount": 72,
   "matches": [
     {
@@ -165,13 +165,13 @@
       "group": "H",
       "matchday": null,
       "utcDate": "2026-06-15T16:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Spain",
       "away": "Cabo Verde",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Atlanta Stadium",
-      "minute": "0'"
+      "minute": "45'+3'"
     },
     {
       "id": "400021478",
@@ -1086,6 +1086,18 @@
           "r": 0,
           "f": 10
         }
+      },
+      "400021482": {
+        "Spain": {
+          "y": 0,
+          "r": 0,
+          "f": 5
+        },
+        "Cabo Verde": {
+          "y": 1,
+          "r": 0,
+          "f": 0
+        }
       }
     },
     "byCountry": {
@@ -1184,6 +1196,14 @@
       "Sweden": {
         "y": 0,
         "r": 0
+      },
+      "Spain": {
+        "y": 0,
+        "r": 0
+      },
+      "Cabo Verde": {
+        "y": 1,
+        "r": 0
       }
     }
   },
@@ -1260,6 +1280,9 @@
       },
       "Sweden": {
         "f": 10
+      },
+      "Spain": {
+        "f": 5
       }
     }
   }
