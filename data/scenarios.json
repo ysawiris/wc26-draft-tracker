@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T01:37:09.913Z",
+  "generatedAt": "2026-06-15T03:41:30.192Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -512,16 +512,16 @@
     },
     "TACO": {
       "group": "F",
-      "banked": 4,
-      "remaining": 5,
-      "projTotal": 16.7,
-      "rank": 5,
+      "banked": 6,
+      "remaining": 4,
+      "projTotal": 16.4,
+      "rank": 6,
       "leads": false,
       "winningBar": 21,
       "countries": [
+        "Netherlands",
         "Sweden",
         "Tunisia",
-        "Netherlands",
         "Japan"
       ],
       "rivals": [
@@ -546,16 +546,10 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 18,
+          "yourRemainingGoals": 16,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Sweden",
-              "away": "Tunisia",
-              "hg": 2,
-              "ag": 1
-            },
             {
               "home": "Netherlands",
               "away": "Sweden",
@@ -565,7 +559,7 @@
             {
               "home": "Tunisia",
               "away": "Japan",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             },
             {
@@ -581,27 +575,21 @@
               "ag": 2
             }
           ],
-          "blurb": "Taco Corp's Group F squeaks in with 22 goals as Nicolodeons stall at 21 or under"
+          "blurb": "Taco Corp squeezes past Nicolodeons as rivals stall at 21 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 20,
+          "yourRemainingGoals": 18,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
             {
-              "home": "Sweden",
-              "away": "Tunisia",
-              "hg": 2,
-              "ag": 2
-            },
-            {
               "home": "Netherlands",
               "away": "Sweden",
               "hg": 3,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Tunisia",
@@ -612,7 +600,7 @@
             {
               "home": "Tunisia",
               "away": "Netherlands",
-              "hg": 1,
+              "hg": 2,
               "ag": 3
             },
             {
@@ -622,22 +610,16 @@
               "ag": 2
             }
           ],
-          "blurb": "Taco Corp takes care of business with 24 goals, outscoring Big Blue Wrecking Crew and Gallactic Rebel Scum"
+          "blurb": "Taco Corp takes care of business reaching 24 goals clear of Big Blue Wrecking Crew"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
           "targetTotal": 26,
-          "yourRemainingGoals": 22,
+          "yourRemainingGoals": 20,
           "rivalCap": 25,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "Sweden",
-              "away": "Tunisia",
-              "hg": 2,
-              "ag": 2
-            },
             {
               "home": "Netherlands",
               "away": "Sweden",
@@ -648,7 +630,7 @@
               "home": "Tunisia",
               "away": "Japan",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Tunisia",
@@ -659,19 +641,19 @@
             {
               "home": "Japan",
               "away": "Sweden",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             }
           ],
-          "blurb": "Taco Corp ignites a goal-fest with 26 goals, dominating the field and leaving rivals in the dust"
+          "blurb": "Taco Corp ignites a goal-fest reaching 26 goals leaving Gallactic Rebel Scum in the dust"
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp needs a massive goal surge to grab the No.1 pick, requiring a perfect storm of high-scoring matches and rival groups stalling, with the likes of Nicolodeons, Big Blue Wrecking Crew, and Gallactic Rebel Scum breathing down their necks. To secure the top spot, Taco Corp must rally their Group F teams to score at an unprecedented pace, leaving their competitors in the dust",
+      "intro": "Taco Corp needs a goal-scoring explosion to grab the No.1 pick, with Nicolodeons, Big Blue Wrecking Crew, and Gallactic Rebel Scum lurking as rivals. To take the top spot, Taco Corp must outscore the competition and capitalize on the remaining matches to secure the highest total goals.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[4,5,21,[[22,[[\"Sweden\",\"Tunisia\",2,1],[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]],[24,[[\"Sweden\",\"Tunisia\",2,2],[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]],[26,[[\"Sweden\",\"Tunisia\",2,2],[\"Netherlands\",\"Sweden\",3,2],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",2,3],[\"Japan\",\"Sweden\",2,2]]]]]"
+      "fingerprint": "[6,4,21,[[22,[[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]],[24,[[\"Netherlands\",\"Sweden\",3,2],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",2,3],[\"Japan\",\"Sweden\",2,2]]],[26,[[\"Netherlands\",\"Sweden\",3,2],[\"Tunisia\",\"Japan\",2,3],[\"Tunisia\",\"Netherlands\",2,3],[\"Japan\",\"Sweden\",3,2]]]]]"
     },
     "GRS": {
       "group": "D",
@@ -1004,7 +986,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 16.4,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 21,
       "countries": [
