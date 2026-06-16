@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T21:55:27.187Z",
-  "count": 14,
+  "generatedAt": "2026-06-16T01:15:11.247Z",
+  "count": 15,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -599,6 +599,42 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Spain\",\"Cape Verde\",0,0,[]]"
+    },
+    "400021486": {
+      "id": "400021486",
+      "group": "H",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "Miami Stadium",
+      "utcDate": "2026-06-15T22:00:00Z",
+      "goals": [
+        {
+          "minute": "41'",
+          "order": 41,
+          "player": "Alamri",
+          "team": "Saudi Arabia",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "80'",
+          "order": 80,
+          "player": "Maxi Araujo",
+          "team": "Uruguay",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Saudi Arabia and Uruguay share the points",
+      "summary": "Saudi Arabia and Uruguay are battling to a 1-1 draw, Alamri scores for Saudi Arabia, Maxi Araujo equalizes for Uruguay, the match is intensifying. Alamri and Maxi Araujo are the key scorers. The score is tied at 1-1.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Saudi Arabia\",\"Uruguay\",1,1,[[\"41'\",\"Alamri\",\"Saudi Arabia\",\"home\",false,false],[\"80'\",\"Maxi Araujo\",\"Uruguay\",\"away\",false,false]]]"
     }
   }
 }
