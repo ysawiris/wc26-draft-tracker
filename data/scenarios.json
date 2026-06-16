@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T10:16:20.277Z",
+  "generatedAt": "2026-06-16T14:14:12.996Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -8,7 +8,7 @@
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.3,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -21,7 +21,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -152,7 +152,7 @@
       "group": "E",
       "banked": 9,
       "remaining": 4,
-      "projTotal": 21.4,
+      "projTotal": 21.5,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -176,7 +176,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 17.1
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -213,7 +213,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Group E squeaks in by reaching 22 goals while rivals Taco Corp and Gallactic Rebel Scum falter at 21 or under."
+          "blurb": "Group E scores 22 goals as Taco Corp and Gallactic Rebel Scum stall"
         },
         {
           "key": "business",
@@ -248,7 +248,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Group E takes care of business by scoring 24 goals, ensuring a clear lead over all rival groups in the race."
+          "blurb": "Group E reaches 24 goals taking care of business ahead of the field"
         },
         {
           "key": "fest",
@@ -268,7 +268,7 @@
               "home": "Ecuador",
               "away": "Curaçao",
               "hg": 3,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Curaçao",
@@ -279,19 +279,19 @@
             {
               "home": "Ecuador",
               "away": "Germany",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             }
           ],
-          "blurb": "Group E experiences a goal-fest, hitting 26 goals and leaving rivals like Taco Corp and Gallactic Rebel Scum in the dust."
+          "blurb": "Group E explodes to 26 goals in a goal-fest clearing the competition"
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! must unleash their offensive firepower to secure the No.1 pick! With rivals lurking, they need to dominate the scoreboard!",
+      "intro": "Nicolodeons! must push Group E to new heights to grab the No.1 pick, outscoring rival managers like Taco Corp and Gallactic Rebel Scum! With 4 matches left, a strong finish is crucial to take the top spot, with the unclaimed Group I also looming as a potential threat",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[9,4,21,[[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,2],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",1,2]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[9,4,21,[[22,[[\"Germany\",\"Ivory Coast\",2,1],[\"Ecuador\",\"Curaçao\",2,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,2]]]]]"
     },
     "BBWC": {
       "group": "H",
@@ -311,7 +311,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -386,7 +386,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "D",
@@ -396,7 +396,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 17.1
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -531,7 +531,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -541,7 +541,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 17.1
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -676,7 +676,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -844,7 +844,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 16.3,
-      "rank": 5,
+      "rank": 6,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -857,7 +857,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -1038,7 +1038,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -1205,7 +1205,7 @@
       "group": "B",
       "banked": 4,
       "remaining": 4,
-      "projTotal": 14.4,
+      "projTotal": 14.3,
       "rank": 11,
       "leads": false,
       "winningBar": 21,
@@ -1219,7 +1219,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -1329,7 +1329,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
