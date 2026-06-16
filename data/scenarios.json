@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T18:07:54.040Z",
+  "generatedAt": "2026-06-16T21:26:08.777Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -29,9 +29,9 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -169,13 +169,13 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
+          "proj": 18.5
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
           "proj": 17.2
         }
       ],
@@ -319,9 +319,9 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -389,13 +389,13 @@
           "proj": 21.5
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
+          "proj": 18.5
+        },
+        {
+          "group": "D",
+          "owner": "Gallactic Rebel Scum",
           "proj": 17.2
         }
       ],
@@ -518,7 +518,7 @@
       "banked": 7,
       "remaining": 4,
       "projTotal": 17.2,
-      "rank": 3,
+      "rank": 4,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -541,7 +541,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 17.2
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -684,9 +684,9 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -865,9 +865,9 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -1046,9 +1046,9 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -1205,7 +1205,7 @@
       "group": "B",
       "banked": 4,
       "remaining": 4,
-      "projTotal": 14.3,
+      "projTotal": 14.4,
       "rank": 11,
       "leads": false,
       "winningBar": 21,
@@ -1227,9 +1227,9 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -1337,9 +1337,9 @@
           "proj": 20.7
         },
         {
-          "group": "D",
-          "owner": "Gallactic Rebel Scum",
-          "proj": 17.2
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.5
         }
       ],
       "scenarios": [
