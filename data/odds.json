@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-16T14:10:18.047Z",
+  "fetchedAt": "2026-06-16T18:03:01.628Z",
   "matchCount": 56,
   "lines": [
     {
@@ -24,9 +24,9 @@
       "homeRaw": "France",
       "awayRaw": "Senegal",
       "line": 2.5,
-      "overUS": "-130",
-      "underUS": "+105",
-      "impliedTotal": 2.83
+      "overUS": "-135",
+      "underUS": "+110",
+      "impliedTotal": 2.87
     },
     {
       "espnId": "760430",
@@ -36,9 +36,9 @@
       "homeRaw": "Iraq",
       "awayRaw": "Norway",
       "line": 2.5,
-      "overUS": "-165",
+      "overUS": "-160",
       "underUS": "+130",
-      "impliedTotal": 3.05
+      "impliedTotal": 3.04
     },
     {
       "espnId": "760431",
@@ -84,9 +84,9 @@
       "homeRaw": "Portugal",
       "awayRaw": "Congo DR",
       "line": 2.5,
-      "overUS": "-140",
-      "underUS": "+115",
-      "impliedTotal": 2.91
+      "overUS": "-135",
+      "underUS": "+110",
+      "impliedTotal": 2.87
     },
     {
       "espnId": "760436",
@@ -156,9 +156,9 @@
       "homeRaw": "Brazil",
       "awayRaw": "Haiti",
       "line": 3.5,
-      "overUS": "-110",
+      "overUS": "-115",
       "underUS": "-110",
-      "impliedTotal": 3.67
+      "impliedTotal": 3.7
     },
     {
       "espnId": "760445",
@@ -193,8 +193,8 @@
       "awayRaw": "Australia",
       "line": 2.5,
       "overUS": "-105",
-      "underUS": "-120",
-      "impliedTotal": 2.61
+      "underUS": "-115",
+      "impliedTotal": 2.63
     },
     {
       "espnId": "760446",
@@ -252,9 +252,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Egypt",
       "line": 2.5,
-      "overUS": "+120",
+      "overUS": "+115",
       "underUS": "-145",
-      "impliedTotal": 2.42
+      "impliedTotal": 2.44
     },
     {
       "espnId": "760453",
@@ -264,9 +264,9 @@
       "homeRaw": "Spain",
       "awayRaw": "Saudi Arabia",
       "line": 3.5,
-      "overUS": "+125",
+      "overUS": "+120",
       "underUS": "-150",
-      "impliedTotal": 3.33
+      "impliedTotal": 3.35
     },
     {
       "espnId": "760449",
@@ -349,8 +349,8 @@
       "awayRaw": "Congo DR",
       "line": 2.5,
       "overUS": "+120",
-      "underUS": "-145",
-      "impliedTotal": 2.42
+      "underUS": "-150",
+      "impliedTotal": 2.4
     },
     {
       "espnId": "760458",
