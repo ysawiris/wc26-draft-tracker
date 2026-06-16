@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T03:41:57.419Z",
+  "generatedAt": "2026-06-16T06:17:39.741Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
-      "banked": 5,
+      "banked": 6,
       "remaining": 4,
-      "projTotal": 15.3,
-      "rank": 8,
+      "projTotal": 16.3,
+      "rank": 6,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -39,14 +39,14 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 17,
+          "yourRemainingGoals": 16,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
             {
               "home": "Belgium",
               "away": "Iran",
-              "hg": 3,
+              "hg": 2,
               "ag": 2
             },
             {
@@ -68,13 +68,13 @@
               "ag": 1
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 squeaks past Nicolodeons and Taco Corp at 22 goals"
+          "blurb": "Commissioner's Infirmary 2.0 squeezes past Nicolodeons with 22 goals"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 19,
+          "yourRemainingGoals": 18,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
@@ -94,7 +94,7 @@
               "home": "New Zealand",
               "away": "Belgium",
               "hg": 2,
-              "ag": 4
+              "ag": 3
             },
             {
               "home": "Egypt",
@@ -103,14 +103,14 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 takes care of business with 24 goals, clearing the field"
+          "blurb": "Commissioner's Infirmary 2.0 dominates the field with 24 goals"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
-          "targetTotal": 25,
+          "targetTotal": 26,
           "yourRemainingGoals": 20,
-          "rivalCap": 24,
+          "rivalCap": 25,
           "needsHelp": false,
           "lines": [
             {
@@ -138,15 +138,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 ignites a goal-fest, reaching 25 goals and dominating rivals Gallactic Rebel Scum"
+          "blurb": "Commissioner's Infirmary 2.0 blows away Taco Corp with 26 goals"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a goal-scoring explosion to grab the No.1 pick, surpassing rival managers like Nicolodeons and Taco Corp. With 4 matches left, the group must buck its current 8th-place ranking to take the top spot, requiring a significant surge in goal production to outpace the competition.",
+      "intro": "Commissioner's Infirmary 2.0 must surge to the top of the goal-scoring leaderboard to grab the No.1 pick, leaving rival managers like Nicolodeons and Taco Corp in the dust. To do so, the group needs a significant increase in goals, with about 21+ required to feel safe from the competition",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[5,4,21,[[22,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]],[24,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]],[25,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[6,4,21,[[22,[[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]],[24,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,2]]],[26,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -297,7 +297,7 @@
       "group": "H",
       "banked": 2,
       "remaining": 4,
-      "projTotal": 13,
+      "projTotal": 12.9,
       "rank": 12,
       "leads": false,
       "winningBar": 21,
@@ -663,7 +663,7 @@
       "banked": 0,
       "remaining": 6,
       "projTotal": 15.8,
-      "rank": 7,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -843,7 +843,7 @@
       "group": "J",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 16.4,
+      "projTotal": 16.3,
       "rank": 5,
       "leads": false,
       "winningBar": 21,
@@ -882,7 +882,7 @@
             {
               "home": "Argentina",
               "away": "Algeria",
-              "hg": 3,
+              "hg": 2,
               "ag": 1
             },
             {
@@ -895,7 +895,7 @@
               "home": "Argentina",
               "away": "Austria",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Jordan",
@@ -916,7 +916,7 @@
               "ag": 3
             }
           ],
-          "blurb": "Nicolodeons! stalls at 21 goals as Group J squeaks in with 22 goals"
+          "blurb": "Group J squeaks in by reaching 22 goals as Nicolodeons and Taco Corp stall at 21 or under"
         },
         {
           "key": "business",
@@ -963,7 +963,7 @@
               "ag": 3
             }
           ],
-          "blurb": "Group J takes care of business reaching 24 goals clear of the field"
+          "blurb": "Group J takes care of business by reaching 24 goals, clearing the field of rival groups"
         },
         {
           "key": "fest",
@@ -1010,22 +1010,22 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J ignites a goal-fest reaching 26 goals outpacing Big Blue Wrecking Crew and Gallactic Rebel Scum"
+          "blurb": "Group J ignites a goal-fest by reaching 26 goals, leaving Gallactic Rebel Scum and others far behind"
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year must orchestrate a goal-scoring explosion to seize the No.1 pick, outgunning rival managers like Nicolodeons! and Big Blue Wrecking Crew. With 6 matches left, Group J needs a massive surge to overcome its current deficit and claim the top spot.",
+      "intro": "Another Rebuilding Year needs a goal-scoring explosion to grab the No.1 pick, outpacing rival managers like Nicolodeons and Taco Corp. To rise from fifth place, Group J must significantly exceed its projected total and outscore the toughest rival groups, including Gallactic Rebel Scum.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[0,6,21,[[22,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,1],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[24,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,3]]],[26,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,2],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]]]]"
+      "fingerprint": "[0,6,21,[[22,[[\"Argentina\",\"Algeria\",2,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[24,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,3]]],[26,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,2],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]]]]"
     },
     "TMM": {
       "group": "K",
       "banked": 0,
       "remaining": 6,
       "projTotal": 16,
-      "rank": 6,
+      "rank": 7,
       "leads": false,
       "winningBar": 21,
       "countries": [
