@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-16T00:05:21.804Z",
+  "fetchedAt": "2026-06-16T01:30:03.870Z",
   "matchCount": 72,
   "matches": [
     {
@@ -204,13 +204,13 @@
       "group": "G",
       "matchday": null,
       "utcDate": "2026-06-16T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "IR Iran",
       "away": "New Zealand",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 1,
       "venue": "Los Angeles Stadium",
-      "minute": "0'"
+      "minute": "25'"
     },
     {
       "id": "400021490",
@@ -1087,6 +1087,18 @@
           "f": 10
         }
       },
+      "400021476": {
+        "New Zealand": {
+          "y": 0,
+          "r": 0,
+          "f": 2
+        },
+        "IR Iran": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021478": {
         "Belgium": {
           "y": 2,
@@ -1221,6 +1233,14 @@
         "y": 0,
         "r": 0
       },
+      "New Zealand": {
+        "y": 0,
+        "r": 0
+      },
+      "IR Iran": {
+        "y": 0,
+        "r": 0
+      },
       "Belgium": {
         "y": 2,
         "r": 0
@@ -1320,6 +1340,12 @@
       },
       "Sweden": {
         "f": 10
+      },
+      "New Zealand": {
+        "f": 2
+      },
+      "IR Iran": {
+        "f": 1
       },
       "Belgium": {
         "f": 13
