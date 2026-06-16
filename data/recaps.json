@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T01:15:11.247Z",
-  "count": 15,
+  "generatedAt": "2026-06-16T03:49:29.496Z",
+  "count": 16,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -546,6 +546,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Sweden\",\"Tunisia\",5,1,[[\"7'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false],[\"30'\",\"Alexander Isak\",\"Sweden\",\"home\",false,false],[\"43'\",\"Omar Rekik\",\"Tunisia\",\"away\",false,false],[\"59'\",\"Viktor Gyokeres\",\"Sweden\",\"home\",false,false],[\"84'\",\"Mattias Svanberg\",\"Sweden\",\"home\",false,false],[\"90'+6'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false]]]"
+    },
+    "400021476": {
+      "id": "400021476",
+      "group": "G",
+      "home": "Iran",
+      "away": "New Zealand",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "venue": "Los Angeles Stadium",
+      "utcDate": "2026-06-16T01:00:00Z",
+      "goals": [
+        {
+          "minute": "7'",
+          "order": 7,
+          "player": "Just",
+          "team": "New Zealand",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "32'",
+          "order": 32,
+          "player": "Ramin",
+          "team": "Iran",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "54'",
+          "order": 54,
+          "player": "Just",
+          "team": "New Zealand",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "64'",
+          "order": 64,
+          "player": "M.mohebbi",
+          "team": "Iran",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Iran and New Zealand share the points",
+      "summary": "Just scores for New Zealand, but Ramin and M.mohebbi equalize for Iran, with Just also scoring again, as Iran and New Zealand are tied 2-2, Just and Ramin and M.mohebbi are the key scorers, Iran and New Zealand are level.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Iran\",\"New Zealand\",2,2,[[\"7'\",\"Just\",\"New Zealand\",\"away\",false,false],[\"32'\",\"Ramin\",\"Iran\",\"home\",false,false],[\"54'\",\"Just\",\"New Zealand\",\"away\",false,false],[\"64'\",\"M.mohebbi\",\"Iran\",\"home\",false,false]]]"
     },
     "400021478": {
       "id": "400021478",
