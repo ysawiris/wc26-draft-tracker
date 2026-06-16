@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T06:17:39.741Z",
+  "generatedAt": "2026-06-16T10:16:20.277Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -882,7 +882,7 @@
             {
               "home": "Argentina",
               "away": "Algeria",
-              "hg": 2,
+              "hg": 3,
               "ag": 1
             },
             {
@@ -895,7 +895,7 @@
               "home": "Argentina",
               "away": "Austria",
               "hg": 2,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Jordan",
@@ -916,7 +916,7 @@
               "ag": 3
             }
           ],
-          "blurb": "Group J squeaks in by reaching 22 goals as Nicolodeons and Taco Corp stall at 21 or under"
+          "blurb": "Group J squeezes in with 22 goals, relying on Nicolodeons and Taco Corp to stall at 21 or fewer goals."
         },
         {
           "key": "business",
@@ -963,7 +963,7 @@
               "ag": 3
             }
           ],
-          "blurb": "Group J takes care of business by reaching 24 goals, clearing the field of rival groups"
+          "blurb": "Group J takes care of business, scoring 24 goals and establishing a solid lead over the competition for the No.1 pick."
         },
         {
           "key": "fest",
@@ -1010,15 +1010,15 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J ignites a goal-fest by reaching 26 goals, leaving Gallactic Rebel Scum and others far behind"
+          "blurb": "In a goal-fest scenario, Group J erupts for 26 goals, leaving rivals like Gallactic Rebel Scum chasing their tails in desperation."
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year needs a goal-scoring explosion to grab the No.1 pick, outpacing rival managers like Nicolodeons and Taco Corp. To rise from fifth place, Group J must significantly exceed its projected total and outscore the toughest rival groups, including Gallactic Rebel Scum.",
+      "intro": "For Another Rebuilding Year to snatch the No.1 pick, they must unleash their scoring potential while hoping rivals falter. With six matches left, the path is clear: find the net and outpace the competition!",
       "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[0,6,21,[[22,[[\"Argentina\",\"Algeria\",2,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[24,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,3]]],[26,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,2],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]]]]"
+      "aiVia": "GitHub Models",
+      "fingerprint": "[0,6,21,[[22,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,1],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",1,2],[\"Jordan\",\"Argentina\",1,3]]],[24,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,3]]],[26,[[\"Argentina\",\"Algeria\",3,1],[\"Austria\",\"Jordan\",3,2],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]]]]"
     },
     "TMM": {
       "group": "K",
@@ -1205,7 +1205,7 @@
       "group": "B",
       "banked": 4,
       "remaining": 4,
-      "projTotal": 14.3,
+      "projTotal": 14.4,
       "rank": 11,
       "leads": false,
       "winningBar": 21,
