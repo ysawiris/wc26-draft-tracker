@@ -1,20 +1,20 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T00:02:52.949Z",
+  "generatedAt": "2026-06-16T01:35:35.425Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
-      "banked": 2,
-      "remaining": 5,
-      "projTotal": 14.6,
-      "rank": 10,
+      "banked": 3,
+      "remaining": 4,
+      "projTotal": 13.3,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
+        "Belgium",
         "Iran",
         "New Zealand",
-        "Belgium",
         "Egypt"
       ],
       "rivals": [
@@ -39,20 +39,14 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 20,
+          "yourRemainingGoals": 19,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
             {
-              "home": "Iran",
-              "away": "New Zealand",
-              "hg": 3,
-              "ag": 1
-            },
-            {
               "home": "Belgium",
               "away": "Iran",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             },
             {
@@ -65,72 +59,25 @@
               "home": "New Zealand",
               "away": "Belgium",
               "hg": 2,
-              "ag": 3
+              "ag": 4
             },
             {
               "home": "Egypt",
               "away": "Iran",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 squeaks in as Group G reaches 22 goals, rivals stall at 21 or under, led by Nicolodeons!"
+          "blurb": "Commissioner's Infirmary 2.0 is squeaking in with 22 goals as Nicolodeons and Taco Corp stall at 21 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
-          "targetTotal": 24,
-          "yourRemainingGoals": 22,
-          "rivalCap": 23,
+          "targetTotal": 23,
+          "yourRemainingGoals": 20,
+          "rivalCap": 22,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "Iran",
-              "away": "New Zealand",
-              "hg": 3,
-              "ag": 1
-            },
-            {
-              "home": "Belgium",
-              "away": "Iran",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "New Zealand",
-              "away": "Egypt",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "New Zealand",
-              "away": "Belgium",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Egypt",
-              "away": "Iran",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Commissioner's Infirmary 2.0 takes care of business as Group G reaches 24 goals, clearing the field ahead of Taco Corp"
-        },
-        {
-          "key": "fest",
-          "label": "Goal-fest",
-          "targetTotal": 26,
-          "yourRemainingGoals": 24,
-          "rivalCap": 25,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Iran",
-              "away": "New Zealand",
-              "hg": 3,
-              "ag": 1
-            },
             {
               "home": "Belgium",
               "away": "Iran",
@@ -156,15 +103,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 sparks a goal-fest as Group G reaches 26 goals, outpacing Gallactic Rebel Scum and the rest"
+          "blurb": "Commissioner's Infirmary 2.0 is taking care of business with 23 goals, clearing the field ahead of Gallactic Rebel Scum"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a massive goal surge to snatch the No.1 pick, with Nicolodeons! and Taco Corp lurking, Gallactic Rebel Scum also in the mix. To take the top spot, Group G must outscore and outmaneuver its toughest rivals, led by Nicolodeons! and Taco Corp, with a huge goal haul",
+      "intro": "Commissioner's Infirmary 2.0 must rally their World Cup Group G to dominate the goal-scoring charts and snatch the No.1 pick, overcoming fierce competition from rival managers like Nicolodeons and Taco Corp. To achieve this, they need a remarkable turnaround, with Group G's teams firing on all cylinders to outscore the opposition and claim the top spot.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[2,5,21,[[22,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",2,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]],[24,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,2]]],[26,[[\"Iran\",\"New Zealand\",3,1],[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[3,4,21,[[22,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]],[23,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -313,9 +260,9 @@
     },
     "BBWC": {
       "group": "H",
-      "banked": 1,
+      "banked": 2,
       "remaining": 4,
-      "projTotal": 12.2,
+      "projTotal": 13,
       "rank": 12,
       "leads": false,
       "winningBar": 21,
@@ -346,9 +293,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 21,
+          "targetTotal": 22,
           "yourRemainingGoals": 20,
-          "rivalCap": 20,
+          "rivalCap": 21,
           "needsHelp": true,
           "lines": [
             {
@@ -361,7 +308,7 @@
               "home": "Uruguay",
               "away": "Cape Verde",
               "hg": 3,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Uruguay",
@@ -372,19 +319,19 @@
             {
               "home": "Cape Verde",
               "away": "Saudi Arabia",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             }
           ],
-          "blurb": "Group H scores 21 goals, surpassing Nicolodeons and Taco Corp"
+          "blurb": "Group H is scoring big, reaching 22 goals as rivals like Nicolodeons stall at 21 or under"
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew needs a surge to grab the No.1 pick, requiring a monumental goal-scoring effort from World Cup Group H. The crew must outscore fierce rival groups like Nicolodeons, Taco Corp, and Gallactic Rebel Scum to rise to the top",
+      "intro": "Big Blue Wrecking Crew must ignite their World Cup Group H offense to grab the No.1 pick, surpassing rival groups like Nicolodeons and Taco Corp. With 4 matches left, the pressure is on to outscore and outmaneuver opposing managers to claim the top spot.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[1,4,21,[[21,[[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]]]]"
+      "fingerprint": "[2,4,21,[[22,[[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
     },
     "TACO": {
       "group": "F",
@@ -861,7 +808,7 @@
       "group": "J",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 16.5,
+      "projTotal": 16.4,
       "rank": 5,
       "leads": false,
       "winningBar": 21,
@@ -1224,7 +1171,7 @@
       "banked": 4,
       "remaining": 4,
       "projTotal": 14.3,
-      "rank": 11,
+      "rank": 10,
       "leads": false,
       "winningBar": 21,
       "countries": [
