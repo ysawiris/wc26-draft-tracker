@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T03:49:29.496Z",
-  "count": 16,
+  "generatedAt": "2026-06-16T21:07:32.961Z",
+  "count": 17,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -689,6 +689,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Saudi Arabia\",\"Uruguay\",1,1,[[\"41'\",\"Alamri\",\"Saudi Arabia\",\"home\",false,false],[\"80'\",\"Maxi Araujo\",\"Uruguay\",\"away\",false,false]]]"
+    },
+    "400021490": {
+      "id": "400021490",
+      "group": "I",
+      "home": "France",
+      "away": "Senegal",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "venue": "New York/New Jersey Stadium",
+      "utcDate": "2026-06-16T19:00:00Z",
+      "goals": [
+        {
+          "minute": "66'",
+          "order": 66,
+          "player": "Mbappé",
+          "team": "France",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "82'",
+          "order": 82,
+          "player": "Barcola",
+          "team": "France",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+5'",
+          "order": 90.05,
+          "player": "Mbaye",
+          "team": "Senegal",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+6'",
+          "order": 90.06,
+          "player": "Mbappé",
+          "team": "France",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "France see off Senegal",
+      "summary": "France leads Senegal 3-1 with Mbappé and Barcola scoring for France and Mbaye scoring for Senegal, Mbappé seals the win with a late goal, France is taking the three points. Mbappé scores twice. France wins 3-1.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"France\",\"Senegal\",3,1,[[\"66'\",\"Mbappé\",\"France\",\"home\",false,false],[\"82'\",\"Barcola\",\"France\",\"home\",false,false],[\"90'+5'\",\"Mbaye\",\"Senegal\",\"away\",false,false],[\"90'+6'\",\"Mbappé\",\"France\",\"home\",false,false]]]"
     }
   }
 }
