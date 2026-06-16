@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-16T22:48:29.103Z",
+  "fetchedAt": "2026-06-16T23:22:17.682Z",
   "matchCount": 72,
   "matches": [
     {
@@ -236,7 +236,7 @@
       "homeGoals": 1,
       "awayGoals": 2,
       "venue": "Boston Stadium",
-      "minute": "45'+2'"
+      "minute": "59'"
     },
     {
       "id": "400021496",
@@ -1144,7 +1144,7 @@
         "Iraq": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 8
         }
       },
       "400021490": {
@@ -1406,7 +1406,7 @@
         "f": 9
       },
       "Iraq": {
-        "f": 5
+        "f": 8
       },
       "Senegal": {
         "f": 9
