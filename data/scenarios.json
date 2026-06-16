@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-15T23:07:46.401Z",
+  "generatedAt": "2026-06-16T00:02:52.949Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -313,9 +313,9 @@
     },
     "BBWC": {
       "group": "H",
-      "banked": 0,
+      "banked": 1,
       "remaining": 4,
-      "projTotal": 11.2,
+      "projTotal": 12.2,
       "rank": 12,
       "leads": false,
       "winningBar": 21,
@@ -346,9 +346,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 20,
+          "targetTotal": 21,
           "yourRemainingGoals": 20,
-          "rivalCap": 19,
+          "rivalCap": 20,
           "needsHelp": true,
           "lines": [
             {
@@ -376,15 +376,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Big Blue Wrecking Crew's Group H is squeaking in with 20 goals, hoping Nicolodeons! and Taco Corp stall at 19 or under."
+          "blurb": "Group H scores 21 goals, surpassing Nicolodeons and Taco Corp"
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew must make a massive push to grab the No.1 pick, needing a huge goal surge to overtake rival groups like Nicolodeons! and Taco Corp. The Wrecking Crew's World Cup Group H is currently projected to finish last, so a dramatic turnaround is required to claim the top spot.",
+      "intro": "Big Blue Wrecking Crew needs a surge to grab the No.1 pick, requiring a monumental goal-scoring effort from World Cup Group H. The crew must outscore fierce rival groups like Nicolodeons, Taco Corp, and Gallactic Rebel Scum to rise to the top",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[0,4,21,[[20,[[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]]]]"
+      "fingerprint": "[1,4,21,[[21,[[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",2,2]]]]]"
     },
     "TACO": {
       "group": "F",
