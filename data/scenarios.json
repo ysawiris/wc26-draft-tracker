@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T01:35:35.425Z",
+  "generatedAt": "2026-06-16T03:41:57.419Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
-      "banked": 3,
+      "banked": 5,
       "remaining": 4,
-      "projTotal": 13.3,
-      "rank": 11,
+      "projTotal": 15.3,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -39,9 +39,44 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 19,
+          "yourRemainingGoals": 17,
           "rivalCap": 21,
           "needsHelp": true,
+          "lines": [
+            {
+              "home": "Belgium",
+              "away": "Iran",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "New Zealand",
+              "away": "Egypt",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "New Zealand",
+              "away": "Belgium",
+              "hg": 2,
+              "ag": 3
+            },
+            {
+              "home": "Egypt",
+              "away": "Iran",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "Commissioner's Infirmary 2.0 squeaks past Nicolodeons and Taco Corp at 22 goals"
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 24,
+          "yourRemainingGoals": 19,
+          "rivalCap": 23,
+          "needsHelp": false,
           "lines": [
             {
               "home": "Belgium",
@@ -68,14 +103,14 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 is squeaking in with 22 goals as Nicolodeons and Taco Corp stall at 21 or under"
+          "blurb": "Commissioner's Infirmary 2.0 takes care of business with 24 goals, clearing the field"
         },
         {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 23,
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 25,
           "yourRemainingGoals": 20,
-          "rivalCap": 22,
+          "rivalCap": 24,
           "needsHelp": false,
           "lines": [
             {
@@ -103,15 +138,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 is taking care of business with 23 goals, clearing the field ahead of Gallactic Rebel Scum"
+          "blurb": "Commissioner's Infirmary 2.0 ignites a goal-fest, reaching 25 goals and dominating rivals Gallactic Rebel Scum"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 must rally their World Cup Group G to dominate the goal-scoring charts and snatch the No.1 pick, overcoming fierce competition from rival managers like Nicolodeons and Taco Corp. To achieve this, they need a remarkable turnaround, with Group G's teams firing on all cylinders to outscore the opposition and claim the top spot.",
+      "intro": "Commissioner's Infirmary 2.0 needs a goal-scoring explosion to grab the No.1 pick, surpassing rival managers like Nicolodeons and Taco Corp. With 4 matches left, the group must buck its current 8th-place ranking to take the top spot, requiring a significant surge in goal production to outpace the competition.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[3,4,21,[[22,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]],[23,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[5,4,21,[[22,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,1]]],[24,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]],[25,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -1171,7 +1206,7 @@
       "banked": 4,
       "remaining": 4,
       "projTotal": 14.3,
-      "rank": 10,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1281,7 +1316,7 @@
       "banked": 3,
       "remaining": 4,
       "projTotal": 14.8,
-      "rank": 8,
+      "rank": 9,
       "leads": false,
       "winningBar": 21,
       "countries": [
