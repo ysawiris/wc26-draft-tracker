@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-16T10:00:55.835Z",
+  "fetchedAt": "2026-06-16T14:10:18.047Z",
   "matchCount": 56,
   "lines": [
     {
@@ -13,8 +13,8 @@
       "awayRaw": "Algeria",
       "line": 2.5,
       "overUS": "-105",
-      "underUS": "-120",
-      "impliedTotal": 2.61
+      "underUS": "-115",
+      "impliedTotal": 2.63
     },
     {
       "espnId": "760432",
@@ -24,9 +24,9 @@
       "homeRaw": "France",
       "awayRaw": "Senegal",
       "line": 2.5,
-      "overUS": "-120",
-      "underUS": "+100",
-      "impliedTotal": 2.76
+      "overUS": "-130",
+      "underUS": "+105",
+      "impliedTotal": 2.83
     },
     {
       "espnId": "760430",
@@ -85,8 +85,8 @@
       "awayRaw": "Congo DR",
       "line": 2.5,
       "overUS": "-140",
-      "underUS": "+110",
-      "impliedTotal": 2.89
+      "underUS": "+115",
+      "impliedTotal": 2.91
     },
     {
       "espnId": "760436",
@@ -109,8 +109,8 @@
       "awayRaw": "Qatar",
       "line": 2.5,
       "overUS": "-135",
-      "underUS": "+110",
-      "impliedTotal": 2.87
+      "underUS": "+105",
+      "impliedTotal": 2.84
     },
     {
       "espnId": "760438",
@@ -348,9 +348,9 @@
       "homeRaw": "Colombia",
       "awayRaw": "Congo DR",
       "line": 2.5,
-      "overUS": "+115",
+      "overUS": "+120",
       "underUS": "-145",
-      "impliedTotal": 2.44
+      "impliedTotal": 2.42
     },
     {
       "espnId": "760458",
@@ -481,8 +481,8 @@
       "awayRaw": "Germany",
       "line": 2.5,
       "overUS": "-110",
-      "underUS": "-115",
-      "impliedTotal": 2.65
+      "underUS": "-110",
+      "impliedTotal": 2.67
     },
     {
       "espnId": "760471",
@@ -551,10 +551,10 @@
       "away": "Iran",
       "homeRaw": "Egypt",
       "awayRaw": "Iran",
-      "line": 1.5,
-      "overUS": "-195",
-      "underUS": "+155",
-      "impliedTotal": 2.13
+      "line": 2.5,
+      "overUS": "+150",
+      "underUS": "-190",
+      "impliedTotal": 2.21
     },
     {
       "espnId": "760477",
