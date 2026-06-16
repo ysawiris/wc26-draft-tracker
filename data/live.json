@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-16T19:59:17.074Z",
+  "fetchedAt": "2026-06-16T21:08:56.948Z",
   "matchCount": 72,
   "matches": [
     {
@@ -217,13 +217,13 @@
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-16T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "France",
       "away": "Senegal",
-      "homeGoals": 0,
-      "awayGoals": 0,
+      "homeGoals": 3,
+      "awayGoals": 1,
       "venue": "New York/New Jersey Stadium",
-      "minute": null
+      "minute": "100'"
     },
     {
       "id": "400021488",
@@ -236,7 +236,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Boston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021496",
@@ -1139,12 +1139,12 @@
         "Senegal": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 9
         },
         "France": {
           "y": 0,
           "r": 0,
-          "f": 3
+          "f": 5
         }
       }
     },
@@ -1383,10 +1383,10 @@
         "f": 10
       },
       "Senegal": {
-        "f": 4
+        "f": 9
       },
       "France": {
-        "f": 3
+        "f": 5
       }
     }
   }
