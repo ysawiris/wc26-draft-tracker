@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-16T06:11:46.663Z",
+  "fetchedAt": "2026-06-16T10:00:55.835Z",
   "matchCount": 56,
   "lines": [
     {
@@ -12,9 +12,9 @@
       "homeRaw": "Argentina",
       "awayRaw": "Algeria",
       "line": 2.5,
-      "overUS": "+100",
-      "underUS": "-125",
-      "impliedTotal": 2.57
+      "overUS": "-105",
+      "underUS": "-120",
+      "impliedTotal": 2.61
     },
     {
       "espnId": "760432",
@@ -25,8 +25,8 @@
       "awayRaw": "Senegal",
       "line": 2.5,
       "overUS": "-120",
-      "underUS": "-105",
-      "impliedTotal": 2.74
+      "underUS": "+100",
+      "impliedTotal": 2.76
     },
     {
       "espnId": "760430",
@@ -36,9 +36,9 @@
       "homeRaw": "Iraq",
       "awayRaw": "Norway",
       "line": 2.5,
-      "overUS": "-170",
-      "underUS": "+135",
-      "impliedTotal": 3.09
+      "overUS": "-165",
+      "underUS": "+130",
+      "impliedTotal": 3.05
     },
     {
       "espnId": "760431",
@@ -48,9 +48,9 @@
       "homeRaw": "Austria",
       "awayRaw": "Jordan",
       "line": 2.5,
-      "overUS": "-135",
-      "underUS": "+110",
-      "impliedTotal": 2.87
+      "overUS": "-125",
+      "underUS": "+100",
+      "impliedTotal": 2.78
     },
     {
       "espnId": "760437",
@@ -144,9 +144,9 @@
       "homeRaw": "Switzerland",
       "awayRaw": "Bosnia-Herzegovina",
       "line": 2.5,
-      "overUS": "+115",
+      "overUS": "+110",
       "underUS": "-140",
-      "impliedTotal": 2.45
+      "impliedTotal": 2.47
     },
     {
       "espnId": "760444",
@@ -241,8 +241,8 @@
       "awayRaw": "Iran",
       "line": 2.5,
       "overUS": "-115",
-      "underUS": "-105",
-      "impliedTotal": 2.72
+      "underUS": "-110",
+      "impliedTotal": 2.7
     },
     {
       "espnId": "760452",
