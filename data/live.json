@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-16T23:22:17.682Z",
+  "fetchedAt": "2026-06-16T23:59:43.285Z",
   "matchCount": 72,
   "matches": [
     {
@@ -234,9 +234,9 @@
       "home": "Iraq",
       "away": "Norway",
       "homeGoals": 1,
-      "awayGoals": 2,
+      "awayGoals": 3,
       "venue": "Boston Stadium",
-      "minute": "59'"
+      "minute": "90'+6'"
     },
     {
       "id": "400021496",
@@ -249,7 +249,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021498",
@@ -1139,12 +1139,12 @@
         "Norway": {
           "y": 0,
           "r": 0,
-          "f": 9
+          "f": 13
         },
         "Iraq": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 8
+          "f": 11
         }
       },
       "400021490": {
@@ -1294,7 +1294,7 @@
         "r": 0
       },
       "Iraq": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Senegal": {
@@ -1403,10 +1403,10 @@
         "f": 10
       },
       "Norway": {
-        "f": 9
+        "f": 13
       },
       "Iraq": {
-        "f": 8
+        "f": 11
       },
       "Senegal": {
         "f": 9
