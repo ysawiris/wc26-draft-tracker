@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-16T21:07:32.961Z",
-  "count": 17,
+  "generatedAt": "2026-06-17T01:36:27.618Z",
+  "count": 18,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -689,6 +689,69 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Saudi Arabia\",\"Uruguay\",1,1,[[\"41'\",\"Alamri\",\"Saudi Arabia\",\"home\",false,false],[\"80'\",\"Maxi Araujo\",\"Uruguay\",\"away\",false,false]]]"
+    },
+    "400021488": {
+      "id": "400021488",
+      "group": "I",
+      "home": "Iraq",
+      "away": "Norway",
+      "homeGoals": 1,
+      "awayGoals": 4,
+      "venue": "Boston Stadium",
+      "utcDate": "2026-06-16T22:00:00Z",
+      "goals": [
+        {
+          "minute": "29'",
+          "order": 29,
+          "player": "Haaland",
+          "team": "Norway",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "39'",
+          "order": 39,
+          "player": "Hussein",
+          "team": "Iraq",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "43'",
+          "order": 43,
+          "player": "Haaland",
+          "team": "Norway",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "76'",
+          "order": 76,
+          "player": "Leo Ostigard",
+          "team": "Norway",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+6'",
+          "order": 90.06,
+          "player": "Hussein",
+          "team": "Norway",
+          "side": "away",
+          "ownGoal": true,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Norway see off Iraq",
+      "summary": "Haaland scores for Norway in the 29th minute, Hussein equalizes for Iraq in the 39th, but Haaland and Leo Ostigard add to Norway's lead, Hussein then scores an own goal, Norway leads Iraq 4-1, Haaland and Ostigard key scorers. Norway dominates the match.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Iraq\",\"Norway\",1,4,[[\"29'\",\"Haaland\",\"Norway\",\"away\",false,false],[\"39'\",\"Hussein\",\"Iraq\",\"home\",false,false],[\"43'\",\"Haaland\",\"Norway\",\"away\",false,false],[\"76'\",\"Leo Ostigard\",\"Norway\",\"away\",false,false],[\"90'+6'\",\"Hussein\",\"Norway\",\"away\",true,false]]]"
     },
     "400021490": {
       "id": "400021490",
