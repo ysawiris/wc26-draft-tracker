@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T21:11:12.120Z",
+  "generatedAt": "2026-06-17T22:08:35.031Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -8,7 +8,7 @@
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.4,
-      "rank": 6,
+      "rank": 7,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -174,9 +174,9 @@
           "proj": 20.7
         },
         {
-          "group": "J",
-          "owner": "Another Rebuilding Year",
-          "proj": 17.8
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 19.4
         }
       ],
       "scenarios": [
@@ -394,9 +394,9 @@
           "proj": 20.8
         },
         {
-          "group": "J",
-          "owner": "Another Rebuilding Year",
-          "proj": 17.8
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 19.4
         }
       ],
       "scenarios": [
@@ -518,7 +518,7 @@
       "banked": 7,
       "remaining": 4,
       "projTotal": 17.2,
-      "rank": 5,
+      "rank": 6,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -660,10 +660,10 @@
     },
     "FF": {
       "group": "L",
-      "banked": 1,
+      "banked": 6,
       "remaining": 5,
-      "projTotal": 14.4,
-      "rank": 11,
+      "projTotal": 19.4,
+      "rank": 4,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -694,7 +694,7 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 21,
+          "yourRemainingGoals": 16,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
@@ -702,7 +702,89 @@
               "home": "Ghana",
               "away": "Panama",
               "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "England",
+              "away": "Ghana",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "Panama",
+              "away": "Croatia",
+              "hg": 1,
               "ag": 2
+            },
+            {
+              "home": "Panama",
+              "away": "England",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Croatia",
+              "away": "Ghana",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "Fiko Fins is squeaking in at 22 goals as Nicolodeons stall at 21 or under"
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 24,
+          "yourRemainingGoals": 18,
+          "rivalCap": 23,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Ghana",
+              "away": "Panama",
+              "hg": 2,
+              "ag": 1
+            },
+            {
+              "home": "England",
+              "away": "Ghana",
+              "hg": 3,
+              "ag": 1
+            },
+            {
+              "home": "Panama",
+              "away": "Croatia",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Panama",
+              "away": "England",
+              "hg": 1,
+              "ag": 3
+            },
+            {
+              "home": "Croatia",
+              "away": "Ghana",
+              "hg": 2,
+              "ag": 1
+            }
+          ],
+          "blurb": "Fiko Fins takes care of business at 24 goals clearing Taco Corp and others"
+        },
+        {
+          "key": "fest",
+          "label": "Goal-fest",
+          "targetTotal": 26,
+          "yourRemainingGoals": 20,
+          "rivalCap": 25,
+          "needsHelp": false,
+          "lines": [
+            {
+              "home": "Ghana",
+              "away": "Panama",
+              "hg": 2,
+              "ag": 1
             },
             {
               "home": "England",
@@ -729,104 +811,22 @@
               "ag": 2
             }
           ],
-          "blurb": "Fiko Fins squeaks in as Group L reaches 22 goals, rivals like Nicolodeons! stall at 21 or under"
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 24,
-          "yourRemainingGoals": 23,
-          "rivalCap": 23,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Ghana",
-              "away": "Panama",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "England",
-              "away": "Ghana",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Panama",
-              "away": "Croatia",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Panama",
-              "away": "England",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Croatia",
-              "away": "Ghana",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Fiko Fins takes care of business as Group L reaches 24 goals, clearing the field ahead of Taco Corp"
-        },
-        {
-          "key": "fest",
-          "label": "Goal-fest",
-          "targetTotal": 26,
-          "yourRemainingGoals": 25,
-          "rivalCap": 25,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Ghana",
-              "away": "Panama",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "England",
-              "away": "Ghana",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Panama",
-              "away": "Croatia",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Panama",
-              "away": "England",
-              "hg": 2,
-              "ag": 4
-            },
-            {
-              "home": "Croatia",
-              "away": "Ghana",
-              "hg": 3,
-              "ag": 2
-            }
-          ],
-          "blurb": "Fiko Fins sparks a goal-fest as Group L reaches 26 goals, dominating the field and leaving Nicolodeons! behind"
+          "blurb": "Fiko Fins sparks a goal-fest at 26 goals leaving Group I and others in the dust"
         }
       ],
       "abbr": "FF",
       "team": "Fiko Fins",
-      "intro": "Fiko Fins needs a goal-scoring explosion to grab the No.1 pick, with Group L currently lagging behind rival managers like Nicolodeons! and Taco Corp. To rise to the top, Fiko Fins must capitalize on the remaining matches and hope his rivals stall, with a target of at least 21 goals to be safe",
+      "intro": "Fiko Fins needs a goal-scoring explosion to grab the No.1 pick, with Group L currently trailing Nicolodeons and others! To come out on top, Fins must outmaneuver rival managers and secure the highest total goals in the World Cup groups.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[1,5,21,[[22,[[\"Ghana\",\"Panama\",2,2],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[24,[[\"Ghana\",\"Panama\",2,2],[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[26,[[\"Ghana\",\"Panama\",2,2],[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",3,2]]]]]"
+      "fingerprint": "[6,5,21,[[22,[[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",2,1],[\"Panama\",\"Croatia\",1,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,1]]],[24,[[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,1]]],[26,[[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]]]]"
     },
     "RBLD": {
       "group": "J",
       "banked": 7,
       "remaining": 4,
       "projTotal": 17.8,
-      "rank": 4,
+      "rank": 5,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -971,7 +971,7 @@
       "banked": 2,
       "remaining": 5,
       "projTotal": 15.1,
-      "rank": 7,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1134,7 +1134,7 @@
       "banked": 4,
       "remaining": 4,
       "projTotal": 14.5,
-      "rank": 10,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1244,7 +1244,7 @@
       "banked": 3,
       "remaining": 4,
       "projTotal": 14.8,
-      "rank": 8,
+      "rank": 9,
       "leads": false,
       "winningBar": 21,
       "countries": [
