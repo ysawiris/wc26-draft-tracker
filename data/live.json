@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-17T23:21:13.108Z",
+  "fetchedAt": "2026-06-17T23:59:50.675Z",
   "matchCount": 72,
   "matches": [
     {
@@ -301,7 +301,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Toronto Stadium",
-      "minute": "20'"
+      "minute": null
     },
     {
       "id": "400021504",
@@ -1211,12 +1211,12 @@
         "Ghana": {
           "y": 1,
           "r": 0,
-          "f": 1
+          "f": 2
         },
         "Panama": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 6
         }
       }
     },
@@ -1539,10 +1539,10 @@
         "f": 10
       },
       "Ghana": {
-        "f": 1
+        "f": 2
       },
       "Panama": {
-        "f": 1
+        "f": 6
       }
     }
   }
