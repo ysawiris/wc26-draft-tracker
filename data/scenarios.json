@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T01:34:08.767Z",
+  "generatedAt": "2026-06-17T06:11:26.852Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -21,7 +21,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -31,7 +31,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -152,7 +152,7 @@
       "group": "E",
       "banked": 9,
       "remaining": 4,
-      "projTotal": 21.4,
+      "projTotal": 21.5,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -171,7 +171,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         },
         {
           "group": "D",
@@ -311,7 +311,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -321,7 +321,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -386,12 +386,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         },
         {
           "group": "D",
@@ -531,7 +531,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -541,7 +541,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -662,8 +662,8 @@
       "group": "L",
       "banked": 0,
       "remaining": 6,
-      "projTotal": 15.7,
-      "rank": 7,
+      "projTotal": 15.8,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -676,7 +676,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -686,7 +686,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -841,23 +841,23 @@
     },
     "RBLD": {
       "group": "J",
-      "banked": 1,
-      "remaining": 5,
-      "projTotal": 14.6,
-      "rank": 10,
+      "banked": 5,
+      "remaining": 4,
+      "projTotal": 15.9,
+      "rank": 6,
       "leads": false,
       "winningBar": 21,
       "countries": [
+        "Argentina",
         "Austria",
         "Jordan",
-        "Argentina",
         "Algeria"
       ],
       "rivals": [
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -867,7 +867,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -875,16 +875,10 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 21,
+          "yourRemainingGoals": 17,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Austria",
-              "away": "Jordan",
-              "hg": 3,
-              "ag": 1
-            },
             {
               "home": "Argentina",
               "away": "Austria",
@@ -910,26 +904,20 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J squeezes in at 22 goals, hoping Nicolodeons and Taco Corp falter at 21 or fewer goals."
+          "blurb": "Group J is squeaking in with 22 goals as rivals stall at 21 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 23,
+          "yourRemainingGoals": 19,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
             {
-              "home": "Austria",
-              "away": "Jordan",
-              "hg": 3,
-              "ag": 2
-            },
-            {
               "home": "Argentina",
               "away": "Austria",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             },
             {
@@ -951,22 +939,16 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J dominates by reaching 24 goals, leaving rivals like Nicolodeons and Taco Corp in the dust."
+          "blurb": "Group J is taking care of business with 24 goals, clearing the field of Nicolodeons! and Taco Corp"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
-          "targetTotal": 26,
-          "yourRemainingGoals": 25,
-          "rivalCap": 25,
+          "targetTotal": 25,
+          "yourRemainingGoals": 20,
+          "rivalCap": 24,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "Austria",
-              "away": "Jordan",
-              "hg": 3,
-              "ag": 2
-            },
             {
               "home": "Argentina",
               "away": "Austria",
@@ -992,22 +974,22 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J explodes for 26 goals, solidifying their lead over Nicolodeons and Taco Corp without worry."
+          "blurb": "Group J is igniting a goal-fest with 25 goals, leaving all rival groups in the dust"
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year has a shot at the No.1 pick if they can unleash a scoring frenzy! They need to outpace rivals while banking goals in the final matches.",
+      "intro": "Another Rebuilding Year must fuel a scoring explosion to grab the No.1 pick, outpacing rival managers like Nicolodeons! and Taco Corp. To secure the top spot, Group J needs a massive goal surge, with at least 21 goals required to be safe",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[1,5,21,[[22,[[\"Austria\",\"Jordan\",3,1],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]],[24,[[\"Austria\",\"Jordan\",3,2],[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]],[26,[[\"Austria\",\"Jordan\",3,2],[\"Argentina\",\"Austria\",3,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[5,4,21,[[22,[[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]],[24,[[\"Argentina\",\"Austria\",3,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]],[25,[[\"Argentina\",\"Austria\",3,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
     },
     "TMM": {
       "group": "K",
       "banked": 0,
       "remaining": 6,
       "projTotal": 15.8,
-      "rank": 6,
+      "rank": 7,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1020,7 +1002,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -1030,7 +1012,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -1201,7 +1183,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -1211,7 +1193,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -1226,7 +1208,7 @@
             {
               "home": "Switzerland",
               "away": "Bosnia & Herzegovina",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             },
             {
@@ -1238,7 +1220,7 @@
             {
               "home": "Bosnia & Herzegovina",
               "away": "Qatar",
-              "hg": 3,
+              "hg": 2,
               "ag": 2
             },
             {
@@ -1248,7 +1230,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Purdy Pitches' Group B is squeaking in with 22 goals as Nicolodeons stall at 21 or under"
+          "blurb": "Purdy Pitches is squeaking in with 22 goals as Nicolodeons and Taco Corp stall at 21 or under"
         },
         {
           "key": "business",
@@ -1283,22 +1265,22 @@
               "ag": 2
             }
           ],
-          "blurb": "Group B takes care of business reaching 24 goals clear of Big Blue Wrecking Crew and Gallactic Rebel Scum"
+          "blurb": "Purdy Pitches takes care of business with 24 goals, clearing the field of rival groups like Nicolodeons"
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches needs a goal-scoring explosion to grab the No.1 pick, leapfrogging rival groups like Nicolodeons and Big Blue Wrecking Crew! To rise from 12th to 1st, Group B must find a way to outscore the competition and capitalize on every opportunity.",
+      "intro": "Purdy Pitches must make a massive push to grab the No.1 pick, with a slew of high-scoring matches needed to surpass rival managers like Nicolodeons and Taco Corp. The group is currently lagging behind, but a strong finish could propel them to the top spot, and it all starts with a significant increase in goal production",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[4,4,21,[[22,[[\"Switzerland\",\"Bosnia & Herzegovina\",2,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",2,2]]],[24,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
+      "fingerprint": "[4,4,21,[[22,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",2,2],[\"Switzerland\",\"Canada\",2,2]]],[24,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
     },
     "R": {
       "group": "C",
       "banked": 3,
       "remaining": 4,
-      "projTotal": 14.9,
-      "rank": 8,
+      "projTotal": 14.8,
+      "rank": 9,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1311,7 +1293,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
@@ -1321,7 +1303,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
