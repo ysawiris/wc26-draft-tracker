@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T13:41:19.415Z",
+  "generatedAt": "2026-06-17T17:27:42.145Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -26,7 +26,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -166,7 +166,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -316,7 +316,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -391,7 +391,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "J",
@@ -536,7 +536,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -681,7 +681,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -862,7 +862,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -1007,7 +1007,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -1169,7 +1169,7 @@
       "group": "B",
       "banked": 4,
       "remaining": 4,
-      "projTotal": 14.4,
+      "projTotal": 14.5,
       "rank": 11,
       "leads": false,
       "winningBar": 21,
@@ -1188,7 +1188,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
@@ -1298,7 +1298,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "F",
