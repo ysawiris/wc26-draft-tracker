@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T03:17:52.325Z",
-  "count": 19,
+  "generatedAt": "2026-06-17T07:17:53.275Z",
+  "count": 20,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -851,6 +851,51 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Argentina\",\"Algeria\",3,0,[[\"17'\",\"Messi\",\"Argentina\",\"home\",false,false],[\"60'\",\"Messi\",\"Argentina\",\"home\",false,false],[\"76'\",\"Messi\",\"Argentina\",\"home\",false,false]]]"
+    },
+    "400021498": {
+      "id": "400021498",
+      "group": "J",
+      "home": "Austria",
+      "away": "Jordan",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "venue": "San Francisco Bay Area Stadium",
+      "utcDate": "2026-06-17T04:00:00Z",
+      "goals": [
+        {
+          "minute": "20'",
+          "order": 20,
+          "player": "Romano Schmid",
+          "team": "Austria",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "50'",
+          "order": 50,
+          "player": "Ali Olwan",
+          "team": "Jordan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "76'",
+          "order": 76,
+          "player": "Yazan Alarab",
+          "team": "Austria",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Austria see off Jordan",
+      "summary": "Austria leads Jordan 3-1 with Romano Schmid scoring first, Ali Olwan equalizing for Jordan, and Yazan Alarab scoring an own goal to seal Austria's win, Michael Gregoritsch and Marcel Sabitzer add to the score. Austria is dominating Group J. Austria is winning.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Austria\",\"Jordan\",3,1,[[\"20'\",\"Romano Schmid\",\"Austria\",\"home\",false,false],[\"50'\",\"Ali Olwan\",\"Jordan\",\"away\",false,false],[\"76'\",\"Yazan Alarab\",\"Austria\",\"home\",true,false]]]"
     }
   }
 }
