@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T19:20:22.716Z",
-  "count": 21,
+  "generatedAt": "2026-06-17T22:13:01.554Z",
+  "count": 22,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -932,6 +932,69 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Portugal\",\"DR Congo\",1,1,[[\"6'\",\"João Neves\",\"Portugal\",\"home\",false,false],[\"45'+5'\",\"Yoane Wissa\",\"DR Congo\",\"away\",false,false]]]"
+    },
+    "400021507": {
+      "id": "400021507",
+      "group": "L",
+      "home": "England",
+      "away": "Croatia",
+      "homeGoals": 4,
+      "awayGoals": 2,
+      "venue": "Dallas Stadium",
+      "utcDate": "2026-06-17T20:00:00Z",
+      "goals": [
+        {
+          "minute": "36'",
+          "order": 36,
+          "player": "Martin Baturina",
+          "team": "Croatia",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "42'",
+          "order": 42,
+          "player": "Kane",
+          "team": "England",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+5'",
+          "order": 45.05,
+          "player": "Petar Musa",
+          "team": "Croatia",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "47'",
+          "order": 47,
+          "player": "Bellingham",
+          "team": "England",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "85'",
+          "order": 85,
+          "player": "Rashford",
+          "team": "England",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "England see off Croatia",
+      "summary": "England are dominating Croatia 4-2, with Kane and Bellingham leading the charge, Rashford sealing the deal, while Martin Baturina and Petar Musa score for Croatia, the Three Lions taking the win in a thrilling Group L matchup at Dallas Stadium.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"England\",\"Croatia\",4,2,[[\"36'\",\"Martin Baturina\",\"Croatia\",\"away\",false,false],[\"42'\",\"Kane\",\"England\",\"home\",false,false],[\"45'+5'\",\"Petar Musa\",\"Croatia\",\"away\",false,false],[\"47'\",\"Bellingham\",\"England\",\"home\",false,false],[\"85'\",\"Rashford\",\"England\",\"home\",false,false]]]"
     }
   }
 }
