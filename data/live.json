@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-17T21:19:03.968Z",
+  "fetchedAt": "2026-06-17T22:06:45.108Z",
   "matchCount": 72,
   "matches": [
     {
@@ -282,13 +282,13 @@
       "group": "L",
       "matchday": null,
       "utcDate": "2026-06-17T20:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "England",
       "away": "Croatia",
-      "homeGoals": 3,
+      "homeGoals": 4,
       "awayGoals": 2,
       "venue": "Dallas Stadium",
-      "minute": "54'"
+      "minute": "97'"
     },
     {
       "id": "400021510",
@@ -301,7 +301,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Toronto Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021504",
@@ -1199,12 +1199,12 @@
         "Croatia": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 12
         },
         "England": {
           "y": 0,
           "r": 0,
-          "f": 7
+          "f": 10
         }
       }
     },
@@ -1513,10 +1513,10 @@
         "f": 9
       },
       "Croatia": {
-        "f": 5
+        "f": 12
       },
       "England": {
-        "f": 7
+        "f": 10
       }
     }
   }
