@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T07:17:53.275Z",
-  "count": 20,
+  "generatedAt": "2026-06-17T19:20:22.716Z",
+  "count": 21,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -896,6 +896,42 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Austria\",\"Jordan\",3,1,[[\"20'\",\"Romano Schmid\",\"Austria\",\"home\",false,false],[\"50'\",\"Ali Olwan\",\"Jordan\",\"away\",false,false],[\"76'\",\"Yazan Alarab\",\"Austria\",\"home\",true,false]]]"
+    },
+    "400021502": {
+      "id": "400021502",
+      "group": "K",
+      "home": "Portugal",
+      "away": "DR Congo",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "Houston Stadium",
+      "utcDate": "2026-06-17T17:00:00Z",
+      "goals": [
+        {
+          "minute": "6'",
+          "order": 6,
+          "player": "João Neves",
+          "team": "Portugal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+5'",
+          "order": 45.05,
+          "player": "Yoane Wissa",
+          "team": "DR Congo",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Portugal and DR Congo share the points",
+      "summary": "João Neves scores for Portugal in the 6th minute, but Yoane Wissa equalizes for DR Congo just before halftime, making it 1-1, the current score in this intense Group K matchup at Houston Stadium. Portugal and DR Congo are tied.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Portugal\",\"DR Congo\",1,1,[[\"6'\",\"João Neves\",\"Portugal\",\"home\",false,false],[\"45'+5'\",\"Yoane Wissa\",\"DR Congo\",\"away\",false,false]]]"
     }
   }
 }
