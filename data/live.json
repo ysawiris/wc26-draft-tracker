@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-17T05:29:41.177Z",
+  "fetchedAt": "2026-06-17T07:22:31.925Z",
   "matchCount": 72,
   "matches": [
     {
@@ -256,13 +256,13 @@
       "group": "J",
       "matchday": null,
       "utcDate": "2026-06-17T04:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Austria",
       "away": "Jordan",
-      "homeGoals": 1,
+      "homeGoals": 3,
       "awayGoals": 1,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": "64'"
+      "minute": "103'"
     },
     {
       "id": "400021502",
@@ -1173,14 +1173,14 @@
       },
       "400021498": {
         "Austria": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 8
+          "f": 12
         },
         "Jordan": {
           "y": 0,
           "r": 0,
-          "f": 6
+          "f": 7
         }
       }
     },
@@ -1338,7 +1338,7 @@
         "r": 0
       },
       "Austria": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Jordan": {
@@ -1461,10 +1461,10 @@
         "f": 8
       },
       "Austria": {
-        "f": 8
+        "f": 12
       },
       "Jordan": {
-        "f": 6
+        "f": 7
       }
     }
   }
