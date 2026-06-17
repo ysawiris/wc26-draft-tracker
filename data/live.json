@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-17T02:21:27.658Z",
+  "fetchedAt": "2026-06-17T03:47:25.497Z",
   "matchCount": 72,
   "matches": [
     {
@@ -243,13 +243,13 @@
       "group": "J",
       "matchday": null,
       "utcDate": "2026-06-17T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Argentina",
       "away": "Algeria",
-      "homeGoals": 1,
+      "homeGoals": 3,
       "awayGoals": 0,
       "venue": "Kansas City Stadium",
-      "minute": "58'"
+      "minute": "97'"
     },
     {
       "id": "400021498",
@@ -262,7 +262,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021502",
@@ -1163,12 +1163,12 @@
         "Argentina": {
           "y": 0,
           "r": 0,
-          "f": 9
+          "f": 13
         },
         "Algeria": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 8
         }
       }
     },
@@ -1435,10 +1435,10 @@
         "f": 5
       },
       "Argentina": {
-        "f": 9
+        "f": 13
       },
       "Algeria": {
-        "f": 4
+        "f": 8
       }
     }
   }
