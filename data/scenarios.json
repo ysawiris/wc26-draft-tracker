@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T19:14:53.050Z",
+  "generatedAt": "2026-06-17T21:11:12.120Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -660,17 +660,17 @@
     },
     "FF": {
       "group": "L",
-      "banked": 0,
-      "remaining": 6,
-      "projTotal": 15.9,
-      "rank": 7,
+      "banked": 1,
+      "remaining": 5,
+      "projTotal": 14.4,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
-        "England",
-        "Croatia",
         "Ghana",
-        "Panama"
+        "Panama",
+        "England",
+        "Croatia"
       ],
       "rivals": [
         {
@@ -694,21 +694,15 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 22,
+          "yourRemainingGoals": 21,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
             {
-              "home": "England",
-              "away": "Croatia",
-              "hg": 2,
-              "ag": 2
-            },
-            {
               "home": "Ghana",
               "away": "Panama",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "England",
@@ -725,49 +719,43 @@
             {
               "home": "Panama",
               "away": "England",
-              "hg": 1,
+              "hg": 2,
               "ag": 3
             },
             {
               "home": "Croatia",
               "away": "Ghana",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Fiko Fins' Group L squeaks past Nicolodeons! and Taco Corp at 22 goals"
+          "blurb": "Fiko Fins squeaks in as Group L reaches 22 goals, rivals like Nicolodeons! stall at 21 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 24,
+          "yourRemainingGoals": 23,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
             {
-              "home": "England",
-              "away": "Croatia",
-              "hg": 2,
-              "ag": 2
-            },
-            {
               "home": "Ghana",
               "away": "Panama",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "England",
               "away": "Ghana",
               "hg": 3,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Panama",
               "away": "Croatia",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Panama",
@@ -782,22 +770,16 @@
               "ag": 2
             }
           ],
-          "blurb": "Fiko Fins takes care of business with Group L reaching 24 goals"
+          "blurb": "Fiko Fins takes care of business as Group L reaches 24 goals, clearing the field ahead of Taco Corp"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
           "targetTotal": 26,
-          "yourRemainingGoals": 26,
+          "yourRemainingGoals": 25,
           "rivalCap": 25,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "England",
-              "away": "Croatia",
-              "hg": 2,
-              "ag": 2
-            },
             {
               "home": "Ghana",
               "away": "Panama",
@@ -814,30 +796,30 @@
               "home": "Panama",
               "away": "Croatia",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Panama",
               "away": "England",
               "hg": 2,
-              "ag": 3
+              "ag": 4
             },
             {
               "home": "Croatia",
               "away": "Ghana",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             }
           ],
-          "blurb": "Fiko Fins' Group L erupts in a goal-fest, scoring 26 goals and dominating the field"
+          "blurb": "Fiko Fins sparks a goal-fest as Group L reaches 26 goals, dominating the field and leaving Nicolodeons! behind"
         }
       ],
       "abbr": "FF",
       "team": "Fiko Fins",
-      "intro": "Fiko Fins needs a goal-scoring explosion to grab the No.1 pick, with Group L currently lagging behind rival groups like Nicolodeons! and Taco Corp. To overtake them, Fiko Fins must rally his Group L teams, including England and Croatia, to outscore the competition and claim the top spot.",
+      "intro": "Fiko Fins needs a goal-scoring explosion to grab the No.1 pick, with Group L currently lagging behind rival managers like Nicolodeons! and Taco Corp. To rise to the top, Fiko Fins must capitalize on the remaining matches and hope his rivals stall, with a target of at least 21 goals to be safe",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[0,6,21,[[22,[[\"England\",\"Croatia\",2,2],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",1,3],[\"Croatia\",\"Ghana\",2,1]]],[24,[[\"England\",\"Croatia\",2,2],[\"Ghana\",\"Panama\",2,1],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[26,[[\"England\",\"Croatia\",2,2],[\"Ghana\",\"Panama\",2,2],[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]]]]"
+      "fingerprint": "[1,5,21,[[22,[[\"Ghana\",\"Panama\",2,2],[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[24,[[\"Ghana\",\"Panama\",2,2],[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[26,[[\"Ghana\",\"Panama\",2,2],[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",3,2]]]]]"
     },
     "RBLD": {
       "group": "J",
@@ -989,7 +971,7 @@
       "banked": 2,
       "remaining": 5,
       "projTotal": 15.1,
-      "rank": 8,
+      "rank": 7,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1033,7 +1015,7 @@
             {
               "home": "Portugal",
               "away": "Uzbekistan",
-              "hg": 4,
+              "hg": 3,
               "ag": 1
             },
             {
@@ -1046,7 +1028,7 @@
               "home": "DR Congo",
               "away": "Uzbekistan",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Colombia",
@@ -1055,7 +1037,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Group K squeaks in with 22 goals, relying on rivals like Nicolodeons! to falter below 21 goals."
+          "blurb": "The Metcalf Matrix squeezes past Nicolodeons! with 22 goals as rivals stall at 21 or under."
         },
         {
           "key": "business",
@@ -1096,7 +1078,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Group K takes care of business, reaching 24 goals and leaving rivals like Taco Corp in the dust."
+          "blurb": "The Metcalf Matrix takes care of business with 24 goals, outscoring the field, including Taco Corp."
         },
         {
           "key": "fest",
@@ -1137,22 +1119,22 @@
               "ag": 3
             }
           ],
-          "blurb": "Group K experiences a goal-fest, hitting 26 goals and claiming the top spot decisively over all competitors."
+          "blurb": "The Metcalf Matrix unleashes a goal-fest with 26 goals, leaving unclaimed Group I and others in the dust."
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix must unleash an offensive explosion to seize the No.1 pick! A combination of scoring and rival stagnation is critical!",
+      "intro": "The Metcalf Matrix must ignite a goal-scoring explosion in World Cup Group K to snatch the No.1 pick, outpacing rival managers like Nicolodeons! The Metcalf Matrix needs a massive surge to overtake the competition, with Group K currently lagging behind in total goals scored.",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[2,5,21,[[22,[[\"Uzbekistan\",\"Colombia\",2,2],[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,1],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Uzbekistan\",\"Colombia\",2,3],[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[26,[[\"Uzbekistan\",\"Colombia\",2,3],[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[2,5,21,[[22,[[\"Uzbekistan\",\"Colombia\",2,2],[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Uzbekistan\",\"Colombia\",2,3],[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[26,[[\"Uzbekistan\",\"Colombia\",2,3],[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
       "banked": 4,
       "remaining": 4,
       "projTotal": 14.5,
-      "rank": 11,
+      "rank": 10,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1262,7 +1244,7 @@
       "banked": 3,
       "remaining": 4,
       "projTotal": 14.8,
-      "rank": 9,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
