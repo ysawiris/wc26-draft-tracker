@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-16T23:59:43.285Z",
+  "fetchedAt": "2026-06-17T01:25:00.048Z",
   "matchCount": 72,
   "matches": [
     {
@@ -230,26 +230,26 @@
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-16T22:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Iraq",
       "away": "Norway",
       "homeGoals": 1,
-      "awayGoals": 3,
+      "awayGoals": 4,
       "venue": "Boston Stadium",
-      "minute": "90'+6'"
+      "minute": "98'"
     },
     {
       "id": "400021496",
       "group": "J",
       "matchday": null,
       "utcDate": "2026-06-17T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Argentina",
       "away": "Algeria",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 1,
+      "awayGoals": 0,
       "venue": "Kansas City Stadium",
-      "minute": "0'"
+      "minute": "22'"
     },
     {
       "id": "400021498",
@@ -1158,6 +1158,13 @@
           "r": 0,
           "f": 5
         }
+      },
+      "400021496": {
+        "Argentina": {
+          "y": 0,
+          "r": 0,
+          "f": 3
+        }
       }
     },
     "byCountry": {
@@ -1304,6 +1311,10 @@
       "France": {
         "y": 0,
         "r": 0
+      },
+      "Argentina": {
+        "y": 0,
+        "r": 0
       }
     }
   },
@@ -1413,6 +1424,9 @@
       },
       "France": {
         "f": 5
+      },
+      "Argentina": {
+        "f": 3
       }
     }
   }
