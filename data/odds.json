@@ -1,8 +1,8 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-17T17:22:45.458Z",
-  "matchCount": 52,
+  "fetchedAt": "2026-06-17T21:00:19.658Z",
+  "matchCount": 51,
   "lines": [
     {
       "espnId": "760437",
@@ -25,20 +25,8 @@
       "awayRaw": "Panama",
       "line": 2.5,
       "overUS": "+135",
-      "underUS": "-165",
-      "impliedTotal": 2.31
-    },
-    {
-      "espnId": "760435",
-      "date": "2026-06-17",
-      "home": "Portugal",
-      "away": "DR Congo",
-      "homeRaw": "Portugal",
-      "awayRaw": "Congo DR",
-      "line": 2.5,
-      "overUS": "-130",
-      "underUS": "+105",
-      "impliedTotal": 2.83
+      "underUS": "-170",
+      "impliedTotal": 2.3
     },
     {
       "espnId": "760436",
@@ -48,9 +36,9 @@
       "homeRaw": "Uzbekistan",
       "awayRaw": "Colombia",
       "line": 2.5,
-      "overUS": "-115",
+      "overUS": "-110",
       "underUS": "-110",
-      "impliedTotal": 2.7
+      "impliedTotal": 2.67
     },
     {
       "espnId": "760440",
@@ -96,9 +84,9 @@
       "homeRaw": "Switzerland",
       "awayRaw": "Bosnia-Herzegovina",
       "line": 2.5,
-      "overUS": "-105",
+      "overUS": "+100",
       "underUS": "-120",
-      "impliedTotal": 2.61
+      "impliedTotal": 2.59
     },
     {
       "espnId": "760444",
@@ -300,9 +288,9 @@
       "homeRaw": "Colombia",
       "awayRaw": "Congo DR",
       "line": 2.5,
-      "overUS": "+120",
-      "underUS": "-150",
-      "impliedTotal": 2.4
+      "overUS": "+115",
+      "underUS": "-145",
+      "impliedTotal": 2.44
     },
     {
       "espnId": "760458",
@@ -337,8 +325,8 @@
       "awayRaw": "Uzbekistan",
       "line": 2.5,
       "overUS": "-165",
-      "underUS": "+135",
-      "impliedTotal": 3.08
+      "underUS": "+130",
+      "impliedTotal": 3.05
     },
     {
       "espnId": "760462",
@@ -600,9 +588,9 @@
       "homeRaw": "Congo DR",
       "awayRaw": "Uzbekistan",
       "line": 2.5,
-      "overUS": "+125",
-      "underUS": "-155",
-      "impliedTotal": 2.37
+      "overUS": "+115",
+      "underUS": "-140",
+      "impliedTotal": 2.45
     },
     {
       "espnId": "760483",
@@ -625,8 +613,8 @@
       "awayRaw": "England",
       "line": 2.5,
       "overUS": "-165",
-      "underUS": "+130",
-      "impliedTotal": 3.05
+      "underUS": "+135",
+      "impliedTotal": 3.08
     }
   ]
 }
