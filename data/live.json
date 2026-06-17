@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-17T18:31:53.757Z",
+  "fetchedAt": "2026-06-17T19:32:32.720Z",
   "matchCount": 72,
   "matches": [
     {
@@ -269,13 +269,13 @@
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-17T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Portugal",
       "away": "Congo DR",
       "homeGoals": 1,
       "awayGoals": 1,
       "venue": "Houston Stadium",
-      "minute": "68'"
+      "minute": "95'"
     },
     {
       "id": "400021507",
@@ -1185,9 +1185,9 @@
       },
       "400021502": {
         "Portugal": {
-          "y": 1,
+          "y": 3,
           "r": 0,
-          "f": 4
+          "f": 6
         },
         "Congo DR": {
           "y": 1,
@@ -1358,7 +1358,7 @@
         "r": 0
       },
       "Portugal": {
-        "y": 1,
+        "y": 3,
         "r": 0
       },
       "Congo DR": {
@@ -1487,7 +1487,7 @@
         "f": 7
       },
       "Portugal": {
-        "f": 4
+        "f": 6
       },
       "Congo DR": {
         "f": 9
