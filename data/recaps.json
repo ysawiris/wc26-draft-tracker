@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-18T18:04:36.633Z",
-  "count": 25,
+  "generatedAt": "2026-06-18T21:20:32.190Z",
+  "count": 26,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -114,6 +114,62 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"Mexico\",\"South Africa\",2,0,[[\"9'\",\"Julian Quinones\",\"Mexico\",\"home\",false,false],[\"67'\",\"Raúl\",\"Mexico\",\"home\",false,false]]]"
+    },
+    "400021446": {
+      "id": "400021446",
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Bosnia & Herzegovina",
+      "homeGoals": 4,
+      "awayGoals": 1,
+      "venue": "Los Angeles Stadium",
+      "utcDate": "2026-06-18T19:00:00Z",
+      "goals": [
+        {
+          "minute": "74'",
+          "order": 74,
+          "player": "Johan Manzambi",
+          "team": "Switzerland",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "84'",
+          "order": 84,
+          "player": "Vargas",
+          "team": "Switzerland",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'",
+          "order": 90,
+          "player": "Johan Manzambi",
+          "team": "Switzerland",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+3'",
+          "order": 90.03,
+          "player": "Ermin Mahmic",
+          "team": "Bosnia & Herzegovina",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [
+        "Tarik MUHAREMOVIC (Bosnia and Herzegovina) is sent off!"
+      ],
+      "headline": "Switzerland see off Bosnia & Herzegovina",
+      "summary": "Switzerland is dominating Bosnia & Herzegovina 4-1, Johan Manzambi scores twice, Vargas adds one, and Bosnia's Ermin Mahmic scores a late consolation, after Tarik Muharemovic is sent off.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Switzerland\",\"Bosnia & Herzegovina\",4,1,[[\"74'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"84'\",\"Vargas\",\"Switzerland\",\"home\",false,false],[\"90'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"90'+3'\",\"Ermin Mahmic\",\"Bosnia & Herzegovina\",\"away\",false,false]]]"
     },
     "400021447": {
       "id": "400021447",
