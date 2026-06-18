@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-17T22:13:01.554Z",
-  "count": 22,
+  "generatedAt": "2026-06-18T01:33:48.048Z",
+  "count": 23,
   "byId": {
     "400021441": {
       "id": "400021441",
@@ -995,6 +995,33 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"England\",\"Croatia\",4,2,[[\"36'\",\"Martin Baturina\",\"Croatia\",\"away\",false,false],[\"42'\",\"Kane\",\"England\",\"home\",false,false],[\"45'+5'\",\"Petar Musa\",\"Croatia\",\"away\",false,false],[\"47'\",\"Bellingham\",\"England\",\"home\",false,false],[\"85'\",\"Rashford\",\"England\",\"home\",false,false]]]"
+    },
+    "400021510": {
+      "id": "400021510",
+      "group": "L",
+      "home": "Ghana",
+      "away": "Panama",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "venue": "Toronto Stadium",
+      "utcDate": "2026-06-17T23:00:00Z",
+      "goals": [
+        {
+          "minute": "90'+5'",
+          "order": 90.05,
+          "player": "Caleb Yirenkyi",
+          "team": "Ghana",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Ghana see off Panama",
+      "summary": "Ghana leads 1-0 against Panama as Caleb Yirenkyi scores in the 90'+5' minute, Ghana wins the match, Caleb Yirenkyi is the key scorer.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Ghana\",\"Panama\",1,0,[[\"90'+5'\",\"Caleb Yirenkyi\",\"Ghana\",\"home\",false,false]]]"
     }
   }
 }
