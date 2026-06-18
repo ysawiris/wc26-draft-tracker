@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T15:55:06.846Z",
+  "fetchedAt": "2026-06-18T17:05:19.444Z",
   "matchCount": 72,
   "matches": [
     {
@@ -321,13 +321,13 @@
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-18T16:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Czechia",
       "away": "South Africa",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 1,
+      "awayGoals": 0,
       "venue": "Atlanta Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021446",
@@ -943,6 +943,18 @@
   ],
   "cards": {
     "byMatch": {
+      "400021440": {
+        "South Africa": {
+          "y": 2,
+          "r": 0,
+          "f": 3
+        },
+        "Czechia": {
+          "y": 0,
+          "r": 0,
+          "f": 8
+        }
+      },
       "400021441": {
         "Czechia": {
           "y": 0,
@@ -1233,6 +1245,10 @@
       }
     },
     "byCountry": {
+      "South Africa": {
+        "y": 4,
+        "r": 2
+      },
       "Czechia": {
         "y": 0,
         "r": 0
@@ -1240,10 +1256,6 @@
       "Korea Republic": {
         "y": 1,
         "r": 0
-      },
-      "South Africa": {
-        "y": 2,
-        "r": 2
       },
       "Mexico": {
         "y": 1,
@@ -1429,13 +1441,13 @@
   },
   "fouls": {
     "byCountry": {
+      "South Africa": {
+        "f": 11
+      },
       "Czechia": {
-        "f": 16
+        "f": 24
       },
       "Korea Republic": {
-        "f": 8
-      },
-      "South Africa": {
         "f": 8
       },
       "Mexico": {
