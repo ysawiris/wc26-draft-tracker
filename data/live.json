@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T17:05:19.444Z",
+  "fetchedAt": "2026-06-18T18:10:56.599Z",
   "matchCount": 72,
   "matches": [
     {
@@ -321,13 +321,13 @@
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-18T16:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Czechia",
       "away": "South Africa",
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "venue": "Atlanta Stadium",
-      "minute": null
+      "minute": "98'"
     },
     {
       "id": "400021446",
@@ -947,12 +947,12 @@
         "South Africa": {
           "y": 2,
           "r": 0,
-          "f": 3
+          "f": 9
         },
         "Czechia": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 8
+          "f": 11
         }
       },
       "400021441": {
@@ -1250,7 +1250,7 @@
         "r": 2
       },
       "Czechia": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Korea Republic": {
@@ -1442,10 +1442,10 @@
   "fouls": {
     "byCountry": {
       "South Africa": {
-        "f": 11
+        "f": 17
       },
       "Czechia": {
-        "f": 24
+        "f": 27
       },
       "Korea Republic": {
         "f": 8
