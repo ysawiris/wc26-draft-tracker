@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-18T13:38:07.610Z",
+  "generatedAt": "2026-06-18T17:32:18.747Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -176,7 +176,7 @@
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.2
+          "proj": 18.3
         }
       ],
       "scenarios": [
@@ -396,7 +396,7 @@
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.2
+          "proj": 18.3
         }
       ],
       "scenarios": [
@@ -662,7 +662,7 @@
       "group": "L",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 18.2,
+      "projTotal": 18.3,
       "rank": 4,
       "leads": false,
       "winningBar": 21,
@@ -1013,7 +1013,7 @@
               "ag": 2
             }
           ],
-          "blurb": "The Metcalf Matrix squeaks in with 22 goals as rivals stall at 21 or under Nicolodeons!"
+          "blurb": "The Metcalf Matrix squeezes past Nicolodeons! as Group K scores 22 goals"
         },
         {
           "key": "business",
@@ -1027,7 +1027,7 @@
               "home": "Portugal",
               "away": "Uzbekistan",
               "hg": 4,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Colombia",
@@ -1038,7 +1038,7 @@
             {
               "home": "DR Congo",
               "away": "Uzbekistan",
-              "hg": 3,
+              "hg": 2,
               "ag": 2
             },
             {
@@ -1048,7 +1048,7 @@
               "ag": 2
             }
           ],
-          "blurb": "The Metcalf Matrix takes care of business reaching 24 goals clear of Taco Corp"
+          "blurb": "The Metcalf Matrix dominates the draft by scoring 24 goals and leaving Taco Corp behind"
         },
         {
           "key": "fest",
@@ -1083,22 +1083,22 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix ignites a goal-fest reaching 26 goals leaving Nicolodeons! in the dust"
+          "blurb": "The Metcalf Matrix runs away with the No.1 pick as Group K explodes for 26 goals"
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix is on the cusp of securing the No.1 pick, but needs a flurry of goals to outpace rival groups like Nicolodeons! and Taco Corp. To catapult to the top, The Metcalf Matrix must orchestrate a goal-scoring explosion in World Cup Group K, outgunning the competition to claim the coveted No.1 pick.",
+      "intro": "The Metcalf Matrix must ignite Group K's goal-scoring engines to leapfrog rival groups like Nicolodeons! and Taco Corp for the No.1 pick, a spot that will require a significant surge in production from Portugal, Uzbekistan, Colombia, and DR Congo. The Metcalf Matrix needs a perfect storm of results to catapult their group to the top of the goal-scoring charts, with Nicolodeons! and Taco Corp looming as major obstacles to overcome.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,21,[[22,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,2]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "fingerprint": "[6,4,21,[[22,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
       "banked": 4,
       "remaining": 4,
-      "projTotal": 14.6,
-      "rank": 11,
+      "projTotal": 14.7,
+      "rank": 10,
       "leads": false,
       "winningBar": 21,
       "countries": [
