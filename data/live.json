@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T19:09:51.753Z",
+  "fetchedAt": "2026-06-18T19:58:47.086Z",
   "matchCount": 72,
   "matches": [
     {
@@ -340,7 +340,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Los Angeles Stadium",
-      "minute": "9'"
+      "minute": null
     },
     {
       "id": "400021450",
@@ -983,7 +983,12 @@
         "Switzerland": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 3
+        },
+        "Bosnia and Herzegovina": {
+          "y": 0,
+          "r": 0,
+          "f": 8
         }
       },
       "400021447": {
@@ -1272,16 +1277,16 @@
         "y": 1,
         "r": 0
       },
+      "Bosnia and Herzegovina": {
+        "y": 3,
+        "r": 0
+      },
       "Qatar": {
         "y": 2,
         "r": 0
       },
       "Canada": {
         "y": 2,
-        "r": 0
-      },
-      "Bosnia and Herzegovina": {
-        "y": 3,
         "r": 0
       },
       "Haiti": {
@@ -1461,16 +1466,16 @@
         "f": 10
       },
       "Switzerland": {
-        "f": 11
+        "f": 13
+      },
+      "Bosnia and Herzegovina": {
+        "f": 25
       },
       "Qatar": {
         "f": 10
       },
       "Canada": {
         "f": 8
-      },
-      "Bosnia and Herzegovina": {
-        "f": 17
       },
       "Haiti": {
         "f": 22
