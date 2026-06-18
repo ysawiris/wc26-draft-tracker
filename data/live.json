@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T02:21:06.099Z",
+  "fetchedAt": "2026-06-18T03:47:24.606Z",
   "matchCount": 72,
   "matches": [
     {
@@ -311,10 +311,10 @@
       "status": "IN_PLAY",
       "home": "Uzbekistan",
       "away": "Colombia",
-      "homeGoals": 0,
-      "awayGoals": 0,
+      "homeGoals": 1,
+      "awayGoals": 2,
       "venue": "Mexico City Stadium",
-      "minute": "20'"
+      "minute": "86'"
     },
     {
       "id": "400021440",
@@ -1199,12 +1199,12 @@
         "Colombia": {
           "y": 1,
           "r": 0,
-          "f": 1
+          "f": 9
         },
         "Uzbekistan": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 4
+          "f": 13
         }
       },
       "400021507": {
@@ -1406,7 +1406,7 @@
         "r": 0
       },
       "Uzbekistan": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Croatia": {
@@ -1553,10 +1553,10 @@
         "f": 9
       },
       "Colombia": {
-        "f": 1
+        "f": 9
       },
       "Uzbekistan": {
-        "f": 4
+        "f": 13
       },
       "Croatia": {
         "f": 12
