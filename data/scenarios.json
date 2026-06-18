@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-18T19:14:08.724Z",
+  "generatedAt": "2026-06-18T21:15:24.939Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -8,7 +8,7 @@
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.4,
-      "rank": 8,
+      "rank": 9,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -298,7 +298,7 @@
       "banked": 2,
       "remaining": 4,
       "projTotal": 13,
-      "rank": 11,
+      "rank": 12,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -953,7 +953,7 @@
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.5,
-      "rank": 7,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1095,10 +1095,10 @@
     },
     "AM": {
       "group": "B",
-      "banked": 4,
+      "banked": 9,
       "remaining": 3,
-      "projTotal": 12,
-      "rank": 12,
+      "projTotal": 17.2,
+      "rank": 7,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1128,10 +1128,39 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 19,
-          "yourRemainingGoals": 15,
-          "rivalCap": 18,
+          "targetTotal": 22,
+          "yourRemainingGoals": 13,
+          "rivalCap": 21,
           "needsHelp": true,
+          "lines": [
+            {
+              "home": "Canada",
+              "away": "Qatar",
+              "hg": 3,
+              "ag": 2
+            },
+            {
+              "home": "Bosnia & Herzegovina",
+              "away": "Qatar",
+              "hg": 2,
+              "ag": 2
+            },
+            {
+              "home": "Switzerland",
+              "away": "Canada",
+              "hg": 2,
+              "ag": 2
+            }
+          ],
+          "blurb": "Group B scores 22 goals as rivals like Nicolodeons! stall at 21 or under"
+        },
+        {
+          "key": "business",
+          "label": "Take care of business",
+          "targetTotal": 24,
+          "yourRemainingGoals": 15,
+          "rivalCap": 23,
+          "needsHelp": false,
           "lines": [
             {
               "home": "Canada",
@@ -1152,22 +1181,22 @@
               "ag": 2
             }
           ],
-          "blurb": "Purdy Pitches' Group B is squeaking in with 19 goals, hoping Nicolodeons! and Taco Corp stall at 18 or under"
+          "blurb": "Group B reaches 24 goals, taking care of business and clearing the field"
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches must ignite a goal-scoring frenzy to snatch the No.1 pick, outgunning Nicolodeons! and other rivals. The group's current pace is woefully inadequate, requiring a drastic turnaround to climb the rankings",
+      "intro": "Purdy Pitches must orchestrate a goal-scoring frenzy to seize the No.1 pick, outpacing rival managers like Nicolodeons! and Taco Corp. To grab the top spot, Group B needs a dramatic surge in scoring, with at least 21 goals required to be safe",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[4,3,21,[[19,[[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
+      "fingerprint": "[9,3,21,[[22,[[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",2,2],[\"Switzerland\",\"Canada\",2,2]]],[24,[[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
     },
     "R": {
       "group": "C",
       "banked": 3,
       "remaining": 4,
-      "projTotal": 14.9,
-      "rank": 9,
+      "projTotal": 15,
+      "rank": 10,
       "leads": false,
       "winningBar": 21,
       "countries": [
