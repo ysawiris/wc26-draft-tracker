@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-18T09:55:44.567Z",
+  "generatedAt": "2026-06-18T13:38:07.610Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -21,7 +21,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -152,7 +152,7 @@
       "group": "E",
       "banked": 9,
       "remaining": 4,
-      "projTotal": 21.5,
+      "projTotal": 21.4,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -297,7 +297,7 @@
       "group": "H",
       "banked": 2,
       "remaining": 4,
-      "projTotal": 13.1,
+      "projTotal": 13,
       "rank": 12,
       "leads": false,
       "winningBar": 21,
@@ -311,7 +311,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -386,7 +386,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -531,7 +531,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -676,7 +676,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -821,7 +821,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -952,7 +952,7 @@
       "group": "K",
       "banked": 6,
       "remaining": 4,
-      "projTotal": 16.4,
+      "projTotal": 16.5,
       "rank": 7,
       "leads": false,
       "winningBar": 21,
@@ -966,7 +966,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -991,13 +991,13 @@
             {
               "home": "Portugal",
               "away": "Uzbekistan",
-              "hg": 3,
+              "hg": 4,
               "ag": 1
             },
             {
               "home": "Colombia",
               "away": "DR Congo",
-              "hg": 3,
+              "hg": 2,
               "ag": 1
             },
             {
@@ -1013,7 +1013,7 @@
               "ag": 2
             }
           ],
-          "blurb": "The Metcalf Matrix squeezes past Nicolodeons! as Group K reaches 22 goals with rivals stalling at 21 or under."
+          "blurb": "The Metcalf Matrix squeaks in with 22 goals as rivals stall at 21 or under Nicolodeons!"
         },
         {
           "key": "business",
@@ -1048,7 +1048,7 @@
               "ag": 2
             }
           ],
-          "blurb": "The Metcalf Matrix takes care of business with Group K reaching 24 goals, clearing the field of Taco Corp and others."
+          "blurb": "The Metcalf Matrix takes care of business reaching 24 goals clear of Taco Corp"
         },
         {
           "key": "fest",
@@ -1083,15 +1083,15 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix sparks a goal-fest as Group K reaches 26 goals, leaving all rivals, including Nicolodeons!, in the dust."
+          "blurb": "The Metcalf Matrix ignites a goal-fest reaching 26 goals leaving Nicolodeons! in the dust"
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix must ignite Group K's offense to snatch the No.1 pick, outscoring rival groups like Nicolodeons! and Taco Corp. To dominate, The Metcalf Matrix needs a goal-scoring explosion, surpassing the projected totals of unclaimed Group I and others.",
+      "intro": "The Metcalf Matrix is on the cusp of securing the No.1 pick, but needs a flurry of goals to outpace rival groups like Nicolodeons! and Taco Corp. To catapult to the top, The Metcalf Matrix must orchestrate a goal-scoring explosion in World Cup Group K, outgunning the competition to claim the coveted No.1 pick.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,21,[[22,[[\"Portugal\",\"Uzbekistan\",3,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,2]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "fingerprint": "[6,4,21,[[22,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,2]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
@@ -1111,7 +1111,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
@@ -1208,7 +1208,7 @@
       "banked": 3,
       "remaining": 4,
       "projTotal": 14.9,
-      "rank": 10,
+      "rank": 9,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1221,7 +1221,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.5
+          "proj": 21.4
         },
         {
           "group": "I",
