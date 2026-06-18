@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T08:51:31.230Z",
+  "fetchedAt": "2026-06-18T15:55:06.846Z",
   "matchCount": 72,
   "matches": [
     {
@@ -327,7 +327,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Atlanta Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021446",
