@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T18:10:56.599Z",
+  "fetchedAt": "2026-06-18T19:09:51.753Z",
   "matchCount": 72,
   "matches": [
     {
@@ -334,13 +334,13 @@
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-18T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Switzerland",
       "away": "Bosnia and Herzegovina",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Los Angeles Stadium",
-      "minute": null
+      "minute": "9'"
     },
     {
       "id": "400021450",
@@ -979,6 +979,13 @@
           "f": 10
         }
       },
+      "400021446": {
+        "Switzerland": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021447": {
         "Switzerland": {
           "y": 1,
@@ -1454,7 +1461,7 @@
         "f": 10
       },
       "Switzerland": {
-        "f": 10
+        "f": 11
       },
       "Qatar": {
         "f": 10
