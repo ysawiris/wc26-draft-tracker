@@ -1,8 +1,35 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-18T05:08:46.767Z",
-  "count": 24,
+  "generatedAt": "2026-06-18T18:04:36.633Z",
+  "count": 25,
   "byId": {
+    "400021440": {
+      "id": "400021440",
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "South Africa",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "Atlanta Stadium",
+      "utcDate": "2026-06-18T16:00:00Z",
+      "goals": [
+        {
+          "minute": "6'",
+          "order": 6,
+          "player": "Michal Sadilek",
+          "team": "Czech Republic",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Czech Republic and South Africa share the points",
+      "summary": "Czech Republic and South Africa are locked in a 1-1 tie, Michal Sadilek scores for Czech Republic, South Africa equalize, the match is heating up.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Czech Republic\",\"South Africa\",1,1,[[\"6'\",\"Michal Sadilek\",\"Czech Republic\",\"home\",false,false]]]"
+    },
     "400021441": {
       "id": "400021441",
       "group": "A",
