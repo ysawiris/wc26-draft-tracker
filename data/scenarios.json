@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-18T17:32:18.747Z",
+  "generatedAt": "2026-06-18T19:14:08.724Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -298,7 +298,7 @@
       "banked": 2,
       "remaining": 4,
       "projTotal": 13,
-      "rank": 12,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1096,16 +1096,16 @@
     "AM": {
       "group": "B",
       "banked": 4,
-      "remaining": 4,
-      "projTotal": 14.7,
-      "rank": 10,
+      "remaining": 3,
+      "projTotal": 12,
+      "rank": 12,
       "leads": false,
       "winningBar": 21,
       "countries": [
-        "Switzerland",
-        "Bosnia & Herzegovina",
         "Canada",
-        "Qatar"
+        "Qatar",
+        "Bosnia & Herzegovina",
+        "Switzerland"
       ],
       "rivals": [
         {
@@ -1128,53 +1128,12 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 22,
-          "yourRemainingGoals": 18,
-          "rivalCap": 21,
+          "targetTotal": 19,
+          "yourRemainingGoals": 15,
+          "rivalCap": 18,
           "needsHelp": true,
           "lines": [
             {
-              "home": "Switzerland",
-              "away": "Bosnia & Herzegovina",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Canada",
-              "away": "Qatar",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Bosnia & Herzegovina",
-              "away": "Qatar",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Switzerland",
-              "away": "Canada",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Purdy Pitches is squeaking in with 22 goals as Nicolodeons and Taco Corp stall at 21 or under"
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 24,
-          "yourRemainingGoals": 20,
-          "rivalCap": 23,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Switzerland",
-              "away": "Bosnia & Herzegovina",
-              "hg": 3,
-              "ag": 2
-            },
-            {
               "home": "Canada",
               "away": "Qatar",
               "hg": 3,
@@ -1193,15 +1152,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Purdy Pitches takes care of business with 24 goals, clearing the field of rival groups like Nicolodeons"
+          "blurb": "Purdy Pitches' Group B is squeaking in with 19 goals, hoping Nicolodeons! and Taco Corp stall at 18 or under"
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches must make a massive push to grab the No.1 pick, with a slew of high-scoring matches needed to surpass rival managers like Nicolodeons and Taco Corp. The group is currently lagging behind, but a strong finish could propel them to the top spot, and it all starts with a significant increase in goal production",
+      "intro": "Purdy Pitches must ignite a goal-scoring frenzy to snatch the No.1 pick, outgunning Nicolodeons! and other rivals. The group's current pace is woefully inadequate, requiring a drastic turnaround to climb the rankings",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[4,4,21,[[22,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",2,2],[\"Switzerland\",\"Canada\",2,2]]],[24,[[\"Switzerland\",\"Bosnia & Herzegovina\",3,2],[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
+      "fingerprint": "[4,3,21,[[19,[[\"Canada\",\"Qatar\",3,2],[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
     },
     "R": {
       "group": "C",
