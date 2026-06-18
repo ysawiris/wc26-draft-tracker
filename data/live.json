@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T22:32:17.389Z",
+  "fetchedAt": "2026-06-18T23:17:18.363Z",
   "matchCount": 72,
   "matches": [
     {
@@ -350,10 +350,10 @@
       "status": "IN_PLAY",
       "home": "Canada",
       "away": "Qatar",
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 0,
       "venue": "BC Place Vancouver",
-      "minute": "31'"
+      "minute": "55'"
     },
     {
       "id": "400021442",
@@ -1019,12 +1019,12 @@
         "Canada": {
           "y": 1,
           "r": 0,
-          "f": 0
+          "f": 2
         },
         "Qatar": {
           "y": 1,
-          "r": 0,
-          "f": 4
+          "r": 1,
+          "f": 5
         }
       },
       "400021453": {
@@ -1295,7 +1295,7 @@
       },
       "Qatar": {
         "y": 3,
-        "r": 0
+        "r": 1
       },
       "Canada": {
         "y": 3,
@@ -1484,10 +1484,10 @@
         "f": 32
       },
       "Qatar": {
-        "f": 14
+        "f": 15
       },
       "Canada": {
-        "f": 8
+        "f": 10
       },
       "Haiti": {
         "f": 22
