@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T20:53:32.192Z",
+  "generatedAt": "2026-06-19T22:42:28.308Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -1157,17 +1157,17 @@
     },
     "R": {
       "group": "C",
-      "banked": 3,
-      "remaining": 4,
-      "projTotal": 15,
+      "banked": 4,
+      "remaining": 3,
+      "projTotal": 13.7,
       "rank": 10,
       "leads": false,
       "winningBar": 21,
       "countries": [
-        "Scotland",
-        "Morocco",
         "Brazil",
-        "Haiti"
+        "Haiti",
+        "Morocco",
+        "Scotland"
       ],
       "rivals": [
         {
@@ -1190,18 +1190,12 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 22,
-          "yourRemainingGoals": 19,
-          "rivalCap": 21,
+          "targetTotal": 19,
+          "yourRemainingGoals": 15,
+          "rivalCap": 18,
           "needsHelp": true,
           "lines": [
             {
-              "home": "Scotland",
-              "away": "Morocco",
-              "hg": 2,
-              "ag": 2
-            },
-            {
               "home": "Brazil",
               "away": "Haiti",
               "hg": 5,
@@ -1220,50 +1214,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Group C squeaks in at 22 goals, praying rivals like Nicolodeons and Big Blue Wrecking Crew stall at 21 or fewer."
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 23,
-          "yourRemainingGoals": 20,
-          "rivalCap": 22,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Scotland",
-              "away": "Morocco",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Brazil",
-              "away": "Haiti",
-              "hg": 5,
-              "ag": 1
-            },
-            {
-              "home": "Morocco",
-              "away": "Haiti",
-              "hg": 4,
-              "ag": 1
-            },
-            {
-              "home": "Scotland",
-              "away": "Brazil",
-              "hg": 2,
-              "ag": 3
-            }
-          ],
-          "blurb": "Group C takes care of business, surging to 23 goals, leaving competitors in the dust and securing the top spot."
+          "blurb": "Ms. Jackson ouuuuuuuuuuuu needs Group C to squeak in with 19 goals while Nicolodeons and Taco Corp stall"
         }
       ],
       "abbr": "R",
       "team": "Ms. Jackson ouuuuuuuuuuuu",
-      "intro": "For Ms. Jackson ouuuuuuuuuuuu to seize the No.1 pick, Group C must unleash a goal-scoring frenzy! With rivals breathing down their necks, every goal counts!",
+      "intro": "Ms. Jackson ouuuuuuuuuuuu must rally her World Cup Group C to score big and outpace rival groups like Nicolodeons! To grab the No.1 pick, her team needs to step up their goal-scoring game and leave Taco Corp and other rivals in the dust",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[3,4,21,[[22,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,2]]],[23,[[\"Scotland\",\"Morocco\",2,2],[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[4,3,21,[[19,[[\"Brazil\",\"Haiti\",5,1],[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,2]]]]]"
     }
   }
 }
