@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-19T21:03:11.214Z",
+  "fetchedAt": "2026-06-19T21:37:21.347Z",
   "matchCount": 72,
   "matches": [
     {
@@ -373,13 +373,13 @@
       "group": "D",
       "matchday": null,
       "utcDate": "2026-06-19T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "USA",
       "away": "Australia",
       "homeGoals": 2,
       "awayGoals": 0,
       "venue": "Seattle Stadium",
-      "minute": "90'+7'"
+      "minute": "99'"
     },
     {
       "id": "400021454",
