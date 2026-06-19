@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-19T19:10:02.689Z",
+  "fetchedAt": "2026-06-19T19:53:20.160Z",
   "matchCount": 72,
   "matches": [
     {
@@ -376,10 +376,10 @@
       "status": "IN_PLAY",
       "home": "USA",
       "away": "Australia",
-      "homeGoals": 0,
+      "homeGoals": 2,
       "awayGoals": 0,
       "venue": "Seattle Stadium",
-      "minute": "9'"
+      "minute": "45'+7'"
     },
     {
       "id": "400021454",
@@ -1079,12 +1079,12 @@
         "USA": {
           "y": 0,
           "r": 0,
-          "f": 2
+          "f": 8
         },
         "Australia": {
-          "y": 0,
+          "y": 2,
           "r": 0,
-          "f": 1
+          "f": 6
         }
       },
       "400021463": {
@@ -1350,7 +1350,7 @@
         "r": 0
       },
       "Australia": {
-        "y": 0,
+        "y": 2,
         "r": 0
       },
       "Türkiye": {
@@ -1526,13 +1526,13 @@
         "f": 14
       },
       "USA": {
-        "f": 14
+        "f": 20
       },
       "Paraguay": {
         "f": 12
       },
       "Australia": {
-        "f": 13
+        "f": 18
       },
       "Türkiye": {
         "f": 3
