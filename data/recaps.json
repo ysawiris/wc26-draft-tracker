@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T03:18:25.881Z",
-  "count": 28,
+  "generatedAt": "2026-06-19T21:30:35.973Z",
+  "count": 29,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -461,6 +461,42 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"United States\",\"Paraguay\",4,1,[[\"7'\",\"Damian Bobadilla\",\"United States\",\"home\",true,false],[\"31'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"45'+5'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"73'\",\"Mauricio\",\"Paraguay\",\"away\",false,false],[\"90'+8'\",\"Reyna\",\"United States\",\"home\",false,false]]]"
+    },
+    "400021462": {
+      "id": "400021462",
+      "group": "D",
+      "home": "United States",
+      "away": "Australia",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "venue": "Seattle Stadium",
+      "utcDate": "2026-06-19T19:00:00Z",
+      "goals": [
+        {
+          "minute": "11'",
+          "order": 11,
+          "player": "Cameron Burgess",
+          "team": "United States",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "minute": "43'",
+          "order": 43,
+          "player": "Alex Freeman",
+          "team": "United States",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "United States see off Australia",
+      "summary": "The United States is dominating Australia 2-0 with Cameron Burgess scoring an own goal and Alex Freeman adding another, the Americans are taking control of Group D, Freeman's strike sealing the deal before halftime.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"United States\",\"Australia\",2,0,[[\"11'\",\"Cameron Burgess\",\"United States\",\"home\",true,false],[\"43'\",\"Alex Freeman\",\"United States\",\"home\",false,false]]]"
     },
     "400021463": {
       "id": "400021463",
