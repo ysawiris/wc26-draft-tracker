@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T17:11:58.600Z",
+  "generatedAt": "2026-06-19T20:03:36.353Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -515,17 +515,17 @@
     },
     "GRS": {
       "group": "D",
-      "banked": 7,
-      "remaining": 4,
-      "projTotal": 17.4,
+      "banked": 9,
+      "remaining": 3,
+      "projTotal": 16.7,
       "rank": 7,
       "leads": false,
       "winningBar": 21,
       "countries": [
-        "United States",
-        "Australia",
         "Türkiye",
-        "Paraguay"
+        "Paraguay",
+        "Australia",
+        "United States"
       ],
       "rivals": [
         {
@@ -549,16 +549,10 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 15,
+          "yourRemainingGoals": 13,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "United States",
-              "away": "Australia",
-              "hg": 2,
-              "ag": 2
-            },
             {
               "home": "Türkiye",
               "away": "Paraguay",
@@ -569,41 +563,35 @@
               "home": "Paraguay",
               "away": "Australia",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Türkiye",
               "away": "United States",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             }
           ],
-          "blurb": "Gallactic Rebel Scum squeezes past Nicolodeons with 22 goals as rivals stall at 21 or under"
+          "blurb": "Group D is squeaking in with 22 goals as rivals stall at 21 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 17,
+          "yourRemainingGoals": 15,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
             {
-              "home": "United States",
-              "away": "Australia",
-              "hg": 2,
-              "ag": 2
-            },
-            {
               "home": "Türkiye",
               "away": "Paraguay",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             },
             {
               "home": "Paraguay",
               "away": "Australia",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             },
             {
@@ -613,50 +601,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Gallactic Rebel Scum takes care of business reaching 24 goals, clearing the field of Big Blue Wrecking Crew"
-        },
-        {
-          "key": "fest",
-          "label": "Goal-fest",
-          "targetTotal": 26,
-          "yourRemainingGoals": 19,
-          "rivalCap": 25,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "United States",
-              "away": "Australia",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Türkiye",
-              "away": "Paraguay",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Paraguay",
-              "away": "Australia",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Türkiye",
-              "away": "United States",
-              "hg": 3,
-              "ag": 2
-            }
-          ],
-          "blurb": "Gallactic Rebel Scum unleashes a goal-fest reaching 26 goals, leaving all rivals, including Nicolodeons, in the dust"
+          "blurb": "Group D takes care of business reaching 24 goals clear of the field"
         }
       ],
       "abbr": "GRS",
       "team": "Gallactic Rebel Scum",
-      "intro": "Gallactic Rebel Scum needs a goal-scoring explosion to snatch the No.1 pick, with a monumental task ahead to outgun Nicolodeons and Big Blue Wrecking Crew! To claim the top spot, Group D must vastly outperform its current pace, leaving rivals in the dust",
+      "intro": "Gallactic Rebel Scum must rally their Group D teams to outscore Nicolodeons and Taco Corp to grab the No.1 pick, and it's going to be a wild ride with three matches left to make it happen. To take the top spot, Gallactic Rebel Scum needs their teams to find the back of the net and leave rival managers in the dust, especially those tough Nicolodeons and Taco Corp groups",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,4,21,[[22,[[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,2],[\"Paraguay\",\"Australia\",2,1],[\"Türkiye\",\"United States\",2,2]]],[24,[[\"United States\",\"Australia\",2,2],[\"Türkiye\",\"Paraguay\",2,2],[\"Paraguay\",\"Australia\",2,2],[\"Türkiye\",\"United States\",3,2]]],[26,[[\"United States\",\"Australia\",3,2],[\"Türkiye\",\"Paraguay\",3,2],[\"Paraguay\",\"Australia\",2,2],[\"Türkiye\",\"United States\",3,2]]]]]"
+      "fingerprint": "[9,3,21,[[22,[[\"Türkiye\",\"Paraguay\",2,2],[\"Paraguay\",\"Australia\",2,2],[\"Türkiye\",\"United States\",3,2]]],[24,[[\"Türkiye\",\"Paraguay\",3,2],[\"Paraguay\",\"Australia\",3,2],[\"Türkiye\",\"United States\",3,2]]]]]"
     },
     "FF": {
       "group": "L",
