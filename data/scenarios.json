@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T00:01:11.573Z",
+  "generatedAt": "2026-06-19T01:36:36.601Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -31,7 +31,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
@@ -171,12 +171,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         },
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.2
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -298,7 +298,7 @@
       "banked": 2,
       "remaining": 4,
       "projTotal": 13,
-      "rank": 12,
+      "rank": 11,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -321,7 +321,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
@@ -372,7 +372,7 @@
       "group": "F",
       "banked": 10,
       "remaining": 4,
-      "projTotal": 20.7,
+      "projTotal": 20.8,
       "rank": 3,
       "leads": false,
       "winningBar": 21,
@@ -396,7 +396,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.2
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -517,7 +517,7 @@
       "group": "D",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 17.2,
+      "projTotal": 17.3,
       "rank": 7,
       "leads": false,
       "winningBar": 21,
@@ -541,7 +541,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
@@ -686,7 +686,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
@@ -831,7 +831,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
@@ -976,7 +976,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
@@ -1097,7 +1097,7 @@
       "group": "B",
       "banked": 15,
       "remaining": 2,
-      "projTotal": 20.2,
+      "projTotal": 20.5,
       "rank": 4,
       "leads": false,
       "winningBar": 21,
@@ -1121,7 +1121,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
@@ -1230,7 +1230,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.7
+          "proj": 20.8
         }
       ],
       "scenarios": [
