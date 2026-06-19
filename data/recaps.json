@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-18T21:20:32.190Z",
-  "count": 26,
+  "generatedAt": "2026-06-19T00:06:02.591Z",
+  "count": 27,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -233,6 +233,81 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"Canada\",\"Bosnia & Herzegovina\",1,1,[[\"21'\",\"Jovo Lukic\",\"Bosnia & Herzegovina\",\"away\",false,false],[\"78'\",\"Cyle Larin\",\"Canada\",\"home\",false,false]]]"
+    },
+    "400021450": {
+      "id": "400021450",
+      "group": "B",
+      "home": "Canada",
+      "away": "Qatar",
+      "homeGoals": 6,
+      "awayGoals": 0,
+      "venue": "BC Place Vancouver",
+      "utcDate": "2026-06-18T22:00:00Z",
+      "goals": [
+        {
+          "minute": "16'",
+          "order": 16,
+          "player": "Cyle Larin",
+          "team": "Canada",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "29'",
+          "order": 29,
+          "player": "Jonathan David",
+          "team": "Canada",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+3'",
+          "order": 45.03,
+          "player": "Jonathan David",
+          "team": "Canada",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "64'",
+          "order": 64,
+          "player": "Nathan Saliba",
+          "team": "Canada",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "75'",
+          "order": 75,
+          "player": "Mohamed Manai",
+          "team": "Canada",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "minute": "90'+2'",
+          "order": 90.02,
+          "player": "Jonathan David",
+          "team": "Canada",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [
+        "HOMAM AHMED (Qatar) is sent off!",
+        "A. MADIBO (Qatar) is sent off!"
+      ],
+      "headline": "Canada see off Qatar",
+      "summary": "Canada thrashes Qatar 6-0 with Cyle Larin and Jonathan David scoring, David nets a hat trick, Nathan Saliba and an own goal by Mohamed Manai add to the tally. Qatar's Homam Ahmed and A. Madibo are sent off. Jonathan David seals the win in stoppage time.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Canada\",\"Qatar\",6,0,[[\"16'\",\"Cyle Larin\",\"Canada\",\"home\",false,false],[\"29'\",\"Jonathan David\",\"Canada\",\"home\",false,false],[\"45'+3'\",\"Jonathan David\",\"Canada\",\"home\",false,false],[\"64'\",\"Nathan Saliba\",\"Canada\",\"home\",false,false],[\"75'\",\"Mohamed Manai\",\"Canada\",\"home\",true,false],[\"90'+2'\",\"Jonathan David\",\"Canada\",\"home\",false,false]]]"
     },
     "400021453": {
       "id": "400021453",
