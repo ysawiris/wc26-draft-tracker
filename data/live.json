@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-19T21:37:21.347Z",
+  "fetchedAt": "2026-06-19T22:04:36.197Z",
   "matchCount": 72,
   "matches": [
     {
@@ -386,13 +386,13 @@
       "group": "C",
       "matchday": null,
       "utcDate": "2026-06-19T22:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Scotland",
       "away": "Morocco",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 1,
       "venue": "Boston Stadium",
-      "minute": "0'"
+      "minute": "4'"
     },
     {
       "id": "400021457",
@@ -1051,6 +1051,13 @@
           "f": 18
         }
       },
+      "400021454": {
+        "Scotland": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021456": {
         "Brazil": {
           "y": 2,
@@ -1517,7 +1524,7 @@
         "f": 22
       },
       "Scotland": {
-        "f": 18
+        "f": 19
       },
       "Brazil": {
         "f": 14
