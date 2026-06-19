@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-19T06:02:04.334Z",
+  "fetchedAt": "2026-06-19T09:51:52.517Z",
   "matchCount": 44,
   "lines": [
     {
@@ -24,9 +24,9 @@
       "homeRaw": "Scotland",
       "awayRaw": "Morocco",
       "line": 2.5,
-      "overUS": "+130",
-      "underUS": "-160",
-      "impliedTotal": 2.34
+      "overUS": "+125",
+      "underUS": "-155",
+      "impliedTotal": 2.37
     },
     {
       "espnId": "760443",
@@ -96,9 +96,9 @@
       "homeRaw": "Belgium",
       "awayRaw": "Iran",
       "line": 2.5,
-      "overUS": "-120",
-      "underUS": "-105",
-      "impliedTotal": 2.74
+      "overUS": "-125",
+      "underUS": "+100",
+      "impliedTotal": 2.78
     },
     {
       "espnId": "760452",
@@ -192,9 +192,9 @@
       "homeRaw": "Norway",
       "awayRaw": "Senegal",
       "line": 2.5,
-      "overUS": "-110",
+      "overUS": "-105",
       "underUS": "-115",
-      "impliedTotal": 2.65
+      "impliedTotal": 2.63
     },
     {
       "espnId": "760459",
@@ -240,9 +240,9 @@
       "homeRaw": "Portugal",
       "awayRaw": "Uzbekistan",
       "line": 2.5,
-      "overUS": "-165",
+      "overUS": "-170",
       "underUS": "+135",
-      "impliedTotal": 3.08
+      "impliedTotal": 3.09
     },
     {
       "espnId": "760462",
@@ -264,9 +264,9 @@
       "homeRaw": "Czechia",
       "awayRaw": "Mexico",
       "line": 2.5,
-      "overUS": "+125",
-      "underUS": "-155",
-      "impliedTotal": 2.37
+      "overUS": "+120",
+      "underUS": "-150",
+      "impliedTotal": 2.4
     },
     {
       "espnId": "760464",
@@ -360,9 +360,9 @@
       "homeRaw": "Paraguay",
       "awayRaw": "Australia",
       "line": 2.5,
-      "overUS": "+130",
-      "underUS": "-160",
-      "impliedTotal": 2.34
+      "overUS": "+125",
+      "underUS": "-155",
+      "impliedTotal": 2.37
     },
     {
       "espnId": "760472",
