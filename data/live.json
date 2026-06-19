@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-19T04:02:28.376Z",
+  "fetchedAt": "2026-06-19T17:49:18.547Z",
   "matchCount": 72,
   "matches": [
     {
@@ -379,7 +379,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Seattle Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021454",
