@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T00:06:02.591Z",
-  "count": 27,
+  "generatedAt": "2026-06-19T03:18:25.881Z",
+  "count": 28,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -74,6 +74,33 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"South Korea\",\"Czech Republic\",2,1,[[\"59'\",\"Ladislav Krejci\",\"Czech Republic\",\"away\",false,false],[\"67'\",\"Hwang Inbeom\",\"South Korea\",\"home\",false,false],[\"80'\",\"H G Oh\",\"South Korea\",\"home\",false,false]]]"
+    },
+    "400021442": {
+      "id": "400021442",
+      "group": "A",
+      "home": "Mexico",
+      "away": "South Korea",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "venue": "Guadalajara Stadium",
+      "utcDate": "2026-06-19T01:00:00Z",
+      "goals": [
+        {
+          "minute": "50'",
+          "order": 50,
+          "player": "Luis Romo",
+          "team": "Mexico",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Mexico see off South Korea",
+      "summary": "Mexico leads 1-0 over South Korea as Luis Romo scores in the 50th minute, Mexico is winning with this lone goal, the current score stands at Mexico 1 South Korea 0",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Mexico\",\"South Korea\",1,0,[[\"50'\",\"Luis Romo\",\"Mexico\",\"home\",false,false]]]"
     },
     "400021443": {
       "id": "400021443",
