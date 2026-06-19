@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T09:57:17.167Z",
+  "generatedAt": "2026-06-19T13:39:57.783Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -8,7 +8,7 @@
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.5,
-      "rank": 8,
+      "rank": 9,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -21,12 +21,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -152,7 +152,7 @@
       "group": "E",
       "banked": 9,
       "remaining": 4,
-      "projTotal": 21.4,
+      "projTotal": 21.5,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -166,7 +166,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -311,12 +311,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -372,7 +372,7 @@
       "group": "F",
       "banked": 10,
       "remaining": 4,
-      "projTotal": 20.8,
+      "projTotal": 20.9,
       "rank": 2,
       "leads": false,
       "winningBar": 21,
@@ -386,7 +386,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "I",
@@ -531,12 +531,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -676,12 +676,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -821,12 +821,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -953,7 +953,7 @@
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.5,
-      "rank": 9,
+      "rank": 8,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -966,12 +966,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -1013,7 +1013,7 @@
               "ag": 2
             }
           ],
-          "blurb": "The Metcalf Matrix squeezes past Nicolodeons! as Group K scores 22 goals"
+          "blurb": "Group K squeaks in with 22 goals while rivals like Nicolodeons! and Taco Corp stall at 21 or under."
         },
         {
           "key": "business",
@@ -1027,7 +1027,7 @@
               "home": "Portugal",
               "away": "Uzbekistan",
               "hg": 4,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Colombia",
@@ -1045,10 +1045,10 @@
               "home": "Colombia",
               "away": "Portugal",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix dominates the draft by scoring 24 goals and leaving Taco Corp behind"
+          "blurb": "Group K takes care of business by hitting 24 goals, leaving competitors like Group I in the dust."
         },
         {
           "key": "fest",
@@ -1083,15 +1083,15 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix runs away with the No.1 pick as Group K explodes for 26 goals"
+          "blurb": "Group K experiences a goal-fest, reaching 26 goals and firmly establishing dominance over all rival groups."
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix must ignite Group K's goal-scoring engines to leapfrog rival groups like Nicolodeons! and Taco Corp for the No.1 pick, a spot that will require a significant surge in production from Portugal, Uzbekistan, Colombia, and DR Congo. The Metcalf Matrix needs a perfect storm of results to catapult their group to the top of the goal-scoring charts, with Nicolodeons! and Taco Corp looming as major obstacles to overcome.",
+      "intro": "The Metcalf Matrix must unleash an offensive explosion to secure the coveted No.1 pick! With rivals lurking, every goal counts in this thrilling race!",
       "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,21,[[22,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "aiVia": "GitHub Models",
+      "fingerprint": "[6,4,21,[[22,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",2,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,2]]],[24,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,3]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
@@ -1111,12 +1111,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
@@ -1220,12 +1220,12 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 21.4
+          "proj": 21.5
         },
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "I",
