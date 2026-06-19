@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-18T23:59:07.647Z",
+  "fetchedAt": "2026-06-19T01:28:41.352Z",
   "matchCount": 72,
   "matches": [
     {
@@ -347,26 +347,26 @@
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-18T22:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Canada",
       "away": "Qatar",
       "homeGoals": 6,
       "awayGoals": 0,
       "venue": "BC Place Vancouver",
-      "minute": "90'+6'"
+      "minute": "100'"
     },
     {
       "id": "400021442",
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-19T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Mexico",
       "away": "Korea Republic",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Guadalajara Stadium",
-      "minute": "0'"
+      "minute": "28'"
     },
     {
       "id": "400021462",
@@ -967,6 +967,18 @@
           "f": 8
         }
       },
+      "400021442": {
+        "Korea Republic": {
+          "y": 1,
+          "r": 0,
+          "f": 3
+        },
+        "Mexico": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021443": {
         "South Africa": {
           "y": 2,
@@ -1019,7 +1031,7 @@
         "Canada": {
           "y": 1,
           "r": 0,
-          "f": 7
+          "f": 8
         },
         "Qatar": {
           "y": 1,
@@ -1278,7 +1290,7 @@
         "r": 0
       },
       "Korea Republic": {
-        "y": 1,
+        "y": 2,
         "r": 0
       },
       "Mexico": {
@@ -1472,10 +1484,10 @@
         "f": 27
       },
       "Korea Republic": {
-        "f": 8
+        "f": 11
       },
       "Mexico": {
-        "f": 10
+        "f": 11
       },
       "Switzerland": {
         "f": 16
@@ -1487,7 +1499,7 @@
         "f": 18
       },
       "Canada": {
-        "f": 15
+        "f": 16
       },
       "Haiti": {
         "f": 22
