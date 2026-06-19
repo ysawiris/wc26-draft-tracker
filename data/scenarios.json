@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T13:39:57.783Z",
+  "generatedAt": "2026-06-19T17:11:58.600Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -26,7 +26,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -166,7 +166,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -316,7 +316,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -372,7 +372,7 @@
       "group": "F",
       "banked": 10,
       "remaining": 4,
-      "projTotal": 20.9,
+      "projTotal": 21,
       "rank": 2,
       "leads": false,
       "winningBar": 21,
@@ -536,7 +536,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -681,7 +681,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -826,7 +826,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -971,7 +971,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -1116,7 +1116,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
@@ -1206,7 +1206,7 @@
       "group": "C",
       "banked": 3,
       "remaining": 4,
-      "projTotal": 15,
+      "projTotal": 15.1,
       "rank": 10,
       "leads": false,
       "winningBar": 21,
@@ -1225,7 +1225,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "I",
