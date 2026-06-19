@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-19T02:30:54.265Z",
+  "fetchedAt": "2026-06-19T04:02:28.376Z",
   "matchCount": 72,
   "matches": [
     {
@@ -360,13 +360,13 @@
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-19T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Mexico",
       "away": "Korea Republic",
       "homeGoals": 1,
       "awayGoals": 0,
       "venue": "Guadalajara Stadium",
-      "minute": "71'"
+      "minute": "97'"
     },
     {
       "id": "400021462",
@@ -971,12 +971,12 @@
         "Korea Republic": {
           "y": 2,
           "r": 0,
-          "f": 4
+          "f": 5
         },
         "Mexico": {
           "y": 0,
           "r": 0,
-          "f": 7
+          "f": 9
         }
       },
       "400021443": {
@@ -1484,10 +1484,10 @@
         "f": 27
       },
       "Korea Republic": {
-        "f": 12
+        "f": 13
       },
       "Mexico": {
-        "f": 17
+        "f": 19
       },
       "Switzerland": {
         "f": 16
