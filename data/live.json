@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T02:10:50.802Z",
+  "fetchedAt": "2026-06-20T03:32:00.552Z",
   "matchCount": 72,
   "matches": [
     {
@@ -399,26 +399,26 @@
       "group": "C",
       "matchday": null,
       "utcDate": "2026-06-20T00:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Brazil",
       "away": "Haiti",
       "homeGoals": 3,
       "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": "75'"
+      "minute": "96'"
     },
     {
       "id": "400021460",
       "group": "D",
       "matchday": null,
       "utcDate": "2026-06-20T03:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Türkiye",
       "away": "Paraguay",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 1,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": "0'"
+      "minute": "31'"
     },
     {
       "id": "400021472",
@@ -1079,12 +1079,12 @@
         "Brazil": {
           "y": 1,
           "r": 0,
-          "f": 11
+          "f": 12
         },
         "Haiti": {
           "y": 3,
           "r": 0,
-          "f": 5
+          "f": 11
         }
       },
       "400021458": {
@@ -1097,6 +1097,18 @@
           "y": 5,
           "r": 0,
           "f": 12
+        }
+      },
+      "400021460": {
+        "Paraguay": {
+          "y": 1,
+          "r": 0,
+          "f": 5
+        },
+        "Türkiye": {
+          "y": 0,
+          "r": 0,
+          "f": 1
         }
       },
       "400021462": {
@@ -1370,15 +1382,15 @@
         "r": 0
       },
       "Paraguay": {
-        "y": 5,
-        "r": 0
-      },
-      "Australia": {
-        "y": 4,
+        "y": 6,
         "r": 0
       },
       "Türkiye": {
         "y": 1,
+        "r": 0
+      },
+      "Australia": {
+        "y": 4,
         "r": 0
       },
       "Germany": {
@@ -1538,7 +1550,7 @@
         "f": 16
       },
       "Haiti": {
-        "f": 27
+        "f": 33
       },
       "Scotland": {
         "f": 28
@@ -1547,19 +1559,19 @@
         "f": 21
       },
       "Brazil": {
-        "f": 25
+        "f": 26
       },
       "USA": {
         "f": 23
       },
       "Paraguay": {
-        "f": 12
+        "f": 17
+      },
+      "Türkiye": {
+        "f": 4
       },
       "Australia": {
         "f": 26
-      },
-      "Türkiye": {
-        "f": 3
       },
       "Germany": {
         "f": 18
