@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T05:36:22.876Z",
+  "generatedAt": "2026-06-20T07:33:06.103Z",
   "count": 32,
   "byId": {
     "400021440": {
@@ -61,7 +61,7 @@
         {
           "minute": "80'",
           "order": 80,
-          "player": "H G Oh",
+          "player": "Oh Hyeongyu",
           "team": "South Korea",
           "side": "home",
           "ownGoal": false,
@@ -70,10 +70,10 @@
       ],
       "reds": [],
       "headline": "South Korea see off Czech Republic",
-      "summary": "In a thrilling clash at Guadalajara Stadium, South Korea rallies to defeat the Czech Republic 2-1. Ladislav Krejci puts the Czechs ahead in the 59th minute, but Hwang Inbeom equalizes just eight minutes later. H G Oh secures the victory with a decisive goal in the 80th minute, keeping South Korea's hopes alive in Group A.",
+      "summary": "South Korea is taking down the Czech Republic 2-1 with Hwang Inbeom and Oh Hyeongyu scoring, overcoming Ladislav Krejci's earlier goal, the Koreans are turning it around in the second half, Hwang Inbeom and Oh Hyeongyu seal the win for South Korea.",
       "ai": true,
-      "aiVia": null,
-      "fingerprint": "[\"South Korea\",\"Czech Republic\",2,1,[[\"59'\",\"Ladislav Krejci\",\"Czech Republic\",\"away\",false,false],[\"67'\",\"Hwang Inbeom\",\"South Korea\",\"home\",false,false],[\"80'\",\"H G Oh\",\"South Korea\",\"home\",false,false]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"South Korea\",\"Czech Republic\",2,1,[[\"59'\",\"Ladislav Krejci\",\"Czech Republic\",\"away\",false,false],[\"67'\",\"Hwang Inbeom\",\"South Korea\",\"home\",false,false],[\"80'\",\"Oh Hyeongyu\",\"South Korea\",\"home\",false,false]]]"
     },
     "400021442": {
       "id": "400021442",
@@ -124,7 +124,7 @@
         {
           "minute": "67'",
           "order": 67,
-          "player": "Raúl",
+          "player": "Raul Jimenez",
           "team": "Mexico",
           "side": "home",
           "ownGoal": false,
@@ -132,15 +132,15 @@
         }
       ],
       "reds": [
-        "SITHOLE (South Africa) is sent off!",
-        "ZWANE (South Africa) is sent off!",
+        "Sphephelo SITHOLE (South Africa) is sent off!",
+        "Themba ZWANE (South Africa) is sent off!",
         "Cesar MONTES (Mexico) is sent off!"
       ],
       "headline": "Mexico see off South Africa",
-      "summary": "Mexico secures a 2-0 victory over South Africa in Group A action at the Mexico City Stadium. Julian Quinones opens the scoring in the 9th minute, followed by Raúl's strike in the 67th. The match sees three red cards, with South Africa's Sithole and Zwane, along with Mexico's Cesar Montes, all sent off.",
+      "summary": "Mexico leads 2-0 over South Africa with Julian Quinones and Raul Jimenez scoring, South Africa is down two men after Sphephelo Sithole and Themba Zwane are sent off, Cesar Montes also receives a red card for Mexico.",
       "ai": true,
-      "aiVia": null,
-      "fingerprint": "[\"Mexico\",\"South Africa\",2,0,[[\"9'\",\"Julian Quinones\",\"Mexico\",\"home\",false,false],[\"67'\",\"Raúl\",\"Mexico\",\"home\",false,false]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Mexico\",\"South Africa\",2,0,[[\"9'\",\"Julian Quinones\",\"Mexico\",\"home\",false,false],[\"67'\",\"Raul Jimenez\",\"Mexico\",\"home\",false,false]]]"
     },
     "400021446": {
       "id": "400021446",
@@ -164,7 +164,7 @@
         {
           "minute": "84'",
           "order": 84,
-          "player": "Vargas",
+          "player": "Ruben Vargas",
           "team": "Switzerland",
           "side": "home",
           "ownGoal": false,
@@ -193,10 +193,10 @@
         "Tarik MUHAREMOVIC (Bosnia and Herzegovina) is sent off!"
       ],
       "headline": "Switzerland see off Bosnia & Herzegovina",
-      "summary": "Switzerland is dominating Bosnia & Herzegovina 4-1, Johan Manzambi scores twice, Vargas adds one, and Bosnia's Ermin Mahmic scores a late consolation, after Tarik Muharemovic is sent off.",
+      "summary": "Johan Manzambi and Ruben Vargas are scoring for Switzerland as they lead 4-1 against Bosnia & Herzegovina, Ermin Mahmic pulls one back, Tarik Muharemovic is sent off.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Switzerland\",\"Bosnia & Herzegovina\",4,1,[[\"74'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"84'\",\"Vargas\",\"Switzerland\",\"home\",false,false],[\"90'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"90'+3'\",\"Ermin Mahmic\",\"Bosnia & Herzegovina\",\"away\",false,false]]]"
+      "fingerprint": "[\"Switzerland\",\"Bosnia & Herzegovina\",4,1,[[\"74'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"84'\",\"Ruben Vargas\",\"Switzerland\",\"home\",false,false],[\"90'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"90'+3'\",\"Ermin Mahmic\",\"Bosnia & Herzegovina\",\"away\",false,false]]]"
     },
     "400021447": {
       "id": "400021447",
@@ -328,7 +328,7 @@
       ],
       "reds": [
         "HOMAM AHMED (Qatar) is sent off!",
-        "A. MADIBO (Qatar) is sent off!"
+        "ASSIM MADIBO (Qatar) is sent off!"
       ],
       "headline": "Canada see off Qatar",
       "summary": "Canada thrashes Qatar 6-0 with Cyle Larin and Jonathan David scoring, David nets a hat trick, Nathan Saliba and an own goal by Mohamed Manai add to the tally. Qatar's Homam Ahmed and A. Madibo are sent off. Jonathan David seals the win in stoppage time.",
@@ -403,7 +403,7 @@
         {
           "minute": "21'",
           "order": 21,
-          "player": "Saibari",
+          "player": "Ismael Saibari",
           "team": "Morocco",
           "side": "away",
           "ownGoal": false,
@@ -412,7 +412,7 @@
         {
           "minute": "32'",
           "order": 32,
-          "player": "Vini Jr.",
+          "player": "Vinicius Junior",
           "team": "Brazil",
           "side": "home",
           "ownGoal": false,
@@ -421,10 +421,10 @@
       ],
       "reds": [],
       "headline": "Brazil and Morocco share the points",
-      "summary": "Brazil and Morocco are locked in a 1-1 tie, Saibari scoring for Morocco and Vini Jr. equalizing for Brazil, the match is intense, Vini Jr. and Saibari are the key scorers so far. Brazil is pushing for a win. The score remains 1-1.",
+      "summary": "Brazil and Morocco are locked in a 1-1 tie, Ismael Saibari scores for Morocco, Vinicius Junior equalizes for Brazil, the match is intense. Saibari strikes first, Vinicius Junior responds. The score is level at 1-1.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Brazil\",\"Morocco\",1,1,[[\"21'\",\"Saibari\",\"Morocco\",\"away\",false,false],[\"32'\",\"Vini Jr.\",\"Brazil\",\"home\",false,false]]]"
+      "fingerprint": "[\"Brazil\",\"Morocco\",1,1,[[\"21'\",\"Ismael Saibari\",\"Morocco\",\"away\",false,false],[\"32'\",\"Vinicius Junior\",\"Brazil\",\"home\",false,false]]]"
     },
     "400021457": {
       "id": "400021457",
@@ -520,7 +520,7 @@
         {
           "minute": "90'+8'",
           "order": 90.08,
-          "player": "Reyna",
+          "player": "Giovanni Reyna",
           "team": "United States",
           "side": "home",
           "ownGoal": false,
@@ -529,10 +529,10 @@
       ],
       "reds": [],
       "headline": "United States see off Paraguay",
-      "summary": "The United States dominates Paraguay 4-1 in their Group D clash at Los Angeles Stadium. An own goal from Damian Bobadilla puts the U.S. ahead, followed by a brace from Folarin Balogun before Mauricio pulls one back for Paraguay. Gio Reyna seals the victory with a stoppage-time strike.",
+      "summary": "The United States is dominating Paraguay 4-1 with Folarin Balogun scoring twice and Damian Bobadilla and Giovanni Reyna also finding the net, while Mauricio scores for Paraguay, the US is taking the win in Group D. Folarin Balogun is on fire.",
       "ai": true,
-      "aiVia": null,
-      "fingerprint": "[\"United States\",\"Paraguay\",4,1,[[\"7'\",\"Damian Bobadilla\",\"United States\",\"home\",true,false],[\"31'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"45'+5'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"73'\",\"Mauricio\",\"Paraguay\",\"away\",false,false],[\"90'+8'\",\"Reyna\",\"United States\",\"home\",false,false]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"United States\",\"Paraguay\",4,1,[[\"7'\",\"Damian Bobadilla\",\"United States\",\"home\",true,false],[\"31'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"45'+5'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"73'\",\"Mauricio\",\"Paraguay\",\"away\",false,false],[\"90'+8'\",\"Giovanni Reyna\",\"United States\",\"home\",false,false]]]"
     },
     "400021460": {
       "id": "400021460",
@@ -648,7 +648,7 @@
         {
           "minute": "6'",
           "order": 6,
-          "player": "Nmecha",
+          "player": "Felix Nmecha",
           "team": "Germany",
           "side": "home",
           "ownGoal": false,
@@ -666,7 +666,7 @@
         {
           "minute": "38'",
           "order": 38,
-          "player": "Schlotterbeck",
+          "player": "Nico Schlotterbeck",
           "team": "Germany",
           "side": "home",
           "ownGoal": false,
@@ -675,7 +675,7 @@
         {
           "minute": "47'",
           "order": 47,
-          "player": "Musiala",
+          "player": "Jamal Musiala",
           "team": "Germany",
           "side": "home",
           "ownGoal": false,
@@ -702,7 +702,7 @@
         {
           "minute": "88'",
           "order": 88,
-          "player": "Havertz",
+          "player": "Kai Havertz",
           "team": "Germany",
           "side": "home",
           "ownGoal": false,
@@ -711,10 +711,10 @@
       ],
       "reds": [],
       "headline": "Germany see off Curaçao",
-      "summary": "Germany is dominating Curaçao 7-1 with Nmecha, Schlotterbeck, Musiala, Nathaniel Brown, Deniz Undav, and Havertz scoring for Germany, while Livano Comenencia scores for Curaçao. Germany is cruising to a Group E win. Musiala and others are leading the charge.",
+      "summary": "Germany is crushing Curaçao 7-1 with goals from Felix Nmecha, Nico Schlotterbeck, Jamal Musiala, Nathaniel Brown, Deniz Undav, and Kai Havertz, while Livano Comenencia scores for Curaçao. Germany is dominating the match. Germany leads comfortably.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Germany\",\"Curaçao\",7,1,[[\"6'\",\"Nmecha\",\"Germany\",\"home\",false,false],[\"21'\",\"Livano Comenencia\",\"Curaçao\",\"away\",false,false],[\"38'\",\"Schlotterbeck\",\"Germany\",\"home\",false,false],[\"47'\",\"Musiala\",\"Germany\",\"home\",false,false],[\"68'\",\"Nathaniel Brown\",\"Germany\",\"home\",false,false],[\"78'\",\"Deniz Undav\",\"Germany\",\"home\",false,false],[\"88'\",\"Havertz\",\"Germany\",\"home\",false,false]]]"
+      "fingerprint": "[\"Germany\",\"Curaçao\",7,1,[[\"6'\",\"Felix Nmecha\",\"Germany\",\"home\",false,false],[\"21'\",\"Livano Comenencia\",\"Curaçao\",\"away\",false,false],[\"38'\",\"Nico Schlotterbeck\",\"Germany\",\"home\",false,false],[\"47'\",\"Jamal Musiala\",\"Germany\",\"home\",false,false],[\"68'\",\"Nathaniel Brown\",\"Germany\",\"home\",false,false],[\"78'\",\"Deniz Undav\",\"Germany\",\"home\",false,false],[\"88'\",\"Kai Havertz\",\"Germany\",\"home\",false,false]]]"
     },
     "400021467": {
       "id": "400021467",
@@ -765,7 +765,7 @@
         {
           "minute": "57'",
           "order": 57,
-          "player": "Nakamura",
+          "player": "Keito Nakamura",
           "team": "Japan",
           "side": "away",
           "ownGoal": false,
@@ -783,7 +783,7 @@
         {
           "minute": "88'",
           "order": 88,
-          "player": "Kamada",
+          "player": "Daichi Kamada",
           "team": "Japan",
           "side": "away",
           "ownGoal": false,
@@ -792,10 +792,10 @@
       ],
       "reds": [],
       "headline": "Netherlands and Japan share the points",
-      "summary": "Netherlands and Japan are locked in a 2-2 battle with Virgil Van Dijk and Crysencio Summerville scoring for the Dutch, while Nakamura and Kamada find the net for Japan, the match is intensifying with both teams fighting for the top spot in Group F.",
+      "summary": "Netherlands and Japan are locked in a 2-2 battle with Virgil Van Dijk and Crysencio Summerville scoring for Netherlands and Keito Nakamura and Daichi Kamada countering for Japan, the match is intense, goals are flowing, Netherlands and Japan are tied.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Netherlands\",\"Japan\",2,2,[[\"50'\",\"Virgil Van Dijk\",\"Netherlands\",\"home\",false,false],[\"57'\",\"Nakamura\",\"Japan\",\"away\",false,false],[\"64'\",\"Crysencio Summerville\",\"Netherlands\",\"home\",false,false],[\"88'\",\"Kamada\",\"Japan\",\"away\",false,false]]]"
+      "fingerprint": "[\"Netherlands\",\"Japan\",2,2,[[\"50'\",\"Virgil Van Dijk\",\"Netherlands\",\"home\",false,false],[\"57'\",\"Keito Nakamura\",\"Japan\",\"away\",false,false],[\"64'\",\"Crysencio Summerville\",\"Netherlands\",\"home\",false,false],[\"88'\",\"Daichi Kamada\",\"Japan\",\"away\",false,false]]]"
     },
     "400021474": {
       "id": "400021474",
@@ -882,7 +882,7 @@
         {
           "minute": "7'",
           "order": 7,
-          "player": "Just",
+          "player": "Elijah Just",
           "team": "New Zealand",
           "side": "away",
           "ownGoal": false,
@@ -891,7 +891,7 @@
         {
           "minute": "32'",
           "order": 32,
-          "player": "Ramin",
+          "player": "Ramin Rezaeian",
           "team": "Iran",
           "side": "home",
           "ownGoal": false,
@@ -900,7 +900,7 @@
         {
           "minute": "54'",
           "order": 54,
-          "player": "Just",
+          "player": "Elijah Just",
           "team": "New Zealand",
           "side": "away",
           "ownGoal": false,
@@ -909,7 +909,7 @@
         {
           "minute": "64'",
           "order": 64,
-          "player": "M.mohebbi",
+          "player": "Mohammad Mohebbi",
           "team": "Iran",
           "side": "home",
           "ownGoal": false,
@@ -918,10 +918,10 @@
       ],
       "reds": [],
       "headline": "Iran and New Zealand share the points",
-      "summary": "Just scores for New Zealand, but Ramin and M.mohebbi equalize for Iran, with Just also scoring again, as Iran and New Zealand are tied 2-2, Just and Ramin and M.mohebbi are the key scorers, Iran and New Zealand are level.",
+      "summary": "Elijah Just scores for New Zealand, Ramin Rezaeian and Mohammad Mohebbi respond for Iran, as Iran and New Zealand are tied 2-2, Elijah Just also scoring a second goal. Iran and New Zealand are level. Iran draws New Zealand 2-2.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Iran\",\"New Zealand\",2,2,[[\"7'\",\"Just\",\"New Zealand\",\"away\",false,false],[\"32'\",\"Ramin\",\"Iran\",\"home\",false,false],[\"54'\",\"Just\",\"New Zealand\",\"away\",false,false],[\"64'\",\"M.mohebbi\",\"Iran\",\"home\",false,false]]]"
+      "fingerprint": "[\"Iran\",\"New Zealand\",2,2,[[\"7'\",\"Elijah Just\",\"New Zealand\",\"away\",false,false],[\"32'\",\"Ramin Rezaeian\",\"Iran\",\"home\",false,false],[\"54'\",\"Elijah Just\",\"New Zealand\",\"away\",false,false],[\"64'\",\"Mohammad Mohebbi\",\"Iran\",\"home\",false,false]]]"
     },
     "400021478": {
       "id": "400021478",
@@ -936,7 +936,7 @@
         {
           "minute": "19'",
           "order": 19,
-          "player": "E.ashour",
+          "player": "Emam Ashour",
           "team": "Egypt",
           "side": "away",
           "ownGoal": false,
@@ -945,7 +945,7 @@
         {
           "minute": "66'",
           "order": 66,
-          "player": "M.hany",
+          "player": "Mohamed Hany",
           "team": "Belgium",
           "side": "home",
           "ownGoal": true,
@@ -954,10 +954,10 @@
       ],
       "reds": [],
       "headline": "Belgium and Egypt share the points",
-      "summary": "Belgium and Egypt are locked at 1-1 as E. Ashour scores for Egypt and M. Hany nets an own goal for Belgium, with the match still intense, M. Hany's mistake leveling the score. E. Ashour and M. Hany are the key scorers. The match is tied.",
+      "summary": "Belgium and Egypt are locked in a 1-1 tie, Emam Ashour scores for Egypt, Mohamed Hany nets an own goal for Belgium, the match is intensifying. Emam Ashour and Mohamed Hany are the key scorers so far. Belgium and Egypt are level at 1-1.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Belgium\",\"Egypt\",1,1,[[\"19'\",\"E.ashour\",\"Egypt\",\"away\",false,false],[\"66'\",\"M.hany\",\"Belgium\",\"home\",true,false]]]"
+      "fingerprint": "[\"Belgium\",\"Egypt\",1,1,[[\"19'\",\"Emam Ashour\",\"Egypt\",\"away\",false,false],[\"66'\",\"Mohamed Hany\",\"Belgium\",\"home\",true,false]]]"
     },
     "400021482": {
       "id": "400021482",
@@ -989,7 +989,7 @@
         {
           "minute": "41'",
           "order": 41,
-          "player": "Alamri",
+          "player": "Abdulelah Alamri",
           "team": "Saudi Arabia",
           "side": "home",
           "ownGoal": false,
@@ -1007,10 +1007,10 @@
       ],
       "reds": [],
       "headline": "Saudi Arabia and Uruguay share the points",
-      "summary": "Saudi Arabia and Uruguay are battling to a 1-1 draw, Alamri scores for Saudi Arabia, Maxi Araujo equalizes for Uruguay, the match is intensifying. Alamri and Maxi Araujo are the key scorers. The score is tied at 1-1.",
+      "summary": "Abdulelah Alamri scores for Saudi Arabia in the 41st minute, Maxi Araujo equalizes for Uruguay in the 80th, the match is tied 1-1, Saudi Arabia and Uruguay share the points.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Saudi Arabia\",\"Uruguay\",1,1,[[\"41'\",\"Alamri\",\"Saudi Arabia\",\"home\",false,false],[\"80'\",\"Maxi Araujo\",\"Uruguay\",\"away\",false,false]]]"
+      "fingerprint": "[\"Saudi Arabia\",\"Uruguay\",1,1,[[\"41'\",\"Abdulelah Alamri\",\"Saudi Arabia\",\"home\",false,false],[\"80'\",\"Maxi Araujo\",\"Uruguay\",\"away\",false,false]]]"
     },
     "400021488": {
       "id": "400021488",
@@ -1025,7 +1025,7 @@
         {
           "minute": "29'",
           "order": 29,
-          "player": "Haaland",
+          "player": "Erling Haaland",
           "team": "Norway",
           "side": "away",
           "ownGoal": false,
@@ -1034,7 +1034,7 @@
         {
           "minute": "39'",
           "order": 39,
-          "player": "Hussein",
+          "player": "Aymen Hussein",
           "team": "Iraq",
           "side": "home",
           "ownGoal": false,
@@ -1043,7 +1043,7 @@
         {
           "minute": "43'",
           "order": 43,
-          "player": "Haaland",
+          "player": "Erling Haaland",
           "team": "Norway",
           "side": "away",
           "ownGoal": false,
@@ -1061,7 +1061,7 @@
         {
           "minute": "90'+6'",
           "order": 90.06,
-          "player": "Hussein",
+          "player": "Aymen Hussein",
           "team": "Norway",
           "side": "away",
           "ownGoal": true,
@@ -1070,10 +1070,10 @@
       ],
       "reds": [],
       "headline": "Norway see off Iraq",
-      "summary": "Haaland scores for Norway in the 29th minute, Hussein equalizes for Iraq in the 39th, but Haaland and Leo Ostigard add to Norway's lead, Hussein then scores an own goal, Norway leads Iraq 4-1, Haaland and Ostigard key scorers. Norway dominates the match.",
+      "summary": "Erling Haaland scores for Norway, Aymen Hussein equalizes for Iraq, but Haaland adds another and Leo Ostigard extends Norway's lead, Iraq's Aymen Hussein seals the 1-4 loss with an own goal, Norway wins 4-1.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Iraq\",\"Norway\",1,4,[[\"29'\",\"Haaland\",\"Norway\",\"away\",false,false],[\"39'\",\"Hussein\",\"Iraq\",\"home\",false,false],[\"43'\",\"Haaland\",\"Norway\",\"away\",false,false],[\"76'\",\"Leo Ostigard\",\"Norway\",\"away\",false,false],[\"90'+6'\",\"Hussein\",\"Norway\",\"away\",true,false]]]"
+      "fingerprint": "[\"Iraq\",\"Norway\",1,4,[[\"29'\",\"Erling Haaland\",\"Norway\",\"away\",false,false],[\"39'\",\"Aymen Hussein\",\"Iraq\",\"home\",false,false],[\"43'\",\"Erling Haaland\",\"Norway\",\"away\",false,false],[\"76'\",\"Leo Ostigard\",\"Norway\",\"away\",false,false],[\"90'+6'\",\"Aymen Hussein\",\"Norway\",\"away\",true,false]]]"
     },
     "400021490": {
       "id": "400021490",
@@ -1088,7 +1088,7 @@
         {
           "minute": "66'",
           "order": 66,
-          "player": "Mbappé",
+          "player": "Kylian Mbappe",
           "team": "France",
           "side": "home",
           "ownGoal": false,
@@ -1097,7 +1097,7 @@
         {
           "minute": "82'",
           "order": 82,
-          "player": "Barcola",
+          "player": "Bradley Barcola",
           "team": "France",
           "side": "home",
           "ownGoal": false,
@@ -1106,7 +1106,7 @@
         {
           "minute": "90'+5'",
           "order": 90.05,
-          "player": "Mbaye",
+          "player": "Ibrahim Mbaye",
           "team": "Senegal",
           "side": "away",
           "ownGoal": false,
@@ -1115,7 +1115,7 @@
         {
           "minute": "90'+6'",
           "order": 90.06,
-          "player": "Mbappé",
+          "player": "Kylian Mbappe",
           "team": "France",
           "side": "home",
           "ownGoal": false,
@@ -1124,10 +1124,10 @@
       ],
       "reds": [],
       "headline": "France see off Senegal",
-      "summary": "France leads Senegal 3-1 with Mbappé and Barcola scoring for France and Mbaye scoring for Senegal, Mbappé seals the win with a late goal, France is taking the three points. Mbappé scores twice. France wins 3-1.",
+      "summary": "Kylian Mbappe and Bradley Barcola score for France, Ibrahim Mbaye for Senegal, France leads 3-1, Mbappe seals the win with a late goal. France is up with Mbappe scoring twice. France wins 3-1.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"France\",\"Senegal\",3,1,[[\"66'\",\"Mbappé\",\"France\",\"home\",false,false],[\"82'\",\"Barcola\",\"France\",\"home\",false,false],[\"90'+5'\",\"Mbaye\",\"Senegal\",\"away\",false,false],[\"90'+6'\",\"Mbappé\",\"France\",\"home\",false,false]]]"
+      "fingerprint": "[\"France\",\"Senegal\",3,1,[[\"66'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"82'\",\"Bradley Barcola\",\"France\",\"home\",false,false],[\"90'+5'\",\"Ibrahim Mbaye\",\"Senegal\",\"away\",false,false],[\"90'+6'\",\"Kylian Mbappe\",\"France\",\"home\",false,false]]]"
     },
     "400021496": {
       "id": "400021496",
@@ -1142,7 +1142,7 @@
         {
           "minute": "17'",
           "order": 17,
-          "player": "Messi",
+          "player": "Lionel Messi",
           "team": "Argentina",
           "side": "home",
           "ownGoal": false,
@@ -1151,7 +1151,7 @@
         {
           "minute": "60'",
           "order": 60,
-          "player": "Messi",
+          "player": "Lionel Messi",
           "team": "Argentina",
           "side": "home",
           "ownGoal": false,
@@ -1160,7 +1160,7 @@
         {
           "minute": "76'",
           "order": 76,
-          "player": "Messi",
+          "player": "Lionel Messi",
           "team": "Argentina",
           "side": "home",
           "ownGoal": false,
@@ -1169,10 +1169,10 @@
       ],
       "reds": [],
       "headline": "Argentina see off Algeria",
-      "summary": "Argentina dominates Algeria 3-0 with Messi scoring in the 17th, 60th, and 76th minutes, leading his team to a convincing victory, Messi is on fire, netting a hat-trick in the Group J match at Kansas City Stadium.",
+      "summary": "Lionel Messi scores for Argentina in the 17th, 60th, and 76th minutes, Argentina leads Algeria 3-0, Messi nets a hat-trick, Argentina wins the match.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Argentina\",\"Algeria\",3,0,[[\"17'\",\"Messi\",\"Argentina\",\"home\",false,false],[\"60'\",\"Messi\",\"Argentina\",\"home\",false,false],[\"76'\",\"Messi\",\"Argentina\",\"home\",false,false]]]"
+      "fingerprint": "[\"Argentina\",\"Algeria\",3,0,[[\"17'\",\"Lionel Messi\",\"Argentina\",\"home\",false,false],[\"60'\",\"Lionel Messi\",\"Argentina\",\"home\",false,false],[\"76'\",\"Lionel Messi\",\"Argentina\",\"home\",false,false]]]"
     },
     "400021498": {
       "id": "400021498",
@@ -1232,7 +1232,7 @@
         {
           "minute": "6'",
           "order": 6,
-          "player": "João Neves",
+          "player": "Joao Neves",
           "team": "Portugal",
           "side": "home",
           "ownGoal": false,
@@ -1250,10 +1250,10 @@
       ],
       "reds": [],
       "headline": "Portugal and DR Congo share the points",
-      "summary": "João Neves scores for Portugal in the 6th minute, but Yoane Wissa equalizes for DR Congo just before halftime, making it 1-1, the current score in this intense Group K matchup at Houston Stadium. Portugal and DR Congo are tied.",
+      "summary": "Joao Neves scores for Portugal in the 6th minute, but Yoane Wissa equalizes for DR Congo just before halftime, the match is currently tied at 1-1, with both teams fighting for the win. Portugal and DR Congo are level in Group K. The score remains 1-1.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Portugal\",\"DR Congo\",1,1,[[\"6'\",\"João Neves\",\"Portugal\",\"home\",false,false],[\"45'+5'\",\"Yoane Wissa\",\"DR Congo\",\"away\",false,false]]]"
+      "fingerprint": "[\"Portugal\",\"DR Congo\",1,1,[[\"6'\",\"Joao Neves\",\"Portugal\",\"home\",false,false],[\"45'+5'\",\"Yoane Wissa\",\"DR Congo\",\"away\",false,false]]]"
     },
     "400021504": {
       "id": "400021504",
@@ -1331,7 +1331,7 @@
         {
           "minute": "42'",
           "order": 42,
-          "player": "Kane",
+          "player": "Harry Kane",
           "team": "England",
           "side": "home",
           "ownGoal": false,
@@ -1349,7 +1349,7 @@
         {
           "minute": "47'",
           "order": 47,
-          "player": "Bellingham",
+          "player": "Jude Bellingham",
           "team": "England",
           "side": "home",
           "ownGoal": false,
@@ -1358,7 +1358,7 @@
         {
           "minute": "85'",
           "order": 85,
-          "player": "Rashford",
+          "player": "Marcus Rashford",
           "team": "England",
           "side": "home",
           "ownGoal": false,
@@ -1367,10 +1367,10 @@
       ],
       "reds": [],
       "headline": "England see off Croatia",
-      "summary": "England are dominating Croatia 4-2, with Kane and Bellingham leading the charge, Rashford sealing the deal, while Martin Baturina and Petar Musa score for Croatia, the Three Lions taking the win in a thrilling Group L matchup at Dallas Stadium.",
+      "summary": "England are beating Croatia 4-2 with Harry Kane, Jude Bellingham, and Marcus Rashford scoring for England, while Martin Baturina and Petar Musa score for Croatia, the match is intense at Dallas Stadium. England are taking the lead.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"England\",\"Croatia\",4,2,[[\"36'\",\"Martin Baturina\",\"Croatia\",\"away\",false,false],[\"42'\",\"Kane\",\"England\",\"home\",false,false],[\"45'+5'\",\"Petar Musa\",\"Croatia\",\"away\",false,false],[\"47'\",\"Bellingham\",\"England\",\"home\",false,false],[\"85'\",\"Rashford\",\"England\",\"home\",false,false]]]"
+      "fingerprint": "[\"England\",\"Croatia\",4,2,[[\"36'\",\"Martin Baturina\",\"Croatia\",\"away\",false,false],[\"42'\",\"Harry Kane\",\"England\",\"home\",false,false],[\"45'+5'\",\"Petar Musa\",\"Croatia\",\"away\",false,false],[\"47'\",\"Jude Bellingham\",\"England\",\"home\",false,false],[\"85'\",\"Marcus Rashford\",\"England\",\"home\",false,false]]]"
     },
     "400021510": {
       "id": "400021510",
