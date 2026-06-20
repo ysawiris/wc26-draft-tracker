@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T03:32:00.552Z",
+  "fetchedAt": "2026-06-20T05:03:30.440Z",
   "matchCount": 72,
   "matches": [
     {
@@ -418,7 +418,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": "31'"
+      "minute": "90'+6'"
     },
     {
       "id": "400021472",
@@ -1101,14 +1101,14 @@
       },
       "400021460": {
         "Paraguay": {
-          "y": 1,
-          "r": 0,
-          "f": 5
+          "y": 2,
+          "r": 1,
+          "f": 13
         },
         "Türkiye": {
-          "y": 0,
+          "y": 2,
           "r": 0,
-          "f": 1
+          "f": 13
         }
       },
       "400021462": {
@@ -1382,11 +1382,11 @@
         "r": 0
       },
       "Paraguay": {
-        "y": 6,
-        "r": 0
+        "y": 7,
+        "r": 1
       },
       "Türkiye": {
-        "y": 1,
+        "y": 3,
         "r": 0
       },
       "Australia": {
@@ -1565,10 +1565,10 @@
         "f": 23
       },
       "Paraguay": {
-        "f": 17
+        "f": 25
       },
       "Türkiye": {
-        "f": 4
+        "f": 16
       },
       "Australia": {
         "f": 26
