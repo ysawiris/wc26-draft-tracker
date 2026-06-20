@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T03:48:17.503Z",
-  "count": 31,
+  "generatedAt": "2026-06-20T05:36:22.876Z",
+  "count": 32,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -533,6 +533,35 @@
       "ai": true,
       "aiVia": null,
       "fingerprint": "[\"United States\",\"Paraguay\",4,1,[[\"7'\",\"Damian Bobadilla\",\"United States\",\"home\",true,false],[\"31'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"45'+5'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"73'\",\"Mauricio\",\"Paraguay\",\"away\",false,false],[\"90'+8'\",\"Reyna\",\"United States\",\"home\",false,false]]]"
+    },
+    "400021460": {
+      "id": "400021460",
+      "group": "D",
+      "home": "Türkiye",
+      "away": "Paraguay",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "venue": "San Francisco Bay Area Stadium",
+      "utcDate": "2026-06-20T03:00:00Z",
+      "goals": [
+        {
+          "minute": "2'",
+          "order": 2,
+          "player": "Matias Galarza",
+          "team": "Paraguay",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [
+        "Miguel ALMIRON (Paraguay) is sent off!"
+      ],
+      "headline": "Paraguay see off Türkiye",
+      "summary": "Paraguay leads Türkiye 1-0 with Matias Galarza scoring in the 2nd minute, Miguel Almiron gets sent off, Paraguay holds on despite being down a man.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Türkiye\",\"Paraguay\",0,1,[[\"2'\",\"Matias Galarza\",\"Paraguay\",\"away\",false,false]]]"
     },
     "400021462": {
       "id": "400021462",
