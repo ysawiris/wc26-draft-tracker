@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T16:57:53.416Z",
+  "generatedAt": "2026-06-20T17:54:57.138Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -24,14 +24,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -164,11 +164,6 @@
       ],
       "rivals": [
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
@@ -177,6 +172,11 @@
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20
         }
       ],
       "scenarios": [
@@ -314,14 +314,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -370,17 +370,17 @@
     },
     "TACO": {
       "group": "F",
-      "banked": 10,
-      "remaining": 4,
-      "projTotal": 21,
-      "rank": 2,
+      "banked": 12,
+      "remaining": 3,
+      "projTotal": 20,
+      "rank": 4,
       "leads": false,
       "winningBar": 21,
       "countries": [
-        "Netherlands",
-        "Sweden",
         "Tunisia",
-        "Japan"
+        "Japan",
+        "Netherlands",
+        "Sweden"
       ],
       "rivals": [
         {
@@ -404,16 +404,10 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 12,
+          "yourRemainingGoals": 10,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Netherlands",
-              "away": "Sweden",
-              "hg": 2,
-              "ag": 1
-            },
             {
               "home": "Tunisia",
               "away": "Japan",
@@ -424,7 +418,7 @@
               "home": "Tunisia",
               "away": "Netherlands",
               "hg": 1,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Japan",
@@ -433,26 +427,20 @@
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp squeaks in as Group F reaches 22 goals, stalling Nicolodeons! and Purdy Pitches at 21 or under."
+          "blurb": "Group F reaches 22 goals, relying on rivals like Nicolodeons and Purdy Pitches to stall at 21 or under."
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 14,
+          "yourRemainingGoals": 12,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
             {
-              "home": "Netherlands",
-              "away": "Sweden",
-              "hg": 3,
-              "ag": 1
-            },
-            {
               "home": "Tunisia",
               "away": "Japan",
-              "hg": 1,
+              "hg": 2,
               "ag": 2
             },
             {
@@ -465,25 +453,19 @@
               "home": "Japan",
               "away": "Sweden",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Taco Corp takes care of business as Group F reaches 24 goals, clearing the field of rivals like Purdy Pitches."
+          "blurb": "Group F reaches 24 goals, decisively pulling ahead of the competition and leaving rivals scrambling for goals."
         },
         {
           "key": "fest",
           "label": "Goal-fest",
           "targetTotal": 26,
-          "yourRemainingGoals": 16,
+          "yourRemainingGoals": 14,
           "rivalCap": 25,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "Netherlands",
-              "away": "Sweden",
-              "hg": 3,
-              "ag": 1
-            },
             {
               "home": "Tunisia",
               "away": "Japan",
@@ -493,25 +475,25 @@
             {
               "home": "Tunisia",
               "away": "Netherlands",
-              "hg": 1,
+              "hg": 2,
               "ag": 3
             },
             {
               "home": "Japan",
               "away": "Sweden",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             }
           ],
-          "blurb": "Taco Corp ignites a goal-fest as Group F reaches 26 goals, leaving Nicolodeons! and others in the dust."
+          "blurb": "Group F reaches 26 goals, establishing a commanding lead that puts them far ahead of all rival groups."
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp is on the cusp of greatness, but needs Group F to explode for goals to snatch the No.1 pick, with Nicolodeons! and Purdy Pitches hot on their heels. To secure the top spot, Netherlands, Sweden, Tunisia, and Japan must find the back of the net with reckless abandon, outpacing their rivals in a frenzy of goal-scoring chaos.",
+      "intro": "Taco Corp needs to rally hard to secure the No.1 pick! With a strong finish, they can outscore their rivals and claim victory.",
       "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[10,4,21,[[22,[[\"Netherlands\",\"Sweden\",2,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[24,[[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]],[26,[[\"Netherlands\",\"Sweden\",3,1],[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]]]]"
+      "aiVia": "GitHub Models",
+      "fingerprint": "[12,3,21,[[22,[[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]],[24,[[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]],[26,[[\"Tunisia\",\"Japan\",2,2],[\"Tunisia\",\"Netherlands\",2,3],[\"Japan\",\"Sweden\",3,2]]]]]"
     },
     "GRS": {
       "group": "D",
@@ -534,14 +516,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -597,14 +579,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -742,14 +724,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -887,14 +869,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -1016,7 +998,7 @@
       "banked": 15,
       "remaining": 2,
       "projTotal": 20.5,
-      "rank": 4,
+      "rank": 3,
       "leads": false,
       "winningBar": 21,
       "countries": [
@@ -1032,14 +1014,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "F",
+          "owner": "Taco Corp",
+          "proj": 20
         }
       ],
       "scenarios": [
@@ -1141,14 +1123,14 @@
           "proj": 21.3
         },
         {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 21
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
