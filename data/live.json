@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T22:27:33.908Z",
+  "fetchedAt": "2026-06-20T22:53:45.798Z",
   "matchCount": 72,
   "matches": [
     {
@@ -457,7 +457,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021475",
