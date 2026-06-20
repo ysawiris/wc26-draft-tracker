@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T13:00:12.923Z",
+  "generatedAt": "2026-06-20T16:57:53.416Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -26,7 +26,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -166,7 +166,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -316,7 +316,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -372,7 +372,7 @@
       "group": "F",
       "banked": 10,
       "remaining": 4,
-      "projTotal": 21.1,
+      "projTotal": 21,
       "rank": 2,
       "leads": false,
       "winningBar": 21,
@@ -536,7 +536,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -599,7 +599,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -744,7 +744,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -889,7 +889,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -1034,7 +1034,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
@@ -1143,7 +1143,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "I",
