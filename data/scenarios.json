@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T09:35:25.425Z",
+  "generatedAt": "2026-06-20T13:00:12.923Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -26,12 +26,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
@@ -166,12 +166,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "B",
@@ -316,12 +316,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
@@ -372,7 +372,7 @@
       "group": "F",
       "banked": 10,
       "remaining": 4,
-      "projTotal": 21,
+      "projTotal": 21.1,
       "rank": 2,
       "leads": false,
       "winningBar": 21,
@@ -391,7 +391,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         },
         {
           "group": "B",
@@ -536,12 +536,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
@@ -599,12 +599,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
@@ -744,12 +744,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
@@ -889,12 +889,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
@@ -1034,12 +1034,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
@@ -1143,12 +1143,12 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.8
+          "proj": 20.9
         }
       ],
       "scenarios": [
