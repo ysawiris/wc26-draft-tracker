@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T18:56:30.237Z",
+  "generatedAt": "2026-06-20T20:03:02.024Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -10,7 +10,7 @@
       "projTotal": 16.5,
       "rank": 7,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Belgium",
         "Iran",
@@ -21,7 +21,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -38,9 +38,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
-          "yourRemainingGoals": 18,
-          "rivalCap": 23,
+          "targetTotal": 25,
+          "yourRemainingGoals": 19,
+          "rivalCap": 24,
           "needsHelp": true,
           "lines": [
             {
@@ -53,7 +53,7 @@
               "home": "New Zealand",
               "away": "Egypt",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "New Zealand",
@@ -68,7 +68,7 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 squeezes past Taco Corp and Nicolodeons! with 24 goals"
+          "blurb": "Commissioner's Infirmary 2.0 squeezes past Taco Corp and Nicolodeons! with 25 goals as they stall at 24 or under"
         },
         {
           "key": "business",
@@ -103,15 +103,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 dominates with 26 goals, leaving Nicolodeons! and Taco Corp in the dust"
+          "blurb": "Commissioner's Infirmary 2.0 dominates the field with 26 goals, leaving Taco Corp and Nicolodeons! in the dust"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a goal-scoring surge to grab the No.1 pick, surpassing rivals like Taco Corp and Nicolodeons! To take the top spot, they must outpace the competition and capitalize on their remaining matches.",
+      "intro": "Commissioner's Infirmary 2.0 needs a massive goal surge to snatch the No.1 pick, outscoring rivals like Taco Corp and Nicolodeons! to claim the top spot. To achieve this, they must rely on their World Cup Group G teams to deliver a high-scoring performance and hope their rivals stall.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,23,[[24,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,2],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,2]]],[26,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[6,4,24,[[25,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,3],[\"Egypt\",\"Iran\",2,2]]],[26,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -120,7 +120,7 @@
       "projTotal": 21.3,
       "rank": 2,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Germany",
         "Ivory Coast",
@@ -131,7 +131,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "I",
@@ -148,9 +148,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
-          "yourRemainingGoals": 15,
-          "rivalCap": 23,
+          "targetTotal": 25,
+          "yourRemainingGoals": 16,
+          "rivalCap": 24,
           "needsHelp": true,
           "lines": [
             {
@@ -169,7 +169,7 @@
               "home": "Curaçao",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             },
             {
               "home": "Ecuador",
@@ -178,20 +178,20 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! squeezes past Taco Corp's manager with 24 goals as rivals stall at 23 or under"
+          "blurb": "Group E squeaks in with 25 goals, hoping Taco Corp and others stall at 24 or under for the win."
         },
         {
           "key": "business",
           "label": "Take care of business",
-          "targetTotal": 26,
-          "yourRemainingGoals": 17,
-          "rivalCap": 25,
+          "targetTotal": 27,
+          "yourRemainingGoals": 18,
+          "rivalCap": 26,
           "needsHelp": false,
           "lines": [
             {
               "home": "Germany",
               "away": "Ivory Coast",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             },
             {
@@ -213,14 +213,14 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! takes care of business with 26 goals, clearing the field ahead of Purdy Pitches' manager"
+          "blurb": "Group E takes care of business by hitting 27 goals, confidently distancing themselves from the competitive field."
         },
         {
           "key": "fest",
           "label": "Goal-fest",
-          "targetTotal": 28,
-          "yourRemainingGoals": 19,
-          "rivalCap": 27,
+          "targetTotal": 29,
+          "yourRemainingGoals": 20,
+          "rivalCap": 28,
           "needsHelp": false,
           "lines": [
             {
@@ -239,7 +239,7 @@
               "home": "Curaçao",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 3
+              "ag": 4
             },
             {
               "home": "Ecuador",
@@ -248,15 +248,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! ignites a goal-fest with 28 goals, leaving Taco Corp and Purdy Pitches' managers in the dust"
+          "blurb": "Group E enjoys a goal-fest, soaring to 29 goals, ensuring a commanding lead and leaving rivals in the dust."
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! needs a goal-scoring explosion to grab the No.1 pick, with rivals Taco Corp and Purdy Pitches pushing the pace. To take the top spot, Nicolodeons! must outscore the competition and hope unclaimed Group I and others stall, while outpacing Purdy Pitches and Taco Corp's managers",
+      "intro": "Nicolodeons! must unleash a scoring spree to secure the coveted No.1 pick! With rivals in the rearview, it's showdown time!",
       "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[9,4,23,[[24,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Germany\",1,2]]],[26,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,2]]],[28,[[\"Germany\",\"Ivory Coast\",3,2],[\"Ecuador\",\"Curaçao\",3,2],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,2]]]]]"
+      "aiVia": "GitHub Models",
+      "fingerprint": "[9,4,24,[[25,[[\"Germany\",\"Ivory Coast\",2,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",1,2]]],[27,[[\"Germany\",\"Ivory Coast\",3,2],[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,2]]],[29,[[\"Germany\",\"Ivory Coast\",3,2],[\"Ecuador\",\"Curaçao\",3,2],[\"Curaçao\",\"Ivory Coast\",2,4],[\"Ecuador\",\"Germany\",2,2]]]]]"
     },
     "BBWC": {
       "group": "H",
@@ -265,7 +265,7 @@
       "projTotal": 13.1,
       "rank": 10,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Spain",
         "Saudi Arabia",
@@ -276,7 +276,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -323,21 +323,21 @@
               "ag": 2
             }
           ],
-          "blurb": "Big Blue Wrecking Crew squeaks in with 22 goals as Taco Corp and Nicolodeons stall at 21 or under"
+          "blurb": "Big Blue Wrecking Crew is squeaking in with 22 goals as Taco Corp and Nicolodeons! stall at 21 or under"
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew needs a massive turnaround to grab the No.1 pick, requiring a surge in goals from World Cup Group H to overtake rival groups like Taco Corp and Nicolodeons! The current projection of 13.1 total goals is nowhere near enough, with the group needing to more than double its output to be in contention",
+      "intro": "Big Blue Wrecking Crew needs a massive goal surge to snatch the No.1 pick, requiring a monumental effort from Spain, Saudi Arabia, Uruguay, and Cape Verde. The group must outscore powerful rivals like Taco Corp and Nicolodeons! to claim the top spot",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[2,4,23,[[22,[[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
+      "fingerprint": "[2,4,24,[[22,[[\"Spain\",\"Saudi Arabia\",4,2],[\"Uruguay\",\"Cape Verde\",3,1],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
     },
     "TACO": {
       "group": "F",
-      "banked": 15,
+      "banked": 16,
       "remaining": 3,
-      "projTotal": 23,
+      "projTotal": 24,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -369,7 +369,7 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 7,
+          "yourRemainingGoals": 6,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
@@ -383,7 +383,7 @@
               "home": "Tunisia",
               "away": "Netherlands",
               "hg": 1,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Japan",
@@ -392,13 +392,13 @@
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp squeaks in by reaching 22 goals while Nicolodeons and Purdy Pitches stall at 21 or less."
+          "blurb": "Taco Corp squeezes past Nicolodeons with 22 goals as rivals stall at 21 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 9,
+          "yourRemainingGoals": 8,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
@@ -406,7 +406,7 @@
               "home": "Tunisia",
               "away": "Japan",
               "hg": 1,
-              "ag": 2
+              "ag": 1
             },
             {
               "home": "Tunisia",
@@ -421,13 +421,13 @@
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp takes care of business by hitting 24 goals, leaving rivals behind with no chance to catch up."
+          "blurb": "Taco Corp takes care of business reaching 24 goals and clearing the field of Purdy Pitches"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
           "targetTotal": 26,
-          "yourRemainingGoals": 11,
+          "yourRemainingGoals": 10,
           "rivalCap": 25,
           "needsHelp": false,
           "lines": [
@@ -447,18 +447,18 @@
               "home": "Japan",
               "away": "Sweden",
               "hg": 2,
-              "ag": 2
+              "ag": 1
             }
           ],
-          "blurb": "Taco Corp enjoys a goal-fest, smashing through to 26 goals and ensuring their top spot is uncontested."
+          "blurb": "Taco Corp unleashes a goal-fest reaching 26 goals and leaving Nicolodeons and Purdy Pitches in the dust"
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp is on the brink of securing the No.1 pick in the draft! To clinch victory, they must capitalize on their remaining matches and outscore the competition!",
+      "intro": "Taco Corp needs a blistering finish to secure the No.1 pick, with Group F requiring a strong goal haul to outpace rival groups led by Nicolodeons and Purdy Pitches. To grab the top spot, Taco Corp must navigate the final matches with a focus on outscoring the competition and breaking the projected total of 24 goals.",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[15,3,21,[[22,[[\"Tunisia\",\"Japan\",1,1],[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",1,1]]],[24,[[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[26,[[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[16,3,21,[[22,[[\"Tunisia\",\"Japan\",1,1],[\"Tunisia\",\"Netherlands\",1,1],[\"Japan\",\"Sweden\",1,1]]],[24,[[\"Tunisia\",\"Japan\",1,1],[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[26,[[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]]]]"
     },
     "GRS": {
       "group": "D",
@@ -467,7 +467,7 @@
       "projTotal": 14.9,
       "rank": 9,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Paraguay",
         "Australia",
@@ -478,7 +478,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -513,15 +513,15 @@
               "ag": 3
             }
           ],
-          "blurb": "Gallactic Rebel Scum squeaks in as Group D reaches 20 goals, stalling Taco Corp and Nicolodeons! at 19 or under"
+          "blurb": "Group D squeaks in at 20 goals while rivals Taco Corp and Nicolodeons! stall at 19 or fewer goals."
         }
       ],
       "abbr": "GRS",
       "team": "Gallactic Rebel Scum",
-      "intro": "Gallactic Rebel Scum must rally to claim the No.1 pick, needing a surge in goals to overtake rival groups Taco Corp and Nicolodeons! The group's current pace is not enough, requiring a strong finish to leapfrog the competition",
+      "intro": "Gallactic Rebel Scum must unleash their scoring potential to snatch the No.1 pick! They need rivals to falter and goals to flow!",
       "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[10,2,23,[[20,[[\"Paraguay\",\"Australia\",2,2],[\"Türkiye\",\"United States\",3,3]]]]]"
+      "aiVia": "GitHub Models",
+      "fingerprint": "[10,2,24,[[20,[[\"Paraguay\",\"Australia\",2,2],[\"Türkiye\",\"United States\",3,3]]]]]"
     },
     "FF": {
       "group": "L",
@@ -530,7 +530,7 @@
       "projTotal": 18.3,
       "rank": 5,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "England",
         "Ghana",
@@ -541,7 +541,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -558,16 +558,16 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
-          "yourRemainingGoals": 17,
-          "rivalCap": 23,
+          "targetTotal": 25,
+          "yourRemainingGoals": 18,
+          "rivalCap": 24,
           "needsHelp": true,
           "lines": [
             {
               "home": "England",
               "away": "Ghana",
               "hg": 3,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Panama",
@@ -588,46 +588,11 @@
               "ag": 2
             }
           ],
-          "blurb": "Fiko Fins' Group L is squeaking in with 24 goals as Taco Corp and Nicolodeons stall at 23 or under"
+          "blurb": "Fiko Fins' Group L squeaks past Taco Corp and Nicolodeons! by reaching 25 goals, stalling rivals at 24 or under."
         },
         {
           "key": "business",
           "label": "Take care of business",
-          "targetTotal": 26,
-          "yourRemainingGoals": 19,
-          "rivalCap": 25,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "England",
-              "away": "Ghana",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Panama",
-              "away": "Croatia",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Panama",
-              "away": "England",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Croatia",
-              "away": "Ghana",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Fiko Fins takes care of business with 26 goals, outscoring Taco Corp and Nicolodeons to claim the top spot"
-        },
-        {
-          "key": "fest",
-          "label": "Goal-fest",
           "targetTotal": 27,
           "yourRemainingGoals": 20,
           "rivalCap": 26,
@@ -658,15 +623,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Fiko Fins ignites a goal-fest with 27 goals, leaving Taco Corp and Nicolodeons in the dust with a dominant performance"
+          "blurb": "Fiko Fins takes care of business, leading Group L to 27 goals, clearing the field of rival groups like Nicolodeons! and unclaimed Group I."
         }
       ],
       "abbr": "FF",
       "team": "Fiko Fins",
-      "intro": "Fiko Fins needs a goal-scoring explosion to grab the No.1 pick, with Group L requiring a significant surge to overtake rival groups like Taco Corp and Nicolodeons! For Fiko Fins to succeed, his Group L must outscore the competition and capitalize on the remaining matches to rise through the ranks.",
+      "intro": "Fiko Fins needs a goal-scoring explosion to grab the No.1 pick, surpassing rival managers like Taco Corp and Nicolodeons! to take the top spot. With 4 matches left, Fiko Fins must rally his Group L teams to outscore the competition and come out on top.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,4,23,[[24,[[\"England\",\"Ghana\",3,1],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[26,[[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[27,[[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",2,2]]]]]"
+      "fingerprint": "[7,4,24,[[25,[[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,2],[\"Panama\",\"England\",2,3],[\"Croatia\",\"Ghana\",2,2]]],[27,[[\"England\",\"Ghana\",3,2],[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",2,2]]]]]"
     },
     "RBLD": {
       "group": "J",
@@ -675,7 +640,7 @@
       "projTotal": 17.8,
       "rank": 6,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Argentina",
         "Austria",
@@ -686,7 +651,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -703,50 +668,15 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
-          "yourRemainingGoals": 17,
-          "rivalCap": 23,
+          "targetTotal": 25,
+          "yourRemainingGoals": 18,
+          "rivalCap": 24,
           "needsHelp": true,
           "lines": [
             {
               "home": "Argentina",
               "away": "Austria",
               "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Jordan",
-              "away": "Algeria",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Algeria",
-              "away": "Austria",
-              "hg": 2,
-              "ag": 2
-            },
-            {
-              "home": "Jordan",
-              "away": "Argentina",
-              "hg": 1,
-              "ag": 4
-            }
-          ],
-          "blurb": "Group J scores just enough to squeak past Taco Corp and Nicolodeons! at 24 goals"
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 26,
-          "yourRemainingGoals": 19,
-          "rivalCap": 25,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Argentina",
-              "away": "Austria",
-              "hg": 3,
               "ag": 2
             },
             {
@@ -768,11 +698,11 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J takes care of business by reaching 26 goals, outpacing the entire field"
+          "blurb": "Group J is scoring like crazy, passing Taco Corp and Nicolodeons! with 25 goals"
         },
         {
-          "key": "fest",
-          "label": "Goal-fest",
+          "key": "business",
+          "label": "Take care of business",
           "targetTotal": 27,
           "yourRemainingGoals": 20,
           "rivalCap": 26,
@@ -803,15 +733,15 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J erupts in a goal-fest, scoring 27 goals and leaving all rivals, including Nicolodeons!, in the dust"
+          "blurb": "Group J is dominating, taking the top spot with 27 goals, clear of the entire field"
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year needs a goal-scoring explosion to grab the No.1 pick, surpassing rival managers like Taco Corp and Nicolodeons! To do so, they must catapult Group J from its current sixth rank to the top spot with a slew of high-scoring matches.",
+      "intro": "Another Rebuilding Year needs a massive goal surge to snatch the No.1 pick, with rival managers from Taco Corp and Nicolodeons! lurking. To outdo them, Group J must explode for a huge total, leaving the competition in the dust, including unclaimed Group I",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,4,23,[[24,[[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,2],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]],[26,[[\"Argentina\",\"Austria\",3,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]],[27,[[\"Argentina\",\"Austria\",3,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
+      "fingerprint": "[7,4,24,[[25,[[\"Argentina\",\"Austria\",2,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",1,4]]],[27,[[\"Argentina\",\"Austria\",3,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
     },
     "TMM": {
       "group": "K",
@@ -820,7 +750,7 @@
       "projTotal": 16.5,
       "rank": 8,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Portugal",
         "Uzbekistan",
@@ -831,7 +761,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -848,16 +778,16 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
-          "yourRemainingGoals": 18,
-          "rivalCap": 23,
+          "targetTotal": 25,
+          "yourRemainingGoals": 19,
+          "rivalCap": 24,
           "needsHelp": true,
           "lines": [
             {
               "home": "Portugal",
               "away": "Uzbekistan",
               "hg": 4,
-              "ag": 1
+              "ag": 2
             },
             {
               "home": "Colombia",
@@ -878,7 +808,7 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Nicolodeons with 24 goals as rivals stall at 23 or under."
+          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Nicolodeons! as Group K reaches 25 goals"
         },
         {
           "key": "business",
@@ -913,15 +843,15 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix dominates with 26 goals, clearly outscoring the entire field, including Nicolodeons and Taco Corp."
+          "blurb": "Group K dominates under The Metcalf Matrix, scoring 26 goals and leaving all rivals in the dust"
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix must spark a goal-scoring frenzy to seize the No.1 pick, outpacing fierce rivals like Taco Corp and Nicolodeons! To take the top spot, The Metcalf Matrix needs a dramatic surge in goals from World Cup Group K, catapulting them above the competition.",
+      "intro": "The Metcalf Matrix must rally its Group K teams to score big and outpace rival managers like Taco Corp and Nicolodeons!, and a monumental effort is required to snatch the No.1 pick from the jaws of defeat. With 4 matches left, a perfect storm of goals and stumbles by rivals could propel The Metcalf Matrix to the top spot, but it will be a wild ride to get there",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,23,[[24,[[\"Portugal\",\"Uzbekistan\",4,1],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,3]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "fingerprint": "[6,4,24,[[25,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",2,2],[\"Colombia\",\"Portugal\",2,3]]],[26,[[\"Portugal\",\"Uzbekistan\",4,2],[\"Colombia\",\"DR Congo\",3,1],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
@@ -930,7 +860,7 @@
       "projTotal": 20.5,
       "rank": 4,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Bosnia & Herzegovina",
         "Qatar",
@@ -941,7 +871,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -958,9 +888,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
-          "yourRemainingGoals": 9,
-          "rivalCap": 23,
+          "targetTotal": 25,
+          "yourRemainingGoals": 10,
+          "rivalCap": 24,
           "needsHelp": true,
           "lines": [
             {
@@ -972,42 +902,19 @@
             {
               "home": "Switzerland",
               "away": "Canada",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Purdy Pitches squeaks in as Group B reaches 24 goals, stalling rivals like Taco Corp at 23 or under"
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 25,
-          "yourRemainingGoals": 10,
-          "rivalCap": 24,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Bosnia & Herzegovina",
-              "away": "Qatar",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Switzerland",
-              "away": "Canada",
               "hg": 3,
               "ag": 2
             }
           ],
-          "blurb": "Purdy Pitches takes care of business as Group B reaches 25 goals, clearing the field ahead of Nicolodeons!"
+          "blurb": "Group B is scoring, surpassing Taco Corp and Nicolodeons! with 25 goals"
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches must push Group B to new heights to snatch the No.1 pick, outscoring fierce rivals like Taco Corp and Nicolodeons! To triumph, they need a blistering goal spree, overcoming the projected totals of their toughest opponents.",
+      "intro": "Purdy Pitches must surpass rival groups to grab the No.1 pick, with Taco Corp and Nicolodeons! posing the biggest threats. To take the top spot, Purdy Pitches' Group B needs a strong goal surge, outpacing the competition in the remaining matches.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[15,2,23,[[24,[[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",2,2]]],[25,[[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
+      "fingerprint": "[15,2,24,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
     },
     "R": {
       "group": "C",
@@ -1016,7 +923,7 @@
       "projTotal": 12.9,
       "rank": 12,
       "leads": false,
-      "winningBar": 23,
+      "winningBar": 24,
       "countries": [
         "Morocco",
         "Haiti",
@@ -1027,7 +934,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 23
+          "proj": 24
         },
         {
           "group": "E",
@@ -1062,15 +969,15 @@
               "ag": 3
             }
           ],
-          "blurb": "Ms. Jackson ouuuuuuuuuuuu is squeaking in with 17 goals as rivals Taco Corp and Nicolodeons! stall at 16 or under"
+          "blurb": "Ms. Jackson ouuuuuuuuuuuu squeezes past Nicolodeons! and Taco Corp with 17 goals as they stall at 16 or under"
         }
       ],
       "abbr": "R",
       "team": "Ms. Jackson ouuuuuuuuuuuu",
-      "intro": "Ms. Jackson ouuuuuuuuuuuu must rally her World Cup Group C to miraculously outscore the rival groups led by Taco Corp and Nicolodeons!, Ms. Jackson ouuuuuuuuuuuu needs a massive goal surge to claim the No.1 pick from the likes of Nicolodeons! and Taco Corp",
+      "intro": "Ms. Jackson ouuuuuuuuuuuu must rally her Group C squad to drastically outperform projections and surpass rival groups like Taco Corp and Nicolodeons!, Ms. Jackson ouuuuuuuuuuuu needs a massive goal surge to grab the No.1 pick from under the noses of Nicolodeons! and Taco Corp managers",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,2,23,[[17,[[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
+      "fingerprint": "[7,2,24,[[17,[[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
     }
   }
 }
