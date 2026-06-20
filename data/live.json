@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T21:53:46.990Z",
+  "fetchedAt": "2026-06-20T22:27:33.908Z",
   "matchCount": 72,
   "matches": [
     {
@@ -438,13 +438,13 @@
       "group": "E",
       "matchday": null,
       "utcDate": "2026-06-20T20:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Germany",
       "away": "Côte d'Ivoire",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "venue": "Toronto Stadium",
-      "minute": "90'+1'"
+      "minute": "98'"
     },
     {
       "id": "400021465",
@@ -1163,7 +1163,7 @@
         "Côte d'Ivoire": {
           "y": 0,
           "r": 0,
-          "f": 6
+          "f": 7
         },
         "Germany": {
           "y": 0,
@@ -1604,7 +1604,7 @@
         "f": 11
       },
       "Côte d'Ivoire": {
-        "f": 13
+        "f": 14
       },
       "Ecuador": {
         "f": 12
