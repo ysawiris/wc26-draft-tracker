@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T19:35:44.603Z",
-  "count": 33,
+  "generatedAt": "2026-06-20T22:31:12.275Z",
+  "count": 34,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -742,6 +742,51 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Ivory Coast\",\"Ecuador\",1,0,[[\"90'\",\"Amad Diallo\",\"Ivory Coast\",\"home\",false,false]]]"
+    },
+    "400021469": {
+      "id": "400021469",
+      "group": "E",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "venue": "Toronto Stadium",
+      "utcDate": "2026-06-20T20:00:00Z",
+      "goals": [
+        {
+          "minute": "30'",
+          "order": 30,
+          "player": "Franck Kessie",
+          "team": "Ivory Coast",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "68'",
+          "order": 68,
+          "player": "Deniz Undav",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+4'",
+          "order": 90.04,
+          "player": "Deniz Undav",
+          "team": "Germany",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Germany see off Ivory Coast",
+      "summary": "Germany are beating Ivory Coast 2-1 with Deniz Undav scoring in the 68th and 90+4th minutes, overturning Franck Kessie's 30th minute lead for Ivory Coast. Undav's late goal seals the win. Germany take the three points.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Germany\",\"Ivory Coast\",2,1,[[\"30'\",\"Franck Kessie\",\"Ivory Coast\",\"away\",false,false],[\"68'\",\"Deniz Undav\",\"Germany\",\"home\",false,false],[\"90'+4'\",\"Deniz Undav\",\"Germany\",\"home\",false,false]]]"
     },
     "400021470": {
       "id": "400021470",
