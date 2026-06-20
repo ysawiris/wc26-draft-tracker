@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T01:19:59.239Z",
+  "fetchedAt": "2026-06-20T02:10:50.802Z",
   "matchCount": 72,
   "matches": [
     {
@@ -402,10 +402,10 @@
       "status": "IN_PLAY",
       "home": "Brazil",
       "away": "Haiti",
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": "45'+2'"
+      "minute": "75'"
     },
     {
       "id": "400021460",
@@ -418,7 +418,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021472",
@@ -1077,14 +1077,14 @@
       },
       "400021457": {
         "Brazil": {
-          "y": 0,
-          "r": 0,
-          "f": 6
-        },
-        "Haiti": {
           "y": 1,
           "r": 0,
-          "f": 2
+          "f": 11
+        },
+        "Haiti": {
+          "y": 3,
+          "r": 0,
+          "f": 5
         }
       },
       "400021458": {
@@ -1350,7 +1350,7 @@
         "r": 0
       },
       "Haiti": {
-        "y": 2,
+        "y": 4,
         "r": 0
       },
       "Scotland": {
@@ -1362,7 +1362,7 @@
         "r": 0
       },
       "Brazil": {
-        "y": 2,
+        "y": 3,
         "r": 0
       },
       "USA": {
@@ -1538,7 +1538,7 @@
         "f": 16
       },
       "Haiti": {
-        "f": 24
+        "f": 27
       },
       "Scotland": {
         "f": 28
@@ -1547,7 +1547,7 @@
         "f": 21
       },
       "Brazil": {
-        "f": 20
+        "f": 25
       },
       "USA": {
         "f": 23
