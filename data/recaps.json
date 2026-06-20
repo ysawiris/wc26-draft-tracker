@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T01:06:01.791Z",
-  "count": 30,
+  "generatedAt": "2026-06-20T03:48:17.503Z",
+  "count": 31,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -425,6 +425,51 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Brazil\",\"Morocco\",1,1,[[\"21'\",\"Saibari\",\"Morocco\",\"away\",false,false],[\"32'\",\"Vini Jr.\",\"Brazil\",\"home\",false,false]]]"
+    },
+    "400021457": {
+      "id": "400021457",
+      "group": "C",
+      "home": "Brazil",
+      "away": "Haiti",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "venue": "Philadelphia Stadium",
+      "utcDate": "2026-06-20T00:30:00Z",
+      "goals": [
+        {
+          "minute": "23'",
+          "order": 23,
+          "player": "Matheus Cunha",
+          "team": "Brazil",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "36'",
+          "order": 36,
+          "player": "Matheus Cunha",
+          "team": "Brazil",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+3'",
+          "order": 45.03,
+          "player": "Vinicius Junior",
+          "team": "Brazil",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Brazil see off Haiti",
+      "summary": "Brazil dominates Haiti 3-0 with Matheus Cunha scoring in the 23rd and 36th minutes and Vinicius Junior adding a third in stoppage time, securing a convincing win in Group C at Philadelphia Stadium. Matheus Cunha leads the charge with a double. Brazil is rolling.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Brazil\",\"Haiti\",3,0,[[\"23'\",\"Matheus Cunha\",\"Brazil\",\"home\",false,false],[\"36'\",\"Matheus Cunha\",\"Brazil\",\"home\",false,false],[\"45'+3'\",\"Vinicius Junior\",\"Brazil\",\"home\",false,false]]]"
     },
     "400021458": {
       "id": "400021458",
