@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T01:27:01.373Z",
+  "generatedAt": "2026-06-20T02:17:53.010Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -1134,9 +1134,9 @@
     },
     "R": {
       "group": "C",
-      "banked": 6,
+      "banked": 7,
       "remaining": 2,
-      "projTotal": 12,
+      "projTotal": 13,
       "rank": 12,
       "leads": false,
       "winningBar": 22,
@@ -1167,9 +1167,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 16,
+          "targetTotal": 17,
           "yourRemainingGoals": 10,
-          "rivalCap": 15,
+          "rivalCap": 16,
           "needsHelp": true,
           "lines": [
             {
@@ -1185,15 +1185,15 @@
               "ag": 3
             }
           ],
-          "blurb": "Ms. Jackson ouuuuuuuuuuuu needs Group C to reach 16 goals, hoping Nicolodeons and Taco Corp stall at 15 or under."
+          "blurb": "Ms. Jackson ouuuuuuuuuuuu squeezes past Nicolodeons and Taco Corp as Group C reaches 17 goals, stalling rivals at 16 or under."
         }
       ],
       "abbr": "R",
       "team": "Ms. Jackson ouuuuuuuuuuuu",
-      "intro": "Ms. Jackson ouuuuuuuuuuuu must rally her World Cup Group C to score big and surpass rival groups like Nicolodeons! To grab the No.1 pick, her team needs a monumental goal-scoring surge to outdo the competition.",
+      "intro": "Ms. Jackson ouuuuuuuuuuuu must rally her World Cup Group C to outscore the rival groups, particularly Nicolodeons and Taco Corp, to grab the No.1 pick! To do so, her team needs to make a massive comeback, overcoming their current 12th rank with a surge of goals in their last two matches.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,2,22,[[16,[[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
+      "fingerprint": "[7,2,22,[[17,[[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
     }
   }
 }
