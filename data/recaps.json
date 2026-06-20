@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-19T21:30:35.973Z",
-  "count": 29,
+  "generatedAt": "2026-06-20T01:06:01.791Z",
+  "count": 30,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -362,6 +362,33 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Haiti\",\"Scotland\",0,1,[[\"28'\",\"John McGINN\",\"Scotland\",\"away\",false,false]]]"
+    },
+    "400021454": {
+      "id": "400021454",
+      "group": "C",
+      "home": "Scotland",
+      "away": "Morocco",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "venue": "Boston Stadium",
+      "utcDate": "2026-06-19T22:00:00Z",
+      "goals": [
+        {
+          "minute": "2'",
+          "order": 2,
+          "player": "Ismael Saibari",
+          "team": "Morocco",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Morocco see off Scotland",
+      "summary": "Scotland is trailing Morocco 0-1 at Boston Stadium, Ismael Saibari scoring in the 2nd minute, Morocco is holding on to their lead, Saibari's goal is the difference maker so far.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Scotland\",\"Morocco\",0,1,[[\"2'\",\"Ismael Saibari\",\"Morocco\",\"away\",false,false]]]"
     },
     "400021456": {
       "id": "400021456",
