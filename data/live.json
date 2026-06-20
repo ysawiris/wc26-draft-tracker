@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T18:32:09.223Z",
+  "fetchedAt": "2026-06-20T19:04:18.034Z",
   "matchCount": 72,
   "matches": [
     {
@@ -425,13 +425,13 @@
       "group": "F",
       "matchday": null,
       "utcDate": "2026-06-20T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Netherlands",
       "away": "Sweden",
-      "homeGoals": 4,
+      "homeGoals": 5,
       "awayGoals": 1,
       "venue": "Houston Stadium",
-      "minute": "69'"
+      "minute": "96'"
     },
     {
       "id": "400021469",
@@ -1175,12 +1175,12 @@
         "Netherlands": {
           "y": 0,
           "r": 0,
-          "f": 6
+          "f": 9
         },
         "Sweden": {
-          "y": 1,
+          "y": 3,
           "r": 0,
-          "f": 5
+          "f": 9
         }
       },
       "400021474": {
@@ -1430,7 +1430,7 @@
         "r": 0
       },
       "Sweden": {
-        "y": 1,
+        "y": 3,
         "r": 0
       },
       "Tunisia": {
@@ -1598,13 +1598,13 @@
         "f": 12
       },
       "Netherlands": {
-        "f": 10
+        "f": 13
       },
       "Japan": {
         "f": 7
       },
       "Sweden": {
-        "f": 15
+        "f": 19
       },
       "Tunisia": {
         "f": 8
