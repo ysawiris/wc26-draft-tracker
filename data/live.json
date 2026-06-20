@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T00:02:54.804Z",
+  "fetchedAt": "2026-06-20T01:19:59.239Z",
   "matchCount": 72,
   "matches": [
     {
@@ -399,13 +399,13 @@
       "group": "C",
       "matchday": null,
       "utcDate": "2026-06-20T00:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Brazil",
       "away": "Haiti",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 2,
+      "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": "0'"
+      "minute": "45'+2'"
     },
     {
       "id": "400021460",
@@ -1053,9 +1053,9 @@
       },
       "400021454": {
         "Scotland": {
-          "y": 2,
+          "y": 1,
           "r": 0,
-          "f": 9
+          "f": 10
         },
         "Morocco": {
           "y": 1,
@@ -1073,6 +1073,18 @@
           "y": 0,
           "r": 0,
           "f": 14
+        }
+      },
+      "400021457": {
+        "Brazil": {
+          "y": 0,
+          "r": 0,
+          "f": 6
+        },
+        "Haiti": {
+          "y": 1,
+          "r": 0,
+          "f": 2
         }
       },
       "400021458": {
@@ -1338,11 +1350,11 @@
         "r": 0
       },
       "Haiti": {
-        "y": 1,
+        "y": 2,
         "r": 0
       },
       "Scotland": {
-        "y": 5,
+        "y": 4,
         "r": 0
       },
       "Morocco": {
@@ -1526,16 +1538,16 @@
         "f": 16
       },
       "Haiti": {
-        "f": 22
+        "f": 24
       },
       "Scotland": {
-        "f": 27
+        "f": 28
       },
       "Morocco": {
         "f": 21
       },
       "Brazil": {
-        "f": 14
+        "f": 20
       },
       "USA": {
         "f": 23
