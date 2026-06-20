@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T07:33:06.103Z",
-  "count": 32,
+  "generatedAt": "2026-06-20T19:35:44.603Z",
+  "count": 33,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -796,6 +796,78 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Netherlands\",\"Japan\",2,2,[[\"50'\",\"Virgil Van Dijk\",\"Netherlands\",\"home\",false,false],[\"57'\",\"Keito Nakamura\",\"Japan\",\"away\",false,false],[\"64'\",\"Crysencio Summerville\",\"Netherlands\",\"home\",false,false],[\"88'\",\"Daichi Kamada\",\"Japan\",\"away\",false,false]]]"
+    },
+    "400021472": {
+      "id": "400021472",
+      "group": "F",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "homeGoals": 5,
+      "awayGoals": 1,
+      "venue": "Houston Stadium",
+      "utcDate": "2026-06-20T17:00:00Z",
+      "goals": [
+        {
+          "minute": "5'",
+          "order": 5,
+          "player": "Brian Brobbey",
+          "team": "Netherlands",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "17'",
+          "order": 17,
+          "player": "Brian Brobbey",
+          "team": "Netherlands",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "47'",
+          "order": 47,
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "54'",
+          "order": 54,
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "59'",
+          "order": 59,
+          "player": "Anthony Elanga",
+          "team": "Sweden",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "89'",
+          "order": 89,
+          "player": "Crysencio Summerville",
+          "team": "Netherlands",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Netherlands see off Sweden",
+      "summary": "Netherlands is dominating Sweden 5-1 with Brian Brobbey and Cody Gakpo scoring twice, Crysencio Summerville adding one, and Anthony Elanga scoring for Sweden, Netherlands is taking the win in Group F.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Netherlands\",\"Sweden\",5,1,[[\"5'\",\"Brian Brobbey\",\"Netherlands\",\"home\",false,false],[\"17'\",\"Brian Brobbey\",\"Netherlands\",\"home\",false,false],[\"47'\",\"Cody Gakpo\",\"Netherlands\",\"home\",false,false],[\"54'\",\"Cody Gakpo\",\"Netherlands\",\"home\",false,false],[\"59'\",\"Anthony Elanga\",\"Sweden\",\"away\",false,false],[\"89'\",\"Crysencio Summerville\",\"Netherlands\",\"home\",false,false]]]"
     },
     "400021474": {
       "id": "400021474",
