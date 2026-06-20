@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-20T05:45:33.898Z",
+  "fetchedAt": "2026-06-20T09:27:04.765Z",
   "matchCount": 40,
   "lines": [
     {
@@ -24,9 +24,9 @@
       "homeRaw": "Germany",
       "awayRaw": "Ivory Coast",
       "line": 2.5,
-      "overUS": "-175",
+      "overUS": "-170",
       "underUS": "+140",
-      "impliedTotal": 3.13
+      "impliedTotal": 3.11
     },
     {
       "espnId": "760447",
@@ -60,9 +60,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Egypt",
       "line": 2.5,
-      "overUS": "+110",
+      "overUS": "+105",
       "underUS": "-135",
-      "impliedTotal": 2.49
+      "impliedTotal": 2.51
     },
     {
       "espnId": "760453",
@@ -73,8 +73,8 @@
       "awayRaw": "Saudi Arabia",
       "line": 3.5,
       "overUS": "+110",
-      "underUS": "-135",
-      "impliedTotal": 3.45
+      "underUS": "-140",
+      "impliedTotal": 3.44
     },
     {
       "espnId": "760449",
@@ -204,9 +204,9 @@
       "homeRaw": "Bosnia-Herzegovina",
       "awayRaw": "Qatar",
       "line": 2.5,
-      "overUS": "-155",
+      "overUS": "-150",
       "underUS": "+125",
-      "impliedTotal": 3
+      "impliedTotal": 2.99
     },
     {
       "espnId": "760467",
@@ -240,9 +240,9 @@
       "homeRaw": "Scotland",
       "awayRaw": "Brazil",
       "line": 2.5,
-      "overUS": "-120",
+      "overUS": "-125",
       "underUS": "+100",
-      "impliedTotal": 2.76
+      "impliedTotal": 2.78
     },
     {
       "espnId": "760466",
@@ -312,9 +312,9 @@
       "homeRaw": "Paraguay",
       "awayRaw": "Australia",
       "line": 1.5,
-      "overUS": "-175",
-      "underUS": "+140",
-      "impliedTotal": 2.04
+      "overUS": "-170",
+      "underUS": "+135",
+      "impliedTotal": 2.01
     },
     {
       "espnId": "760472",
@@ -337,8 +337,8 @@
       "awayRaw": "United States",
       "line": 2.5,
       "overUS": "-140",
-      "underUS": "+110",
-      "impliedTotal": 2.89
+      "underUS": "+115",
+      "impliedTotal": 2.91
     },
     {
       "espnId": "760478",
