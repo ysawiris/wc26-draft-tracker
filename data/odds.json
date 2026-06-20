@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-20T09:27:04.765Z",
+  "fetchedAt": "2026-06-20T12:55:46.766Z",
   "matchCount": 40,
   "lines": [
     {
@@ -25,8 +25,8 @@
       "awayRaw": "Ivory Coast",
       "line": 2.5,
       "overUS": "-170",
-      "underUS": "+140",
-      "impliedTotal": 3.11
+      "underUS": "+135",
+      "impliedTotal": 3.09
     },
     {
       "espnId": "760447",
@@ -36,9 +36,9 @@
       "homeRaw": "Netherlands",
       "awayRaw": "Sweden",
       "line": 2.5,
-      "overUS": "-155",
-      "underUS": "+125",
-      "impliedTotal": 3
+      "overUS": "-165",
+      "underUS": "+130",
+      "impliedTotal": 3.05
     },
     {
       "espnId": "760451",
@@ -85,8 +85,8 @@
       "awayRaw": "Japan",
       "line": 2.5,
       "overUS": "+110",
-      "underUS": "-140",
-      "impliedTotal": 2.47
+      "underUS": "-135",
+      "impliedTotal": 2.49
     },
     {
       "espnId": "760450",
@@ -120,9 +120,9 @@
       "homeRaw": "France",
       "awayRaw": "Iraq",
       "line": 3.5,
-      "overUS": "-105",
-      "underUS": "-120",
-      "impliedTotal": 3.6
+      "overUS": "-110",
+      "underUS": "-115",
+      "impliedTotal": 3.65
     },
     {
       "espnId": "760455",
@@ -349,8 +349,8 @@
       "awayRaw": "Saudi Arabia",
       "line": 2.5,
       "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 2.53
+      "underUS": "-135",
+      "impliedTotal": 2.51
     },
     {
       "espnId": "760476",
