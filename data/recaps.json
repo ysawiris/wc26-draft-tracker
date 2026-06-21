@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T22:31:12.275Z",
-  "count": 34,
+  "generatedAt": "2026-06-21T02:23:43.607Z",
+  "count": 35,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -715,6 +715,23 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Germany\",\"Curaçao\",7,1,[[\"6'\",\"Felix Nmecha\",\"Germany\",\"home\",false,false],[\"21'\",\"Livano Comenencia\",\"Curaçao\",\"away\",false,false],[\"38'\",\"Nico Schlotterbeck\",\"Germany\",\"home\",false,false],[\"47'\",\"Jamal Musiala\",\"Germany\",\"home\",false,false],[\"68'\",\"Nathaniel Brown\",\"Germany\",\"home\",false,false],[\"78'\",\"Deniz Undav\",\"Germany\",\"home\",false,false],[\"88'\",\"Kai Havertz\",\"Germany\",\"home\",false,false]]]"
+    },
+    "400021465": {
+      "id": "400021465",
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "venue": "Kansas City Stadium",
+      "utcDate": "2026-06-21T00:00:00Z",
+      "goals": [],
+      "reds": [],
+      "headline": "Ecuador and Curaçao share the points",
+      "summary": "Ecuador and Curaçao are battling to a scoreless draw, with neither team able to find the back of the net. The match remains tied at 0-0, with no key scorers emerging. Ecuador and Curaçao are finishing with a 0-0 result.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Ecuador\",\"Curaçao\",0,0,[]]"
     },
     "400021467": {
       "id": "400021467",
