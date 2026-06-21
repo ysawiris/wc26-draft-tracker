@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T18:39:23.229Z",
-  "count": 37,
+  "generatedAt": "2026-06-21T21:34:27.040Z",
+  "count": 38,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1110,6 +1110,25 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Iran\",\"New Zealand\",2,2,[[\"7'\",\"Elijah Just\",\"New Zealand\",\"away\",false,false],[\"32'\",\"Ramin Rezaeian\",\"Iran\",\"home\",false,false],[\"54'\",\"Elijah Just\",\"New Zealand\",\"away\",false,false],[\"64'\",\"Mohammad Mohebbi\",\"Iran\",\"home\",false,false]]]"
+    },
+    "400021477": {
+      "id": "400021477",
+      "group": "G",
+      "home": "Belgium",
+      "away": "Iran",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "venue": "Los Angeles Stadium",
+      "utcDate": "2026-06-21T19:00:00Z",
+      "goals": [],
+      "reds": [
+        "Nathan NGOY (Belgium) is sent off!"
+      ],
+      "headline": "Belgium and Iran share the points",
+      "summary": "Belgium and Iran are locked in a scoreless tie, Nathan NGOY sees red, Belgium is down a man, still no goals from either side.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Belgium\",\"Iran\",0,0,[]]"
     },
     "400021478": {
       "id": "400021478",
