@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-21T05:58:40.352Z",
+  "fetchedAt": "2026-06-21T09:30:35.484Z",
   "matchCount": 36,
   "lines": [
     {
@@ -12,9 +12,9 @@
       "homeRaw": "Belgium",
       "awayRaw": "Iran",
       "line": 2.5,
-      "overUS": "-125",
-      "underUS": "+100",
-      "impliedTotal": 2.78
+      "overUS": "-130",
+      "underUS": "+105",
+      "impliedTotal": 2.83
     },
     {
       "espnId": "760452",
@@ -24,9 +24,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Egypt",
       "line": 2.5,
-      "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 2.53
+      "overUS": "+100",
+      "underUS": "-125",
+      "impliedTotal": 2.57
     },
     {
       "espnId": "760453",
@@ -36,9 +36,9 @@
       "homeRaw": "Spain",
       "awayRaw": "Saudi Arabia",
       "line": 3.5,
-      "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 3.5
+      "overUS": "-110",
+      "underUS": "-110",
+      "impliedTotal": 3.67
     },
     {
       "espnId": "760450",
@@ -60,9 +60,9 @@
       "homeRaw": "Argentina",
       "awayRaw": "Austria",
       "line": 2.5,
-      "overUS": "-105",
-      "underUS": "-120",
-      "impliedTotal": 2.61
+      "overUS": "-110",
+      "underUS": "-115",
+      "impliedTotal": 2.65
     },
     {
       "espnId": "760457",
@@ -276,9 +276,9 @@
       "homeRaw": "Tunisia",
       "awayRaw": "Netherlands",
       "line": 3.5,
-      "overUS": "+125",
-      "underUS": "-155",
-      "impliedTotal": 3.31
+      "overUS": "+130",
+      "underUS": "-165",
+      "impliedTotal": 3.26
     },
     {
       "espnId": "760470",
