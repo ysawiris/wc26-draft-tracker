@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T08:09:36.741Z",
+  "generatedAt": "2026-06-21T09:41:42.934Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 6,
       "remaining": 4,
-      "projTotal": 16.6,
+      "projTotal": 16.7,
       "rank": 7,
       "leads": false,
       "winningBar": 26,
@@ -145,7 +145,7 @@
       "group": "H",
       "banked": 2,
       "remaining": 4,
-      "projTotal": 13.1,
+      "projTotal": 13.3,
       "rank": 10,
       "leads": false,
       "winningBar": 26,
@@ -467,7 +467,7 @@
       "group": "J",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 17.8,
+      "projTotal": 17.9,
       "rank": 6,
       "leads": false,
       "winningBar": 26,
