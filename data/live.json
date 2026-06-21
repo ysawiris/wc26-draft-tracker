@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-20T22:53:45.798Z",
+  "fetchedAt": "2026-06-21T00:51:43.556Z",
   "matchCount": 72,
   "matches": [
     {
@@ -451,13 +451,13 @@
       "group": "E",
       "matchday": null,
       "utcDate": "2026-06-21T00:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Ecuador",
       "away": "Curaçao",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Kansas City Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021475",
@@ -1147,6 +1147,18 @@
           "f": 11
         }
       },
+      "400021465": {
+        "Curaçao": {
+          "y": 1,
+          "r": 0,
+          "f": 4
+        },
+        "Ecuador": {
+          "y": 1,
+          "r": 0,
+          "f": 5
+        }
+      },
       "400021467": {
         "Côte d'Ivoire": {
           "y": 3,
@@ -1422,15 +1434,15 @@
         "r": 0
       },
       "Curaçao": {
-        "y": 0,
+        "y": 1,
+        "r": 0
+      },
+      "Ecuador": {
+        "y": 2,
         "r": 0
       },
       "Côte d'Ivoire": {
         "y": 3,
-        "r": 0
-      },
-      "Ecuador": {
-        "y": 1,
         "r": 0
       },
       "Netherlands": {
@@ -1601,13 +1613,13 @@
         "f": 23
       },
       "Curaçao": {
-        "f": 11
+        "f": 15
+      },
+      "Ecuador": {
+        "f": 17
       },
       "Côte d'Ivoire": {
         "f": 14
-      },
-      "Ecuador": {
-        "f": 12
       },
       "Netherlands": {
         "f": 13
