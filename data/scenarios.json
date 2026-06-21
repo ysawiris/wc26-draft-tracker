@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T22:49:07.622Z",
+  "generatedAt": "2026-06-21T23:53:11.997Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -8,7 +8,7 @@
       "banked": 6,
       "remaining": 3,
       "projTotal": 13.9,
-      "rank": 9,
+      "rank": 10,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -137,10 +137,10 @@
     },
     "BBWC": {
       "group": "H",
-      "banked": 7,
+      "banked": 10,
       "remaining": 2,
-      "projTotal": 12.2,
-      "rank": 12,
+      "projTotal": 15.2,
+      "rank": 8,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -170,9 +170,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 17,
+          "targetTotal": 20,
           "yourRemainingGoals": 10,
-          "rivalCap": 16,
+          "rivalCap": 19,
           "needsHelp": true,
           "lines": [
             {
@@ -188,15 +188,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Big Blue Wrecking Crew squeezes past Taco Corp and Purdy Pitches managers with a mere 17 goals"
+          "blurb": "Group H is squeaking in with 20 goals as Taco Corp and Purdy Pitches stall at 19 or under."
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew needs a miracle to grab the No.1 pick, requiring a massive goal surge from World Cup Group H! They must outscore powerful rival groups like Taco Corp and Purdy Pitches to rise from the ashes",
+      "intro": "Big Blue Wrecking Crew must rally to claim the No.1 pick, surpassing rival groups like Taco Corp and Purdy Pitches! The path to the top pick requires a dramatic turnaround, with Group H needing a significant goal surge to overtake the competition.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,2,26,[[17,[[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
+      "fingerprint": "[10,2,26,[[20,[[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
     },
     "TACO": {
       "group": "F",
@@ -312,7 +312,7 @@
       "banked": 10,
       "remaining": 2,
       "projTotal": 14.9,
-      "rank": 8,
+      "rank": 9,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -663,7 +663,7 @@
       "banked": 7,
       "remaining": 2,
       "projTotal": 12.9,
-      "rank": 11,
+      "rank": 12,
       "leads": false,
       "winningBar": 26,
       "countries": [
