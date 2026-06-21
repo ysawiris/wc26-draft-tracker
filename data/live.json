@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T23:02:59.109Z",
+  "fetchedAt": "2026-06-21T23:41:43.782Z",
   "matchCount": 72,
   "matches": [
     {
@@ -507,9 +507,9 @@
       "home": "Uruguay",
       "away": "Cabo Verde",
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "venue": "Miami Stadium",
-      "minute": null
+      "minute": "76'"
     },
     {
       "id": "400021480",
@@ -522,7 +522,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "BC Place Vancouver",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021494",
@@ -1305,14 +1305,14 @@
       },
       "400021487": {
         "Uruguay": {
-          "y": 1,
+          "y": 2,
           "r": 0,
-          "f": 5
+          "f": 6
         },
         "Cabo Verde": {
           "y": 1,
           "r": 0,
-          "f": 1
+          "f": 2
         }
       },
       "400021488": {
@@ -1538,7 +1538,7 @@
         "r": 0
       },
       "Uruguay": {
-        "y": 1,
+        "y": 2,
         "r": 0
       },
       "Norway": {
@@ -1700,10 +1700,10 @@
         "f": 11
       },
       "Uruguay": {
-        "f": 11
+        "f": 12
       },
       "Cabo Verde": {
-        "f": 1
+        "f": 2
       },
       "Norway": {
         "f": 13
