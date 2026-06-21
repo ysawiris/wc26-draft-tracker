@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T01:51:58.439Z",
+  "fetchedAt": "2026-06-21T03:11:54.049Z",
   "matchCount": 72,
   "matches": [
     {
@@ -451,13 +451,13 @@
       "group": "E",
       "matchday": null,
       "utcDate": "2026-06-21T00:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Ecuador",
       "away": "Curaçao",
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Kansas City Stadium",
-      "minute": "90'+1'"
+      "minute": "96'"
     },
     {
       "id": "400021475",
@@ -470,7 +470,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Monterrey Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021483",
