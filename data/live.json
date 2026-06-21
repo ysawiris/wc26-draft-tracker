@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T19:33:03.095Z",
+  "fetchedAt": "2026-06-21T20:14:54.318Z",
   "matchCount": 72,
   "matches": [
     {
@@ -496,7 +496,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Los Angeles Stadium",
-      "minute": "30'"
+      "minute": "49'"
     },
     {
       "id": "400021487",
@@ -1247,12 +1247,12 @@
         "Belgium": {
           "y": 1,
           "r": 0,
-          "f": 3
+          "f": 4
         },
         "IR Iran": {
           "y": 1,
           "r": 0,
-          "f": 0
+          "f": 5
         }
       },
       "400021478": {
@@ -1673,10 +1673,10 @@
         "f": 8
       },
       "IR Iran": {
-        "f": 8
+        "f": 13
       },
       "Belgium": {
-        "f": 16
+        "f": 17
       },
       "Egypt": {
         "f": 13
