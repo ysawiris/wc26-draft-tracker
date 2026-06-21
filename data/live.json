@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T20:49:34.163Z",
+  "fetchedAt": "2026-06-21T21:22:01.206Z",
   "matchCount": 72,
   "matches": [
     {
@@ -490,13 +490,13 @@
       "group": "G",
       "matchday": null,
       "utcDate": "2026-06-21T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Belgium",
       "away": "IR Iran",
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Los Angeles Stadium",
-      "minute": "84'"
+      "minute": "96'"
     },
     {
       "id": "400021487",
