@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T22:35:01.599Z",
+  "fetchedAt": "2026-06-21T23:02:59.109Z",
   "matchCount": 72,
   "matches": [
     {
@@ -506,10 +506,10 @@
       "status": "IN_PLAY",
       "home": "Uruguay",
       "away": "Cabo Verde",
-      "homeGoals": 0,
+      "homeGoals": 2,
       "awayGoals": 1,
       "venue": "Miami Stadium",
-      "minute": "34'"
+      "minute": null
     },
     {
       "id": "400021480",
@@ -1307,7 +1307,7 @@
         "Uruguay": {
           "y": 1,
           "r": 0,
-          "f": 4
+          "f": 5
         },
         "Cabo Verde": {
           "y": 1,
@@ -1700,7 +1700,7 @@
         "f": 11
       },
       "Uruguay": {
-        "f": 10
+        "f": 11
       },
       "Cabo Verde": {
         "f": 1
