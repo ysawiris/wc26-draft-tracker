@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-20T22:48:52.955Z",
+  "generatedAt": "2026-06-21T01:35:04.836Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 6,
       "remaining": 4,
-      "projTotal": 16.5,
+      "projTotal": 16.6,
       "rank": 7,
       "leads": false,
       "winningBar": 24,
@@ -21,17 +21,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -116,22 +116,22 @@
     "CDL": {
       "group": "E",
       "banked": 12,
-      "remaining": 3,
-      "projTotal": 21.1,
-      "rank": 2,
+      "remaining": 2,
+      "projTotal": 18,
+      "rank": 5,
       "leads": false,
       "winningBar": 24,
       "countries": [
-        "Ecuador",
         "Curaçao",
         "Ivory Coast",
+        "Ecuador",
         "Germany"
       ],
       "rivals": [
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
+          "proj": 24.4
         },
         {
           "group": "I",
@@ -148,22 +148,16 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 25,
-          "yourRemainingGoals": 13,
-          "rivalCap": 24,
+          "targetTotal": 22,
+          "yourRemainingGoals": 10,
+          "rivalCap": 21,
           "needsHelp": true,
           "lines": [
             {
-              "home": "Ecuador",
-              "away": "Curaçao",
-              "hg": 3,
-              "ag": 1
-            },
-            {
               "home": "Curaçao",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 3
+              "ag": 4
             },
             {
               "home": "Ecuador",
@@ -172,51 +166,22 @@
               "ag": 2
             }
           ],
-          "blurb": "Nicolodeons! edges Taco Corp as Group E squeaks in with 25 goals, rivals stalled at 24 or under"
-        },
-        {
-          "key": "business",
-          "label": "Take care of business",
-          "targetTotal": 27,
-          "yourRemainingGoals": 15,
-          "rivalCap": 26,
-          "needsHelp": false,
-          "lines": [
-            {
-              "home": "Ecuador",
-              "away": "Curaçao",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Curaçao",
-              "away": "Ivory Coast",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Ecuador",
-              "away": "Germany",
-              "hg": 2,
-              "ag": 3
-            }
-          ],
-          "blurb": "Nicolodeons! dominates the field with 27 goals, leaving Purdy Pitches and others in the dust"
+          "blurb": "Nicolodeons! edges out Taco Corp and Purdy Pitches managers as Group E squeaks in with 22 goals"
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! must ignite their World Cup Group E to snatch the No.1 pick, surpassing rival managers like Taco Corp and Purdy Pitches! To achieve this, they need a blistering goal-scoring finish to overtake the competition and secure the top spot.",
+      "intro": "Nicolodeons! must go all out to snatch the No.1 pick, leaving rival managers in the dust! To do this, they need a massive goal haul to outpace Taco Corp, Purdy Pitches, and Group I, with a target of 24+ goals to guarantee top spot",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[12,3,24,[[25,[[\"Ecuador\",\"Curaçao\",3,1],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,2]]],[27,[[\"Ecuador\",\"Curaçao\",3,2],[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,3]]]]]"
+      "fingerprint": "[12,2,24,[[22,[[\"Curaçao\",\"Ivory Coast\",2,4],[\"Ecuador\",\"Germany\",2,2]]]]]"
     },
     "BBWC": {
       "group": "H",
       "banked": 2,
       "remaining": 4,
-      "projTotal": 12.9,
-      "rank": 12,
+      "projTotal": 13,
+      "rank": 10,
       "leads": false,
       "winningBar": 24,
       "countries": [
@@ -229,17 +194,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -290,7 +255,7 @@
       "group": "F",
       "banked": 16,
       "remaining": 3,
-      "projTotal": 24.3,
+      "projTotal": 24.4,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -302,11 +267,6 @@
       ],
       "rivals": [
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
-        },
-        {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
@@ -315,6 +275,11 @@
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.3
         }
       ],
       "scenarios": [
@@ -431,17 +396,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -481,7 +446,7 @@
       "banked": 7,
       "remaining": 4,
       "projTotal": 18.3,
-      "rank": 5,
+      "rank": 4,
       "leads": false,
       "winningBar": 24,
       "countries": [
@@ -494,17 +459,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -590,7 +555,7 @@
       "group": "J",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 17.8,
+      "projTotal": 17.9,
       "rank": 6,
       "leads": false,
       "winningBar": 24,
@@ -604,17 +569,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -714,17 +679,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
@@ -811,7 +776,7 @@
       "banked": 15,
       "remaining": 2,
       "projTotal": 20.5,
-      "rank": 4,
+      "rank": 3,
       "leads": false,
       "winningBar": 24,
       "countries": [
@@ -824,17 +789,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.3
         }
       ],
       "scenarios": [
@@ -874,7 +839,7 @@
       "banked": 7,
       "remaining": 2,
       "projTotal": 12.9,
-      "rank": 11,
+      "rank": 12,
       "leads": false,
       "winningBar": 24,
       "countries": [
@@ -887,17 +852,17 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.3
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 21.1
+          "proj": 24.4
         },
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
           "proj": 20.9
+        },
+        {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 20.5
         }
       ],
       "scenarios": [
