@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T07:48:19.950Z",
-  "count": 36,
+  "generatedAt": "2026-06-21T18:39:23.229Z",
+  "count": 37,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1163,6 +1163,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Spain\",\"Cape Verde\",0,0,[]]"
+    },
+    "400021483": {
+      "id": "400021483",
+      "group": "H",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "venue": "Atlanta Stadium",
+      "utcDate": "2026-06-21T16:00:00Z",
+      "goals": [
+        {
+          "minute": "10'",
+          "order": 10,
+          "player": "Lamine Yamal",
+          "team": "Spain",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "21'",
+          "order": 21,
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "24'",
+          "order": 24,
+          "player": "Mikel Oyarzabal",
+          "team": "Spain",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "49'",
+          "order": 49,
+          "player": "Hassan Altambakti",
+          "team": "Spain",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Spain see off Saudi Arabia",
+      "summary": "Spain dominates Saudi Arabia 4-0 with Lamine Yamal and Mikel Oyarzabal scoring, Oyarzabal nets two, and Hassan Altambakti adds an own goal, sealing the win. Mikel Oyarzabal is on fire. Spain is cruising in Group H.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Spain\",\"Saudi Arabia\",4,0,[[\"10'\",\"Lamine Yamal\",\"Spain\",\"home\",false,false],[\"21'\",\"Mikel Oyarzabal\",\"Spain\",\"home\",false,false],[\"24'\",\"Mikel Oyarzabal\",\"Spain\",\"home\",false,false],[\"49'\",\"Hassan Altambakti\",\"Spain\",\"home\",true,false]]]"
     },
     "400021486": {
       "id": "400021486",
