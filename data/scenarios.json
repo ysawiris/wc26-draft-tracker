@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T01:35:04.836Z",
+  "generatedAt": "2026-06-21T06:09:52.398Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -21,7 +21,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -117,7 +117,7 @@
       "group": "E",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 18,
+      "projTotal": 18.1,
       "rank": 5,
       "leads": false,
       "winningBar": 24,
@@ -131,7 +131,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -157,30 +157,30 @@
               "home": "Curaçao",
               "away": "Ivory Coast",
               "hg": 2,
-              "ag": 4
+              "ag": 3
             },
             {
               "home": "Ecuador",
               "away": "Germany",
               "hg": 2,
-              "ag": 2
+              "ag": 3
             }
           ],
-          "blurb": "Nicolodeons! edges out Taco Corp and Purdy Pitches managers as Group E squeaks in with 22 goals"
+          "blurb": "Nicolodeons! needs Group E to reach 22 goals as Taco Corp and Purdy Pitches stall at 21 or under"
         }
       ],
       "abbr": "CDL",
       "team": "Nicolodeons!",
-      "intro": "Nicolodeons! must go all out to snatch the No.1 pick, leaving rival managers in the dust! To do this, they need a massive goal haul to outpace Taco Corp, Purdy Pitches, and Group I, with a target of 24+ goals to guarantee top spot",
+      "intro": "Nicolodeons! must rally their Group E teams to score big and surpass rival groups like Taco Corp and Purdy Pitches, to grab the No.1 pick they need a perfect storm of goal scoring and rival stumbles. With 2 matches left, Nicolodeons! is counting on Curaçao, Ivory Coast, Ecuador, and Germany to bring the heat and propel them to the top spot",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[12,2,24,[[22,[[\"Curaçao\",\"Ivory Coast\",2,4],[\"Ecuador\",\"Germany\",2,2]]]]]"
+      "fingerprint": "[12,2,24,[[22,[[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,3]]]]]"
     },
     "BBWC": {
       "group": "H",
       "banked": 2,
       "remaining": 4,
-      "projTotal": 13,
+      "projTotal": 13.1,
       "rank": 10,
       "leads": false,
       "winningBar": 24,
@@ -194,7 +194,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -253,16 +253,16 @@
     },
     "TACO": {
       "group": "F",
-      "banked": 16,
-      "remaining": 3,
-      "projTotal": 24.4,
+      "banked": 18,
+      "remaining": 2,
+      "projTotal": 24.1,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
       "countries": [
         "Tunisia",
-        "Japan",
         "Netherlands",
+        "Japan",
         "Sweden"
       ],
       "rivals": [
@@ -287,16 +287,10 @@
           "key": "grind",
           "label": "Squeak in",
           "targetTotal": 22,
-          "yourRemainingGoals": 6,
+          "yourRemainingGoals": 4,
           "rivalCap": 21,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Tunisia",
-              "away": "Japan",
-              "hg": 1,
-              "ag": 1
-            },
             {
               "home": "Tunisia",
               "away": "Netherlands",
@@ -310,22 +304,16 @@
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp squeezes past Nicolodeons with 22 goals as rivals stall at 21 or under"
+          "blurb": "Taco Corp squeaks in as Group F reaches 22 goals, stalling Purdy Pitches and Fiko Fins at 21 or under"
         },
         {
           "key": "business",
           "label": "Take care of business",
           "targetTotal": 24,
-          "yourRemainingGoals": 8,
+          "yourRemainingGoals": 6,
           "rivalCap": 23,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "Tunisia",
-              "away": "Japan",
-              "hg": 1,
-              "ag": 1
-            },
             {
               "home": "Tunisia",
               "away": "Netherlands",
@@ -339,22 +327,16 @@
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp takes care of business reaching 24 goals and clearing the field of Purdy Pitches"
+          "blurb": "Taco Corp takes care of business as Group F reaches 24 goals, clearing the field of Purdy Pitches and Fiko Fins"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
           "targetTotal": 26,
-          "yourRemainingGoals": 10,
+          "yourRemainingGoals": 8,
           "rivalCap": 25,
           "needsHelp": false,
           "lines": [
-            {
-              "home": "Tunisia",
-              "away": "Japan",
-              "hg": 1,
-              "ag": 2
-            },
             {
               "home": "Tunisia",
               "away": "Netherlands",
@@ -365,18 +347,18 @@
               "home": "Japan",
               "away": "Sweden",
               "hg": 2,
-              "ag": 1
+              "ag": 2
             }
           ],
-          "blurb": "Taco Corp unleashes a goal-fest reaching 26 goals and leaving Nicolodeons and Purdy Pitches in the dust"
+          "blurb": "Taco Corp ignites a goal-fest as Group F reaches 26 goals, leaving Purdy Pitches, Fiko Fins, and Group I in the dust"
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp needs a blistering finish to secure the No.1 pick, with Group F requiring a strong goal haul to outpace rival groups led by Nicolodeons and Purdy Pitches. To grab the top spot, Taco Corp must navigate the final matches with a focus on outscoring the competition and breaking the projected total of 24 goals.",
+      "intro": "Taco Corp needs a goal-scoring explosion to grab the No.1 pick, with rivals Purdy Pitches and Fiko Fins hot on their heels! To secure the top spot, Group F must outscore the competition, with unclaimed Group I also posing a significant threat",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[16,3,21,[[22,[[\"Tunisia\",\"Japan\",1,1],[\"Tunisia\",\"Netherlands\",1,1],[\"Japan\",\"Sweden\",1,1]]],[24,[[\"Tunisia\",\"Japan\",1,1],[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[26,[[\"Tunisia\",\"Japan\",1,2],[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,1]]]]]"
+      "fingerprint": "[18,2,21,[[22,[[\"Tunisia\",\"Netherlands\",1,1],[\"Japan\",\"Sweden\",1,1]]],[24,[[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[26,[[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]]]]"
     },
     "GRS": {
       "group": "D",
@@ -396,7 +378,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -459,7 +441,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -555,7 +537,7 @@
       "group": "J",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 17.9,
+      "projTotal": 17.8,
       "rank": 6,
       "leads": false,
       "winningBar": 24,
@@ -569,7 +551,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -679,7 +661,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -789,7 +771,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
@@ -852,7 +834,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 24.4
+          "proj": 24.1
         },
         {
           "group": "I",
