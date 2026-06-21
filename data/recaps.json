@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T02:23:43.607Z",
-  "count": 35,
+  "generatedAt": "2026-06-21T07:48:19.950Z",
+  "count": 36,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1002,6 +1002,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Sweden\",\"Tunisia\",5,1,[[\"7'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false],[\"30'\",\"Alexander Isak\",\"Sweden\",\"home\",false,false],[\"43'\",\"Omar Rekik\",\"Tunisia\",\"away\",false,false],[\"59'\",\"Viktor Gyokeres\",\"Sweden\",\"home\",false,false],[\"84'\",\"Mattias Svanberg\",\"Sweden\",\"home\",false,false],[\"90'+6'\",\"Yasin Ayari\",\"Sweden\",\"home\",false,false]]]"
+    },
+    "400021475": {
+      "id": "400021475",
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Japan",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "venue": "Monterrey Stadium",
+      "utcDate": "2026-06-21T04:00:00Z",
+      "goals": [
+        {
+          "minute": "4'",
+          "order": 4,
+          "player": "Daichi Kamada",
+          "team": "Japan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "31'",
+          "order": 31,
+          "player": "Ayase Ueda",
+          "team": "Japan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "69'",
+          "order": 69,
+          "player": "Junya Ito",
+          "team": "Japan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "83'",
+          "order": 83,
+          "player": "Ayase Ueda",
+          "team": "Japan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Japan see off Tunisia",
+      "summary": "Japan is dominating Tunisia 4-0 with Daichi Kamada and Ayase Ueda scoring, Ueda with a brace, and Junya Ito also finding the net, Japan is taking the three points in Group F at Monterrey Stadium, Ueda's goals coming in the 31st and 83rd minutes.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Tunisia\",\"Japan\",0,4,[[\"4'\",\"Daichi Kamada\",\"Japan\",\"away\",false,false],[\"31'\",\"Ayase Ueda\",\"Japan\",\"away\",false,false],[\"69'\",\"Junya Ito\",\"Japan\",\"away\",false,false],[\"83'\",\"Ayase Ueda\",\"Japan\",\"away\",false,false]]]"
     },
     "400021476": {
       "id": "400021476",
