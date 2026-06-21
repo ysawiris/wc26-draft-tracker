@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T20:02:46.868Z",
+  "generatedAt": "2026-06-21T20:53:59.052Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 6,
       "remaining": 3,
-      "projTotal": 13.8,
+      "projTotal": 13.9,
       "rank": 9,
       "leads": false,
       "winningBar": 26,
@@ -139,7 +139,7 @@
       "group": "H",
       "banked": 6,
       "remaining": 3,
-      "projTotal": 13.6,
+      "projTotal": 13.7,
       "rank": 10,
       "leads": false,
       "winningBar": 26,
@@ -232,7 +232,7 @@
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.3
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -317,7 +317,7 @@
       "group": "D",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 14.8,
+      "projTotal": 14.9,
       "rank": 8,
       "leads": false,
       "winningBar": 26,
@@ -380,7 +380,7 @@
       "group": "L",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 18.3,
+      "projTotal": 18.4,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -629,7 +629,7 @@
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.3
+          "proj": 18.4
         }
       ],
       "scenarios": [
