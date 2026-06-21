@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T15:05:30.714Z",
+  "fetchedAt": "2026-06-21T16:23:52.235Z",
   "matchCount": 72,
   "matches": [
     {
@@ -477,13 +477,13 @@
       "group": "H",
       "matchday": null,
       "utcDate": "2026-06-21T16:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Spain",
       "away": "Saudi Arabia",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 2,
+      "awayGoals": 0,
       "venue": "Atlanta Stadium",
-      "minute": "0'"
+      "minute": "23'"
     },
     {
       "id": "400021477",
@@ -1267,6 +1267,18 @@
           "f": 0
         }
       },
+      "400021483": {
+        "Saudi Arabia": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Spain": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021486": {
         "Uruguay": {
           "y": 0,
@@ -1497,12 +1509,12 @@
         "y": 1,
         "r": 0
       },
-      "Uruguay": {
-        "y": 0,
-        "r": 0
-      },
       "Saudi Arabia": {
         "y": 1,
+        "r": 0
+      },
+      "Uruguay": {
+        "y": 0,
         "r": 0
       },
       "Norway": {
@@ -1658,13 +1670,13 @@
         "f": 13
       },
       "Spain": {
-        "f": 9
+        "f": 10
+      },
+      "Saudi Arabia": {
+        "f": 11
       },
       "Uruguay": {
         "f": 6
-      },
-      "Saudi Arabia": {
-        "f": 10
       },
       "Norway": {
         "f": 13
