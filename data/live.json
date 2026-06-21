@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T03:11:54.049Z",
+  "fetchedAt": "2026-06-21T05:00:41.135Z",
   "matchCount": 72,
   "matches": [
     {
@@ -464,13 +464,13 @@
       "group": "F",
       "matchday": null,
       "utcDate": "2026-06-21T04:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Tunisia",
       "away": "Japan",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 2,
       "venue": "Monterrey Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021483",
@@ -1219,6 +1219,18 @@
           "f": 10
         }
       },
+      "400021475": {
+        "Tunisia": {
+          "y": 0,
+          "r": 0,
+          "f": 5
+        },
+        "Japan": {
+          "y": 0,
+          "r": 0,
+          "f": 8
+        }
+      },
       "400021476": {
         "New Zealand": {
           "y": 0,
@@ -1625,13 +1637,13 @@
         "f": 13
       },
       "Japan": {
-        "f": 7
+        "f": 15
       },
       "Sweden": {
         "f": 19
       },
       "Tunisia": {
-        "f": 8
+        "f": 13
       },
       "New Zealand": {
         "f": 8
