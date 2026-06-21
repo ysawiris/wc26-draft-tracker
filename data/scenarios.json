@@ -1,21 +1,21 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T17:58:58.889Z",
+  "generatedAt": "2026-06-21T20:02:46.868Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 6,
-      "remaining": 4,
-      "projTotal": 16.6,
-      "rank": 7,
+      "remaining": 3,
+      "projTotal": 13.8,
+      "rank": 9,
       "leads": false,
       "winningBar": 26,
       "countries": [
-        "Belgium",
-        "Iran",
         "New Zealand",
-        "Egypt"
+        "Egypt",
+        "Belgium",
+        "Iran"
       ],
       "rivals": [
         {
@@ -38,17 +38,11 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 26,
-          "yourRemainingGoals": 20,
-          "rivalCap": 25,
+          "targetTotal": 21,
+          "yourRemainingGoals": 15,
+          "rivalCap": 20,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Belgium",
-              "away": "Iran",
-              "hg": 3,
-              "ag": 2
-            },
             {
               "home": "New Zealand",
               "away": "Egypt",
@@ -68,15 +62,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 needs Group G to reach 26 goals, surpassing Taco Corp, Purdy Pitches, and unclaimed Group I."
+          "blurb": "Commissioner's Infirmary 2.0 is squeaking in with 21 goals as rivals like Purdy Pitches stall at 20 or under"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a goal-scoring explosion to snatch the No.1 pick, requiring a surge past Taco Corp and Purdy Pitches! The group must outmuscle rival managers to claim the top spot, with Group I also lurking as a threat.",
+      "intro": "Commissioner's Infirmary 2.0 must make a massive push to overtake Taco Corp and grab the No.1 pick, and it will require a monumental effort to outscore the top groups. To rise to the top, Commissioner's Infirmary 2.0 needs to dominate their remaining matches and hope rivals like Taco Corp and Purdy Pitches stumble",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,4,26,[[26,[[\"Belgium\",\"Iran\",3,2],[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[6,3,26,[[21,[[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -324,7 +318,7 @@
       "banked": 10,
       "remaining": 2,
       "projTotal": 14.8,
-      "rank": 9,
+      "rank": 8,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -537,7 +531,7 @@
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.5,
-      "rank": 8,
+      "rank": 7,
       "leads": false,
       "winningBar": 26,
       "countries": [
