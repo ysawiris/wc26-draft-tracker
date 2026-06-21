@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T17:45:22.050Z",
+  "fetchedAt": "2026-06-21T18:17:23.048Z",
   "matchCount": 72,
   "matches": [
     {
@@ -477,13 +477,13 @@
       "group": "H",
       "matchday": null,
       "utcDate": "2026-06-21T16:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Spain",
       "away": "Saudi Arabia",
       "homeGoals": 4,
       "awayGoals": 0,
       "venue": "Atlanta Stadium",
-      "minute": "82'"
+      "minute": "99'"
     },
     {
       "id": "400021477",
@@ -1276,7 +1276,7 @@
         "Spain": {
           "y": 0,
           "r": 0,
-          "f": 8
+          "f": 10
         }
       },
       "400021486": {
@@ -1670,7 +1670,7 @@
         "f": 13
       },
       "Spain": {
-        "f": 17
+        "f": 19
       },
       "Saudi Arabia": {
         "f": 11
