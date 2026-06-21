@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T20:53:59.052Z",
+  "generatedAt": "2026-06-21T22:49:07.622Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -137,16 +137,16 @@
     },
     "BBWC": {
       "group": "H",
-      "banked": 6,
-      "remaining": 3,
-      "projTotal": 13.7,
-      "rank": 10,
+      "banked": 7,
+      "remaining": 2,
+      "projTotal": 12.2,
+      "rank": 12,
       "leads": false,
       "winningBar": 26,
       "countries": [
         "Uruguay",
-        "Cape Verde",
         "Spain",
+        "Cape Verde",
         "Saudi Arabia"
       ],
       "rivals": [
@@ -170,17 +170,11 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 21,
-          "yourRemainingGoals": 15,
-          "rivalCap": 20,
+          "targetTotal": 17,
+          "yourRemainingGoals": 10,
+          "rivalCap": 16,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Uruguay",
-              "away": "Cape Verde",
-              "hg": 3,
-              "ag": 2
-            },
             {
               "home": "Uruguay",
               "away": "Spain",
@@ -194,15 +188,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Big Blue Wrecking Crew squeaks in as Group H reaches 21 goals, rival groups Taco Corp, Purdy Pitches, and Group I stall at 20 or under"
+          "blurb": "Big Blue Wrecking Crew squeezes past Taco Corp and Purdy Pitches managers with a mere 17 goals"
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew must surge to claim the No.1 pick, requiring a dramatic turnaround in goal production from World Cup Group H. The group needs a massive goal influx to overtake rival managers like Taco Corp, Purdy Pitches, and the unclaimed Group I.",
+      "intro": "Big Blue Wrecking Crew needs a miracle to grab the No.1 pick, requiring a massive goal surge from World Cup Group H! They must outscore powerful rival groups like Taco Corp and Purdy Pitches to rise from the ashes",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,3,26,[[21,[[\"Uruguay\",\"Cape Verde\",3,2],[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
+      "fingerprint": "[7,2,26,[[17,[[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
     },
     "TACO": {
       "group": "F",
@@ -669,7 +663,7 @@
       "banked": 7,
       "remaining": 2,
       "projTotal": 12.9,
-      "rank": 12,
+      "rank": 11,
       "leads": false,
       "winningBar": 26,
       "countries": [
