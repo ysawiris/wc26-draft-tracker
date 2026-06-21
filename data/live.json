@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-21T00:51:43.556Z",
+  "fetchedAt": "2026-06-21T01:51:58.439Z",
   "matchCount": 72,
   "matches": [
     {
@@ -457,7 +457,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "90'+1'"
     },
     {
       "id": "400021475",
@@ -1149,14 +1149,14 @@
       },
       "400021465": {
         "Curaçao": {
-          "y": 1,
+          "y": 5,
           "r": 0,
-          "f": 4
+          "f": 5
         },
         "Ecuador": {
           "y": 1,
           "r": 0,
-          "f": 5
+          "f": 6
         }
       },
       "400021467": {
@@ -1434,7 +1434,7 @@
         "r": 0
       },
       "Curaçao": {
-        "y": 1,
+        "y": 5,
         "r": 0
       },
       "Ecuador": {
@@ -1613,10 +1613,10 @@
         "f": 23
       },
       "Curaçao": {
-        "f": 15
+        "f": 16
       },
       "Ecuador": {
-        "f": 17
+        "f": 18
       },
       "Côte d'Ivoire": {
         "f": 14
