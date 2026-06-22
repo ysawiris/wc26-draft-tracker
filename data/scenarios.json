@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T03:41:31.901Z",
+  "generatedAt": "2026-06-22T06:14:55.444Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
-      "banked": 9,
+      "banked": 10,
       "remaining": 2,
-      "projTotal": 14.2,
-      "rank": 10,
+      "projTotal": 15.2,
+      "rank": 9,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -26,7 +26,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -38,9 +38,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 19,
+          "targetTotal": 20,
           "yourRemainingGoals": 10,
-          "rivalCap": 18,
+          "rivalCap": 19,
           "needsHelp": true,
           "lines": [
             {
@@ -56,15 +56,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 needs Group G to squeak in with 19 goals, surpassing Taco Corp, Purdy Pitches and Group I managers."
+          "blurb": "Commissioner's Infirmary 2.0 squeezes past Taco Corp and Purdy Pitches as Group G reaches 20 goals"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a miracle to grab the No.1 pick, requiring a massive goal surge to overcome rivals like Taco Corp and Purdy Pitches! To catapult to the top, their Group G must outscore and outmaneuver the competition in the remaining matches.",
+      "intro": "Commissioner's Infirmary 2.0 must surge to snatch the No.1 pick, overcoming rivals like Taco Corp and Purdy Pitches. A frantic goal spree is needed for Commissioner's Infirmary 2.0 to leapfrog the competition and claim the top spot",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[9,2,26,[[19,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[10,2,26,[[20,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -89,7 +89,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -133,7 +133,7 @@
       "group": "H",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.4,
+      "projTotal": 15.3,
       "rank": 8,
       "leads": false,
       "winningBar": 26,
@@ -152,7 +152,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -210,7 +210,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -306,7 +306,7 @@
       "banked": 10,
       "remaining": 2,
       "projTotal": 14.8,
-      "rank": 9,
+      "rank": 10,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -324,7 +324,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -387,7 +387,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -462,7 +462,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -537,7 +537,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
@@ -612,7 +612,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "L",
@@ -675,7 +675,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21
+          "proj": 21.1
         },
         {
           "group": "B",
