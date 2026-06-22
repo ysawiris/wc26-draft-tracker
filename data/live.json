@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-22T17:53:17.648Z",
+  "fetchedAt": "2026-06-22T19:08:16.293Z",
   "matchCount": 72,
   "matches": [
     {
@@ -529,13 +529,13 @@
       "group": "J",
       "matchday": null,
       "utcDate": "2026-06-22T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Argentina",
       "away": "Austria",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 0,
       "venue": "Dallas Stadium",
-      "minute": "45'+7'"
+      "minute": "98'"
     },
     {
       "id": "400021492",
@@ -1353,14 +1353,14 @@
       },
       "400021494": {
         "Austria": {
-          "y": 1,
+          "y": 2,
           "r": 0,
-          "f": 5
+          "f": 12
         },
         "Argentina": {
-          "y": 0,
+          "y": 2,
           "r": 0,
-          "f": 8
+          "f": 12
         }
       },
       "400021496": {
@@ -1582,11 +1582,11 @@
         "r": 0
       },
       "Austria": {
-        "y": 2,
+        "y": 3,
         "r": 0
       },
       "Argentina": {
-        "y": 0,
+        "y": 2,
         "r": 0
       },
       "Algeria": {
@@ -1742,10 +1742,10 @@
         "f": 5
       },
       "Austria": {
-        "f": 17
+        "f": 24
       },
       "Argentina": {
-        "f": 21
+        "f": 25
       },
       "Algeria": {
         "f": 8
