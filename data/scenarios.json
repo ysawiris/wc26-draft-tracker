@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T01:35:21.509Z",
+  "generatedAt": "2026-06-22T03:41:31.901Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
-      "banked": 7,
+      "banked": 9,
       "remaining": 2,
-      "projTotal": 12.2,
-      "rank": 12,
+      "projTotal": 14.2,
+      "rank": 10,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -38,9 +38,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 17,
+          "targetTotal": 19,
           "yourRemainingGoals": 10,
-          "rivalCap": 16,
+          "rivalCap": 18,
           "needsHelp": true,
           "lines": [
             {
@@ -56,15 +56,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 is squeaking in with 17 goals as Taco Corp, Purdy Pitches, and unclaimed Group I stall"
+          "blurb": "Commissioner's Infirmary 2.0 needs Group G to squeak in with 19 goals, surpassing Taco Corp, Purdy Pitches and Group I managers."
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a miracle to grab the No.1 pick, with a massive goal haul required to leapfrog rivals Taco Corp, Purdy Pitches, and Group I. The group must explode into life, with their current tally of 7 goals woefully short of the projected totals of their competitors, and a huge ask to reach the safe target of 26+ goals",
+      "intro": "Commissioner's Infirmary 2.0 needs a miracle to grab the No.1 pick, requiring a massive goal surge to overcome rivals like Taco Corp and Purdy Pitches! To catapult to the top, their Group G must outscore and outmaneuver the competition in the remaining matches.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,2,26,[[17,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[9,2,26,[[19,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -657,7 +657,7 @@
       "banked": 7,
       "remaining": 2,
       "projTotal": 12.9,
-      "rank": 11,
+      "rank": 12,
       "leads": false,
       "winningBar": 26,
       "countries": [
