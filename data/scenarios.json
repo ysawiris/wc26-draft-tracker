@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T20:24:51.368Z",
+  "generatedAt": "2026-06-22T21:24:25.010Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -24,14 +24,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -87,14 +87,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -150,14 +150,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -199,7 +199,7 @@
       "projTotal": 26.2,
       "rank": 1,
       "leads": true,
-      "winningBar": 21,
+      "winningBar": 20,
       "countries": [
         "Tunisia",
         "Netherlands",
@@ -207,11 +207,6 @@
         "Sweden"
       ],
       "rivals": [
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
         {
           "group": "B",
           "owner": "Purdy Pitches",
@@ -221,6 +216,11 @@
           "group": "L",
           "owner": "Fiko Fins",
           "proj": 18.4
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.3
         }
       ],
       "scenarios": [
@@ -245,14 +245,14 @@
               "ag": 0
             }
           ],
-          "blurb": "Taco Corp squeaks in as Group F reaches 22 goals, stalling rival groups at 21 or under"
+          "blurb": "Taco Corp edges Purdy Pitches as Group F squeaks in with 22 goals"
         },
         {
           "key": "business",
           "label": "Take care of business",
-          "targetTotal": 24,
-          "yourRemainingGoals": 4,
-          "rivalCap": 23,
+          "targetTotal": 23,
+          "yourRemainingGoals": 3,
+          "rivalCap": 22,
           "needsHelp": false,
           "lines": [
             {
@@ -265,17 +265,17 @@
               "home": "Japan",
               "away": "Sweden",
               "hg": 1,
-              "ag": 1
+              "ag": 0
             }
           ],
-          "blurb": "Taco Corp takes care of business as Group F reaches 24 goals, clearing the field of Purdy Pitches and Fiko Fins"
+          "blurb": "Taco Corp takes care of business reaching 23 goals and leaving the field behind"
         },
         {
           "key": "fest",
           "label": "Goal-fest",
-          "targetTotal": 26,
-          "yourRemainingGoals": 6,
-          "rivalCap": 25,
+          "targetTotal": 25,
+          "yourRemainingGoals": 5,
+          "rivalCap": 24,
           "needsHelp": false,
           "lines": [
             {
@@ -287,19 +287,19 @@
             {
               "home": "Japan",
               "away": "Sweden",
-              "hg": 2,
+              "hg": 1,
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp sparks a goal-fest as Group F reaches 26 goals, dominating the field and silencing rivals"
+          "blurb": "Taco Corp ignites a goal-fest reaching 25 goals and dominating the competition"
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp must see Group F explode for more goals to grab the No.1 pick, outscoring rival groups led by cunning managers like Purdy Pitches and Fiko Fins. With 2 matches left, the pressure is on to outpace unclaimed Group I and the rest to secure the top spot",
+      "intro": "Taco Corp needs a goal-scoring explosion to secure the No.1 pick, and it all comes down to the next two matches. With rival managers from Purdy Pitches and Fiko Fins lurking, every goal counts in the quest for the top spot",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[20,2,21,[[22,[[\"Tunisia\",\"Netherlands\",0,1],[\"Japan\",\"Sweden\",1,0]]],[24,[[\"Tunisia\",\"Netherlands\",1,1],[\"Japan\",\"Sweden\",1,1]]],[26,[[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]]]]"
+      "fingerprint": "[20,2,20,[[22,[[\"Tunisia\",\"Netherlands\",0,1],[\"Japan\",\"Sweden\",1,0]]],[23,[[\"Tunisia\",\"Netherlands\",1,1],[\"Japan\",\"Sweden\",1,0]]],[25,[[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",1,1]]]]]"
     },
     "GRS": {
       "group": "D",
@@ -322,14 +322,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -369,7 +369,7 @@
       "banked": 7,
       "remaining": 4,
       "projTotal": 18.4,
-      "rank": 4,
+      "rank": 3,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -385,14 +385,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.3
         }
       ],
       "scenarios": [
@@ -443,7 +443,7 @@
       "group": "J",
       "banked": 9,
       "remaining": 3,
-      "projTotal": 17.2,
+      "projTotal": 17.1,
       "rank": 6,
       "leads": false,
       "winningBar": 26,
@@ -460,14 +460,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -529,14 +529,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -588,7 +588,7 @@
       "banked": 15,
       "remaining": 2,
       "projTotal": 20.5,
-      "rank": 3,
+      "rank": 2,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -604,14 +604,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "L",
           "owner": "Fiko Fins",
           "proj": 18.4
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.3
         }
       ],
       "scenarios": [
@@ -667,14 +667,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "L",
+          "owner": "Fiko Fins",
+          "proj": 18.4
         }
       ],
       "scenarios": [
