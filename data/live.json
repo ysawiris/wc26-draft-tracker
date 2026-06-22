@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-22T20:14:50.291Z",
+  "fetchedAt": "2026-06-22T21:18:09.079Z",
   "matchCount": 72,
   "matches": [
     {
@@ -542,13 +542,13 @@
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-22T21:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "France",
       "away": "Iraq",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 1,
+      "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": "0'"
+      "minute": "17'"
     },
     {
       "id": "400021491",
@@ -1351,6 +1351,18 @@
           "f": 5
         }
       },
+      "400021492": {
+        "France": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Iraq": {
+          "y": 1,
+          "r": 0,
+          "f": 0
+        }
+      },
       "400021494": {
         "Austria": {
           "y": 2,
@@ -1570,7 +1582,7 @@
         "r": 0
       },
       "Iraq": {
-        "y": 1,
+        "y": 2,
         "r": 0
       },
       "Senegal": {
@@ -1739,7 +1751,7 @@
         "f": 9
       },
       "France": {
-        "f": 5
+        "f": 6
       },
       "Austria": {
         "f": 24
