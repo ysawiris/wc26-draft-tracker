@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T03:49:24.276Z",
-  "count": 40,
+  "generatedAt": "2026-06-22T19:44:52.369Z",
+  "count": 41,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1497,6 +1497,42 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"France\",\"Senegal\",3,1,[[\"66'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"82'\",\"Bradley Barcola\",\"France\",\"home\",false,false],[\"90'+5'\",\"Ibrahim Mbaye\",\"Senegal\",\"away\",false,false],[\"90'+6'\",\"Kylian Mbappe\",\"France\",\"home\",false,false]]]"
+    },
+    "400021494": {
+      "id": "400021494",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Austria",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "venue": "Dallas Stadium",
+      "utcDate": "2026-06-22T17:00:00Z",
+      "goals": [
+        {
+          "minute": "38'",
+          "order": 38,
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+5'",
+          "order": 90.05,
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Argentina see off Austria",
+      "summary": "Lionel Messi scores in the 38th minute and again in the 90'+5' minute as Argentina takes the lead and seals the win over Austria, the final score is 2-0, Argentina is dominating Group J.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Argentina\",\"Austria\",2,0,[[\"38'\",\"Lionel Messi\",\"Argentina\",\"home\",false,false],[\"90'+5'\",\"Lionel Messi\",\"Argentina\",\"home\",false,false]]]"
     },
     "400021496": {
       "id": "400021496",
