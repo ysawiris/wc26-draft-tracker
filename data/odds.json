@@ -1,21 +1,9 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-21T20:48:16.833Z",
-  "matchCount": 35,
+  "fetchedAt": "2026-06-22T01:31:43.039Z",
+  "matchCount": 33,
   "lines": [
-    {
-      "espnId": "760451",
-      "date": "2026-06-21",
-      "home": "Belgium",
-      "away": "Iran",
-      "homeRaw": "Belgium",
-      "awayRaw": "Iran",
-      "line": 2.5,
-      "overUS": "-125",
-      "underUS": "+100",
-      "impliedTotal": 2.78
-    },
     {
       "espnId": "760452",
       "date": "2026-06-21",
@@ -29,18 +17,6 @@
       "impliedTotal": 2.57
     },
     {
-      "espnId": "760450",
-      "date": "2026-06-21",
-      "home": "Uruguay",
-      "away": "Cape Verde",
-      "homeRaw": "Uruguay",
-      "awayRaw": "Cape Verde",
-      "line": 2.5,
-      "overUS": "+120",
-      "underUS": "-145",
-      "impliedTotal": 2.42
-    },
-    {
       "espnId": "760456",
       "date": "2026-06-22",
       "home": "Argentina",
@@ -48,9 +24,9 @@
       "homeRaw": "Argentina",
       "awayRaw": "Austria",
       "line": 2.5,
-      "overUS": "-110",
-      "underUS": "-110",
-      "impliedTotal": 2.67
+      "overUS": "-105",
+      "underUS": "-120",
+      "impliedTotal": 2.61
     },
     {
       "espnId": "760457",
@@ -60,9 +36,9 @@
       "homeRaw": "France",
       "awayRaw": "Iraq",
       "line": 3.5,
-      "overUS": "-110",
+      "overUS": "-115",
       "underUS": "-110",
-      "impliedTotal": 3.67
+      "impliedTotal": 3.7
     },
     {
       "espnId": "760455",
@@ -72,9 +48,9 @@
       "homeRaw": "Jordan",
       "awayRaw": "Algeria",
       "line": 2.5,
-      "overUS": "-110",
+      "overUS": "-115",
       "underUS": "-110",
-      "impliedTotal": 2.67
+      "impliedTotal": 2.7
     },
     {
       "espnId": "760454",
@@ -132,9 +108,9 @@
       "homeRaw": "Portugal",
       "awayRaw": "Uzbekistan",
       "line": 2.5,
-      "overUS": "-170",
+      "overUS": "-165",
       "underUS": "+135",
-      "impliedTotal": 3.09
+      "impliedTotal": 3.08
     },
     {
       "espnId": "760462",
@@ -156,9 +132,9 @@
       "homeRaw": "Czechia",
       "awayRaw": "Mexico",
       "line": 2.5,
-      "overUS": "+110",
+      "overUS": "+105",
       "underUS": "-135",
-      "impliedTotal": 2.49
+      "impliedTotal": 2.51
     },
     {
       "espnId": "760464",
@@ -168,9 +144,9 @@
       "homeRaw": "Morocco",
       "awayRaw": "Haiti",
       "line": 2.5,
-      "overUS": "-175",
-      "underUS": "+140",
-      "impliedTotal": 3.13
+      "overUS": "-180",
+      "underUS": "+145",
+      "impliedTotal": 3.16
     },
     {
       "espnId": "760465",
@@ -252,9 +228,9 @@
       "homeRaw": "Paraguay",
       "awayRaw": "Australia",
       "line": 1.5,
-      "overUS": "-165",
+      "overUS": "-160",
       "underUS": "+130",
-      "impliedTotal": 1.98
+      "impliedTotal": 1.97
     },
     {
       "espnId": "760472",
@@ -264,9 +240,9 @@
       "homeRaw": "Tunisia",
       "awayRaw": "Netherlands",
       "line": 3.5,
-      "overUS": "+125",
-      "underUS": "-155",
-      "impliedTotal": 3.31
+      "overUS": "+120",
+      "underUS": "-150",
+      "impliedTotal": 3.35
     },
     {
       "espnId": "760470",
@@ -288,9 +264,9 @@
       "homeRaw": "Cape Verde",
       "awayRaw": "Saudi Arabia",
       "line": 2.5,
-      "overUS": "+110",
-      "underUS": "-135",
-      "impliedTotal": 2.49
+      "overUS": "-105",
+      "underUS": "-120",
+      "impliedTotal": 2.61
     },
     {
       "espnId": "760476",
@@ -299,10 +275,10 @@
       "away": "Iran",
       "homeRaw": "Egypt",
       "awayRaw": "Iran",
-      "line": 2.5,
-      "overUS": "+145",
-      "underUS": "-180",
-      "impliedTotal": 2.24
+      "line": 1.5,
+      "overUS": "-190",
+      "underUS": "+155",
+      "impliedTotal": 2.12
     },
     {
       "espnId": "760477",
@@ -312,9 +288,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Belgium",
       "line": 2.5,
-      "overUS": "-160",
+      "overUS": "-165",
       "underUS": "+130",
-      "impliedTotal": 3.04
+      "impliedTotal": 3.05
     },
     {
       "espnId": "760475",
