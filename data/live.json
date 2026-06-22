@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-22T01:33:04.821Z",
+  "fetchedAt": "2026-06-22T02:33:50.182Z",
   "matchCount": 72,
   "matches": [
     {
@@ -520,9 +520,9 @@
       "home": "New Zealand",
       "away": "Egypt",
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 2,
       "venue": "BC Place Vancouver",
-      "minute": "33'"
+      "minute": "72'"
     },
     {
       "id": "400021494",
@@ -1269,14 +1269,14 @@
       },
       "400021480": {
         "New Zealand": {
-          "y": 1,
+          "y": 2,
           "r": 0,
-          "f": 4
+          "f": 10
         },
         "Egypt": {
           "y": 1,
           "r": 0,
-          "f": 1
+          "f": 4
         }
       },
       "400021482": {
@@ -1522,7 +1522,7 @@
         "r": 0
       },
       "New Zealand": {
-        "y": 1,
+        "y": 2,
         "r": 0
       },
       "IR Iran": {
@@ -1694,7 +1694,7 @@
         "f": 16
       },
       "New Zealand": {
-        "f": 12
+        "f": 18
       },
       "IR Iran": {
         "f": 16
@@ -1703,7 +1703,7 @@
         "f": 18
       },
       "Egypt": {
-        "f": 14
+        "f": 17
       },
       "Spain": {
         "f": 19
