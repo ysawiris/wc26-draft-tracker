@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T18:42:43.046Z",
+  "generatedAt": "2026-06-22T20:24:51.368Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -441,10 +441,10 @@
     },
     "RBLD": {
       "group": "J",
-      "banked": 8,
+      "banked": 9,
       "remaining": 3,
-      "projTotal": 16.2,
-      "rank": 7,
+      "projTotal": 17.2,
+      "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -474,9 +474,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 23,
+          "targetTotal": 24,
           "yourRemainingGoals": 15,
-          "rivalCap": 22,
+          "rivalCap": 23,
           "needsHelp": true,
           "lines": [
             {
@@ -498,22 +498,22 @@
               "ag": 4
             }
           ],
-          "blurb": "Another Rebuilding Year's Group J is scoring to reach 23 goals, hoping Taco Corp and Purdy Pitches stall"
+          "blurb": "Another Rebuilding Year is squeaking in with 24 goals as Taco Corp and Purdy Pitches stall at 23 or under."
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year must rally their World Cup Group J teams to score big and overtake rival groups, with Taco Corp and Purdy Pitches posing the biggest threats, to grab the No.1 pick. To leapfrog the competition, Group J needs a significant surge in goal scoring, with about 26+ goals required to feel safe, and currently projected for only 16.2 total goals, a major shortfall from the target",
+      "intro": "Another Rebuilding Year must orchestrate a monumental goal surge to seize the No.1 pick, leaving rivals Taco Corp and Purdy Pitches in the dust. With 3 matches left, the group's fate hangs precariously in the balance, as they chase down the top spot with unrelenting fervor.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[8,3,26,[[23,[[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
+      "fingerprint": "[9,3,26,[[24,[[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
     },
     "TMM": {
       "group": "K",
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.5,
-      "rank": 6,
+      "rank": 7,
       "leads": false,
       "winningBar": 26,
       "countries": [
