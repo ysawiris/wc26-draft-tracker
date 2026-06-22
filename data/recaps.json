@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T21:34:27.040Z",
-  "count": 38,
+  "generatedAt": "2026-06-22T01:11:30.666Z",
+  "count": 39,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1272,6 +1272,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Saudi Arabia\",\"Uruguay\",1,1,[[\"41'\",\"Abdulelah Alamri\",\"Saudi Arabia\",\"home\",false,false],[\"80'\",\"Maxi Araujo\",\"Uruguay\",\"away\",false,false]]]"
+    },
+    "400021487": {
+      "id": "400021487",
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Cape Verde",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "venue": "Miami Stadium",
+      "utcDate": "2026-06-21T22:00:00Z",
+      "goals": [
+        {
+          "minute": "21'",
+          "order": 21,
+          "player": "Kevin Pina",
+          "team": "Cape Verde",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "44'",
+          "order": 44,
+          "player": "Maxi Araujo",
+          "team": "Uruguay",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+6'",
+          "order": 45.06,
+          "player": "Agustin Canobbio",
+          "team": "Uruguay",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "61'",
+          "order": 61,
+          "player": "Helio Varela",
+          "team": "Cape Verde",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Uruguay and Cape Verde share the points",
+      "summary": "Uruguay and Cape Verde are locked in a 2-2 battle with Kevin Pina and Helio Varela scoring for Cape Verde and Maxi Araujo and Agustin Canobbio netting for Uruguay, the match is intense, goals are being scored. Uruguay are holding on for a draw.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Uruguay\",\"Cape Verde\",2,2,[[\"21'\",\"Kevin Pina\",\"Cape Verde\",\"away\",false,false],[\"44'\",\"Maxi Araujo\",\"Uruguay\",\"home\",false,false],[\"45'+6'\",\"Agustin Canobbio\",\"Uruguay\",\"home\",false,false],[\"61'\",\"Helio Varela\",\"Cape Verde\",\"away\",false,false]]]"
     },
     "400021488": {
       "id": "400021488",
