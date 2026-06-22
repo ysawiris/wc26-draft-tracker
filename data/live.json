@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-22T04:02:11.336Z",
+  "fetchedAt": "2026-06-22T16:14:14.156Z",
   "matchCount": 72,
   "matches": [
     {
@@ -535,7 +535,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Dallas Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021492",
