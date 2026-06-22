@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T15:12:58.984Z",
+  "generatedAt": "2026-06-22T18:42:43.046Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -26,7 +26,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -89,7 +89,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -152,7 +152,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -210,7 +210,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -324,7 +324,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -387,7 +387,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -441,17 +441,17 @@
     },
     "RBLD": {
       "group": "J",
-      "banked": 7,
-      "remaining": 4,
-      "projTotal": 17.9,
-      "rank": 6,
+      "banked": 8,
+      "remaining": 3,
+      "projTotal": 16.2,
+      "rank": 7,
       "leads": false,
       "winningBar": 26,
       "countries": [
-        "Argentina",
-        "Austria",
         "Jordan",
-        "Algeria"
+        "Algeria",
+        "Austria",
+        "Argentina"
       ],
       "rivals": [
         {
@@ -462,7 +462,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -474,17 +474,11 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 27,
-          "yourRemainingGoals": 20,
-          "rivalCap": 26,
+          "targetTotal": 23,
+          "yourRemainingGoals": 15,
+          "rivalCap": 22,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Argentina",
-              "away": "Austria",
-              "hg": 3,
-              "ag": 2
-            },
             {
               "home": "Jordan",
               "away": "Algeria",
@@ -504,22 +498,22 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J scores 27 goals, surpassing Taco Corp and Purdy Pitches, with rivals stalling at 26 or under"
+          "blurb": "Another Rebuilding Year's Group J is scoring to reach 23 goals, hoping Taco Corp and Purdy Pitches stall"
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year must will their World Cup Group J to outscore the likes of Taco Corp and Purdy Pitches, and they need a miracle to grab the No.1 pick. With 4 matches left, they are banking on a surge to catapult them to the top spot, overtaking rival managers like Purdy Pitches and the unclaimed Group I",
+      "intro": "Another Rebuilding Year must rally their World Cup Group J teams to score big and overtake rival groups, with Taco Corp and Purdy Pitches posing the biggest threats, to grab the No.1 pick. To leapfrog the competition, Group J needs a significant surge in goal scoring, with about 26+ goals required to feel safe, and currently projected for only 16.2 total goals, a major shortfall from the target",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,4,26,[[27,[[\"Argentina\",\"Austria\",3,2],[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
+      "fingerprint": "[8,3,26,[[23,[[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
     },
     "TMM": {
       "group": "K",
       "banked": 6,
       "remaining": 4,
       "projTotal": 16.5,
-      "rank": 7,
+      "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -537,7 +531,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
@@ -612,7 +606,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "L",
@@ -632,25 +626,25 @@
             {
               "home": "Bosnia & Herzegovina",
               "away": "Qatar",
-              "hg": 4,
+              "hg": 3,
               "ag": 2
             },
             {
               "home": "Switzerland",
               "away": "Canada",
-              "hg": 2,
+              "hg": 3,
               "ag": 2
             }
           ],
-          "blurb": "Purdy Pitches is squeaking in with 25 goals as rivals like Taco Corp stall at 24 or under."
+          "blurb": "Group B scores 25 goals, surpassing Fiko Fins and unclaimed Group I, while rival Taco Corp stalls at 24 or under"
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches must dominate the remaining matches to grab the No.1 pick, surpassing rival groups like Taco Corp and Fiko Fins in the process. The group needs a massive goal surge to outscore the competition, with Taco Corp posing the biggest threat.",
+      "intro": "Purdy Pitches must push Group B to unprecedented heights to snatch the No.1 pick, outscoring Taco Corp and others. The stakes are high, with Fiko Fins and unclaimed Group I also in the mix, but Purdy Pitches is ready to make a move.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[15,2,26,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",4,2],[\"Switzerland\",\"Canada\",2,2]]]]]"
+      "fingerprint": "[15,2,26,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
     },
     "R": {
       "group": "C",
@@ -675,7 +669,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 21
         },
         {
           "group": "B",
