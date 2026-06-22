@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T06:14:55.444Z",
+  "generatedAt": "2026-06-22T11:20:21.523Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -21,7 +21,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -84,7 +84,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -133,7 +133,7 @@
       "group": "H",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.3,
+      "projTotal": 15.4,
       "rank": 8,
       "leads": false,
       "winningBar": 26,
@@ -147,7 +147,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -196,7 +196,7 @@
       "group": "F",
       "banked": 20,
       "remaining": 2,
-      "projTotal": 26.1,
+      "projTotal": 26.2,
       "rank": 1,
       "leads": true,
       "winningBar": 21,
@@ -319,7 +319,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -382,7 +382,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -443,7 +443,7 @@
       "group": "J",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 17.9,
+      "projTotal": 18,
       "rank": 6,
       "leads": false,
       "winningBar": 26,
@@ -457,7 +457,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -532,7 +532,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -607,7 +607,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
@@ -632,25 +632,25 @@
             {
               "home": "Bosnia & Herzegovina",
               "away": "Qatar",
-              "hg": 3,
+              "hg": 4,
               "ag": 2
             },
             {
               "home": "Switzerland",
               "away": "Canada",
-              "hg": 3,
+              "hg": 2,
               "ag": 2
             }
           ],
-          "blurb": "Purdy Pitches is squeaking in with 25 goals as Taco Corp and other rivals stall at 24 or under."
+          "blurb": "Purdy Pitches is squeaking in with 25 goals as rivals like Taco Corp stall at 24 or under."
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches needs a massive goal surge to grab the No.1 pick, with Group B currently ranking third in total goals. To overtake rival groups like Taco Corp, Group B must explode for a ton of goals in their final two matches to reach the top spot.",
+      "intro": "Purdy Pitches must dominate the remaining matches to grab the No.1 pick, surpassing rival groups like Taco Corp and Fiko Fins in the process. The group needs a massive goal surge to outscore the competition, with Taco Corp posing the biggest threat.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[15,2,26,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
+      "fingerprint": "[15,2,26,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",4,2],[\"Switzerland\",\"Canada\",2,2]]]]]"
     },
     "R": {
       "group": "C",
@@ -670,7 +670,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.1
+          "proj": 26.2
         },
         {
           "group": "I",
