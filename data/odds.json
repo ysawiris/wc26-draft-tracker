@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-22T10:18:01.271Z",
+  "fetchedAt": "2026-06-22T14:13:36.351Z",
   "matchCount": 32,
   "lines": [
     {
@@ -12,9 +12,9 @@
       "homeRaw": "Argentina",
       "awayRaw": "Austria",
       "line": 2.5,
-      "overUS": "-110",
-      "underUS": "-110",
-      "impliedTotal": 2.67
+      "overUS": "-105",
+      "underUS": "-115",
+      "impliedTotal": 2.63
     },
     {
       "espnId": "760457",
@@ -36,9 +36,9 @@
       "homeRaw": "Jordan",
       "awayRaw": "Algeria",
       "line": 2.5,
-      "overUS": "-115",
+      "overUS": "-110",
       "underUS": "-110",
-      "impliedTotal": 2.7
+      "impliedTotal": 2.67
     },
     {
       "espnId": "760454",
@@ -48,9 +48,9 @@
       "homeRaw": "Norway",
       "awayRaw": "Senegal",
       "line": 2.5,
-      "overUS": "-120",
-      "underUS": "+100",
-      "impliedTotal": 2.76
+      "overUS": "-115",
+      "underUS": "-110",
+      "impliedTotal": 2.7
     },
     {
       "espnId": "760459",
@@ -84,9 +84,9 @@
       "homeRaw": "Panama",
       "awayRaw": "Croatia",
       "line": 2.5,
-      "overUS": "-115",
-      "underUS": "-110",
-      "impliedTotal": 2.7
+      "overUS": "-120",
+      "underUS": "-105",
+      "impliedTotal": 2.74
     },
     {
       "espnId": "760461",
@@ -96,9 +96,9 @@
       "homeRaw": "Portugal",
       "awayRaw": "Uzbekistan",
       "line": 2.5,
-      "overUS": "-175",
-      "underUS": "+140",
-      "impliedTotal": 3.13
+      "overUS": "-165",
+      "underUS": "+135",
+      "impliedTotal": 3.08
     },
     {
       "espnId": "760462",
@@ -132,9 +132,9 @@
       "homeRaw": "Morocco",
       "awayRaw": "Haiti",
       "line": 2.5,
-      "overUS": "-180",
-      "underUS": "+145",
-      "impliedTotal": 3.16
+      "overUS": "-175",
+      "underUS": "+140",
+      "impliedTotal": 3.13
     },
     {
       "espnId": "760465",
@@ -145,8 +145,8 @@
       "awayRaw": "Brazil",
       "line": 2.5,
       "overUS": "-120",
-      "underUS": "+100",
-      "impliedTotal": 2.76
+      "underUS": "-105",
+      "impliedTotal": 2.74
     },
     {
       "espnId": "760466",
@@ -229,8 +229,8 @@
       "awayRaw": "Netherlands",
       "line": 3.5,
       "overUS": "+115",
-      "underUS": "-140",
-      "impliedTotal": 3.41
+      "underUS": "-145",
+      "impliedTotal": 3.39
     },
     {
       "espnId": "760470",
@@ -264,9 +264,9 @@
       "homeRaw": "Egypt",
       "awayRaw": "Iran",
       "line": 1.5,
-      "overUS": "-190",
+      "overUS": "-185",
       "underUS": "+150",
-      "impliedTotal": 2.1
+      "impliedTotal": 2.09
     },
     {
       "espnId": "760477",
@@ -276,9 +276,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Belgium",
       "line": 2.5,
-      "overUS": "-165",
+      "overUS": "-170",
       "underUS": "+135",
-      "impliedTotal": 3.08
+      "impliedTotal": 3.09
     },
     {
       "espnId": "760475",
@@ -289,8 +289,8 @@
       "awayRaw": "France",
       "line": 2.5,
       "overUS": "-135",
-      "underUS": "+105",
-      "impliedTotal": 2.84
+      "underUS": "+110",
+      "impliedTotal": 2.87
     },
     {
       "espnId": "760474",
@@ -301,8 +301,8 @@
       "awayRaw": "Iraq",
       "line": 2.5,
       "overUS": "-120",
-      "underUS": "-105",
-      "impliedTotal": 2.74
+      "underUS": "+100",
+      "impliedTotal": 2.76
     },
     {
       "espnId": "760479",
@@ -337,8 +337,8 @@
       "awayRaw": "Portugal",
       "line": 2.5,
       "overUS": "+105",
-      "underUS": "-130",
-      "impliedTotal": 2.53
+      "underUS": "-135",
+      "impliedTotal": 2.51
     },
     {
       "espnId": "760480",
@@ -373,8 +373,8 @@
       "awayRaw": "Argentina",
       "line": 2.5,
       "overUS": "-170",
-      "underUS": "+140",
-      "impliedTotal": 3.11
+      "underUS": "+135",
+      "impliedTotal": 3.09
     },
     {
       "espnId": "760485",
@@ -384,9 +384,9 @@
       "homeRaw": "Panama",
       "awayRaw": "England",
       "line": 2.5,
-      "overUS": "-175",
+      "overUS": "-170",
       "underUS": "+140",
-      "impliedTotal": 3.13
+      "impliedTotal": 3.11
     }
   ]
 }
