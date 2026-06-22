@@ -1,20 +1,20 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-21T23:53:11.997Z",
+  "generatedAt": "2026-06-22T01:35:21.509Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
-      "banked": 6,
-      "remaining": 3,
-      "projTotal": 13.9,
-      "rank": 10,
+      "banked": 7,
+      "remaining": 2,
+      "projTotal": 12.2,
+      "rank": 12,
       "leads": false,
       "winningBar": 26,
       "countries": [
         "New Zealand",
-        "Egypt",
         "Belgium",
+        "Egypt",
         "Iran"
       ],
       "rivals": [
@@ -26,7 +26,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -38,17 +38,11 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 21,
-          "yourRemainingGoals": 15,
-          "rivalCap": 20,
+          "targetTotal": 17,
+          "yourRemainingGoals": 10,
+          "rivalCap": 16,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "New Zealand",
-              "away": "Egypt",
-              "hg": 2,
-              "ag": 3
-            },
             {
               "home": "New Zealand",
               "away": "Belgium",
@@ -62,15 +56,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 is squeaking in with 21 goals as rivals like Purdy Pitches stall at 20 or under"
+          "blurb": "Commissioner's Infirmary 2.0 is squeaking in with 17 goals as Taco Corp, Purdy Pitches, and unclaimed Group I stall"
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 must make a massive push to overtake Taco Corp and grab the No.1 pick, and it will require a monumental effort to outscore the top groups. To rise to the top, Commissioner's Infirmary 2.0 needs to dominate their remaining matches and hope rivals like Taco Corp and Purdy Pitches stumble",
+      "intro": "Commissioner's Infirmary 2.0 needs a miracle to grab the No.1 pick, with a massive goal haul required to leapfrog rivals Taco Corp, Purdy Pitches, and Group I. The group must explode into life, with their current tally of 7 goals woefully short of the projected totals of their competitors, and a huge ask to reach the safe target of 26+ goals",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[6,3,26,[[21,[[\"New Zealand\",\"Egypt\",2,3],[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[7,2,26,[[17,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "CDL": {
       "group": "E",
@@ -95,7 +89,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -139,7 +133,7 @@
       "group": "H",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.2,
+      "projTotal": 15.4,
       "rank": 8,
       "leads": false,
       "winningBar": 26,
@@ -158,7 +152,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -216,7 +210,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -311,7 +305,7 @@
       "group": "D",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 14.9,
+      "projTotal": 14.8,
       "rank": 9,
       "leads": false,
       "winningBar": 26,
@@ -330,7 +324,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -393,7 +387,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -468,7 +462,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -543,7 +537,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
@@ -618,7 +612,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "L",
@@ -663,7 +657,7 @@
       "banked": 7,
       "remaining": 2,
       "projTotal": 12.9,
-      "rank": 12,
+      "rank": 11,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -681,7 +675,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 20.9
+          "proj": 21
         },
         {
           "group": "B",
