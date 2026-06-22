@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T01:11:30.666Z",
-  "count": 39,
+  "generatedAt": "2026-06-22T03:49:24.276Z",
+  "count": 40,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1165,6 +1165,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Belgium\",\"Egypt\",1,1,[[\"19'\",\"Emam Ashour\",\"Egypt\",\"away\",false,false],[\"66'\",\"Mohamed Hany\",\"Belgium\",\"home\",true,false]]]"
+    },
+    "400021480": {
+      "id": "400021480",
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Egypt",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "venue": "BC Place Vancouver",
+      "utcDate": "2026-06-22T01:00:00Z",
+      "goals": [
+        {
+          "minute": "15'",
+          "order": 15,
+          "player": "Finn Surman",
+          "team": "New Zealand",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "58'",
+          "order": 58,
+          "player": "Mostafa Zico",
+          "team": "Egypt",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "67'",
+          "order": 67,
+          "player": "Mohamed Salah",
+          "team": "Egypt",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "82'",
+          "order": 82,
+          "player": "Trezeguet",
+          "team": "Egypt",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Egypt see off New Zealand",
+      "summary": "Finn Surman strikes for New Zealand but Mostafa Zico, Mohamed Salah, and Trezeguet score for Egypt, taking the lead. Egypt dominates 3-1. Mohamed Salah and teammates seal the win.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"New Zealand\",\"Egypt\",1,3,[[\"15'\",\"Finn Surman\",\"New Zealand\",\"home\",false,false],[\"58'\",\"Mostafa Zico\",\"Egypt\",\"away\",false,false],[\"67'\",\"Mohamed Salah\",\"Egypt\",\"away\",false,false],[\"82'\",\"Trezeguet\",\"Egypt\",\"away\",false,false]]]"
     },
     "400021482": {
       "id": "400021482",
