@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T05:33:30.645Z",
+  "fetchedAt": "2026-06-23T06:57:25.202Z",
   "matchCount": 72,
   "matches": [
     {
@@ -587,7 +587,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Houston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021506",
@@ -600,7 +600,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Boston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021511",
@@ -613,7 +613,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Toronto Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021501",
@@ -626,7 +626,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Guadalajara Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021448",
@@ -639,7 +639,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Seattle Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021451",
@@ -652,7 +652,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "BC Place Vancouver",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021452",
@@ -665,7 +665,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Atlanta Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021455",
@@ -678,7 +678,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Miami Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021445",
@@ -691,7 +691,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Monterrey Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021444",
@@ -704,7 +704,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Mexico City Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021468",
@@ -717,7 +717,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Philadelphia Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021466",
@@ -730,7 +730,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "New York/New Jersey Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021473",
@@ -743,7 +743,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021471",
@@ -756,7 +756,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Dallas Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021461",
@@ -769,7 +769,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021459",
@@ -782,7 +782,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Los Angeles Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021493",
@@ -795,7 +795,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Toronto Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021489",
@@ -808,7 +808,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Boston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021484",
@@ -821,7 +821,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Guadalajara Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021485",
@@ -834,7 +834,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Houston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021481",
@@ -847,7 +847,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "BC Place Vancouver",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021479",
@@ -860,7 +860,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Seattle Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021508",
@@ -873,7 +873,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "New York/New Jersey Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021509",
@@ -886,7 +886,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Philadelphia Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021500",
@@ -899,7 +899,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Atlanta Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021505",
@@ -912,7 +912,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Miami Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021497",
@@ -925,7 +925,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021495",
@@ -938,7 +938,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Dallas Stadium",
-      "minute": null
+      "minute": "0'"
     }
   ],
   "cards": {
