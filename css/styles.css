@@ -513,8 +513,12 @@ nav, main, header, footer { position: relative; z-index: 1; }
   font-family: "Cinzel", serif; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
   font-size: 0.82rem; color: var(--gold-2);
   margin: 18px 0 4px; padding: 8px 0; border-bottom: 1px solid rgba(212, 168, 84, 0.18);
-  /* Match the topnav's frosting so the sticky bar blends with the fixed
-     .bg-glow / .bg-rays instead of painting a flat dark patch over them. */
+}
+/* In the flow the header is transparent so it blends with the fixed
+   .bg-glow / .bg-rays (no dark patch). Only once it's actually pinned to the
+   top — .is-stuck, toggled in app.js on scroll — does it frost over the cards
+   scrolling beneath it, matching the topnav. */
+.day-head.is-stuck {
   background: rgba(11, 7, 3, 0.82);
   -webkit-backdrop-filter: blur(12px) saturate(1.4); backdrop-filter: blur(12px) saturate(1.4);
 }
