@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T21:06:11.420Z",
+  "generatedAt": "2026-06-23T23:44:01.194Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -8,7 +8,7 @@
       "banked": 10,
       "remaining": 2,
       "projTotal": 15.3,
-      "rank": 9,
+      "rank": 8,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -134,7 +134,7 @@
       "banked": 10,
       "remaining": 2,
       "projTotal": 15.4,
-      "rank": 8,
+      "rank": 7,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -306,7 +306,7 @@
       "banked": 10,
       "remaining": 2,
       "projTotal": 14.8,
-      "rank": 10,
+      "rank": 9,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -367,15 +367,15 @@
     "FF": {
       "group": "L",
       "banked": 7,
-      "remaining": 3,
-      "projTotal": 15.7,
-      "rank": 7,
+      "remaining": 2,
+      "projTotal": 12.7,
+      "rank": 12,
       "leads": false,
       "winningBar": 26,
       "countries": [
         "Panama",
-        "Croatia",
         "England",
+        "Croatia",
         "Ghana"
       ],
       "rivals": [
@@ -399,17 +399,11 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 22,
-          "yourRemainingGoals": 15,
-          "rivalCap": 21,
+          "targetTotal": 17,
+          "yourRemainingGoals": 10,
+          "rivalCap": 16,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Panama",
-              "away": "Croatia",
-              "hg": 2,
-              "ag": 3
-            },
             {
               "home": "Panama",
               "away": "England",
@@ -423,15 +417,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Fiko Fins' Group L squeaks in with 22 goals as rivals Taco Corp and Purdy Pitches stall at 21 or under"
+          "blurb": "Fiko Fins' Group L squeaks in with 17 goals as Taco Corp and Purdy Pitches stall at 16 or under."
         }
       ],
       "abbr": "FF",
       "team": "Fiko Fins",
-      "intro": "Fiko Fins must orchestrate a massive goal surge to snatch the No.1 pick, outscoring fierce rivals like Taco Corp and Purdy Pitches. With 3 matches left, Fins needs a perfect storm of goal scoring and rival stumbles to catapult Group L to the top spot",
+      "intro": "Fiko Fins needs a miracle to grab the No.1 pick, with Group L requiring a massive goal surge to overtake rival groups like Taco Corp and Purdy Pitches! To rise from the ashes, Fiko Fins must will his team to an unprecedented scoring spree, as the current projection of 12.7 total goals is woefully insufficient.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,3,26,[[22,[[\"Panama\",\"Croatia\",2,3],[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",2,2]]]]]"
+      "fingerprint": "[7,2,26,[[17,[[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",2,2]]]]]"
     },
     "RBLD": {
       "group": "J",
@@ -633,7 +627,7 @@
       "banked": 7,
       "remaining": 2,
       "projTotal": 12.9,
-      "rank": 12,
+      "rank": 11,
       "leads": false,
       "winningBar": 26,
       "countries": [
