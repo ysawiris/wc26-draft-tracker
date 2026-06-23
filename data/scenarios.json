@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T18:08:27.350Z",
+  "generatedAt": "2026-06-23T19:10:01.880Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -444,7 +444,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.3,
-      "rank": 6,
+      "rank": 7,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -504,10 +504,10 @@
     },
     "TMM": {
       "group": "K",
-      "banked": 9,
+      "banked": 10,
       "remaining": 3,
-      "projTotal": 16.5,
-      "rank": 7,
+      "projTotal": 17.5,
+      "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -537,9 +537,9 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
+          "targetTotal": 25,
           "yourRemainingGoals": 15,
-          "rivalCap": 23,
+          "rivalCap": 24,
           "needsHelp": true,
           "lines": [
             {
@@ -561,15 +561,15 @@
               "ag": 3
             }
           ],
-          "blurb": "Group K squeezes into the top spot with 24 goals while rivals Taco Corp and Group I stall at 23 or under."
+          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Purdy Pitches as Group K reaches 25 goals"
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix must unleash a scoring frenzy and hope rivals falter to snatch the coveted No.1 pick! With three matches left, every goal counts in this thrilling race!",
+      "intro": "The Metcalf Matrix needs a massive goal surge to snatch the No.1 pick, requiring rivals like Taco Corp to stall, and Group K must outscore the competition to claim the top spot. With 3 matches left, The Metcalf Matrix is banking on a high-scoring finish to leapfrog rivals Purdy Pitches and unclaimed Group I, and leave Taco Corp in the dust",
       "ai": true,
-      "aiVia": "GitHub Models",
-      "fingerprint": "[9,3,26,[[24,[[\"Colombia\",\"DR Congo\",3,2],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[10,3,26,[[25,[[\"Colombia\",\"DR Congo\",3,2],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
