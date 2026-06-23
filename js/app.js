@@ -398,27 +398,10 @@
     });
 
     toggleJumpToday(fixtures, now);
-    updateStickyHeads();
 
     // The Match Center opens via a single delegated [data-mc] click listener
     // (js/matchcenter.js), so a filter-only re-render needs no per-card
     // re-binding here.
-  }
-
-  /* Day headers are sticky but stay transparent in the flow (so they blend with
-     the fixed background glow); they only frost once pinned. A header is "stuck"
-     when its top reaches the sticky offset — toggle the class so CSS can react. */
-  var STICK_AT = 57; // .day-head sticky top (56px) + 1px tolerance
-  var stickyRaf = null;
-  function updateStickyHeads() {
-    stickyRaf = null;
-    var heads = document.querySelectorAll("#schedule-list .day-head");
-    for (var i = 0; i < heads.length; i++) {
-      heads[i].classList.toggle("is-stuck", heads[i].getBoundingClientRect().top <= STICK_AT);
-    }
-  }
-  function scheduleStickyUpdate() {
-    if (stickyRaf == null) stickyRaf = requestAnimationFrame(updateStickyHeads);
   }
 
   /* Show the "Jump to today" shortcut only when there are matches today and the
@@ -654,8 +637,6 @@
       renderSchedule(currentFixtures);
     });
     // The "my group" chip's label and visibility are owned by js/my-team.js.
-    window.addEventListener("scroll", scheduleStickyUpdate, { passive: true });
-    window.addEventListener("resize", scheduleStickyUpdate, { passive: true });
   }
 
   /* ---------------- Hub (feature-module API) ---------------- */
