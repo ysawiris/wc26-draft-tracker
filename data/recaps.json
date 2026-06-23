@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T05:28:13.786Z",
-  "count": 44,
+  "generatedAt": "2026-06-23T19:41:35.706Z",
+  "count": 45,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1812,6 +1812,69 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Portugal\",\"DR Congo\",1,1,[[\"6'\",\"Joao Neves\",\"Portugal\",\"home\",false,false],[\"45'+5'\",\"Yoane Wissa\",\"DR Congo\",\"away\",false,false]]]"
+    },
+    "400021503": {
+      "id": "400021503",
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbekistan",
+      "homeGoals": 5,
+      "awayGoals": 0,
+      "venue": "Houston Stadium",
+      "utcDate": "2026-06-23T17:00:00Z",
+      "goals": [
+        {
+          "minute": "6'",
+          "order": 6,
+          "player": "Cristiano Ronaldo",
+          "team": "Portugal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "17'",
+          "order": 17,
+          "player": "Nuno Mendes",
+          "team": "Portugal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "39'",
+          "order": 39,
+          "player": "Cristiano Ronaldo",
+          "team": "Portugal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "60'",
+          "order": 60,
+          "player": "Abduvohid Nematov",
+          "team": "Portugal",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "minute": "87'",
+          "order": 87,
+          "player": "Rafael Leao",
+          "team": "Portugal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Portugal see off Uzbekistan",
+      "summary": "Cristiano Ronaldo and Nuno Mendes score as Portugal dominates Uzbekistan 5-0, Ronaldo adds another, an own goal by Abduvohid Nematov and Rafael Leao seal the win, Portugal is rolling in Group K.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Portugal\",\"Uzbekistan\",5,0,[[\"6'\",\"Cristiano Ronaldo\",\"Portugal\",\"home\",false,false],[\"17'\",\"Nuno Mendes\",\"Portugal\",\"home\",false,false],[\"39'\",\"Cristiano Ronaldo\",\"Portugal\",\"home\",false,false],[\"60'\",\"Abduvohid Nematov\",\"Portugal\",\"home\",true,false],[\"87'\",\"Rafael Leao\",\"Portugal\",\"home\",false,false]]]"
     },
     "400021504": {
       "id": "400021504",
