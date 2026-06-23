@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T04:00:40.126Z",
+  "fetchedAt": "2026-06-23T05:33:30.645Z",
   "matchCount": 72,
   "matches": [
     {
@@ -568,13 +568,13 @@
       "group": "J",
       "matchday": null,
       "utcDate": "2026-06-23T03:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Jordan",
       "away": "Algeria",
       "homeGoals": 1,
-      "awayGoals": 0,
+      "awayGoals": 2,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": null
+      "minute": "98'"
     },
     {
       "id": "400021503",
@@ -1415,12 +1415,12 @@
         "Algeria": {
           "y": 1,
           "r": 0,
-          "f": 4
+          "f": 5
         },
         "Jordan": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 3
+          "f": 10
         }
       },
       "400021502": {
@@ -1630,7 +1630,7 @@
         "r": 0
       },
       "Jordan": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Portugal": {
@@ -1784,10 +1784,10 @@
         "f": 25
       },
       "Algeria": {
-        "f": 12
+        "f": 13
       },
       "Jordan": {
-        "f": 10
+        "f": 17
       },
       "Portugal": {
         "f": 6
