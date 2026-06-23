@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T22:10:51.699Z",
+  "generatedAt": "2026-06-23T01:19:50.188Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -24,14 +24,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -87,14 +87,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -150,14 +150,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -208,19 +208,19 @@
       ],
       "rivals": [
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
         },
         {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
+        },
+        {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.4
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -322,14 +322,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -368,7 +368,7 @@
       "group": "L",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 18.4,
+      "projTotal": 18.5,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -385,14 +385,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -460,14 +460,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -512,7 +512,7 @@
       "group": "K",
       "banked": 6,
       "remaining": 4,
-      "projTotal": 16.5,
+      "projTotal": 16.6,
       "rank": 7,
       "leads": false,
       "winningBar": 26,
@@ -529,14 +529,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -588,7 +588,7 @@
       "banked": 15,
       "remaining": 2,
       "projTotal": 20.5,
-      "rank": 3,
+      "rank": 2,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -606,12 +606,12 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 21.1
+          "proj": 18.8
         },
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.4
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -667,14 +667,14 @@
           "proj": 26.2
         },
         {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 21.1
-        },
-        {
           "group": "B",
           "owner": "Purdy Pitches",
           "proj": 20.5
+        },
+        {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 18.8
         }
       ],
       "scenarios": [
