@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T19:41:35.706Z",
-  "count": 45,
+  "generatedAt": "2026-06-23T22:32:26.691Z",
+  "count": 46,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1929,6 +1929,23 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Uzbekistan\",\"Colombia\",1,3,[[\"40'\",\"Daniel Munoz\",\"Colombia\",\"away\",false,false],[\"60'\",\"Abbosbek Fayzullaev\",\"Uzbekistan\",\"home\",false,false],[\"65'\",\"Luis Diaz\",\"Colombia\",\"away\",false,false],[\"90'+9'\",\"Jaminton Campaz\",\"Colombia\",\"away\",false,false]]]"
+    },
+    "400021506": {
+      "id": "400021506",
+      "group": "L",
+      "home": "England",
+      "away": "Ghana",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "venue": "Boston Stadium",
+      "utcDate": "2026-06-23T20:00:00Z",
+      "goals": [],
+      "reds": [],
+      "headline": "England and Ghana share the points",
+      "summary": "England and Ghana are battling to a scoreless draw, with neither team able to find the back of the net, the match remains 0-0, no scorers have emerged yet.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"England\",\"Ghana\",0,0,[]]"
     },
     "400021507": {
       "id": "400021507",
