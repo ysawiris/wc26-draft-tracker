@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T02:23:01.308Z",
-  "count": 43,
+  "generatedAt": "2026-06-23T05:28:13.786Z",
+  "count": 44,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1731,6 +1731,51 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Austria\",\"Jordan\",3,1,[[\"20'\",\"Romano Schmid\",\"Austria\",\"home\",false,false],[\"50'\",\"Ali Olwan\",\"Jordan\",\"away\",false,false],[\"76'\",\"Yazan Alarab\",\"Austria\",\"home\",true,false]]]"
+    },
+    "400021499": {
+      "id": "400021499",
+      "group": "J",
+      "home": "Jordan",
+      "away": "Algeria",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "venue": "San Francisco Bay Area Stadium",
+      "utcDate": "2026-06-23T03:00:00Z",
+      "goals": [
+        {
+          "minute": "36'",
+          "order": 36,
+          "player": "Nizar Alrashdan",
+          "team": "Jordan",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "69'",
+          "order": 69,
+          "player": "Nadhir Benbouali",
+          "team": "Algeria",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "82'",
+          "order": 82,
+          "player": "Amine Gouiri",
+          "team": "Algeria",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Algeria see off Jordan",
+      "summary": "Jordan's Nizar Alrashdan scores first but Algeria fights back with Nadhir Benbouali and Amine Gouiri finding the net, Algeria leads 2-1, taking the win in Group J. Algeria overtakes Jordan with the comeback victory. Algeria secures the 2-1 win.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Jordan\",\"Algeria\",1,2,[[\"36'\",\"Nizar Alrashdan\",\"Jordan\",\"home\",false,false],[\"69'\",\"Nadhir Benbouali\",\"Algeria\",\"away\",false,false],[\"82'\",\"Amine Gouiri\",\"Algeria\",\"away\",false,false]]]"
     },
     "400021502": {
       "id": "400021502",
