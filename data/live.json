@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T18:29:43.058Z",
+  "fetchedAt": "2026-06-23T19:17:49.585Z",
   "matchCount": 72,
   "matches": [
     {
@@ -581,13 +581,13 @@
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-23T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Portugal",
       "away": "Uzbekistan",
-      "homeGoals": 4,
+      "homeGoals": 5,
       "awayGoals": 0,
       "venue": "Houston Stadium",
-      "minute": "65'"
+      "minute": "96'"
     },
     {
       "id": "400021506",
@@ -600,7 +600,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Boston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021511",
@@ -1439,12 +1439,12 @@
         "Uzbekistan": {
           "y": 1,
           "r": 0,
-          "f": 8
+          "f": 14
         },
         "Portugal": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 10
+          "f": 14
         }
       },
       "400021504": {
@@ -1646,7 +1646,7 @@
         "r": 0
       },
       "Portugal": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Congo DR": {
@@ -1802,13 +1802,13 @@
         "f": 17
       },
       "Portugal": {
-        "f": 16
+        "f": 20
       },
       "Congo DR": {
         "f": 9
       },
       "Uzbekistan": {
-        "f": 21
+        "f": 27
       },
       "Colombia": {
         "f": 10
