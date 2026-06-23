@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T19:17:49.585Z",
+  "fetchedAt": "2026-06-23T20:05:46.285Z",
   "matchCount": 72,
   "matches": [
     {
@@ -594,13 +594,13 @@
       "group": "L",
       "matchday": null,
       "utcDate": "2026-06-23T20:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "England",
       "away": "Ghana",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Boston Stadium",
-      "minute": "0'"
+      "minute": "6'"
     },
     {
       "id": "400021511",
@@ -1444,7 +1444,7 @@
         "Portugal": {
           "y": 1,
           "r": 0,
-          "f": 14
+          "f": 13
         }
       },
       "400021504": {
@@ -1457,6 +1457,13 @@
           "y": 1,
           "r": 0,
           "f": 13
+        }
+      },
+      "400021506": {
+        "Ghana": {
+          "y": 0,
+          "r": 0,
+          "f": 1
         }
       },
       "400021507": {
@@ -1661,16 +1668,16 @@
         "y": 1,
         "r": 0
       },
+      "Ghana": {
+        "y": 1,
+        "r": 0
+      },
       "Croatia": {
         "y": 0,
         "r": 0
       },
       "England": {
         "y": 0,
-        "r": 0
-      },
-      "Ghana": {
-        "y": 1,
         "r": 0
       },
       "Panama": {
@@ -1802,7 +1809,7 @@
         "f": 17
       },
       "Portugal": {
-        "f": 20
+        "f": 19
       },
       "Congo DR": {
         "f": 9
@@ -1813,14 +1820,14 @@
       "Colombia": {
         "f": 10
       },
+      "Ghana": {
+        "f": 9
+      },
       "Croatia": {
         "f": 12
       },
       "England": {
         "f": 10
-      },
-      "Ghana": {
-        "f": 8
       },
       "Panama": {
         "f": 9
