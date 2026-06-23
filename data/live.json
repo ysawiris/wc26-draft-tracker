@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T21:35:07.513Z",
+  "fetchedAt": "2026-06-23T22:05:56.246Z",
   "matchCount": 72,
   "matches": [
     {
@@ -594,13 +594,13 @@
       "group": "L",
       "matchday": null,
       "utcDate": "2026-06-23T20:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "England",
       "away": "Ghana",
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Boston Stadium",
-      "minute": "71'"
+      "minute": "97'"
     },
     {
       "id": "400021511",
@@ -613,7 +613,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Toronto Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021501",
@@ -1463,12 +1463,12 @@
         "Ghana": {
           "y": 1,
           "r": 0,
-          "f": 18
+          "f": 23
         },
         "England": {
           "y": 1,
           "r": 0,
-          "f": 8
+          "f": 13
         }
       },
       "400021507": {
@@ -1826,10 +1826,10 @@
         "f": 10
       },
       "Ghana": {
-        "f": 26
+        "f": 31
       },
       "England": {
-        "f": 18
+        "f": 23
       },
       "Croatia": {
         "f": 12
