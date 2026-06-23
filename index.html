@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="css/road.css" />
   <link rel="stylesheet" href="css/recaps.css" />
   <link rel="stylesheet" href="css/matchcenter.css" />
+  <link rel="stylesheet" href="css/knockout.css" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/icon.svg" />
@@ -77,11 +78,12 @@
     <section class="tab-panel" id="tab-schedule" hidden>
       <h2 class="section-title"><span>Schedule &amp; Scores</span></h2>
       <div class="filters" id="schedule-filters">
-        <button class="chip is-active" data-filter="all">All groups</button>
-        <button class="chip" data-filter="mine">⭐ My group (F)</button>
+        <button class="chip is-active" data-filter="next">🔴 Now &amp; next</button>
         <button class="chip" data-filter="today">Today</button>
-        <button class="chip" data-filter="upcoming">Upcoming</button>
+        <button class="chip" data-filter="mine">⭐ My group (F)</button>
         <button class="chip" data-filter="results">Results</button>
+        <button class="chip" data-filter="all">All 72</button>
+        <button type="button" class="chip chip-jump" data-jump-today hidden>⤓ Jump to today</button>
       </div>
       <div class="schedule" id="schedule-list"></div>
     </section>
@@ -90,6 +92,8 @@
     <section class="tab-panel" id="tab-groups" hidden>
       <h2 class="section-title"><span>The Draw · Groups A–L</span></h2>
       <div class="groups-grid" id="groups-grid"></div>
+      <!-- Real group standings, secured/bubble/out status, and advance odds (js/knockout.js) -->
+      <div id="knockout-host"></div>
     </section>
 
     <!-- STATS -->
@@ -186,9 +190,27 @@
   <script src="js/share-card.js"></script>
   <script src="js/recaps.js"></script>
   <script src="js/matchcenter.js"></script>
+  <script src="js/knockout.js"></script>
   <script src="js/refresh.js"></script>
   <script src="js/live-direct.js"></script>
   <script src="js/alerts.js"></script>
   <script src="js/sw-register.js"></script>
+
+  <!-- Privacy-friendly visitor analytics via GoatCounter (no cookies, no consent
+       banner). Stays completely OFF — no external requests — until you set CODE to
+       your goatcounter.com subdomain. The loader is cross-origin, so the service
+       worker ignores it (sw.js handles same-origin only) and it never touches the
+       offline cache; it just no-ops when offline. -->
+  <script>
+    (function () {
+      var CODE = "YOURCODE"; // ← replace with your goatcounter.com subdomain to enable
+      if (!CODE || CODE === "YOURCODE") return;
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "//gc.zgo.at/count.js";
+      s.setAttribute("data-goatcounter", "https://" + CODE + ".goatcounter.com/count");
+      document.body.appendChild(s);
+    })();
+  </script>
 </body>
 </html>

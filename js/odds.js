@@ -48,6 +48,8 @@
   /* [att, def] = expected goals scored / conceded per match against an
      average opponent. Keys match the seed country names exactly. */
   var STRENGTH = {
+    /* A */ "Mexico": [1.4, 1.1], "South Africa": [0.9, 1.4],
+            "South Korea": [1.3, 1.1], "Czech Republic": [1.2, 1.1],
     /* B */ "Canada": [1.4, 1.1], "Bosnia & Herzegovina": [1.1, 1.3],
             "Qatar": [0.8, 1.7], "Switzerland": [1.4, 1.0],
     /* C */ "Brazil": [2.0, 0.8], "Morocco": [1.6, 0.8],

@@ -41,6 +41,8 @@ const FEATURE_PREFIX_OWNER = {
   ga: "alerts.css",        // goal alerts
   tp: "my-team.css",       // team picker
   sc: "share-card.css",    // share card
+  ko: "knockout.css",      // Road to the Round of 32 (host section + thirds race)
+  cq: "knockout.css",      // knockout per-team expand (qualification detail)
 };
 
 /* Shared sheets define the global components (.row, .match, .tab, .hero-pill,

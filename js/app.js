@@ -166,11 +166,16 @@
     // the date itself rolls over to tomorrow, never the instant the match ends.
     // Bucketing on the day (not the status) means an unexpected terminal status
     // can't make today's game vanish.
+    // Anything in play floats to the very front of the rail in its own "Live
+    // now" section, regardless of which calendar day it kicked off on.
+    var liveGames = fixtures
+      .filter(function (fx) { return Live.INPLAY[fx.status]; })
+      .sort(function (a, b) { return fxDate(a) - fxDate(b); });
     var todayGames = fixtures
-      .filter(function (fx) { return dayKey(fxDate(fx)) === todayK; })
+      .filter(function (fx) { return dayKey(fxDate(fx)) === todayK && !Live.INPLAY[fx.status]; })
       .sort(function (a, b) { return fxDate(a) - fxDate(b); });
     var tomorrowGames = fixtures
-      .filter(function (fx) { return dayKey(fxDate(fx)) === tomorrowK; })
+      .filter(function (fx) { return dayKey(fxDate(fx)) === tomorrowK && !Live.INPLAY[fx.status]; })
       .sort(function (a, b) { return fxDate(a) - fxDate(b); });
 
     // "Next up": games beyond tomorrow that haven't kicked off, soonest first,
@@ -187,12 +192,12 @@
     if (!later.length) later = laterAll.slice(0, 8);
     later = later.slice(0, RAIL_MAX);
 
-    if (!todayGames.length && !tomorrowGames.length && !later.length) {
+    if (!liveGames.length && !todayGames.length && !tomorrowGames.length && !later.length) {
       wrap.innerHTML = '<div class="live-head">Group stage complete — draft order is final. 🏆</div>';
       return;
     }
 
-    var anyLive = todayGames.some(function (fx) { return Live.INPLAY[fx.status]; });
+    var anyLive = liveGames.length > 0;
 
     // The next kickoff still to come — the countdown target. Suppressed while a
     // game is live (the live card itself carries the moment).
@@ -204,16 +209,13 @@
       if (pending.length) nextKick = pending[0]; // each bucket is already kickoff-sorted, today first
     }
 
-    // Section list. With no today AND no tomorrow games, the rail collapses to a
-    // single "Next up" group (the off-day default the user asked for).
+    // Section list. Live games lead; then Today / Tomorrow / Next up. With
+    // nothing live, today or tomorrow, the rail collapses to a single "Next up".
     var sections = [];
-    if (todayGames.length || tomorrowGames.length) {
-      if (todayGames.length) sections.push({ key: "today", label: "Today", games: todayGames });
-      if (tomorrowGames.length) sections.push({ key: "tomorrow", label: "Tomorrow", games: tomorrowGames });
-      if (later.length) sections.push({ key: "later", label: "Next up", games: later });
-    } else {
-      sections.push({ key: "later", label: "Next up", games: later });
-    }
+    if (liveGames.length) sections.push({ key: "live", label: "Live now", games: liveGames, live: true });
+    if (todayGames.length) sections.push({ key: "today", label: "Today", games: todayGames });
+    if (tomorrowGames.length) sections.push({ key: "tomorrow", label: "Tomorrow", games: tomorrowGames });
+    if (later.length) sections.push({ key: "later", label: "Next up", games: later });
 
     var hasMore = laterAll.length > later.length; // games left beyond the rail window/cap
     var lastShown = null;
@@ -226,16 +228,13 @@
     // every card to match the rotated text's height.
     var rail = nextKick ? nextKickCard(nextKick, owners, now) : "";
     sections.forEach(function (sec) {
-      var liveHere = anyLive && sec.key === "today";
-
-      // Keep each section in its natural kickoff order (sec.games is already
-      // sorted ascending) — no special-casing the live game to the front.
+      // Each section is already in kickoff order (sec.games sorted ascending).
       var games = sec.games;
       if (games.length) lastShown = games[games.length - 1];
 
-      var meta = liveHere ? ' · <span class="rail-sec-cd">live</span>' : "";
-      rail += '<div class="rail-sec"><span class="rail-sec-inner">' +
-        (liveHere ? '<span class="live-dot sm"></span> ' : "") +
+      var meta = sec.live ? ' · <span class="rail-sec-cd">now</span>' : "";
+      rail += '<div class="rail-sec' + (sec.live ? " rail-sec-live" : "") + '"><span class="rail-sec-inner">' +
+        (sec.live ? '<span class="live-dot sm"></span> ' : "") +
         sec.label + meta + "</span></div>";
 
       rail += games.map(function (fx) {
@@ -324,12 +323,13 @@
 
   /* ---------------- schedule ---------------- */
 
-  var scheduleFilter = "all";
+  var scheduleFilter = "next";
 
   function passesFilter(fx, now) {
     if (scheduleFilter === "mine") { var t = TEAMS.find(function (x) { return x.isMine; }); return t && fx.group === t.group; }
     if (scheduleFilter === "today") return dayKey(fxDate(fx)) === dayKey(now);
-    if (scheduleFilter === "upcoming") return !Live.FINISHED[fx.status] && !Live.INPLAY[fx.status];
+    // "next" = everything still to come, live games included (the default view).
+    if (scheduleFilter === "next") return !Live.FINISHED[fx.status];
     if (scheduleFilter === "results") return Live.FINISHED[fx.status];
     return true;
   }
@@ -343,17 +343,47 @@
     var shown = fixtures.filter(function (fx) { return passesFilter(fx, now); })
       .sort(function (a, b) { return fxDate(a) - fxDate(b) || a.group.localeCompare(b.group); });
 
-    if (!shown.length) {
+    // The "Live now" band is sourced from ALL fixtures so an in-play game is
+    // unmissable regardless of the active day/upcoming filter (e.g. a match that
+    // kicked off before midnight while the Today filter is on). Scoped to the
+    // viewer's group under "My group"; omitted in the finished-only Results view.
+    var liveGames = scheduleFilter === "results" ? [] :
+      fixtures.filter(function (fx) {
+        if (!Live.INPLAY[fx.status]) return false;
+        if (scheduleFilter === "mine") {
+          var t = TEAMS.find(function (x) { return x.isMine; });
+          return t && fx.group === t.group;
+        }
+        return true;
+      }).sort(function (a, b) { return fxDate(a) - fxDate(b); });
+
+    if (!shown.length && !liveGames.length) {
       host.appendChild(el("p", "empty-note", "No matches for this filter yet."));
+      toggleJumpToday(fixtures, now);
       return;
     }
+
+    if (liveGames.length) {
+      host.appendChild(el("div", "sched-live-head",
+        '<span class="live-dot sm"></span> Live now ' +
+        '<span class="sched-live-count">' + liveGames.length +
+        (liveGames.length === 1 ? " match" : " matches") + "</span>"));
+      var liveGrid = el("div", "sched-day sched-live");
+      liveGames.forEach(function (fx) { liveGrid.appendChild(matchCard(fx, owners, now)); });
+      host.appendChild(liveGrid);
+    }
+
+    // The day grid excludes whatever is already in the Live now band (dedup by id).
+    var liveIds = {};
+    liveGames.forEach(function (fx) { if (fx.id != null) liveIds[fx.id] = true; });
+    var dayList = shown.filter(function (fx) { return !liveIds[fx.id]; });
 
     // Group by day: a full-width day header, then that day's matches in a grid
     // (2-up on desktop, 1-up on mobile). Keeping each day in its own grid means
     // an odd match count never leaves a hole that the next day bleeds into.
     var lastDay = null;
     var dayGrid = null;
-    shown.forEach(function (fx) {
+    dayList.forEach(function (fx) {
       var d = fxDate(fx);
       var key = dayKey(d);
       if (key !== lastDay) {
@@ -367,9 +397,40 @@
       dayGrid.appendChild(matchCard(fx, owners, now));
     });
 
+    toggleJumpToday(fixtures, now);
+
     // The Match Center opens via a single delegated [data-mc] click listener
     // (js/matchcenter.js), so a filter-only re-render needs no per-card
     // re-binding here.
+  }
+
+  /* Show the "Jump to today" shortcut only when there are matches today and the
+     Today filter isn't already the active view. */
+  function toggleJumpToday(fixtures, now) {
+    var btn = document.querySelector("#schedule-filters [data-jump-today]");
+    if (!btn) return;
+    var hasToday = fixtures.some(function (fx) { return dayKey(fxDate(fx)) === dayKey(now); });
+    btn.hidden = !hasToday || scheduleFilter === "today";
+  }
+
+  /* Scroll the Schedule to today's section, switching to the full list first if
+     today's matches aren't in the current filter. */
+  function jumpToToday() {
+    var head = document.querySelector("#schedule-list .day-head.today");
+    if (!head) {
+      scheduleFilter = "all";
+      document.querySelectorAll("#schedule-filters .chip[data-filter]").forEach(function (c) {
+        c.classList.toggle("is-active", c.dataset.filter === "all");
+      });
+      renderSchedule(currentFixtures);
+      head = document.querySelector("#schedule-list .day-head.today");
+    }
+    // If today's only matches are in play they sit in the "Live now" band (no
+    // today day-header), so fall back to that band rather than no-op.
+    var target = head || document.querySelector("#schedule-list .sched-live-head");
+    if (!target) return;
+    var y = target.getBoundingClientRect().top + window.pageYOffset - 64;
+    window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
   }
 
   /* "🟨2 🟥1 ⚠9" chip for one side of a fixture; empty when nothing to show. */
@@ -565,10 +626,12 @@
 
   function wireFilters() {
     document.getElementById("schedule-filters").addEventListener("click", function (e) {
+      var jump = e.target.closest("[data-jump-today]");
+      if (jump) { e.preventDefault(); jumpToToday(); return; }
       var chip = e.target.closest(".chip");
-      if (!chip) return;
+      if (!chip || !chip.dataset.filter) return;
       scheduleFilter = chip.dataset.filter;
-      document.querySelectorAll("#schedule-filters .chip").forEach(function (c) {
+      document.querySelectorAll("#schedule-filters .chip[data-filter]").forEach(function (c) {
         c.classList.toggle("is-active", c === chip);
       });
       renderSchedule(currentFixtures);
