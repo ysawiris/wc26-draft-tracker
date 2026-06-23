@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T03:40:25.551Z",
+  "generatedAt": "2026-06-23T05:50:19.736Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -26,7 +26,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -89,7 +89,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -152,7 +152,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -210,7 +210,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -220,7 +220,7 @@
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.5
+          "proj": 18.6
         }
       ],
       "scenarios": [
@@ -324,7 +324,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -368,7 +368,7 @@
       "group": "L",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 18.5,
+      "projTotal": 18.6,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -387,7 +387,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -441,16 +441,16 @@
     },
     "RBLD": {
       "group": "J",
-      "banked": 9,
-      "remaining": 3,
-      "projTotal": 17.1,
+      "banked": 12,
+      "remaining": 2,
+      "projTotal": 17.4,
       "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
-        "Jordan",
         "Algeria",
         "Austria",
+        "Jordan",
         "Argentina"
       ],
       "rivals": [
@@ -462,7 +462,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -474,17 +474,11 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 24,
-          "yourRemainingGoals": 15,
-          "rivalCap": 23,
+          "targetTotal": 22,
+          "yourRemainingGoals": 10,
+          "rivalCap": 21,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Jordan",
-              "away": "Algeria",
-              "hg": 2,
-              "ag": 3
-            },
             {
               "home": "Algeria",
               "away": "Austria",
@@ -498,21 +492,21 @@
               "ag": 4
             }
           ],
-          "blurb": "Another Rebuilding Year is squeaking in with 24 goals as Taco Corp and Purdy Pitches stall at 23 or under."
+          "blurb": "Group J is squeaking in with 22 goals as Taco Corp and Purdy Pitches' managers stall at 21 or under"
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year must orchestrate a monumental goal surge to seize the No.1 pick, leaving rivals Taco Corp and Purdy Pitches in the dust. With 3 matches left, the group's fate hangs precariously in the balance, as they chase down the top spot with unrelenting fervor.",
+      "intro": "Another Rebuilding Year needs a massive goal surge to snatch the No.1 pick, with rivals Taco Corp and Purdy Pitches looming large. To catapult to the top, Group J must outscore and outmaneuver its toughest competitors, including unclaimed Group I and Purdy Pitches' savvy manager",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[9,3,26,[[24,[[\"Jordan\",\"Algeria\",2,3],[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
+      "fingerprint": "[12,2,26,[[22,[[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
     },
     "TMM": {
       "group": "K",
       "banked": 6,
       "remaining": 4,
-      "projTotal": 16.6,
+      "projTotal": 16.7,
       "rank": 7,
       "leads": false,
       "winningBar": 26,
@@ -531,7 +525,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
@@ -606,12 +600,12 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.5
+          "proj": 18.6
         }
       ],
       "scenarios": [
@@ -669,7 +663,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 22.8
+          "proj": 23.1
         },
         {
           "group": "B",
