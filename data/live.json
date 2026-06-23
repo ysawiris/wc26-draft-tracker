@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-22T22:47:19.609Z",
+  "fetchedAt": "2026-06-23T00:45:46.041Z",
   "matchCount": 72,
   "matches": [
     {
@@ -542,26 +542,26 @@
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-22T21:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "France",
       "away": "Iraq",
-      "homeGoals": 1,
+      "homeGoals": 3,
       "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": null
+      "minute": "90'"
     },
     {
       "id": "400021491",
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-23T00:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Norway",
       "away": "Senegal",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 1,
+      "awayGoals": 0,
       "venue": "New York/New Jersey Stadium",
-      "minute": "0'"
+      "minute": "45'"
     },
     {
       "id": "400021499",
@@ -1351,6 +1351,30 @@
           "f": 5
         }
       },
+      "400021491": {
+        "Senegal": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Norway": {
+          "y": 0,
+          "r": 0,
+          "f": 6
+        }
+      },
+      "400021492": {
+        "France": {
+          "y": 0,
+          "r": 0,
+          "f": 8
+        },
+        "Iraq": {
+          "y": 1,
+          "r": 0,
+          "f": 3
+        }
+      },
       "400021494": {
         "Austria": {
           "y": 2,
@@ -1570,7 +1594,7 @@
         "r": 0
       },
       "Iraq": {
-        "y": 1,
+        "y": 2,
         "r": 0
       },
       "Senegal": {
@@ -1730,16 +1754,16 @@
         "f": 3
       },
       "Norway": {
-        "f": 13
+        "f": 19
       },
       "Iraq": {
-        "f": 11
+        "f": 14
       },
       "Senegal": {
-        "f": 9
+        "f": 10
       },
       "France": {
-        "f": 5
+        "f": 13
       },
       "Austria": {
         "f": 24
