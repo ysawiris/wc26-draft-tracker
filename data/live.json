@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T00:45:46.041Z",
+  "fetchedAt": "2026-06-23T01:31:31.356Z",
   "matchCount": 72,
   "matches": [
     {
@@ -542,13 +542,13 @@
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-22T21:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "France",
       "away": "Iraq",
       "homeGoals": 3,
       "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": "90'"
+      "minute": "93'"
     },
     {
       "id": "400021491",
@@ -558,10 +558,10 @@
       "status": "IN_PLAY",
       "home": "Norway",
       "away": "Senegal",
-      "homeGoals": 1,
-      "awayGoals": 0,
+      "homeGoals": 3,
+      "awayGoals": 1,
       "venue": "New York/New Jersey Stadium",
-      "minute": "45'"
+      "minute": "72'"
     },
     {
       "id": "400021499",
@@ -1355,12 +1355,12 @@
         "Senegal": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 2
         },
         "Norway": {
           "y": 0,
           "r": 0,
-          "f": 6
+          "f": 7
         }
       },
       "400021492": {
@@ -1754,13 +1754,13 @@
         "f": 3
       },
       "Norway": {
-        "f": 19
+        "f": 20
       },
       "Iraq": {
         "f": 14
       },
       "Senegal": {
-        "f": 10
+        "f": 11
       },
       "France": {
         "f": 13
