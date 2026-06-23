@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-22T19:44:52.369Z",
-  "count": 41,
+  "generatedAt": "2026-06-23T01:02:45.345Z",
+  "count": 42,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1497,6 +1497,51 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"France\",\"Senegal\",3,1,[[\"66'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"82'\",\"Bradley Barcola\",\"France\",\"home\",false,false],[\"90'+5'\",\"Ibrahim Mbaye\",\"Senegal\",\"away\",false,false],[\"90'+6'\",\"Kylian Mbappe\",\"France\",\"home\",false,false]]]"
+    },
+    "400021492": {
+      "id": "400021492",
+      "group": "I",
+      "home": "France",
+      "away": "Iraq",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "venue": "Philadelphia Stadium",
+      "utcDate": "2026-06-22T21:00:00Z",
+      "goals": [
+        {
+          "minute": "14'",
+          "order": 14,
+          "player": "Kylian Mbappe",
+          "team": "France",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "54'",
+          "order": 54,
+          "player": "Kylian Mbappe",
+          "team": "France",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "66'",
+          "order": 66,
+          "player": "Ousmane Dembele",
+          "team": "France",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "France see off Iraq",
+      "summary": "France dominates Iraq 3-0 with Kylian Mbappe scoring in the 14th and 54th minutes, Ousmane Dembele adds the third in the 66th minute, securing a strong lead for France in Group I. Mbappe's double sparks the victory. France is cruising.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"France\",\"Iraq\",3,0,[[\"14'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"54'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"66'\",\"Ousmane Dembele\",\"France\",\"home\",false,false]]]"
     },
     "400021494": {
       "id": "400021494",
