@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T16:08:23.614Z",
+  "fetchedAt": "2026-06-23T17:02:05.997Z",
   "matchCount": 72,
   "matches": [
     {
@@ -581,13 +581,13 @@
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-23T17:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Portugal",
       "away": "Uzbekistan",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Houston Stadium",
-      "minute": "0'"
+      "minute": "2'"
     },
     {
       "id": "400021506",
@@ -1435,6 +1435,7 @@
           "f": 9
         }
       },
+      "400021503": {},
       "400021504": {
         "Colombia": {
           "y": 1,
