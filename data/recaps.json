@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T01:02:45.345Z",
-  "count": 42,
+  "generatedAt": "2026-06-23T02:23:01.308Z",
+  "count": 43,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1497,6 +1497,69 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"France\",\"Senegal\",3,1,[[\"66'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"82'\",\"Bradley Barcola\",\"France\",\"home\",false,false],[\"90'+5'\",\"Ibrahim Mbaye\",\"Senegal\",\"away\",false,false],[\"90'+6'\",\"Kylian Mbappe\",\"France\",\"home\",false,false]]]"
+    },
+    "400021491": {
+      "id": "400021491",
+      "group": "I",
+      "home": "Norway",
+      "away": "Senegal",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "venue": "New York/New Jersey Stadium",
+      "utcDate": "2026-06-23T00:00:00Z",
+      "goals": [
+        {
+          "minute": "43'",
+          "order": 43,
+          "player": "Marcus Holmgren Pedersen",
+          "team": "Norway",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "48'",
+          "order": 48,
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "53'",
+          "order": 53,
+          "player": "Ismaila Sarr",
+          "team": "Senegal",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "58'",
+          "order": 58,
+          "player": "Erling Haaland",
+          "team": "Norway",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+3'",
+          "order": 90.03,
+          "player": "Ismaila Sarr",
+          "team": "Senegal",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Norway see off Senegal",
+      "summary": "Norway leads Senegal 3-2 with goals from Marcus Holmgren Pedersen and Erling Haaland scoring twice, while Ismaila Sarr scores twice for Senegal, Haaland and Sarr are the key scorers in this intense match. Norway is taking the win.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Norway\",\"Senegal\",3,2,[[\"43'\",\"Marcus Holmgren Pedersen\",\"Norway\",\"home\",false,false],[\"48'\",\"Erling Haaland\",\"Norway\",\"home\",false,false],[\"53'\",\"Ismaila Sarr\",\"Senegal\",\"away\",false,false],[\"58'\",\"Erling Haaland\",\"Norway\",\"home\",false,false],[\"90'+3'\",\"Ismaila Sarr\",\"Senegal\",\"away\",false,false]]]"
     },
     "400021492": {
       "id": "400021492",
