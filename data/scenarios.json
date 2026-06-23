@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T09:40:21.784Z",
+  "generatedAt": "2026-06-23T13:23:53.115Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.3,
+      "projTotal": 15.2,
       "rank": 9,
       "leads": false,
       "winningBar": 26,
@@ -26,7 +26,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -89,7 +89,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -152,7 +152,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -210,7 +210,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -220,7 +220,7 @@
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.8
+          "proj": 18.9
         }
       ],
       "scenarios": [
@@ -324,7 +324,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -368,7 +368,7 @@
       "group": "L",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 18.8,
+      "projTotal": 18.9,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -387,7 +387,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -443,7 +443,7 @@
       "group": "J",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.4,
+      "projTotal": 17.3,
       "rank": 6,
       "leads": false,
       "winningBar": 26,
@@ -462,7 +462,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -506,7 +506,7 @@
       "group": "K",
       "banked": 6,
       "remaining": 4,
-      "projTotal": 16.7,
+      "projTotal": 16.8,
       "rank": 7,
       "leads": false,
       "winningBar": 26,
@@ -525,7 +525,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
@@ -600,12 +600,12 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.8
+          "proj": 18.9
         }
       ],
       "scenarios": [
@@ -663,7 +663,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.1
+          "proj": 23.2
         },
         {
           "group": "B",
