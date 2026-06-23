@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T05:50:19.736Z",
+  "generatedAt": "2026-06-23T09:40:21.784Z",
   "count": 10,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.2,
+      "projTotal": 15.3,
       "rank": 9,
       "leads": false,
       "winningBar": 26,
@@ -31,7 +31,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -94,7 +94,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -157,7 +157,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -215,12 +215,12 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         },
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.6
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -329,7 +329,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -368,7 +368,7 @@
       "group": "L",
       "banked": 7,
       "remaining": 4,
-      "projTotal": 18.6,
+      "projTotal": 18.8,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -392,7 +392,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -467,7 +467,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -530,7 +530,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -581,7 +581,7 @@
       "group": "B",
       "banked": 15,
       "remaining": 2,
-      "projTotal": 20.5,
+      "projTotal": 20.6,
       "rank": 3,
       "leads": false,
       "winningBar": 26,
@@ -605,7 +605,7 @@
         {
           "group": "L",
           "owner": "Fiko Fins",
-          "proj": 18.6
+          "proj": 18.8
         }
       ],
       "scenarios": [
@@ -668,7 +668,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.5
+          "proj": 20.6
         }
       ],
       "scenarios": [
