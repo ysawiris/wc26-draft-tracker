@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T17:09:36.731Z",
-  "count": 10,
+  "generatedAt": "2026-06-24T20:04:32.946Z",
+  "count": 9,
   "byTeam": {
     "CMC": {
       "group": "G",
@@ -29,9 +29,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -71,7 +71,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 18.2,
-      "rank": 4,
+      "rank": 3,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -92,9 +92,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "K",
+          "owner": "The Metcalf Matrix",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -155,9 +155,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -213,14 +213,14 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
-        },
-        {
           "group": "E",
           "owner": "Nicolodeons!",
           "proj": 18.2
+        },
+        {
+          "group": "K",
+          "owner": "The Metcalf Matrix",
+          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -327,9 +327,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -390,9 +390,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -432,7 +432,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.1,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -453,9 +453,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -495,7 +495,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.2,
-      "rank": 5,
+      "rank": 4,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -516,9 +516,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -553,69 +553,6 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[12,2,26,[[22,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
-    "AM": {
-      "group": "B",
-      "banked": 15,
-      "remaining": 2,
-      "projTotal": 20.6,
-      "rank": 3,
-      "leads": false,
-      "winningBar": 26,
-      "countries": [
-        "Bosnia & Herzegovina",
-        "Qatar",
-        "Switzerland",
-        "Canada"
-      ],
-      "rivals": [
-        {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 26.3
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 23.2
-        },
-        {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
-        }
-      ],
-      "scenarios": [
-        {
-          "key": "grind",
-          "label": "Squeak in",
-          "targetTotal": 25,
-          "yourRemainingGoals": 10,
-          "rivalCap": 24,
-          "needsHelp": true,
-          "lines": [
-            {
-              "home": "Bosnia & Herzegovina",
-              "away": "Qatar",
-              "hg": 4,
-              "ag": 2
-            },
-            {
-              "home": "Switzerland",
-              "away": "Canada",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Group B scores 25 goals, surpassing Nicolodeons and relying on Taco Corp and Group I to stall at 24 or under"
-        }
-      ],
-      "abbr": "AM",
-      "team": "Purdy Pitches",
-      "intro": "Purdy Pitches must make a push for the No.1 pick, needing a significant goal surge from World Cup Group B to overtake rival groups like Taco Corp and Nicolodeons! The next two matches are crucial for Purdy Pitches to catapult to the top spot, requiring a monumental effort to surpass the projected totals of their competitors",
-      "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[15,2,26,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",4,2],[\"Switzerland\",\"Canada\",2,2]]]]]"
-    },
     "R": {
       "group": "C",
       "banked": 7,
@@ -642,9 +579,9 @@
           "proj": 23.2
         },
         {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 20.6
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.2
         }
       ],
       "scenarios": [
