@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T04:54:31.008Z",
-  "count": 48,
+  "generatedAt": "2026-06-24T21:05:52.699Z",
+  "count": 50,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -225,6 +225,60 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Qatar\",\"Switzerland\",1,1,[[\"90'+4'\",\"Miro Muheim\",\"Qatar\",\"home\",true,false]]]"
     },
+    "400021448": {
+      "id": "400021448",
+      "group": "B",
+      "home": "Bosnia & Herzegovina",
+      "away": "Qatar",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "venue": "Seattle Stadium",
+      "utcDate": "2026-06-24T19:00:00Z",
+      "goals": [
+        {
+          "minute": "29'",
+          "order": 29,
+          "player": "Kerim Alajbegovic",
+          "team": "Bosnia & Herzegovina",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "34'",
+          "order": 34,
+          "player": "Mahmoud Abunada",
+          "team": "Bosnia & Herzegovina",
+          "side": "home",
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "minute": "42'",
+          "order": 42,
+          "player": "Hassan Alhaydos",
+          "team": "Qatar",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "80'",
+          "order": 80,
+          "player": "Ermin Mahmic",
+          "team": "Bosnia & Herzegovina",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Bosnia & Herzegovina see off Qatar",
+      "summary": "Bosnia & Herzegovina leads Qatar 3-1 with Kerim Alajbegovic and Ermin Mahmic scoring for Bosnia and Hassan Alhaydos for Qatar, Mahmoud Abunada with an own goal. Bosnia is dominating Group B. Alajbegovic and Mahmic seal the win.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Bosnia & Herzegovina\",\"Qatar\",3,1,[[\"29'\",\"Kerim Alajbegovic\",\"Bosnia & Herzegovina\",\"home\",false,false],[\"34'\",\"Mahmoud Abunada\",\"Bosnia & Herzegovina\",\"home\",true,false],[\"42'\",\"Hassan Alhaydos\",\"Qatar\",\"away\",false,false],[\"80'\",\"Ermin Mahmic\",\"Bosnia & Herzegovina\",\"home\",false,false]]]"
+    },
     "400021449": {
       "id": "400021449",
       "group": "B",
@@ -335,6 +389,51 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Canada\",\"Qatar\",6,0,[[\"16'\",\"Cyle Larin\",\"Canada\",\"home\",false,false],[\"29'\",\"Jonathan David\",\"Canada\",\"home\",false,false],[\"45'+3'\",\"Jonathan David\",\"Canada\",\"home\",false,false],[\"64'\",\"Nathan Saliba\",\"Canada\",\"home\",false,false],[\"75'\",\"Mohamed Manai\",\"Canada\",\"home\",true,false],[\"90'+2'\",\"Jonathan David\",\"Canada\",\"home\",false,false]]]"
+    },
+    "400021451": {
+      "id": "400021451",
+      "group": "B",
+      "home": "Switzerland",
+      "away": "Canada",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "venue": "BC Place Vancouver",
+      "utcDate": "2026-06-24T19:00:00Z",
+      "goals": [
+        {
+          "minute": "46'",
+          "order": 46,
+          "player": "Ruben Vargas",
+          "team": "Switzerland",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "57'",
+          "order": 57,
+          "player": "Johan Manzambi",
+          "team": "Switzerland",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "76'",
+          "order": 76,
+          "player": "Promise David",
+          "team": "Canada",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Switzerland see off Canada",
+      "summary": "Switzerland leads Canada 2-1 with Ruben Vargas and Johan Manzambi scoring for the Swiss, Promise David nets a late goal for Canada, the Swiss are taking the win in Group B action at BC Place Vancouver.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Switzerland\",\"Canada\",2,1,[[\"46'\",\"Ruben Vargas\",\"Switzerland\",\"home\",false,false],[\"57'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"76'\",\"Promise David\",\"Canada\",\"away\",false,false]]]"
     },
     "400021453": {
       "id": "400021453",
