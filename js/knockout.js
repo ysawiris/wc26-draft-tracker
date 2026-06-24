@@ -268,6 +268,13 @@
           row.name + " — " + pctText(row.adv, row.status) + " to reach the Round of 32; activate for detail");
         if (expanded[key]) bar.classList.add("open");
         bar.dataset.key = key;
+        // Heading into the knockouts the bar shows group POINTS (the standings
+        // driver), not goals — the group's goal total stays in the card footer.
+        var goalsEl = bar.querySelector(".cgoals");
+        if (goalsEl) {
+          goalsEl.textContent = row.Pts + (row.Pts === 1 ? " pt" : " pts");
+          goalsEl.classList.add("cpts");
+        }
         bar.insertAdjacentHTML("beforeend",
           '<span class="cq-pct ' + tier(row.adv) + '">' + pctText(row.adv, row.status) + "</span>" +
           '<span class="cchev" aria-hidden="true">▾</span>');
