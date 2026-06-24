@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T02:12:26.194Z",
+  "generatedAt": "2026-06-24T05:49:21.261Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -31,7 +31,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -70,7 +70,7 @@
       "group": "E",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 18.1,
+      "projTotal": 18.2,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -94,7 +94,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -157,7 +157,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -215,12 +215,12 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         },
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 18.1
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -329,7 +329,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -392,7 +392,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -432,7 +432,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.2,
-      "rank": 5,
+      "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -455,7 +455,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
@@ -492,10 +492,10 @@
     },
     "TMM": {
       "group": "K",
-      "banked": 11,
+      "banked": 12,
       "remaining": 2,
-      "projTotal": 16.1,
-      "rank": 6,
+      "projTotal": 17.2,
+      "rank": 5,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -518,16 +518,16 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 21,
+          "targetTotal": 22,
           "yourRemainingGoals": 10,
-          "rivalCap": 20,
+          "rivalCap": 21,
           "needsHelp": true,
           "lines": [
             {
@@ -543,21 +543,21 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Purdy Pitches as Group K reaches 21 goals"
+          "blurb": "Group K is squeaking in with 22 goals, hoping Taco Corp and Purdy Pitches stall at 21 or under"
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix must spark a goal-scoring frenzy to snatch the No.1 pick, leapfrogging Taco Corp and Purdy Pitches in the process. With 2 matches left, a perfect storm of victories and high-scoring affairs is necessary to catapult Group K to the top spot",
+      "intro": "The Metcalf Matrix is pushing for the No.1 pick, but needs a surge in goals from World Cup Group K to overtake rivals like Taco Corp and Purdy Pitches! With 2 matches left, The Metcalf Matrix must rally to surpass the projected totals of these powerhouse groups and claim the top spot",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[11,2,26,[[21,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "fingerprint": "[12,2,26,[[22,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
       "banked": 15,
       "remaining": 2,
-      "projTotal": 20.7,
+      "projTotal": 20.6,
       "rank": 3,
       "leads": false,
       "winningBar": 26,
@@ -581,7 +581,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 18.1
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -596,31 +596,31 @@
             {
               "home": "Bosnia & Herzegovina",
               "away": "Qatar",
-              "hg": 3,
+              "hg": 4,
               "ag": 2
             },
             {
               "home": "Switzerland",
               "away": "Canada",
-              "hg": 3,
+              "hg": 2,
               "ag": 2
             }
           ],
-          "blurb": "Purdy Pitches needs Group B to squeak in with 25 goals as rivals stall at 24 or under, led by managers of Taco Corp and The Metcalf Matrix."
+          "blurb": "Group B scores 25 goals, surpassing Nicolodeons and relying on Taco Corp and Group I to stall at 24 or under"
         }
       ],
       "abbr": "AM",
       "team": "Purdy Pitches",
-      "intro": "Purdy Pitches must push Group B to unprecedented goal-scoring heights to snag the No.1 pick, outpacing rival managers like Taco Corp, The Metcalf Matrix, and the unclaimed Group I. With two matches left, the group is projected to fall short, currently ranking third with 15 banked goals and a 20.7 total goal projection, so a surge is necessary to overtake the competition.",
+      "intro": "Purdy Pitches must make a push for the No.1 pick, needing a significant goal surge from World Cup Group B to overtake rival groups like Taco Corp and Nicolodeons! The next two matches are crucial for Purdy Pitches to catapult to the top spot, requiring a monumental effort to surpass the projected totals of their competitors",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[15,2,26,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",3,2],[\"Switzerland\",\"Canada\",3,2]]]]]"
+      "fingerprint": "[15,2,26,[[25,[[\"Bosnia & Herzegovina\",\"Qatar\",4,2],[\"Switzerland\",\"Canada\",2,2]]]]]"
     },
     "R": {
       "group": "C",
       "banked": 7,
       "remaining": 2,
-      "projTotal": 12.9,
+      "projTotal": 13,
       "rank": 12,
       "leads": false,
       "winningBar": 26,
@@ -644,7 +644,7 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 20.7
+          "proj": 20.6
         }
       ],
       "scenarios": [
