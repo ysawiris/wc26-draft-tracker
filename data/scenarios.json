@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T21:00:09.786Z",
-  "count": 9,
+  "generatedAt": "2026-06-24T22:50:09.055Z",
+  "count": 8,
   "byTeam": {
     "CMC": {
       "group": "G",
@@ -552,69 +552,6 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[12,2,26,[[22,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
-    },
-    "R": {
-      "group": "C",
-      "banked": 7,
-      "remaining": 2,
-      "projTotal": 13,
-      "rank": 12,
-      "leads": false,
-      "winningBar": 26,
-      "countries": [
-        "Morocco",
-        "Haiti",
-        "Scotland",
-        "Brazil"
-      ],
-      "rivals": [
-        {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 26.4
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 23.2
-        },
-        {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 22
-        }
-      ],
-      "scenarios": [
-        {
-          "key": "grind",
-          "label": "Squeak in",
-          "targetTotal": 17,
-          "yourRemainingGoals": 10,
-          "rivalCap": 16,
-          "needsHelp": true,
-          "lines": [
-            {
-              "home": "Morocco",
-              "away": "Haiti",
-              "hg": 4,
-              "ag": 1
-            },
-            {
-              "home": "Scotland",
-              "away": "Brazil",
-              "hg": 2,
-              "ag": 3
-            }
-          ],
-          "blurb": "Ms. Jackson ouuuuuuuuuuuu needs Group C to squeak in with 17 goals as Taco Corp and Purdy Pitches stall"
-        }
-      ],
-      "abbr": "R",
-      "team": "Ms. Jackson ouuuuuuuuuuuu",
-      "intro": "Ms. Jackson ouuuuuuuuuuuu must orchestrate a massive goal surge to snatch the No.1 pick from rival groups like Taco Corp, Group I, and Purdy Pitches, and it all starts with a strong finish in World Cup Group C. With the current projection of 12.9 total goals, Ms. Jackson ouuuuuuuuuuuu needs a dramatic turnaround to overtake the competition and secure the top spot.",
-      "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[7,2,26,[[17,[[\"Morocco\",\"Haiti\",4,1],[\"Scotland\",\"Brazil\",2,3]]]]]"
     }
   }
 }
