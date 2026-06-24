@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T02:03:45.393Z",
+  "fetchedAt": "2026-06-24T03:22:09.048Z",
   "matchCount": 72,
   "matches": [
     {
@@ -626,7 +626,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Guadalajara Stadium",
-      "minute": "3'"
+      "minute": "60'"
     },
     {
       "id": "400021448",
@@ -1423,7 +1423,18 @@
           "f": 10
         }
       },
-      "400021501": {},
+      "400021501": {
+        "Congo DR": {
+          "y": 0,
+          "r": 0,
+          "f": 7
+        },
+        "Colombia": {
+          "y": 1,
+          "r": 0,
+          "f": 6
+        }
+      },
       "400021502": {
         "Portugal": {
           "y": 3,
@@ -1670,20 +1681,20 @@
         "y": 1,
         "r": 0
       },
-      "Portugal": {
-        "y": 4,
-        "r": 0
-      },
       "Congo DR": {
         "y": 1,
         "r": 0
       },
-      "Uzbekistan": {
+      "Colombia": {
         "y": 2,
         "r": 0
       },
-      "Colombia": {
-        "y": 1,
+      "Portugal": {
+        "y": 4,
+        "r": 0
+      },
+      "Uzbekistan": {
+        "y": 2,
         "r": 0
       },
       "Ghana": {
@@ -1826,17 +1837,17 @@
       "Jordan": {
         "f": 17
       },
+      "Congo DR": {
+        "f": 16
+      },
+      "Colombia": {
+        "f": 16
+      },
       "Portugal": {
         "f": 19
       },
-      "Congo DR": {
-        "f": 9
-      },
       "Uzbekistan": {
         "f": 27
-      },
-      "Colombia": {
-        "f": 10
       },
       "Ghana": {
         "f": 31
