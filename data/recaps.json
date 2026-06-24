@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T00:57:31.165Z",
-  "count": 47,
+  "generatedAt": "2026-06-24T04:54:31.008Z",
+  "count": 48,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1776,6 +1776,33 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Jordan\",\"Algeria\",1,2,[[\"36'\",\"Nizar Alrashdan\",\"Jordan\",\"home\",false,false],[\"69'\",\"Nadhir Benbouali\",\"Algeria\",\"away\",false,false],[\"82'\",\"Amine Gouiri\",\"Algeria\",\"away\",false,false]]]"
+    },
+    "400021501": {
+      "id": "400021501",
+      "group": "K",
+      "home": "Colombia",
+      "away": "DR Congo",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "venue": "Guadalajara Stadium",
+      "utcDate": "2026-06-24T02:00:00Z",
+      "goals": [
+        {
+          "minute": "76'",
+          "order": 76,
+          "player": "Daniel Munoz",
+          "team": "Colombia",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Colombia see off DR Congo",
+      "summary": "Colombia leads DR Congo 1-0 with Daniel Munoz scoring in the 76th minute, Colombia is winning the match, Munoz is the key scorer so far. Colombia is ahead in Group K at Guadalajara Stadium.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Colombia\",\"DR Congo\",1,0,[[\"76'\",\"Daniel Munoz\",\"Colombia\",\"home\",false,false]]]"
     },
     "400021502": {
       "id": "400021502",
