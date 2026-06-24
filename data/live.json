@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T19:38:29.241Z",
+  "fetchedAt": "2026-06-24T20:19:54.853Z",
   "matchCount": 72,
   "matches": [
     {
@@ -637,9 +637,9 @@
       "home": "Bosnia and Herzegovina",
       "away": "Qatar",
       "homeGoals": 2,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "venue": "Seattle Stadium",
-      "minute": "38'"
+      "minute": "57'"
     },
     {
       "id": "400021451",
@@ -649,10 +649,10 @@
       "status": "IN_PLAY",
       "home": "Switzerland",
       "away": "Canada",
-      "homeGoals": 0,
+      "homeGoals": 2,
       "awayGoals": 0,
       "venue": "BC Place Vancouver",
-      "minute": "38'"
+      "minute": "61'"
     },
     {
       "id": "400021452",
@@ -1019,12 +1019,12 @@
         "Bosnia and Herzegovina": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 7
         },
         "Qatar": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 8
         }
       },
       "400021449": {
@@ -1055,12 +1055,12 @@
         "Switzerland": {
           "y": 1,
           "r": 0,
-          "f": 8
+          "f": 14
         },
         "Canada": {
           "y": 1,
           "r": 0,
-          "f": 6
+          "f": 5
         }
       },
       "400021453": {
@@ -1754,16 +1754,16 @@
         "f": 19
       },
       "Switzerland": {
-        "f": 24
+        "f": 30
       },
       "Bosnia and Herzegovina": {
-        "f": 36
+        "f": 39
       },
       "Qatar": {
-        "f": 23
+        "f": 26
       },
       "Canada": {
-        "f": 22
+        "f": 21
       },
       "Haiti": {
         "f": 33
