@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T01:17:39.651Z",
+  "generatedAt": "2026-06-24T02:12:26.194Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -71,7 +71,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 18.1,
-      "rank": 5,
+      "rank": 4,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -218,9 +218,9 @@
           "proj": 20.7
         },
         {
-          "group": "K",
-          "owner": "The Metcalf Matrix",
-          "proj": 18.5
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.1
         }
       ],
       "scenarios": [
@@ -432,7 +432,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.2,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -493,15 +493,15 @@
     "TMM": {
       "group": "K",
       "banked": 11,
-      "remaining": 3,
-      "projTotal": 18.5,
-      "rank": 4,
+      "remaining": 2,
+      "projTotal": 16.1,
+      "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
-        "Colombia",
         "DR Congo",
         "Uzbekistan",
+        "Colombia",
         "Portugal"
       ],
       "rivals": [
@@ -525,17 +525,11 @@
         {
           "key": "grind",
           "label": "Squeak in",
-          "targetTotal": 26,
-          "yourRemainingGoals": 15,
-          "rivalCap": 25,
+          "targetTotal": 21,
+          "yourRemainingGoals": 10,
+          "rivalCap": 20,
           "needsHelp": true,
           "lines": [
-            {
-              "home": "Colombia",
-              "away": "DR Congo",
-              "hg": 3,
-              "ag": 2
-            },
             {
               "home": "DR Congo",
               "away": "Uzbekistan",
@@ -549,15 +543,15 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Purdy Pitches as Group K reaches 26 goals"
+          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Purdy Pitches as Group K reaches 21 goals"
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix is on the cusp of a monumental upset, needing a surge in goals to snatch the No.1 pick, with rivals Taco Corp and Purdy Pitches looming large. To catapult to the top, The Metcalf Matrix must outscore and outmaneuver its competitors, including unclaimed Group I, in a high-stakes battle for draft supremacy",
+      "intro": "The Metcalf Matrix must spark a goal-scoring frenzy to snatch the No.1 pick, leapfrogging Taco Corp and Purdy Pitches in the process. With 2 matches left, a perfect storm of victories and high-scoring affairs is necessary to catapult Group K to the top spot",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[11,3,26,[[26,[[\"Colombia\",\"DR Congo\",3,2],[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "fingerprint": "[11,2,26,[[21,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     },
     "AM": {
       "group": "B",
@@ -585,9 +579,9 @@
           "proj": 23.2
         },
         {
-          "group": "K",
-          "owner": "The Metcalf Matrix",
-          "proj": 18.5
+          "group": "E",
+          "owner": "Nicolodeons!",
+          "proj": 18.1
         }
       ],
       "scenarios": [
