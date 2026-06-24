@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T20:19:54.853Z",
+  "fetchedAt": "2026-06-24T20:59:14.609Z",
   "matchCount": 72,
   "matches": [
     {
@@ -636,23 +636,23 @@
       "status": "IN_PLAY",
       "home": "Bosnia and Herzegovina",
       "away": "Qatar",
-      "homeGoals": 2,
+      "homeGoals": 3,
       "awayGoals": 1,
       "venue": "Seattle Stadium",
-      "minute": "57'"
+      "minute": "90'+6'"
     },
     {
       "id": "400021451",
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Switzerland",
       "away": "Canada",
       "homeGoals": 2,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "venue": "BC Place Vancouver",
-      "minute": "61'"
+      "minute": "97'"
     },
     {
       "id": "400021452",
@@ -1017,14 +1017,14 @@
       },
       "400021448": {
         "Bosnia and Herzegovina": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 7
+          "f": 9
         },
         "Qatar": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 8
+          "f": 13
         }
       },
       "400021449": {
@@ -1055,12 +1055,12 @@
         "Switzerland": {
           "y": 1,
           "r": 0,
-          "f": 14
+          "f": 19
         },
         "Canada": {
-          "y": 1,
+          "y": 2,
           "r": 0,
-          "f": 5
+          "f": 12
         }
       },
       "400021453": {
@@ -1566,15 +1566,15 @@
         "r": 0
       },
       "Bosnia and Herzegovina": {
-        "y": 5,
+        "y": 6,
         "r": 1
       },
       "Qatar": {
-        "y": 3,
+        "y": 4,
         "r": 2
       },
       "Canada": {
-        "y": 4,
+        "y": 5,
         "r": 0
       },
       "Haiti": {
@@ -1754,16 +1754,16 @@
         "f": 19
       },
       "Switzerland": {
-        "f": 30
+        "f": 35
       },
       "Bosnia and Herzegovina": {
-        "f": 39
+        "f": 41
       },
       "Qatar": {
-        "f": 26
+        "f": 31
       },
       "Canada": {
-        "f": 21
+        "f": 28
       },
       "Haiti": {
         "f": 33
