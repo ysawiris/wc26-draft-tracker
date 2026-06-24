@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T20:04:32.946Z",
+  "generatedAt": "2026-06-24T21:00:09.786Z",
   "count": 9,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.4,
+      "projTotal": 15.5,
       "rank": 7,
       "leads": false,
       "winningBar": 26,
@@ -21,7 +21,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -29,9 +29,9 @@
           "proj": 23.2
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
@@ -71,7 +71,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 18.2,
-      "rank": 3,
+      "rank": 4,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -84,7 +84,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -92,9 +92,9 @@
           "proj": 23.2
         },
         {
-          "group": "K",
-          "owner": "The Metcalf Matrix",
-          "proj": 17.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
@@ -147,7 +147,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -155,9 +155,9 @@
           "proj": 23.2
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
@@ -196,7 +196,7 @@
       "group": "F",
       "banked": 20,
       "remaining": 2,
-      "projTotal": 26.3,
+      "projTotal": 26.4,
       "rank": 1,
       "leads": true,
       "winningBar": 23,
@@ -213,14 +213,14 @@
           "proj": 23.2
         },
         {
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
+        },
+        {
           "group": "E",
           "owner": "Nicolodeons!",
           "proj": 18.2
-        },
-        {
-          "group": "K",
-          "owner": "The Metcalf Matrix",
-          "proj": 17.2
         }
       ],
       "scenarios": [
@@ -319,7 +319,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -327,9 +327,9 @@
           "proj": 23.2
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
@@ -382,7 +382,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -390,9 +390,9 @@
           "proj": 23.2
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
@@ -431,7 +431,7 @@
       "group": "J",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.1,
+      "projTotal": 17.2,
       "rank": 5,
       "leads": false,
       "winningBar": 26,
@@ -445,7 +445,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -453,9 +453,9 @@
           "proj": 23.2
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
@@ -495,7 +495,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.2,
-      "rank": 4,
+      "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -508,7 +508,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -516,9 +516,9 @@
           "proj": 23.2
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
@@ -571,7 +571,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.3
+          "proj": 26.4
         },
         {
           "group": "I",
@@ -579,9 +579,9 @@
           "proj": 23.2
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.2
+          "group": "B",
+          "owner": "Purdy Pitches",
+          "proj": 22
         }
       ],
       "scenarios": [
