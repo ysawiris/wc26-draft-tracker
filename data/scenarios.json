@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T13:12:13.884Z",
+  "generatedAt": "2026-06-24T17:09:36.731Z",
   "count": 10,
   "byTeam": {
     "CMC": {
@@ -70,7 +70,7 @@
       "group": "E",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 18.1,
+      "projTotal": 18.2,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -220,7 +220,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 18.1
+          "proj": 18.2
         }
       ],
       "scenarios": [
@@ -431,7 +431,7 @@
       "group": "J",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.2,
+      "projTotal": 17.1,
       "rank": 6,
       "leads": false,
       "winningBar": 26,
@@ -581,7 +581,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 18.1
+          "proj": 18.2
         }
       ],
       "scenarios": [
