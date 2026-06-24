@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T08:50:07.856Z",
+  "fetchedAt": "2026-06-24T18:13:11.443Z",
   "matchCount": 72,
   "matches": [
     {
@@ -639,7 +639,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Seattle Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021451",
@@ -652,7 +652,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "BC Place Vancouver",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021452",
