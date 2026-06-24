@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T18:13:11.443Z",
+  "fetchedAt": "2026-06-24T19:38:29.241Z",
   "matchCount": 72,
   "matches": [
     {
@@ -633,26 +633,26 @@
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Bosnia and Herzegovina",
       "away": "Qatar",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 2,
+      "awayGoals": 0,
       "venue": "Seattle Stadium",
-      "minute": "0'"
+      "minute": "38'"
     },
     {
       "id": "400021451",
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Switzerland",
       "away": "Canada",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "BC Place Vancouver",
-      "minute": "0'"
+      "minute": "38'"
     },
     {
       "id": "400021452",
@@ -1015,6 +1015,18 @@
           "f": 10
         }
       },
+      "400021448": {
+        "Bosnia and Herzegovina": {
+          "y": 0,
+          "r": 0,
+          "f": 4
+        },
+        "Qatar": {
+          "y": 0,
+          "r": 0,
+          "f": 5
+        }
+      },
       "400021449": {
         "Canada": {
           "y": 2,
@@ -1037,6 +1049,18 @@
           "y": 1,
           "r": 2,
           "f": 8
+        }
+      },
+      "400021451": {
+        "Switzerland": {
+          "y": 1,
+          "r": 0,
+          "f": 8
+        },
+        "Canada": {
+          "y": 1,
+          "r": 0,
+          "f": 6
         }
       },
       "400021453": {
@@ -1538,7 +1562,7 @@
         "r": 1
       },
       "Switzerland": {
-        "y": 2,
+        "y": 3,
         "r": 0
       },
       "Bosnia and Herzegovina": {
@@ -1550,7 +1574,7 @@
         "r": 2
       },
       "Canada": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Haiti": {
@@ -1730,16 +1754,16 @@
         "f": 19
       },
       "Switzerland": {
-        "f": 16
+        "f": 24
       },
       "Bosnia and Herzegovina": {
-        "f": 32
+        "f": 36
       },
       "Qatar": {
-        "f": 18
+        "f": 23
       },
       "Canada": {
-        "f": 16
+        "f": 22
       },
       "Haiti": {
         "f": 33
