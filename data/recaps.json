@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-23T22:32:26.691Z",
-  "count": 46,
+  "generatedAt": "2026-06-24T00:57:31.165Z",
+  "count": 47,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -2036,6 +2036,33 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Ghana\",\"Panama\",1,0,[[\"90'+5'\",\"Caleb Yirenkyi\",\"Ghana\",\"home\",false,false]]]"
+    },
+    "400021511": {
+      "id": "400021511",
+      "group": "L",
+      "home": "Panama",
+      "away": "Croatia",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "venue": "Toronto Stadium",
+      "utcDate": "2026-06-23T23:00:00Z",
+      "goals": [
+        {
+          "minute": "54'",
+          "order": 54,
+          "player": "Ante Budimir",
+          "team": "Croatia",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Croatia see off Panama",
+      "summary": "Croatia leads Panama 1-0 with Ante Budimir scoring in the 54th minute, Croatia is winning the match, Ante Budimir is the key scorer so far. The score remains 1-0 in favor of Croatia.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Panama\",\"Croatia\",0,1,[[\"54'\",\"Ante Budimir\",\"Croatia\",\"away\",false,false]]]"
     }
   }
 }
