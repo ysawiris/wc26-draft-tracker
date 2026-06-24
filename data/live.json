@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T20:59:14.609Z",
+  "fetchedAt": "2026-06-24T21:36:39.752Z",
   "matchCount": 72,
   "matches": [
     {
@@ -633,13 +633,13 @@
       "group": "B",
       "matchday": null,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Bosnia and Herzegovina",
       "away": "Qatar",
       "homeGoals": 3,
       "awayGoals": 1,
       "venue": "Seattle Stadium",
-      "minute": "90'+6'"
+      "minute": "97'"
     },
     {
       "id": "400021451",
@@ -665,7 +665,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Atlanta Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021455",
@@ -678,7 +678,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Miami Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021445",
