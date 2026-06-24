@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-23T23:35:15.147Z",
+  "fetchedAt": "2026-06-24T00:01:09.747Z",
   "matchCount": 72,
   "matches": [
     {
@@ -613,7 +613,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Toronto Stadium",
-      "minute": "35'"
+      "minute": null
     },
     {
       "id": "400021501",
@@ -1499,12 +1499,12 @@
         "Croatia": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 5
         },
         "Panama": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 9
         }
       }
     },
@@ -1844,10 +1844,10 @@
         "f": 23
       },
       "Croatia": {
-        "f": 16
+        "f": 17
       },
       "Panama": {
-        "f": 14
+        "f": 18
       }
     }
   }
