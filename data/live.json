@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T22:05:49.785Z",
+  "fetchedAt": "2026-06-24T22:39:55.694Z",
   "matchCount": 72,
   "matches": [
     {
@@ -663,9 +663,9 @@
       "home": "Morocco",
       "away": "Haiti",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "venue": "Atlanta Stadium",
-      "minute": "5'"
+      "minute": "39'"
     },
     {
       "id": "400021455",
@@ -676,9 +676,9 @@
       "home": "Scotland",
       "away": "Brazil",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "venue": "Miami Stadium",
-      "minute": "4'"
+      "minute": "38'"
     },
     {
       "id": "400021445",
@@ -1063,7 +1063,18 @@
           "f": 12
         }
       },
-      "400021452": {},
+      "400021452": {
+        "Morocco": {
+          "y": 0,
+          "r": 0,
+          "f": 3
+        },
+        "Haiti": {
+          "y": 0,
+          "r": 0,
+          "f": 4
+        }
+      },
       "400021453": {
         "Haiti": {
           "y": 1,
@@ -1088,7 +1099,18 @@
           "f": 7
         }
       },
-      "400021455": {},
+      "400021455": {
+        "Brazil": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Scotland": {
+          "y": 0,
+          "r": 0,
+          "f": 2
+        }
+      },
       "400021456": {
         "Brazil": {
           "y": 2,
@@ -1579,16 +1601,16 @@
         "y": 5,
         "r": 0
       },
+      "Morocco": {
+        "y": 1,
+        "r": 0
+      },
       "Haiti": {
         "y": 4,
         "r": 0
       },
       "Scotland": {
         "y": 4,
-        "r": 0
-      },
-      "Morocco": {
-        "y": 1,
         "r": 0
       },
       "Brazil": {
@@ -1767,17 +1789,17 @@
       "Canada": {
         "f": 28
       },
+      "Morocco": {
+        "f": 24
+      },
       "Haiti": {
-        "f": 33
+        "f": 37
       },
       "Scotland": {
-        "f": 28
-      },
-      "Morocco": {
-        "f": 21
+        "f": 30
       },
       "Brazil": {
-        "f": 26
+        "f": 27
       },
       "USA": {
         "f": 23
