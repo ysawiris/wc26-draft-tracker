@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-24T01:11:53.319Z",
+  "fetchedAt": "2026-06-24T02:03:45.393Z",
   "matchCount": 72,
   "matches": [
     {
@@ -620,13 +620,13 @@
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-24T02:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Colombia",
       "away": "Congo DR",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Guadalajara Stadium",
-      "minute": null
+      "minute": "3'"
     },
     {
       "id": "400021448",
@@ -1423,6 +1423,7 @@
           "f": 10
         }
       },
+      "400021501": {},
       "400021502": {
         "Portugal": {
           "y": 3,
