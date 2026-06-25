@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-25T03:48:09.933Z",
-  "count": 54,
+  "generatedAt": "2026-06-25T22:36:49.199Z",
+  "count": 56,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1021,6 +1021,51 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Ecuador\",\"Curaçao\",0,0,[]]"
     },
+    "400021466": {
+      "id": "400021466",
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Germany",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "venue": "New York/New Jersey Stadium",
+      "utcDate": "2026-06-25T20:00:00Z",
+      "goals": [
+        {
+          "minute": "2'",
+          "order": 2,
+          "player": "Leroy Sane",
+          "team": "Germany",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "9'",
+          "order": 9,
+          "player": "Nilson Angulo",
+          "team": "Ecuador",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "77'",
+          "order": 77,
+          "player": "Gonzalo Plata",
+          "team": "Ecuador",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Ecuador see off Germany",
+      "summary": "Ecuador is taking down Germany 2-1 with Nilson Angulo and Gonzalo Plata scoring, overcoming Leroy Sane's early goal, Plata seals the win in the 77th minute. Ecuador leads the match with a stunning comeback. The final score is Ecuador 2, Germany 1.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Ecuador\",\"Germany\",2,1,[[\"2'\",\"Leroy Sane\",\"Germany\",\"away\",false,false],[\"9'\",\"Nilson Angulo\",\"Ecuador\",\"home\",false,false],[\"77'\",\"Gonzalo Plata\",\"Ecuador\",\"home\",false,false]]]"
+    },
     "400021467": {
       "id": "400021467",
       "group": "E",
@@ -1047,6 +1092,42 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Ivory Coast\",\"Ecuador\",1,0,[[\"90'\",\"Amad Diallo\",\"Ivory Coast\",\"home\",false,false]]]"
+    },
+    "400021468": {
+      "id": "400021468",
+      "group": "E",
+      "home": "Curaçao",
+      "away": "Ivory Coast",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "venue": "Philadelphia Stadium",
+      "utcDate": "2026-06-25T20:00:00Z",
+      "goals": [
+        {
+          "minute": "7'",
+          "order": 7,
+          "player": "Nicolas Pepe",
+          "team": "Ivory Coast",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "64'",
+          "order": 64,
+          "player": "Nicolas Pepe",
+          "team": "Ivory Coast",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Ivory Coast see off Curaçao",
+      "summary": "Nicolas Pepe scores in the 7th and 64th minutes as Ivory Coast takes the lead and extends it, Pepe is on fire, Ivory Coast is up 2-0 over Curaçao, the Elephants are dominating Group E.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Curaçao\",\"Ivory Coast\",0,2,[[\"7'\",\"Nicolas Pepe\",\"Ivory Coast\",\"away\",false,false],[\"64'\",\"Nicolas Pepe\",\"Ivory Coast\",\"away\",false,false]]]"
     },
     "400021469": {
       "id": "400021469",
