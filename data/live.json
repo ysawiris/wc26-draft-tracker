@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T23:17:40.797Z",
+  "fetchedAt": "2026-06-25T23:50:55.021Z",
   "matchCount": 72,
   "matches": [
     {
@@ -743,7 +743,7 @@
       "homeGoals": 0,
       "awayGoals": 2,
       "venue": "Kansas City Stadium",
-      "minute": "17'"
+      "minute": null
     },
     {
       "id": "400021471",
@@ -756,7 +756,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Dallas Stadium",
-      "minute": "18'"
+      "minute": null
     },
     {
       "id": "400021461",
@@ -1295,12 +1295,12 @@
         "Japan": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 11
         },
         "Sweden": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 1
+          "f": 5
         }
       },
       "400021472": {
@@ -1319,7 +1319,12 @@
         "Tunisia": {
           "y": 0,
           "r": 0,
-          "f": 3
+          "f": 5
+        },
+        "Netherlands": {
+          "y": 0,
+          "r": 0,
+          "f": 4
         }
       },
       "400021474": {
@@ -1725,7 +1730,7 @@
         "r": 0
       },
       "Sweden": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Tunisia": {
@@ -1893,16 +1898,16 @@
         "f": 19
       },
       "Netherlands": {
-        "f": 13
+        "f": 17
       },
       "Japan": {
-        "f": 26
+        "f": 33
       },
       "Sweden": {
-        "f": 20
+        "f": 24
       },
       "Tunisia": {
-        "f": 19
+        "f": 21
       },
       "New Zealand": {
         "f": 20
