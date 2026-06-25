@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-25T01:01:37.214Z",
-  "count": 52,
+  "generatedAt": "2026-06-25T03:48:09.933Z",
+  "count": 54,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -141,6 +141,78 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Mexico\",\"South Africa\",2,0,[[\"9'\",\"Julian Quinones\",\"Mexico\",\"home\",false,false],[\"67'\",\"Raul Jimenez\",\"Mexico\",\"home\",false,false]]]"
+    },
+    "400021444": {
+      "id": "400021444",
+      "group": "A",
+      "home": "Czech Republic",
+      "away": "Mexico",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "venue": "Mexico City Stadium",
+      "utcDate": "2026-06-25T01:00:00Z",
+      "goals": [
+        {
+          "minute": "55'",
+          "order": 55,
+          "player": "Mateo Chavez",
+          "team": "Mexico",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "61'",
+          "order": 61,
+          "player": "Julian Quinones",
+          "team": "Mexico",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+4'",
+          "order": 90.04,
+          "player": "Alvaro Fidalgo",
+          "team": "Mexico",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Mexico see off Czech Republic",
+      "summary": "Mexico is dominating the Czech Republic 3-0 with Mateo Chavez, Julian Quinones, and Alvaro Fidalgo scoring the goals. Chavez strikes in the 55th minute, Quinones adds another in the 61st, and Fidalgo seals the win in stoppage time. Mexico is cruising to a Group A victory.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Czech Republic\",\"Mexico\",0,3,[[\"55'\",\"Mateo Chavez\",\"Mexico\",\"away\",false,false],[\"61'\",\"Julian Quinones\",\"Mexico\",\"away\",false,false],[\"90'+4'\",\"Alvaro Fidalgo\",\"Mexico\",\"away\",false,false]]]"
+    },
+    "400021445": {
+      "id": "400021445",
+      "group": "A",
+      "home": "South Africa",
+      "away": "South Korea",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "venue": "Monterrey Stadium",
+      "utcDate": "2026-06-25T01:00:00Z",
+      "goals": [
+        {
+          "minute": "63'",
+          "order": 63,
+          "player": "Thapelo Maseko",
+          "team": "South Africa",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "South Africa see off South Korea",
+      "summary": "South Africa leads 1-0 over South Korea with Thapelo Maseko scoring in the 63rd minute, South Africa is ahead at Monterrey Stadium, Maseko is the key scorer so far.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"South Africa\",\"South Korea\",1,0,[[\"63'\",\"Thapelo Maseko\",\"South Africa\",\"home\",false,false]]]"
     },
     "400021446": {
       "id": "400021446",
