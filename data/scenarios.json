@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-25T17:10:49.153Z",
-  "count": 8,
+  "generatedAt": "2026-06-25T20:09:21.965Z",
+  "count": 7,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 10,
       "remaining": 2,
       "projTotal": 15.5,
-      "rank": 8,
+      "rank": 7,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -66,75 +66,12 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[10,2,26,[[20,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
-    "CDL": {
-      "group": "E",
-      "banked": 12,
-      "remaining": 2,
-      "projTotal": 18.5,
-      "rank": 4,
-      "leads": false,
-      "winningBar": 26,
-      "countries": [
-        "Curaçao",
-        "Ivory Coast",
-        "Ecuador",
-        "Germany"
-      ],
-      "rivals": [
-        {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 26.2
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 23.3
-        },
-        {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 22
-        }
-      ],
-      "scenarios": [
-        {
-          "key": "grind",
-          "label": "Squeak in",
-          "targetTotal": 22,
-          "yourRemainingGoals": 10,
-          "rivalCap": 21,
-          "needsHelp": true,
-          "lines": [
-            {
-              "home": "Curaçao",
-              "away": "Ivory Coast",
-              "hg": 2,
-              "ag": 3
-            },
-            {
-              "home": "Ecuador",
-              "away": "Germany",
-              "hg": 2,
-              "ag": 3
-            }
-          ],
-          "blurb": "Nicolodeons! needs Group E to reach 22 goals, hoping Taco Corp, Purdy Pitches, and other rivals stall at 21 or under."
-        }
-      ],
-      "abbr": "CDL",
-      "team": "Nicolodeons!",
-      "intro": "Nicolodeons! must ignite their World Cup Group E to snatch the No.1 pick, requiring a surge in goal scoring to surpass rivals like Taco Corp and Purdy Pitches. To reach the top, Nicolodeons! needs a massive goal haul from Curaçao, Ivory Coast, Ecuador, and Germany, outscoring the competition in their final matches.",
-      "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[12,2,26,[[22,[[\"Curaçao\",\"Ivory Coast\",2,3],[\"Ecuador\",\"Germany\",2,3]]]]]"
-    },
     "BBWC": {
       "group": "H",
       "banked": 10,
       "remaining": 2,
       "projTotal": 15.1,
-      "rank": 9,
+      "rank": 8,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -218,9 +155,9 @@
           "proj": 22
         },
         {
-          "group": "E",
-          "owner": "Nicolodeons!",
-          "proj": 18.5
+          "group": "J",
+          "owner": "Another Rebuilding Year",
+          "proj": 17.3
         }
       ],
       "scenarios": [
@@ -306,7 +243,7 @@
       "banked": 10,
       "remaining": 2,
       "projTotal": 15,
-      "rank": 10,
+      "rank": 9,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -432,7 +369,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.3,
-      "rank": 5,
+      "rank": 4,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -495,7 +432,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.3,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 26,
       "countries": [
