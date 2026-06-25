@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-24T21:05:52.699Z",
-  "count": 50,
+  "generatedAt": "2026-06-25T01:01:37.214Z",
+  "count": 52,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -435,6 +435,78 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Switzerland\",\"Canada\",2,1,[[\"46'\",\"Ruben Vargas\",\"Switzerland\",\"home\",false,false],[\"57'\",\"Johan Manzambi\",\"Switzerland\",\"home\",false,false],[\"76'\",\"Promise David\",\"Canada\",\"away\",false,false]]]"
     },
+    "400021452": {
+      "id": "400021452",
+      "group": "C",
+      "home": "Morocco",
+      "away": "Haiti",
+      "homeGoals": 4,
+      "awayGoals": 2,
+      "venue": "Atlanta Stadium",
+      "utcDate": "2026-06-24T22:00:00Z",
+      "goals": [
+        {
+          "minute": "10'",
+          "order": 10,
+          "player": "Yassine Bounou",
+          "team": "Haiti",
+          "side": "away",
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "minute": "39'",
+          "order": 39,
+          "player": "Achraf Hakimi",
+          "team": "Morocco",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "43'",
+          "order": 43,
+          "player": "Wilson Isidor",
+          "team": "Haiti",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+1'",
+          "order": 45.01,
+          "player": "Ismael Saibari",
+          "team": "Morocco",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "78'",
+          "order": 78,
+          "player": "Soufiane Rahimi",
+          "team": "Morocco",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "89'",
+          "order": 89,
+          "player": "Gessime Yassine",
+          "team": "Morocco",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Morocco see off Haiti",
+      "summary": "Morocco leads Haiti 4-2 with Achraf Hakimi, Ismael Saibari, Soufiane Rahimi, and Gessime Yassine scoring for Morocco, while Yassine Bounou scores an own goal and Wilson Isidor scores for Haiti. Morocco is dominating the match. Haiti struggles to keep up.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Morocco\",\"Haiti\",4,2,[[\"10'\",\"Yassine Bounou\",\"Haiti\",\"away\",true,false],[\"39'\",\"Achraf Hakimi\",\"Morocco\",\"home\",false,false],[\"43'\",\"Wilson Isidor\",\"Haiti\",\"away\",false,false],[\"45'+1'\",\"Ismael Saibari\",\"Morocco\",\"home\",false,false],[\"78'\",\"Soufiane Rahimi\",\"Morocco\",\"home\",false,false],[\"89'\",\"Gessime Yassine\",\"Morocco\",\"home\",false,false]]]"
+    },
     "400021453": {
       "id": "400021453",
       "group": "C",
@@ -488,6 +560,51 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Scotland\",\"Morocco\",0,1,[[\"2'\",\"Ismael Saibari\",\"Morocco\",\"away\",false,false]]]"
+    },
+    "400021455": {
+      "id": "400021455",
+      "group": "C",
+      "home": "Scotland",
+      "away": "Brazil",
+      "homeGoals": 0,
+      "awayGoals": 3,
+      "venue": "Miami Stadium",
+      "utcDate": "2026-06-24T22:00:00Z",
+      "goals": [
+        {
+          "minute": "7'",
+          "order": 7,
+          "player": "Vinicius Junior",
+          "team": "Brazil",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "45'+3'",
+          "order": 45.03,
+          "player": "Vinicius Junior",
+          "team": "Brazil",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "60'",
+          "order": 60,
+          "player": "Matheus Cunha",
+          "team": "Brazil",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Brazil see off Scotland",
+      "summary": "Scotland is trailing Brazil 0-3 in Group C as Vinicius Junior scores in the 7th minute and again in stoppage time, Matheus Cunha adds a third in the 60th minute, Brazil is dominating the match at Miami Stadium. Vinicius Junior is on fire. Brazil is winning.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Scotland\",\"Brazil\",0,3,[[\"7'\",\"Vinicius Junior\",\"Brazil\",\"away\",false,false],[\"45'+3'\",\"Vinicius Junior\",\"Brazil\",\"away\",false,false],[\"60'\",\"Matheus Cunha\",\"Brazil\",\"away\",false,false]]]"
     },
     "400021456": {
       "id": "400021456",
