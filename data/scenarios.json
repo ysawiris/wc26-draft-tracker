@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-25T09:38:08.108Z",
+  "generatedAt": "2026-06-25T13:12:06.739Z",
   "count": 8,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.5,
+      "projTotal": 15.6,
       "rank": 8,
       "leads": false,
       "winningBar": 26,
@@ -21,7 +21,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.2
+          "proj": 26.3
         },
         {
           "group": "I",
@@ -70,7 +70,7 @@
       "group": "E",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 18.4,
+      "projTotal": 18.5,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -84,7 +84,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.2
+          "proj": 26.3
         },
         {
           "group": "I",
@@ -147,7 +147,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.2
+          "proj": 26.3
         },
         {
           "group": "I",
@@ -196,7 +196,7 @@
       "group": "F",
       "banked": 20,
       "remaining": 2,
-      "projTotal": 26.2,
+      "projTotal": 26.3,
       "rank": 1,
       "leads": true,
       "winningBar": 23,
@@ -220,7 +220,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 18.4
+          "proj": 18.5
         }
       ],
       "scenarios": [
@@ -319,7 +319,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.2
+          "proj": 26.3
         },
         {
           "group": "I",
@@ -382,7 +382,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.2
+          "proj": 26.3
         },
         {
           "group": "I",
@@ -431,7 +431,7 @@
       "group": "J",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.2,
+      "projTotal": 17.3,
       "rank": 6,
       "leads": false,
       "winningBar": 26,
@@ -445,7 +445,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.2
+          "proj": 26.3
         },
         {
           "group": "I",
@@ -508,7 +508,7 @@
         {
           "group": "F",
           "owner": "Taco Corp",
-          "proj": 26.2
+          "proj": 26.3
         },
         {
           "group": "I",
