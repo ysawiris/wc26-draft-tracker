@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T21:33:52.080Z",
+  "fetchedAt": "2026-06-25T22:10:04.130Z",
   "matchCount": 72,
   "matches": [
     {
@@ -711,26 +711,26 @@
       "group": "E",
       "matchday": null,
       "utcDate": "2026-06-25T20:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Curaçao",
       "away": "Côte d'Ivoire",
       "homeGoals": 0,
       "awayGoals": 2,
       "venue": "Philadelphia Stadium",
-      "minute": "72'"
+      "minute": "97'"
     },
     {
       "id": "400021466",
       "group": "E",
       "matchday": null,
       "utcDate": "2026-06-25T20:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Ecuador",
       "away": "Germany",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "venue": "New York/New Jersey Stadium",
-      "minute": "73'"
+      "minute": "98'"
     },
     {
       "id": "400021473",
@@ -743,7 +743,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Kansas City Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021471",
@@ -756,7 +756,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Dallas Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021461",
@@ -1233,14 +1233,14 @@
       },
       "400021466": {
         "Ecuador": {
-          "y": 2,
+          "y": 3,
           "r": 0,
-          "f": 9
+          "f": 13
         },
         "Germany": {
           "y": 1,
           "r": 0,
-          "f": 7
+          "f": 9
         }
       },
       "400021467": {
@@ -1257,14 +1257,14 @@
       },
       "400021468": {
         "Curaçao": {
-          "y": 0,
+          "y": 2,
           "r": 0,
           "f": 10
         },
         "Côte d'Ivoire": {
           "y": 1,
           "r": 0,
-          "f": 3
+          "f": 5
         }
       },
       "400021469": {
@@ -1686,11 +1686,11 @@
         "r": 0
       },
       "Curaçao": {
-        "y": 5,
+        "y": 7,
         "r": 0
       },
       "Ecuador": {
-        "y": 4,
+        "y": 5,
         "r": 0
       },
       "Côte d'Ivoire": {
@@ -1862,16 +1862,16 @@
         "f": 26
       },
       "Germany": {
-        "f": 30
+        "f": 32
       },
       "Curaçao": {
         "f": 26
       },
       "Ecuador": {
-        "f": 27
+        "f": 31
       },
       "Côte d'Ivoire": {
-        "f": 17
+        "f": 19
       },
       "Netherlands": {
         "f": 13
