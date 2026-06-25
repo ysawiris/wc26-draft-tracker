@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-25T01:22:45.871Z",
+  "generatedAt": "2026-06-25T05:50:05.141Z",
   "count": 8,
   "byTeam": {
     "CMC": {
@@ -70,7 +70,7 @@
       "group": "E",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 18.2,
+      "projTotal": 18.4,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -220,7 +220,7 @@
         {
           "group": "E",
           "owner": "Nicolodeons!",
-          "proj": 18.2
+          "proj": 18.4
         }
       ],
       "scenarios": [
@@ -245,7 +245,7 @@
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp squeaks in as Group F reaches 24 goals, rivals stall at 23 or under"
+          "blurb": "Taco Corp squeezes past Purdy Pitches and Nicolodeons! with 24 goals as rivals stall at 23 or under."
         },
         {
           "key": "business",
@@ -268,7 +268,7 @@
               "ag": 1
             }
           ],
-          "blurb": "Taco Corp takes care of business as Group F reaches 26 goals, clearing the field"
+          "blurb": "Taco Corp takes care of business with 26 goals, clearing the field and outpacing unclaimed Group I and Purdy Pitches."
         },
         {
           "key": "fest",
@@ -281,31 +281,31 @@
             {
               "home": "Tunisia",
               "away": "Netherlands",
-              "hg": 1,
+              "hg": 2,
               "ag": 3
             },
             {
               "home": "Japan",
               "away": "Sweden",
               "hg": 2,
-              "ag": 2
+              "ag": 1
             }
           ],
-          "blurb": "Taco Corp ignites a goal-fest as Group F reaches 28 goals, leaving Purdy Pitches and Fiko Fins in the dust"
+          "blurb": "Taco Corp ignites a goal-fest with 28 goals, dominating the competition and leaving Purdy Pitches and Nicolodeons! in the dust."
         }
       ],
       "abbr": "TACO",
       "team": "Taco Corp",
-      "intro": "Taco Corp needs a flurry of goals to secure the No.1 pick, with rival managers Purdy Pitches and Fiko Fins hot on their heels. To grab the top spot, Group F must outscore the competition, with unclaimed Group I also posing a significant threat",
+      "intro": "Taco Corp needs a goal-scoring explosion to secure the No.1 pick, with rivals like Purdy Pitches and Nicolodeons! lurking, and Group I unclaimed and hungry. To take the top spot, Taco Corp must outscore the competition and make the most of their final two matches in Group F.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[20,2,23,[[24,[[\"Tunisia\",\"Netherlands\",1,1],[\"Japan\",\"Sweden\",1,1]]],[26,[[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[28,[[\"Tunisia\",\"Netherlands\",1,3],[\"Japan\",\"Sweden\",2,2]]]]]"
+      "fingerprint": "[20,2,23,[[24,[[\"Tunisia\",\"Netherlands\",1,1],[\"Japan\",\"Sweden\",1,1]]],[26,[[\"Tunisia\",\"Netherlands\",1,2],[\"Japan\",\"Sweden\",2,1]]],[28,[[\"Tunisia\",\"Netherlands\",2,3],[\"Japan\",\"Sweden\",2,1]]]]]"
     },
     "GRS": {
       "group": "D",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 14.8,
+      "projTotal": 14.9,
       "rank": 10,
       "leads": false,
       "winningBar": 26,
@@ -432,7 +432,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.2,
-      "rank": 5,
+      "rank": 6,
       "leads": false,
       "winningBar": 26,
       "countries": [
@@ -495,7 +495,7 @@
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.2,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 26,
       "countries": [
