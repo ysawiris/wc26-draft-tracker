@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T20:07:51.689Z",
+  "fetchedAt": "2026-06-25T20:52:06.939Z",
   "matchCount": 72,
   "matches": [
     {
@@ -717,7 +717,7 @@
       "homeGoals": 0,
       "awayGoals": 1,
       "venue": "Philadelphia Stadium",
-      "minute": "7'"
+      "minute": null
     },
     {
       "id": "400021466",
@@ -727,10 +727,10 @@
       "status": "IN_PLAY",
       "home": "Ecuador",
       "away": "Germany",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 1,
       "venue": "New York/New Jersey Stadium",
-      "minute": "7'"
+      "minute": null
     },
     {
       "id": "400021473",
@@ -1233,14 +1233,14 @@
       },
       "400021466": {
         "Ecuador": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 2
+          "f": 8
         },
         "Germany": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 1
+          "f": 2
         }
       },
       "400021467": {
@@ -1259,7 +1259,12 @@
         "Curaçao": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 7
+        },
+        "Côte d'Ivoire": {
+          "y": 1,
+          "r": 0,
+          "f": 3
         }
       },
       "400021469": {
@@ -1677,7 +1682,7 @@
         "r": 0
       },
       "Germany": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Curaçao": {
@@ -1685,11 +1690,11 @@
         "r": 0
       },
       "Ecuador": {
-        "y": 2,
+        "y": 3,
         "r": 0
       },
       "Côte d'Ivoire": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Netherlands": {
@@ -1857,16 +1862,16 @@
         "f": 26
       },
       "Germany": {
-        "f": 24
+        "f": 25
       },
       "Curaçao": {
-        "f": 17
+        "f": 23
       },
       "Ecuador": {
-        "f": 20
+        "f": 26
       },
       "Côte d'Ivoire": {
-        "f": 14
+        "f": 17
       },
       "Netherlands": {
         "f": 13
