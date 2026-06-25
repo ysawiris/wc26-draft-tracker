@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T02:05:10.110Z",
+  "fetchedAt": "2026-06-25T03:21:47.877Z",
   "matchCount": 72,
   "matches": [
     {
@@ -685,26 +685,26 @@
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "South Africa",
       "away": "Korea Republic",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
       "venue": "Monterrey Stadium",
-      "minute": null
+      "minute": "97'"
     },
     {
       "id": "400021444",
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Czechia",
       "away": "Mexico",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 3,
       "venue": "Mexico City Stadium",
-      "minute": null
+      "minute": "97'"
     },
     {
       "id": "400021468",
@@ -993,26 +993,26 @@
       },
       "400021444": {
         "Mexico": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 7
+          "f": 12
         },
         "Czechia": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 9
         }
       },
       "400021445": {
         "Korea Republic": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 4
+          "f": 8
         },
         "South Africa": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 2
+          "f": 6
         }
       },
       "400021446": {
@@ -1594,7 +1594,7 @@
     },
     "byCountry": {
       "South Africa": {
-        "y": 4,
+        "y": 5,
         "r": 2
       },
       "Czechia": {
@@ -1602,11 +1602,11 @@
         "r": 0
       },
       "Korea Republic": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Mexico": {
-        "y": 1,
+        "y": 2,
         "r": 1
       },
       "Switzerland": {
@@ -1790,16 +1790,16 @@
   "fouls": {
     "byCountry": {
       "South Africa": {
-        "f": 19
+        "f": 23
       },
       "Czechia": {
-        "f": 32
+        "f": 36
       },
       "Korea Republic": {
-        "f": 17
+        "f": 21
       },
       "Mexico": {
-        "f": 26
+        "f": 31
       },
       "Switzerland": {
         "f": 35
