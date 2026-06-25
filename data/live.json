@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T20:52:06.939Z",
+  "fetchedAt": "2026-06-25T21:33:52.080Z",
   "matchCount": 72,
   "matches": [
     {
@@ -715,9 +715,9 @@
       "home": "Curaçao",
       "away": "Côte d'Ivoire",
       "homeGoals": 0,
-      "awayGoals": 1,
+      "awayGoals": 2,
       "venue": "Philadelphia Stadium",
-      "minute": null
+      "minute": "72'"
     },
     {
       "id": "400021466",
@@ -730,7 +730,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "venue": "New York/New Jersey Stadium",
-      "minute": null
+      "minute": "73'"
     },
     {
       "id": "400021473",
@@ -743,7 +743,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021471",
@@ -756,7 +756,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Dallas Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021461",
@@ -1233,14 +1233,14 @@
       },
       "400021466": {
         "Ecuador": {
-          "y": 1,
+          "y": 2,
           "r": 0,
-          "f": 8
+          "f": 9
         },
         "Germany": {
           "y": 1,
           "r": 0,
-          "f": 2
+          "f": 7
         }
       },
       "400021467": {
@@ -1259,7 +1259,7 @@
         "Curaçao": {
           "y": 0,
           "r": 0,
-          "f": 7
+          "f": 10
         },
         "Côte d'Ivoire": {
           "y": 1,
@@ -1690,7 +1690,7 @@
         "r": 0
       },
       "Ecuador": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Côte d'Ivoire": {
@@ -1862,13 +1862,13 @@
         "f": 26
       },
       "Germany": {
-        "f": 25
+        "f": 30
       },
       "Curaçao": {
-        "f": 23
+        "f": 26
       },
       "Ecuador": {
-        "f": 26
+        "f": 27
       },
       "Côte d'Ivoire": {
         "f": 17
