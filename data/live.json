@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T01:16:18.438Z",
+  "fetchedAt": "2026-06-25T02:05:10.110Z",
   "matchCount": 72,
   "matches": [
     {
@@ -691,7 +691,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Monterrey Stadium",
-      "minute": "15'"
+      "minute": null
     },
     {
       "id": "400021444",
@@ -704,7 +704,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Mexico City Stadium",
-      "minute": "15'"
+      "minute": null
     },
     {
       "id": "400021468",
@@ -995,16 +995,21 @@
         "Mexico": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 7
         },
         "Czechia": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 5
         }
       },
       "400021445": {
         "Korea Republic": {
+          "y": 0,
+          "r": 0,
+          "f": 4
+        },
+        "South Africa": {
           "y": 0,
           "r": 0,
           "f": 2
@@ -1785,16 +1790,16 @@
   "fouls": {
     "byCountry": {
       "South Africa": {
-        "f": 17
+        "f": 19
       },
       "Czechia": {
-        "f": 28
+        "f": 32
       },
       "Korea Republic": {
-        "f": 15
+        "f": 17
       },
       "Mexico": {
-        "f": 23
+        "f": 26
       },
       "Switzerland": {
         "f": 35
