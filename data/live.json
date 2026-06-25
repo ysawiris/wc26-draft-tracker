@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T00:06:34.203Z",
+  "fetchedAt": "2026-06-25T01:16:18.438Z",
   "matchCount": 72,
   "matches": [
     {
@@ -678,33 +678,33 @@
       "homeGoals": 0,
       "awayGoals": 3,
       "venue": "Miami Stadium",
-      "minute": "90'"
+      "minute": "97'"
     },
     {
       "id": "400021445",
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "South Africa",
       "away": "Korea Republic",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Monterrey Stadium",
-      "minute": "0'"
+      "minute": "15'"
     },
     {
       "id": "400021444",
       "group": "A",
       "matchday": null,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Czechia",
       "away": "Mexico",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Mexico City Stadium",
-      "minute": "0'"
+      "minute": "15'"
     },
     {
       "id": "400021468",
@@ -989,6 +989,25 @@
           "y": 1,
           "r": 1,
           "f": 10
+        }
+      },
+      "400021444": {
+        "Mexico": {
+          "y": 0,
+          "r": 0,
+          "f": 4
+        },
+        "Czechia": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
+      "400021445": {
+        "Korea Republic": {
+          "y": 0,
+          "r": 0,
+          "f": 2
         }
       },
       "400021446": {
@@ -1769,13 +1788,13 @@
         "f": 17
       },
       "Czechia": {
-        "f": 27
+        "f": 28
       },
       "Korea Republic": {
-        "f": 13
+        "f": 15
       },
       "Mexico": {
-        "f": 19
+        "f": 23
       },
       "Switzerland": {
         "f": 35
