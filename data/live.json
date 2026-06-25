@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T08:49:51.368Z",
+  "fetchedAt": "2026-06-25T18:35:44.355Z",
   "matchCount": 72,
   "matches": [
     {
@@ -717,7 +717,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Philadelphia Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021466",
@@ -730,7 +730,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "New York/New Jersey Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021473",
