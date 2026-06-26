@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-26T18:58:50.494Z",
+  "fetchedAt": "2026-06-26T19:38:43.655Z",
   "matchCount": 72,
   "matches": [
     {
@@ -789,26 +789,26 @@
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-26T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Senegal",
       "away": "Iraq",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 1,
+      "awayGoals": 0,
       "venue": "Toronto Stadium",
-      "minute": "0'"
+      "minute": "36'"
     },
     {
       "id": "400021489",
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-26T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Norway",
       "away": "France",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 1,
+      "awayGoals": 3,
       "venue": "Boston Stadium",
-      "minute": "0'"
+      "minute": "37'"
     },
     {
       "id": "400021484",
@@ -1483,6 +1483,18 @@
           "f": 11
         }
       },
+      "400021489": {
+        "Norway": {
+          "y": 1,
+          "r": 0,
+          "f": 3
+        },
+        "France": {
+          "y": 0,
+          "r": 0,
+          "f": 4
+        }
+      },
       "400021490": {
         "Senegal": {
           "y": 0,
@@ -1514,6 +1526,18 @@
           "f": 8
         },
         "Iraq": {
+          "y": 1,
+          "r": 0,
+          "f": 3
+        }
+      },
+      "400021493": {
+        "Iraq": {
+          "y": 0,
+          "r": 1,
+          "f": 3
+        },
+        "Senegal": {
           "y": 1,
           "r": 0,
           "f": 3
@@ -1794,19 +1818,19 @@
         "r": 0
       },
       "Norway": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Iraq": {
         "y": 2,
-        "r": 0
-      },
-      "Senegal": {
-        "y": 0,
-        "r": 0
+        "r": 1
       },
       "France": {
         "y": 0,
+        "r": 0
+      },
+      "Senegal": {
+        "y": 1,
         "r": 0
       },
       "Austria": {
@@ -1958,16 +1982,16 @@
         "f": 3
       },
       "Norway": {
-        "f": 26
+        "f": 29
       },
       "Iraq": {
-        "f": 14
-      },
-      "Senegal": {
-        "f": 14
+        "f": 17
       },
       "France": {
-        "f": 13
+        "f": 17
+      },
+      "Senegal": {
+        "f": 17
       },
       "Austria": {
         "f": 24
