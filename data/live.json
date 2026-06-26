@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-26T20:58:33.870Z",
+  "fetchedAt": "2026-06-26T21:36:26.947Z",
   "matchCount": 72,
   "matches": [
     {
@@ -789,26 +789,26 @@
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-26T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Senegal",
       "away": "Iraq",
       "homeGoals": 5,
       "awayGoals": 0,
       "venue": "Toronto Stadium",
-      "minute": "90'"
+      "minute": "97'"
     },
     {
       "id": "400021489",
       "group": "I",
       "matchday": null,
       "utcDate": "2026-06-26T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Norway",
       "away": "France",
       "homeGoals": 1,
       "awayGoals": 4,
       "venue": "Boston Stadium",
-      "minute": "90'+4'"
+      "minute": "96'"
     },
     {
       "id": "400021484",
@@ -1492,7 +1492,7 @@
         "France": {
           "y": 1,
           "r": 0,
-          "f": 9
+          "f": 10
         }
       },
       "400021490": {
@@ -1535,12 +1535,12 @@
         "Iraq": {
           "y": 2,
           "r": 1,
-          "f": 8
+          "f": 9
         },
         "Senegal": {
           "y": 2,
           "r": 0,
-          "f": 7
+          "f": 8
         }
       },
       "400021494": {
@@ -1985,13 +1985,13 @@
         "f": 34
       },
       "Iraq": {
-        "f": 22
+        "f": 23
       },
       "France": {
-        "f": 22
+        "f": 23
       },
       "Senegal": {
-        "f": 21
+        "f": 22
       },
       "Austria": {
         "f": 24
