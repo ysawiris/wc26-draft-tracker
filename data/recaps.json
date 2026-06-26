@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-26T01:05:32.109Z",
-  "count": 58,
+  "generatedAt": "2026-06-26T05:32:56.736Z",
+  "count": 60,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -822,6 +822,69 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"United States\",\"Paraguay\",4,1,[[\"7'\",\"Damian Bobadilla\",\"United States\",\"home\",true,false],[\"31'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"45'+5'\",\"Folarin Balogun\",\"United States\",\"home\",false,false],[\"73'\",\"Mauricio\",\"Paraguay\",\"away\",false,false],[\"90'+8'\",\"Giovanni Reyna\",\"United States\",\"home\",false,false]]]"
     },
+    "400021459": {
+      "id": "400021459",
+      "group": "D",
+      "home": "Türkiye",
+      "away": "United States",
+      "homeGoals": 3,
+      "awayGoals": 2,
+      "venue": "Los Angeles Stadium",
+      "utcDate": "2026-06-26T02:00:00Z",
+      "goals": [
+        {
+          "minute": "3'",
+          "order": 3,
+          "player": "Auston Trusty",
+          "team": "United States",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "10'",
+          "order": 10,
+          "player": "Arda Guler",
+          "team": "Türkiye",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "31'",
+          "order": 31,
+          "player": "Baris Alper Yilmaz",
+          "team": "Türkiye",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "49'",
+          "order": 49,
+          "player": "Sebastian Berhalter",
+          "team": "United States",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+8'",
+          "order": 90.08,
+          "player": "Kaan Ayhan",
+          "team": "Türkiye",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Türkiye see off United States",
+      "summary": "Türkiye leads United States 3-2 as Kaan Ayhan scores late, Arda Guler and Baris Alper Yilmaz also score for Türkiye, while Auston Trusty and Sebastian Berhalter find the net for the United States.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Türkiye\",\"United States\",3,2,[[\"3'\",\"Auston Trusty\",\"United States\",\"away\",false,false],[\"10'\",\"Arda Guler\",\"Türkiye\",\"home\",false,false],[\"31'\",\"Baris Alper Yilmaz\",\"Türkiye\",\"home\",false,false],[\"49'\",\"Sebastian Berhalter\",\"United States\",\"away\",false,false],[\"90'+8'\",\"Kaan Ayhan\",\"Türkiye\",\"home\",false,false]]]"
+    },
     "400021460": {
       "id": "400021460",
       "group": "D",
@@ -850,6 +913,23 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Türkiye\",\"Paraguay\",0,1,[[\"2'\",\"Matias Galarza\",\"Paraguay\",\"away\",false,false]]]"
+    },
+    "400021461": {
+      "id": "400021461",
+      "group": "D",
+      "home": "Paraguay",
+      "away": "Australia",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "venue": "San Francisco Bay Area Stadium",
+      "utcDate": "2026-06-26T02:00:00Z",
+      "goals": [],
+      "reds": [],
+      "headline": "Paraguay and Australia share the points",
+      "summary": "Paraguay and Australia are battling to a scoreless draw, with neither team able to find the back of the net. The match remains 0-0, as both teams struggle to create scoring opportunities. Paraguay and Australia are tied at 0-0.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Paraguay\",\"Australia\",0,0,[]]"
     },
     "400021462": {
       "id": "400021462",
