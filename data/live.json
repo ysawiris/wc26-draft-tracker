@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-26T19:38:43.655Z",
+  "fetchedAt": "2026-06-26T20:20:04.830Z",
   "matchCount": 72,
   "matches": [
     {
@@ -795,7 +795,7 @@
       "homeGoals": 1,
       "awayGoals": 0,
       "venue": "Toronto Stadium",
-      "minute": "36'"
+      "minute": "52'"
     },
     {
       "id": "400021489",
@@ -808,7 +808,7 @@
       "homeGoals": 1,
       "awayGoals": 3,
       "venue": "Boston Stadium",
-      "minute": "37'"
+      "minute": "56'"
     },
     {
       "id": "400021484",
@@ -1487,12 +1487,12 @@
         "Norway": {
           "y": 1,
           "r": 0,
-          "f": 3
+          "f": 4
         },
         "France": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 7
         }
       },
       "400021490": {
@@ -1535,12 +1535,12 @@
         "Iraq": {
           "y": 0,
           "r": 1,
-          "f": 3
+          "f": 5
         },
         "Senegal": {
           "y": 1,
           "r": 0,
-          "f": 3
+          "f": 4
         }
       },
       "400021494": {
@@ -1982,16 +1982,16 @@
         "f": 3
       },
       "Norway": {
-        "f": 29
+        "f": 30
       },
       "Iraq": {
-        "f": 17
+        "f": 19
       },
       "France": {
-        "f": 17
+        "f": 20
       },
       "Senegal": {
-        "f": 17
+        "f": 18
       },
       "Austria": {
         "f": 24
