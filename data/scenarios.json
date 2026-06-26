@@ -1,13 +1,13 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-26T05:52:21.340Z",
+  "generatedAt": "2026-06-26T09:39:28.185Z",
   "count": 5,
   "byTeam": {
     "CMC": {
       "group": "G",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 15.6,
+      "projTotal": 15.8,
       "rank": 8,
       "leads": false,
       "winningBar": 26,
@@ -26,7 +26,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.5
+          "proj": 23.6
         },
         {
           "group": "B",
@@ -89,7 +89,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.5
+          "proj": 23.6
         },
         {
           "group": "B",
@@ -152,7 +152,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.5
+          "proj": 23.6
         },
         {
           "group": "B",
@@ -196,7 +196,7 @@
       "group": "J",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.3,
+      "projTotal": 17.2,
       "rank": 5,
       "leads": false,
       "winningBar": 26,
@@ -215,7 +215,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.5
+          "proj": 23.6
         },
         {
           "group": "B",
@@ -259,7 +259,7 @@
       "group": "K",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.3,
+      "projTotal": 17.2,
       "rank": 4,
       "leads": false,
       "winningBar": 26,
@@ -278,7 +278,7 @@
         {
           "group": "I",
           "owner": "Group I (unclaimed)",
-          "proj": 23.5
+          "proj": 23.6
         },
         {
           "group": "B",
