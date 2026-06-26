@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-25T23:50:55.021Z",
+  "fetchedAt": "2026-06-26T00:47:45.825Z",
   "matchCount": 72,
   "matches": [
     {
@@ -740,10 +740,10 @@
       "status": "IN_PLAY",
       "home": "Tunisia",
       "away": "Netherlands",
-      "homeGoals": 0,
-      "awayGoals": 2,
+      "homeGoals": 1,
+      "awayGoals": 3,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "88'"
     },
     {
       "id": "400021471",
@@ -753,10 +753,10 @@
       "status": "IN_PLAY",
       "home": "Japan",
       "away": "Sweden",
-      "homeGoals": 0,
-      "awayGoals": 0,
+      "homeGoals": 1,
+      "awayGoals": 1,
       "venue": "Dallas Stadium",
-      "minute": null
+      "minute": "85'"
     },
     {
       "id": "400021461",
@@ -769,7 +769,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021459",
@@ -782,7 +782,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Los Angeles Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021493",
@@ -1293,14 +1293,14 @@
       },
       "400021471": {
         "Japan": {
-          "y": 0,
-          "r": 0,
-          "f": 11
-        },
-        "Sweden": {
           "y": 1,
           "r": 0,
-          "f": 5
+          "f": 18
+        },
+        "Sweden": {
+          "y": 2,
+          "r": 0,
+          "f": 9
         }
       },
       "400021472": {
@@ -1319,12 +1319,12 @@
         "Tunisia": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 11
         },
         "Netherlands": {
           "y": 0,
           "r": 0,
-          "f": 4
+          "f": 10
         }
       },
       "400021474": {
@@ -1726,11 +1726,11 @@
         "r": 0
       },
       "Japan": {
-        "y": 0,
+        "y": 1,
         "r": 0
       },
       "Sweden": {
-        "y": 4,
+        "y": 5,
         "r": 0
       },
       "Tunisia": {
@@ -1898,16 +1898,16 @@
         "f": 19
       },
       "Netherlands": {
-        "f": 17
+        "f": 23
       },
       "Japan": {
-        "f": 33
+        "f": 40
       },
       "Sweden": {
-        "f": 24
+        "f": 28
       },
       "Tunisia": {
-        "f": 21
+        "f": 27
       },
       "New Zealand": {
         "f": 20
