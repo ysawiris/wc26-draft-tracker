@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-26T20:05:51.820Z",
+  "generatedAt": "2026-06-26T21:01:17.813Z",
   "count": 5,
   "byTeam": {
     "CMC": {
@@ -10,7 +10,7 @@
       "projTotal": 15.8,
       "rank": 8,
       "leads": false,
-      "winningBar": 26,
+      "winningBar": 27,
       "countries": [
         "New Zealand",
         "Belgium",
@@ -19,6 +19,11 @@
       ],
       "rivals": [
         {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 27
+        },
+        {
           "group": "F",
           "owner": "Taco Corp",
           "proj": 26
@@ -26,11 +31,6 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 22
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
           "proj": 22
         }
       ],
@@ -56,24 +56,24 @@
               "ag": 2
             }
           ],
-          "blurb": "Commissioner's Infirmary 2.0 squeezes past Taco Corp and Purdy Pitches as Group G reaches 20 goals"
+          "blurb": "Commissioner's Infirmary 2.0 needs Group G to squeak in with 20 goals as rivals like Taco Corp stall."
         }
       ],
       "abbr": "CMC",
       "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a goal-scoring explosion to grab the No.1 pick, requiring a monumental effort to surpass rivals Taco Corp, Purdy Pitches, and Group I. To rise from 8th to 1st, Commissioner's Infirmary 2.0 must outscore and outmaneuver its toughest competitors in a high-stakes showdown.",
+      "intro": "Commissioner's Infirmary 2.0 needs a miracle to grab the No.1 pick, with a massive goal surge required to overhaul rivals Taco Corp and Purdy Pitches! The group must find a way to leapfrog the likes of unclaimed Group I, currently projected to dominate with around 27 goals.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[10,2,26,[[20,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
+      "fingerprint": "[10,2,27,[[20,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
     },
     "BBWC": {
       "group": "H",
       "banked": 10,
       "remaining": 2,
-      "projTotal": 14.9,
+      "projTotal": 14.7,
       "rank": 10,
       "leads": false,
-      "winningBar": 26,
+      "winningBar": 27,
       "countries": [
         "Uruguay",
         "Spain",
@@ -82,6 +82,11 @@
       ],
       "rivals": [
         {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 27
+        },
+        {
           "group": "F",
           "owner": "Taco Corp",
           "proj": 26
@@ -89,11 +94,6 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 22
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
           "proj": 22
         }
       ],
@@ -119,15 +119,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Group H scores 20 goals, surpassing Taco Corp and Purdy Pitches, who stall at 19 or under."
+          "blurb": "Group H scores 20 goals, surpassing Taco Corp and Purdy Pitches managers' groups, barely squeaking in."
         }
       ],
       "abbr": "BBWC",
       "team": "Big Blue Wrecking Crew",
-      "intro": "Big Blue Wrecking Crew needs a surge in goal scoring to grab the No.1 pick, surpassing rival groups like Taco Corp and Purdy Pitches. The group must outscore the competition, with Group I also looming as a significant threat, to claim the top spot.",
+      "intro": "Big Blue Wrecking Crew must make a massive push to snag the No.1 pick, overcoming a significant deficit to outscore rival groups like Taco Corp and Purdy Pitches. The crew needs a surge in goal scoring, with Group H currently lagging behind the pace of unclaimed Group I and other top contenders.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[10,2,26,[[20,[[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
+      "fingerprint": "[10,2,27,[[20,[[\"Uruguay\",\"Spain\",2,3],[\"Cape Verde\",\"Saudi Arabia\",3,2]]]]]"
     },
     "FF": {
       "group": "L",
@@ -136,7 +136,7 @@
       "projTotal": 13.8,
       "rank": 11,
       "leads": false,
-      "winningBar": 26,
+      "winningBar": 27,
       "countries": [
         "Panama",
         "England",
@@ -145,6 +145,11 @@
       ],
       "rivals": [
         {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 27
+        },
+        {
           "group": "F",
           "owner": "Taco Corp",
           "proj": 26
@@ -152,11 +157,6 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 22
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
           "proj": 22
         }
       ],
@@ -182,15 +182,15 @@
               "ag": 2
             }
           ],
-          "blurb": "Fiko Fins' Group L is squeaking in with 18 goals, surpassing Taco Corp and Purdy Pitches who stall at 17 or under."
+          "blurb": "Fiko Fins' Group L squeaks in with 18 goals as rivals Taco Corp and Purdy Pitches stall at 17 or under."
         }
       ],
       "abbr": "FF",
       "team": "Fiko Fins",
-      "intro": "Fiko Fins must ignite a goal-scoring explosion to snatch the No.1 pick, leaving rivals Taco Corp and Purdy Pitches in the dust! A dramatic turnaround is necessary for Fiko Fins to claim the top spot, with Group L currently lagging behind the pace.",
+      "intro": "Fiko Fins needs a miracle to grab the No.1 pick, with Group L requiring a significant surge in goals to surpass rival groups like Taco Corp and Purdy Pitches. To catapult to the top, Fiko Fins must rely on his teams, including England and Croatia, to unleash a flurry of goals and outscore the competition, with managers like Taco Corp and Purdy Pitches stopping at nothing to claim the top spot.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[8,2,26,[[18,[[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",2,2]]]]]"
+      "fingerprint": "[8,2,27,[[18,[[\"Panama\",\"England\",2,4],[\"Croatia\",\"Ghana\",2,2]]]]]"
     },
     "RBLD": {
       "group": "J",
@@ -199,7 +199,7 @@
       "projTotal": 17.2,
       "rank": 4,
       "leads": false,
-      "winningBar": 26,
+      "winningBar": 27,
       "countries": [
         "Algeria",
         "Austria",
@@ -208,6 +208,11 @@
       ],
       "rivals": [
         {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 27
+        },
+        {
           "group": "F",
           "owner": "Taco Corp",
           "proj": 26
@@ -215,11 +220,6 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 22
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
           "proj": 22
         }
       ],
@@ -245,24 +245,24 @@
               "ag": 4
             }
           ],
-          "blurb": "Group J is scoring enough to squeak in at 22 goals, barely surpassing Purdy Pitches"
+          "blurb": "Another Rebuilding Year's Group J scores 22 goals, surpassing Purdy Pitches and stalling Taco Corp and Group I"
         }
       ],
       "abbr": "RBLD",
       "team": "Another Rebuilding Year",
-      "intro": "Another Rebuilding Year must spark a goal-scoring frenzy to seize the No.1 pick, leaving Taco Corp and Purdy Pitches in the dust! With 2 matches left, the group needs a miraculous turnaround to jump from 5th to 1st, and it all starts with outscoring rival managers like Taco Corp's owner",
+      "intro": "Another Rebuilding Year must rally Group J to outscore rival groups and Taco Corp's strong offense to snag the No.1 pick, a monumental task requiring a surge in goal production from Algeria, Austria, Jordan, and Argentina. To overcome the deficit, Another Rebuilding Year needs a perfect storm of goal scoring and rival group stagnation, with Purdy Pitches and unclaimed Group I also in the mix",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[12,2,26,[[22,[[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
+      "fingerprint": "[12,2,27,[[22,[[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
     },
     "TMM": {
       "group": "K",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.1,
+      "projTotal": 17.2,
       "rank": 5,
       "leads": false,
-      "winningBar": 26,
+      "winningBar": 27,
       "countries": [
         "DR Congo",
         "Uzbekistan",
@@ -271,6 +271,11 @@
       ],
       "rivals": [
         {
+          "group": "I",
+          "owner": "Group I (unclaimed)",
+          "proj": 27
+        },
+        {
           "group": "F",
           "owner": "Taco Corp",
           "proj": 26
@@ -278,11 +283,6 @@
         {
           "group": "B",
           "owner": "Purdy Pitches",
-          "proj": 22
-        },
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
           "proj": 22
         }
       ],
@@ -308,15 +308,15 @@
               "ag": 3
             }
           ],
-          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Purdy Pitches as Group K reaches 22 goals"
+          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Purdy Pitches as Group K reaches 22 goals."
         }
       ],
       "abbr": "TMM",
       "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix is gunning for the No.1 pick and needs a massive goal haul to leapfrog rival groups Taco Corp and Purdy Pitches, it's time to put the pedal to the metal. With two matches left, The Metcalf Matrix must spark a scoring explosion to outmuscle the competition and claim the top spot",
+      "intro": "The Metcalf Matrix needs a massive goal surge to snatch the No.1 pick, with rival groups Taco Corp and Purdy Pitches looming large. To topple the unclaimed Group I, currently projected to dominate with around 27 goals, The Metcalf Matrix must ignite its World Cup Group K offense and outscore the competition, with DR Congo, Uzbekistan, Colombia, and Portugal all needing to contribute to the goal tally.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[12,2,26,[[22,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
+      "fingerprint": "[12,2,27,[[22,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     }
   }
 }
