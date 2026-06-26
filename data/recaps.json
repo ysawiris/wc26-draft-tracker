@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-26T21:04:37.693Z",
-  "count": 61,
+  "generatedAt": "2026-06-26T21:54:11.992Z",
+  "count": 62,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -2207,6 +2207,71 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"France\",\"Iraq\",3,0,[[\"14'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"54'\",\"Kylian Mbappe\",\"France\",\"home\",false,false],[\"66'\",\"Ousmane Dembele\",\"France\",\"home\",false,false]]]"
+    },
+    "400021493": {
+      "id": "400021493",
+      "group": "I",
+      "home": "Senegal",
+      "away": "Iraq",
+      "homeGoals": 5,
+      "awayGoals": 0,
+      "venue": "Toronto Stadium",
+      "utcDate": "2026-06-26T19:00:00Z",
+      "goals": [
+        {
+          "minute": "4'",
+          "order": 4,
+          "player": "Habib Diarra",
+          "team": "Senegal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "56'",
+          "order": 56,
+          "player": "Ismaila Sarr",
+          "team": "Senegal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "59'",
+          "order": 59,
+          "player": "Pape Gueye",
+          "team": "Senegal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "71'",
+          "order": 71,
+          "player": "Pape Gueye",
+          "team": "Senegal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "82'",
+          "order": 82,
+          "player": "Iliman Ndiaye",
+          "team": "Senegal",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [
+        "REBIN SULAKA (Iraq) is sent off!"
+      ],
+      "headline": "Senegal see off Iraq",
+      "summary": "Senegal dominates Iraq 5-0 with Habib Diarra, Ismaila Sarr, Pape Gueye scoring twice, and Iliman Ndiaye adding the final goal, Rebin Sulaka sees red for Iraq, as Senegal takes control of Group I.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Senegal\",\"Iraq\",5,0,[[\"4'\",\"Habib Diarra\",\"Senegal\",\"home\",false,false],[\"56'\",\"Ismaila Sarr\",\"Senegal\",\"home\",false,false],[\"59'\",\"Pape Gueye\",\"Senegal\",\"home\",false,false],[\"71'\",\"Pape Gueye\",\"Senegal\",\"home\",false,false],[\"82'\",\"Iliman Ndiaye\",\"Senegal\",\"home\",false,false]]]"
     },
     "400021494": {
       "id": "400021494",
