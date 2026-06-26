@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-26T00:47:45.825Z",
+  "fetchedAt": "2026-06-26T01:36:13.225Z",
   "matchCount": 72,
   "matches": [
     {
@@ -737,26 +737,26 @@
       "group": "F",
       "matchday": null,
       "utcDate": "2026-06-25T23:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Tunisia",
       "away": "Netherlands",
       "homeGoals": 1,
       "awayGoals": 3,
       "venue": "Kansas City Stadium",
-      "minute": "88'"
+      "minute": "96'"
     },
     {
       "id": "400021471",
       "group": "F",
       "matchday": null,
       "utcDate": "2026-06-25T23:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Japan",
       "away": "Sweden",
       "homeGoals": 1,
       "awayGoals": 1,
       "venue": "Dallas Stadium",
-      "minute": "85'"
+      "minute": "98'"
     },
     {
       "id": "400021461",
@@ -1295,7 +1295,7 @@
         "Japan": {
           "y": 1,
           "r": 0,
-          "f": 18
+          "f": 19
         },
         "Sweden": {
           "y": 2,
@@ -1901,7 +1901,7 @@
         "f": 23
       },
       "Japan": {
-        "f": 40
+        "f": 41
       },
       "Sweden": {
         "f": 28
