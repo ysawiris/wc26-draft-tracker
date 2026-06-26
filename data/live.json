@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-26T05:38:03.102Z",
+  "fetchedAt": "2026-06-26T07:01:13.326Z",
   "matchCount": 72,
   "matches": [
     {
@@ -795,7 +795,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Toronto Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021489",
@@ -808,7 +808,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Boston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021484",
@@ -821,7 +821,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Guadalajara Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021485",
@@ -834,7 +834,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Houston Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021481",
@@ -847,7 +847,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "BC Place Vancouver",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021479",
@@ -860,7 +860,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Seattle Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021508",
@@ -873,7 +873,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "New York/New Jersey Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021509",
@@ -886,7 +886,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Philadelphia Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021500",
@@ -899,7 +899,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Atlanta Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021505",
@@ -912,7 +912,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Miami Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021497",
@@ -925,7 +925,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Kansas City Stadium",
-      "minute": null
+      "minute": "0'"
     },
     {
       "id": "400021495",
@@ -938,7 +938,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Dallas Stadium",
-      "minute": null
+      "minute": "0'"
     }
   ],
   "cards": {
