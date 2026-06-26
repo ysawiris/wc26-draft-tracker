@@ -1,7 +1,7 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-26T16:58:33.729Z",
+  "fetchedAt": "2026-06-26T20:52:30.367Z",
   "matchCount": 12,
   "lines": [
     {
@@ -12,9 +12,9 @@
       "homeRaw": "Cape Verde",
       "awayRaw": "Saudi Arabia",
       "line": 2.5,
-      "overUS": "+110",
-      "underUS": "-140",
-      "impliedTotal": 2.47
+      "overUS": "+120",
+      "underUS": "-150",
+      "impliedTotal": 2.4
     },
     {
       "espnId": "760476",
@@ -24,9 +24,9 @@
       "homeRaw": "Egypt",
       "awayRaw": "Iran",
       "line": 1.5,
-      "overUS": "-165",
-      "underUS": "+130",
-      "impliedTotal": 1.98
+      "overUS": "-155",
+      "underUS": "+125",
+      "impliedTotal": 1.94
     },
     {
       "espnId": "760477",
@@ -36,9 +36,9 @@
       "homeRaw": "New Zealand",
       "awayRaw": "Belgium",
       "line": 3.5,
-      "overUS": "-130",
-      "underUS": "+105",
-      "impliedTotal": 3.85
+      "overUS": "-135",
+      "underUS": "+110",
+      "impliedTotal": 3.9
     },
     {
       "espnId": "760475",
@@ -72,9 +72,9 @@
       "homeRaw": "Uruguay",
       "awayRaw": "Spain",
       "line": 2.5,
-      "overUS": "+120",
-      "underUS": "-150",
-      "impliedTotal": 2.4
+      "overUS": "+130",
+      "underUS": "-160",
+      "impliedTotal": 2.34
     },
     {
       "espnId": "760484",
@@ -84,9 +84,9 @@
       "homeRaw": "Algeria",
       "awayRaw": "Austria",
       "line": 1.5,
-      "overUS": "-180",
-      "underUS": "+145",
-      "impliedTotal": 2.07
+      "overUS": "-175",
+      "underUS": "+140",
+      "impliedTotal": 2.04
     },
     {
       "espnId": "760481",
@@ -96,9 +96,9 @@
       "homeRaw": "Colombia",
       "awayRaw": "Portugal",
       "line": 2.5,
-      "overUS": "+100",
-      "underUS": "-125",
-      "impliedTotal": 2.57
+      "overUS": "-105",
+      "underUS": "-120",
+      "impliedTotal": 2.61
     },
     {
       "espnId": "760480",
@@ -131,9 +131,9 @@
       "away": "Argentina",
       "homeRaw": "Jordan",
       "awayRaw": "Argentina",
-      "line": 3.5,
-      "overUS": "+145",
-      "underUS": "-180",
+      "line": 2.5,
+      "overUS": "-180",
+      "underUS": "+145",
       "impliedTotal": 3.16
     },
     {
