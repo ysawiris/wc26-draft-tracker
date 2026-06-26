@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-26T01:36:13.225Z",
+  "fetchedAt": "2026-06-26T02:34:32.735Z",
   "matchCount": 72,
   "matches": [
     {
@@ -763,26 +763,26 @@
       "group": "D",
       "matchday": null,
       "utcDate": "2026-06-26T02:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Paraguay",
       "away": "Australia",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "San Francisco Bay Area Stadium",
-      "minute": "0'"
+      "minute": "34'"
     },
     {
       "id": "400021459",
       "group": "D",
       "matchday": null,
       "utcDate": "2026-06-26T02:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Türkiye",
       "away": "USA",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 2,
+      "awayGoals": 1,
       "venue": "Los Angeles Stadium",
-      "minute": "0'"
+      "minute": "34'"
     },
     {
       "id": "400021493",
@@ -1171,6 +1171,18 @@
           "f": 12
         }
       },
+      "400021459": {
+        "USA": {
+          "y": 1,
+          "r": 0,
+          "f": 4
+        },
+        "Türkiye": {
+          "y": 0,
+          "r": 0,
+          "f": 4
+        }
+      },
       "400021460": {
         "Paraguay": {
           "y": 2,
@@ -1181,6 +1193,18 @@
           "y": 2,
           "r": 0,
           "f": 13
+        }
+      },
+      "400021461": {
+        "Australia": {
+          "y": 0,
+          "r": 0,
+          "f": 3
+        },
+        "Paraguay": {
+          "y": 0,
+          "r": 0,
+          "f": 3
         }
       },
       "400021462": {
@@ -1690,7 +1714,7 @@
         "r": 0
       },
       "USA": {
-        "y": 4,
+        "y": 5,
         "r": 0
       },
       "Paraguay": {
@@ -1874,16 +1898,16 @@
         "f": 35
       },
       "USA": {
-        "f": 23
+        "f": 27
       },
       "Paraguay": {
-        "f": 26
+        "f": 29
       },
       "Türkiye": {
-        "f": 16
+        "f": 20
       },
       "Australia": {
-        "f": 26
+        "f": 29
       },
       "Germany": {
         "f": 32
