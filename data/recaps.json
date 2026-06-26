@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-25T22:36:49.199Z",
-  "count": 56,
+  "generatedAt": "2026-06-26T01:05:32.109Z",
+  "count": 58,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1228,6 +1228,42 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Netherlands\",\"Japan\",2,2,[[\"50'\",\"Virgil Van Dijk\",\"Netherlands\",\"home\",false,false],[\"57'\",\"Keito Nakamura\",\"Japan\",\"away\",false,false],[\"64'\",\"Crysencio Summerville\",\"Netherlands\",\"home\",false,false],[\"88'\",\"Daichi Kamada\",\"Japan\",\"away\",false,false]]]"
     },
+    "400021471": {
+      "id": "400021471",
+      "group": "F",
+      "home": "Japan",
+      "away": "Sweden",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "Dallas Stadium",
+      "utcDate": "2026-06-25T23:00:00Z",
+      "goals": [
+        {
+          "minute": "56'",
+          "order": 56,
+          "player": "Daizen Maeda",
+          "team": "Japan",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "62'",
+          "order": 62,
+          "player": "Anthony Elanga",
+          "team": "Sweden",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Japan and Sweden share the points",
+      "summary": "Japan and Sweden are battling to a 1-1 draw, Daizen Maeda scoring for Japan, Anthony Elanga equalizing for Sweden, the match is intensifying with both teams pushing for a win.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Japan\",\"Sweden\",1,1,[[\"56'\",\"Daizen Maeda\",\"Japan\",\"home\",false,false],[\"62'\",\"Anthony Elanga\",\"Sweden\",\"away\",false,false]]]"
+    },
     "400021472": {
       "id": "400021472",
       "group": "F",
@@ -1299,6 +1335,60 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Netherlands\",\"Sweden\",5,1,[[\"5'\",\"Brian Brobbey\",\"Netherlands\",\"home\",false,false],[\"17'\",\"Brian Brobbey\",\"Netherlands\",\"home\",false,false],[\"47'\",\"Cody Gakpo\",\"Netherlands\",\"home\",false,false],[\"54'\",\"Cody Gakpo\",\"Netherlands\",\"home\",false,false],[\"59'\",\"Anthony Elanga\",\"Sweden\",\"away\",false,false],[\"89'\",\"Crysencio Summerville\",\"Netherlands\",\"home\",false,false]]]"
+    },
+    "400021473": {
+      "id": "400021473",
+      "group": "F",
+      "home": "Tunisia",
+      "away": "Netherlands",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "venue": "Kansas City Stadium",
+      "utcDate": "2026-06-25T23:00:00Z",
+      "goals": [
+        {
+          "minute": "3'",
+          "order": 3,
+          "player": "Ellyes Skhiri",
+          "team": "Netherlands",
+          "side": "away",
+          "ownGoal": true,
+          "penalty": false
+        },
+        {
+          "minute": "7'",
+          "order": 7,
+          "player": "Brian Brobbey",
+          "team": "Netherlands",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "54'",
+          "order": 54,
+          "player": "Hazem Mastouri",
+          "team": "Tunisia",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "62'",
+          "order": 62,
+          "player": "Jan Paul Van Hecke",
+          "team": "Netherlands",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Netherlands see off Tunisia",
+      "summary": "Tunisia trails Netherlands 1-3 as Ellyes Skhiri scores an own goal and Brian Brobbey and Jan Paul Van Hecke net for Netherlands, Hazem Mastouri scores for Tunisia. Netherlands is dominating with a two goal lead. Tunisia's Hazem Mastouri and Netherlands' scorers are making it a match to watch.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Tunisia\",\"Netherlands\",1,3,[[\"3'\",\"Ellyes Skhiri\",\"Netherlands\",\"away\",true,false],[\"7'\",\"Brian Brobbey\",\"Netherlands\",\"away\",false,false],[\"54'\",\"Hazem Mastouri\",\"Tunisia\",\"home\",false,false],[\"62'\",\"Jan Paul Van Hecke\",\"Netherlands\",\"away\",false,false]]]"
     },
     "400021474": {
       "id": "400021474",
