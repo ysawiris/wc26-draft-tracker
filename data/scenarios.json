@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-27T21:45:58.648Z",
-  "count": 2,
+  "generatedAt": "2026-06-27T23:44:56.987Z",
+  "count": 1,
   "byTeam": {
     "RBLD": {
       "group": "J",
       "banked": 12,
       "remaining": 2,
       "projTotal": 17.1,
-      "rank": 6,
+      "rank": 5,
       "leads": false,
       "winningBar": 27,
       "countries": [
@@ -65,69 +65,6 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[12,2,27,[[22,[[\"Algeria\",\"Austria\",2,2],[\"Jordan\",\"Argentina\",2,4]]]]]"
-    },
-    "TMM": {
-      "group": "K",
-      "banked": 12,
-      "remaining": 2,
-      "projTotal": 17.3,
-      "rank": 5,
-      "leads": false,
-      "winningBar": 27,
-      "countries": [
-        "DR Congo",
-        "Uzbekistan",
-        "Colombia",
-        "Portugal"
-      ],
-      "rivals": [
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 27
-        },
-        {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 26
-        },
-        {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 22
-        }
-      ],
-      "scenarios": [
-        {
-          "key": "grind",
-          "label": "Squeak in",
-          "targetTotal": 22,
-          "yourRemainingGoals": 10,
-          "rivalCap": 21,
-          "needsHelp": true,
-          "lines": [
-            {
-              "home": "DR Congo",
-              "away": "Uzbekistan",
-              "hg": 3,
-              "ag": 2
-            },
-            {
-              "home": "Colombia",
-              "away": "Portugal",
-              "hg": 2,
-              "ag": 3
-            }
-          ],
-          "blurb": "The Metcalf Matrix squeezes past Taco Corp and Purdy Pitches as Group K reaches 22 goals."
-        }
-      ],
-      "abbr": "TMM",
-      "team": "The Metcalf Matrix",
-      "intro": "The Metcalf Matrix needs a massive goal surge to snatch the No.1 pick, with rival groups Taco Corp and Purdy Pitches looming large. To topple the unclaimed Group I, currently projected to dominate with around 27 goals, The Metcalf Matrix must ignite its World Cup Group K offense and outscore the competition, with DR Congo, Uzbekistan, Colombia, and Portugal all needing to contribute to the goal tally.",
-      "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[12,2,27,[[22,[[\"DR Congo\",\"Uzbekistan\",3,2],[\"Colombia\",\"Portugal\",2,3]]]]]"
     }
   }
 }
