@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T00:03:58.170Z",
+  "fetchedAt": "2026-06-27T01:14:12.653Z",
   "matchCount": 72,
   "matches": [
     {
@@ -819,9 +819,9 @@
       "home": "Uruguay",
       "away": "Spain",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "venue": "Guadalajara Stadium",
-      "minute": "2'"
+      "minute": "49'"
     },
     {
       "id": "400021485",
@@ -834,7 +834,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Houston Stadium",
-      "minute": "1'"
+      "minute": "50'"
     },
     {
       "id": "400021481",
@@ -1447,8 +1447,30 @@
           "f": 10
         }
       },
-      "400021484": {},
-      "400021485": {},
+      "400021484": {
+        "Spain": {
+          "y": 1,
+          "r": 0,
+          "f": 8
+        },
+        "Uruguay": {
+          "y": 0,
+          "r": 0,
+          "f": 3
+        }
+      },
+      "400021485": {
+        "Saudi Arabia": {
+          "y": 1,
+          "r": 0,
+          "f": 7
+        },
+        "Cabo Verde": {
+          "y": 1,
+          "r": 0,
+          "f": 6
+        }
+      },
       "400021486": {
         "Uruguay": {
           "y": 0,
@@ -1804,15 +1826,15 @@
         "r": 0
       },
       "Spain": {
-        "y": 1,
+        "y": 2,
         "r": 0
       },
       "Cabo Verde": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Saudi Arabia": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Uruguay": {
@@ -1972,16 +1994,16 @@
         "f": 20
       },
       "Spain": {
-        "f": 19
+        "f": 27
       },
       "Saudi Arabia": {
-        "f": 11
+        "f": 18
       },
       "Uruguay": {
-        "f": 15
+        "f": 18
       },
       "Cabo Verde": {
-        "f": 3
+        "f": 9
       },
       "Norway": {
         "f": 34
