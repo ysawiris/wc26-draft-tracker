@@ -1,77 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-27T01:20:28.074Z",
-  "count": 4,
+  "generatedAt": "2026-06-27T03:39:49.094Z",
+  "count": 3,
   "byTeam": {
-    "CMC": {
-      "group": "G",
-      "banked": 10,
-      "remaining": 2,
-      "projTotal": 16.1,
-      "rank": 7,
-      "leads": false,
-      "winningBar": 27,
-      "countries": [
-        "New Zealand",
-        "Belgium",
-        "Egypt",
-        "Iran"
-      ],
-      "rivals": [
-        {
-          "group": "I",
-          "owner": "Group I (unclaimed)",
-          "proj": 27
-        },
-        {
-          "group": "F",
-          "owner": "Taco Corp",
-          "proj": 26
-        },
-        {
-          "group": "B",
-          "owner": "Purdy Pitches",
-          "proj": 22
-        }
-      ],
-      "scenarios": [
-        {
-          "key": "grind",
-          "label": "Squeak in",
-          "targetTotal": 20,
-          "yourRemainingGoals": 10,
-          "rivalCap": 19,
-          "needsHelp": true,
-          "lines": [
-            {
-              "home": "New Zealand",
-              "away": "Belgium",
-              "hg": 2,
-              "ag": 4
-            },
-            {
-              "home": "Egypt",
-              "away": "Iran",
-              "hg": 2,
-              "ag": 2
-            }
-          ],
-          "blurb": "Commissioner's Infirmary 2.0 needs Group G to squeak in with 20 goals as rivals like Taco Corp stall."
-        }
-      ],
-      "abbr": "CMC",
-      "team": "Commissioner's Infirmary 2.0",
-      "intro": "Commissioner's Infirmary 2.0 needs a miracle to grab the No.1 pick, with a massive goal surge required to overhaul rivals Taco Corp and Purdy Pitches! The group must find a way to leapfrog the likes of unclaimed Group I, currently projected to dominate with around 27 goals.",
-      "ai": true,
-      "aiVia": "NVIDIA NIM",
-      "fingerprint": "[10,2,27,[[20,[[\"New Zealand\",\"Belgium\",2,4],[\"Egypt\",\"Iran\",2,2]]]]]"
-    },
     "FF": {
       "group": "L",
       "banked": 8,
       "remaining": 2,
       "projTotal": 13.7,
-      "rank": 10,
+      "rank": 9,
       "leads": false,
       "winningBar": 27,
       "countries": [
