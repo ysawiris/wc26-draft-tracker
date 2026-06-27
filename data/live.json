@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-26T22:37:50.932Z",
+  "fetchedAt": "2026-06-27T00:03:58.170Z",
   "matchCount": 72,
   "matches": [
     {
@@ -815,26 +815,26 @@
       "group": "H",
       "matchday": null,
       "utcDate": "2026-06-27T00:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Uruguay",
       "away": "Spain",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Guadalajara Stadium",
-      "minute": "0'"
+      "minute": "2'"
     },
     {
       "id": "400021485",
       "group": "H",
       "matchday": null,
       "utcDate": "2026-06-27T00:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Cabo Verde",
       "away": "Saudi Arabia",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Houston Stadium",
-      "minute": "0'"
+      "minute": "1'"
     },
     {
       "id": "400021481",
@@ -1447,6 +1447,8 @@
           "f": 10
         }
       },
+      "400021484": {},
+      "400021485": {},
       "400021486": {
         "Uruguay": {
           "y": 0,
