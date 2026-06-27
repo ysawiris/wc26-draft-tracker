@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T02:03:40.355Z",
+  "fetchedAt": "2026-06-27T03:20:49.938Z",
   "matchCount": 72,
   "matches": [
     {
@@ -841,26 +841,26 @@
       "group": "G",
       "matchday": null,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "New Zealand",
       "away": "Belgium",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "BC Place Vancouver",
-      "minute": null
+      "minute": "19'"
     },
     {
       "id": "400021479",
       "group": "G",
       "matchday": null,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Egypt",
       "away": "IR Iran",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 1,
+      "awayGoals": 1,
       "venue": "Seattle Stadium",
-      "minute": null
+      "minute": "19'"
     },
     {
       "id": "400021508",
@@ -1411,6 +1411,18 @@
           "f": 13
         }
       },
+      "400021479": {
+        "Egypt": {
+          "y": 1,
+          "r": 0,
+          "f": 2
+        },
+        "IR Iran": {
+          "y": 1,
+          "r": 0,
+          "f": 2
+        }
+      },
       "400021480": {
         "New Zealand": {
           "y": 2,
@@ -1423,6 +1435,7 @@
           "f": 7
         }
       },
+      "400021481": {},
       "400021482": {
         "Spain": {
           "y": 1,
@@ -1814,7 +1827,7 @@
         "r": 0
       },
       "IR Iran": {
-        "y": 2,
+        "y": 3,
         "r": 0
       },
       "Belgium": {
@@ -1822,7 +1835,7 @@
         "r": 1
       },
       "Egypt": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Spain": {
@@ -1985,13 +1998,13 @@
         "f": 20
       },
       "IR Iran": {
-        "f": 16
+        "f": 18
       },
       "Belgium": {
         "f": 18
       },
       "Egypt": {
-        "f": 20
+        "f": 22
       },
       "Spain": {
         "f": 32
