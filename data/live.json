@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T21:17:32.339Z",
+  "fetchedAt": "2026-06-27T21:43:28.874Z",
   "matchCount": 72,
   "matches": [
     {
@@ -873,7 +873,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "New York/New Jersey Stadium",
-      "minute": "16'"
+      "minute": "42'"
     },
     {
       "id": "400021509",
@@ -883,10 +883,10 @@
       "status": "IN_PLAY",
       "home": "Croatia",
       "away": "Ghana",
-      "homeGoals": 0,
+      "homeGoals": 1,
       "awayGoals": 0,
       "venue": "Philadelphia Stadium",
-      "minute": "16'"
+      "minute": "42'"
     },
     {
       "id": "400021500",
@@ -1715,19 +1715,24 @@
         "Panama": {
           "y": 0,
           "r": 0,
-          "f": 5
+          "f": 8
         },
         "England": {
           "y": 0,
           "r": 0,
-          "f": 2
+          "f": 3
         }
       },
       "400021509": {
         "Ghana": {
           "y": 0,
           "r": 0,
-          "f": 3
+          "f": 6
+        },
+        "Croatia": {
+          "y": 0,
+          "r": 0,
+          "f": 1
         }
       },
       "400021510": {
@@ -2085,16 +2090,16 @@
         "f": 27
       },
       "Ghana": {
-        "f": 34
+        "f": 37
       },
       "England": {
-        "f": 25
+        "f": 26
       },
       "Croatia": {
-        "f": 23
+        "f": 24
       },
       "Panama": {
-        "f": 32
+        "f": 35
       }
     }
   }
