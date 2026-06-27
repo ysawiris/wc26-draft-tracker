@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-27T03:15:06.134Z",
-  "count": 64,
+  "generatedAt": "2026-06-27T06:15:26.207Z",
+  "count": 66,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1705,6 +1705,42 @@
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Belgium\",\"Egypt\",1,1,[[\"19'\",\"Emam Ashour\",\"Egypt\",\"away\",false,false],[\"66'\",\"Mohamed Hany\",\"Belgium\",\"home\",true,false]]]"
     },
+    "400021479": {
+      "id": "400021479",
+      "group": "G",
+      "home": "Egypt",
+      "away": "Iran",
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "venue": "Seattle Stadium",
+      "utcDate": "2026-06-27T03:00:00Z",
+      "goals": [
+        {
+          "minute": "5'",
+          "order": 5,
+          "player": "Mahmoud Saber",
+          "team": "Egypt",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "14'",
+          "order": 14,
+          "player": "Ramin Rezaeian",
+          "team": "Iran",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Egypt and Iran share the points",
+      "summary": "Egypt and Iran are battling to a 1-1 draw, Mahmoud Saber scoring for Egypt and Ramin Rezaeian equalizing for Iran, the score is locked in a tight stalemate, with Saber striking early and Rezaeian responding quickly.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Egypt\",\"Iran\",1,1,[[\"5'\",\"Mahmoud Saber\",\"Egypt\",\"home\",false,false],[\"14'\",\"Ramin Rezaeian\",\"Iran\",\"away\",false,false]]]"
+    },
     "400021480": {
       "id": "400021480",
       "group": "G",
@@ -1758,6 +1794,78 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"New Zealand\",\"Egypt\",1,3,[[\"15'\",\"Finn Surman\",\"New Zealand\",\"home\",false,false],[\"58'\",\"Mostafa Zico\",\"Egypt\",\"away\",false,false],[\"67'\",\"Mohamed Salah\",\"Egypt\",\"away\",false,false],[\"82'\",\"Trezeguet\",\"Egypt\",\"away\",false,false]]]"
+    },
+    "400021481": {
+      "id": "400021481",
+      "group": "G",
+      "home": "New Zealand",
+      "away": "Belgium",
+      "homeGoals": 1,
+      "awayGoals": 5,
+      "venue": "BC Place Vancouver",
+      "utcDate": "2026-06-27T03:00:00Z",
+      "goals": [
+        {
+          "minute": "28'",
+          "order": 28,
+          "player": "Leandro Trossard",
+          "team": "Belgium",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "50'",
+          "order": 50,
+          "player": "Leandro Trossard",
+          "team": "Belgium",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "66'",
+          "order": 66,
+          "player": "Kevin De Bruyne",
+          "team": "Belgium",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "84'",
+          "order": 84,
+          "player": "Elijah Just",
+          "team": "New Zealand",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "86'",
+          "order": 86,
+          "player": "Romelu Lukaku",
+          "team": "Belgium",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "90'+4'",
+          "order": 90.04,
+          "player": "Alexis Saelemaekers",
+          "team": "Belgium",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Belgium see off New Zealand",
+      "summary": "Belgium is dominating New Zealand 5-1 with Leandro Trossard and Romelu Lukaku scoring, Kevin De Bruyne and Alexis Saelemaekers also finding the net, Elijah Just scoring a late consolation goal for New Zealand. Belgium is leading comfortably. Leandro Trossard scores twice.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"New Zealand\",\"Belgium\",1,5,[[\"28'\",\"Leandro Trossard\",\"Belgium\",\"away\",false,false],[\"50'\",\"Leandro Trossard\",\"Belgium\",\"away\",false,false],[\"66'\",\"Kevin De Bruyne\",\"Belgium\",\"away\",false,false],[\"84'\",\"Elijah Just\",\"New Zealand\",\"home\",false,false],[\"86'\",\"Romelu Lukaku\",\"Belgium\",\"away\",false,false],[\"90'+4'\",\"Alexis Saelemaekers\",\"Belgium\",\"away\",false,false]]]"
     },
     "400021482": {
       "id": "400021482",
