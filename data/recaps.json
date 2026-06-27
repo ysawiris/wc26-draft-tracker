@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-26T21:54:11.992Z",
-  "count": 62,
+  "generatedAt": "2026-06-27T03:15:06.134Z",
+  "count": 64,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -1829,6 +1829,52 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"Spain\",\"Saudi Arabia\",4,0,[[\"10'\",\"Lamine Yamal\",\"Spain\",\"home\",false,false],[\"21'\",\"Mikel Oyarzabal\",\"Spain\",\"home\",false,false],[\"24'\",\"Mikel Oyarzabal\",\"Spain\",\"home\",false,false],[\"49'\",\"Hassan Altambakti\",\"Spain\",\"home\",true,false]]]"
+    },
+    "400021484": {
+      "id": "400021484",
+      "group": "H",
+      "home": "Uruguay",
+      "away": "Spain",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "venue": "Guadalajara Stadium",
+      "utcDate": "2026-06-27T00:00:00Z",
+      "goals": [
+        {
+          "minute": "42'",
+          "order": 42,
+          "player": "Alex Baena",
+          "team": "Spain",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [
+        "Agustin CANOBBIO (Uruguay) is sent off!"
+      ],
+      "headline": "Spain see off Uruguay",
+      "summary": "Uruguay trails Spain 0-1 as Alex Baena scores in the 42nd minute, Agustin Canobbio sees red, Spain leads in Group H at Guadalajara Stadium.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Uruguay\",\"Spain\",0,1,[[\"42'\",\"Alex Baena\",\"Spain\",\"away\",false,false]]]"
+    },
+    "400021485": {
+      "id": "400021485",
+      "group": "H",
+      "home": "Cape Verde",
+      "away": "Saudi Arabia",
+      "homeGoals": 0,
+      "awayGoals": 0,
+      "venue": "Houston Stadium",
+      "utcDate": "2026-06-27T00:00:00Z",
+      "goals": [],
+      "reds": [],
+      "headline": "Cape Verde and Saudi Arabia share the points",
+      "summary": "Cape Verde and Saudi Arabia are battling to a scoreless draw, with neither side able to find the back of the net. The match remains deadlocked at 0-0, as no key scorers have emerged. Cape Verde and Saudi Arabia are tied 0-0.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Cape Verde\",\"Saudi Arabia\",0,0,[]]"
     },
     "400021486": {
       "id": "400021486",
