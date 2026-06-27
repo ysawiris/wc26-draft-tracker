@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T23:13:46.568Z",
+  "fetchedAt": "2026-06-27T23:40:19.436Z",
   "matchCount": 72,
   "matches": [
     {
@@ -893,26 +893,26 @@
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-27T23:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Congo DR",
       "away": "Uzbekistan",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Atlanta Stadium",
-      "minute": null
+      "minute": "9'"
     },
     {
       "id": "400021505",
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-27T23:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Colombia",
       "away": "Portugal",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Miami Stadium",
-      "minute": null
+      "minute": "9'"
     },
     {
       "id": "400021497",
@@ -1639,6 +1639,18 @@
           "f": 10
         }
       },
+      "400021500": {
+        "Uzbekistan": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Congo DR": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        }
+      },
       "400021501": {
         "Congo DR": {
           "y": 1,
@@ -1685,6 +1697,18 @@
           "y": 1,
           "r": 0,
           "f": 13
+        }
+      },
+      "400021505": {
+        "Portugal": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Colombia": {
+          "y": 0,
+          "r": 0,
+          "f": 1
         }
       },
       "400021506": {
@@ -1921,6 +1945,10 @@
         "y": 1,
         "r": 0
       },
+      "Uzbekistan": {
+        "y": 2,
+        "r": 0
+      },
       "Congo DR": {
         "y": 2,
         "r": 0
@@ -1931,10 +1959,6 @@
       },
       "Portugal": {
         "y": 4,
-        "r": 0
-      },
-      "Uzbekistan": {
-        "y": 2,
         "r": 0
       },
       "Ghana": {
@@ -2077,17 +2101,17 @@
       "Jordan": {
         "f": 17
       },
+      "Uzbekistan": {
+        "f": 28
+      },
       "Congo DR": {
-        "f": 24
+        "f": 25
       },
       "Colombia": {
-        "f": 20
+        "f": 21
       },
       "Portugal": {
-        "f": 19
-      },
-      "Uzbekistan": {
-        "f": 27
+        "f": 20
       },
       "Ghana": {
         "f": 43
