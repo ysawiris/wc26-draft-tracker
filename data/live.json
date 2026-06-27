@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T22:41:19.886Z",
+  "fetchedAt": "2026-06-27T23:13:46.568Z",
   "matchCount": 72,
   "matches": [
     {
@@ -867,26 +867,26 @@
       "group": "L",
       "matchday": null,
       "utcDate": "2026-06-27T21:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Panama",
       "away": "England",
       "homeGoals": 0,
       "awayGoals": 2,
       "venue": "New York/New Jersey Stadium",
-      "minute": "82'"
+      "minute": "98'"
     },
     {
       "id": "400021509",
       "group": "L",
       "matchday": null,
       "utcDate": "2026-06-27T21:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Croatia",
       "away": "Ghana",
-      "homeGoals": 1,
+      "homeGoals": 2,
       "awayGoals": 1,
       "venue": "Philadelphia Stadium",
-      "minute": "80'"
+      "minute": "98'"
     },
     {
       "id": "400021500",
@@ -899,7 +899,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Atlanta Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021505",
@@ -912,7 +912,7 @@
       "homeGoals": null,
       "awayGoals": null,
       "venue": "Miami Stadium",
-      "minute": "0'"
+      "minute": null
     },
     {
       "id": "400021497",
@@ -1713,26 +1713,26 @@
       },
       "400021508": {
         "Panama": {
-          "y": 1,
+          "y": 2,
           "r": 0,
-          "f": 11
+          "f": 14
         },
         "England": {
           "y": 1,
           "r": 0,
-          "f": 10
+          "f": 13
         }
       },
       "400021509": {
         "Ghana": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 9
+          "f": 12
         },
         "Croatia": {
           "y": 1,
           "r": 0,
-          "f": 5
+          "f": 8
         }
       },
       "400021510": {
@@ -1938,7 +1938,7 @@
         "r": 0
       },
       "Ghana": {
-        "y": 2,
+        "y": 3,
         "r": 0
       },
       "England": {
@@ -1950,7 +1950,7 @@
         "r": 0
       },
       "Panama": {
-        "y": 4,
+        "y": 5,
         "r": 0
       }
     }
@@ -2090,16 +2090,16 @@
         "f": 27
       },
       "Ghana": {
-        "f": 40
+        "f": 43
       },
       "England": {
-        "f": 33
+        "f": 36
       },
       "Croatia": {
-        "f": 28
+        "f": 31
       },
       "Panama": {
-        "f": 38
+        "f": 41
       }
     }
   }
