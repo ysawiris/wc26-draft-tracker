@@ -1,14 +1,14 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-27T03:39:49.094Z",
+  "generatedAt": "2026-06-27T05:42:38.144Z",
   "count": 3,
   "byTeam": {
     "FF": {
       "group": "L",
       "banked": 8,
       "remaining": 2,
-      "projTotal": 13.7,
-      "rank": 9,
+      "projTotal": 13.8,
+      "rank": 10,
       "leads": false,
       "winningBar": 27,
       "countries": [
@@ -70,7 +70,7 @@
       "group": "J",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.1,
+      "projTotal": 17.2,
       "rank": 5,
       "leads": false,
       "winningBar": 27,
