@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-27T07:29:47.804Z",
+  "generatedAt": "2026-06-27T09:17:09.216Z",
   "count": 3,
   "byTeam": {
     "FF": {
@@ -70,7 +70,7 @@
       "group": "J",
       "banked": 12,
       "remaining": 2,
-      "projTotal": 17.2,
+      "projTotal": 17.1,
       "rank": 6,
       "leads": false,
       "winningBar": 27,
