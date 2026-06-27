@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T01:14:12.653Z",
+  "fetchedAt": "2026-06-27T02:03:40.355Z",
   "matchCount": 72,
   "matches": [
     {
@@ -815,26 +815,26 @@
       "group": "H",
       "matchday": null,
       "utcDate": "2026-06-27T00:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Uruguay",
       "away": "Spain",
       "homeGoals": 0,
       "awayGoals": 1,
       "venue": "Guadalajara Stadium",
-      "minute": "49'"
+      "minute": "97'"
     },
     {
       "id": "400021485",
       "group": "H",
       "matchday": null,
       "utcDate": "2026-06-27T00:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Cabo Verde",
       "away": "Saudi Arabia",
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Houston Stadium",
-      "minute": "50'"
+      "minute": "96'"
     },
     {
       "id": "400021481",
@@ -1451,24 +1451,24 @@
         "Spain": {
           "y": 1,
           "r": 0,
-          "f": 8
+          "f": 13
         },
         "Uruguay": {
-          "y": 0,
-          "r": 0,
-          "f": 3
+          "y": 3,
+          "r": 1,
+          "f": 11
         }
       },
       "400021485": {
         "Saudi Arabia": {
-          "y": 1,
+          "y": 3,
           "r": 0,
-          "f": 7
+          "f": 13
         },
         "Cabo Verde": {
           "y": 1,
           "r": 0,
-          "f": 6
+          "f": 9
         }
       },
       "400021486": {
@@ -1834,12 +1834,12 @@
         "r": 0
       },
       "Saudi Arabia": {
-        "y": 4,
+        "y": 6,
         "r": 0
       },
       "Uruguay": {
-        "y": 2,
-        "r": 0
+        "y": 5,
+        "r": 1
       },
       "Norway": {
         "y": 1,
@@ -1994,16 +1994,16 @@
         "f": 20
       },
       "Spain": {
-        "f": 27
+        "f": 32
       },
       "Saudi Arabia": {
-        "f": 18
+        "f": 24
       },
       "Uruguay": {
-        "f": 18
+        "f": 26
       },
       "Cabo Verde": {
-        "f": 9
+        "f": 12
       },
       "Norway": {
         "f": 34
