@@ -1,7 +1,7 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-27T06:15:26.207Z",
-  "count": 66,
+  "generatedAt": "2026-06-27T23:27:36.643Z",
+  "count": 68,
   "byId": {
     "400021440": {
       "id": "400021440",
@@ -2857,6 +2857,87 @@
       "ai": true,
       "aiVia": "NVIDIA NIM",
       "fingerprint": "[\"England\",\"Croatia\",4,2,[[\"36'\",\"Martin Baturina\",\"Croatia\",\"away\",false,false],[\"42'\",\"Harry Kane\",\"England\",\"home\",false,false],[\"45'+5'\",\"Petar Musa\",\"Croatia\",\"away\",false,false],[\"47'\",\"Jude Bellingham\",\"England\",\"home\",false,false],[\"85'\",\"Marcus Rashford\",\"England\",\"home\",false,false]]]"
+    },
+    "400021508": {
+      "id": "400021508",
+      "group": "L",
+      "home": "Panama",
+      "away": "England",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "venue": "New York/New Jersey Stadium",
+      "utcDate": "2026-06-27T21:00:00Z",
+      "goals": [
+        {
+          "minute": "62'",
+          "order": 62,
+          "player": "Jude Bellingham",
+          "team": "England",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "67'",
+          "order": 67,
+          "player": "Harry Kane",
+          "team": "England",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "England see off Panama",
+      "summary": "Jude Bellingham and Harry Kane are scoring for England as they take a 2-0 lead over Panama, Bellingham strikes first in the 62nd minute and Kane adds another in the 67th, England is dominating the match. England is winning 2-0.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Panama\",\"England\",0,2,[[\"62'\",\"Jude Bellingham\",\"England\",\"away\",false,false],[\"67'\",\"Harry Kane\",\"England\",\"away\",false,false]]]"
+    },
+    "400021509": {
+      "id": "400021509",
+      "group": "L",
+      "home": "Croatia",
+      "away": "Ghana",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "venue": "Philadelphia Stadium",
+      "utcDate": "2026-06-27T21:00:00Z",
+      "goals": [
+        {
+          "minute": "31'",
+          "order": 31,
+          "player": "Petar Sucic",
+          "team": "Croatia",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "73'",
+          "order": 73,
+          "player": "Derrick Luckassen",
+          "team": "Ghana",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
+          "minute": "83'",
+          "order": 83,
+          "player": "Nikola Vlasic",
+          "team": "Croatia",
+          "side": "home",
+          "ownGoal": false,
+          "penalty": false
+        }
+      ],
+      "reds": [],
+      "headline": "Croatia see off Ghana",
+      "summary": "Croatia leads Ghana 2-1 with Petar Sucic and Nikola Vlasic scoring, Derrick Luckassen nets for Ghana, Croatia takes the win in a tight match. Sucic strikes first and Vlasic seals the deal. Croatia wins 2-1.",
+      "ai": true,
+      "aiVia": "NVIDIA NIM",
+      "fingerprint": "[\"Croatia\",\"Ghana\",2,1,[[\"31'\",\"Petar Sucic\",\"Croatia\",\"home\",false,false],[\"73'\",\"Derrick Luckassen\",\"Ghana\",\"away\",false,false],[\"83'\",\"Nikola Vlasic\",\"Croatia\",\"home\",false,false]]]"
     },
     "400021510": {
       "id": "400021510",
