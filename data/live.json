@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T03:20:49.938Z",
+  "fetchedAt": "2026-06-27T04:47:29.318Z",
   "matchCount": 72,
   "matches": [
     {
@@ -844,10 +844,10 @@
       "status": "IN_PLAY",
       "home": "New Zealand",
       "away": "Belgium",
-      "homeGoals": 0,
-      "awayGoals": 0,
+      "homeGoals": 1,
+      "awayGoals": 3,
       "venue": "BC Place Vancouver",
-      "minute": "19'"
+      "minute": "85'"
     },
     {
       "id": "400021479",
@@ -860,7 +860,7 @@
       "homeGoals": 1,
       "awayGoals": 1,
       "venue": "Seattle Stadium",
-      "minute": "19'"
+      "minute": "83'"
     },
     {
       "id": "400021508",
@@ -1413,14 +1413,14 @@
       },
       "400021479": {
         "Egypt": {
-          "y": 1,
+          "y": 2,
           "r": 0,
-          "f": 2
+          "f": 7
         },
         "IR Iran": {
-          "y": 1,
+          "y": 3,
           "r": 0,
-          "f": 2
+          "f": 11
         }
       },
       "400021480": {
@@ -1435,7 +1435,18 @@
           "f": 7
         }
       },
-      "400021481": {},
+      "400021481": {
+        "New Zealand": {
+          "y": 2,
+          "r": 0,
+          "f": 7
+        },
+        "Belgium": {
+          "y": 0,
+          "r": 0,
+          "f": 7
+        }
+      },
       "400021482": {
         "Spain": {
           "y": 1,
@@ -1823,11 +1834,11 @@
         "r": 0
       },
       "New Zealand": {
-        "y": 2,
+        "y": 4,
         "r": 0
       },
       "IR Iran": {
-        "y": 3,
+        "y": 5,
         "r": 0
       },
       "Belgium": {
@@ -1835,7 +1846,7 @@
         "r": 1
       },
       "Egypt": {
-        "y": 4,
+        "y": 5,
         "r": 0
       },
       "Spain": {
@@ -1995,16 +2006,16 @@
         "f": 27
       },
       "New Zealand": {
-        "f": 20
+        "f": 27
       },
       "IR Iran": {
-        "f": 18
+        "f": 27
       },
       "Belgium": {
-        "f": 18
+        "f": 25
       },
       "Egypt": {
-        "f": 22
+        "f": 27
       },
       "Spain": {
         "f": 32
