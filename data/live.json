@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-28T01:25:27.369Z",
+  "fetchedAt": "2026-06-28T02:21:04.863Z",
   "matchCount": 72,
   "matches": [
     {
@@ -893,52 +893,52 @@
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-27T23:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Congo DR",
       "away": "Uzbekistan",
       "homeGoals": 3,
       "awayGoals": 1,
       "venue": "Atlanta Stadium",
-      "minute": "90'+1'"
+      "minute": "99'"
     },
     {
       "id": "400021505",
       "group": "K",
       "matchday": null,
       "utcDate": "2026-06-27T23:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "home": "Colombia",
       "away": "Portugal",
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Miami Stadium",
-      "minute": "90'+2'"
+      "minute": "96'"
     },
     {
       "id": "400021497",
       "group": "J",
       "matchday": null,
       "utcDate": "2026-06-28T02:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Algeria",
       "away": "Austria",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 0,
       "venue": "Kansas City Stadium",
-      "minute": "0'"
+      "minute": "20'"
     },
     {
       "id": "400021495",
       "group": "J",
       "matchday": null,
       "utcDate": "2026-06-28T02:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "home": "Jordan",
       "away": "Argentina",
-      "homeGoals": null,
-      "awayGoals": null,
+      "homeGoals": 0,
+      "awayGoals": 1,
       "venue": "Dallas Stadium",
-      "minute": "0'"
+      "minute": "20'"
     }
   ],
   "cards": {
@@ -1603,6 +1603,18 @@
           "f": 12
         }
       },
+      "400021495": {
+        "Argentina": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Jordan": {
+          "y": 1,
+          "r": 0,
+          "f": 0
+        }
+      },
       "400021496": {
         "Argentina": {
           "y": 0,
@@ -1613,6 +1625,18 @@
           "y": 0,
           "r": 0,
           "f": 8
+        }
+      },
+      "400021497": {
+        "Algeria": {
+          "y": 0,
+          "r": 0,
+          "f": 1
+        },
+        "Austria": {
+          "y": 1,
+          "r": 0,
+          "f": 1
         }
       },
       "400021498": {
@@ -1643,7 +1667,7 @@
         "Uzbekistan": {
           "y": 2,
           "r": 0,
-          "f": 13
+          "f": 14
         },
         "Congo DR": {
           "y": 3,
@@ -1708,7 +1732,7 @@
         "Colombia": {
           "y": 1,
           "r": 0,
-          "f": 11
+          "f": 12
         }
       },
       "400021506": {
@@ -1930,18 +1954,18 @@
         "r": 0
       },
       "Austria": {
-        "y": 3,
+        "y": 4,
         "r": 0
       },
       "Argentina": {
         "y": 2,
         "r": 0
       },
-      "Algeria": {
-        "y": 1,
+      "Jordan": {
+        "y": 2,
         "r": 0
       },
-      "Jordan": {
+      "Algeria": {
         "y": 1,
         "r": 0
       },
@@ -2090,25 +2114,25 @@
         "f": 22
       },
       "Austria": {
-        "f": 24
-      },
-      "Argentina": {
         "f": 25
       },
+      "Argentina": {
+        "f": 26
+      },
       "Algeria": {
-        "f": 13
+        "f": 14
       },
       "Jordan": {
         "f": 17
       },
       "Uzbekistan": {
-        "f": 40
+        "f": 41
       },
       "Congo DR": {
         "f": 27
       },
       "Colombia": {
-        "f": 31
+        "f": 32
       },
       "Portugal": {
         "f": 25
