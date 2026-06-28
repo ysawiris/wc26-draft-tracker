@@ -1,8 +1,8 @@
 {
   "source": "espn-bets",
   "provider": "DraftKings",
-  "fetchedAt": "2026-06-27T20:40:12.005Z",
-  "matchCount": 6,
+  "fetchedAt": "2026-06-28T01:24:26.206Z",
+  "matchCount": 4,
   "lines": [
     {
       "espnId": "760484",
@@ -12,9 +12,9 @@
       "homeRaw": "Algeria",
       "awayRaw": "Austria",
       "line": 1.5,
-      "overUS": "-135",
-      "underUS": "+110",
-      "impliedTotal": 1.83
+      "overUS": "-145",
+      "underUS": "+120",
+      "impliedTotal": 1.9
     },
     {
       "espnId": "760481",
@@ -27,18 +27,6 @@
       "overUS": "-140",
       "underUS": "+115",
       "impliedTotal": 2.91
-    },
-    {
-      "espnId": "760480",
-      "date": "2026-06-27",
-      "home": "Croatia",
-      "away": "Ghana",
-      "homeRaw": "Croatia",
-      "awayRaw": "Ghana",
-      "line": 2.5,
-      "overUS": "+135",
-      "underUS": "-170",
-      "impliedTotal": 2.3
     },
     {
       "espnId": "760482",
@@ -60,21 +48,9 @@
       "homeRaw": "Jordan",
       "awayRaw": "Argentina",
       "line": 3.5,
-      "overUS": "+130",
+      "overUS": "+135",
       "underUS": "-165",
-      "impliedTotal": 3.26
-    },
-    {
-      "espnId": "760485",
-      "date": "2026-06-27",
-      "home": "Panama",
-      "away": "England",
-      "homeRaw": "Panama",
-      "awayRaw": "England",
-      "line": 3.5,
-      "overUS": "+100",
-      "underUS": "-125",
-      "impliedTotal": 3.55
+      "impliedTotal": 3.24
     }
   ]
 }
