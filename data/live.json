@@ -1,7 +1,7 @@
 {
   "source": "fifa.com",
   "competition": "FWC2026",
-  "fetchedAt": "2026-06-27T23:40:19.436Z",
+  "fetchedAt": "2026-06-28T00:12:37.353Z",
   "matchCount": 72,
   "matches": [
     {
@@ -897,9 +897,9 @@
       "home": "Congo DR",
       "away": "Uzbekistan",
       "homeGoals": 0,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "venue": "Atlanta Stadium",
-      "minute": "9'"
+      "minute": "41'"
     },
     {
       "id": "400021505",
@@ -912,7 +912,7 @@
       "homeGoals": 0,
       "awayGoals": 0,
       "venue": "Miami Stadium",
-      "minute": "9'"
+      "minute": "41'"
     },
     {
       "id": "400021497",
@@ -1643,12 +1643,12 @@
         "Uzbekistan": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 7
         },
         "Congo DR": {
-          "y": 0,
+          "y": 1,
           "r": 0,
-          "f": 1
+          "f": 3
         }
       },
       "400021501": {
@@ -1703,12 +1703,12 @@
         "Portugal": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 3
         },
         "Colombia": {
           "y": 0,
           "r": 0,
-          "f": 1
+          "f": 2
         }
       },
       "400021506": {
@@ -1950,7 +1950,7 @@
         "r": 0
       },
       "Congo DR": {
-        "y": 2,
+        "y": 3,
         "r": 0
       },
       "Colombia": {
@@ -2102,16 +2102,16 @@
         "f": 17
       },
       "Uzbekistan": {
-        "f": 28
+        "f": 34
       },
       "Congo DR": {
-        "f": 25
+        "f": 27
       },
       "Colombia": {
-        "f": 21
+        "f": 22
       },
       "Portugal": {
-        "f": 20
+        "f": 22
       },
       "Ghana": {
         "f": 43
