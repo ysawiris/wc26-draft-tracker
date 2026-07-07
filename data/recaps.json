@@ -1,6 +1,6 @@
 {
   "competition": "FWC2026",
-  "generatedAt": "2026-06-28T05:36:47.514Z",
+  "generatedAt": "2026-07-07T21:11:33.723Z",
   "count": 72,
   "byId": {
     "400021440": {
@@ -2636,20 +2636,20 @@
       "utcDate": "2026-06-17T04:00:00Z",
       "goals": [
         {
+          "minute": "0'",
+          "order": 0,
+          "player": "Ali Olwan",
+          "team": "Jordan",
+          "side": "away",
+          "ownGoal": false,
+          "penalty": false
+        },
+        {
           "minute": "20'",
           "order": 20,
           "player": "Romano Schmid",
           "team": "Austria",
           "side": "home",
-          "ownGoal": false,
-          "penalty": false
-        },
-        {
-          "minute": "50'",
-          "order": 50,
-          "player": "Ali Olwan",
-          "team": "Jordan",
-          "side": "away",
           "ownGoal": false,
           "penalty": false
         },
@@ -2665,10 +2665,10 @@
       ],
       "reds": [],
       "headline": "Austria see off Jordan",
-      "summary": "Austria leads Jordan 3-1 with Romano Schmid scoring first, Ali Olwan equalizing for Jordan, and Yazan Alarab scoring an own goal to seal Austria's win, Michael Gregoritsch and Marcel Sabitzer add to the score. Austria is dominating Group J. Austria is winning.",
+      "summary": "Austria leads Jordan 3-1 with Romano Schmid and Yazan Alarab scoring for Austria, the latter an own goal, after Ali Olwan initially puts Jordan ahead. Austria is pulling away in Group J. Schmid and Alarab are the key scorers so far.",
       "ai": true,
       "aiVia": "NVIDIA NIM",
-      "fingerprint": "[\"Austria\",\"Jordan\",3,1,[[\"20'\",\"Romano Schmid\",\"Austria\",\"home\",false,false],[\"50'\",\"Ali Olwan\",\"Jordan\",\"away\",false,false],[\"76'\",\"Yazan Alarab\",\"Austria\",\"home\",true,false]]]"
+      "fingerprint": "[\"Austria\",\"Jordan\",3,1,[[\"0'\",\"Ali Olwan\",\"Jordan\",\"away\",false,false],[\"20'\",\"Romano Schmid\",\"Austria\",\"home\",false,false],[\"76'\",\"Yazan Alarab\",\"Austria\",\"home\",true,false]]]"
     },
     "400021499": {
       "id": "400021499",
